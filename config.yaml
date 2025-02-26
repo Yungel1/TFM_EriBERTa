@@ -1,0 +1,17 @@
+paths:
+  ner:
+    raw:
+      train:
+        text: "data/ner/raw/train/train_texts/" # Carpeta que contiene los archivos de texto
+        ann: "data/ner/raw/train/train_ann.tsv" # Archivo de anotaciones de los textos
+      dev:
+        text: "data/ner/raw/dev/dev_texts/" # Carpeta que contiene los archivos de texto
+        ann: "data/ner/raw/dev/dev_ann.tsv" # Archivo de anotaciones de los textos
+    processed:
+      train:
+        text: "data/ner/processed/train/train_texts/" # Carpeta que contiene los archivos de texto
+        ann: "data/ner/processed/train/train_ann.tsv" # Archivo de anotaciones de los textos
+      dev:
+        text: "data/ner/processed/dev/dev_texts/" # Carpeta que contiene los archivos de texto
+        ann: "data/ner/processed/dev/dev_ann.tsv" # Archivo de anotaciones de los textos
+  model_dir: "models/ner/"
