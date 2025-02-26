@@ -2,15 +2,18 @@ import os
 import time
 from src.data_preprocessing import ner_preprocess
 from src.utils import data_loader
-from src.utils.config_loader import load_config
+from src.utils.config_loader import load_ner_config
 
 # Configuración general
-config = load_config("config.yaml")
+config = load_ner_config("config.yaml")
 
 # Rutas desde el archivo de configuración
-RAW_DATA_DIR = config['paths']['raw']['dev']
+TRAIN_TEXT_RAW = "data/ner/raw/train/train_texts/"
+TRAIN_ANN_RAW = "data/ner/raw/train/train_ann.tsv"
+DEV_TEXT_RAW = "data/ner/raw/dev/dev_texts/"
+DEV_ANN_RAW = "data/ner/raw/dev/dev_ann.tsv"
 
-print(RAW_DATA_DIR)
+print(DEV_ANN_RAW)
 
 # # Preprocesamiento de los datos
 # print("\n Iniciando preprocesamiento de datos...")

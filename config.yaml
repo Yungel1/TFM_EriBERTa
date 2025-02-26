@@ -14,4 +14,4 @@ paths:
       dev:
         text: "data/ner/processed/dev/dev_texts/" # Carpeta que contiene los archivos de texto
         ann: "data/ner/processed/dev/dev_ann.tsv" # Archivo de anotaciones de los textos
-  model_dir: "models/ner/"
+    model_dir: "models/ner/"
