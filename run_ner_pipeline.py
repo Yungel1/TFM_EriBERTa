@@ -1,23 +1,30 @@
-import os
 import time
-from src.data_preprocessing import ner_preprocess
-from src.utils.data_loader import load_txt_ann
+
+from src.data_preprocessing.ner_preprocess import create_hf_dataset_from_brats
 from src.utils.config_loader import load_ner_config
 
 # Load NER general configs
 config = load_ner_config("config.yaml")
 
 # Paths from configuration file
-TRAIN_TEXT_RAW = config["paths"]["ner"]["raw"]["train"]["train_texts"]
-TRAIN_ANN_RAW = config["paths"]["ner"]["raw"]["train"]["train_ann.tsv"]
-DEV_TEXT_RAW = config["paths"]["ner"]["raw"]["dev"]["dev_texts"]
-DEV_ANN_RAW = config["paths"]["ner"]["raw"]["dev"]["dev_ann.tsv"]
+TRAIN_RAW = config["paths"]["ner"]["raw"]["train"]
+DEV_RAW = config["paths"]["ner"]["raw"]["dev"]
+TRAIN_PROCESSED = config["paths"]["ner"]["processed"]["train"]
+DEV_PROCESSED = config["paths"]["ner"]["processed"]["dev"]
 
-# Load text+ann data
-print("\n Loading data...")
-train_data = load_txt_ann(TRAIN_TEXT_RAW, TRAIN_ANN_RAW)
-dev_data = load_txt_ann(DEV_TEXT_RAW, DEV_ANN_RAW)
-print("✅ Data loaded.")
+# Load text+ann (BRAT) data into HF Dataset
+print("\nLoading data...")
+start_time = time.time()
+train_dataset = create_hf_dataset_from_brats(TRAIN_RAW)
+dev_dataset = create_hf_dataset_from_brats(DEV_RAW)
+print(f"✅ Data loaded in {time.time() - start_time:.2f} seconds.\n")
+# TODO Prueba (borrar cuando se compruebe)
+print(train_dataset[4])
+
+# Save HF Dataset to disk
+train_dataset.save_to_disk(TRAIN_PROCESSED)
+dev_dataset.save_to_disk(DEV_PROCESSED)
+
 
 # # Fine-tuning del modelo
 # print("\n Iniciando fine-tuning de EriBERTa...")
