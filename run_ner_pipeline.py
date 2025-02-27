@@ -1,32 +1,23 @@
 import os
 import time
 from src.data_preprocessing import ner_preprocess
-from src.utils import data_loader
+from src.utils.data_loader import load_txt_ann
 from src.utils.config_loader import load_ner_config
 
-# Configuración general
+# Load NER general configs
 config = load_ner_config("config.yaml")
 
-# Rutas desde el archivo de configuración
-TRAIN_TEXT_RAW = "data/ner/raw/train/train_texts/"
-TRAIN_ANN_RAW = "data/ner/raw/train/train_ann.tsv"
-DEV_TEXT_RAW = "data/ner/raw/dev/dev_texts/"
-DEV_ANN_RAW = "data/ner/raw/dev/dev_ann.tsv"
+# Paths from configuration file
+TRAIN_TEXT_RAW = config["paths"]["ner"]["raw"]["train"]["train_texts"]
+TRAIN_ANN_RAW = config["paths"]["ner"]["raw"]["train"]["train_ann.tsv"]
+DEV_TEXT_RAW = config["paths"]["ner"]["raw"]["dev"]["dev_texts"]
+DEV_ANN_RAW = config["paths"]["ner"]["raw"]["dev"]["dev_ann.tsv"]
 
-print(DEV_ANN_RAW)
-
-# # Preprocesamiento de los datos
-# print("\n Iniciando preprocesamiento de datos...")
-# start_time = time.time()
-# ner_preprocess(input_dir=RAW_DATA_DIR, output_dir=PROCESSED_DATA_DIR)
-# print(f"✅ Datos preprocesados en {time.time() - start_time:.2f} segundos.")
-#
-# # Cargar los datos preprocesados
-# print("\n Cargando datos...")
-# train_data = data_loader(os.path.join(PROCESSED_DATA_DIR, "train.json"))
-# dev_data = data_loader(os.path.join(PROCESSED_DATA_DIR, "dev.json"))
-# test_data = data_loader(os.path.join(PROCESSED_DATA_DIR, "test.json"))
-# print("✅ Datos cargados correctamente.")
+# Load text+ann data
+print("\n Loading data...")
+train_data = load_txt_ann(TRAIN_TEXT_RAW, TRAIN_ANN_RAW)
+dev_data = load_txt_ann(DEV_TEXT_RAW, DEV_ANN_RAW)
+print("✅ Data loaded.")
 
 # # Fine-tuning del modelo
 # print("\n Iniciando fine-tuning de EriBERTa...")
