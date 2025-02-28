@@ -60,3 +60,59 @@ def create_hf_dataset_from_brats(text_ann_folder):
     dataset = Dataset.from_list(data)
     return dataset
 
+def tokenize_and_align_labels(example, tokenizer, label_map, max_length=512, stride=128):
+    tokenized_inputs = tokenizer(
+        example["text"],
+        truncation=False,
+        return_overflowing_tokens=True,
+        stride=stride,
+        max_length=max_length,
+        return_offsets_mapping=True,
+        padding=False
+    )
+
+    offset_mappings = tokenized_inputs.pop("offset_mapping")
+    labels = []
+
+    for i, offsets in enumerate(offset_mappings):
+        input_ids = tokenized_inputs["input_ids"][i]
+        label_ids = [-100] * len(input_ids)
+
+        entity_spans = []
+        for entity in example["entities"]:
+            entity_spans.append((entity["start"], entity["end"], entity["label"]))
+
+        for idx, (token_start, token_end) in enumerate(offsets):
+            if token_start == 0 and token_end == 0:
+                continue
+
+            for start, end, entity_label in entity_spans:
+                if token_start >= end:
+                    continue
+
+                if start <= token_start < end or start < token_end <= end:
+                    if label_ids[idx] == -100:
+                        label_ids[idx] = label_map[f'B-{entity_label}']
+                    else:
+                        label_ids[idx] = label_map[f'I-{entity_label}']
+                    break
+
+        labels.append(label_ids)
+
+    tokenized_inputs["labels"] = labels
+    return tokenized_inputs
+
+def process_dataset(dataset):
+    if not isinstance(dataset, Dataset):
+        dataset = Dataset.from_list(dataset)
+
+    tokenized_dataset = dataset.map(
+        tokenize_and_align_labels,
+        batched=False,
+        remove_columns=["text", "entities"],
+        desc="Tokenizing and aligning labels"
+    )
+
+    tokenized_dataset = tokenized_dataset.filter(lambda x: x["input_ids"] is not None)
+    return tokenized_dataset
+
