@@ -1,8 +1,7 @@
 import time
 
-from src.data_preprocessing.ner_preprocess import create_hf_dataset_from_brats, tokenize_and_align_labels
+from src.data_preprocessing.ner_preprocess import NERPreprocessor
 from src.utils.config_loader import load_ner_config
-from src.utils.utils import extract_label_map
 
 from transformers import (
     AutoModelForTokenClassification,
@@ -20,31 +19,43 @@ DEV_PROCESSED = config["paths"]["ner"]["processed"]["dev"]
 
 # Model to be trained
 medical_model = "HiTZ/EriBERTa-base"
+tokenizer = AutoTokenizer.from_pretrained(medical_model)
+
+# NERPreprocessor class
+preprocessor = NERPreprocessor(tokenizer)
 
 # Load text+ann (BRAT) data into HF Dataset
 print("\n⏳ Loading data...")
 start_time = time.time()
-train_dataset = create_hf_dataset_from_brats(TRAIN_RAW)
-dev_dataset = create_hf_dataset_from_brats(DEV_RAW)
+train_dataset = preprocessor.create_hf_dataset_from_brats(TRAIN_RAW)
+dev_dataset = preprocessor.create_hf_dataset_from_brats(DEV_RAW)
 print(f"✅ Data loaded in {time.time() - start_time:.2f} seconds.\n")
 # TODO Prueba (borrar cuando se compruebe)
-print(train_dataset[4])
+print(train_dataset[0])
 
 # Save HF Dataset to disk
 train_dataset.save_to_disk(TRAIN_PROCESSED)
 dev_dataset.save_to_disk(DEV_PROCESSED)
 
-# Label map
-print("\n⏳ Extracting label map...")
-start_time = time.time()
-label_map = extract_label_map(train_dataset)
-print(f"✅ Label map extracted in {time.time() - start_time:.2f} seconds.\n")
-# TODO Prueba (borrar cuando se compruebe)
-print(label_map)
-
 # Tokenize
-# tokenizer = AutoTokenizer.from_pretrained(medical_model)
-# tokenize_and_align_labels()
+print("\n⏳ Tokenizing data...")
+start_time = time.time()
+tokenizer = AutoTokenizer.from_pretrained(medical_model)
+train_tokenized = preprocessor.process_dataset(train_dataset)
+dev_tokenized = preprocessor.process_dataset(dev_dataset)
+print(f"✅ Data tokenized in {time.time() - start_time:.2f} seconds.\n")
+
+sample = train_tokenized[0]
+print("\nSample processed item:")
+for key, value in sample.items():
+    print(f"{key}: {value[:50]}...")
+
+texto_original = train_dataset[0]["text"]
+print(preprocessor.label2id)
+for i, (offset, label) in enumerate(zip(sample["offset_mapping"][0], sample["labels"][0])):
+    inicio, fin = offset
+    fragmento = texto_original[inicio:fin]
+    print(f"Token {i}: '{fragmento}' -> Label: {label}")
 
 # # Fine-tuning del modelo
 # print("\n Iniciando fine-tuning de EriBERTa...")
