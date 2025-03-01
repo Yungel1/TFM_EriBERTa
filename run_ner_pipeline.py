@@ -2,6 +2,8 @@ import time
 
 from src.data_preprocessing.ner_preprocess import NERPreprocessor
 from src.utils.config_loader import load_ner_config
+from src.utils.data_loader import create_hf_dataset_from_brats
+from src.utils.ner_utils import extract_label_maps
 
 from transformers import (
     AutoModelForTokenClassification,
@@ -21,14 +23,11 @@ DEV_PROCESSED = config["paths"]["ner"]["processed"]["dev"]
 medical_model = "HiTZ/EriBERTa-base"
 tokenizer = AutoTokenizer.from_pretrained(medical_model)
 
-# NERPreprocessor class
-preprocessor = NERPreprocessor(tokenizer)
-
 # Load text+ann (BRAT) data into HF Dataset
 print("\n⏳ Loading data...")
 start_time = time.time()
-train_dataset = preprocessor.create_hf_dataset_from_brats(TRAIN_RAW)
-dev_dataset = preprocessor.create_hf_dataset_from_brats(DEV_RAW)
+train_dataset = create_hf_dataset_from_brats(TRAIN_RAW)
+dev_dataset = create_hf_dataset_from_brats(DEV_RAW)
 print(f"✅ Data loaded in {time.time() - start_time:.2f} seconds.\n")
 # TODO Prueba (borrar cuando se compruebe)
 print(train_dataset[0])
@@ -36,6 +35,17 @@ print(train_dataset[0])
 # Save HF Dataset to disk
 train_dataset.save_to_disk(TRAIN_PROCESSED)
 dev_dataset.save_to_disk(DEV_PROCESSED)
+
+# Label maps
+print("\n⏳ Extracting label maps...")
+start_time = time.time()
+label2id, id2label = extract_label_maps(train_dataset)
+print(f"✅ Label maps extracted in {time.time() - start_time:.2f} seconds.\n")
+# TODO Prueba (borrar cuando se compruebe)
+print(label2id)
+
+# NERPreprocessor class
+preprocessor = NERPreprocessor(tokenizer, label2id, id2label)
 
 # Tokenize
 print("\n⏳ Tokenizing data...")
@@ -51,7 +61,6 @@ for key, value in sample.items():
     print(f"{key}: {value[:50]}...")
 
 texto_original = train_dataset[0]["text"]
-print(preprocessor.label2id)
 for i, (offset, label) in enumerate(zip(sample["offset_mapping"][0], sample["labels"][0])):
     inicio, fin = offset
     fragmento = texto_original[inicio:fin]
