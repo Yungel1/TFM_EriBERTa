@@ -1,0 +1,10 @@
+QUESTION TYPE: GENERAL SURGERY
+CLINICAL CASE: 
+A 52-year-old man was referred to the gastroenterology department for hematochezia, tenesmus and reduction of stool diameter. A series of tests were performed and a diagnosis of adenocarcinoma of the sigma without distant metastasis was made. The patient underwent surgery and was referred to the medical oncology department for evaluation of complementary chemotherapy treatment. Which of the following is a poor prognostic factor after surgical resection and should be taken into account when planning chemotherapy treatment?
+1- The presence of anemia at diagnosis.
+2- The existence of a family history of colorectal cancer.
+3- The size of the primary lesion and histological differentiation.
+4- Perforation or adhesion of the tumor to adjacent organs.
+5- nan
+CORRECT ANSWER: 4
+On this occasion, we are asked about which factors have the greatest influence in order to carry out adjuvant chemotherapy in colorectal cancer. In order to do so, we must know which are the poor prognostic factors in this pathology where obstruction or intestinal perforation due to the lesion, invasion of adjacent organs, elevation of tumor markers such as CEA and the histology of the neoplasm stand out. Among these, less importance is given to the size of the lesion than to its degree of invasion of the intestinal wall or other adjacent structures, a criterion that must be taken into account for staging by TNM or Astler-Coller classification, which guide the indication of adjuvant treatment after the surgical approach.

@@ -1,0 +1,47 @@
+T1	Claim 1047 1085	I believe that the correct answer is 3
+T2	Claim 789 868	We will palpate the abdomen and roll en bloc to palpate the thoracolumbar spine
+T3	Claim 988 1027	We will request an abdominal ultrasound
+T4	Claim 873 983	We will place a cervical collar and refer to radiology for imaging of the lower extremities and cervical spine
+T5	Claim 617 703	The patient will be seated on the stretcher so that the cervical spine can be explored
+T6	Claim 708 784	Refer to radiology for study of the lower extremities (feet, femurs, pelvis)
+T7	Premise 39 106	A 30-year-old man suffers a fall from a standing height of 2 meters
+T8	Premise 157 231	he is conscious and oriented, with bladder catheterization and clear urine
+T9	Premise 242 326	swelling of the left heel and mild tingling in the anterior aspect of the left thigh
+T10	Premise 331 374	scrotum as well as dysesthesia in both feet
+T11	Premise 482 560	Rotation of the lower limbs on the stretcher grasped by the ankles is painless
+T12	Premise 565 606	compression of the pelvis is asymptomatic
+T13	Claim 1087 1269	The patient, due to the mechanism of injury (foot fall), the calcaneal fracture and the neurological symptoms, suggests a low spinal cord injury due to a fracture of the lumbar spine
+T15	Marker 1294 1301	because
+T14	Claim 1271 1293	The injury is not high
+R1	Attack Ent1:T14 Ent2:T5	
+T16	Claim 1321 1366	It also does not appear to be a pelvic injury
+T17	Marker 1367 1374	because
+R2	Attack Ent1:T16 Ent2:T6	
+R3	Support Ent1:T13 Ent2:T1	
+R4	Support Ent1:T13 Ent2:T2	
+R5	Support Ent1:T1 Ent2:T2	
+T18	Claim 1428 1626	If there is a suspicion of pelvic injury in the primary evaluation of all polytraumatized (ATLS) a spinal exploration should be performed by rotating the spine en bloc to avoid producing more injury
+R6	Support Ent1:T18 Ent2:T1	
+R7	Support Ent1:T18 Ent2:T2	
+T19	Claim 1628 1686	Abdominal palpation is also part of the initial evaluation
+R8	Support Ent1:T19 Ent2:T2	
+R9	Support Ent1:T19 Ent2:T1	
+T20	Claim 1688 1854	Abdominal ultrasound may be indicated in hemodynamically unstable patients if abdominal injuries are suspected but in any case it is done after the initial evaluation
+R10	Support Ent1:T20 Ent2:T19	
+R11	Attack Ent1:T11 Ent2:T6	
+R12	Attack Ent1:T12 Ent2:T6	
+T21	Premise 1302 1319	he moves his arms
+R13	Support Ent1:T21 Ent2:T14	
+T22	Premise 1378 1426	the absence of pain on mobilization or palpation
+R14	Support Ent1:T22 Ent2:T16	
+T23	Marker 1799 1802	but
+T24	Marker 1100 1106	due to
+T25	Diagnostics 717 726	radiology
+T26	Diagnostics 797 816	palpate the abdomen
+T27	Diagnostics 821 868	roll en bloc to palpate the thoracolumbar spine
+T28	Treatment 881 904	place a cervical collar
+T29	Diagnostics 918 983	radiology for imaging of the lower extremities and cervical spine
+T30	Diagnostics 1007 1027	abdominal ultrasound
+T31	Disease 1209 1269	low spinal cord injury due to a fracture of the lumbar spine
+T32	Diagnostics 1628 1647	Abdominal palpation
+T33	Diagnostics 1688 1708	Abdominal ultrasound

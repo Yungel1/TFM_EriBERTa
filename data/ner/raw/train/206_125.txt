@@ -1,0 +1,10 @@
+QUESTION TYPE: UROLOGY
+CLINICAL CASE: 
+Faced with a 49-year-old man, asymptomatic, with a family history of a father who died of prostate cancer, who in a routine company control is identified a PSA (Prostate Specific Antigen) of 5.9 ng / ml, with a ratio of free PSA / total PSA of 11% and that a rectal examination shows increased consistency in the right prostatic lobe, what is the following clinical indication?
+1- Suggest to the patient the performance of a transrectal ultrasound and prostate biopsy.
+2- Perform an abdominopelvic CT scan.
+3- Initiate treatment with 5 alpha Reductase Inhibitors to reduce PSA levels by half.
+4- Initiate combined treatment of LHRH analogues and antiandrogens.
+5- Perform a bone scan.
+CORRECT ANSWER: 1
+The patient has a PSA >4 and a palpation with increased consistency, which implies the need for a transrectal ultrasound-guided biopsy to diagnose whether it is Benign Prostatic Hyperplasia or Prostate Cancer.

@@ -1,0 +1,31 @@
+T2	Marker 193 201	Although
+T3	Premise 193 313	Although she has been having similar episodes for more than a year, in the last 2 months they have worsened considerably
+T4	Premise 315 559	The pain is like a weight that starts in the occipital area, spreads to both temporal regions and is barely relieved by taking 650 mg paracetamol tablets, so she requests a CT scan (she is convinced that "something must be wrong with her head")
+T5	Treatment 436 468	aking 650 mg paracetamol tablets
+T6	Marker 470 472	so
+T7	Diagnostics 488 495	CT scan
+T8	Claim 632 640	Migraine
+T9	Claim 645 663	Vascular disorders
+T10	Claim 668 693	Temporal artery arteritis
+T11	Claim 698 705	Tension
+T12	Claim 710 718	Oncologi
+T13	Disease 632 640	Migraine
+T14	Disease 669 693	emporal artery arteritis
+T15	Premise 915 1104	I interpret that they show a patient stressed by her children with recurrent headaches of occipital location that she previously relieved with a low dose of paracetamol and now she does not
+T16	Treatment 1058 1083	a low dose of paracetamol
+T17	Claim 1106 1236	Both the initially occipital location, the 2-year evolution time, and the sensation of weight lead to answer 4, a tension headache
+R1	Support Ent1:T17 Ent2:T11	
+R2	Support Ent1:T4 Ent2:T11	
+R3	Support Ent1:T3 Ent2:T11	
+T18	Claim 1238 1432	Migraine and vascular disorders, accompanied by other neurological symptoms or nausea, photophobia, etc., are quickly ruled out, as well as the rare temporal arteritis before the age of 50 years
+T19	Disease 1238 1246	Migraine
+T20	Marker 1367 1377	as well as
+R4	Attack Ent1:T18 Ent2:T10	
+R6	Attack Ent1:T18 Ent2:T8	
+R7	Attack Ent1:T18 Ent2:T9	
+T21	Claim 1434 1590	Tumor headache is usually "in crescendo", not recurrent as the case suggests, and is accompanied by other neurological symptoms or intracranial hypertension
+R8	Attack Ent1:T21 Ent2:T12	
+R9	Attack Ent1:T3 Ent2:T12	
+T1	Premise 58 85	A 42-year-old married woman
+T22	Premise 86 191	with 2 school-age children consults her family physician for a severe headache of about 7 days' evolution
+R5	Attack Ent1:T1 Ent2:T10	

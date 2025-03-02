@@ -1,0 +1,10 @@
+QUESTION TYPE: GENETICS AND IMMUNOLOGY
+CLINICAL CASE: 
+Amalia is a 3-year-old girl who has undergone surgery for tetralogy of Fallot. She also presented thymic dysfunction in the neonatal period and hypocalcemia as well as a nasal voice and psychomotor retardation. Which genetic test do you consider most appropriate to reach an etiological diagnosis?
+1- 22q11 deletion study (Di George or Velo-cardio-facial syndrome).
+2- Study of FMR1 gene expansion, responsible for Fragile X syndrome.
+3- Sequencing of genes related to HRAS (Noonan syndrome).
+4- Genetic study of Williams Beuren syndrome.
+5- nan
+CORRECT ANSWER: 1
+Question in which the clinical picture must be recognized: cardiovascular anomalies - Tetralogy of Fallot -; thymic aplasia/hypoplasia - leading to primary T-cell immunodeficiency; parathyroid aplasia/hypoplasia - hence hypocalcemia -; palatal anomalies - nasal voice; psychomotor retardation. In my opinion, just with the words "thymic dysfunction", hypocalcemia and cardiopathy, we would have to go straight to DiGeorge syndrome. Indeed, the genetic defect is a 22q11.2 deletion (which if we know it, the better, but with the clinic it would be enough for us). The only option with which there could be doubt is Noonan syndrome, which can also be associated with cardiopathy, but above all it is characterized by short stature, cardiopathy and bone alterations; moreover, in most cases it is caused by an alteration in the PTPN11 gene, not in those mentioned in the question.

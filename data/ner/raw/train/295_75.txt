@@ -1,0 +1,10 @@
+QUESTION TYPE: GENETICS AND IMMUNOLOGY
+CLINICAL CASE: 
+Indicate the clinical situation that, in relation to hepatitis B virus infection, presents a 5-year-old patient from Nigeria, with normal physical examination and with the following serology against hepatitis B: HBsAg + / ANTI- HBs - / HBeAg - / ANTI- Hbe + / ANTI- Hbc IgM - / ANTI- Hbc IgG +/ DNA HBV +:
+1- Acute infection.
+2- Chronic infection.
+3- Vaccinated patient.
+4- Asymptomatic carrier.
+5- nan
+CORRECT ANSWER: 2
+Question in which having a table in the head comes out alone discarding options: Option 1: The acute infection would be HBeAg + and ANTI-HBe - . In addition the ANTI-HBec would be IgM type (only for this last data, we would have to discard it in a direct way). Option 2: the correct one. It complies with all the characteristics. Option 3: The vaccinated patient cannot have DNA of the virus (the only thing that positivizes in a vaccinated patient is the AntiBs. IgG type). Option 4: The option that could offer more doubts. In the asymptomatic carrier (chronic carrier / seroconverted) the difference is that there is no viral DNA.

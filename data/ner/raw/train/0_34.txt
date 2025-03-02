@@ -1,0 +1,10 @@
+QUESTION TYPE: DIGESTIVE
+CLINICAL CASE: 
+A 27-year-old woman under study in the dermatology department for recurrent episodes of oral aphthous ulcers. She was referred to the gastrointestinal department for a blood test showing Hb 11.5 gr/dl Fe 38 AST 52 ALT 64 Ac antitrasglutaminase IgA 177. The patient reported only occasional diffuse abdominal discomfort. She reports no signs of hemorrhage or jaundice. The physical examination is normal. Which of the following tests do you consider to be the most appropriate to make the diagnosis?
+1- Capsule endoscopy.
+2- Colonoscopy.
+3- Serology for hepatitis b and c virus.
+4- Intestinal biopsy.
+5- Abdominal ultrasound.
+CORRECT ANSWER: 4
+In this question, they give an important piece of information when it comes to suspecting a diagnosis, which is the antitransglutaminase antibodies that must lead you to suspect celiac disease. The rest of the symptoms fall perfectly within the picture and although probably several of the tests that it says will be done, the answer that will give us the diagnosis is 4 (intestinal biopsy).

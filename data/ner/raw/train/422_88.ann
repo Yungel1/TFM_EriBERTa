@@ -1,0 +1,20 @@
+T1	Premise 81 192	a 38-year-old man diagnosed with Cushing's disease in relation to a pituitary macroadenoma of 22 mm in diameter
+T2	Claim 197 269	Initially try medical treatment and, if not effective, resort to surgery
+T3	Claim 274 287	Adrenalectomy
+T4	Claim 292 335	Selective surgical resection of the adenoma
+T5	Claim 340 380	Radiotherapy to try to reduce tumor size
+T6	Claim 407 509	Although the majority of ACTH-producing adenomas recur, surgery is always the first therapeutic option
+T7	Marker 407 415	Although
+R1	Support Ent1:T6 Ent2:T4	
+T8	Claim 511 657	The available medications (ketoconazole, somatostatin analogues) are aimed at decreasing the effects of excess cortisol or decreasing ACTH release
+T9	Claim 663 684	they are not curative
+T10	Marker 659 662	but
+R2	Support Ent1:T9 Ent2:T2	
+T11	Treatment 538 550	ketoconazole
+T12	Treatment 552 574	somatostatin analogues
+R3	Attack Ent1:T9 Ent2:T8	
+T13	Treatment 211 228	medical treatment
+T14	Treatment 262 269	surgery
+T15	Treatment 274 287	Adrenalectomy
+T16	Treatment 292 335	Selective surgical resection of the adenoma
+T17	Treatment 340 380	Radiotherapy to try to reduce tumor size

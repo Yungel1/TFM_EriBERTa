@@ -1,0 +1,42 @@
+T1	Premise 47 197	A 78-year-old woman comes to the emergency department for left iliac fossa pain of 24 hours of evolution associated with fever and occasional vomiting
+T2	Premise 199 340	On examination, there is selective pain on palpation in the left iliac fossa with a feeling of occupation, defense and positive decompression
+T3	Claim 431 516	The safest and best performing complementary examination is the barium contrast enema
+T4	Claim 521 619	In case of contained pelvic abscess, percutaneous drainage guided by CT or ultrasound is indicated
+T5	Claim 624 744	If surgical intervention is required after resolution of the acute episode, the laparoscopic approach is contraindicated
+T6	Claim 749 869	In case of acute uncomplicated diverticulitis, elective sigmoidectomy is indicated after cure of the first acute episode
+T7	Claim 874 1040	If generalized peritonitis occurs, the most appropriate surgical technique is the practice of a derivative colostomy without resection of the affected sigmoid segment
+T8	Claim 1060 1081	Answer 1 is incorrect
+T9	Claim 1090 1143	the imaging tests of choice would be ultrasound or CT
+T10	Marker 1082 1089	because
+R1	Support Ent1:T9 Ent2:T8	
+T11	Diagnostics 1127 1137	ultrasound
+T12	Diagnostics 1141 1143	CT
+T13	Claim 1145 1166	answer 3 is incorrect
+T14	Marker 1167 1174	because
+T15	Claim 1175 1228	the laparoscopic approach is indicated from the start
+R2	Support Ent1:T15 Ent2:T13	
+T16	Claim 1230 1251	answer 4 is incorrect
+T17	Marker 1252 1259	because
+T18	Claim 1260 1442	the indication in the first episode is for those under 50 years of age, in the rest it is indicated after the second episode or in cases of persistent symptoms or suspected neoplasia
+T19	Treatment 1179 1200	laparoscopic approach
+T20	Claim 1448 1469	answer 5 is incorrect
+T21	Claim 1478 1615	surgery in cases of perforation with peritonitis should always resect the affected segment of colon to control the focus of the infection
+T22	Marker 1470 1477	because
+R3	Support Ent1:T18 Ent2:T16	
+R4	Support Ent1:T21 Ent2:T20	
+R5	Attack Ent1:T8 Ent2:T3	
+T23	Diagnostics 495 516	barium contrast enema
+R6	Attack Ent1:T13 Ent2:T5	
+T24	Treatment 704 725	laparoscopic approach
+R7	Attack Ent1:T16 Ent2:T6	
+R8	Attack Ent1:T1 Ent2:T18	
+T25	Disease 1433 1442	neoplasia
+R9	Attack Ent1:T20 Ent2:T7	
+T26	Disease 760 794	acute uncomplicated diverticulitis
+T27	Treatment 796 818	elective sigmoidectomy
+T28	Disease 532 556	contained pelvic abscess
+T29	Treatment 558 579	percutaneous drainage
+T30	Diagnostics 590 592	CT
+T31	Diagnostics 596 606	ultrasound
+T32	Disease 877 900	generalized peritonitis
+T33	Treatment 970 1040	derivative colostomy without resection of the affected sigmoid segment

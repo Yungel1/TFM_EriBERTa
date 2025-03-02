@@ -1,0 +1,10 @@
+QUESTION TYPE: DIGESTIVE TRACT
+CLINICAL CASE: 
+A 17-year-old boy, athletic and with no history of interest, comes to the doctor for occasional conjunctival jaundice. He denies drug intake and abdominal pain. Laboratory tests show normal ALT, AST, GGT and FA, with total bilirubin of 3.2 mg/dl and direct bilirubin of 0.4 mg/dl. She has no anemia and the liver is ultrasonographically normal. What is her diagnosis?
+1- Rotor syndrome.
+2- Choledocholithiasis.
+3- Dubin-Johnson syndrome.
+4- Acute hepatitis.
+5- Gilbert's syndrome.
+CORRECT ANSWER: 5
+An increase in indirect bilirubin less than 5 (intermittently, under stress) in a young healthy boy should make us think of Gilbert's syndrome. In Rotor syndrome, Dubin-Johnson syndrome and choledocholithiasis there is an increase in direct bilirubin. In the case of acute hepatitis there should be an elevation of transaminases.

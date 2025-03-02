@@ -1,0 +1,22 @@
+T1	Premise 68 243	A 38-year-old man comes to the emergency department with fever above 39ºC and deterioration of consciousness after a trip to Equatorial Guinea without antimalarial prophylaxis
+T2	Premise 245 315	Laboratory tests showed creatinine 3.4 mg/dL, AST 764 UlL, ALT 678 UlL
+T3	Premise 317 426	The laboratory reports the visualization of Plasmodium falciparum in the blood with a parasitemia level of 6%
+T4	Claim 479 496	Mefloquine orally
+T5	Claim 501 523	Intravenous artesunate
+T6	Claim 528 546	Doxycycline orally
+T7	Claim 551 571	Oral quinine sulfate
+T8	Claim 598 723	In severe cases of Plasmodium infection, the greatest risk of mortality occurs in the first 24 hours of clinical presentation
+R1	Support Ent1:T3 Ent2:T8	
+T9	Disease 617 637	Plasmodium infection
+T10	Claim 728 767	treatment should be started immediately
+R2	Support Ent1:T8 Ent2:T10	
+T11	Marker 725 727	so
+T12	Claim 769 922	Treatment with parenteral or intramuscular artesunate is more indicated in severe Plasmodium infection, both in adults and children and in pregnant women
+R3	Support Ent1:T10 Ent2:T12	
+R4	Support Ent1:T12 Ent2:T5	
+T13	Treatment 798 822	intramuscular artesunate
+T14	Treatment 479 496	Mefloquine orally
+T15	Treatment 501 523	Intravenous artesunate
+T16	Treatment 528 546	Doxycycline orally
+T17	Treatment 551 571	Oral quinine sulfate
+T18	Disease 844 871	severe Plasmodium infection

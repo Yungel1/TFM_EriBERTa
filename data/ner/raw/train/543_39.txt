@@ -1,0 +1,10 @@
+QUESTION TYPE: ALLERGOLOGY
+CLINICAL CASE: 
+A 35-year-old patient consults to confirm a suspected allergy to Anisakis simplex. She has previously suffered a clinical picture of gastrointestinal anisakiasis after eating fish. The tests performed show specific IgE levels of 10 KU/l against Anisakis simplex. Which of the following would be the dietary recommendation for this patient?
+1- He cannot eat any fish, crustaceans, mollusks or cephalopods.
+2- He can eat fresh fish cooked on the grill.
+3- May eat commercially flash-frozen fish.
+4- You can eat fresh marinated or cold smoked fish.
+5- nan
+CORRECT ANSWER: 3
+Anisakis simplex is a parasite frequently found in fish. To avoid reactions with this parasite, a diet free of fresh and raw fish (anchovies in vinegar, smoked, salted fish, sushi, etc.) should be followed. Deep-frozen fish or fresh fish previously frozen at -20ºC for at least 5 days before cooking can be consumed, as long as it is cooked at high temperatures >60ºC (roasted, fried, etc.), avoiding raw, grilled or microwaved preparations. It is recommended to consume preferably the tails because the larvae of the parasite are usually close to the viscera of the head.

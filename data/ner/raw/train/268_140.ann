@@ -1,0 +1,25 @@
+T1	Premise 43 372	A 50-year-old patient presenting with a pleural effusion with the following features: straw-like appearance, pH 7.3, pleural protein/serum ratio 0.8, pleural LDH/serum ratio 0.9, Gram and Ziehl's negative, total lipids, cholesterol and triglycerides normal, mesothelial cells <5%, intense lymphocytosis without atypia, ADA 64 U/L
+T2	Claim 411 426	Pleural empyema
+T3	Claim 431 481	Pleural effusion due to heart failure (transudate)
+T4	Claim 486 506	Pleural mesothelioma
+T5	Claim 511 539	Tuberculous pleural effusion
+T6	Claim 544 586	Effusion secondary to pulmonary infarction
+T7	Claim 606 690	It is a lymphocytic exudate whose main diagnoses are tumor and tuberculous pleuritis
+R1	Support Ent1:T7 Ent2:T5	
+T8	Claim 851 925	Other possible diagnoses such as lymphoma are not mentioned in the answers
+T9	Premise 692 753	They do not give the value of glucose which should be lowered
+T10	Claim 759 849	if the cytology shows absence of malignant cells so we are left with tuberculous pleuritis
+T11	Marker 755 758	but
+T12	Marker 808 810	so
+R2	Attack Ent1:T9 Ent2:T10	
+R3	Support Ent1:T10 Ent2:T5	
+T13	Disease 669 690	tuberculous pleuritis
+T14	Disease 659 664	tumor
+T15	Disease 828 849	tuberculous pleuritis
+T16	Disease 411 426	Pleural empyema
+T17	Disease 431 447	Pleural effusion
+T18	Marker 448 454	due to
+T19	Disease 455 481	heart failure (transudate)
+T20	Disease 486 506	Pleural mesothelioma
+T21	Disease 511 539	Tuberculous pleural effusion
+T22	Disease 566 586	pulmonary infarction

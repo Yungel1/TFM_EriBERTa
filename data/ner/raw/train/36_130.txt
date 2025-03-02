@@ -1,0 +1,10 @@
+QUESTION TYPE: NEUROLOGY AND NEUROSURGERY
+CLINICAL CASE: 
+An 85-year-old woman consults for fatigue and weakness especially in the mornings. She is sometimes unsteady when walking and has to sit down to regain her balance. On two occasions she has had to sit down to keep from falling but denies symptoms of dizziness. She has arterial hypertension, urinary incontinence and osteoarthritis. Her treatment is hydrochlorothiazide (25 mg/d), oxybutynin (10 mg/d), lisinopril (10 mg/d), calcium (1500 mg/d) and paracetamol (3 g/d). On examination he has a blood pressure of 115/70 mm Hg, pulse 80 bpm. His movements are slow. He has a moderate hand tremor. She can get up from the chair slowly but without needing to lean on her arms. She walks slightly leaning forward with little swinging of the arms. Turns slowly but without losing balance. She is unable to stand on one foot. Which of the following possible actions would you perform first?
+1- Assess visual acuity.
+2- Perform an MRI.
+3- Tilt table study.
+4- Measure blood pressure lying down and standing up.
+5- Therapeutic attempt with L-dopa.
+CORRECT ANSWER: 5
+The correct answer is to initiate treatment with L-dopa, since the clinical picture described is of a parkinsonism whose diagnosis is exclusively clinical. The rest of the answers can be made for differential diagnosis, but the performance of complementary tests does not justify delaying the initiation of treatment.

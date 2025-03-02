@@ -1,0 +1,10 @@
+QUESTION TYPE: TRAUMATOLOGY
+CLINICAL CASE: 
+A 27-year-old male, a regular athlete, refers pain in the right leg after continuous running. He has visited a physiotherapist on several occasions and has been diagnosed with calf overload. Several months have passed, she has not improved and refers intense pain after physical activity that subsides with rest in the hours following exercise. What test can help in the diagnosis?
+1- Positron emission tomography with 18 FDG.
+2- Determination of posterior compartment pressure immediately after activity.
+3- Doppler ultrasound to rule out a circulatory disorder of the lower extremity.
+4- Magnetic resonance spectroscopy.
+5- nan
+CORRECT ANSWER: 2
+Exercise-induced compartment syndrome is an exercise-induced condition of the leg. It is characterized by reversible ischemia of the muscles of a muscle compartment. Diagnosis is made by measuring compartment pressures at rest, during exercise and after exercise (answer 2 correct). Treatment usually consists of fasciotomies of the affected compartments. Although MRI is not very useful in establishing the diagnosis, it can help in the differential diagnosis.

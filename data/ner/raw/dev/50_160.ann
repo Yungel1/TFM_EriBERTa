@@ -1,0 +1,27 @@
+T1	Premise 42 138	A 5-year-old girl, completely asymptomatic, who comes to the pediatrician for a regular check-up
+T2	Claim 1007 1030	The correct answer is 4
+T3	Claim 329 444	Exhaustive physical examination with blood pressure control to assess whether the child may have a familial disease
+T4	Claim 449 547	Biochemical analysis with calcitonin. If it is normal, no further control is necessary at this age
+T5	Claim 552 679	Annual monitoring of calcitonin levels with pentagastrin stimulation and, if elevated, indication of prophylactic thyroidectomy
+T6	Claim 684 820	Genetic study of the RET c634 proto-oncogene mutation, and if positive, prophylactic radical thyroidectomy will be performed at this age
+T7	Claim 825 987	Genetic study of the RET c634 proto-oncogene mutation, calcitonin levels and FNA (fine needle aspiration) and if positive, radical thyroidectomy will be performed
+T8	Premise 161 267	her mother was operated on for a thyroid tumor and a grandmother died 10 years ago from a pheochromocytoma
+T9	Claim 1171 1241	radical thyroidectomy is usually recommended before the age of 5 years
+R1	Support Ent1:T9 Ent2:T2	
+R2	Support Ent1:T2 Ent2:T6	
+T10	Diagnostics 366 388	blood pressure control
+T11	Diagnostics 329 360	Exhaustive physical examination
+T12	Diagnostics 449 485	Biochemical analysis with calcitonin
+T13	Diagnostics 552 620	Annual monitoring of calcitonin levels with pentagastrin stimulation
+T14	Treatment 653 679	prophylactic thyroidectomy
+T15	Diagnostics 684 737	Genetic study of the RET c634 proto-oncogene mutation
+T16	Treatment 756 790	prophylactic radical thyroidectomy
+T17	Diagnostics 825 878	Genetic study of the RET c634 proto-oncogene mutation
+T18	Diagnostics 880 897	calcitonin levels
+T19	Diagnostics 902 930	FNA (fine needle aspiration)
+T20	Treatment 948 969	radical thyroidectomy
+T21	Marker 1168 1170	so
+T22	Claim 1110 1167	Proto-oncogene carriers usually have early thyroid tumors
+R3	Support Ent1:T22 Ent2:T9	
+T23	Treatment 1171 1192	radical thyroidectomy
+T24	Disease 1153 1167	thyroid tumors

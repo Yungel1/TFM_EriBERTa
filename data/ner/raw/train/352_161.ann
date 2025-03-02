@@ -1,0 +1,23 @@
+T1	Claim 694 705	Colonoscopy
+T2	Premise 57 260	A 27-year-old woman referred to the gynecology office for evaluation referring dyspareunia for about 8 months, along with dyschezia and occasional rectorrhagia coinciding with menstruation for 3-4 months
+T3	Premise 262 341	She also reports dysmenorrhea for years, which she controls well with ibuprofen
+T4	Premise 343 408	She has been trying to get pregnant for 16 months without success
+T5	Premise 410 508	In the gynecological examination she only shows pain when pressing on the posterior vaginal fornix
+T6	Claim 608 631	Transvaginal ultrasound
+T7	Claim 636 658	Diagnostic laparoscopy
+T8	Claim 663 689	Magnetic resonance imaging
+T9	Claim 732 755	The correct answer is 2
+R1	Support Ent1:T9 Ent2:T7	
+T10	Claim 757 853	We are facing a suspicion of endometriosis, due to the symptoms and signs given in the statement
+T11	Disease 786 799	endometriosis
+T12	Marker 801 807	due to
+R2	Support Ent1:T2 Ent2:T10	
+R3	Support Ent1:T3 Ent2:T10	
+R4	Support Ent1:T4 Ent2:T10	
+R5	Support Ent1:T5 Ent2:T10	
+T13	Claim 855 979	We are asked for a diagnosis of certainty, and the Gold Standard for the diagnosis of this disease is diagnostic laparoscopy
+T14	Diagnostics 957 979	diagnostic laparoscopy
+T15	Diagnostics 694 705	Colonoscopy
+T16	Diagnostics 663 689	Magnetic resonance imaging
+T17	Diagnostics 636 658	Diagnostic laparoscopy
+T18	Diagnostics 608 631	Transvaginal ultrasound

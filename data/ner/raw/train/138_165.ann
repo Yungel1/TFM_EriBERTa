@@ -1,0 +1,36 @@
+T2	Premise 255 418	As history he refers that one month ago he presented an episode of otalgia, fever accompanied by irritability and that he was treated with amoxicillin 40 mg/kg/day
+T3	Treatment 394 418	amoxicillin 40 mg/kg/day
+T4	Claim 460 488	Recurrent acute otitis media
+T5	Disease 460 488	Recurrent acute otitis media
+T6	Claim 493 512	Serous otitis media
+T7	Disease 493 512	Serous otitis media
+T8	Claim 517 544	Simple chronic otitis media
+T9	Disease 517 544	Simple chronic otitis media
+T10	Claim 549 587	Chronic cholesteatomatous otitis media
+T11	Disease 549 587	Chronic cholesteatomatous otitis media
+T12	Claim 592 603	Mastoiditis
+T13	Disease 592 603	Mastoiditis
+T14	Claim 668 801	child with otalgia, but without fever or acute inflammatory signs: it is neither 1 (recurrent acute otitis media) nor 5 (mastoiditis)
+T15	Marker 688 691	but
+R1	Attack Ent1:T14 Ent2:T12	
+R2	Attack Ent1:T14 Ent2:T4	
+T1	Premise 77 157	A child who comes to the outpatient clinic because he brings his hand to his ear
+T16	Premise 159 200	without fever or acute inflammatory signs
+T17	Premise 209 253	on examination shows a pinkish/amber eardrum
+R3	Attack Ent1:T16 Ent2:T4	
+R4	Attack Ent1:T16 Ent2:T12	
+T18	Disease 752 780	recurrent acute otitis media
+T19	Disease 789 800	mastoiditis
+T20	Diagnostics 806 814	otoscopy
+T21	Claim 803 1010	On otoscopy, a pinkish and amber eardrum is observed: there are no scales, so it is not 4 (cholesteatomatous chronic otitis media); nor perforations or adhesions, so it is not 3 (simple chronic otitis media)
+T22	Disease 894 932	cholesteatomatous chronic otitis media
+T23	Disease 982 1009	simple chronic otitis media
+R5	Attack Ent1:T21 Ent2:T10	
+R6	Attack Ent1:T21 Ent2:T8	
+T24	Claim 1012 1080	Otoscopy is characteristic of serous otitis media (answer 2 correct)
+T25	Diagnostics 1012 1020	Otoscopy
+R7	Support Ent1:T24 Ent2:T6	
+R8	Support Ent1:T17 Ent2:T6	
+T26	Claim 1082 1271	It is known by ENT, pediatricians and family physicians that in the month following an acute otitis media, the middle ear is occupied by a mucous content whose evolution should be monitored
+R9	Support Ent1:T26 Ent2:T6	
+R10	Support Ent1:T2 Ent2:T6	

@@ -1,0 +1,23 @@
+T1	Premise 45 159	A 62-year-old man with type 2 diabetes mellitus of 10 years of evolution is treated with metformin and sitagliptin
+T2	Premise 161 222	He does little physical exercise and follows an adequate diet
+T3	Premise 224 285	In the last 6 months he has lost weight and has more asthenia
+T4	Premise 287 467	Her glycemic controls have deteriorated from baseline blood glucose levels of 110-140 mg/dL to 170-200 mg/dL, as well as her glycosylated hemoglobin which has gone from 7.1 to 8.5%
+T5	Claim 529 624	Increase dietary protein and long-chain carbohydrate intake to improve asthenia and weight loss
+T6	Claim 629 679	To associate a basal insulin dose to the treatment
+T7	Claim 684 718	Associate with ascarbose treatment
+T8	Claim 723 762	Substitute sitagliptin for pioglitazone
+T9	Claim 767 803	Substitute metformin for glimepiride
+T10	Claim 823 873	To associate a basal insulin dose to the treatment
+R1	Support Ent1:T10 Ent2:T6	
+T11	Premise 950 1062	Patient poorly controlled with metformin and sitagliptin with discrete cardinal symptoms (weight loss, asthenia)
+T12	Claim 1064 1146	The best option is insulin to control cardinal symptoms and decrease HbA1c to < 7%
+R2	Support Ent1:T11 Ent2:T10	
+R3	Support Ent1:T11 Ent2:T12	
+T13	Disease 600 608	asthenia
+T14	Disease 613 624	weight loss
+T15	Treatment 529 588	Increase dietary protein and long-chain carbohydrate intake
+T16	Treatment 629 679	To associate a basal insulin dose to the treatment
+T17	Treatment 684 718	Associate with ascarbose treatment
+T18	Treatment 723 762	Substitute sitagliptin for pioglitazone
+T19	Treatment 767 803	Substitute metformin for glimepiride
+T20	Treatment 838 856	basal insulin dose

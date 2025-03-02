@@ -1,0 +1,17 @@
+T1	Premise 42 248	Given a 7-month-old child with fever and irritability, bulging fontanel and a cerebrospinal fluid study with 110 cells/mm3 (75% lymphocytes), protein 120 mg/dl and glucose 28 mg/dl (serum glycemia 89 mg/dl)
+T2	Diagnostics 120 145	cerebrospinal fluid study
+T3	Claim 303 319	Viral meningitis
+T4	Claim 324 344	Bacterial meningitis
+T5	Claim 349 371	Tuberculous meningitis
+T6	Claim 376 398	Mononucleosis syndrome
+T7	Claim 403 426	Guillain-Barre syndrome
+T8	Disease 303 319	Viral meningitis
+T9	Disease 324 344	Bacterial meningitis
+T10	Disease 349 371	Tuberculous meningitis
+T11	Disease 376 398	Mononucleosis syndrome
+T12	Disease 403 426	Guillain-Barre syndrome
+T13	Claim 446 469	The correct answer is 3
+R1	Support Ent1:T13 Ent2:T5	
+T14	Claim 471 527	It defines a typical cerebrospinal fluid of tuberculosis
+R2	Support Ent1:T14 Ent2:T5	
+R3	Support Ent1:T1 Ent2:T5	

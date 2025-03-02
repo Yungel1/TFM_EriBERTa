@@ -1,0 +1,31 @@
+T1	Claim 750 812	Hypoxemic respiratory failure with compensated mixed alkalosis
+T2	Claim 672 745	Chronic hypoxemic respiratory failure with compensated metabolic acidosis
+T3	Claim 428 496	Hypoxemic respiratory failure with compensated respiratory alkalosis
+T4	Disease 428 496	Hypoxemic respiratory failure with compensated respiratory alkalosis
+T5	Claim 501 576	Acute metabolic alkalosis with hypoxemic and hypocapnic respiratory failure
+T6	Disease 501 576	Acute metabolic alkalosis with hypoxemic and hypocapnic respiratory failure
+T7	Claim 581 667	Chronic normocapnic respiratory insufficiency, without alteration of acid-base balance
+T8	Disease 581 667	Chronic normocapnic respiratory insufficiency, without alteration of acid-base balance
+T9	Disease 672 745	Chronic hypoxemic respiratory failure with compensated metabolic acidosis
+T10	Disease 750 812	Hypoxemic respiratory failure with compensated mixed alkalosis
+T11	Premise 77 261	A 67-year-old woman with a history of congestive heart failure (treated with ramipril and furosemide) and type 2 diabetes (treated with insulin) comes to the emergency room for dyspnea
+T12	Premise 263 370	Blood gas analysis performed while breathing room air shows pH 7.45, paO2 56, PaCO2 30 mm Hg, HCO3 26 mm Hg
+T13	Premise 862 988	The separate findings are: normal pH but with alkalosis tendency, acute respiratory failure, hypocapnia and normal bicarbonate
+T14	Claim 990 1037	The most appropriate answer seems to me to be 1
+T15	Marker 1039 1044	since
+T16	Premise 1045 1175	the patient does not present a metabolic alkalosis (bicarbonate would be higher), much less an acidosis (bicarbonate would be low)
+R1	Support Ent1:T13 Ent2:T14	
+R2	Support Ent1:T16 Ent2:T14	
+T17	Claim 1177 1237	The alkalosis is not mixed either, but is mainly respiratory
+R3	Support Ent1:T17 Ent2:T14	
+T18	Marker 1420 1429	Therefore
+T19	Claim 1430 1463	I believe the correct answer is 1
+T20	Premise 1320 1418	the kidney which always compensates later is starting to retain HCO3 to compensate and maintain pH
+T21	Premise 1239 1314	The patient is probably hyperventilating because of her respiratory failure
+R4	Support Ent1:T21 Ent2:T14	
+R5	Support Ent1:T20 Ent2:T14	
+R6	Support Ent1:T14 Ent2:T3	
+R7	Attack Ent1:T16 Ent2:T5	
+R8	Attack Ent1:T16 Ent2:T2	
+R9	Attack Ent1:T17 Ent2:T1	
+R10	Support Ent1:T19 Ent2:T3	

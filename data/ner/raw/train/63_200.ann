@@ -1,0 +1,18 @@
+T1	Claim 271 305	Tendon of the flexor carpi ulnaris
+T2	Claim 310 348	Tendon of the abductor pollicis longus
+T3	Claim 353 393	Tendon of the deep flexor of the fingers
+T4	Claim 398 425	Radial carpal flexor tendon
+T5	Claim 430 452	Palmaris longus tendon
+T6	Premise 39 146	A 31-year-old bricklayer comes to the emergency department with tenosynovitis caused by a penetrating wound
+T7	Premise 164 235	the ulnar bursa is found to be infected with consequent tendon necrosis
+T8	Claim 472 572	Both the flexor carpi radialis and the abductor pollicis longus are anatomically far from the ulnar.
+R1	Attack Ent1:T8 Ent2:T2	
+R2	Attack Ent1:T8 Ent2:T4	
+T9	Claim 573 640	The palmaris longus is medial, as is the flexor digitorum profundus
+R3	Attack Ent1:T9 Ent2:T5	
+T10	Claim 642 746	The tendon that runs alongside the ulnar nerve, inserting into the pisiform, is the flexor carpi ulnaris
+T11	Marker 748 752	thus
+T12	Claim 753 761	answer 1
+R4	Support Ent1:T12 Ent2:T1	
+R5	Support Ent1:T10 Ent2:T12	
+R6	Attack Ent1:T9 Ent2:T3	

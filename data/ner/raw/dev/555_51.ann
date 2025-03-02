@@ -1,0 +1,18 @@
+T1	Premise 45 176	55-year-old woman with type 1 diabetes diagnosed at age 15 years who refers nausea and abdominal distention, especially after meals
+T2	Premise 178 230	Evaluation is consistent with diabetic gastroparesis
+T3	Claim 335 347	Lansoprazole
+T4	Claim 352 363	Ondansetron
+T5	Claim 368 378	Loperamide
+T6	Claim 383 397	Metoclopramide
+T7	Claim 424 557	It was approved as a treatment for gastroparesis by the US Food and Drug Administration (FDA) in 1979 and remains the first-line drug
+T8	Claim 559 800	It acts as a prokinetic by its antagonistic effect on dopamine 2 (D2) receptors promoting gastric emptying and, in addition, binds to the 5-hydroxytryptamine 4 receptor (serotonin 5-HT4) to stimulate cholinergic nerve pathways in the stomach
+T9	Claim 802 1006	Physiologically, it accelerates intestinal transit by increasing the tone and amplitude of gastric contractions, increases lower esophageal sphincter pressure and improves antropyloroduodenal coordination
+T10	Claim 1008 1122	In addition, this antiemetic agent provides relief through antagonism of central and peripheral dopamine receptors
+R1	Support Ent1:T10 Ent2:T6	
+R2	Support Ent1:T9 Ent2:T6	
+R3	Support Ent1:T8 Ent2:T6	
+R4	Support Ent1:T7 Ent2:T6	
+T11	Treatment 335 347	Lansoprazole
+T12	Treatment 352 363	Ondansetron
+T13	Treatment 368 378	Loperamide
+T14	Treatment 383 397	Metoclopramide

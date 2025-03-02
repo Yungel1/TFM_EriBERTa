@@ -1,0 +1,10 @@
+QUESTION TYPE: SURGERY
+CLINICAL CASE: 
+An 87-year-old patient with a history of chronic bronchitis and heart failure, has been diagnosed with acute calculous cholecystitis . After four days of treatment with absolute diet, serum therapy and piperacillin/tazobactam, the patient continues with fever, persistent abdominal pain and leukocytosis. The most appropriate attitude at this time would be:
+1- Surgical treatment (urgent cholecystectomy).
+2- Biliary drainage by percutaneous cholecystostomy.
+3- Substitute metronidazole + cefotaxime for piperacillin/tazobactam.
+4- Replace piperacillin/tazobactam with amikacin+clindamycin.
+5- Add gentamicin.
+CORRECT ANSWER: 2
+I think the correct answer is 2 although the treatment for acute cholecystitis is cholecystectomy, for this it is necessary that the patient is a surgical candidate, in this case it is an elderly patient, with previous diseases that increase the surgical risk and would be an ASA IV for an urgent intervention. In these cases cholecystostomy can cure cholecystitis; and after recovery, assess scheduled surgery according to the patient's situation.

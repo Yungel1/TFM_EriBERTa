@@ -1,0 +1,27 @@
+T1	Premise 44 221	A 36-year-old man with no PA of interest comes to the emergency department with sudden onset of severe pain in the posterior aspect of the right lower limb extending to the foot
+T2	Premise 223 429	On examination he presented: Positive right Lasège at 10º, decreased strength in plantar flexion of the right foot, hypoesthesia in the external border of the right foot and absence of right Achilles reflex
+T3	Premise 431 505	The simple X-ray of the lumbar spine does not show significant alterations
+T4	Claim 565 585	Herniated disc L1/L2
+T5	Claim 590 608	Horsetail syndrome
+T6	Claim 613 634	L4/L5 disc herniation
+T7	Claim 639 659	Herniated disc L5/S1
+T8	Claim 686 731	Acute sciatica probably due to disc extrusion
+T9	Marker 710 716	due to
+T10	Disease 686 700	Acute sciatica
+T11	Claim 733 951	Both the sensory distribution, the paresis for plantar flexion (tiptoe) and the absence of the Achilles reflex are typical of S1 root involvement, which is typically affected with L5/S1 disc herniation (posterolateral)
+R1	Support Ent1:T2 Ent2:T11	
+T12	Disease 913 951	L5/S1 disc herniation (posterolateral)
+T13	Claim 953 1014	An L1/L2 (posterolateral) herniation would affect the L2 root
+T14	Claim 1016 1055	an L4/L5 herniation would affect the L5
+R2	Attack Ent1:T13 Ent2:T4	
+R3	Support Ent1:T1 Ent2:T11	
+R4	Attack Ent1:T14 Ent2:T6	
+R5	Attack Ent1:T1 Ent2:T13	
+R6	Attack Ent1:T1 Ent2:T14	
+T15	Claim 1060 1133	cauda equina would involve more symptomatology than simple S1 involvement
+R7	Attack Ent1:T15 Ent2:T5	
+R8	Attack Ent1:T2 Ent2:T15	
+T16	Disease 565 585	Herniated disc L1/L2
+T17	Disease 590 608	Horsetail syndrome
+T18	Disease 613 634	L4/L5 disc herniation
+T19	Disease 639 659	Herniated disc L5/S1

@@ -1,0 +1,10 @@
+QUESTION TYPE: CARDIOLOGY AND VASCULAR SURGERY
+CLINICAL CASE: 
+A patient with a history of febrile illness and chest pain comes to the hospital with dyspnea and tachypnea. On physical examination his blood pressure is low, jugular venous pressure is elevated with a deep descending sinus "X" and he has a paradoxical pulse. What pathology should you suspect?
+1- Ischemic heart disease.
+2- Dilated cardiomyopathy.
+3- Severe aortic stenosis.
+4- Constrictive pericarditis.
+5- Pericardial effusion with cardiac tamponade.
+CORRECT ANSWER: 5
+Paradoxical pulse is a drop in blood pressure > 10 mmHg during inspiration; it represents an exaggeration of the physiological phenomenon consisting of inspiratory lowering of BP (normal up to 10 mmHg). In cardiac tamponade, inspiration, which causes an increase in blood flow to the right chambers, increasing their volume, secondarily causes a displacement of the interventricular septum to the left, so that the left heart lodges and expels less blood during systole and the pulse, therefore, decreases. In a normal heart this exaggerated displacement, caused by the pressure exerted by the tamponade on the RV free wall, does not occur. Sinus X represents the systolic collapse of the venous pulse, i.e., the pressure drop due to atrial relaxation (also partly due to a downward displacement of the RV base during systole). Sinus Y represents the diastolic collapse of the venous pulse, i.e., the pressure drop that occurs from the moment blood enters the tricuspid valve into the ventricle. In cardiac tamponade, the deep sinus X is characteristic. In constrictive pericarditis, the deep Y sinus. For all these reasons, the correct answer is 5.

@@ -1,0 +1,29 @@
+T1	Premise 69 163	A 62-year-old patient who has had a pericardial bioprosthesis in mitral position for two years
+T2	Premise 165 216	He is admitted urgently for acute coronary syndrome
+T3	Premise 218 328	Two days later and after a favorable evolution, he suddenly presented heart failure with acute pulmonary edema
+T4	Claim 409 451	Acute post-infarction mitral insufficiency
+T5	Claim 456 481	Left ventricular aneurysm
+T6	Claim 486 517	Acute ventricular septal defect
+T7	Claim 522 557	Postinfarction atrial septal defect
+T8	Claim 562 629	Dysfunction of the bioprosthesis due to probable acute endocarditis
+T9	Disease 409 451	Acute post-infarction mitral insufficiency
+T10	Disease 456 481	Left ventricular aneurysm
+T11	Disease 486 517	Acute ventricular septal defect
+T12	Disease 522 557	Postinfarction atrial septal defect
+T13	Disease 562 594	Dysfunction of the bioprosthesis
+T14	Marker 595 601	due to
+T15	Disease 611 629	acute endocarditis
+T16	Claim 649 776	The valve is biological and, in general, the veils are not sewn to the papillary muscles, so we don't care what happens to them
+T17	Marker 739 741	so
+T18	Claim 778 855	A ventricular aneurysm depresses LVEF, but does not suddenly put you into PAD
+T19	Marker 817 820	but
+R1	Attack Ent1:T18 Ent2:T5	
+T20	Claim 857 1003	In contrast, a VSD sharply increases flow to the pulmonary bed, causing pulmonary edema, and is also one of the most frequent complications of AMI
+T21	Marker 857 868	In contrast
+R2	Support Ent1:T20 Ent2:T6	
+R3	Support Ent1:T3 Ent2:T20	
+T22	Claim 1005 1096	Ischemic ASD... I do not deny that it exists, but it does not even appear in the guidelines
+T23	Marker 1051 1054	but
+T24	Claim 1098 1151	And endocarditis would not require so many saddlebags
+R4	Attack Ent1:T24 Ent2:T8	
+R5	Attack Ent1:T22 Ent2:T7	

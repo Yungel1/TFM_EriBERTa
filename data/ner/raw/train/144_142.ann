@@ -1,0 +1,31 @@
+T1	Premise 42 137	A 13-year-old girl consults us for weight loss, asthenia, secondary amenorrhea and constipation
+T2	Premise 139 256	Examination revealed a temperature of 35ºC, weight below the 3rd percentile, bradycardia and orthostatic hypotension.
+T4	Diagnostics 257 273	Laboratory tests
+T5	Diagnostics 346 363	electrocardiogram
+T6	Claim 490 556	Suspect anorexia nervosa and inquire about intake, body image, etc
+T7	Claim 561 621	Suspect hypothyroidism and request TSH and thyroid hormones.
+T8	Claim 625 676	Suspect cardiomyopathy and request echocardiography
+T9	Claim 681 760	I would suspect celiac disease and request anti-transglutaminase IgA antibodies
+T10	Claim 765 821	Suspect panhypopituitarism and request a cranial CT scan
+T11	Claim 841 864	The correct answer is 1
+R1	Support Ent1:T11 Ent2:T6	
+T12	Disease 498 514	anorexia nervosa
+T13	Disease 569 583	hypothyroidism
+T14	Disease 633 647	cardiomyopathy
+T15	Disease 697 711	celiac disease
+T16	Disease 773 791	panhypopituitarism
+T17	Diagnostics 519 551	inquire about intake, body image
+T18	Diagnostics 588 620	request TSH and thyroid hormones
+T19	Diagnostics 660 676	echocardiography
+T20	Diagnostics 716 760	request anti-transglutaminase IgA antibodies
+T21	Diagnostics 806 821	cranial CT scan
+T22	Claim 866 959	The symptoms and signs described are the biological findings associated with anorexia nervosa
+R2	Support Ent1:T22 Ent2:T6	
+R3	Support Ent1:T1 Ent2:T6	
+R4	Support Ent1:T2 Ent2:T6	
+T23	Claim 961 1024	The ECG disturbances are derived from electrolyte disturbances.
+T3	Premise 257 334	Laboratory tests showed anemia with mild leukopenia, cholesterol of 230 mg/dL
+T24	Premise 339 426	on the electrocardiogram a flattened T wave with ST-segment elevation and prolonged QTc
+R5	Support Ent1:T24 Ent2:T23	
+T25	Disease 943 959	anorexia nervosa
+R6	Support Ent1:T23 Ent2:T6	

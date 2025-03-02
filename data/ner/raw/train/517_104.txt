@@ -1,0 +1,10 @@
+QUESTION TYPE: CRITICAL AND EMERGENCY CARE
+CLINICAL CASE: 
+A 34-year-old male is involved in a traffic accident and is attended at the scene of the accident. The medical personnel observe that he is pale, sweaty, has a thready pulse with a blood pressure of 90/50 mmHg, a heart rate of 127 bpm, a respiratory rate of 28 rpm and an oxygen saturation of 92%. He was infused with 20 ml/kg of crystalloids. During his transfer to the hospital his vital signs improve transiently and then deteriorate on arrival at the hospital. Point out the correct answer:
+1- Type-specific blood transfusion required.
+2- Requires emergency blood transfusion (O Rh negative).
+3- A possible blood transfusion with crossmatching tests should be prepared.
+4- Try again infusion of another 20 ml/kg of crystalloids.
+5- nan
+CORRECT ANSWER: 2
+In a polytraumatized patient, the first cause of shock is blood loss (hemorrhagic shock). The guidelines to follow should always contemplate the replenishment of blood volume (if possible, with blood products as early as possible) and control of the focus. In this case, given the vital compromise, the need for transfusion is very urgent, so the indication is emergency blood transfusion (O Rh negative).

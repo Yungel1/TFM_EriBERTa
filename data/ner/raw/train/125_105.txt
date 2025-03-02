@@ -1,0 +1,10 @@
+QUESTION TYPE: NEPHROLOGY
+CLINICAL CASE: 
+19-year-old woman, weight 60 kg, with acute dehydration due to long exposure to the sun. Blood pressure lying down 100/60 mmHg. Standing 70/50 mmHg with dizziness. Serum sodium levels 155 mmol/L. What is the most correct treatment, in the first 24 hours, taking into account the data available to us?
+1- Hypertonic saline (3%), 500 ml + 500 ml of 5% glucose.
+2- Hyposaline saline (0.45%), 3000 ml.
+3- Serum glucose 5% 1000 ml.
+4- Oral hydration with 1 liter of water.
+5- Isotonic saline (0.9%), 2000 ml.
+CORRECT ANSWER: 2
+This question is not an easy one. The available literature is somewhat controversial (some guidelines advise using glucose saline, others absolutely forbid it...) so I have decided to rely on the treatment recommended by Harrison, which is the manual that MIR examiners usually rely on. This girl presents with hypernatremia due to extrarenal free water losses. The goal is to replace the lost water and reduce the natremia at a rate of no more than 12 mmol/day. To calculate fluid therapy, the water deficit must first be calculated. Water def. Water = (Natremia-140/140)xTotal body water. TBW = Weight in kg x 0.4 in females/0.5 in males. In this case, the water deficit is: ([[tel:155-140/140|155-140/140]])x60x0.4 = 2.57 liters. There are only two answers that come close to this figure, but 2 seems more correct, as it is the only one that completely covers the water deficit and uses a hyposodium solution.

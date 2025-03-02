@@ -1,0 +1,15 @@
+T1	Claim 69 184	A 45-year-old man with a history of febrile illness and chest pain comes to the hospital with dyspnea and tachypnea
+T2	Claim 186 339	On physical examination his blood pressure is low, jugular venous pressure is elevated with a prominent descending sinus x and he has a paradoxical pulse
+T3	Claim 378 400	Dilated cardiomyopathy
+T4	Claim 405 448	Pericardial effusion with cardiac tamponade
+T5	Claim 453 478	Constrictive pericarditis
+T6	Claim 483 505	Ischemic heart disease
+T7	Claim 532 656	It is the classic exploration: he had a fever and pain, he had pericarditis with effusion, and now this is causing tamponade
+R1	Support Ent1:T7 Ent2:T4	
+T8	Marker 658 663	Hence
+T9	Premise 658 842	Hence the hypotension (his heart cannot fill well with blood and pump), jugular engorgement and dependence on respiration to achieve preload and cardiac output (i.e. paradoxical pulse)
+R2	Support Ent1:T9 Ent2:T7	
+T10	Disease 378 400	Dilated cardiomyopathy
+T11	Disease 405 448	Pericardial effusion with cardiac tamponade
+T12	Disease 453 478	Constrictive pericarditis
+T13	Disease 483 505	Ischemic heart disease

@@ -1,0 +1,65 @@
+T1	Premise 45 129	A 68-year-old woman who wears +4.00 diopter glasses for distance vision in both eyes
+T2	Premise 131 288	She consults because since a few weeks ago she has been having eye pain with headache and blurred vision at night when she is watching television in twilight
+T3	Claim 359 398	Glaucoma due to primary angular closure
+T4	Marker 368 374	due to
+T5	Claim 403 411	Migraine
+T6	Claim 416 433	Actinic keratitis
+T7	Claim 438 454	Dry eye syndrome
+T8	Claim 481 581	We are presented with a 68-year-old woman with moderate hyperopia and no history of cataract surgery
+R1	Support Ent1:T1 Ent2:T8	
+T9	Claim 583 899	This is not a mere coincidence: the fact that the patient is hyperopic is important, because the eyeballs of hyperopic patients are shorter, with a certain conflict of space in the anterior segment when the crystalline lens undergoes a process of intumescence secondary to age (what patients call incipient cataract)
+T10	Marker 668 675	because
+R2	Support Ent1:T8 Ent2:T9	
+T11	Claim 901 1114	In the clinical case, moreover, the ocular and headache pain occurs in scotopic situations, or in situations of dim ambient lighting, which produces an average mydriasis to optimize the light influx to the eyeball
+T12	Marker 923 931	moreover
+R3	Support Ent1:T2 Ent2:T11	
+T13	Claim 1116 1307	It is evident, therefore, that the patient suffers from primary angular closure processes that possibly self-resolve when the triggering situation ceases, and not a true acute glaucoma attack
+T14	Marker 1131 1140	therefore
+R4	Support Ent1:T11 Ent2:T13	
+T15	Marker 1275 1278	not
+T16	Disease 1172 1195	primary angular closure
+T17	Disease 1286 1307	acute glaucoma attack
+T18	Claim 1309 1428	But these intermittent angular closures are contemplated within the spectrum of glaucoma due to primary angular closure
+T19	Claim 1430 1446	option 1 correct
+T20	Marker 1309 1312	But
+R5	Support Ent1:T13 Ent2:T18	
+R6	Support Ent1:T18 Ent2:T19	
+R7	Support Ent1:T19 Ent2:T3	
+T21	Claim 1449 1540	Migraine, not being a Neurology question, can sometimes be a confounder in the usual clinic
+T22	Disease 1449 1457	Migraine
+T23	Claim 1542 1806	however, patients are usually younger, or at least have a clear history of migraine, and, above all, they present symptomatologic worsening with intense sensory stimuli (photophobia and phonophobia), but symptoms are not worsened precisely in cases of dim lighting
+T24	Marker 1542 1549	however
+R8	Attack Ent1:T1 Ent2:T23	
+T25	Marker 1632 1641	above all
+T26	Marker 1742 1745	but
+T27	Claim 1808 1826	option 2 incorrect
+R9	Support Ent1:T23 Ent2:T27	
+R10	Attack Ent1:T23 Ent2:T21	
+R11	Attack Ent1:T27 Ent2:T5	
+T28	Disease 359 367	Glaucoma
+T29	Disease 375 398	primary angular closure
+T30	Disease 403 411	Migraine
+T31	Claim 1829 1965	Actinic keratitis occurs precisely in patients exposed to ultraviolet radiation that is not properly filtered before reaching the cornea
+T32	Disease 1829 1846	Actinic keratitis
+T33	Claim 1967 2120	it is typical of welders (it is called welder's keratitis), skiers and other people with very intense light exposures and without adequate eye protection
+T34	Claim 2122 2136	wrong option 3
+R12	Support Ent1:T31 Ent2:T34	
+R13	Support Ent1:T33 Ent2:T34	
+R14	Attack Ent1:T34 Ent2:T6	
+T35	Claim 2139 2189	Dry eye syndrome does not usually produce headache
+T36	Disease 2139 2155	Dry eye syndrome
+R15	Attack Ent1:T2 Ent2:T35	
+T37	Claim 2195 2351	ocular discomfort does not go beyond the persistent discomfort that patients might define as pain because of its recently more studied neuropathic component
+T38	Marker 2293 2300	because
+R16	Attack Ent1:T2 Ent2:T37	
+T39	Marker 2403 2406	but
+T40	Claim 2353 2490	Some forms of dry eye may be worse in the evening but others are worse in the morning, and it depends mainly on the frequency of blinking
+T41	Claim 2492 2595	In addition, dry eye syndrome is an outdated term; nowadays it is preferred to speak of dry eye disease
+T42	Claim 2597 2615	incorrect option 4
+R17	Support Ent1:T35 Ent2:T42	
+R18	Support Ent1:T37 Ent2:T42	
+T43	Disease 2580 2595	dry eye disease
+T44	Disease 2505 2521	dry eye syndrome
+R19	Attack Ent1:T42 Ent2:T7	
+T45	Disease 416 433	Actinic keratitis
+T46	Disease 438 454	Dry eye syndrome

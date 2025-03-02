@@ -1,0 +1,10 @@
+QUESTION TYPE: DIGESTIVE
+CLINICAL CASE: 
+A 43-year-old male with no past history of interest consults for a ten-day history of jaundice of the skin and mucous membranes, choluria and acholia. He does not report abdominal pain, weight loss or other symptoms, except generalized pruritus. She denies alcohol consumption. She does not take any medication except occasional ibuprofen for muscle pain after sports activities. The CBC shows increased bilirubin at the expense of direct bilirubin. An urgent ultrasound shows a normal liver, vesicular cholesterosis and absence of bile duct dilatation, with no other alterations of interest. What is the most likely diagnosis?
+1- Acute cholangitis due to biliary mud.
+2- Toxic hepatitis due to ibuprofen.
+3- Cholangiocarcinoma.
+4- Gilbert's syndrome.
+5- nan
+CORRECT ANSWER: 2
+We believe that this question is open to challenge. Ibuprofen hepatitis is a rare adverse effect with a prevalence of about 3.7/100,000 users and 1.1/100,000 prescriptions. It appears that it may be related to dose and duration of treatment, but there is little evidence on this. Among the NSAIDs with the highest risk are diclofenac and sulindac. In terms of frequency, the prevalence of cholangiocarcinoma is 2/100,000 patients, a very comparable frequency. The absence of bile duct dilatation in cholangiocarcinomas can be seen in cases of intrahepatic cholangiocarcinomas or in those with mixed histology with hepatocarcinoma. It is true that the acute course and the absence of constitutional syndrome may make us think against this option and tip the balance towards ibuprofen hepatitis. Regarding the other options: acute cholangitis is characterized by the triad of jaundice, abdominal pain and fever; Gilbert's syndrome is an increase in bilirubin at the expense of indirectness.

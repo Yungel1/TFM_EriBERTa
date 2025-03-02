@@ -1,0 +1,10 @@
+QUESTION TYPE: ENDOCRINOLOGY
+CLINICAL CASE: 
+A 49-year-old man who consults for severe polyuria and polydipsia and unintentional weight loss of 10 kg and is diagnosed with diabetes mellitus due to a plasma blood glucose of 322 mg/dL and a glycosylated hemoglobin of 9.8%. His physician gave him dietary recommendations, the convenience of physical exercise, and he started treatment with metformin 850 mg/12 hours and glimepiride 6 mg/day. In the following weeks the glycemic controls are progressively reduced. At 4 months glycemia is 94 mg/dL and HbA1c is 5.9%. The patient complains of frequent episodes of dizziness, epigastric pain, blurred vision, sweating and tremor, which improve with food and occur mainly in the late morning and late afternoon. What modification would you propose in his treatment?
+1- Review dietary carbohydrate distribution.
+2- Discontinue metformin.
+3- Discontinue sulfonylurea.
+4- Substitute metformin with a DPP4 inhibitor.
+5- nan
+CORRECT ANSWER: 3
+Discontinue sulfonylurea because of Risk of hypoglycemia.

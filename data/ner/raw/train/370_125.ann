@@ -1,0 +1,18 @@
+T1	Premise 64 142	A former smoker patient, previously diagnosed with COPD comes in for a checkup
+T2	Premise 144 212	The physical examination reveals digital hypokratism of recent onset
+T3	Claim 309 328	Pulmonary carcinoma
+T4	Claim 333 347	Bronchiectasis
+T5	Claim 352 370	Pulmonary fibrosis
+T6	Claim 375 397	Cyanotic heart disease
+T7	Claim 424 546	In a digital hypokratitis of recent onset in a smoking patient, the first option to rule out is bronchopulmonary carcinoma
+R1	Support Ent1:T1 Ent2:T7	
+T8	Marker 508 516	rule out
+T9	Disease 520 546	bronchopulmonary carcinoma
+R2	Support Ent1:T2 Ent2:T7	
+T10	Disease 309 328	Pulmonary carcinoma
+T11	Disease 333 347	Bronchiectasis
+T12	Disease 352 370	Pulmonary fibrosis
+T13	Disease 375 397	Cyanotic heart disease
+T14	Claim 548 600	Other pathologies can also occur but not so suddenly
+T15	Marker 581 584	but
+R3	Support Ent1:T7 Ent2:T3	

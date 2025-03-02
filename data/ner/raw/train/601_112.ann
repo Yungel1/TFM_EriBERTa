@@ -1,0 +1,13 @@
+T1	Premise 44 311	A 61-year-old woman, administrative, with a history of overweight, hypertension, dyslipidemia and metabolic syndrome, who consults for pain in both buttocks, left trochanteric region, lateral aspect of the left thigh up to the knee and left leg up to the middle third
+T2	Premise 313 423	The pain appears when the lower limb is lifted with the knee extended, but is relieved when the knee is flexed
+T3	Claim 466 497	Gouty arthritis of the left hip
+T4	Claim 502 528	Left coxofemoral arthrosis
+T5	Claim 533 571	Radiated low back pain / lumbosciatica
+T6	Claim 576 610	Claudication due to canal stenosis
+T7	Claim 637 825	Positive Lasegue's sign, reappearance of the symptoms when performing the extension maneuver of the affected limb, compatible with involvement of nerve roots at the lumbosacral spine level
+R1	Support Ent1:T2 Ent2:T7	
+R2	Support Ent1:T7 Ent2:T5	
+T8	Disease 466 496	Gouty arthritis of the left hi
+T9	Disease 502 528	Left coxofemoral arthrosis
+T10	Disease 533 571	Radiated low back pain / lumbosciatica
+T11	Disease 576 610	Claudication due to canal stenosis

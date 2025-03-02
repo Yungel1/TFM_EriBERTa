@@ -1,0 +1,20 @@
+T1	Premise 57 148	A 24-year-old woman, primigestation, suffers a spontaneous abortion at 7 weeks of gestation
+T2	Premise 150 227	The anatomopathological study of the abortive remains indicates molar disease
+T3	Claim 259 321	The risk of a new molar gestation in a future pregnancy is 50%
+T4	Claim 326 447	She should not become pregnant until she has undergone periodic controls and has spent one year with negative BHCG levels
+T5	Claim 452 548	Subsequent controls are not necessary if the evacuation of the trophoblastic tissue was complete
+T6	Claim 553 673	It is necessary to carry out periodic controls since 40% of the cases will develop a gestational trophoblastic neoplasia
+T7	Claim 700 755	Gestational trophoblastic disease should be followed up
+T8	Claim 824 932	the patient should be advised not to become pregnant again until at least 6 months with negative BHCG titers
+T9	Marker 883 888	until
+R1	Support Ent1:T8 Ent2:T4	
+T10	Claim 934 991	The risk of recurrence in another pregnancy is low (1/55)
+R2	Attack Ent1:T10 Ent2:T3	
+T11	Claim 757 818	regardless of whether the evacuation has been complete or not
+T12	Marker 757 770	regardless of
+R3	Support Ent1:T11 Ent2:T7	
+T13	Claim 996 1061	90% of cases progress satisfactorily without developing neoplasia
+R4	Attack Ent1:T13 Ent2:T6	
+R5	Attack Ent1:T7 Ent2:T5	
+R6	Attack Ent1:T11 Ent2:T5	
+T14	Disease 638 673	gestational trophoblastic neoplasia

@@ -1,0 +1,10 @@
+QUESTION TYPE: ENDOCRINOLOGY
+CLINICAL CASE: 
+What is the treatment of choice for a 38-year-old man diagnosed with Cushing's disease in relation to a pituitary macroadenoma of 22 mm in diameter?
+1- Initially try medical treatment and, if not effective, resort to surgery.
+2- Adrenalectomy.
+3- Selective surgical resection of the adenoma.
+4- Radiotherapy to try to reduce tumor size.
+5- nan
+CORRECT ANSWER: 3
+Although the majority of ACTH-producing adenomas recur, surgery is always the first therapeutic option. The available medications (ketoconazole, somatostatin analogues) are aimed at decreasing the effects of excess cortisol or decreasing ACTH release, but they are not curative.

@@ -1,0 +1,10 @@
+QUESTION TYPE: PEDIATRICS
+CLINICAL CASE: 
+A 10-year-old boy is brought to the Emergency Department because for the last 2 hours he has been involuntarily turning his neck to the right associated with marked cervical pain at each turn. The grandmother subsequently tells us that he has been vomiting since yesterday, so she gave him a syrup; what would be the most appropriate therapeutic approach?
+1- Inject an intravenous anticholinergic.
+2- Do not treat until an electroencephalogram is performed in the following days.
+3- Do not treat until the result of the cerebrospinal fluid culture is known in the next few days.
+4- Call the on-call psychiatrist.
+5- Start an intravenous antibiotic after obtaining a pharyngeal swab.
+CORRECT ANSWER: 1
+The correct answer is 1. The anticholinergic can be administered intravenously and also intramuscularly if I am not mistaken. The occurrence of dystonia as a side effect is common in children and is one of the main reasons why pediatricians do not usually prescribe some antiemetics in children.

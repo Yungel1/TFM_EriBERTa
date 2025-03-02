@@ -1,0 +1,10 @@
+QUESTION TYPE: PEDIATRICS
+CLINICAL CASE: 
+Given sudden-onset obsessive-compulsive disorder (OCD) in a 9-year-old boy who also has tics and chorea as neurologic manifestations, an infection by should be ruled out:
+1- Streptococcus viridans.
+2- Alpha-hemolytic streptococcus.
+3- Beta-hemolytic streptococcus, group A.
+4- Enterococcus.
+5- nan
+CORRECT ANSWER: 3
+We are presented with a case of PANDAS syndrome, a rare complication of an infection caused by group A beta-hemolytic streptococcus.

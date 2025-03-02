@@ -1,0 +1,17 @@
+T1	Premise 57 421	A 64-year-old woman, without relevant comorbidities, operated on for a right breast cancer by means of an extended lumpectomy and selective sentinel lymph node biopsy, with the following anatomopathological result: Infiltrating ductal carcinoma poorly dlferentiated (grade 3), size 2.2 cm (pT2), estrogen and progesterone receptor positive, Ki67 25%, HER2 negative
+T2	Premise 423 565	There is macroscopic involvement of the sentinel lymph node, although there is no involvement of the rest of the isolated axillary nodes (pN1)
+T3	Claim 654 709	Adjuvant hormone therapy including aromatase inhibitors
+T4	Claim 714 808	Adjuvant chemotherapy, preferably with anthracyclines and taxanes, followed by hormone therapy
+T5	Claim 813 919	Adjuvant chemotherapy in association with the monoclonal antibody trastuzumab, followed by hormone therapy
+T6	Claim 924 989	Adjuvant chemotherapy, preferably with anthracyclines and taxanes
+T7	Claim 1016 1033	It is a Luminal B
+T8	Claim 1035 1112	According to the SEGO, this patient is a candidate for chemotherapy treatment
+T9	Premise 1113 1178	because of the high histologic grade and high tumor proliferation
+T10	Marker 1113 1123	because of
+R1	Support Ent1:T9 Ent2:T8	
+R2	Support Ent1:T1 Ent2:T9	
+R3	Support Ent1:T8 Ent2:T4	
+T11	Treatment 654 709	Adjuvant hormone therapy including aromatase inhibitors
+T12	Treatment 714 808	Adjuvant chemotherapy, preferably with anthracyclines and taxanes, followed by hormone therapy
+T13	Treatment 813 919	Adjuvant chemotherapy in association with the monoclonal antibody trastuzumab, followed by hormone therapy
+T14	Treatment 924 989	Adjuvant chemotherapy, preferably with anthracyclines and taxanes

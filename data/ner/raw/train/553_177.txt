@@ -1,0 +1,10 @@
+QUESTION TYPE: DERMATOLOGY
+CLINICAL CASE: 
+33-year-old patient, resident of Valencia, who consults for presenting on the right cheek an erythematous-orange plaque after an insect bite that has been growing slowly until reaching 1.5 cm and that in the last weeks has ulcerated and covered with a scammocostra. The lesion only causes discrete discomfort if scratched. The patient has a history of plaque psoriasis treated with subcutaneous adalimumab. She is in good general condition and does not take any other drugs and does not report any drug allergies. Indicate the treatment you would use:
+1- Oral isotretinoin.
+2- Intralesional meglumine antimoniate.
+3- Systemic corticosteroids.
+4- Oral amoxicillin.
+5- nan
+CORRECT ANSWER: 2
+The fact that the place of residence is mentioned already gives us many clues. A "bite" that transforms into a lesion in an uncovered area with a crusty surface and that bothers little or nothing... in the Mediterranean basin this is cutaneous leishmaniasis or oriental button. And while it is true that the lesion is < 4 cm and unique, we are told that the patient is being treated with adalimumab, an anti-TNF monoclonal antibody. With the exception of meglumine antimoniate, none of the other treatments proposed in the different options are indicated in leishmaniasis, so it is clear. The only thing that is more debatable is that, as this is an immunosuppressed patient, systemic treatment would probably be more appropriate. I don't know if for that reason contestable, but at least, debatable.

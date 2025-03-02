@@ -1,0 +1,25 @@
+T1	Premise 45 118	Elizabeth has three sons and one daughter (Mary), all of whom are healthy
+T2	Premise 120 216	A brother and a maternal uncle of Isabel died of Duchenne disease: an X-linked recessive disease
+T3	Premise 218 332	At present, Maria wants to become pregnant and wants to know the risk of transmitting the disease to her offspring
+T4	Claim 431 434	2/3
+T5	Claim 439 442	1/2
+T6	Premise 367 426	the probability that Maria is a carrier of Duchenne disease
+T7	Claim 447 450	1/4
+T8	Claim 455 468	Less than 1/4
+T9	Premise 495 583	The maternal grandmother carried the mutation in one copy of the gene on an X chromosome
+T10	Premise 585 691	we are not told that she had the disease, but a son of hers, Isabel's maternal uncle, did have the disease
+T11	Claim 694 731	Isabel's mother continues to carry it
+T12	Premise 739 812	one of Isabel's brothers has suffered from the disease but not her father
+T13	Marker 733 738	since
+R1	Support Ent1:T12 Ent2:T11	
+R2	Support Ent1:T9 Ent2:T11	
+T14	Claim 814 896	Thus, Isabel has a 50% chance of having inherited the mutated gene from her mother
+T15	Marker 814 818	Thus
+T16	Premise 901 929	her children are all healthy
+T17	Marker 898 900	as
+T18	Claim 931 966	we are not sure if she is a carrier
+R3	Support Ent1:T16 Ent2:T18	
+T19	Claim 973 1070	therefore her daughter has a 25% chance of having inherited the mutated gene from her grandmother
+R4	Support Ent1:T14 Ent2:T19	
+R5	Support Ent1:T19 Ent2:T7	
+T20	Marker 973 982	therefore

@@ -1,0 +1,10 @@
+QUESTION TYPE: GENETICS AND IMMUNOLOGY
+CLINICAL CASE: 
+A 43-year-old man consults for diarrheal syndrome, and refers among his history 3 pneumonias in adulthood. Which of the following immunological studies should we request:
+1- Serum immunoglobulin count and antibody production capacity test.
+2- Phagocytosis test and oxidative metabolism of neutrophils.
+3- Apoptosis test (programmed cell death) in the patient's circulating lymphocytes.
+4- Study of the repertoire and clonality of T lymphocytes (alpha/beta).
+5- In this patient it would not be appropriate to request any immunological study.
+CORRECT ANSWER: 1
+More than 2 lobar pneumonias make it necessary to rule out an immunologic deficit.

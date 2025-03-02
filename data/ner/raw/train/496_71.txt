@@ -1,0 +1,10 @@
+QUESTION TYPE: MEDICAL ONCOLOGY
+CLINICAL CASE: 
+40-year-old patient, with normal physical examination, in whom a mediastinal mass and a hepatic nodule have been evidenced in the CT scan, and in the CBC a serum elevation of lactic dehydrogenase (LDH), human chorionic betagonadotropin (beta-HCG) and alpha-fetoprotein.What is your diagnostic suspicion. What is your diagnostic suspicion:
+1- Metastatic hepatocarcinoma.
+2- Extragonadal metastatic seminoma.
+3- Mediastinal lymphoma.
+4- Metastatic extragonadal nonseminomatous germ cell cancer.
+5- nan
+CORRECT ANSWER: 4
+Very typical too. In the ED it can be diagnosed with a pregnancy test (in males), because it detects that beta HCG in urine. Hepatocarcinoma can elevate (alone) alpha-fetus, seminoma LDH, lymphoma also LDH.

@@ -1,0 +1,10 @@
+QUESTION TYPE: NEPHROLOGY
+CLINICAL CASE: 
+A 19-year-old male with no past history of interest comes to the emergency department because after a respiratory infection he presents with asthenia, malaise, oliguria and headache. Physical examination: BP 210/120 mmHg, fundus with hypertensive retinopathy grade III. Laboratory tests: Hb 7.4 g/dl, platelets 85,000/mm3, 2-3 schistocytes in the peripheral blood smear, LDH 950 IU/ml, serum creatinine 8.75 mg/dl. Urine system: proteinuria 300 mg/dl, sediment 15 red blood cells per field. ADAMTS-13 levels are normal. Given these findings, what would be your main diagnostic suspicion?
+1- Thrombotic thrombocytopenic purpura.
+2- Atypical hemolytic uremic syndrome.
+3- Disseminated intravascular coagulation.
+4- Typical hemolytic uremic syndrome.
+5- nan
+CORRECT ANSWER: 2
+Difficult question. The patient presents with thrombotic microangiopathy (TMA) with acute renal failure. This points to HUS, TTP, drug-induced TMA, or TMA mediated by complement, coagulation, or metabolism. Normal ADAMTS-13 levels rule out TTP (incorrect choice 1). The absence of gastrointestinal symptoms rules out typical Shiga toxin HUS (incorrect choice 4). Pneumococcal infections can also cause HUS, although it is rare and more so in adults. The history of respiratory infection (not specified, it could be pneumococcal pneumonia) together with the absence of DIC data (no mention of bleeding or altered coagulation tests) makes me think of atypical HUS (option 2 correct).

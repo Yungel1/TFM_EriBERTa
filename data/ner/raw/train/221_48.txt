@@ -1,0 +1,10 @@
+QUESTION TYPE: ANATOMIC PATHOLOGY
+CLINICAL CASE: 
+A 20-year-old man with ataxia, headaches and solid-cystic mass in the right cerebellar hemisphere underwent surgery and a lesion was resected, histologically showing cells with long thin cytoplasmic processes, fascicular and microcystic pattern, numerous vessels and Rosenthal's fibers. The most probable anatomopathologic diagnosis is:
+1- Pilocytic astrocytoma.
+2- Pleomorphic xanthoastrocytoma.
+3- Central neurocytoma.
+4- Liponeurocytoma.
+5- Prion disease.
+CORRECT ANSWER: 1
+A question that does not seem to have a second intention, as there are no confusing elements. The statement concisely summarizes the description of pilocytic astrocytoma. The Rosenthal fibers may confuse us as they are not very specific, and make us think, for example, of pleomorphic xanthoastrocytoma in which they can also be found, but the cell morphology described (long and thin cytoplasmic processes, which are the ones that give the name "pilocytic") keeps us the first option as the correct one. We can find a good description of the entity, explaining what distinguishes it from other glial tumors in Practical Surgical Neuropathology. A Diagnostic Approach. A. Perry, D.J. Brat. p82-88. Churchill Livingstone Elsevier. 2010. (Philadephia).

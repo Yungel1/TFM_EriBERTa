@@ -1,0 +1,10 @@
+QUESTION TYPE: ENDOCRINOLOGY
+CLINICAL CASE: 
+A patient with obesity (body mass index 38) is referred to your office. In the clinical history the patient refers that he/she has been obese since the age of 17 (currently 36 years old), having been on multiple diets with weight loss ranging from 5 to 10 kg but has subsequently regained weight. The patient is currently on a 1500 Kcal diet (self-administered and not restricted in fat) with a good follow-up of this diet, performing one hour of aerobic exercise 4 days a week. She has lost 3 kg but needs an additional loss of 7 kg more. Given the possibility of adding a drug against obesity, which one would you use to reduce fat absorption?
+1- Orlistat.
+2- Topiramate.
+3- Sibutramine.
+4- Liraglutide.
+5- Metformin.
+CORRECT ANSWER: 1
+Orlistat acts by decreasing fat absorption; it is currently the only drug approved for use in obesity.

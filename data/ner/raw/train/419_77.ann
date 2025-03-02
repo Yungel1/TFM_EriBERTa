@@ -1,0 +1,34 @@
+T1	Premise 47 193	An 80-year-old woman comes to the emergency department with abdominal pain starting in the epigastrium and radiating later to the left iliac fossa
+T2	Premise 195 301	An abdominal CT scan is performed, showing inflammation of the sigmoid walls and a 2 cm mesenteric abscess
+T3	Claim 334 414	Admission to the ward with absolute diet and broad-spectrum antibiotic treatment
+T4	Claim 419 438	Discharge colostomy
+T5	Claim 443 475	Drainage by laparoscopic surgery
+T6	Claim 480 540	Urgent surgery with sigmoidectomy and colorectal anastomosis
+T7	Claim 567 686	In this question we are presented with a clinical picture whose manifestations are compatible with acute diverticulitis
+T8	Disease 666 686	acute diverticulitis
+T9	Premise 736 832	A case of acute diverticulitis complicated with small mesenteric abscess (< 2-3 cm) is presented
+R1	Support Ent1:T9 Ent2:T7	
+T10	Disease 746 766	acute diverticulitis
+T11	Claim 834 896	Abscesses should be drained by CT-guided percutaneous puncture
+T12	Claim 904 982	the intra-abdominal approach can spread the contents into the abdominal cavity
+T13	Marker 898 903	since
+R2	Support Ent1:T12 Ent2:T11	
+T14	Claim 984 1239	However, in small abscesses with Hinchey grade I divertciulitis, in patients without great deterioration of the general condition as in the proposed case, they can be managed by conservative treatment with intravenous antiobiotic therapy and absolute diet
+T15	Marker 984 991	However
+R3	Attack Ent1:T14 Ent2:T11	
+R4	Support Ent1:T14 Ent2:T3	
+T16	Claim 1241 1274	therefore the correct option is 1
+R5	Support Ent1:T9 Ent2:T14	
+T17	Marker 1241 1250	therefore
+T18	Claim 1276 1628	The urgent surgical approach should be reserved for cases that present peritonitis (grade III, IV) by resection of the affected segment and primary anastomosis in stable patients or carry out the Hartamn intervention that includes resection with terminal colostomy and closure of the distal rectal stump performing anastomosis in a second surgical time
+R6	Attack Ent1:T18 Ent2:T6	
+R7	Attack Ent1:T18 Ent2:T5	
+R8	Attack Ent1:T18 Ent2:T4	
+T19	Treatment 334 374	Admission to the ward with absolute diet
+T20	Treatment 379 415	broad-spectrum antibiotic treatment.
+T21	Treatment 419 438	Discharge colostomy
+T22	Treatment 443 475	Drainage by laparoscopic surgery
+T23	Treatment 480 513	Urgent surgery with sigmoidectomy
+T24	Treatment 518 540	colorectal anastomosis
+R9	Support Ent1:T16 Ent2:T3	
+R10	Support Ent1:T14 Ent2:T16	

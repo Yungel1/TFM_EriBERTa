@@ -1,0 +1,31 @@
+T1	Premise 42 201	A 58-year-old woman, weight 130 kg, height 155 cm, body mass index > 30 with mild hypertension, blood glucose 108 mg/dL and absence of edema in the lower limbs
+T2	Premise 203 290	Blood analysis showed Cr 2.0 mg/dL, Urea 86 mg/dL, Alb 3.8 g/1, Na 142 mEq/L, K 4 mEq/L
+T3	Diagnostics 203 217	Blood analysis
+T4	Premise 292 379	In urinalysis: sediment without alterations and in 24 h urine proteinuria of 6.3 g/24 h
+T5	Diagnostics 295 305	urinalysis
+T6	Claim 446 485	Secondary membranous glomerulonephritis
+T7	Claim 490 528	Focal and segmental glomerulonephritis
+T8	Claim 533 548	IgA nephropathy
+T9	Claim 553 591	Rapidly progressive glomerulonephritis
+T10	Claim 596 622	Minimal change nephropathy
+T11	Claim 642 666	The correct answer is: 2
+R1	Support Ent1:T11 Ent2:T7	
+T12	Claim 668 702	Focal segmental glomerulonephritis
+R2	Support Ent1:T12 Ent2:T11	
+T13	Disease 446 485	Secondary membranous glomerulonephritis
+T14	Disease 490 528	Focal and segmental glomerulonephritis
+T15	Disease 533 548	IgA nephropathy
+T16	Disease 553 591	Rapidly progressive glomerulonephritis
+T17	Disease 596 622	Minimal change nephropathy
+T18	Premise 704 794	We are in front of a patient with renal insufficiency whose manifestation is a proteinuria
+R3	Support Ent1:T4 Ent2:T18	
+T19	Claim 796 928	That places us in the picture of nonproliferative GN (membranous, focal and segmental and minimal changes, discarding the other two)
+R4	Support Ent1:T18 Ent2:T19	
+R5	Support Ent1:T19 Ent2:T6	
+R6	Support Ent1:T19 Ent2:T7	
+R7	Attack Ent1:T19 Ent2:T8	
+R8	Attack Ent1:T19 Ent2:T9	
+R9	Support Ent1:T19 Ent2:T10	
+T20	Claim 930 1069	If we also consider that the patient was obese, slightly hypertensive, the most probable is that it is a focal segmental glomerulonephritis
+R10	Support Ent1:T20 Ent2:T7	
+R11	Support Ent1:T1 Ent2:T20	

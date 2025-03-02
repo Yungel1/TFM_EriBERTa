@@ -1,0 +1,36 @@
+T1	Premise 57 242	A 43-year-old woman referred to the Hospital's Lower Genital Tract Pathology Clinic for presenting with a cervico-vaginal cytology reported as "L-SIL" (Low Grade Intraepithelial Lesion)
+T2	Premise 244 358	She refers repeated vaginal infections (Trichomoniasis,...) and having had more than 5 sexual partners in her life
+T3	Claim 405 435	Conization with diathermy loop
+T4	Claim 440 487	Endocervical curettage with Kevorkian curettage
+T5	Claim 492 531	Endometrial biopsy with Cornier cannula
+T6	Claim 536 568	Hysterectomy without adnexectomy
+T7	Claim 573 652	Advise her to stop smoking and contraceptives and to have a control in 6 months
+T8	Claim 672 716	The best answer to this question is number 5
+T9	Claim 718 791	Most of the lesions identified as L-SIL are associated with HPV infection
+T10	Claim 793 903	for this reason, it is advisable to stop smoking, as this is a factor in the progression of the said infection
+R1	Support Ent1:T9 Ent2:T10	
+R2	Support Ent1:T10 Ent2:T8	
+T11	Claim 905 1192	On the other hand, according to the latest studies, 70% of the cytologies reported as LSIL will remit, 15% will persist and another 15% will show a more severe cytology, without being able to differentiate whether it is a biological progression or a lesion hidden in the initial cytology
+T12	Claim 1194 1259	Because of this, it is best to return for a follow-up at 6 months
+R3	Support Ent1:T11 Ent2:T12	
+T13	Marker 1194 1204	Because of
+T14	Marker 905 922	On the other hand
+T15	Premise 1261 1359	Given the woman's personal history (more than 5 sexual partners and repeat infections) and her age
+T16	Claim 1361 1401	a referral for colposcopy would be ideal
+R4	Support Ent1:T15 Ent2:T16	
+T17	Claim 1403 1520	However, answer 5 says control in 6 months, but does not specify which control (it could be a colposcopy or cytology)
+T18	Marker 1403 1410	However
+R5	Support Ent1:T8 Ent2:T7	
+R6	Support Ent1:T12 Ent2:T7	
+T19	Marker 1447 1450	but
+T20	Diagnostics 1497 1507	colposcopy
+T21	Diagnostics 1511 1519	cytology
+T22	Diagnostics 1376 1386	colposcopy
+R7	Support Ent1:T16 Ent2:T7	
+R8	Support Ent1:T17 Ent2:T7	
+T23	Treatment 405 435	Conization with diathermy loop
+T24	Treatment 587 618	stop smoking and contraceptives
+T25	Diagnostics 492 531	Endometrial biopsy with Cornier cannula
+T26	Diagnostics 440 487	Endocervical curettage with Kevorkian curettage
+T27	Treatment 536 568	Hysterectomy without adnexectomy
+T28	Disease 200 242	"L-SIL" (Low Grade Intraepithelial Lesion)

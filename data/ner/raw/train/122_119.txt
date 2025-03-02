@@ -1,0 +1,10 @@
+QUESTION TYPE: MICROBIOLOGY
+CLINICAL CASE: 
+A 17-year-old woman came to the emergency department with acute symptoms of high fever, pharyngeal pain and cervical lymphadenopathy. She had previously been diagnosed with acute pharyngitis and was treated with amoxicillin, and later presented with a generalized macular skin rash. Laboratory tests showed slight leukocytosis and presence of activated leukocytes, slight thrombopenia and slightly increased transaminases. What would be the most likely diagnosis of this clinical picture?
+1- It is a typical picture of infectious mononucleosis.
+2- Varicella zoster infection.
+3- Acute toxoplasmosis.
+4- Lyme disease.
+5- Infection by herpes virus 8.
+CORRECT ANSWER: 1
+The correct answer is the first one. It is a typical picture of infectious mononucleosis. Although a similar picture may occur in acute toxoplasmosis, less than 1% of acute toxoplasma infections present as mononucleosis. Characteristic of Epstein-Barr infectious mononucleosis is the appearance of macular rash after treatment with amoxicillin.

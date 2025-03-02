@@ -1,0 +1,10 @@
+QUESTION TYPE: ANESTHESIOLOGY, CRITICAL CARE AND EMERGENCY MEDICINE
+CLINICAL CASE: 
+A 30-year-old woman with a drug addiction PD in a current detoxification period is brought to the ED with profound somnolence, with no other symptoms. We find out that her treatment includes olanzapine and benzodiazepines. What should we do first?
+1- Proceed to IOT.
+2- Perform a skull X-ray.
+3- Administer flumazenil.
+4- Administer naloxone.
+5- Wait until he wakes up.
+CORRECT ANSWER: 3
+Overuse of the drugs he is taking should be suspected. Olanzapine has no antidote, so, in principle, we should antagonize the effect of benzodiazepines. If the patient continues to be drowsy and does not respond to stimuli, we should proceed to intubate to secure the airway.

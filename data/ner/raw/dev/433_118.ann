@@ -1,0 +1,46 @@
+T1	Premise 68 161	Luis is a 25-year-old young man who underwent splenectomy after a bicycle accident 1 year ago
+T2	Premise 163 248	He has a dog that bit him 24 hours ago and has caused a small wound on his right hand
+T3	Premise 250 382	She comes to her health center (located 3 hours from the nearest hospital) with fever of 39°C, pain in the wound and general malaise
+T4	Premise 384 482	On examination, BP 100/60 mm Hg, HR 110 beats per minute, slight swelling in the wound without pus
+T5	Claim 550 628	Send to hospital for rabies and tetanus vaccination and keep under observation
+T6	Claim 633 704	Clean the wound and administer intramuscular nonspecific gamma globulin
+T7	Claim 709 762	Give 400 mg of oral moxifloxacin and send to hospital
+T8	Claim 767 827	Give clindamycin 600 mg orally every 8 hours and observation
+T9	Premise 1000 1047	The dog is domestic, known and can be monitored
+T10	Marker 1049 1051	so
+T11	Claim 1052 1143	we would have to wait for the observation period to pass and prophylaxis is not recommended
+R1	Support Ent1:T9 Ent2:T11	
+T12	Claim 1145 1300	At this point we will only have to worry about the possible bacteremia that may be occurring in a patient with the possibility of high risk due to asplenia
+R2	Support Ent1:T11 Ent2:T12	
+T13	Claim 1302 1392	The treatment of choice in dog bite is amoxicillin/clavulanic acid but it is not available
+T14	Marker 1369 1372	but
+T15	Treatment 1341 1363	amoxicillin/clavulanic
+T16	Claim 1397 1544	we can use another treatment such as clindamycin plus cephalosporin or clindamycin + moxifloxacin but it is not contemplated among the alternatives
+T17	Marker 1394 1396	so
+T18	Treatment 1434 1464	clindamycin plus cephalosporin
+T19	Marker 1465 1467	or
+T20	Treatment 1468 1494	clindamycin + moxifloxacin
+T21	Marker 1495 1498	but
+R3	Support Ent1:T13 Ent2:T16	
+R4	Support Ent1:T12 Ent2:T13	
+T22	Claim 1546 1578	In a first attempt we answered 4
+T23	Claim 1584 1651	the correct answer is 3, because of the second part of the question
+T24	Marker 1580 1583	but
+R5	Attack Ent1:T23 Ent2:T22	
+T25	Marker 1609 1619	because of
+T26	Premise 1653 1709	it is a high risk patient with incipient signs of sepsis
+R6	Support Ent1:T26 Ent2:T23	
+T27	Marker 1710 1712	so
+T28	Claim 1713 1746	he should be sent to the hospital
+R7	Support Ent1:T26 Ent2:T28	
+R8	Support Ent1:T28 Ent2:T7	
+T29	Claim 1849 1930	It could be challenged since they do not say in which community the bite occurred
+T30	Claim 1932 1983	if it was in Ceuta or Melilla the protocol may vary
+R9	Support Ent1:T30 Ent2:T29	
+T31	Marker 1872 1877	since
+T32	Treatment 571 601	rabies and tetanus vaccination
+T33	Treatment 606 628	keep under observation
+T34	Treatment 633 648	Clean the wound
+T35	Treatment 653 704	administer intramuscular nonspecific gamma globulin
+T36	Treatment 709 741	Give 400 mg of oral moxifloxacin
+T37	Treatment 772 827	clindamycin 600 mg orally every 8 hours and observation

@@ -1,0 +1,10 @@
+QUESTION TYPE: CARDIOLOGY AND VASCULAR SURGERY
+CLINICAL CASE: 
+A 60-year-old man reports precordial pain after medium exertion. Coronary angiography shows significant stenosis in the proximal segments of the three main vessels with good distal bed. Ventricular function is depressed (<30%). What is the best therapeutic option?
+1- Percutaneous revascularization.
+2- Medical treatment.
+3- Myocardial revascularization surgery.
+4- Implantation of balloon counterpulsation.
+5- Cardiac transplantation.
+CORRECT ANSWER: 3
+We are talking about a patient with 3-vessel coronary artery disease and, very importantly, with severe ventricular dysfunction. Under these conditions, the treatment of choice would be surgical (myocardial revascularization surgery or by-pass). In the case of a patient with preserved LV function, the choice of surgical vs. percutaneous treatment would be more questionable, since today, thanks to drug-eluting stents, the differences in terms of morbidity and mortality between by-pass surgery and angioplasty are minimal.

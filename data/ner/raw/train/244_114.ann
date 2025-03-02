@@ -1,0 +1,71 @@
+T1	Premise 51 266	A 16-year-old boy consults for presenting with pustular tonsillitis, fever up to 38.5°C, painful cervical lymphadenopathy, non-pruritic macular rash on the chest and mild hepatosplenomegaly, of 4-5 days of evolution
+T2	Premise 268 330	Paul-Bunnell test and Ig M for Epstein-Barr virus are positive
+T3	Premise 332 468	During his admission he developed continuous fever up to 40ºC, pancytopenia, icteric hepatitis and coagulopathy of progressive intensity
+T4	Premise 470 566	One week after admission, he was transferred to the ICU due to confusion and respiratory failure
+T5	Premise 568 616	Blood cultures and a urine culture were negative
+T6	Premise 618 674	CSF was normal and the chest x-ray showed no infiltrates
+T7	Premise 676 699	Procalcitonin is normal
+T8	Premise 705 739	CRP and ferritin are very elevated
+T9	Marker 701 704	but
+T10	Claim 842 943	She has a bacterial sepsis of undetermined origin and should be given ceftriaxone and supportive care
+T11	Claim 948 1059	She has bacterial sepsis of undetermined origin and should be given vancomycin, ceftacidime and supportive care
+T12	Claim 1064 1160	This is infectious mononucleosis with a severe course and glucocorticoids should be administered
+T13	Claim 1165 1266	This is an infectious mononucleosis of severe course and treatment with Acyclovir should be initiated
+T14	Claim 1271 1398	I would perform a bone marrow biopsy/aspirate and, if hemophagocytosis is confirmed, initiate treatment with immunosuppressants
+T15	Premise 1496 1649	The patient is a 16-year-old male who is admitted for a fairly clear case of mononucleosis due to EBV infection that becomes complicated during admission
+T16	Disease 1573 1586	mononucleosis
+T17	Marker 1587 1593	due to
+T18	Disease 1594 1607	EBV infection
+T19	Premise 1651 1726	The data available to us are: - Pancytopenia. - Hepatopathy. - Coagulopathy
+T20	Premise 1730 1833	Absence of infectious focus: negative blood cultures, negative urine cultures, normal X-ray, normal CSF
+T21	Premise 1837 1885	CRP and Ferritin elevated / normal Procalcitonin
+T22	Claim 1887 2026	The possible complications that could have occurred (and that are considered in the answers) are sepsis or a bad evolution of mononucleosis
+T23	Premise 2098 2153	the main infectious foci have been reasonably ruled out
+T24	Premise 2158 2257	one of the most sensitive and specific markers of bacteremia (procalcitonin) is in the normal range
+T25	Marker 2089 2096	however
+T26	Claim 2259 2290	which should draw our attention
+T27	Claim 2028 2087	The clinical data could be consistent with a septic process
+R1	Attack Ent1:T23 Ent2:T27	
+R2	Attack Ent1:T24 Ent2:T27	
+R3	Attack Ent1:T23 Ent2:T10	
+R4	Attack Ent1:T24 Ent2:T10	
+R5	Attack Ent1:T23 Ent2:T11	
+T28	Marker 2144 2153	ruled out
+R6	Attack Ent1:T24 Ent2:T11	
+R7	Support Ent1:T23 Ent2:T26	
+R8	Support Ent1:T24 Ent2:T26	
+T29	Claim 2292 2394	On the other hand, a complication of the EBV mononucleosis suffered by our patient should be evaluated
+T30	Claim 2396 2528	among the possible complications are hemolytic anemia, meningoecephalitis (normal CSF) or Guillain-Barré sd. Guillain-Barré syndrome
+T31	Premise 2530 2601	which are not very consistent with the clinical picture presented to us
+R9	Attack Ent1:T31 Ent2:T30	
+T32	Claim 2603 2689	Another possible complication of exceptional severity would be hemophagocytic syndrome
+T33	Claim 2691 2902	this is a rare entity that occurs in certain predisposed subjects and is characterized by an uncontrolled activation and proliferation of histiocytes and T lymphocytes, which produces a state of hypercytokinemia
+T34	Claim 2905 3073	The diagnostic criteria, revised in 2004, include persistent high fever, hepatosplenomegaly, cytopenias, hypertriglyceridemia, hyperferritinemia, and hypofibrinogenemia
+R10	Support Ent1:T33 Ent2:T32	
+R11	Support Ent1:T34 Ent2:T32	
+T35	Claim 3075 3284	Hyperferritinemia >3000 in a suggestive clinical context necessitates treatment of the patient (mainly with immunosuppressants and corticosteroids) since mortality is very high and early treatment is essential
+T36	Claim 3286 3355	The definitive diagnosis is made by microscopic study of an OM biopsy
+R12	Support Ent1:T8 Ent2:T34	
+T37	Claim 3358 3595	Although in this question they do not quantify the value of ferritinemia, it is a remarkable data and given that the clinical picture is suggestive, meeting the diagnostic criteria, it seems to me that answer 5 would be the most accurate
+R13	Support Ent1:T8 Ent2:T35	
+T38	Marker 3358 3366	Although
+R14	Support Ent1:T1 Ent2:T34	
+R15	Support Ent1:T37 Ent2:T14	
+R16	Support Ent1:T8 Ent2:T37	
+R17	Support Ent1:T32 Ent2:T37	
+R18	Support Ent1:T34 Ent2:T37	
+R19	Support Ent1:T35 Ent2:T37	
+T39	Disease 852 891	bacterial sepsis of undetermined origin
+T40	Treatment 912 923	ceftriaxone
+T41	Treatment 928 943	supportive care
+T42	Disease 956 995	bacterial sepsis of undetermined origin
+T43	Treatment 1016 1026	vancomycin
+T44	Treatment 1028 1039	ceftacidime
+T45	Treatment 1044 1059	supportive care
+T46	Disease 1072 1117	infectious mononucleosis with a severe course
+T47	Treatment 1122 1137	glucocorticoids
+T48	Disease 1176 1217	infectious mononucleosis of severe course
+T49	Treatment 1237 1246	Acyclovir
+T50	Diagnostics 1289 1316	bone marrow biopsy/aspirate
+T51	Disease 1325 1341	hemophagocytosis
+T52	Treatment 1380 1398	immunosuppressants

@@ -1,0 +1,10 @@
+QUESTION TYPE: CARDIOLOGY AND CARDIOVASCULAR SURGERY
+CLINICAL CASE: 
+A 45-year-old woman presents arterial hypertension (190/120 mmHg) accompanied by K 2.5 mEq/l. An abdominal ultrasound shows stenosis of both renal arteries. Indicate which treatment is contraindicated:
+1- Enalapril.
+2- Propanolol.
+3- Amiloride.
+4- Prazosin.
+5- Amlodipine.
+CORRECT ANSWER: 1
+If the renal arteries are stenosed, blood has difficulty reaching the kidneys. That is, both are poorly perfused and can only create the pressure gradient necessary for filtration by contraction of the efferent arteriole. If we administer an ACEI, we will provoke the relaxation of this arteriole and the fall of the glomerular filtration rate. And if neither kidney filters, because both have arterial stenosis, we have a problem....

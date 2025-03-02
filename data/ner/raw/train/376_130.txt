@@ -1,0 +1,10 @@
+QUESTION TYPE: NEUROLOGY
+CLINICAL CASE: 
+A 39-year-old man who in the last 3 months has had two episodes of wide and involuntary jumping movements of the left limbs, which in about two minutes lead to loss of consciousness. In the neuroradiological study a right frontal expansive lesion suggestive of cerebral glioma was found.How would you classify this patient's epilepsy?
+1- Generalized symptomatic.
+2- Partially symptomatic.
+3- Partial cryptogenic.
+4- Partial secondarily generalized symptomatic.
+5- nan
+CORRECT ANSWER: 2
+They refer to a partial seizure that is followed by loss of level of consciousness, so strictly speaking it would be a symptomatic complex partial seizure, not a secondarily generalized partial seizure (which occurs when tonic-clonic movements extend to the rest of the extremities). For this reason the most correct option would be two because it does not specify that it is a simple symptomatic partial seizure, but leaves open the possibility that it is a simple or complex symptomatic partial seizure.

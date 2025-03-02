@@ -1,0 +1,10 @@
+QUESTION TYPE: NEPHROLOGY
+CLINICAL CASE: 
+A 67-year-old woman with chronic kidney disease secondary to diabetic nephropathy. She currently has a creatinine of 3.2 mg/dL with estimated glomerular filtration rate (CKD-EPI) 14 ml/min. Which of the following is true?
+1- He presents stage 3 chronic kidney disease and should initiate phosphorus chelators.
+2- He has stage 5 chronic kidney disease and renal replacement therapy should be considered.
+3- Good glycemic control can reverse renal failure.
+4- It is unlikely to present proteinuria higher than 500 mg/24 h.
+5- nan
+CORRECT ANSWER: 2
+A glomerular filtration rate of less than 15 ml/min is classified as stage 5 (G5), indicating that the renal disease is end-stage and the initiation of replacement therapy should be considered (option 2 true, option 1 false). In this situation, good glycemic control is not expected to reverse renal damage, although it may help to delay progression (false choice 3). These patients usually present stage A3 albuminuria (above 300 mg/24 h), and may reach the nephrotic range (false choice 4).

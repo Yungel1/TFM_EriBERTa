@@ -1,0 +1,15 @@
+T1	Premise 44 338	A 35-year-old man, a letter carrier, with no history of interest, who comes to the emergency department for acute cervical pain of 24 hours of evolution, without previous trauma, which radiates to the left arm up to the hand and is accompanied by paresthesia in the radial border of the forearm
+T2	Premise 340 498	She presents no objectifiable loss of strength, preserves neck mobility although it is painful and contracture of the paravertebral musculature is appreciated
+T3	Claim 531 625	Conservative treatment with nonsteroidal anti-inflammatory drugs, local heat and relative rest
+T4	Claim 630 685	Urgent call to the neurosurgeon for surgical evaluation
+T5	Claim 690 737	Preferential request for MRI and electromyogram
+T6	Claim 742 804	Preferential referral to outpatient traumatology consultations
+T7	Claim 831 862	Cervicalgia without alarm signs
+T8	Claim 864 917	Conservative treatment with a success rate of 75%-90%
+R1	Support Ent1:T8 Ent2:T3	
+T9	Disease 831 842	Cervicalgia
+T10	Treatment 531 625	Conservative treatment with nonsteroidal anti-inflammatory drugs, local heat and relative rest
+T11	Treatment 666 685	surgical evaluation
+T12	Diagnostics 715 718	MRI
+T13	Diagnostics 723 737	electromyogram
+T14	Diagnostics 767 804	outpatient traumatology consultations

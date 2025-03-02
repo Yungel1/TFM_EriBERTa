@@ -1,0 +1,10 @@
+QUESTION TYPE: INFECTIOUS DISEASES
+CLINICAL CASE: 
+A 45-year-old patient was diagnosed with HIV infection three months ago, presenting at that time with CD4 45 lymphocytes/µl and an HIV-1 viral load of 500,000 copies/ml. At that time he had a negative Mantoux test. He started treatment with an integrase inhibitor and two reverse transcriptase inhibitors, and at one month he had 25,000 copies and CD4 had risen to 80/µL. She consulted for presenting a picture of cervical lymphadenopathy and fever of two weeks of evolution. The puncture of one of the lymph nodes showed isolated acid-fast bacilli and epithelioid granulomas:
+1- It is a lymph node tuberculosis related to an incomplete immunologic recovery.
+2- Treatment failure and it is an opportunistic infection.
+3- This is an opportunistic infection unmasked within a picture of immune reconstitution.
+4- A negative Mantoux test rules out tuberculosis.
+5- nan
+CORRECT ANSWER: 3
+We are dealing with a patient with HIV infection in a situation of severe immunosuppression (<50 CD4+) and a very high viral load, who has followed the expected evolution from the immunovirological point of view after the start of treatment (after 12 weeks, the viral load has ostensibly decreased - answer 2 would not be correct, remember that it is desirable that it becomes negative 24 weeks after the start of treatment, although in patients with higher CV like ours, it could take longer - and the CD4+ count has begun to rise). A negative Mantoux test does not rule out tuberculosis (incorrect answer 4), since in patients with severe immunosuppression it can give false negatives. The diagnosis of lymph node tuberculosis is immediate when detecting "isolated acid-fast bacilli and epithelioid granulomas" in the puncture of one of the lymph nodes, however: considering the patient profile, this process will have been clinically unmasked during the immunological reconstitution and the infection is not the consequence of an incomplete immunological recovery (correct answer number 3).

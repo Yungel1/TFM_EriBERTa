@@ -1,0 +1,10 @@
+QUESTION TYPE: RHEUMATOLOGY
+CLINICAL CASE: 
+A 20-year-old boy consults for lumbosacral pain of inflammatory rhythm of 4 months of evolution. Also bilateral thalalgia and morning stiffness for 1 hour. In the last 2 months, onset of diarrhea with loss of 4 kg of weight. What is the most correct diagnostic approach?
+1- Given the patient's age, he most likely suffers from non-specific low back pain and tendonitis in the feet. If the diarrhea persists, a digestive study would be performed.
+2- I would perform a digestive study to rule out tumor pathology. The lumbar pain may be due to visceral pathology.
+3- The clinical picture is very suggestive of spondyloarthritis. Inflammatory bowel disease should be ruled out.
+4- I would request a lumbar MRI to rule out disc herniation and if diarrhea persists, a digestive study.
+5- nan
+CORRECT ANSWER: 3
+The clinical picture is typical of spondyloarthritis, and together with the digestive symptoms it is probably associated with inflammatory bowel disease.

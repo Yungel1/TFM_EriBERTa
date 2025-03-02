@@ -1,0 +1,10 @@
+QUESTION TYPE: RHEUMATOLOGY
+CLINICAL CASE: 
+A 70-year-old woman with a history of anorexia, weight loss, muscle and proximal joint discomfort and pain in the temporomandibular region comes to the emergency department for unilateral vision loss (hand movement), sudden and painless onset (afferent pupillary defect). What test would you order first for diagnostic purposes?
+1- Lumbar puncture.
+2- C Reactive Protein.
+3- Magnetic resonance angiography.
+4- Carotid ultrasound.
+5- nan
+CORRECT ANSWER: 2
+It is possibly a temporal arteritis, the clinical picture and a CBC with increased reactants are enough to confirm the suspicion. Then an ocular evaluation should be done to rule out AIN, urgent treatment should be instituted (if there is AIN, 3 boluses of methylprednisolone 1 g, if there is not, prednisone mg/kg) and biopsy should be evaluated.

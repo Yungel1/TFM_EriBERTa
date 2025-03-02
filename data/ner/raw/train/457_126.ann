@@ -1,0 +1,16 @@
+T1	Premise 77 339	A 47-year-old man, with a history of a right parotid pleomorphic adenoma, treated with surgery (extrafacial parotidectomy) 6 months ago, who comes to our office for presenting pain with sweating and reddening of the skin in the preauricular region during chewing
+T2	Claim 394 455	Extended total parotidectomy on suspicion of tumor recurrence
+T3	Claim 460 470	Pregabalin
+T4	Claim 475 512	Intradermal botulinum toxin injection
+T5	Claim 517 546	Broad-spectrum antibiotherapy
+T6	Claim 822 876	The treatment is intradermal botulinum toxin injection
+R1	Support Ent1:T6 Ent2:T4	
+T7	Premise 760 820	during mastication, erythema and preauricular sweating occur
+T8	Claim 573 750	This clinical picture is called Frey's syndrome and consists of an anomalous reinnervation of regional structures after parotidectomy due to lesion of the auriculotemporal nerve
+T9	Marker 752 759	so that
+R2	Support Ent1:T7 Ent2:T8	
+T10	Treatment 394 455	Extended total parotidectomy on suspicion of tumor recurrence
+T11	Treatment 460 470	Pregabalin
+T12	Treatment 475 512	Intradermal botulinum toxin injection
+T13	Treatment 517 546	Broad-spectrum antibiotherapy
+T14	Disease 605 620	Frey's syndrome

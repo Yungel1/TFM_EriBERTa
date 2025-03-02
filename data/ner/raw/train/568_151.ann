@@ -1,0 +1,26 @@
+T1	Premise 42 145	A 22-year-old male presents to the emergency department with "almost black" urine for the past 12 hours
+T2	Premise 147 215	He has no past history of interest and is not taking any medications
+T3	Premise 217 320	He refers an upper respiratory catarrhal symptoms since 4-5 days ago for which he has taken paracetamol
+T4	Premise 322 421	Examination: temperature 37.3 ºC, BP 150/95, HR 85 bpm, slight pharyngeal erythema, the rest normal
+T5	Premise 423 650	Laboratory tests showed: Hb 12.8 g/dl, Hcto 39%, leukocytes 10,500/mm3 with normal formula, platelets 250,000/mm3, normal coagulation, urea 25 mg/dl, creatinine 0.8 mg/dl, ions, hepatic, lipid, albumin and total proteins normal
+T6	Premise 652 705	Normal autoimmunity study and negative viral serology
+T7	Premise 707 824	Urine 24 h with proteinuria of 0.75 g/24 h, sediment with 10 erythrocytes per field (90% dysmorphic), no leukocyturia
+T8	Premise 826 853	Renal ultrasound was normal
+T9	Claim 903 935	Nephropathy with minimal changes
+T10	Claim 940 973	Postinfectious glomerulonephritis
+T11	Claim 978 993	IgA nephropathy
+T12	Claim 998 1026	Acute interstitial nephritis
+T13	Claim 1053 1226	A picture of macroscopic hematuria and mild proteinuria with normal creatinine levels, accompanied by an upper tract catarrhal picture, is very suggestive of IgA nephropathy
+T14	Claim 1228 1244	option 3 correct
+R1	Support Ent1:T13 Ent2:T14	
+R2	Support Ent1:T7 Ent2:T13	
+R3	Support Ent1:T5 Ent2:T13	
+T15	Disease 1211 1226	IgA nephropathy
+R5	Support Ent1:T13 Ent2:T11	
+R6	Support Ent1:T14 Ent2:T11	
+R7	Support Ent1:T3 Ent2:T13	
+T16	Disease 903 935	Nephropathy with minimal changes
+T17	Disease 940 973	Postinfectious glomerulonephritis
+T18	Disease 978 993	IgA nephropathy
+T19	Disease 998 1026	Acute interstitial nephritis
+R4	Support Ent1:T1 Ent2:T13	

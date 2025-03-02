@@ -1,0 +1,25 @@
+T1	Premise 41 230	A 45-year-old male brought to the consultation by his relatives for a one-year history of memory loss, which has progressed to the point of needing help with some activities of daily living
+T2	Premise 232 349	He has a history of migraines and some episode of self-limited neurological focality for which he has never consulted
+T3	Premise 351 477	The neuropsychological examination is compatible with an initial dementia and the brain MRI shows a severe leukoencephalopathy
+T4	Claim 512 569	Lumbar puncture to analyze amyloid and tau protein in CSF
+T5	Claim 574 612	Genetic study for presenilin 1 (PSEN1)
+T6	Claim 617 641	Genetic study for NOTCH3
+T7	Claim 646 675	Genetic study for progranulin
+T8	Claim 702 842	They describe a characteristic case of CADASIL (Cerebral Autosomal Dominant Arteriopathy with Sub-cortical Infarcts and Leukoencephalopathy)
+T9	Claim 844 932	It is a genetic disease of autosomal dominant inheritance by mutation of the NOTCH3 gene
+R1	Support Ent1:T9 Ent2:T6	
+T10	Disease 741 842	CADASIL (Cerebral Autosomal Dominant Arteriopathy with Sub-cortical Infarcts and Leukoencephalopathy)
+R2	Support Ent1:T2 Ent2:T8	
+R3	Support Ent1:T1 Ent2:T8	
+T11	Claim 934 1073	This mutation causes vascular involvement of small vessel that generates severe leukoencephalopathy early, which generates various symptoms
+T12	Claim 1075 1205	Migraines, cerebrovascular disease and cognitive impairment at early ages stand out, as shown in the clinical case of the question
+R4	Support Ent1:T2 Ent2:T12	
+R5	Support Ent1:T3 Ent2:T8	
+R6	Support Ent1:T3 Ent2:T12	
+R7	Support Ent1:T1 Ent2:T12	
+R8	Support Ent1:T11 Ent2:T9	
+R9	Support Ent1:T12 Ent2:T9	
+T13	Diagnostics 512 569	Lumbar puncture to analyze amyloid and tau protein in CSF
+T14	Diagnostics 574 612	Genetic study for presenilin 1 (PSEN1)
+T15	Diagnostics 617 641	Genetic study for NOTCH3
+T16	Diagnostics 646 675	Genetic study for progranulin

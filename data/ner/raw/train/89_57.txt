@@ -1,0 +1,10 @@
+QUESTION TYPE: CARDIOLOGY AND VASCULAR SURGERY
+CLINICAL CASE: 
+A 64-year-old man consults for right calf pain when climbing hills and stairs and when walking on level ground for a prolonged period of time. He reports that the pain becomes so intense with exertion that he is forced to stand up, which causes the pain to improve in a matter of minutes. As personal history, the patient is a smoker of 20 cigarettes a day, diabetic on metformin and hypertensive. On examination, there is good peripheral perfusion of the right foot, but the patient has a decreased pedal pulse. Which of the following complementary tests should be ordered initially for the diagnosis and assessment of the severity of the patient's disease?
+1- Arteriography of lower extremities.
+2- Ankle-brachial index.
+3- Computerized axial tomography with vascular reconstruction of lower extremities.
+4- Tape stress test.
+5- Magnetic resonance imaging.
+CORRECT ANSWER: 2
+Although the diagnosis of peripheral arteriopathy is fundamentally clinical (in this patient the picture is very typical), we can objectively assess the severity of the disease with the use of bloodless techniques. The most important is the ankle-brachial index. Therefore, answer 2 is correct. Imaging techniques (arteriography, angioCT or angioMRI) are used when surgical repair of arterial occlusion is considered.

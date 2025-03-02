@@ -1,0 +1,34 @@
+T1	Claim 577 650	We will sit him on the stretcher to be able to explore the cervical spine
+T2	Claim 655 709	We will refer to Rx to perform lower extremities study
+T3	Claim 714 790	Palpate the abdomen and rotate it en bloc to palpate the thoracolumbar spine
+T4	Claim 795 888	Place a cervical collar and refer to radiology for cervical spine and lower extremity imaging
+T5	Claim 893 926	We will request an abdominal echo
+T6	Claim 1043 1109	there seems to be a vertebral involvement at L2-3 and sacral roots
+T7	Premise 946 1041	From the symptoms reported, tingling in the anterior thigh, scrotum and dysesthesia in the feet
+R1	Support Ent1:T7 Ent2:T6	
+T8	Marker 1111 1113	so
+T9	Claim 1114 1215	the correct thing to do would be to perform a radiological examination without mobilizing the patient
+R2	Support Ent1:T6 Ent2:T9	
+T10	Claim 1217 1287	But it is necessary to mobilize him to explore him, obviously, en bloc
+T11	Marker 1217 1220	But
+R3	Attack Ent1:T9 Ent2:T10	
+T12	Claim 1289 1329	The cervical spine seems to be undamaged
+T13	Marker 1330 1337	because
+T14	Premise 1338 1401	the patient mobilizes both arms adequately, without paresthesia
+R4	Support Ent1:T14 Ent2:T12	
+R5	Support Ent1:T10 Ent2:T3	
+T15	Premise 64 129	A 30-year-old man suffers fall from a standing height of 2 meters
+T16	Claim 131 193	On arrival at the ER, he is cyo, catheterized with clear urine
+T17	Premise 195 339	He shows swelling of the left heel, as well as mild tingling in the anterior aspect of the right thigh and scrotum, and dysesthesia in both feet
+T18	Premise 449 520	Rotation of the MMII on the stretcher grasped by the ankles is painless
+T19	Diagnostics 624 650	explore the cervical spine
+T20	Premise 525 566	compression of the pelvis is asymptomatic
+R6	Attack Ent1:T12 Ent2:T1	
+R7	Support Ent1:T14 Ent2:T1	
+T21	Diagnostics 678 709	perform lower extremities study
+T22	Diagnostics 714 733	Palpate the abdomen
+T23	Diagnostics 738 790	rotate it en bloc to palpate the thoracolumbar spine
+T24	Treatment 795 818	Place a cervical collar
+T25	Diagnostics 832 888	radiology for cervical spine and lower extremity imaging
+T26	Diagnostics 912 926	abdominal echo
+T27	Diagnostics 1160 1215	radiological examination without mobilizing the patient

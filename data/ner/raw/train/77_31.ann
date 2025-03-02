@@ -1,0 +1,20 @@
+T1	Claim 433 518	Recommend relative rest and warm cloths on both legs and add antidepressant treatment
+T2	Claim 523 617	Biopsy skin areas away from the injured areas and prescribe opioid analgesics at the beginning
+T3	Claim 622 716	Biopsy skin areas away from the injured areas and prescribe opioid analgesics at the beginning
+T4	Claim 721 778	Suspect bilateral lower extremity ischemia of drug origin
+T5	Claim 783 825	Adjustment of the treatment of the disease
+T6	Premise 48 381	A 17-year-old boy with Crohn's disease with colonic involvement of 2 years of evolution, in maintenance treatment with azathioprine, consults for the appearance since 5 days ago of purplish-red, hot, painful, bilateral subcutaneous nodules of pretibial location, associated with an increase in the number of stools and abdominal pain
+T7	Treatment 443 485	relative rest and warm cloths on both legs
+T8	Treatment 494 519	antidepressant treatment.
+T9	Diagnostics 523 568	Biopsy skin areas away from the injured areas
+T10	Treatment 583 600	opioid analgesics
+T11	Diagnostics 622 667	Biopsy skin areas away from the injured areas
+T12	Treatment 682 699	opioid analgesics
+T13	Disease 729 778	bilateral lower extremity ischemia of drug origin
+T14	Claim 959 1038	Treatment of the disease and its control usually improves the cutaneous lesions
+R1	Support Ent1:T14 Ent2:T5	
+T15	Claim 1040 1074	The lesions should not be biopsied
+R2	Attack Ent1:T15 Ent2:T2	
+R3	Attack Ent1:T15 Ent2:T3	
+T16	Premise 845 957	It appears that the patient has erythema nodosum lesions associated with a flare of his disease, which is common
+R4	Support Ent1:T16 Ent2:T14	

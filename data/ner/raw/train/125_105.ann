@@ -1,0 +1,32 @@
+T1	Premise 42 129	19-year-old woman, weight 60 kg, with acute dehydration due to long exposure to the sun
+T2	Premise 131 168	Blood pressure lying down 100/60 mmHg
+T3	Premise 170 204	Standing 70/50 mmHg with dizziness
+T4	Premise 206 236	Serum sodium levels 155 mmol/L
+T5	Claim 346 399	Hypertonic saline (3%), 500 ml + 500 ml of 5% glucose
+T6	Claim 404 438	Hyposaline saline (0.45%), 3000 ml
+T7	Claim 443 468	Serum glucose 5% 1000 ml.
+T8	Claim 472 508	Oral hydration with 1 liter of water
+T9	Claim 513 544	Isotonic saline (0.9%), 2000 ml
+T10	Treatment 346 399	Hypertonic saline (3%), 500 ml + 500 ml of 5% glucose
+T11	Treatment 404 438	Hyposaline saline (0.45%), 3000 ml
+T12	Treatment 443 467	Serum glucose 5% 1000 ml
+T13	Treatment 472 508	Oral hydration with 1 liter of water
+T14	Treatment 513 544	Isotonic saline (0.9%), 2000 ml
+T16	Marker 727 729	so
+T15	Claim 598 693	The available literature is somewhat controversial (some guidelines advise using glucose saline
+T17	Claim 695 722	others absolutely forbid it
+R1	Support Ent1:T15 Ent2:T5	
+R2	Attack Ent1:T17 Ent2:T5	
+T18	Claim 730 849	I have decided to rely on the treatment recommended by Harrison, which is the manual that MIR examiners usually rely on
+T19	Claim 851 924	This girl presents with hypernatremia due to extrarenal free water losses
+T20	Marker 889 895	due to
+R3	Support Ent1:T4 Ent2:T19	
+T21	Claim 926 1025	The goal is to replace the lost water and reduce the natremia at a rate of no more than 12 mmol/day
+T22	Claim 1027 1097	To calculate fluid therapy, the water deficit must first be calculated
+T23	Treatment 1040 1053	fluid therapy
+T24	Claim 1205 1295	In this case, the water deficit is: ([[tel:155-140/140|155-140/140]])x60x0.4 = 2.57 liters
+T25	Claim 1099 1203	Water def. Water = (Natremia-140/140)xTotal body water. TBW = Weight in kg x 0.4 in females/0.5 in males
+T26	Claim 1297 1475	There are only two answers that come close to this figure, but 2 seems more correct, as it is the only one that completely covers the water deficit and uses a hyposodium solution
+R4	Support Ent1:T26 Ent2:T6	
+T27	Marker 1382 1384	as
+T28	Marker 1356 1359	but

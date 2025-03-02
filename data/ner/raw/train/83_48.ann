@@ -1,0 +1,38 @@
+T1	Claim 412 447	Surgical coronary revascularization
+T2	Claim 452 476	Mitral valve replacement
+T3	Claim 481 519	Implantation of an aortic balloon pump
+T4	Claim 524 567	Implantation of a ventricular assist device
+T5	Claim 572 622	Implantation of a cardiac resynchronization system
+T6	Premise 115 407	a 67-year-old patient with idiopathic dilated cardiomyopathy, left bundle branch block, left ventricular ejection fraction of 26%, mitral insufficiency grade II-III/IV, undergoing treatment with furosemide, spironolactone, enalapril and bisoprolol and who remains in NYHA functional class III
+T7	Treatment 412 447	Surgical coronary revascularization
+T8	Treatment 452 476	Mitral valve replacement
+T9	Treatment 481 519	Implantation of an aortic balloon pump
+T10	Treatment 524 567	Implantation of a ventricular assist device
+T11	Treatment 572 622	Implantation of a cardiac resynchronization system
+T12	Premise 642 848	We are talking about a patient with heart failure with severe LV dysfunction (EF < 35%), LBBB (wide QRS), who is following optimal medical treatment and who remains in advanced functional class despite this
+T13	Claim 850 943	Coronary revascularization does not appear to be of much benefit in this patient at this time
+R1	Attack Ent1:T13 Ent2:T1	
+R2	Support Ent1:T12 Ent2:T13	
+T14	Claim 945 978	Nor does mitral valve replacement
+T15	Claim 980 1071	firstly because mitral regurgitation is most likely the result of mitral annular dilatation
+T16	Claim 1077 1204	secondly because we would need an echocardiographic assessment of the mitral valve to determine whether there is any alteration
+T17	Marker 980 987	firstly
+T18	Marker 988 995	because
+T19	Marker 1077 1085	secondly
+T20	Marker 1086 1093	because
+R3	Support Ent1:T15 Ent2:T14	
+R4	Support Ent1:T16 Ent2:T14	
+R5	Attack Ent1:T14 Ent2:T2	
+T21	Claim 1206 1295	Intra-aortic balloon counterpulsation implantation would not be indicated in this patient
+T22	Claim 1297 1407	it is used in situations of cardiogenic shock, in post-AMI mechanical complications, as a bridge to cardiac Tx
+R6	Support Ent1:T22 Ent2:T21	
+R7	Attack Ent1:T21 Ent2:T3	
+T23	Claim 1413 1486	The ventricular assist device would also not be indicated in this patient
+R8	Attack Ent1:T23 Ent2:T4	
+T24	Claim 1488 1578	What would really benefit him of all the answers is number 5, the resynchronization device
+R9	Support Ent1:T24 Ent2:T5	
+T25	Claim 1580 1701	By achieving simultaneous stimulation of both ventricles, a mechanical synergy is achieved that improves cardiac function
+R10	Support Ent1:T25 Ent2:T24	
+T26	Premise 1703 2019	The indications for the application of CRT (cardiac resynchronization therapy) are precisely those mentioned at the beginning: severe ventricular dysfunction, asynchrony demonstrated by the presence of wide QRS in the ECG (usually due to LBBB) and advanced functional class (III-IV) despite optimal medical treatment
+R11	Support Ent1:T26 Ent2:T24	
+T27	Treatment 1742 1781	CRT (cardiac resynchronization therapy)

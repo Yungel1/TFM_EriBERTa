@@ -1,0 +1,10 @@
+QUESTION TYPE: OPHTHALMOLOGY
+CLINICAL CASE: 
+A 78-year-old woman consults for acute vision loss of the left eye. In the last 3 weeks she has presented with fever, pain in the shoulders, neck and hips, and moderate headache. Funduscopy shows a pale and edematous optic disc. Mobilization of the shoulders and hips produces pain. There are no alterations on palpation of the temporal arteries. Laboratory data: hemoglobin 9.7 g/dL ferritin 450 ng/mL erythrocyte sedimentation rate 115 mm/h. What is the most appropriate immediate action in this patient?
+1- Request a Doppler ultrasound of temporal arteries.
+2- Start treatment with prednisone 60mg per day and aspirin 100 mg per day.
+3- Start treatment with prednisone 10 mg per day.
+4- Request a temporal artery biopsy.
+5- Request a brain magnetic resonance imaging.
+CORRECT ANSWER: 2
+The clinical presentation is strongly suggestive of giant cell arteritis (GCA), with febrile fever, shoulder girdle and pelvic pain, and headache. Age and sex also point to this possibility. Abrupt unilateral visual loss with pale papillary edema is highly indicative of arteritic ischemic optic neuropathy due to GCA. The ESR is elevated, which further clarifies the diagnosis. We have to quickly start corticosteroid treatment. We can already rule out 1 and 5 because they do not contribute anything. 4 could make us doubt, and it is true that we will have to ask for a temporal artery biopsy, but that is not immediate: the statement makes it very clear that we have to act immediately. The current trend is to use megadoses of intravenous corticosteroids, and although aspirin has traditionally been proposed to reduce ischemic events, the evidence currently indicates that antiplatelet agents do not contribute much. An oral corticosteroid dose of around 1mg/kg would also be acceptable. Therefore, if we rule out 3 because the dose is too low, we would have to stay with 2. With reservations, since aspirin has a rather dubious role, and the corticosteroid dose remains ambiguous (we do not know how much the patient weighs). Of all the ophthalmology questions, this is perhaps the one most likely to be contested.

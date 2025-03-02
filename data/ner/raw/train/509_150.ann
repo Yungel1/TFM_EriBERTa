@@ -1,0 +1,25 @@
+T1	Premise 41 245	83-year-old male who consults for a recurrent picture of abdominal pain in the left iliac fossa, accompanied by diarrhea of up to 6 stools per day without pathological products, of 10-15 days of evolution
+T2	Premise 247 289	No fever or general condition was reported
+T3	Premise 291 372	A recent blood test showed no leukocytosis and a negative fecal occult blood test
+T4	Premise 374 474	On examination there is mild pain on palpation of the left iliac fossa without peritoneal irritation
+T5	Premise 476 637	He had a colonoscopy three years ago in which diverticula were reported along the entire colon, more numerous in the left colon, with no other associated lesions
+T6	Claim 703 739	Empirical treatment with antibiotics
+T7	Claim 744 778	Request a preferential colonoscopy
+T8	Claim 783 818	Request urgent abdominal ultrasound
+T9	Claim 823 865	Refer to surgery to evaluate sigmoidectomy
+T10	Claim 892 1048	They refer to a concept that has emerged relatively recently and is not present in all clinical guidelines as uncomplicated symptomatic diverticular disease
+T11	Disease 1002 1048	uncomplicated symptomatic diverticular disease
+R1	Support Ent1:T1 Ent2:T10	
+T12	Claim 1050 1142	In these cases, the therapeutic trial with rifaximin is recommended, being the true number 1
+R2	Support Ent1:T12 Ent2:T6	
+R3	Support Ent1:T10 Ent2:T12	
+T13	Claim 1144 1333	The absence of acute phase reactants in the CBC suggests that she does not have acute diverticulitis at the time of consultation that would lead us to request an imaging test to rule it out
+R4	Support Ent1:T4 Ent2:T13	
+R5	Support Ent1:T2 Ent2:T13	
+T14	Marker 1322 1333	rule it out
+T15	Diagnostics 1306 1318	imaging test
+R6	Support Ent1:T13 Ent2:T8	
+T16	Diagnostics 754 778	preferential colonoscopy
+T17	Diagnostics 832 865	surgery to evaluate sigmoidectomy
+T18	Diagnostics 791 818	urgent abdominal ultrasound
+T19	Treatment 703 739	Empirical treatment with antibiotics

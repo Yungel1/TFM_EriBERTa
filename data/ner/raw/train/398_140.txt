@@ -1,0 +1,10 @@
+QUESTION TYPE: TRAUMATOLOGY AND ORTHOPEDICS
+CLINICAL CASE: 
+You evaluate a 66-year-old patient with groin pain accentuated by prolonged standing a few days a month. A plain radiograph of the hips shows narrowing of the femoroacetabular joint space, sclerosis and osteophytes. What is your approach?
+1- I make the diagnosis of coxarthrosis and send to the traumatologist to place a hip prosthesis.
+2- Start treatment with weak opioids that have shown evidence in stopping the progression of the disease.
+3- I insist treatment with paracetamol, explain that the evolution is very variable and the surgical indication depends on the functionality and pain control.
+4- Because of the radiological features described, I need a hip MRI before making a therapeutic decision.
+5- nan
+CORRECT ANSWER: 3
+We are talking about a 66-year-old patient with pain on some days, pain of an occasional nature. Although the diagnosis is clearly osteoarthritis, it does not lead directly to a surgical indication. The first step is to try conservative treatment (we ruled out the first option). Osteoarthritis is a degenerative process that opioids certainly do not stop, so we rule out option two. Option four can also be quickly discarded: the statement makes the diagnosis and treatment to follow clear: in this case the MRI will not provide us with any information of interest.

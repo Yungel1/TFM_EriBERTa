@@ -1,0 +1,10 @@
+QUESTION TYPE: INFECTOLOGY
+CLINICAL CASE: 
+A 14-year-old asymptomatic boy whose father has just been diagnosed with pulmonary TB undergoes a Mantoux test, with a negative result. What is the appropriate course of action?
+1- Reassure her that she is not at risk.
+2- Chest X-ray.
+3- Start chemoprophylaxis and repeat skin test after 3 months.
+4- Repeat skin test at one month.
+5- A sputum study should be performed before starting chemoprophylaxis with Isoniazid for 1 year.
+CORRECT ANSWER: 3
+In young contacts, chemoprophylaxis should be started even if the mantoux test is negative and repeated after 2-3 months to decide whether to continue treatment for 6 months (if it turns positive) or to stop it.

@@ -1,0 +1,10 @@
+QUESTION TYPE: DIGESTIVE SYSTEM
+CLINICAL CASE: 
+A 52-year-old man with no concomitant diseases comes to the emergency department for melena of 24 hours evolution without hemodynamic repercussions. He denies taking nonsteroidal anti-inflammatory drugs. The hematocrit is 33% and the rest of the laboratory tests are normal. The upper gastrointestinal endoscopy performed urgently 6 hours after admission shows a normal stomach, without blood or hematic debris and an excavated ulcer of 8 mm in diameter in the anterior face of the duodenal bulb with "visible vessel" at its base and without active bleeding. Which of the following statements is true?
+1- In the initial endoscopy it is indicated to apply an endoscopic therapy and subsequently to establish endovenous treatment with high doses of a proton pump inhibitor. This strategy has been shown to reduce the risk of hemorrhagic recurrence and mortality.
+2- In the initial endoscopy, given the absence of active bleeding, endoscopic therapy is not indicated. Subsequently, to reduce the risk of hemorrhagic recurrence, intravenous treatment with high doses of a proton pump inhibitor should be started.
+3- n initial endoscopy, endoscopic therapy is indicated. Subsequent treatment with high doses of a proton pump inhibitor has not been shown to be of any additional benefit.
+4- Since this is a complicated ulcer (hemorrhage) the best therapeutic option, once the hemorrhagic episode is resolved, is a vagotomy and pyloroplasty.
+5- nan
+CORRECT ANSWER: 1
+This is a grade IIa ulcer (Forrest classification), with a high risk of recurrence. Therefore, endoscopic treatment and hospitalization with intravenous treatment with PPIs (in our setting it is usually omeprazole) for at least 72 hours is clearly indicated. Surgery is indicated in massive bleeding or bleeding refractory to medical treatment.

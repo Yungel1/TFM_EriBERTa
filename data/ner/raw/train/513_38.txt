@@ -1,0 +1,10 @@
+QUESTION TYPE: CRITICAL AND EMERGENCY CARE
+CLINICAL CASE: 
+A 72-year-old patient presents to the emergency department with severe lingual angioedema. She has no associated urticaria and no history of drug or food allergy. His personal history includes type 2 diabetes mellitus, dyslipidemia, hypertension, hypothyroidism and Parkinson's disease. In regular treatment with metformin, simvastatin, enalapril, thyroxine and levodopa. Which of the following drugs is most likely the causal drug of the clinical picture described?
+1- Enalapril.
+2- Simvastatin.
+3- Metformin or levodopa equally.
+4- Levodopa.
+5- nan
+CORRECT ANSWER: 1
+Of the proposed drugs, the least likely options would be 3, since metformin very rarely causes lingual angioedema (in March 2020 there was only one case described worldwide) and 4, since, among the adverse reactions of levodopa, angioedema is classified among the very rare ones (frequency less than 0.1%). Of the two remaining options, the drugs most frequently and classically associated with lingual angioedema are ACE inhibitors (frequency around 0.2%), and their association with simvastatin is also less than 0.1%.

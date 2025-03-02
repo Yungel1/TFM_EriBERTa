@@ -1,0 +1,16 @@
+T1	Premise 42 226	A 5-month-old infant exclusively breastfed until the present, who due to maternal work was introduced a bottle with formula and a few days ago was added cereals with and without gluten
+T2	Premise 228 367	Family history: 28-year-old mother with asthma, 32-year-old healthy father and 5-year-old brother with celiac disease and atopic dermatitis
+T3	Premise 369 548	As personal history, pregnancy without incidents and delivery by cesarean section, having been offered a bottle with starter formula on the first day of life in the maternity ward
+T4	Premise 550 766	Since a few days ago she starts with abdominal distension, diarrhea stools, refusal to feed, peribuccal erythema with longer duration after bottle feeding and lately vomiting after feeding, tolerating well the breast
+T5	Claim 808 822	Celiac disease
+T6	Claim 827 848	Acute gastroenteritis
+T7	Claim 853 879	Cow's milk protein allergy
+T8	Claim 884 898	Bottle allergy
+T9	Premise 925 1181	Child with multiple family history of allergy (asthma, atopy), who has received artificial milk in the first hours of life (sensitization to cow's milk protein) and who, coinciding with the intake of artificial milk, starts digestive symptoms and exanthema
+T10	Claim 1184 1188	APLV
+T11	Disease 1184 1188	APLV
+R1	Support Ent1:T10 Ent2:T7	
+T12	Disease 808 822	Celiac disease
+T13	Disease 827 848	Acute gastroenteritis
+T14	Disease 853 879	Cow's milk protein allergy
+T15	Disease 884 898	Bottle allergy

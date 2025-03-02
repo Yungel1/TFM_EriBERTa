@@ -1,0 +1,10 @@
+QUESTION TYPE: DIGESTIVE
+CLINICAL CASE: 
+Patient diagnosed with acute diverticulitis, treated with amoxicillin/clavulanic acid. After 5 days he starts with fever and diarrhea. He was diagnosed with Clostridium difficile colitis, amoxicillin/clavulanic acid was discontinued and metronidazole was prescribed. After 4 days he has not responded to metronidazole, but is clinically stable. The next step of treatment is:
+1- Change metronidazole for oral vancomycin (125 mg, four times a day for 10 days).
+2- Change metronidazole to piperacillin/ tazobactam (4 g piperacillin/0.5 g tazobactam every 8 hours).
+3- Indicate a subtotal colectomy.
+4- Loop ileostomy with antegrade polyethylene glycol lavage.
+5- nan
+CORRECT ANSWER: 1
+The treatment of choice for Clostridioides difficile infection is vancomycin orally 125mg/6h for 10 days. Metronidazole has been relegated to situations where vancomycin is not available.

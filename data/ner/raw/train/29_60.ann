@@ -1,0 +1,27 @@
+T1	Claim 1670 1691	4: Is the correct one
+T2	Claim 1200 1299	1 and 5: These are diagnostic tests, they are meaningless since you have already made the diagnosis
+T3	Premise 62 253	A 71-year-old patient, smoker of 2 packs of cigarettes/day for 50 years, with good quality of life and no other pathologic history of interest, consults for cough and hemoptotic expectoration
+T4	Premise 255 321	Physical examination revealed no significant pathological findings
+T5	Premise 323 516	Chest X-ray showed a mass of 4x3.4 cm lower right, a finding that was confirmed in the thoracoabdominal CT scan, which located the lesion in the lower lobe and found no adenopathy or metastasis
+T6	Premise 518 646	Bronchoscopy showed an infiltrating lesion in the right basal pyramid, biopsied as a well-differentiated squamous cell carcinoma
+T7	Premise 648 740	As for respiratory function tests, the FVC is 3,300 cc (84%) and the FEV 1 is 2,240 cc (80%)
+T8	Claim 801 824	Perform mediastinoscopy
+T9	Claim 829 937	Surgical intervention with curative intent should be contraindicated due to the advanced age of the patient.
+T10	Claim 1301 1339	2: Age should not be a limiting factor
+T11	Premise 1341 1590	especially considering that it is only 71 years old, but especially because the patient's "quality of life" is good (and I put "quality of life" because it is a term used erroneously, it is supposed to mean that he maintains a good functional level)
+T12	Claim 1592 1668	3: Presents a very mild respiratory limitation, does not require such a test
+T13	Claim 941 1033	An oxygen consumption test should be performed, given the respiratory limitation he presents
+T14	Claim 1038 1133	Surgical resection (lobectomy of the lower lobe of the right lung) should be indicated directly
+T15	Claim 1138 1180	A trantoracic puncture should be performed
+T16	Diagnostics 809 824	mediastinoscopy
+T17	Treatment 829 871	Surgical intervention with curative intent
+T18	Diagnostics 941 967	An oxygen consumption test
+T19	Treatment 1038 1104	Surgical resection (lobectomy of the lower lobe of the right lung)
+T20	Diagnostics 1138 1160	A trantoracic puncture
+R1	Support Ent1:T11 Ent2:T10	
+R2	Attack Ent1:T2 Ent2:T8	
+R3	Attack Ent1:T2 Ent2:T15	
+R4	Attack Ent1:T10 Ent2:T9	
+R5	Attack Ent1:T12 Ent2:T13	
+R6	Support Ent1:T1 Ent2:T14	
+T21	Marker 1409 1416	because

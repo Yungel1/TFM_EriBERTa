@@ -1,0 +1,15 @@
+T1	Premise 69 161	A 70-year-old woman, hypertensive and diabetic, who has worked as a sales clerk all her life
+T2	Premise 163 284	She consults for an internal malleolar lesion in the right leg with intense pain throughout the day that worsens at night
+T3	Premise 286 430	On examination, there are uncomplicated varicose cords in both extremities and normal femoral and popliteal pulses with absence of distal pulses
+T4	Claim 477 511	Venous echo-Doppler of lower limbs
+T5	Claim 516 545	Angioresonance of lower limbs
+T6	Claim 550 563	Arteriography
+T7	Claim 568 588	Ankle-brachial index
+T8	Claim 593 600	AngioCT
+T9	Diagnostics 477 511	Venous echo-Doppler of lower limbs
+T10	Diagnostics 516 545	Angioresonance of lower limbs
+T11	Diagnostics 550 563	Arteriography
+T12	Diagnostics 568 588	Ankle-brachial index
+T13	Diagnostics 593 600	AngioCT
+T14	Claim 620 824	At least for me, as a family physician, I usually start with the least invasive and most cost-effective tests, and in the case described, an ischemic problem in the lower limbs is the ankle-brachial index
+R1	Support Ent1:T14 Ent2:T7	

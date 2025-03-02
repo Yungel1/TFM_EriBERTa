@@ -1,0 +1,22 @@
+T1	Premise 41 135	A 25-year-old patient, during a tennis match, has intense pain in the neck and in the left eye
+T2	Premise 137 306	The next morning he wakes up with a feeling of gait instability and has palpebral ptosis of the left eye and anisocoria, with the left pupil being smaller than the right
+T3	Premise 308 348	The patient maintains good visual acuity
+T4	Claim 400 416	III cranial pair
+T5	Claim 421 433	Optic chiasm
+T6	Claim 438 464	Superior cervical ganglion
+T7	Claim 469 480	Spinal bulb
+T8	Claim 507 584	The picture presented to us is that of a Horner syndrome (miosis with ptosis)
+T9	Marker 585 587	so
+T10	Claim 588 635	the possibilities are reduced to options 3 or 4
+T11	Disease 548 584	Horner syndrome (miosis with ptosis)
+R1	Support Ent1:T8 Ent2:T10	
+R2	Attack Ent1:T10 Ent2:T4	
+R3	Attack Ent1:T10 Ent2:T5	
+T12	Premise 641 696	they specify that the patient presents gait instability
+T13	Claim 698 891	which is not justified by a Horner due to carotid dissection affecting the superior cervical ganglion, which is what they want us to believe when they talk about pain in the neck and in the eye
+T14	Marker 637 640	but
+T15	Marker 733 739	due to
+T16	Claim 893 978	If the patient really has ataxia, the only possible location would be the spinal cord
+R4	Support Ent1:T16 Ent2:T7	
+R5	Support Ent1:T12 Ent2:T13	
+R6	Attack Ent1:T13 Ent2:T6	

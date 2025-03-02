@@ -1,0 +1,10 @@
+QUESTION TYPE: OPHTHALMOLOGY
+CLINICAL CASE: 
+A 34-year-old patient playing tennis is hit by a tennis ball in the left orbit. On examination he presents significant palpebral hematoma, hyposphagmia, diplopia to the upper vision with limitation of the upper version of the eyeball. What would you suspect?
+1- Fracture of the inferior wall of the floor of the orbit with entrapment of the inferior rectus muscle.
+2- Zygomatic arch fracture.
+3- Fracture of the superior wall of the orbit with entrapment of the superior rectus muscle.
+4- Dentoalveolar fracture.
+5- nan
+CORRECT ANSWER: 1
+The statement describes diplopia to superior vision with limitation of upper eyeball extension. As the mechanical function of the left inferior rectus is compromised, it would not allow to complete the supraduccion movement generating vertical diplopia, this plus the traumatic antecedent allows to suspect a fracture of the orbital floor with muscular entrapment of the inferior rectus. Fracture of the roof is much less frequent and the entrapment of the superior rectus would cause limitation for infraduction.

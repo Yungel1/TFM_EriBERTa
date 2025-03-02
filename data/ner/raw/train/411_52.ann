@@ -1,0 +1,17 @@
+T1	Premise 45 156	A couple with a first male child (index case) with cystic fibrosis (mucoviscidosis) come for genetic counseling
+T2	Premise 158 288	Molecular diagnosis indicates that the index case is homozygous for the F5O8del mutation and his parents are heterozygous carriers
+T3	Premise 290 376	The clinical geneticist will inform them about the mode of transmission of the disease
+T4	Claim 409 472	The probability that the next offspring will be affected is 25%
+T5	Claim 477 540	The probability that the next offspring will be affected is 50%
+T6	Claim 545 615	Having had an affected child, the next offspring will also be affected
+T7	Claim 620 763	Having had a homozygous F5O8del child, the next offspring will be heterozygous carriers (67%) or homozygous genotype without the mutation (33%)
+T8	Claim 790 829	Both parents are carriers of a mutation
+T9	Premise 839 896	they are not sick and have already had a homozygous child
+T10	Marker 831 838	because
+R1	Support Ent1:T9 Ent2:T8	
+T11	Claim 903 981	the next offspring has a 50% chance of receiving the mutation from each parent
+T12	Marker 983 985	so
+T13	Claim 986 1042	the probability of receiving it from both is 50%x50%=25%
+R2	Support Ent1:T13 Ent2:T4	
+R3	Support Ent1:T8 Ent2:T11	
+R4	Support Ent1:T11 Ent2:T13	

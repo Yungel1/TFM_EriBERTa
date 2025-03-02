@@ -1,0 +1,24 @@
+T1	Premise 42 93	A 25-year-old man with no known history of interest
+T2	Premise 95 182	He has been presenting with foamy and loaded urine for 2 months, with no other symptoms
+T3	Premise 184 221	Physical examination without findings
+T4	Premise 223 409	Elemental urine: pH 5; glucose negative; hemoglobin ++; protein ++; leukocyte esterase negative; proteinuria 1.5 g/24 hours; urinary Na 60 mEq/L; urinary K 30 mEq/L; urinary Cl 100 mEq/L
+T5	Premise 411 493	Blood biochemistry: creatinine 1.6 mg/dL; urea 80 mg/dL; Na 140 mEq/L; K 3.8 mEq/L
+T6	Premise 495 650	Immunological study: antiDNA negative; ANCA negative; antiMBG negative, rheumatoid factor negative; C3 20 mg/dL (normal 60-120); C4 10 mg/dL (normal 20-40)
+T7	Premise 652 679	A renal biopsy is performed
+T8	Claim 768 797	Membranous glomerulonephritis
+T9	Claim 802 841	Glomerulonephritis with minimal changes
+T10	Claim 846 878	Mesangial IgA glomerulonephritis
+T11	Claim 883 923	Membranoproliferative glomerulonephritis
+T12	Claim 1084 1184	Of the options given, only membranoproliferative glomerulonephritis presents with hypocomplementemia
+T13	Premise 1030 1082	the levels of complement fractions C3 and C4 are low
+R1	Support Ent1:T13 Ent2:T12	
+T14	Claim 1186 1202	option 4 correct
+R2	Support Ent1:T12 Ent2:T14	
+R3	Support Ent1:T12 Ent2:T11	
+R4	Support Ent1:T14 Ent2:T11	
+T15	Disease 1166 1184	hypocomplementemia
+T16	Disease 768 797	Membranous glomerulonephritis
+T17	Disease 802 841	Glomerulonephritis with minimal changes
+T18	Disease 846 878	Mesangial IgA glomerulonephritis
+T19	Disease 883 923	Membranoproliferative glomerulonephritis
+R5	Support Ent1:T6 Ent2:T13	

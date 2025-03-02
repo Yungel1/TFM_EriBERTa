@@ -1,0 +1,10 @@
+QUESTION TYPE: ENDOCRINOLOGY
+CLINICAL CASE: 
+Ten days after performing a hemithyroidectomy on a patient with a 1.5 cm thyroid nodule you receive the following definitive report from the pathologist: "very cellular follicular pattern without capsular invasion invading adjacent blood vessels and nerves". Point out the correct answer:
+1- As there is no capsular invasion it is not convenient to perform further surgery.
+2- The follicular pattern is an indication for prophylactic cervical lymph node emptying.
+3- It is a follicular carcinoma and requires completion of thyroidectomy.
+4- The report allows to rule out papillary carcinoma with total certainty in the remaining thyroid.
+5- Measurement of plasma calcitonin will allow us to differentiate between papillary and follicular carcinoma.
+CORRECT ANSWER: 3
+I find this question a bit more difficult since you have to have clear concepts of pathologic anatomy. In any case, it is possible to exclude by exclusion and by the way the answers are expressed: Answer 2: prophylactic emptying is indicated in the medullary. Answer 4: simply by the way of expressing it, it should already have been ruled out. Answer 5: you already know that calcitonin is used in medullary carcinoma and not in differentiated carcinoma. Answers 1 and 3 are contrary, one recommends completing thyroidectomy and the other does not. The only ones in which complete thyroidectomy is not recommended are microcarcinomas measuring less than 1 cm.

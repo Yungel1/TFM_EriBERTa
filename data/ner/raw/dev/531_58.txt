@@ -1,0 +1,10 @@
+QUESTION TYPE: ONCOLOGY
+CLINICAL CASE: 
+Faced with a patient presenting with an ulcerovegetating lesion on the mandibular gingiva at the level of the molar region of 5 months of evolution, the appearance of hypoesthesia in the mentonian region requires ruling out:
+1- Paraneoplastic neuropathy.
+2- Diagnosis of sarcoidosis with "on the scale" facial paralysis.
+3- Herpes virus infection in immunosuppressed patient.
+4- Diagnosis of carcinoma with infiltration of the mandibular canal.
+5- nan
+CORRECT ANSWER: 4
+Mentonian paresthesias (Roger's sign) are associated with bone metastases (it is not paraneoplastic but direct infiltration). In this case what you describe is an oral tumor growing locally and infiltrating the mandibular canal, I believe.

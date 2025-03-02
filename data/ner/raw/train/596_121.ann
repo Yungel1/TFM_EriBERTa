@@ -1,0 +1,30 @@
+T1	Premise 44 103	79-year-old woman admitted for an osteoporotic hip fracture
+T2	Premise 115 158	secondary prevention of fragility fractures
+T3	Marker 174 179	WRONG
+T4	Claim 191 266	Low adherence to treatment is associated with an increased risk of fracture
+T5	Claim 271 354	Bone remodeling markers may be useful for early monitoring of response to treatment
+T6	Claim 359 453	Vitamin D monotherapy is effective in reducing such fractures in non-institutionalized elderly
+T7	Claim 458 573	Increasing dietary calcium or taking calcium supplements alone does not protect against the occurrence of fractures
+T8	Claim 600 656	This question corresponds to the section on traumatology
+T9	Claim 658 799	however, it could be answered with knowledge of rheumatology and with the osteoporosis recommendations of the Spanish Society of Rheumatology
+T10	Marker 658 665	however
+T11	Claim 801 909	In osteoporosis, one of the main risks associated with increased fracture risk is low adherence to treatment
+T12	Claim 914 934	answer 1 is correct.
+T13	Marker 911 913	so
+R1	Support Ent1:T11 Ent2:T12	
+R2	Support Ent1:T12 Ent2:T4	
+R3	Support Ent1:T12 Ent2:T4	
+T14	Claim 935 1119	Answer 2 is found in the SER guidelines, which confirm that some studies conclude that bone remodeling markers can be useful for early monitoring of adherence and response to treatment
+R4	Support Ent1:T14 Ent2:T5	
+T15	Claim 1121 1140	Answer 4 is correct
+T16	Marker 1141 1148	because
+T17	Claim 1149 1369	again in the SER 2019 guidelines they quote: "The current scientific evidence allows us to affirm that neither increasing dietary calcium nor taking calcium supplements alone protects against the appearance of fractures"
+R5	Support Ent1:T17 Ent2:T15	
+R6	Support Ent1:T15 Ent2:T7	
+T18	Claim 1371 1429	Therefore, the correct answer to this question is option 3
+T19	Marker 1371 1380	Therefore
+R7	Attack Ent1:T18 Ent2:T6	
+T20	Claim 1431 1713	Patients on pharmacological treatment for OP should use calcium and vitamin D supplements because practically all clinical trials that have demonstrated efficacy of antiosteoporotic drugs routinely include calcium supplements and cholecalciferol (vitamin D3), but not in monotherapy
+R8	Attack Ent1:T20 Ent2:T6	
+T21	Marker 1521 1528	because
+T22	Marker 1691 1694	but

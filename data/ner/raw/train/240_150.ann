@@ -1,0 +1,19 @@
+T1	Claim 399 418	Alzheimer's disease
+T2	Premise 41 160	A 76-year-old man consults for cognitive impairment, slowness and clumsiness of movements, of eight months of evolution
+T3	Premise 162 336	The family reports that the patient had visual hallucinations, so his primary care physician prescribed low doses of risperidone, with a significant worsening of motor status
+T4	Claim 423 450	Dementia due to Lewy bodies
+T5	Claim 455 478	Frontotemporal dementia
+T6	Claim 483 500	Vascular dementia
+T7	Claim 505 539	Sporadic Creutzfeldt-Jakob disease
+T8	Claim 559 582	The correct answer is 2
+T9	Marker 583 590	because
+T10	Premise 591 717	it presents the case with the typical symptoms of dementia due to Lewy bodies, being the guiding symptom visual hallucinations
+R1	Support Ent1:T10 Ent2:T8	
+R2	Support Ent1:T8 Ent2:T4	
+T11	Disease 423 431	Dementia
+T12	Premise 719 893	Progressive cognitive impairment, parkinsonian motor signs (inferred from clumsiness of movements) and hypersensitivity to neuroleptics even in small doses are also mentioned
+R3	Support Ent1:T12 Ent2:T8	
+T13	Disease 399 418	Alzheimer's disease
+T14	Disease 455 478	Frontotemporal dementia
+T15	Disease 483 500	Vascular dementia
+T16	Disease 505 539	Sporadic Creutzfeldt-Jakob disease

@@ -1,0 +1,18 @@
+T1	Premise 45 238	A 73-year-old patient...swallowing a complete neurological dysphagia secondary to a cardioembolic stroke in the left middle cerebral artery territory. will require long-term nutritional support
+T2	Claim 336 373	Enteral nutrition by nasogastric tube
+T3	Claim 378 416	Enteral nutrition by nasoduodenal tube
+T4	Claim 421 453	Enteral nutrition by gastrostomy
+T5	Claim 458 490	Enteral nutrition by jejunostomy
+T6	Claim 517 658	Enteral nutrition is a nutritional support technique that involves administering nutrients directly into the gastrointestinal tract by gavage
+T7	Claim 660 790	The choice of the route of formula administration depends on the nutritional status, age of the patient and the underlying disease
+T8	Claim 793 927	f enteral nutrition is considered to be of short duration, the route of choice is the nasogastric or nasoduodenal- nasojejunal tube...
+T9	Claim 928 1107	If prolonged nutrition is anticipated the route of choice is gastrostomy (option 3), with jejunostomy being reserved for cases in which it is not possible to use the gastric route
+R1	Attack Ent1:T1 Ent2:T8	
+R2	Attack Ent1:T8 Ent2:T3	
+R3	Support Ent1:T9 Ent2:T4	
+R4	Attack Ent1:T9 Ent2:T5	
+R5	Attack Ent1:T8 Ent2:T2	
+T10	Treatment 336 373	Enteral nutrition by nasogastric tube
+T11	Treatment 378 416	Enteral nutrition by nasoduodenal tube
+T12	Treatment 421 453	Enteral nutrition by gastrostomy
+T13	Treatment 458 490	Enteral nutrition by jejunostomy

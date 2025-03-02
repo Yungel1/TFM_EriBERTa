@@ -1,0 +1,10 @@
+QUESTION TYPE: ENDOCRINOLOGY
+CLINICAL CASE: 
+A 54-year-old man who goes for a check-up at his company. A body mass index of 32.8 kg/m2 and fasting blood glucose of 138 mg/l were detected. One month later, glycemia 13 mg/dl. Which therapeutic recommendation would you make first?
+1- Administer metformin.
+2- Prescribe a sulfonylurea.
+3- Behavioral changes. Diet and physical exercise.
+4- Insulin before each meal.
+5- Take acarbose at night, before going to bed.
+CORRECT ANSWER: 3
+Behavioral changes: diet and physical exercise. This is the first thing we do when diagnosed with type 2 diabetes. This is a good question to remember that before any drug, we must insist on changing habits. Then we would prescribe Metformin.

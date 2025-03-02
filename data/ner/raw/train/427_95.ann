@@ -1,0 +1,35 @@
+T1	Premise 45 149	A 45-year-old woman comes to the emergency department with confusional symptoms accompanied by dysphonia
+T2	Premise 151 251	On examination she has a palpable neck mass and a blood test shows plasma calcium levels of 15 mg/dL
+T3	Claim 358 379	Parathyroid carcinoma
+T4	Claim 384 411	Medullary thyroid carcinoma
+T5	Claim 416 426	MEN type I
+T6	Claim 431 450	Parathyroid adenoma
+T7	Premise 477 502	Palpable mass in the neck
+T8	Claim 504 541	suspect thyroid/parathyroid pathology
+T9	Claim 253 276	normal up to 10.2 mg/dL
+T10	Premise 543 578	It is associated with hypercalcemia
+R1	Support Ent1:T2 Ent2:T9	
+T11	Claim 580 642	therefore, the option of medullary thyroid cancer is ruled out
+T12	Marker 580 589	therefore
+T13	Disease 605 629	medullary thyroid cancer
+T14	Marker 633 642	ruled out
+R2	Attack Ent1:T11 Ent2:T4	
+T15	Claim 644 684	it does not affect the level of calcemia
+R3	Support Ent1:T15 Ent2:T11	
+R4	Support Ent1:T10 Ent2:T11	
+R5	Support Ent1:T7 Ent2:T8	
+T16	Claim 687 790	To think of MEN type I we should associate other pathologies (pituitary, pancreatic or duodenal tumors)
+R6	Attack Ent1:T16 Ent2:T5	
+T17	Claim 792 934	The presence of a calcemia higher than 13mgr/dl, together with dysphonia, indicates a malignant tumor (higher calcemia level and infiltration)
+T18	Claim 936 965	therefore we opt for option 1
+T19	Marker 936 945	therefore
+R7	Support Ent1:T17 Ent2:T18	
+R8	Support Ent1:T18 Ent2:T3	
+T20	Disease 699 709	MEN type I
+T21	Disease 358 379	Parathyroid carcinoma
+T22	Disease 384 411	Medullary thyroid carcinoma
+T23	Disease 416 426	MEN type I
+T24	Disease 431 450	Parathyroid adenoma
+R9	Attack Ent1:T1 Ent2:T16	
+R10	Attack Ent1:T2 Ent2:T16	
+R11	Support Ent1:T2 Ent2:T17	

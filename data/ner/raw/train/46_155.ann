@@ -1,0 +1,25 @@
+T1	Premise 42 171	A 1-year-old boy whose mother has just been diagnosed with bacilliferous pulmonary tuberculosis, having started correct treatment
+T2	Premise 173 275	The child is asymptomatic with a normal examination, negative tuberculin test (PT) and normal chest Rx
+T3	Claim 330 416	Only separate him from the mother until her treatment is completed (at least 6 months)
+T4	Claim 421 506	Perform a high-resolution CT scan of the lung, and if normal, repeat PT at 8-12 weeks
+T5	Claim 732 885	Chemoprophylaxis with INH, 8-12 weeks. Repeat PT. If negative, stop treatment. If positive, perform chest X-ray to decide whether or not there is disease
+T6	Claim 595 727	Chemoprophylaxis with INH 6-9 months. New PT and chest X-ray at the end of treatment, to decide whether or not to conclude treatment
+T7	Claim 511 590	Chemoprophylaxis with isoniazid (INH) until the mother's smear test is negative
+T8	Claim 905 928	The correct answer is 5
+R1	Support Ent1:T8 Ent2:T5	
+T9	Claim 930 1043	The mother should be isolated for the first 2-4 weeks of treatment, after which she would no longer be contagious
+T10	Claim 1045 1131	If the result of the repeat PT is still negative, the child should not be tested again
+T11	Claim 1133 1218	If it is positive, the X-ray (or pulmonary CT in younger children) should be repeated
+R2	Support Ent1:T10 Ent2:T5	
+R3	Support Ent1:T11 Ent2:T5	
+T12	Diagnostics 431 465	high-resolution CT scan of the lun
+T13	Diagnostics 490 492	PT
+T14	Treatment 511 548	Chemoprophylaxis with isoniazid (INH)
+T15	Treatment 595 631	Chemoprophylaxis with INH 6-9 months
+T16	Diagnostics 637 639	PT
+T17	Diagnostics 644 655	chest X-ray
+T18	Treatment 732 769	Chemoprophylaxis with INH, 8-12 weeks
+T19	Diagnostics 778 780	PT
+T20	Diagnostics 832 843	chest X-ray
+T21	Diagnostics 1073 1075	PT
+T22	Diagnostics 1156 1199	X-ray (or pulmonary CT in younger children)

@@ -1,0 +1,28 @@
+T1	Premise 64 164	An 80-year-old man comes to your office for evaluation of a scheduled cholecystectomy by laparoscopy
+T2	Premise 166 236	He has a history of arterial hypertension under treatment for 10 years
+T3	Premise 238 274	He denies heart or pulmonary disease
+T4	Premise 276 297	She has no chest pain
+T5	Premise 299 428	She has an active life and goes daily to the gym where she alternates swimming and walking on the treadmill for at least one hour
+T6	Premise 430 514	Usual treatment: nebivolol 5 mg every 24 hours and hydrochlorothiazide 12.5 mg daily
+T7	Premise 516 622	Physical examination: weight 73 kgs; height 179 cm; blood pressure 138/80 mmHg; heart rate 60 beats/minute
+T8	Premise 624 650	No murmurs are auscultated
+T9	Claim 724 745	Perform a stress test
+T10	Claim 750 774	Perform echocardiography
+T11	Claim 778 818	Perform a thallium and dipyridamole scan
+T12	Claim 823 848	Perform electrocardiogram
+T14	Claim 1015 1040	The answer is obviously 4
+R1	Support Ent1:T14 Ent2:T12	
+T15	Claim 1042 1236	Had there been a fifth option it would have been that nothing needs to be done, which might have generated some doubt in the student, but since the question does not exist it is a piece of candy
+T16	Marker 1176 1179	but
+T17	Marker 1180 1185	since
+R2	Support Ent1:T15 Ent2:T14	
+T18	Claim 1238 1409	Although there are many protocols on preoperative procedures, almost as many as there are hospitals, the question makes it easy by putting a very old patient, 80 years old
+R3	Support Ent1:T18 Ent2:T14	
+T19	Marker 1238 1246	Although
+T20	Claim 1411 1532	The age range from which it is considered mandatory to request an ECG varies between 45, 50, 60 or even some say 70 years
+R4	Support Ent1:T20 Ent2:T14	
+T22	Diagnostics 758 774	echocardiography
+T21	Diagnostics 734 745	stress test
+T23	Diagnostics 788 818	thallium and dipyridamole scan
+T24	Diagnostics 831 848	electrocardiogram
+R5	Support Ent1:T1 Ent2:T18	

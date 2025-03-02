@@ -1,0 +1,41 @@
+T1	Premise 44 111	A 41-year-old male consults for gonalgia of several days' evolution
+T2	Premise 113 260	During the examination, the Thessaly test is performed (pain with internal and external rotation movements with the knee flexed), which is positive
+T3	Claim 520 536	Answer 1 correct
+T4	Claim 538 590	The Thessaly test is a meniscal exploration maneuver
+R1	Support Ent1:T4 Ent2:T3	
+T5	Claim 314 329	Meniscal injury
+T6	Claim 334 389	Injury due to rupture of the anterior cruciate ligament
+T7	Claim 394 450	Injury due to rupture of the posterior cruciate ligament
+T8	Claim 455 493	Injury due to degenerative arthropathy
+R2	Support Ent1:T3 Ent2:T5	
+R3	Support Ent1:T2 Ent2:T4	
+T9	Premise 592 702	The statement focuses exclusively on this part of the examination and also explains that it is indeed positive
+T10	Claim 704 753	which leads to the suspicion of a meniscal lesion
+R4	Support Ent1:T9 Ent2:T10	
+R5	Attack Ent1:T10 Ent2:T5	
+T11	Claim 756 880	The Thessaly test is a dynamic reproduction of load transmission in the knee joint and is performed at 5° and 20° of flexion
+T12	Claim 882 1005	The examiner supports the patient by holding his or her outstretched hands while the patient stands flatfooted on the floor
+T13	Claim 1007 1137	The patient then rotates his or her knee and body, internally and externally, three times, keeping the knee in slight flexion (5°)
+T14	Claim 1139 1205	Then the same procedure is carried out with the knee flexed at 20°
+T15	Claim 1207 1340	Patients with suspected meniscal tears experience medial or lateral joint-line discomfort and may have a sense of locking or catching
+T16	Claim 1342 1547	The theory behind the test is that, with this maneuver, the knee with a meniscal tear is subjected to excessive loading conditions and almost certainly will have the same symptoms that the patient reported
+T17	Claim 1549 1806	The test is always performed first on the normal knee so that the patient may be trained, especially with regard to how to keep the knee in 5° and then in 20° of flexion and how to recognize, by comparison, a possible positive result in the symptomatic knee
+T18	Claim 1809 1827	Answer 2 incorrect
+T19	Claim 1975 1993	Answer 3 incorrect
+T20	Premise 1829 1973	At no time do they describe any exploration maneuvers of the anterior cruciate ligament, nor do they mention any trauma that may have injured it
+R6	Support Ent1:T20 Ent2:T18	
+R7	Attack Ent1:T18 Ent2:T6	
+T21	Premise 1995 2142	At no time do they describe any exploration maneuvers of the posterior cruciate ligament, nor do they mention any trauma that could have injured it
+R8	Support Ent1:T21 Ent2:T19	
+R9	Attack Ent1:T19 Ent2:T7	
+T22	Claim 2144 2158	Wrong answer 4
+T23	Claim 2160 2280	Although it could occur, it is not to be expected in a 41 year old person with an acutely established clinical condition
+T24	Marker 2160 2168	Although
+R10	Support Ent1:T23 Ent2:T22	
+R11	Attack Ent1:T22 Ent2:T8	
+T25	Disease 738 753	meniscal lesion
+T26	Disease 314 329	Meniscal injury
+T27	Claim 334 389	Injury due to rupture of the anterior cruciate ligament
+T28	Disease 334 389	Injury due to rupture of the anterior cruciate ligament
+T29	Disease 394 450	Injury due to rupture of the posterior cruciate ligament
+T30	Disease 455 493	Injury due to degenerative arthropathy

@@ -1,0 +1,10 @@
+QUESTION TYPE: PEDIATRICS
+CLINICAL CASE: 
+A 5-year-old boy diagnosed with chronic renal failure. He comes to the emergency department with vomiting, malaise, and palpitations. An electrocardiogram was performed with T-wave elevation and blood tests showed potassium levels of 5.9 mEq/L. Immediate administration of calcium gluconate is decided. What is the purpose of this treatment?
+1- Encourage the displacement of potassium from the plasma space to the intracellular space.
+2- Chelate circulating potassium to favor its hepatic elimination.
+3- Chelate circulating potassium to favor its renal elimination.
+4- Antagonize the action of potassium on the myocardial cell membrane.
+5- nan
+CORRECT ANSWER: 4
+Calcium gluconate has no effect on blood potassium levels (therefore options 1, 2 and 3 are ruled out). Its function is to decrease the excitability of cardiac myocytes to decrease the likelihood of developing heart rhythm disorders.

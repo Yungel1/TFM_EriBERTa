@@ -1,0 +1,10 @@
+QUESTION TYPE: NEUROLOGY AND NEUROSURGERY
+CLINICAL CASE: 
+An individual presents with "muscle weakness" (spastic hemiparesis) of both right extremities, with hyperreflexia and Babinski's sign, along with a "facial flaccid paralysis" of the left hemiface, with inability to close the left eye or retract the left side of the mouth, in addition to other alterations. From the data described, it is an alteration that affects, among other elements, the motor fascicles: cortico-spinal and cortico-nuclear, but at what level of the neuroaxis would the lesion be located?
+1- At the level of the area 4 of Brodmann of the cerebral cortex of the right side.
+2- In the internal capsule, posterior arm on the right side.
+3- In the left cerebral peduncle.
+4- In the medial portion of the caudal protuberance of the left side.
+5- In the medulla oblongata before decussation of the right cortico-spinal fascicle.
+CORRECT ANSWER: 4
+Question always involves the brainstem. We have a right hemiparesis and involvement of the left facial nucleus, since it has affected the upper and lower facial; therefore we have a crossed clinical picture, having to think about brainstem involvement. If we have in a quick diagram where the nuclei of the cranial pairs start from: the first 4 above the pons, the next 4 in the pons, and the last 4 below the pons, we have that the facial nucleus is in the middle 4. That is, left facial nucleus, left pons, so answer 4.

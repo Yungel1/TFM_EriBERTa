@@ -1,0 +1,10 @@
+QUESTION TYPE: ENDOCRINOLOGY
+CLINICAL CASE: 
+A 45-year-old woman comes to the clinic referred from surgery with the diagnosis of a neuroendocrine tumor diagnosed after partial pancreatectomy for a 2-cm tumor in the tail of the pancreas. The tumor had been detected by chance in an abdominal CT scan requested to complete the study of a simple hepatic cyst. On questioning the patient, the history of irregular menstruation, amenorrhea for the last 6 months, and repeated renal colic since she was 20 years old, for which she has required lithotripsy on several occasions, stand out. She also has a family history of renoureteral colic. What is her suspected diagnosis?
+1- Multiple endocrine neoplasia type 1 or Wermer's syndrome.
+2- Multiple endocrine neoplasia type 2 A or Sipple's syndrome.
+3- Multiple endocrine neoplasia type 2B.
+4- Somatostatinoma.
+5- A PTH-producing neuroendocrine tumor.
+CORRECT ANSWER: 1
+Very nice clinical question from MEN. Pancreatic neuroendocrine tumor + pituitary adenoma (prolactinoma) + hyperparathyroidism (renoureteral colic in young people): MEN 1. Medium difficulty because you have to know the MEN triad and recognize the different tumors.

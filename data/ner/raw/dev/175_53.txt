@@ -1,0 +1,10 @@
+QUESTION TYPE: PULMONOLOGY
+CLINICAL CASE: 
+71-year-old male, retired waiter, non-smoker, who consults for nocturnal snoring. The patient has a body mass index of 31.5 kg/m2 and reports mild postprandial daytime sleepiness (Epworth Sleepiness Scale of 3) with no other relevant symptoms, signs or clinical history. The apnea-hypopnea index obtained in the polysomnography was 18. With these data, what is the most appropriate measure to adopt in this patient?
+1- Hygienic-dietary measures and evolution control.
+2- Uvulopalatopharyngoplasty.
+3- Nasal CPAP (Continuous Positive Airway Pressure).
+4- Non-invasive mechanical ventilation.
+5- Nocturnal oxygen therapy.
+CORRECT ANSWER: 1
+With an Apneas-Hypopnea Index of less than 30, and in the absence of striking symptoms of OSAHS and in the absence of risk professions such as professional drivers, etc., the correct thing to do is to control weight and the rest of the hygienic-dietary measures, with periodic follow-up.

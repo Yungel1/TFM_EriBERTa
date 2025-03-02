@@ -1,0 +1,10 @@
+QUESTION TYPE: ORTHOPEDIC SURGERY AND TRAUMATOLOGY
+CLINICAL CASE: 
+An 11-year-old, 6-month-old, premenarchal girl with known idiopathic scoliosis. The spine x-ray performed 6 months ago showed a left thoracolumbar curve of 18º (Cobb angle). The current x-ray shows a Cobb angle of 28º, with an iliac crest maturation (Risser's sign) of 2. At this stage of evolution, what is the most appropriate treatment to try to stop the progression of the curve?
+1- Swimming exercises.
+2- Postural re-education exercises.
+3- Corrective orthopedic brace.
+4- Surgical intervention by spinal arthrodesis.
+5- nan
+CORRECT ANSWER: 3
+In the juvenile and adolescent forms, treatment depends on the degree of deformity: - 10 - 20°: serial observation. - 20-50°: thermoplastic corsets (Boston, Cheneau or Milwaukee, according to where the apex of the main curve is located). - 40-50°: with Risser less than 3, surgical arthrodesis would be indicated; with Risser greater than or equal to 3, the remaining growth potential of the curve is low and observation may be considered in case it tends to progress in adulthood.

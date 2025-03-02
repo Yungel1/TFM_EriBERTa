@@ -1,0 +1,39 @@
+T1	Premise 42 125	A 53-year-old woman with bronchial asthma comes to the allergy clinic for a checkup
+T2	Disease 67 83	bronchial asthma
+T3	Premise 127 273	She reports repeated exacerbations with nocturnal symptoms, frequent use of rescue medication and dyspnea on exertion when walking on level ground
+T4	Premise 275 350	Spirometry shows a pre-bronchodilator FEV1/FVC ratio of 60% and FEV1 of 55%
+T5	Diagnostics 275 285	Spirometry
+T6	Premise 352 412	Skin tests are positive for mites and total IgE of 150 IU/ml
+T7	Diagnostics 352 362	Skin tests
+T9	Treatment 450 529	combination of high-dose salmeterol/budesonide (50/500 mg: 2 puffs twice daily)
+T10	Treatment 531 570	maintenance oral prednisone (10 mg/day)
+T8	Premise 414 588	The patient is being treated with a combination of high-dose salmeterol/budesonide (50/500 mg: 2 puffs twice daily), maintenance oral prednisone (10 mg/day) and theophylline.
+T11	Treatment 575 587	theophylline
+T12	Claim 668 689	Add magnesium sulfate
+T13	Treatment 672 689	magnesium sulfate
+T14	Claim 694 738	Increase the dose of prednisone to 30 mg/day
+T15	Treatment 707 738	dose of prednisone to 30 mg/day
+T16	Claim 743 757	Add omalizumab
+T17	Treatment 747 757	omalizumab
+T18	Claim 762 789	Nebulized treatment at home
+T19	Treatment 762 781	Nebulized treatment
+T20	Claim 794 862	Switch to a combination with high doses of budesonide and formoterol
+T21	Treatment 806 862	combination with high doses of budesonide and formoterol
+T22	Claim 882 1167	The indication of omalizumab in a patient such as the one referred to is a correct indication, although in severe asthma that is difficult to control, there are other prior measures that are not contemplated and that must always be taken into account before resorting to this treatment
+T23	Marker 977 985	although
+T24	Disease 996 1002	asthma
+T25	Treatment 900 910	omalizumab
+R1	Support Ent1:T22 Ent2:T16	
+T26	Claim 1169 1272	It is mandatory to ensure firstly that it is truly asthma and not another disease that simulates asthma
+T27	Disease 1220 1226	asthma
+T28	Disease 1266 1272	asthma
+T29	Claim 1274 1489	secondly that there are no complications that worsen the evolution as could be the presence of gastroesophageal reflux, bronchiectasis, presence of opportunistic germs given the chronic treatment with steroids, etc;
+T30	Disease 1394 1408	bronchiectasis
+T31	Treatment 1475 1483	steroids
+T32	Claim 1494 1625	thirdly, it is necessary to confirm that the patient complies with the treatments correctly, especially the inhaled treatment, etc.
+T33	Treatment 1602 1619	inhaled treatment
+T34	Disease 1369 1392	gastroesophageal reflux
+T35	Claim 1626 1725	Once all of the above has been checked, it would be time to start a trial treatment with omalizumab
+T36	Treatment 1700 1725	treatment with omalizumab
+T37	Marker 1442 1451	given the
+R2	Support Ent1:T35 Ent2:T16	

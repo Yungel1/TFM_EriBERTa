@@ -1,0 +1,43 @@
+T1	Premise 77 149	A 64-year-old smoker and heavy drinker with no other history of interest
+T2	Premise 151 234	The picture he explains is odynodysphagia of 3 months of evolution and left otalgia
+T3	Premise 236 296	He provides a dentist's report that rules out a dental cause
+T4	Premise 298 452	He also refers to having been visited by different specialists and provides a head and neck CAT scan (without iodine contrast) which is reported as normal
+T5	Diagnostics 376 398	head and neck CAT scan
+T6	Premise 454 530	On examination there was a decrease in the propulsive capacity of the tongue
+T7	Premise 532 707	palpation of the base of the left tongue showed an induration of stony consistency of approximately 3cm and with indirect laryngoscopy no ulceration of the mucosa was observed
+T8	Diagnostics 645 666	indirect laryngoscopy
+T9	Premise 709 759	Cervical palpation is negative for lymphadenopathy
+T10	Claim 821 863	Dental cause / reevaluation by the dentist
+T11	Claim 868 915	Abscess of the base of the tongue / debridement
+T12	Claim 920 964	Ankyloglossia / surgical release of the same
+T13	Treatment 904 915	debridement
+T14	Treatment 936 964	surgical release of the same
+T15	Disease 920 933	Ankyloglossia
+T16	Claim 969 1028	Malignant process of oropharynx / repeat CT scan and biopsy
+T17	Diagnostics 1010 1017	CT scan
+T18	Diagnostics 1022 1028	biopsy
+T19	Claim 1033 1084	Nonspecific inflammation / corticosteroid treatment
+T20	Treatment 1060 1084	corticosteroid treatment
+T21	Premise 1104 1229	We are presented with a patient with risk factors for oropharyngeal cancer, but in whom the examination and tests are normal.
+T22	Disease 1158 1178	oropharyngeal cancer
+T23	Marker 1180 1183	but
+T24	Claim 1379 1457	He already tells you that the dentist "didn't see anything", so he rules out 1
+R1	Attack Ent1:T24 Ent2:T10	
+R2	Attack Ent1:T3 Ent2:T10	
+T25	Claim 1459 1576	It is not an abscess of the base of the tongue either, because in three months it would have killed him: neither is 2
+T26	Marker 1514 1521	because
+R3	Attack Ent1:T25 Ent2:T11	
+R4	Attack Ent1:T2 Ent2:T11	
+T27	Claim 1663 1768	When there is doubt that it could be cancer, we should not fool around and order a new CT scan and biopsy
+T28	Diagnostics 1750 1757	CT scan
+T29	Diagnostics 1762 1768	biopsy
+R5	Support Ent1:T27 Ent2:T16	
+T30	Claim 1770 1889	Tongue base cancers are very treacherous and it is one of the fears of any otolaryngologist when he suspects a neoplasm
+T31	Disease 1770 1789	Tongue base cancers
+R6	Support Ent1:T30 Ent2:T16	
+T32	Claim 1891 2053	It is not uncommon for them to arise without exophytic masses or ulcerations of the tongue mucosa and they are difficult to detect on CT when contrast is not used
+R7	Support Ent1:T7 Ent2:T16	
+R8	Support Ent1:T4 Ent2:T16	
+R9	Support Ent1:T32 Ent2:T16	
+T33	Claim 2055 2118	The correct answer is 4 and I do not think it can be challenged
+R10	Support Ent1:T33 Ent2:T16	

@@ -1,0 +1,17 @@
+T1	Premise 43 123	71-year-old male, retired waiter, non-smoker, who consults for nocturnal snoring
+T2	Premise 125 312	The patient has a body mass index of 31.5 kg/m2 and reports mild postprandial daytime sleepiness (Epworth Sleepiness Scale of 3) with no other relevant symptoms, signs or clinical history
+T3	Premise 314 377	The apnea-hypopnea index obtained in the polysomnography was 18
+T4	Diagnostics 355 370	polysomnography
+T5	Claim 462 509	Hygienic-dietary measures and evolution control
+T6	Claim 514 539	Uvulopalatopharyngoplasty
+T7	Claim 544 592	Nasal CPAP (Continuous Positive Airway Pressure)
+T8	Claim 597 632	Non-invasive mechanical ventilation
+T9	Claim 637 661	Nocturnal oxygen therapy
+T10	Claim 681 967	With an Apneas-Hypopnea Index of less than 30, and in the absence of striking symptoms of OSAHS and in the absence of risk professions such as professional drivers, etc., the correct thing to do is to control weight and the rest of the hygienic-dietary measures, with periodic follow-up
+R1	Support Ent1:T3 Ent2:T10	
+R2	Support Ent1:T10 Ent2:T5	
+T11	Treatment 462 487	Hygienic-dietary measures
+T12	Treatment 514 539	Uvulopalatopharyngoplasty
+T13	Treatment 544 591	Nasal CPAP (Continuous Positive Airway Pressure
+T14	Treatment 597 632	Non-invasive mechanical ventilation
+T15	Treatment 637 661	Nocturnal oxygen therapy

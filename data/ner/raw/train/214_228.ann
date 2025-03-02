@@ -1,0 +1,32 @@
+T1	Premise 44 184	A 19-year-old man consults for a 24-hour history of pain, swelling and functional impotence of the right knee accompanied by a fever of 38°C
+T2	Premise 186 270	Physical examination reveals inflammatory signs and joint effusion in the right knee
+T3	Premise 272 358	Laboratory tests showed leukocytosis with neutrophilia and elevated C-reactive protein
+T4	Premise 360 414	The syndromic diagnosis of acute monoarthritis is made
+T5	Claim 464 494	Arthritis due to microcrystals
+T6	Claim 499 517	Reactive arthritis
+T7	Claim 522 552	Bacterial infectious arthritis
+T8	Claim 557 591	Mycobacterial infectious arthritis
+T9	Claim 596 616	Rheumatoid arthritis
+T10	Claim 1273 1349	And above all, because of its implications, the first one to always rule out
+T11	Claim 1149 1271	the most likely option would be bacterial infectious arthritis (that caused by mycobacteria usually have a chronic course)
+T12	Premise 1075 1147	With the data provided and taking into account that this is a young male
+T13	Claim 636 782	Acute monoarthritis associated with fever, leukocytosis with neutrophilia and increased acute phase reactants does not always have a septic origin
+T14	Claim 784 1073	In the absence of further information (more complete anamnesis on the current disease, risk factors, personal and family history, extra-articular symptoms or signs, etc.) it can be said that also 1 and 2 (and very exceptionally 5) could debut with a similar clinical and biological picture
+R1	Support Ent1:T14 Ent2:T5	
+R2	Support Ent1:T14 Ent2:T6	
+R3	Support Ent1:T14 Ent2:T9	
+R4	Support Ent1:T12 Ent2:T11	
+R5	Support Ent1:T11 Ent2:T7	
+R6	Attack Ent1:T13 Ent2:T8	
+R7	Support Ent1:T1 Ent2:T11	
+R8	Support Ent1:T2 Ent2:T11	
+R9	Support Ent1:T3 Ent2:T11	
+T15	Marker 1341 1349	rule out
+T16	Marker 1277 1286	above all
+R10	Attack Ent1:T10 Ent2:T5	
+T17	Disease 464 494	Arthritis due to microcrystals
+T18	Marker 474 480	due to
+T19	Disease 499 517	Reactive arthritis
+T20	Disease 522 552	Bacterial infectious arthritis
+T21	Disease 557 591	Mycobacterial infectious arthritis
+T22	Disease 596 616	Rheumatoid arthritis

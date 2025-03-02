@@ -1,0 +1,10 @@
+QUESTION TYPE: DIGESTIVE SYSTEM
+CLINICAL CASE: 
+Which of the following clinical data, recorded during the clinical history taking of a patient with diarrhea of more than 4 weeks of evolution, can be found in people without organic pathology:
+1- Weight loss with or without rectorrhagia.
+2- Persistence of diarrhea during the night.
+3- Onset of symptoms after age 50.
+4- Presence of dermatitis and/or arthritis during the examination.
+5- Expulsion of mucus in more than 25% of defecations.
+CORRECT ANSWER: 5
+Although mucus is usually more frightening in the consultation, it falls within the Rome II criteria for the diagnosis of Irritable Bowel Syndrome. All the rest are typical signs of organicity, although I think the question is poorly phrased, since any of these data (especially age) can be found in patients who in the end have nothing, what happens is that in these cases we must always look for organicity.

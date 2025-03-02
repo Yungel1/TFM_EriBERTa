@@ -1,0 +1,39 @@
+T1	Premise 39 150	A 41-year-old man comes to the clinic with a nodule in the right thyroid, a fine needle aspiration is performed
+T2	Claim 191 272	Distinguish between follicular adenoma or minimally invasive follicular carcinoma
+T3	Disease 211 229	follicular adenoma
+T4	Disease 233 272	minimally invasive follicular carcinoma
+T5	Claim 277 356	Identify the areas of capsular or vascular invasion of the follicular carcinoma
+T6	Disease 290 356	areas of capsular or vascular invasion of the follicular carcinoma
+T7	Claim 361 428	Recognize G-cell hyperplasia associated with familial spinal cancer
+T8	Disease 371 428	G-cell hyperplasia associated with familial spinal cancer
+T9	Claim 433 509	Distinguish between a Hurthle cell tumor and an oxyphilic follicular adenoma
+T10	Disease 455 473	Hurthle cell tumor
+T11	Disease 481 509	oxyphilic follicular adenoma
+T12	Claim 514 576	Identify the typical cytologic features of papillary carcinoma
+T13	Disease 557 576	papillary carcinoma
+T14	Claim 596 627	I think the correct answer is 5
+T15	Premise 629 690	FNA does not allow a histological study but a cytological one
+T16	Claim 733 778	Question 3 seems to have been put as a filler
+T17	Marker 692 701	therefore
+T18	Claim 702 731	questions 1, 2 are eliminated
+R1	Support Ent1:T15 Ent2:T18	
+T19	Marker 899 904	since
+T20	Claim 905 946	papillary carcinoma is the most frequent.
+R2	Support Ent1:T14 Ent2:T12	
+R3	Attack Ent1:T15 Ent2:T2	
+R4	Attack Ent1:T15 Ent2:T5	
+R5	Attack Ent1:T16 Ent2:T7	
+R6	Support Ent1:T20 Ent2:T14	
+T21	Claim 807 865	Question 4 could raise doubts if you are not a pathologist
+R7	Attack Ent1:T21 Ent2:T9	
+R8	Support Ent1:T20 Ent2:T12	
+R9	Attack Ent1:T18 Ent2:T5	
+R10	Attack Ent1:T18 Ent2:T2	
+T22	Marker 779 786	because
+T23	Claim 787 805	it is not relevant
+R11	Support Ent1:T23 Ent2:T16	
+T24	Marker 866 869	but
+T25	Claim 870 898	the most logical answer is 5
+R12	Support Ent1:T20 Ent2:T25	
+R13	Support Ent1:T25 Ent2:T12	
+T26	Disease 905 924	papillary carcinoma

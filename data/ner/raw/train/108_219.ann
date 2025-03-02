@@ -1,0 +1,17 @@
+T1	Premise 55 180	A man has a partial deletion in the dystrophin gene (chromosome Xp21) which causes the semiology of Becker muscular dystrophy
+T2	Disease 155 180	Becker muscular dystrophy
+T3	Premise 182 283	He goes to the genetic consultation with his wife, to assess the risks of transmission of the disease
+T4	Claim 371 494	According to autosomal dominant inheritance, half of her children will inherit the disease and without distinction of sexes
+T5	Claim 499 624	Their daughters will not inherit the disease, but all their future sons will be carriers and can transmit the mutation to 50%
+T6	Claim 629 754	Their sons will not inherit the disease, but all their future daughters will be carriers and can transmit the mutation to 50%
+T7	Claim 759 864	There is no risk: the inheritance of the disease is of the mitochondrial type, never transmitted by males
+T8	Claim 869 994	According to autosomal recessive inheritance, 25% of their children will manifest the disease in childhood, regardless of sex
+T9	Claim 1014 1129	It is the male who presents the disease, which we are told is X-linked, so there are only two options left: 2 and 3
+T10	Marker 1086 1088	so
+R1	Support Ent1:T9 Ent2:T5	
+R2	Support Ent1:T9 Ent2:T6	
+T11	Claim 1131 1316	2 is not because the males will receive the Y chromosome from the father and the X from the mother, who is healthy, so the daughters will be able to carry the disease (correct option 3)
+T12	Marker 1140 1147	because
+T13	Marker 1247 1249	so
+R3	Attack Ent1:T11 Ent2:T5	
+R4	Support Ent1:T11 Ent2:T6	

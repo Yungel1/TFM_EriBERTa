@@ -1,0 +1,23 @@
+T1	Premise 45 177	a patient with clinical signs of heart failure who presents with ascites disproportionately elevated in relation to peripheral edema
+T2	Claim 217 239	Severe aortic stenosis
+T3	Claim 244 312	Dilated cardiomyopathy with significant left ventricular dysfunction
+T4	Claim 317 347	Primary pulmonary hypertension
+T5	Claim 352 391	Obstructive hypertrophic cardiomyopathy
+T6	Claim 396 421	Constrictive pericarditis
+T7	Premise 441 518	They tell us about clinical symptoms of right failure, with edema and ascites
+T8	Claim 520 595	Therefore, we rule out left heart failure: EAo, dilated with DSVI and a MHO
+T9	Marker 520 529	Therefore
+T10	Marker 534 542	rule out
+R1	Attack Ent1:T8 Ent2:T2	
+R2	Attack Ent1:T8 Ent2:T3	
+R3	Attack Ent1:T8 Ent2:T5	
+T11	Claim 597 795	Of the two we are left with, in constrictive pericarditis we have increased filling pressures in right chambers, which cause retrograde pressure increase with hepatic congestion, ascites, edema, etc
+T12	Claim 797 921	On the contrary, in pulmonary hypertension, the tricuspid valve is responsible (a priori) for "containing" this overpressure
+T13	Marker 797 812	On the contrary
+R4	Support Ent1:T1 Ent2:T11	
+R5	Support Ent1:T11 Ent2:T6	
+T14	Disease 217 239	Severe aortic stenosis
+T15	Disease 244 312	Dilated cardiomyopathy with significant left ventricular dysfunction
+T16	Disease 317 347	Primary pulmonary hypertension
+T17	Disease 352 391	Obstructive hypertrophic cardiomyopathy
+T18	Disease 396 421	Constrictive pericarditis

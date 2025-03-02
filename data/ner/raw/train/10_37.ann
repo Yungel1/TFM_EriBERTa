@@ -1,0 +1,35 @@
+T1	Claim 641 722	Adjuvant chemo/radiotherapy, conditioning radical surgery to the initial response
+T2	Claim 727 858	Percutaneous external drainage is palliative, with eventual conversion to internal drainage in case of intolerance or complications
+T3	Claim 863 971	Surgical biliary bypass, with or without prophylactic gastrojejunostomy depending on intraoperative findings
+T4	Claim 976 1088	Metallic biliary prosthesis by endoscopic retrograde cholangiography, with the option of palliative chemotherapy
+T5	Claim 1093 1190	Cephalic duodenopancreatectomy with radiofrequency ablation or alcoholization of the liver lesion
+T6	Treatment 976 1044	Metallic biliary prosthesis by endoscopic retrograde cholangiography
+T7	Treatment 1051 1089	the option of palliative chemotherapy.
+T8	Treatment 1093 1190	Cephalic duodenopancreatectomy with radiofrequency ablation or alcoholization of the liver lesion
+T9	Treatment 863 971	Surgical biliary bypass, with or without prophylactic gastrojejunostomy depending on intraoperative findings
+T11	Treatment 641 668	Adjuvant chemo/radiotherapy
+T12	Treatment 670 722	conditioning radical surgery to the initial response
+T13	Claim 1210 1241	I think the correct answer is 4
+T14	Claim 1243 1279	although both lesions are resectable
+T15	Marker 1243 1251	although
+R1	Attack Ent1:T14 Ent2:T13	
+T16	Claim 1378 1431	it does not prolong survival and has a high morbidity
+T17	Claim 1433 1665	Surgical bypass has more complications than placing a self-expanding metallic prosthesis that has a median patency of 6 months which is similar to the median survival of a patient with hepatic metastases of pancreatic adenocarcinoma
+R3	Support Ent1:T17 Ent2:T13	
+R4	Support Ent1:T17 Ent2:T4	
+R5	Attack Ent1:T17 Ent2:T3	
+T18	Premise 535 598	Fine needle aspiration confirms the diagnosis of adenocarcinoma
+T19	Premise 426 533	CT scan confirms the findings, also demonstrating the presence of a 3.5 cm mass in the head of the pancreas
+T20	Premise 39 156	A 76-year-old woman with no history other than hypertension consults for painless jaundice and pruritus with anorexia
+T21	Premise 158 237	Laboratory tests show a bilirubin level of 12 mg/dl (with 9.5 direct bilirubin)
+T22	Premise 239 424	Abdominal ultrasound shows dilatation of the intrahepatic and extrahepatic biliary tract, together with a single 2 cm nodule located peripherally in the anterior aspect of the left lobe
+R6	Attack Ent1:T14 Ent2:T4	
+R8	Support Ent1:T13 Ent2:T4	
+T23	Marker 1370 1377	because
+T24	Treatment 727 771	Percutaneous external drainage is palliative
+T10	Treatment 778 818	eventual conversion to internal drainage
+T25	Claim 1281 1369	pancreatic adenocarcinoma with synchronous hepatic metastases has no surgical indication
+R9	Support Ent1:T25 Ent2:T13	
+R2	Support Ent1:T16 Ent2:T25	
+R7	Support Ent1:T25 Ent2:T4	
+T26	Disease 1281 1342	pancreatic adenocarcinoma with synchronous hepatic metastases

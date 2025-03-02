@@ -1,0 +1,24 @@
+T1	Premise 47 78	Patient with acute pancreatitis
+T2	Premise 80 189	Computerized Axial Tomography (CAT) performed 72 hours after admission showed necrosis of 50% of the pancreas
+T3	Premise 191 270	At the 3rd week of admission the patient began with high fever and leukocytosis
+T4	Premise 272 344	Urgent chest X-ray and urinary sediment are requested, both being normal
+T5	Claim 383 455	Fine needle aspiration of pancreatic necrosis guided by ultrasound or CT
+T6	Claim 460 518	Bronchoalveolar aspirate, urine culture and blood cultures
+T7	Claim 523 536	Abdominal MRI
+T8	Claim 541 563	Urgent cholecystectomy
+T9	Claim 568 611	Echoendoscopy with puncture of the necrosis
+T10	Claim 631 785	Although the latest recommendations on the management of severe acute pancreatitis advise against FNA because of the risk of infection of sterile necrosis
+T11	Marker 631 639	Although
+T12	Marker 733 740	because
+T13	Claim 787 839	Current management is governed by stepwise treatment
+T14	Claim 841 949	In the situation described in the question the current treatment is to start antibiotics and assess response
+R1	Attack Ent1:T10 Ent2:T5	
+T15	Diagnostics 383 428	Fine needle aspiration of pancreatic necrosis
+T16	Diagnostics 439 449	ultrasound
+T17	Diagnostics 453 455	CT
+T18	Diagnostics 486 499	urine culture
+T19	Diagnostics 504 518	blood cultures
+T20	Diagnostics 460 484	Bronchoalveolar aspirate
+T21	Diagnostics 523 536	Abdominal MRI
+T22	Treatment 541 563	Urgent cholecystectomy
+T23	Diagnostics 568 611	Echoendoscopy with puncture of the necrosis

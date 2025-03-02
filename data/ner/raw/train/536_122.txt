@@ -1,0 +1,10 @@
+QUESTION TYPE: RHEUMATOLOGY
+CLINICAL CASE: 
+75-year-old male, hypertensive on treatment with enalapril (20 mg/day), who consults for deterioration of general condition, bitemporal headache and mandibular claudication of 3 weeks of evolution. In addition, in the last hours, he refers two episodes of amaurosis fugax of the left eye. Physical examination revealed thickening and absence of pulse in the left temporal artery. Analysis: CRP 6 mg/dl (VN <1); hemoglobin 10.5 g/dl; ESR 92 mm. Chest X-ray normal. Considering the most likely diagnosis, check the correct option regarding treatment:
+1- Rituximab should be administered, since glucocorticoids have been relegated to second-line treatment due to their side effects.
+2- Tocilizumab has been shown to be effective in reducing recurrences and cumulative prednisone dose in more than 50% of patients.
+3- In the presence of ischemic symptoms, and in order not to worsen the vascular risk of the patient, the use of glucocorticoids at doses higher than 30 mg/day should be avoided.
+4- In conjunction with glucocorticoid boluses of 1 g/day, infliximab should be used as a first-line drug for remission induction.
+5- nan
+CORRECT ANSWER: 2
+Clinical case of giant cell arteritis. Corticosteroid therapy remains the first choice (answer 1 incorrect), to be administered as pulses (doses differ according to the literature, but at least 125 mg/d) in case of ocular involvement (answer 3 incorrect). The current treatment of choice for corticosteroid sparing is Tocilizumab (answer 4 incorrect), which has also been shown to reduce recurrences (answer 2 correct).

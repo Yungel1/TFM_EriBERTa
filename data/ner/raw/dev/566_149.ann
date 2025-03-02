@@ -1,0 +1,41 @@
+T1	Premise 42 123	A 67-year-old woman with chronic kidney disease secondary to diabetic nephropathy
+T2	Premise 125 230	She currently has a creatinine of 3.2 mg/dL with estimated glomerular filtration rate (CKD-EPI) 14 ml/min
+T3	Claim 267 350	He presents stage 3 chronic kidney disease and should initiate phosphorus chelators
+T4	Claim 355 443	He has stage 5 chronic kidney disease and renal replacement therapy should be considered
+T5	Claim 448 495	Good glycemic control can reverse renal failure
+T6	Claim 500 561	It is unlikely to present proteinuria higher than 500 mg/24 h
+T7	Claim 588 669	A glomerular filtration rate of less than 15 ml/min is classified as stage 5 (G5)
+R1	Support Ent1:T2 Ent2:T7	
+T8	Marker 671 681	indicating
+T9	Claim 687 717	the renal disease is end-stage
+R2	Support Ent1:T7 Ent2:T9	
+R3	Support Ent1:T9 Ent2:T4	
+T10	Claim 722 780	the initiation of replacement therapy should be considered
+R4	Support Ent1:T7 Ent2:T10	
+R5	Support Ent1:T10 Ent2:T4	
+T11	Claim 782 795	option 2 true
+T12	Claim 797 811	option 1 false
+R6	Support Ent1:T11 Ent2:T4	
+R7	Support Ent1:T9 Ent2:T11	
+R8	Support Ent1:T9 Ent2:T12	
+R9	Support Ent1:T10 Ent2:T11	
+R10	Support Ent1:T10 Ent2:T12	
+R11	Attack Ent1:T12 Ent2:T3	
+R12	Attack Ent1:T9 Ent2:T3	
+T13	Claim 814 937	In this situation, good glycemic control is not expected to reverse renal damage, although it may help to delay progression
+T14	Marker 896 904	although
+T15	Claim 939 953	false choice 3
+R13	Support Ent1:T13 Ent2:T15	
+R14	Attack Ent1:T13 Ent2:T5	
+R15	Attack Ent1:T15 Ent2:T5	
+T16	Claim 956 1062	These patients usually present stage A3 albuminuria (above 300 mg/24 h), and may reach the nephrotic range
+T17	Claim 1064 1078	false choice 4
+R16	Support Ent1:T16 Ent2:T17	
+R17	Attack Ent1:T16 Ent2:T6	
+R18	Attack Ent1:T17 Ent2:T6	
+T18	Disease 279 309	stage 3 chronic kidney disease
+T19	Treatment 330 350	phosphorus chelators
+T20	Disease 362 392	stage 5 chronic kidney disease
+T21	Treatment 397 422	renal replacement therapy
+T22	Disease 482 495	renal failure
+T23	Treatment 448 469	Good glycemic control

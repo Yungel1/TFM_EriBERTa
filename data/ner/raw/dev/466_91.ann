@@ -1,0 +1,20 @@
+T1	Premise 67 145	An 11-year-old, 6-month-old, premenarchal girl with known idiopathic scoliosis
+T2	Premise 147 239	The spine x-ray performed 6 months ago showed a left thoracolumbar curve of 18º (Cobb angle)
+T3	Premise 241 337	The current x-ray shows a Cobb angle of 28º, with an iliac crest maturation (Risser's sign) of 2
+T4	Claim 454 472	Swimming exercises
+T5	Claim 477 508	Postural re-education exercises
+T6	Claim 513 540	Corrective orthopedic brace
+T7	Claim 545 588	Surgical intervention by spinal arthrodesis
+T8	Claim 615 697	In the juvenile and adolescent forms, treatment depends on the degree of deformity
+R1	Support Ent1:T1 Ent2:T8	
+T9	Claim 699 729	- 10 - 20°: serial observation
+T10	Claim 731 851	- 20-50°: thermoplastic corsets (Boston, Cheneau or Milwaukee, according to where the apex of the main curve is located)
+T11	Claim 855 1095	40-50°: with Risser less than 3, surgical arthrodesis would be indicated; with Risser greater than or equal to 3, the remaining growth potential of the curve is low and observation may be considered in case it tends to progress in adulthood
+R2	Attack Ent1:T3 Ent2:T9	
+R3	Support Ent1:T3 Ent2:T10	
+R4	Attack Ent1:T3 Ent2:T11	
+R5	Support Ent1:T10 Ent2:T6	
+T12	Treatment 454 472	Swimming exercises
+T13	Treatment 477 508	Postural re-education exercises
+T14	Treatment 513 540	Corrective orthopedic brace
+T15	Treatment 545 588	Surgical intervention by spinal arthrodesis

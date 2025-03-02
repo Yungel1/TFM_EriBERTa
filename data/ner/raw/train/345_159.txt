@@ -1,0 +1,10 @@
+QUESTION TYPE: GYNECOLOGY AND OBSTETRICS
+CLINICAL CASE: 
+A 69-year-old woman comes to your office reporting genital bleeding of several months' evolution. She denies hormone replacement therapy and anticoagulation. She provides normal cervicovaginal cytology. General and genital physical examination without findings of interest. BMI of 38kg/m2. Indicate the most correct attitude:
+1- Prescribe cyclic progesterone.
+2- Endometrial biopsy.
+3- Random cervical biopsies.
+4- Hormonal evaluation with FSH, LH and estradiol.
+5- nan
+CORRECT ANSWER: 2
+We are being presented with a case of postmenopausal metrorrhagia. In a case like this we must rule out endometrial neoplasia, so an endometrial biopsy would be indicated, either by Cornier cannula if possible, or by hysteroscopy. A cervical biopsy is not of interest in this case since the cytology is normal and hormonal assessment is not going to be useful in the diagnosis of endometrial neoplasia. Finally, prescribing cyclic progesterone is not indicated in a postmenopausal woman.

@@ -1,0 +1,6 @@
+T1	Premise 53 191	sudden-onset obsessive-compulsive disorder (OCD) in a 9-year-old boy who also presents with tics and chorea as neurological manifestations
+T2	Claim 237 266	Alpha-hemolytic streptococcus
+T3	Claim 271 308	Beta-hemolytic streptococcus, group A
+T4	Claim 313 325	Enterococcus
+T5	Claim 397 528	It never ceases to amaze us the strange ways of biology and that the axiom "the longest is the right one" is fulfilled in this case
+R1	Support Ent1:T5 Ent2:T3	

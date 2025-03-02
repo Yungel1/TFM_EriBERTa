@@ -1,0 +1,10 @@
+QUESTION TYPE: PRIMARY CARE
+CLINICAL CASE: 
+A 45-year-old woman diagnosed with stage IV breast cancer with multiple bone metastases on hormonal treatment and iv bisphosphonates. She comes to your office referring intense bone pain (VAS=7), in several locations without associated neurological symptoms and exarcerbations of pain (VAS=9) several times a day that force her to remain at rest. In the treatment with ibuprofen (600 mg every 8 h) and tramadol (150 mg per day), what treatment would you consider most appropriate in this patient to improve the pain?
+1- Suspend ibuprofen and tramadol and start a major opioid such as morphine or oxycodone.
+2- Suspend tramadol, maintain ibuprofen and initiate a major opioid such as morphine and oxycodone.
+3- Discontinue ibuprofen and tramadol and start a major opioid such as morphine or oxycodone and at the same time start treatment of breakthrough pain with sublingual fentanyl.
+4- Suspend tramadol, maintain ibuprofen and initiate a major opioid such as morphine and oxycodone and at the same time treatment for breakthrough pain with sublingual fentanyl.
+5- nan
+CORRECT ANSWER: 4
+The correct answer is 4 because if the patient has bone metastases and may suffer fractures we can control inflammatory pain with ibuprofen and it will also help us to use the antalgic synergy. We should change the treatment to a major opioid and treat the disrruptive pain vigorously since she is at almost the maximum pain she can bear.

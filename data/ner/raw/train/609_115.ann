@@ -1,0 +1,25 @@
+T1	Premise 44 136	A 27-year-old male, a regular athlete, refers pain in the right leg after continuous running
+T2	Premise 138 233	He has visited a physiotherapist on several occasions and has been diagnosed with calf overload
+T3	Premise 235 387	Several months have passed, she has not improved and refers intense pain after physical activity that subsides with rest in the hours following exercise
+T4	Claim 429 469	Positron emission tomography with 18 FDG
+T5	Claim 474 548	Determination of posterior compartment pressure immediately after activity
+T6	Claim 553 629	Doppler ultrasound to rule out a circulatory disorder of the lower extremity
+T7	Claim 634 665	Magnetic resonance spectroscopy
+T8	Claim 858 954	Diagnosis is made by measuring compartment pressures at rest, during exercise and after exercise
+T9	Claim 956 972	answer 2 correct
+T10	Claim 692 773	Exercise-induced compartment syndrome is an exercise-induced condition of the leg
+R1	Support Ent1:T3 Ent2:T10	
+T11	Disease 692 729	Exercise-induced compartment syndrome
+T12	Claim 775 856	It is characterized by reversible ischemia of the muscles of a muscle compartment
+R2	Support Ent1:T8 Ent2:T9	
+R3	Support Ent1:T9 Ent2:T5	
+T13	Claim 975 1046	Treatment usually consists of fasciotomies of the affected compartments
+T14	Claim 1048 1152	Although MRI is not very useful in establishing the diagnosis, it can help in the differential diagnosis
+T15	Marker 1048 1056	Although
+T16	Diagnostics 1057 1060	MRI
+T17	Diagnostics 634 666	Magnetic resonance spectroscopy.
+T18	Diagnostics 429 469	Positron emission tomography with 18 FDG
+T19	Diagnostics 474 548	Determination of posterior compartment pressure immediately after activity
+T20	Diagnostics 553 571	Doppler ultrasound
+T21	Marker 575 583	rule out
+T22	Diagnostics 586 629	circulatory disorder of the lower extremity

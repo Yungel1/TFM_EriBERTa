@@ -1,0 +1,10 @@
+QUESTION TYPE: NEUROLOGY
+CLINICAL CASE: 
+In a woman with an epileptic seizure presenting with the following clinical features: epigastric aura, unpleasant odor, disconnection from the environment, motor automatisms (sucking, swallowing, opening and closing of one hand) and postcritical amnesia, what is your diagnostic suspicion?
+1- Generalized non-convulsive seizure or typical absence.
+2- Continuous partial epilepsy.
+3- Amyotonic crisis.
+4- Complex partial temporal lobe seizure.
+5- nan
+CORRECT ANSWER: 4
+Clearly the answer is 4, with a very characteristic clinic of temporary seizures.

@@ -1,0 +1,13 @@
+T1	Premise 48 316	40-year-old patient, with normal physical examination, in whom a mediastinal mass and a hepatic nodule have been evidenced in the CT scan, and in the CBC a serum elevation of lactic dehydrogenase (LDH), human chorionic betagonadotropin (beta-HCG) and alpha-fetoprotein
+T2	Claim 390 416	Metastatic hepatocarcinoma
+T3	Claim 421 453	Extragonadal metastatic seminoma
+T4	Claim 458 478	Mediastinal lymphoma
+T5	Claim 483 539	Metastatic extragonadal nonseminomatous germ cell cancer
+T6	Claim 691 771	Hepatocarcinoma can elevate (alone) alpha-fetus, seminoma LDH, lymphoma also LDH
+R1	Support Ent1:T6 Ent2:T2	
+T7	Claim 584 689	In the ED it can be diagnosed with a pregnancy test (in males), because it detects that beta HCG in urine
+T8	Marker 648 655	because
+T9	Disease 390 416	Metastatic hepatocarcinoma
+T10	Disease 421 453	Extragonadal metastatic seminoma
+T11	Disease 458 478	Mediastinal lymphoma
+T12	Disease 483 539	Metastatic extragonadal nonseminomatous germ cell cancer

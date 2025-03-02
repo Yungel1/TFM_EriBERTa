@@ -1,0 +1,10 @@
+QUESTION TYPE: CARDIOLOGY AND VASCULAR SURGERY
+CLINICAL CASE: 
+An 81-year-old patient consults for an episode of syncope. He reports dyspnea on exertion for a year. On cardiac auscultation there is a 3/6 systolic murmur on the left sternal border radiating to the carotids and tip. Which pathology seems most likely?
+1- Third-degree atrioventricular block.
+2- Degenerative aortic stenosis.
+3- Mitral valve insufficiency.
+4- Hypertrophic cardiomyopathy.
+5- Dilated cardiomyopathy.
+CORRECT ANSWER: 2
+Very easy question. They are describing the "portrait" of a degenerative aortic stenosis... Elderly patient with clinical dyspnea and syncope, and systolic murmur radiating to carotids and tip, all typical of this disease.

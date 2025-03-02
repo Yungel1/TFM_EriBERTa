@@ -1,0 +1,10 @@
+QUESTION TYPE: OPHTHALMOLOGY
+CLINICAL CASE: 
+A 52-year-old woman consults for having noticed during the previous week a yellowish discoloration of the conjunctivae. She does not refer to risky sexual behavior or epidemiological history of risk of viral hepatitis. She does not consume alcohol or hepatotoxic drugs. She reports a one-year history of generalized pruritus, asthenia, dry mouth and absence of lacrimation with no known cause. Rest of the anamnesis without pathological data. Physical examination showed scratching lesions conjunctival jaundice and non-painful hepatomegaly. The patient brings a blood test carried out in his company with the following pathological results: total bilirubin 3 mg/dl alkaline phosphatase 400 UI sedimentation rate 40 mm at the first hour. Indicate which would be the best recommendation to establish the etiological diagnosis of the patient's condition:
+1- Anti-mitochondrial antibodies.
+2- Study of iron metabolism.
+3- Study of copper metabolism.
+4- Hepatic MRI.
+5- Serology of virus B and virus C.
+CORRECT ANSWER: 1
+A middle-aged woman with Sjögren's-like symptoms (absence of lacrimation, dry mouth), with hyperbilirubinemia, jaundice and hepatomegaly, makes us think of primary biliary cirrhosis. To diagnose it we will use antimitochondrial antibodies (AMA IgG). Therefore, it would be answer 1.

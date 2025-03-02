@@ -1,0 +1,10 @@
+QUESTION TYPE: DIGESTIVE
+CLINICAL CASE: 
+83-year-old male who consults for a recurrent picture of abdominal pain in the left iliac fossa, accompanied by diarrhea of up to 6 stools per day without pathological products, of 10-15 days of evolution. No fever or general condition was reported. A recent blood test showed no leukocytosis and a negative fecal occult blood test. On examination there is mild pain on palpation of the left iliac fossa without peritoneal irritation. He had a colonoscopy three years ago in which diverticula were reported along the entire colon, more numerous in the left colon, with no other associated lesions. Which of the following would be the best approach to follow?
+1- Empirical treatment with antibiotics.
+2- Request a preferential colonoscopy.
+3- Request urgent abdominal ultrasound.
+4- Refer to surgery to evaluate sigmoidectomy.
+5- nan
+CORRECT ANSWER: 1
+They refer to a concept that has emerged relatively recently and is not present in all clinical guidelines as uncomplicated symptomatic diverticular disease. In these cases, the therapeutic trial with rifaximin is recommended, being the true number 1. The absence of acute phase reactants in the CBC suggests that she does not have acute diverticulitis at the time of consultation that would lead us to request an imaging test to rule it out.

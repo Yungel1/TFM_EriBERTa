@@ -1,0 +1,10 @@
+QUESTION TYPE: HEMATOLOGY
+CLINICAL CASE: 
+46-year-old woman with a history of rheumatic valve disease, requiring mitral valve replacement with a mechanical prosthesis. The initial postoperative evolution is favorable. However, after starting treatment with acenocoumarol, she develops a picture of skin necrosis affecting the abdominal region and extremities. Which of the following alterations would justify this picture?
+1- Antithrombin deficiency.
+2- Factor V Leiden.
+3- Hyperhomocysteinemia.
+4- Protein C deficiency.
+5- nan
+CORRECT ANSWER: 4
+Warfarin-induced skin necrosis is a rare and serious adverse effect of oral anticoagulant therapy, occurring in only 0.01 to 0.1% of patients and is especially related to coagulation protein C and S deficiency.

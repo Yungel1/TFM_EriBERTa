@@ -1,0 +1,10 @@
+QUESTION TYPE: DIGESTIVE SYSTEM
+CLINICAL CASE: 
+An 80-year-old woman consults for presenting, since 1 month ago, a progressive increase in abdominal perimeter. During the previous 4-5 months she noted asthenia, anorexia and unspecified weight loss. Physical examination revealed tension ascites and malleolar edema, with no other relevant signs. An ultrasound and CT scan of the abdomen showed the presence of ascites, of homogeneous density, without peritoneal implants or abdominal or pelvic masses. Liver, pancreas, adrenal, spleen and kidneys without significant findings. Paracentesis is performed through a thick needle, obtaining with difficulty a somewhat yellowish, dense and gelatinous fluid. What is the most probable etiology?
+1- Hydropic decompensation secondary to liver cirrhosis.
+2- Chylous ascites due to non-Hodgkin's lymphoma.
+3- Peritoneal tuberculosis.
+4- Peritoneal metastasis of adenocarcinoma.
+5- Ascites secondary to constrictive pericarditis.
+CORRECT ANSWER: 2
+The characteristics of the fluid described are milky, i.e., chylous ascitic fluid. Taking into account the age of the patient and the constitutional syndrome described, it is most likely to be a non-Hodgkin's lymphoma and not tuberculosis, which also presents with chylous ascitic fluid, since there is no mention of infectious symptoms. The rest of the entities offered do not present with chylous ascitic fluid.

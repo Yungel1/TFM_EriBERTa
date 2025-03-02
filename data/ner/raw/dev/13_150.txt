@@ -1,0 +1,10 @@
+QUESTION TYPE: SURGERY
+CLINICAL CASE: 
+A one-and-a-half-year-old boy presents to the emergency department with abdominal pain and jaundice. On examination, an abdominal mass is palpated. An ultrasound shows the presence of a common bile duct cyst. What therapeutic approach should we adopt?
+1- A percutaneous puncture will be performed for peritoneal lavage to check that the cyst contains bile in order to leave a drainage to improve abdominal pain.
+2- Radical resection of the entire bile duct is indicated to replace it with a loop of bowel.
+3- An exploratory laparotomy and drainage of the cyst will be indicated and when the dilatation subsides the drainage will be removed.
+4- A cholangioresonance will be performed to delimit the cyst and a laparotomy will be indicated for resection of the cyst and anastomosis of the biliary tract.
+5- HIDA scintigraphy is necessary to delimit the cyst and to be able to perform percutaneous drainage safely.
+CORRECT ANSWER: 4
+I believe that the correct answer is 4 the common bile duct cyst is a rare pathology but its treatment is surgical and consists of resection of the cyst and hepaticojejunosotomy. Cholangioresonance is necessary to choose the appropriate technique for the four existing classes of common bile duct cyst (Todani classification).

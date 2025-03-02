@@ -1,0 +1,28 @@
+T1	Premise 44 277	A 70-year-old woman who has been complaining for 1 month of pain and stiffness in the shoulder girdle and pelvic girdle, which predominates when she gets up and improves with mobilization, without fever, headache or general condition
+T2	Premise 279 367	Physical examination showed stiffness and pain on mobilization of the shoulders and hips
+T3	Premise 369 426	Laboratory tests show elevated ESR and C-reactive protein
+T4	Claim 505 569	Rheumatoid arthritis, would initiate treatment with methotrexate
+T5	Claim 574 628	Fibromyalgia, would initiate treatment with duloxetine
+T6	Claim 633 702	Polymyalgia rheumatica, would initiate treatment with corticosteroids
+T7	Claim 707 800	Ankylosing spondylitis, I would initiate treatment with non-steroidal anti-inflammatory drugs
+T8	Claim 827 905	In this case, he is describing the cardinal symptoms of polymyalgia rheumatica
+T9	Disease 883 905	polymyalgia rheumatica
+T10	Premise 907 1049	Older patient, over 50 years of age, presenting with pain and stiffness in both girdles, associated with an elevation of acute phase reactants
+R1	Support Ent1:T10 Ent2:T8	
+T11	Premise 1051 1187	He presents all the indispensable criteria: age equal to or greater than 50 years, bilateral omalgia and increased acute phase reactants
+R2	Support Ent1:T11 Ent2:T8	
+T12	Premise 1189 1267	Of the optional criteria, he presents stiffness, pain or limitation in the hip
+R3	Support Ent1:T12 Ent2:T8	
+T13	Claim 1269 1321	Initial treatment is corticosteroids at medium doses
+R4	Support Ent1:T8 Ent2:T13	
+R5	Support Ent1:T13 Ent2:T6	
+R6	Support Ent1:T8 Ent2:T6	
+T14	Disease 505 525	Rheumatoid arthritis
+T15	Treatment 557 569	methotrexate
+T16	Disease 574 586	Fibromyalgia
+T17	Treatment 618 628	duloxetine
+T18	Disease 633 655	Polymyalgia rheumatica
+T19	Treatment 687 702	corticosteroids
+T20	Disease 707 729	Ankylosing spondylitis
+T21	Treatment 763 800	non-steroidal anti-inflammatory drugs
+T22	Treatment 1290 1321	corticosteroids at medium doses

@@ -1,0 +1,29 @@
+T1	Premise 48 174	A 50-year-old woman comes to the emergency department with asthenia, anorexia, weight loss, jaundice, fever and abdominal pain
+T2	Premise 176 278	She has no recent history of blood transfusion, risky sexual contacts or addiction to parenteral drugs
+T3	Premise 280 439	Habitual consumption of 60 grams of alcohol per day during the last five years, consumption that has increased during the previous month due to family problems
+T4	Premise 441 487	Temperature 38.5ºC, blood pressure 100/60 mmHg
+T5	Premise 489 612	Physical examination showed temporal and spatial disorientation, malnutrition, asterixis, jaundice and painful hepatomegaly
+T6	Premise 614 661	No ascites or evidence of peritoneal irritation
+T7	Premise 688 743	leukocytes 15,000/microliter with 90% polymorphonuclear
+T8	Premise 745 774	red blood cells 3 million/mm3
+T9	Premise 776 793	hemoglobin 10g/dl
+T10	Premise 795 825	mean corpuscular volume 115 fl
+T11	Premise 827 865	bilirubin 15 mg/dl direct predominance
+T12	Premise 867 885	AST (GOT) 300 IU/L
+T13	Premise 887 905	ALT (GPT) 120 IU/L
+T14	Premise 907 919	GGT 635 IU/L
+T15	Premise 921 967	prothrombin time prolongation greater than 50%
+T16	Claim 1034 1049	Hepatic abscess
+T17	Claim 1054 1073	Acute cholecystitis
+T18	Claim 1078 1095	Acute cholangitis
+T19	Claim 1100 1119	Alcoholic hepatitis
+T20	Claim 1124 1142	Acute pancreatitis
+T21	Premise 1162 1467	Patient with harmful alcohol consumption (60g and female), high fever, hepatic encephalopathy (disorientation, asterixis), very high direct bilirubin, jaundice, painful hepatomegaly, coagulopathy (elevated prothrombin time) and mild elevation of transaminases (less than 5 times the upper limit of normal)
+T22	Claim 1468 1499	suggest acute alcohol hepatitis
+R1	Support Ent1:T21 Ent2:T22	
+R2	Support Ent1:T22 Ent2:T19	
+T23	Disease 1034 1049	Hepatic abscess
+T24	Disease 1054 1073	Acute cholecystitis
+T25	Disease 1078 1095	Acute cholangitis
+T26	Disease 1100 1119	Alcoholic hepatitis
+T27	Disease 1124 1142	Acute pancreatitis

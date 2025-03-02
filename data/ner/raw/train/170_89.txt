@@ -1,0 +1,10 @@
+QUESTION TYPE: CARDIOLOGY AND CARDIOVASCULAR SURGERY
+CLINICAL CASE: 
+A 62-year-old patient who has had a pericardial bioprosthesis in mitral position for two years. He is admitted urgently for acute coronary syndrome. Two days later and after a favorable evolution, he suddenly presented heart failure with acute pulmonary edema. Select the diagnostic option in this case from the following possibilities:
+1- Acute post-infarction mitral insufficiency.
+2- Left ventricular aneurysm.
+3- Acute ventricular septal defect.
+4- Postinfarction atrial septal defect.
+5- Dysfunction of the bioprosthesis due to probable acute endocarditis.
+CORRECT ANSWER: 3
+The valve is biological and, in general, the veils are not sewn to the papillary muscles, so we don't care what happens to them. A ventricular aneurysm depresses LVEF, but does not suddenly put you into PAD. In contrast, a VSD sharply increases flow to the pulmonary bed, causing pulmonary edema, and is also one of the most frequent complications of AMI. Ischemic ASD... I do not deny that it exists, but it does not even appear in the guidelines. And endocarditis would not require so many saddlebags.

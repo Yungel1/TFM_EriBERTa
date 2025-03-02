@@ -1,0 +1,31 @@
+T1	Premise 63 168	A 32-year-old man from Cameroon consults for fever cough and left hemithorax pain of 1 month of evolution
+T2	Premise 170 248	He took amoxicillin-clavulanic acid for 1 week without improvement of symptoms
+T3	Premise 250 339	A blood test showed a white blood cell count of 8000/microL and a hemoglobin of 12.8 g/dL
+T4	Premise 341 430	Chest X-ray shows a loculated left pleural effusion occupying one third of the hemithorax
+T5	Premise 432 683	A thoracentesis shows a yellowish fluid with the following features: red blood cells 2000/µL, leukocytes 2500/µL with 90% lymphocytes, protein 4.9 g/dL, lactate dehydrogenase 550 VIL, glucose 67 mg/dL, and absence of malignant cells on cytologic study
+T6	Claim 787 827	A thoracic computed tomography (CT) scan
+T7	Claim 832 860	Pleural fluid pH measurement
+T8	Claim 865 913	Measurement of pleural fluid adenosine deaminase
+T9	Claim 918 933	Tuberculin test
+T10	Claim 960 1015	Suspicion is very high for tuberculous pleural effusion
+T11	Premise 1020 1128	a young patient from an area with a high rate of TB, a lymphocytic exudate pointing to TB, lymphoma or tumor
+R1	Support Ent1:T11 Ent2:T10	
+T12	Disease 987 1015	tuberculous pleural effusion
+R2	Support Ent1:T10 Ent2:T8	
+T13	Claim 1130 1174	Tumor unlikely due to age, negative cytology
+T14	Claim 1176 1239	Lymphoma could be but no evidence of associated nodal pathology
+T15	Marker 1194 1197	but
+T16	Marker 1145 1151	due to
+R3	Support Ent1:T1 Ent2:T13	
+R4	Support Ent1:T5 Ent2:T13	
+T17	Claim 1241 1320	High adenosine deaminase in LP would point with great certainty to a pleural TB
+R5	Support Ent1:T17 Ent2:T8	
+T18	Claim 1321 1464	although it would be advisable to confirm the diagnosis with a pleural biopsy since it can also occur in lymphomas and empyemas of other origin
+T19	Marker 1321 1329	although
+T20	Marker 1399 1404	since
+T21	Diagnostics 1384 1398	pleural biopsy
+T22	Diagnostics 865 913	Measurement of pleural fluid adenosine deaminase
+T23	Disease 1310 1320	pleural TB
+T24	Diagnostics 787 827	A thoracic computed tomography (CT) scan
+T25	Diagnostics 832 860	Pleural fluid pH measurement
+T26	Diagnostics 918 933	Tuberculin test

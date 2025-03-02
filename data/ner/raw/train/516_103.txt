@@ -1,0 +1,10 @@
+QUESTION TYPE: CRITICAL AND EMERGENCY CARE
+CLINICAL CASE: 
+A 56-year-old patient is found comatose at home. He has a history of arterial hypertension and diabetes mellitus. He has no toxic habits or any other chronic disease. He is on treatment with irbesartan and empaglifozin. He shows no signs of malnutrition. His blood pressure is 110/60 mmHg, heart rate 110 bpm, 90% SatO2, capillary glucose 120 mg/dl and respiratory rate 7 rpm. Which initial therapeutic approach do you think is the most correct?
+1- Administer naloxone, flumazenil and thiamine.
+2- Administer naloxone, flumazenil and hypertonic glucose.
+3- Administer naloxone and flumazenil.
+4- Administer thiamine and hypertonic glucose.
+5- nan
+CORRECT ANSWER: 3
+We find a patient with hypoventilation. Glycemia is correct (we rule out hyperosmolar coma and hypoglycemia, option 2 and 4), so, although there is no history of intoxication, we have to go to the most frequent and that we can antagonize with antidotes: benzodiazepines (flumazenil) and opiates (naloxone). If we suspect ethylene glycol intoxication, we would administer thiamine, but there are no data to make us suspect.

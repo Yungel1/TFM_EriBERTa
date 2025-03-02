@@ -1,0 +1,22 @@
+T1	Premise 47 195	A 37-year-old woman with extensive ulcerative colitis presents a severe flare-up for which treatment with prednisone at a dose of 1 mg/kg is started
+T2	Premise 197 258	After one week of treatment, the patient shows no improvement
+T3	Claim 313 397	Emergency subtotal colectomy and in a second time prostectomy and ileoanal reservoir
+T4	Claim 402 453	Associate an immunosuppressant such as azathioprine
+T5	Claim 458 562	Associate mesalazine in doses of 4g per day orally and rectal triamcinolone 1 application every 12 hours
+T6	Claim 567 598	Intravenous cyclosporine 2mg/kg
+T7	Claim 603 673	Treatment with etanercept (an anti-TNFa antibody) should be considered
+T8	Claim 693 850	When a severe flare does not respond to iv corticosteroid therapy at full doses (1mg/kg body weight), it is necessary to switch to cyclosporine or infliximab
+R1	Support Ent1:T8 Ent2:T6	
+T9	Claim 852 940	Etanercept is not approved in Europe for inflammatory bowel disease (for the time being)
+R2	Attack Ent1:T9 Ent2:T7	
+T10	Treatment 824 836	cyclosporine
+T11	Treatment 840 850	infliximab
+T12	Treatment 852 862	Etanercept
+T13	Treatment 313 341	Emergency subtotal colectomy
+T14	Treatment 351 374	second time prostectomy
+T15	Treatment 379 397	ileoanal reservoir
+T16	Treatment 441 453	azathioprine
+T17	Treatment 468 508	mesalazine in doses of 4g per day orally
+T18	Treatment 513 562	rectal triamcinolone 1 application every 12 hours
+T19	Treatment 567 598	Intravenous cyclosporine 2mg/kg
+T20	Treatment 618 652	etanercept (an anti-TNFa antibody)

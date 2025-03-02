@@ -1,0 +1,18 @@
+T1	Premise 42 188	A 1 month old infant, exclusively breastfed, consults because he has a bowel movement every 5 or 6 days with straining but with a soft consistency
+T2	Claim 221 245	Start laxative treatment
+T3	Treatment 227 245	laxative treatment
+T4	Claim 250 305	Supplement breastfeeding with anti-constipation formula
+T5	Treatment 250 305	Supplement breastfeeding with anti-constipation formula
+T6	Claim 310 340	Start daily rectal stimulation
+T7	Treatment 316 340	daily rectal stimulation
+T8	Claim 345 386	It is considered normal intestinal rhythm
+T9	Claim 391 453	Refer to Pediatric Digestive to rule out aganglionic megacolon
+T10	Disease 432 453	aganglionic megacolon
+T11	Claim 473 496	The correct answer is 4
+R1	Support Ent1:T11 Ent2:T8	
+T12	Claim 498 560	The normal range of stool output in young infants is very wide
+R2	Support Ent1:T12 Ent2:T11	
+T13	Claim 562 748	To suspect aganglionic megacolon there is usually a delay in the evacuation of meconium and often other associated symptoms such as abdominal distension, difficulty in gaining weight, et
+T14	Disease 573 594	aganglionic megacolon
+R3	Attack Ent1:T13 Ent2:T9	
+R4	Support Ent1:T1 Ent2:T8	

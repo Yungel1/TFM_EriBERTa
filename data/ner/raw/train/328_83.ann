@@ -1,0 +1,19 @@
+T1	Premise 45 270	A 49-year-old man who consults for severe polyuria and polydipsia and unintentional weight loss of 10 kg and is diagnosed with diabetes mellitus due to a plasma blood glucose of 322 mg/dL and a glycosylated hemoglobin of 9.8%
+T2	Premise 272 356	His physician gave him dietary recommendations, the convenience of physical exercise
+T3	Premise 362 438	he started treatment with metformin 850 mg/12 hours and glimepiride 6 mg/day
+T4	Premise 440 510	In the following weeks the glycemic controls are progressively reduced
+T5	Premise 512 562	At 4 months glycemia is 94 mg/dL and HbA1c is 5.9%
+T6	Premise 564 754	The patient complains of frequent episodes of dizziness, epigastric pain, blurred vision, sweating and tremor, which improve with food and occur mainly in the late morning and late afternoon
+T7	Claim 813 853	Review dietary carbohydrate distribution
+T8	Claim 858 879	Discontinue metformin
+T9	Claim 884 908	Discontinue sulfonylurea
+T10	Claim 913 955	Substitute metformin with a DPP4 inhibitor
+T11	Claim 982 1038	Discontinue sulfonylurea because of Risk of hypoglycemia
+R1	Support Ent1:T11 Ent2:T9	
+T12	Marker 1007 1017	because of
+T13	Disease 1026 1038	hypoglycemia
+T14	Treatment 982 1006	Discontinue sulfonylurea
+T15	Treatment 813 853	Review dietary carbohydrate distribution
+T16	Treatment 858 879	Discontinue metformin
+T17	Treatment 884 908	Discontinue sulfonylurea
+T18	Treatment 913 955	Substitute metformin with a DPP4 inhibitor

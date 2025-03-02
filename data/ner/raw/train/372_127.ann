@@ -1,0 +1,17 @@
+T1	Premise 63 105	55-year-old man who consults for dysphonia
+T2	Premise 107 185	In the anamnesis he refers to a month of asthenia and unquantified weight loss
+T3	Premise 187 289	Chest X-ray shows increased density in the left upper lobe and occupation of the aortopulmonary window
+T4	Premise 291 392	Bronchoscopy shows paralysis of the left vocal cord, without endoscopic image suggestive of neoplasia
+T5	Claim 432 451	Pulmonary neoplasia
+T6	Claim 456 467	Sarcoidosis
+T7	Claim 472 481	Silicosis
+T8	Claim 486 498	Tuberculosis
+T9	Claim 525 603	The most frequent cause of recurrent nerve palsy is bronchopulmonary carcinoma
+T10	Disease 577 603	bronchopulmonary carcinoma
+T11	Disease 432 451	Pulmonary neoplasia
+T12	Claim 605 695	The fact that it is not accessible to endoscopic vision does not mean that it is not there
+R1	Support Ent1:T12 Ent2:T9	
+R2	Support Ent1:T9 Ent2:T5	
+T13	Disease 456 467	Sarcoidosis
+T14	Disease 472 481	Silicosis
+T15	Disease 486 498	Tuberculosis

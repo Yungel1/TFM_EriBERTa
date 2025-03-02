@@ -1,0 +1,10 @@
+QUESTION TYPE: ENDOCRINOLOGY
+CLINICAL CASE: 
+A 35-year-old woman consults for a right thyroid nodule detected incidentally one morning when she observed in the mirror a lump on the anterior aspect of the neck. After the pertinent studies, it was decided to operate on the patient, performing a total thyroidectomy with emptying of the central lymph node component. The pathologist's report was that the 2.3 cm thyroid nodule was entirely occupied by a papillary thyroid carcinoma, tall cell variant, without vascular infiltration but with capsular infiltration. Thyroglobulin concentrations 24 h after thyroidectomy are 14 ng/mL. What would be the next step you would take in this patient?
+1- Refer patient back to surgeon for right laterocervical lymph node stripping.
+2- Initiate treatment with a dose of TSH-suppressing levothyroxine and schedule for review 6 months later with a new analytical determination of thyroglobulin and cervical ultrasound.
+3- Request a PET-CT scan for lymph node involvement.
+4- Delay initiation of TSH replacement-suppressive treatment with levothyroxine and refer the patient to the Nuclear Medicine service for administration of an ablative dose of 100 mCi of I131.
+5- nan
+CORRECT ANSWER: 4
+The verification of the presence of thyroglobulin in blood and the development of techniques by which it can be determined have provided a new procedure for monitoring patients with papillary or follicular thyroid carcinoma. Thyroglobulin is synthesized in the follicular cells and then secreted into the circulation, therefore, after total thyroidectomy it should disappear, if this does not occur we must think about the existence of remnants of metastatic tissue.

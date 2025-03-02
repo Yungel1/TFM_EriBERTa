@@ -1,0 +1,21 @@
+T1	Premise 42 179	A 35-year-old woman, taking contraceptives, comes to the emergency department with febrile syndrome and paresthesias in the left hemibody
+T2	Premise 181 443	Blood tests showed Hb 7.5 g/dL, platelets 7,000/microl, normal leukocytes with normal differential count, LDH 1,200 IU/l, reticulocytes 10% (normal 0.5-2%), undetectable serum haptoglobin, negative direct Coombs' test and peripheral blood smear with schistocytes
+T3	Premise 445 491	Coagulation (prothrombin time and APTT) normal
+T4	Claim 549 576	Autoimmune hemolytic anemia
+T5	Claim 581 616	Thrombotic thrombocytopenic purpura
+T6	Claim 621 678	Evans syndrome (hemolytic anemia and immune thrombopenia)
+T7	Claim 683 717	Idiopathic immune thrombocytopenia
+T8	Claim 744 819	The patient presents criteria for Thrombotic Thrombocytopenic Purpura (TTP)
+R1	Support Ent1:T8 Ent2:T5	
+T9	Premise 824 847	Neurological alteration
+T10	Premise 852 876	Febrile syndrome (fever)
+T11	Premise 881 957	Coombs negative migroangiopathic hemolytic anemia (presence of schistocytes)
+R2	Support Ent1:T9 Ent2:T8	
+R3	Support Ent1:T10 Ent2:T8	
+R4	Support Ent1:T11 Ent2:T8	
+T12	Disease 549 576	Autoimmune hemolytic anemia
+T13	Disease 581 616	Thrombotic thrombocytopenic purpura
+T14	Disease 621 678	Evans syndrome (hemolytic anemia and immune thrombopenia)
+T15	Disease 683 717	Idiopathic immune thrombocytopenia
+T16	Premise 962 974	Thrombopenia
+R5	Support Ent1:T16 Ent2:T8	

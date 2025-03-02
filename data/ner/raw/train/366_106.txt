@@ -1,0 +1,10 @@
+QUESTION TYPE: PNEUMOLOGY AND THORACIC SURGERY
+CLINICAL CASE: 
+A 32-year-old man from Cameroon consults for fever cough and left hemithorax pain of 1 month of evolution. He took amoxicillin-clavulanic acid for 1 week without improvement of symptoms. A blood test showed a white blood cell count of 8000/microL and a hemoglobin of 12.8 g/dL. Chest X-ray shows a loculated left pleural effusion occupying one third of the hemithorax. A thoracentesis shows a yellowish fluid with the following features: red blood cells 2000/µL, leukocytes 2500/µL with 90% lymphocytes, protein 4.9 g/dL, lactate dehydrogenase 550 VIL, glucose 67 mg/dL, and absence of malignant cells on cytologic study. Which of the following tests would be most useful in diagnosing the cause of the pleural effusion?
+1- A thoracic computed tomography (CT) scan.
+2- Pleural fluid pH measurement.
+3- Measurement of pleural fluid adenosine deaminase.
+4- Tuberculin test.
+5- nan
+CORRECT ANSWER: 3
+Suspicion is very high for tuberculous pleural effusion, in a young patient from an area with a high rate of TB, a lymphocytic exudate pointing to TB, lymphoma or tumor. Tumor unlikely due to age, negative cytology. Lymphoma could be but no evidence of associated nodal pathology. High adenosine deaminase in LP would point with great certainty to a pleural TB although it would be advisable to confirm the diagnosis with a pleural biopsy since it can also occur in lymphomas and empyemas of other origin.

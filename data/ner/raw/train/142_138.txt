@@ -1,0 +1,10 @@
+QUESTION TYPE: PEDIATRICS
+CLINICAL CASE: 
+12-year-old girl, only child of healthy, non-consanguineous parents. There is no personal or family history of interest. In the clinical examination to start a sports activity, you find a discrete hepatomegaly of normal consistency, so you request a blood test, which highlights an ASAT of 80U / l, ALAT 105 U / l, electrophoretic proteinogram with all protein fractions in normal range and negativity of serology for hepatotropic viruses. What should you rule out and what test would you indicate for it?
+1- Deficiency of alpha 1 antitrypsin. Thoracic TAC to confirm emphysema.
+2- Mucoviscidosis. Determination of chlorine in sweat.
+3- Autoimmune hepatitis. Liver biopsy.
+4- Glycogenosis type VI (phosphorylase deficiency). Muscle biopsy.
+5- Wilson's disease. Determine ceruloplasmin and copper in blood and urine.
+CORRECT ANSWER: 5
+In fact, I would not test this patient at this time, and I would check if the transaminase level has normalized at a later time, since the most frequent cause, at least in children, is a transient elevation in the context of viral diseases (most frequently cytomegalovirus and Epstein-Barr virus). The minimal elevation of liver enzymes and the fact that it has a normal protein profile goes against chronicity... If I had to choose I would choose answer 5, which seems to me the least aggressive, and if I had to do analytical tests I would add the determination of alpha-1-antitrypsin (without CT) and markers of celiac disease, because celiac disease can also be associated with some hypertransaminemia.

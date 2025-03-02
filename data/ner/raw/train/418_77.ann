@@ -1,0 +1,36 @@
+T1	Premise 47 187	An 80-year-old woman comes to the emergency room with abdominal pain starting in the epigastrium and radiating later to the left iliac fossa
+T2	Premise 189 301	An abdominal CT scan is performed, showing inflammation in the walls of the sigma and mesenteric abscess of 2 cm
+T3	Claim 334 414	Admission to the ward with absolute diet and broad-spectrum antibiotic treatment
+T4	Claim 419 438	Discharge colostomy
+T5	Claim 443 475	Drainage by laparoscopic surgery
+T6	Claim 480 540	Urgent surgery with sigmoidectomy and colorectal anastomosis
+T7	Claim 567 643	We are asked about the management of a very common pathology, diverticulitis
+T8	Claim 735 758	The correct answer is 1
+R1	Support Ent1:T8 Ent2:T3	
+T9	Claim 760 828	it does not meet the criteria to require drainage by guided puncture
+T10	Premise 830 867	the abscess is not larger than 5-6 cm
+R2	Support Ent1:T10 Ent2:T9	
+T11	Claim 870 929	Discharge colostomy in this case makes no sense whatsoever,
+T12	Premise 936 992	it is not a question of solving an obstructive condition
+T13	Marker 930 935	since
+R3	Support Ent1:T12 Ent2:T11	
+R4	Attack Ent1:T11 Ent2:T4	
+T14	Claim 994 1056	Drainage by laparoscopic surgery is not indicated in this case
+R5	Attack Ent1:T14 Ent2:T5	
+R6	Support Ent1:T9 Ent2:T8	
+T15	Claim 1058 1178	It could be indicated in the absence of the possibility of percutaneous drainage after failure of conservative treatment
+T16	Claim 1180 1235	although it is a very controversial option at this time
+T17	Marker 1180 1188	although
+R7	Support Ent1:T16 Ent2:T14	
+R8	Attack Ent1:T15 Ent2:T14	
+T18	Claim 1237 1287	Sigmoidectomy and anastomosis is also not required
+R9	Attack Ent1:T18 Ent2:T6	
+T19	Claim 1289 1443	In a high number of cases, after the resolution of the symptoms, the outbreaks are reduced and they can be prevented with diet and hygienic dietary habits
+R10	Support Ent1:T19 Ent2:T3	
+T20	Treatment 334 374	Admission to the ward with absolute diet
+T21	Treatment 379 414	broad-spectrum antibiotic treatment
+T22	Treatment 419 438	Discharge colostomy
+T23	Treatment 443 475	Drainage by laparoscopic surgery
+T24	Treatment 480 513	Urgent surgery with sigmoidectomy
+T25	Treatment 518 540	colorectal anastomosis
+T26	Disease 629 643	diverticulitis

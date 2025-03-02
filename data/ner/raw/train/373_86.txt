@@ -1,0 +1,10 @@
+QUESTION TYPE: NEUROLOGY
+CLINICAL CASE: 
+We are referred from ophthalmology to a 31-year-old man who consulted for loss of vision and progressive headache. Physical examination showed temporal hemianopsia and pituitary MRI showed a 35 x 30 x 20 mm turnoration compressing chiasm and cavernous sinus. The results of the functional study are cortisol 14 microg/dL, TSH 1.4 microU/ml, T4L 1.2 ng/dL, prolactin 480 microg/L (vn < 15), testosterone 160 ng/dL (vn 300-1200), FSH 1.2 U/I., (vn 5-15) and LH 2 U/L (vn 3-15). What is the initial therapeutic approach?
+1- Dopaminergic agonists.
+2- Transsphenoidal surgery.
+3- External radiotherapy or radiosurgery.
+4- Treatment of hypogonadotropic hypogonadism with testosterone.
+5- nan
+CORRECT ANSWER: 1
+From what is described it is a macroprolactinoma as it is a pituitary tumor of more than one centimeter, which secretes prolactin and with an insufficiency of the rest of pituitary hormones. The first line treatment of choice is dopaminergic agonists, although when the visual field is affected, surgery may be chosen. In this case, the cavernous sinus is pressured by the mass, so the surgical risk increases. Therefore, in this particular case, the surgical option seems more risky. Taking this into account and the fact that it is a tumor that produces high levels of prolactin, which indicates that it probably responds to pharmacological blockade, the most appropriate option would be option 1, treatment with dopaminergic agonists.

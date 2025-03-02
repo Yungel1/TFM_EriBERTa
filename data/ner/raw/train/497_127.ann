@@ -1,0 +1,15 @@
+T1	Premise 48 195	A 60-year-old man, smoker of 40 packs/year, who consults for pain in the ulnar border of the left arm and left palpebral ptosis since one month ago
+T2	Premise 197 308	Chest X-ray shows a mass in the left upper lobe and CT scan confirms the lesion with invasion of the second rib
+T3	Claim 388 465	Neoadjuvant chemotherapy with combined chemoradiotherapy, followed by surgery
+T4	Claim 470 536	Neoadjuvant chemotherapy without surgery, followed by radiotherapy
+T5	Claim 541 587	Surgery followed by combined chemoradiotherapy
+T6	Claim 592 646	Radiotherapy without chemotherapy, followed by surgery
+T7	Claim 673 741	Typical smoker's pancoast, probably an epidermoid, with Horner's sdr
+T8	Claim 743 796	Best would be chemoradio followed by surgical salvage
+R1	Support Ent1:T7 Ent2:T8	
+T9	Claim 798 840	In the old days it was just RT and surgery
+R2	Support Ent1:T8 Ent2:T3	
+T10	Treatment 388 465	Neoadjuvant chemotherapy with combined chemoradiotherapy, followed by surgery
+T11	Treatment 470 536	Neoadjuvant chemotherapy without surgery, followed by radiotherapy
+T12	Treatment 541 587	Surgery followed by combined chemoradiotherapy
+T13	Treatment 592 646	Radiotherapy without chemotherapy, followed by surgery

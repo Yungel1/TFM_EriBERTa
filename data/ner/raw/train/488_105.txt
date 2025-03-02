@@ -1,0 +1,10 @@
+QUESTION TYPE: HEMATOLOGY
+CLINICAL CASE: 
+A 67-year-old patient who in the last 6 months, in two routine analyses, presents progressive lymphocytosis. In the last one, hemoglobin 15.4 g/dL; leukocytes 18.5 x103/μL with 82% of mature lymphocytes that by flow cytometry express CD5/CD19/CD23 antigens and platelets 240 x103/μL. What attitude do you think is correct?
+1- Study of TP53 mutations to establish prognosis.
+2- Bone aspirate/biopsy to confirm the diagnosis.
+3- PET/CT to establish the therapeutic attitude.
+4- New clinical and analytical control in 6 months.
+5- nan
+CORRECT ANSWER: 4
+A question that I think can be complicated for a MIR examiner. We are told of a leukocytosis at the expense of lymphocytes with a B-CLL phenotype. It seems that there are no other alarming data. No clinical data are given (so we assume that the patient is asymptomatic). No cytopenias... Conclusion: FOLLOW UP. The main hesitation with the answer should be with option 1. Why do I consider it incorrect? Because the TP53 mutation, although it establishes prognosis, is not indicated at diagnosis, but when treatment is going to be initiated (first line and prior to successive lines in case they are needed). It would be possible to go too far in this question in which the percentage given does not refer directly to clonal lymphocytes, so that it could even be a monoclonal B lymphocytosis. But this is going too far.

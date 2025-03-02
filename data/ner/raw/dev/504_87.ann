@@ -1,0 +1,9 @@
+T1	Premise 48 174	sudden-onset obsessive-compulsive disorder (OCD) in a 9-year-old boy who also has tics and chorea as neurologic manifestations
+T2	Claim 216 238	Streptococcus viridans
+T3	Claim 243 272	Alpha-hemolytic streptococcus
+T4	Claim 277 314	Beta-hemolytic streptococcus, group A
+T5	Claim 319 331	Enterococcus
+T6	Claim 358 489	We are presented with a case of PANDAS syndrome, a rare complication of an infection caused by group A beta-hemolytic streptococcus
+R1	Support Ent1:T6 Ent2:T4	
+T7	Disease 390 405	PANDAS syndrome
+R2	Support Ent1:T1 Ent2:T6	

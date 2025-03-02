@@ -1,0 +1,10 @@
+QUESTION TYPE: NEUROLOGY
+CLINICAL CASE: 
+A 33-year-old man, independent in all activities of daily living, with a history of well-controlled hypertension, antiplatelet atrial fibrillation and an adenocarcinoma of the prostate at 73 years of age, currently free of disease. He is brought to the emergency department for clinical aphasia and right hemiparesis of sudden onset, 45 minutes earlier. What is the most correct approach?
+1- Perform a cranial CT scan and if there are no hemorrhagic lesions or other contraindications in the analysis, start immediate intravenous thrombolysis.
+2- Perform urgent cranial CT scan and if there is no bleeding, start anticoagulation.
+3- Perform cranial CT scan and admission to rehabilitation center, since their attitude will not differ regardless of whether the etiology is ischemic or hemorrhagic.
+4- Cranial CT scan is not necessary, although I would withdraw the antiaggregation.
+5- nan
+CORRECT ANSWER: 1
+The patient suffers an abrupt neurological deficit probably related to a vascular event, so first we will have to perform a cranial CT scan to rule out a hemorrhagic stroke. If the CT scan does not show bleeding, the patient has an acute ischemic stroke, probably cardioembolic due to his cardiac pathology, not anticoagulated. Given that his tumor process is under control, there are no contraindications for the administration of fibrinolysis in this case, since the patient is in a good baseline condition. Although the patient is 88 years old, age is no longer presented as an absolute exclusion criterion, but the general situation of the patient must be taken into account and in this case it is specified that he presents a good baseline situation.

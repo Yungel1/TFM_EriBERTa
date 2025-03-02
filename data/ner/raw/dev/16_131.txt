@@ -1,0 +1,10 @@
+QUESTION TYPE: DERMATOLOGY
+CLINICAL CASE: 
+A 62-year-old man with a history of significant alcohol abuse, carrier of hepatitis C virus, treated with Ibuprofen for tendinitis of the right shoulder, goes to his dermatologist because after spending two weeks on vacation at the beach he notices the appearance of tense blisters on the dorsum of his hands. On examination, in addition to localization and slight malar hypertrichosis.  The most likely diagnosis is:
+1- Epidermolysis bullosa acquisita.
+2- Porphyria cutanea tarda.
+3- Phototoxic reaction.
+4- Contact dermatitis.
+5- Acute intermittent porphyria.
+CORRECT ANSWER: 2
+Porphyria Cutanea Tarda: 60% of patients with PCT are male, many of them drink alcohol in excess, women who develop it are usually treated with drugs containing estrogens. Most are males with signs of iron overload, this overload reduces the activity of the enzyme uroporphyrinogen decarboxylase, which leads to the elevation of uroporphyrins. HCV and HIV infections have been implicated in the precipitation of acquired PCT. There is a hereditary form with AD pattern. Patients with PCT present with blistering of photoexposed skin, most frequently on the dorsum of the hands and scalp. In addition to fragility, they may develop hypertrichosis, hyperpigmentation, cicatricial alopecia and sclerodermal induration.

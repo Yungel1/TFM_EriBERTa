@@ -1,0 +1,33 @@
+T1	Claim 490 539	Mononeuropathy of the right common peroneal nerve
+T2	Claim 544 614	Focal involvement of the first motor neuron and probably of the second
+T3	Claim 619 666	Right hemimedullary involvement (Brown-Sequard)
+T4	Claim 671 768	Multiple mononeuropathy with involvement of the common peroneal and right posterior tibial nerve.
+T5	Claim 772 795	Right lumbar plexopathy
+T6	Disease 490 539	Mononeuropathy of the right common peroneal nerve
+T7	Disease 544 614	Focal involvement of the first motor neuron and probably of the second
+T8	Disease 619 666	Right hemimedullary involvement (Brown-Sequard)
+T9	Disease 671 767	Multiple mononeuropathy with involvement of the common peroneal and right posterior tibial nerve
+T10	Disease 772 795	Right lumbar plexopathy
+T11	Claim 815 833	Answer 1 incorrect
+T12	Premise 835 867	It does not explain pyramidalism
+T13	Claim 869 885	Answer 2 correct
+T14	Claim 942 960	Answer 3 incorrect
+R1	Support Ent1:T12 Ent2:T11	
+T15	Premise 58 217	A 56-year-old patient with no personal or family history of interest is studied because he has been having difficulty walking with his right leg for six months
+T16	Premise 219 247	He reports no other symptoms
+T17	Premise 249 451	The examination shows a 4/5 weakness for dorsal flexion and eversion of the foot and 4/5 for flexion and inversion of the foot, with increased muscle reflexes and Babinski present, the rest being normal
+T18	Premise 962 1031	We would lack data to think of a Brown Sequard hemimedullary syndrome
+R2	Support Ent1:T18 Ent2:T14	
+T19	Claim 1162 1180	Incorrect answer 4
+T20	Claim 1289 1307	Incorrect answer 5
+T21	Premise 1182 1287	It could explain the difficulty in dorsiflexion and plantar flexion of the foot, but not the pyramidalism
+R3	Support Ent1:T21 Ent2:T19	
+T22	Premise 1347 1418	it could explain part of the clinical picture, but not the pyramidalism
+R4	Support Ent1:T22 Ent2:T20	
+T23	Premise 1033 1160	It would explain the pyramidalism, but we would be missing data suggestive of this picture such as a contralateral hypoesthesia
+R5	Support Ent1:T23 Ent2:T14	
+R6	Attack Ent1:T12 Ent2:T1	
+R7	Attack Ent1:T18 Ent2:T3	
+R8	Attack Ent1:T23 Ent2:T3	
+R9	Attack Ent1:T21 Ent2:T4	
+R10	Attack Ent1:T22 Ent2:T5	

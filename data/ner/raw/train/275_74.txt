@@ -1,0 +1,10 @@
+QUESTION TYPE: DIGESTIVE SYSTEM
+CLINICAL CASE: 
+A 67-year-old man, diagnosed with cirrhosis of the liver and an active drinker, is admitted for progressive abdominal distension with diffuse malaise, of two weeks of evolution. He reported no fever or other symptoms. On examination, there was a changeable dullness on abdominal percussion, with absence of edema. A diagnostic paracentesis is performed, finding a slightly cloudy fluid, with 2,300 cells/mL, of which 30% are lymphocytes, 60% polymorphonuclear and 10% red blood cells. What is the first therapeutic measure you would prescribe for this patient immediately?
+1- Salt and fluid restriction.
+2- Diuretic treatment with oral spironolactone.
+3- Treatment with a third generation cephalosporin.
+4- Evacuative paracentesis.
+5- nan
+CORRECT ANSWER: 3
+This is spontaneous bacterial peritonitis (SBP), defined by the presence of > 250 polymorphonuclears/mL in the ascitic fluid (in this case there are 1,380, which is 60% of 2,300). It is an indication to start 3rd generation cephalosporins (ceftriaxone or cefotaxime) and albumin. The rest are treatments that can wait for improvement (they do not speak of tension ascites).

@@ -1,0 +1,10 @@
+QUESTION TYPE: NEUROSURGERY
+CLINICAL CASE: 
+A 59-year-old woman with recent onset of epileptic seizures comes to the emergency department. The examination showed left pyramidal signs and papillary edema. Brain MRI showed a right hemispheric mass with edema, midline deviation and signs of tentorial herniation. She reports a headache that has been progressing in intensity for the past week. Which of the following features associated with headache seems most likely in this patient?
+1- Predominance in the morning.
+2- It does not change with effort.
+3- Photophobia.
+4- Sonophobia.
+5- nan
+CORRECT ANSWER: 1
+They describe a recent diagnosis of cerebral LOE with signs of intracranial hypertension (edema, midline deviation, papilledema). The associated headache is typically morning headache, with increasing ICP values at night.

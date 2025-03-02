@@ -1,0 +1,10 @@
+QUESTION TYPE: ONCOLOGY (ECTOPIC)
+CLINICAL CASE: 
+A 20-year-old woman with a 15-cm solid-cystic ovarian tumor detected by ultrasound after presenting with nonspecific abdominal symptoms. In the histopathological study of the corresponding specimen, teeth, hairs, areas of intestinal epithelium, areas of squamous epithelium (15%) and bronchial epithelium, as well as neuroectodermal and embryonic elements are found in several of the histological preparations. In reference to this case, point out the correct diagnosis:
+1- Teratocarcinoma.
+2- Immature teratoma.
+3- Mature cystic teratoma.
+4- Dysgerminoma.
+5- nan
+CORRECT ANSWER: 2
+Teratoma is the most frequent germinal tumor. It presents differentiation in elements of the three embryonic layers: endoderm, mesoderm and ectoderm. Macroscopically they can be cystic or solid, and histologically the tissues composing the tumor can be mature (well differentiated, like adult tissues) or immature (like embryonic tissues).Mature cystic teratoma is the most frequent: they represent on average 10% of ovarian tumors (5-25% depending on the casuistry). They occur at any age. They predominate in ectodermal tissues, such as skin, lining a cavity of keratinous content. In the cavity a spur is recognized from which hair or tooth structures often arise. Frequent tissues include: nervous tissue, usually glial and ependymal epithelium, respiratory and digestive epithelia and various mesodermal structures. They are bilateral in about 10% of cases. The mature cystic teratoma is benign, but in 2% of them a malignant tumor may develop from one of the tissue components (spinocellular carcinoma, carcinoid, adenocarcinoma, thyroid tissue carcinoma, sarcoma). In this case at first we thought that the option was mature cystic teratoma but thanks to Ramón, when we read it more carefully, we found that it had neuroectodermal and embryonal elements in several of the histological preparations, so we consider that the correct answer is 2.

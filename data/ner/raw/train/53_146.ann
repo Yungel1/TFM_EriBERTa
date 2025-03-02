@@ -1,0 +1,36 @@
+T1	Claim 309 339	Post-traumatic stress reaction
+T2	Claim 344 382	Acute" dependent personality disorder.
+T3	Claim 386 405	Depressive disorder
+T4	Claim 410 421	Agoraphobia
+T5	Premise 42 151	A 31-year-old man with no psychiatric history comes to the emergency room complaining...¨ symptoms of anxiety
+T6	Premise 153 217	Two days ago he experienced another episode of the same symptoms
+T7	Premise 226 265	1 week ago he broke up with his partner
+T8	Claim 426 440	Anguish crisis
+T9	Disease 309 339	Post-traumatic stress reaction
+T10	Disease 344 381	Acute" dependent personality disorder
+T11	Disease 386 405	Depressive disorder
+T12	Disease 410 421	Agoraphobia
+T13	Disease 426 440	Anguish crisis
+T14	Premise 269 300	ruled out any organic pathology
+T15	Claim 629 686	Let us not forget that also the hypochondriacs have body.
+T16	Claim 687 753	We first eliminate the most striking "acute" personality disorder.
+R1	Attack Ent1:T16 Ent2:T2	
+T17	Premise 796 852	There are no "acute" characteristics in our personality.
+R2	Support Ent1:T17 Ent2:T16	
+T18	Premise 853 915	Depressive disorder? There is a time criterion that is not met
+T19	Claim 917 957	it may be sad, but sad is not depression
+R3	Support Ent1:T18 Ent2:T19	
+T20	Premise 963 1073	agoraphobia? if it was something like that we would have been told the context post-traumatic stress reaction?
+R4	Attack Ent1:T20 Ent2:T4	
+R5	Attack Ent1:T19 Ent2:T3	
+T21	Claim 1696 1735	So by elimination 5. Crisis of distress
+R6	Support Ent1:T21 Ent2:T8	
+T22	Premise 1181 1625	according to ICD 10: "The stressor may be a devastating traumatic experience involving a serious threat to the safety or physical integrity of the patient or loved one(s) (e.g., natural catastrophes, accidents, battles, muggings, rapes) or an abrupt and threatening change in the individual's rank or social environment (e.g., loss of several loved ones, house fire, etc.). )" or more briefly: "exceptionally threatening or catastrophic nature"
+T23	Claim 1626 1694	Breaking up with a partner I understand is hard, but not exceptional
+R7	Support Ent1:T22 Ent2:T23	
+R8	Attack Ent1:T23 Ent2:T1	
+T24	Claim 1094 1175	The correct term would be post-traumatic stress disorder or acute stress reaction
+R9	Support Ent1:T24 Ent2:T23	
+T25	Claim 1884 1988	Diagnoses 1 to 4 would be like calling diabetic the one who has hyperglycemia after eating three muffins
+R10	Attack Ent1:T25 Ent2:T1	
+R11	Attack Ent1:T25 Ent2:T4	

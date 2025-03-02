@@ -1,0 +1,31 @@
+T1	Premise 42 275	A 78-year-old woman with a history of type 2 diabetes treated with oral antidiabetics, hypertension treated with beta-blockers and ACE inhibitors, and NYHA grade 1 congestive heart failure with LVEF of 48%, and currently asymptomatic
+T2	Premise 277 302	Functional status: ECOG 0
+T3	Premise 304 362	History of 2 years of evolution of small lumps in the neck
+T4	Premise 364 422	Biopsy of cervical adenopathy: follicular lymphoma grade 2
+T5	Premise 441 451	Hb 12 g/dL
+T6	Premise 453 555	Leukocytes 6,900/microL (Neutrophils 60%, Lymphocytes 27%, Monocytes 6%, Eosinophils 4%, Basophils 4%)
+T7	Premise 557 581	Platelets 220,000/microL
+T8	Premise 583 620	MO: infiltrate by follicular lymphoma
+T9	Premise 622 642	Creatinine 1.5 mg/dL
+T10	Premise 644 655	LDH 235 U/L
+T11	Premise 657 690	Beta2 microglobulin 2.1 microg/mL
+T12	Premise 692 828	CT: lymphadenopathies less than 3 cm in cervical, axillary, retroperitoneal, iliac and inguinal territories; liver and spleen are normal
+T13	Claim 892 962	Rituximab-CHOP (Cyclophosphamide, Adriamycin, Vincristine, Prednisone)
+T14	Claim 967 1024	Rituximab-CVP (Cyclophosphamide, Vincristine, Prednisone)
+T15	Claim 1029 1068	Do not treat and monitor (wait and see)
+T16	Claim 1073 1096	Rituxirnab-Bendamustine
+T17	Claim 1123 1222	There may be debate about whether to start Rituximab with another cytostatic drug or in monotherapy
+T18	Claim 1228 1448	given the lack of survival benefit with early initiation of treatment, the NCCN guidelines recommend waiting and seeing, unless GELF criteria are met to initiate treatment: GELF criteria (Follicular Lymphoma Study Group)
+T19	Marker 1224 1227	but
+R1	Attack Ent1:T18 Ent2:T17	
+R2	Support Ent1:T18 Ent2:T15	
+T20	Treatment 892 906	Rituximab-CHOP
+T21	Treatment 908 924	Cyclophosphamide
+T22	Treatment 926 936	Adriamycin
+T23	Treatment 938 949	Vincristine
+T24	Treatment 951 961	Prednisone
+T25	Treatment 967 980	Rituximab-CVP
+T26	Treatment 982 998	Cyclophosphamide
+T27	Treatment 1000 1011	Vincristine
+T28	Treatment 1013 1023	Prednisone
+T29	Treatment 1073 1096	Rituxirnab-Bendamustine

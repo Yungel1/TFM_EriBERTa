@@ -1,0 +1,25 @@
+T1	Premise 57 171	A 67-year-old woman diagnosed with infiltrating ductal carcinoma of the breast with no family history of neoplasia
+T2	Claim 287 330	Complete phenotypic study by flow cytometry
+T3	Claim 335 370	Study of hormone receptors and HER2
+T4	Claim 375 449	Study of hormone receptors, e-cadherin and study of first degree relatives
+T5	Claim 454 507	Study of BRCA 1-2 and study of first-degree relatives
+T6	Claim 534 586	The answer is 2, study of hormone receptors and HER2
+R1	Support Ent1:T6 Ent2:T3	
+T7	Claim 588 653	This is because no study of first-degree relatives is appropriate
+T8	Marker 596 603	because
+T9	Claim 658 707	it does not appear to be hereditary breast cancer
+T10	Premise 714 753	there is no family history of neoplasia
+T11	Marker 708 713	since
+R2	Support Ent1:T10 Ent2:T9	
+R3	Attack Ent1:T7 Ent2:T4	
+R4	Attack Ent1:T7 Ent2:T5	
+R5	Support Ent1:T9 Ent2:T7	
+T12	Claim 755 815	On the other hand, there is no indication for BRCA 1-2 study
+T13	Marker 755 772	On the other hand
+R6	Support Ent1:T12 Ent2:T5	
+T14	Diagnostics 287 330	Complete phenotypic study by flow cytometry
+T15	Diagnostics 335 370	Study of hormone receptors and HER2
+T16	Diagnostics 375 413	Study of hormone receptors, e-cadherin
+T17	Diagnostics 418 449	study of first degree relatives
+T18	Diagnostics 454 471	Study of BRCA 1-2
+T19	Diagnostics 476 507	study of first-degree relatives

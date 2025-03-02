@@ -1,0 +1,50 @@
+T1	Premise 42 223	A 19-year-old male with no past history of interest comes to the emergency department because after a respiratory infection he presents with asthenia, malaise, oliguria and headache
+T2	Premise 225 310	Physical examination: BP 210/120 mmHg, fundus with hypertensive retinopathy grade III
+T3	Premise 312 455	Laboratory tests: Hb 7.4 g/dl, platelets 85,000/mm3, 2-3 schistocytes in the peripheral blood smear, LDH 950 IU/ml, serum creatinine 8.75 mg/dl
+T4	Premise 457 531	Urine system: proteinuria 300 mg/dl, sediment 15 red blood cells per field
+T5	Premise 533 560	ADAMTS-13 levels are normal
+T6	Claim 633 668	Thrombotic thrombocytopenic purpura
+T7	Claim 673 707	Atypical hemolytic uremic syndrome
+T8	Claim 712 750	Disseminated intravascular coagulation
+T9	Claim 755 788	Typical hemolytic uremic syndrome
+T10	Claim 835 918	The patient presents with thrombotic microangiopathy (TMA) with acute renal failure
+T11	Disease 861 893	thrombotic microangiopathy (TMA)
+T12	Disease 899 918	acute renal failure
+R1	Support Ent1:T4 Ent2:T10	
+T13	Claim 920 1020	This points to HUS, TTP, drug-induced TMA, or TMA mediated by complement, coagulation, or metabolism
+R2	Support Ent1:T10 Ent2:T13	
+T14	Claim 1022 1058	Normal ADAMTS-13 levels rule out TTP
+T15	Claim 1060 1078	incorrect choice 1
+T16	Marker 1046 1054	rule out
+T17	Disease 1055 1058	TTP
+R3	Support Ent1:T14 Ent2:T15	
+R4	Attack Ent1:T14 Ent2:T6	
+R5	Attack Ent1:T15 Ent2:T6	
+R6	Support Ent1:T5 Ent2:T14	
+T18	Disease 935 938	HUS
+T19	Disease 940 943	TTP
+T20	Disease 945 961	drug-induced TMA
+T21	Disease 966 992	TMA mediated by complement
+T22	Marker 963 965	or
+T23	Claim 1081 1155	The absence of gastrointestinal symptoms rules out typical Shiga toxin HUS
+T24	Claim 1157 1175	incorrect choice 4
+R7	Support Ent1:T23 Ent2:T24	
+T25	Marker 1122 1131	rules out
+T26	Disease 1132 1155	typical Shiga toxin HUS
+R8	Attack Ent1:T23 Ent2:T9	
+R9	Attack Ent1:T24 Ent2:T9	
+T27	Claim 1178 1263	Pneumococcal infections can also cause HUS, although it is rare and more so in adults
+T28	Disease 1217 1220	HUS
+T29	Marker 1222 1230	although
+T30	Claim 1265 1476	The history of respiratory infection (not specified, it could be pneumococcal pneumonia) together with the absence of DIC data (no mention of bleeding or altered coagulation tests) makes me think of atypical HUS
+T31	Claim 1478 1494	option 2 correct
+R10	Support Ent1:T30 Ent2:T7	
+R11	Support Ent1:T31 Ent2:T7	
+R12	Support Ent1:T30 Ent2:T31	
+R13	Support Ent1:T1 Ent2:T27	
+R14	Support Ent1:T27 Ent2:T23	
+R15	Support Ent1:T1 Ent2:T30	
+T32	Disease 633 668	Thrombotic thrombocytopenic purpura
+T33	Disease 673 707	Atypical hemolytic uremic syndrome
+T34	Disease 712 750	Disseminated intravascular coagulation
+T35	Disease 755 788	Typical hemolytic uremic syndrome

@@ -1,0 +1,10 @@
+QUESTION TYPE: OBSTETRICS AND GYNECOLOGY
+CLINICAL CASE: 
+A 51-year-old woman, menopausal for a year and a half, who consults for vaginal spotting of 2 weeks' evolution. She reports that the spotting is less than a menstrual period. The ultrasound shows a 7 mm endometrium. Mark the correct option:
+1- The endometrium is thickened and in view of the patient's symptoms, an endometrial biopsy is taken with a Cornier cannula.
+2- The endometrium is not thickened so she is prescribed tranexamic acid and ambulatory follow-up.
+3- Indications for diagnostic hysteroscopy without the need for endometrial biopsy.
+4- The endometrium is not thickened, but since she has clinical signs of metrorrhagia, an endometrial biopsy is indicated.
+5- nan
+CORRECT ANSWER: 1
+The endometrium is thickened for a menopausal woman (some guidelines put the limit at 5 and others at 3mm). And the first complementary test to perform would be an endometrial biopsy. If this is not decisive, hysteroscopy will be considered as a second option.

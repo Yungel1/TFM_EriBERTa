@@ -1,0 +1,10 @@
+QUESTION TYPE: CARDIOLOGY
+CLINICAL CASE: 
+A 52-year-old patient who has been complaining of dyspnea on medium exertion for 6 months. He has not presented angina or syncope. Physical examination and diagnostic tests show a mean aortic transvalvular gradient of 55 mmHg and a calculated area of 0.7 cm². Ejection fraction of 65%. The treatment to be indicated for this patient is:
+1- Diuretics and more frequent check-ups by a specialist.
+2- In case of increasing dyspnea on exertion, percutaneous dilatation of the aortic valve with a balloon catheter should be performed.
+3- Replacement of the aortic valve with a prosthesis/bioprosthesis.
+4- Replacement of the aortic valve with a homograft.
+5- Implantation of a percutaneous valve.
+CORRECT ANSWER: 3
+Something aortic. They give me a gradient, which without knowing the values seems somewhat high (55 mmHg!) and the area, which looks tiny to the naked eye: this is going to be aortic stenosis... And he has dyspnea. Symptomatic aortic stenosis, will the examiner want me to send him for surgery? With the guidelines in hand, that's right: this is a severe stenosis both in terms of area (<1 cm²) and mean gradient (>40 mmHg), with a preserved ejection fraction, and symptomatic. Surgical indication. If we do 1 we take away life expectancy, because we allow the ventricle to claudicate. 2 is outdated: balloon valvuloplasty? Only if the surgical risk is unaffordable, and in that case we would do 5, TAVI implantation (see [1]). But this is a 52-year-old man, who we assume has good bodywork because he walks to have dyspnea, so to the operating room. So to the operating room. A homograft? That's the Ross technique, I take the pulmonary and put it where the aortic. But it's rare, complex and only done in pediatrics. The correct thing to do is 3, without a doubt: replace with a prosthesis, preferably mechanical unless the patient has a contraindication for anticoagulation.

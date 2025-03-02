@@ -1,0 +1,54 @@
+T1	Premise 45 129	A 34-year-old patient playing tennis is hit by a ball at the level of the left orbit
+T2	Premise 131 283	On examination he presents significant palpebral hematoma, hyposphagmia, diplopia to superior vision with limitation of the upper version of the eyeball
+T3	Claim 312 411	Fracture of the inferior wall of the floor of the orbit with trapping of the inferior rectus muscle
+T4	Claim 416 439	Zygomatic arch fracture
+T5	Claim 444 532	Fracture of the superior wall of the orbit with entrapment of the superior rectus muscle
+T6	Claim 537 559	Dentoalveolar fracture
+T7	Claim 844 900	Versions are bilateral conjugated movements of both eyes
+T8	Claim 902 1006	That is, a version is composed of the sum of two ductions, since duction is the movement of only one eye
+T9	Marker 961 966	since
+T10	Claim 1008 1113	When you explore the versions, specifically the superior version or supraversion, both eyes rotate upward
+R1	Support Ent1:T7 Ent2:T8	
+R2	Support Ent1:T8 Ent2:T10	
+T11	Claim 1115 1186	At that time, you may encounter a limitation of the movement of one eye
+T12	Premise 1188 1304	In this case, when you scan the supraversion, you suspect or you detect a limitation in the movement of the left eye
+T13	Claim 1306 1373	And we would call this a limitation to the supraversion of that eye
+R3	Support Ent1:T10 Ent2:T11	
+T14	Marker 1188 1200	In this case
+R4	Support Ent1:T12 Ent2:T13	
+T15	Premise 1754 1799	It is about a patient who has received a blow
+T16	Premise 1871 1968	The palpebral hematoma and hyposphagma (subconjunctival hemorrhage) does not give us the key data
+T17	Premise 1970 2045	What is important is that the eye that has received the blow does not go up
+T18	Claim 2051 2104	therefore there is double vision in the superior gaze
+T19	Marker 2051 2060	therefore
+R5	Support Ent1:T17 Ent2:T18	
+T20	Claim 2106 2138	It might be tempting to answer 3
+T21	Premise 2140 2245	thinking that because the superior rectus is trapped, it does not work and therefore the eye cannot go up
+R6	Support Ent1:T21 Ent2:T20	
+T22	Claim 2247 2333	However, muscles trapped in a fracture do not automatically lose their muscular action
+T23	Marker 2247 2254	However
+R7	Attack Ent1:T22 Ent2:T20	
+R8	Support Ent1:T20 Ent2:T5	
+R9	Attack Ent1:T22 Ent2:T5	
+R10	Support Ent1:T17 Ent2:T20	
+T24	Claim 2335 2414	What happens is that they become trapped, they are "hooked", and cannot stretch
+R11	Support Ent1:T22 Ent2:T24	
+T25	Claim 2416 2588	The problem is that the inferior wall has been broken, the inferior rectus has been trapped, and when the eye must look up, this inferior rectus cannot stretch as it should
+T26	Claim 2590 2636	It is not paralysis, but a restrictive problem
+R12	Support Ent1:T24 Ent2:T25	
+R13	Support Ent1:T25 Ent2:T26	
+R14	Support Ent1:T25 Ent2:T3	
+T27	Claim 2690 2720	Options 2 and 4 can be ignored
+T28	Marker 2721 2728	because
+T29	Claim 2729 2799	they are too far away from the extraocular muscles to produce diplopia
+R15	Support Ent1:T29 Ent2:T27	
+R16	Attack Ent1:T27 Ent2:T4	
+R17	Attack Ent1:T27 Ent2:T6	
+T30	Claim 2801 2904	And as for the walls of the orbit, the ones that break most frequently are the inferior and medial wall
+R18	Support Ent1:T30 Ent2:T3	
+T31	Claim 2906 2944	The superior wall ruptures very rarely
+R19	Attack Ent1:T31 Ent2:T5	
+T32	Disease 537 559	Dentoalveolar fracture
+T33	Disease 444 532	Fracture of the superior wall of the orbit with entrapment of the superior rectus muscle
+T34	Disease 416 439	Zygomatic arch fracture
+T35	Disease 312 411	Fracture of the inferior wall of the floor of the orbit with trapping of the inferior rectus muscle

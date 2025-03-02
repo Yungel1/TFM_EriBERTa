@@ -1,0 +1,10 @@
+QUESTION TYPE: GYNECOLOGY AND OBSTETRICS
+CLINICAL CASE: 
+A 64-year-old woman. Menopause at 54 years of age. Two pregnancies and eutocic deliveries. She does not take any medication. She comes to the emergency department reporting two days of vaginal bleeding with discomfort in the hypogastrium. The clinical examination performed by the gynecologist does not show any lesions in the external genitalia, vagina or cervix. Vaginal examination is inconclusive. Which of the following seems to you to be the most appropriate first diagnostic approach?
+1- Transvaginal ultrasound and measurement of endometrial thickness. Depending on this, an endometrial biopsy should be taken or not.
+2- Endometrial biopsy by aspiration in consultation. With it I can get the diagnosis very reliably and it is inexpensive.
+3- Hysteroscopy with sedation and directed biopsy if a lesion is seen.
+4- I would perform a microbleed, since it is the test that would provide me with the definitive diagnosis.
+5- nan
+CORRECT ANSWER: 1
+Since the most frequent cause of vaginal bleeding in postmenopausal women is urogenital atrophy, the existence of an endometrial pathology cannot be ruled out. According to the SEGO: "Abnormal genital bleeding is the main sign of suspicion that should lead us to rule out an endometrial neoplastic pathology, particularly in postmenopausal patients, or those with associated risk factors (...) Given the sign of suspicion, the performance of a transvaginal ultrasound, or in its absence transrectal, allows us to: rule out organic pathology (fibroids, polyps); measurement of endometrial thickness in a longitudinal cut. It is recommended to use a cut-off point of 3mm for endometrial biopsy in the symptomatic patient".

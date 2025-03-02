@@ -1,0 +1,19 @@
+T1	Premise 41 151	A 72-year-old patient presents with progressive memory loss and word finding difficulty of one year's duration
+T2	Claim 256 285	Neuropsychological evaluation
+T3	Claim 290 322	Brain magnetic resonance imaging
+T4	Claim 327 355	Positron Emission Tomography
+T5	Claim 360 380	Electroencephalogram
+T6	Claim 556 597	The first option would be the correct one
+R1	Support Ent1:T6 Ent2:T2	
+T7	Marker 598 605	because
+T8	Claim 606 820	it allows us to measure in a standardized way each of the cognitive domains, which will allow us to frame the patient's deficits in a specific syndrome and to monitor the deterioration with repeated scans over time
+R2	Support Ent1:T8 Ent2:T6	
+T9	Claim 407 554	The characterization of cognitive deterioration processes is still clinical, with imaging tests (MRI or PET) being a support tool in some occasions
+T10	Diagnostics 504 507	MRI
+T11	Diagnostics 511 514	PET
+R3	Support Ent1:T9 Ent2:T3	
+R4	Support Ent1:T9 Ent2:T4	
+T12	Diagnostics 256 285	Neuropsychological evaluation
+T13	Diagnostics 290 322	Brain magnetic resonance imaging
+T14	Diagnostics 327 355	Positron Emission Tomography
+T15	Diagnostics 360 380	Electroencephalogram

@@ -1,0 +1,50 @@
+T1	Premise 84 206	Elderly woman brought to the ER by her neighbors because they see her somewhat groggy and with stool stains on her clothes
+T2	Premise 208 222	BP 100/60 mmHg
+T3	Premise 224 261	HR 100 bpm, sitting 70/30, HR 105 bpm
+T4	Premise 263 273	PVY normal
+T5	Premise 299 323	No neurological focality
+T6	Premise 275 297	Kussmaul's respiration
+T7	Premise 325 337	Weight 50 kg
+T8	Premise 344 351	PH 7.25
+T9	Premise 353 360	PCO2 14
+T10	Premise 362 375	Bicarbonate 5
+T11	Premise 377 383	Na 133
+T12	Premise 385 390	K 2.5
+T13	Premise 392 398	Cl 118
+T14	Premise 400 409	Creat 3.4
+T15	Premise 411 417	NUS 60
+T16	Premise 419 425	Prot 8
+T17	Claim 473 532	The presenting acid-base disorder is a respiratory acidosis
+T18	Claim 537 587	Compensation to correct the acidosis is inadequate
+T19	Claim 592 649	With this exploration, we rule out that she is dehydrated
+T20	Claim 654 696	In any case, we should not put bicarbonate
+T21	Claim 701 749	She has an acute renal failure of prerenal cause
+T22	Disease 512 532	respiratory acidosis
+T23	Treatment 677 696	not put bicarbonate
+T24	Disease 712 749	acute renal failure of prerenal cause
+T25	Claim 769 842	This is a case of hyperchloremic metabolic acidosis with normal anion gap
+T26	Marker 1489 1491	so
+T27	Claim 1492 1614	it is most likely that their renal failure (although they do not give us urine ion data to confirm it) is of prerenal type
+T28	Claim 1616 1672	The treatment would be water and electrolyte replacement
+T29	Claim 1749 1785	we should not administer bicarbonate
+T30	Premise 1678 1747	in principle, unless the patient worsens and the pH is less than 7.10
+T31	Marker 1692 1698	unless
+R1	Support Ent1:T30 Ent2:T29	
+T32	Premise 1334 1402	We must take into account that, in this case, potassium is decreased
+T33	Claim 1407 1487	the most frequent cause (supported by the stains on the dress) would be diarrhea
+T34	Marker 1404 1406	so
+R2	Support Ent1:T32 Ent2:T33	
+T35	Premise 1536 1593	although they do not give us urine ion data to confirm it
+T36	Marker 1536 1544	although
+R3	Attack Ent1:T35 Ent2:T27	
+T37	Premise 1432 1468	supported by the stains on the dress
+R4	Support Ent1:T37 Ent2:T33	
+R5	Support Ent1:T33 Ent2:T27	
+R6	Support Ent1:T32 Ent2:T27	
+R7	Support Ent1:T27 Ent2:T21	
+R8	Support Ent1:T33 Ent2:T21	
+T38	Claim 844 1201	Severe metabolic acidosis causes myocardial contractile depression, reduced effectiveness of catecholamines, increased incidence of arrhythmias, vasodilatation and increased capillary permeability, with the consequent reduction of tissue flow, at the cerebral level (leading to states of confusion and even coma), at the renal level, at the hepatic level...
+T39	Claim 1202 1332	These patients frequently present intense tachypnea (Kussmaul's breathing) in an attempt to compensate for MCA by hyperventilation
+R9	Support Ent1:T6 Ent2:T39	
+T40	Marker 618 626	rule out
+T41	Disease 787 842	hyperchloremic metabolic acidosis with normal anion gap

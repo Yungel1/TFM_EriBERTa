@@ -1,0 +1,24 @@
+T1	Claim 357 362	Scalp
+T2	Claim 367 374	Parotid
+T3	Claim 379 383	Lung
+T4	Claim 388 397	Esophagus
+T5	Claim 402 408	Larynx
+T6	Premise 72 279	A 64-year-old smoker and heavy drinker reports painless right jugulodigastric lymphadenopathy of progressive growth in the last two months whose fine needle aspiration was reported as squamous cell carcinoma
+T7	Claim 745 872	all the adenopathies at this level that I have seen have ended up corresponding to carcinomas of the upper aerodigestive tract.
+T8	Claim 699 727	I would mark 5 and rest easy
+R1	Support Ent1:T7 Ent2:T8	
+T9	Claim 614 652	So we are left with parotid and larynx
+T10	Marker 654 657	but
+T11	Claim 658 697	parotid squamous cell carcinoma is rare
+R2	Attack Ent1:T11 Ent2:T9	
+R3	Support Ent1:T11 Ent2:T8	
+T12	Claim 567 612	a dermatologist (answer 1) would not ask this
+R4	Attack Ent1:T12 Ent2:T1	
+R5	Support Ent1:T8 Ent2:T5	
+T13	Claim 468 527	You have already passed the Pneumology and Digestive blocks
+R6	Attack Ent1:T13 Ent2:T4	
+R7	Attack Ent1:T13 Ent2:T3	
+R8	Attack Ent1:T11 Ent2:T2	
+T14	Claim 529 561	Dermatology is still to come out
+T15	Marker 563 566	but
+T16	Marker 737 744	because

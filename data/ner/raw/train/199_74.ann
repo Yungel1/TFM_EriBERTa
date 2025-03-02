@@ -1,0 +1,35 @@
+T2	Claim 182 344	you should always perform a study to rule out the presence of a disease whose appropriate treatment can improve neurological symptoms and stop the clinical course
+T3	Disease 124 136	parkinsonism
+T4	Disease 146 154	dystonia
+T5	Claim 369 389	Huntington's disease
+T6	Claim 394 410	Wilson's disease
+T7	Claim 415 434	Tourette's syndrome
+T8	Claim 439 456	Sydenham's chorea
+T9	Claim 462 495	uvenile-onset Parkinson's disease
+T10	Disease 369 389	Huntington's disease
+T11	Disease 394 410	Wilson's disease
+T12	Disease 415 434	Tourette's syndrome
+T13	Disease 439 456	Sydenham's chorea
+T14	Disease 461 495	Juvenile-onset Parkinson's disease
+T15	Claim 515 690	The key in the question is "stopping the clinical course", as Hungtinton's disease, Tourette's and Parkinson's disease do not have treatments that can stop the clinical course
+T16	Marker 574 576	as
+T17	Disease 577 597	Hungtinton's disease
+T18	Disease 599 609	Tourette's
+T19	Disease 614 633	Parkinson's disease
+R1	Attack Ent1:T15 Ent2:T5	
+R2	Attack Ent1:T15 Ent2:T7	
+R3	Attack Ent1:T15 Ent2:T9	
+T20	Claim 692 820	Sydenham's chorea is typical of younger children with a history of streptococcal infection and resolution is usually spontaneous
+T1	Premise 44 93	a patient presenting in the second decade of life
+T21	Premise 101 180	progressive picture of parkinsonism, tremor, dystonia and behavioral alteration
+R4	Support Ent1:T1 Ent2:T2	
+R5	Support Ent1:T21 Ent2:T2	
+T22	Disease 692 709	Sydenham's chorea
+R6	Attack Ent1:T1 Ent2:T20	
+T23	Disease 759 782	streptococcal infection
+T24	Claim 822 968	On the other hand, in clinical cases it is recommended to rule out Wilson's disease in young patients with movement and neuropsychiatric disorders
+T25	Marker 822 839	On the other hand
+T26	Disease 889 905	Wilson's disease
+R7	Support Ent1:T24 Ent2:T6	
+R8	Support Ent1:T21 Ent2:T24	
+R9	Support Ent1:T1 Ent2:T24	

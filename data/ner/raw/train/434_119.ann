@@ -1,0 +1,27 @@
+T1	Premise 68 202	A 38-year-old woman of veterinary profession, in charge of monitoring wild animals and assisting in the delivery of domestic livestock
+T2	Premise 204 330	She starts with a high fever with chills, headache, myalgia and non-productive cough that she interprets as a flu-like process
+T3	Premise 332 361	She presented with chest pain
+T4	Premise 363 429	Chest X-ray showed bilateral pulmonary infiltrates in lower fields
+T5	Premise 431 516	A serologic test was performed with elevated antibody titers against phase I antigens
+T6	Claim 564 614	The way of transmission of this entity is by ticks
+T7	Claim 619 712	Both doxycycline and hydroxychloroquine are effective in treating acute forms of this disease
+T8	Claim 717 812	In its acute form it also presents, generally, elevation of antibodies against phase I antigens
+T9	Claim 817 863	Mortality in acute forms is almost nonexistent
+T10	Claim 890 963	Acute infection by Coxiella burnetii manifested in this case by Pneumonia
+T11	Claim 965 1011	Coxiella infection is not transmitted by ticks
+R1	Attack Ent1:T11 Ent2:T6	
+T12	Disease 890 926	Acute infection by Coxiella burnetii
+T13	Disease 954 963	Pneumonia
+T14	Claim 1013 1156	The contact can be with high probability at the time of delivery of an infected farm animal, in which the bacterium is disseminated in aerosols
+R2	Attack Ent1:T14 Ent2:T11	
+T15	Claim 1158 1220	The treatment of choice is with doxycycline in the acute phase
+T16	Claim 1321 1412	The combination of doxycycline plus hicroxychloroquine can be used, but for chronic Q fever
+T17	Claim 1222 1318	if meningitis is present, quinolones are preferred due to penetration of the blood-brain barrier
+T18	Marker 1273 1279	due to
+T19	Marker 1389 1392	but
+T20	Claim 1429 1528	elevation of antibodies against phase I antigens is observed and carries a higher risk of mortality
+R3	Support Ent1:T5 Ent2:T20	
+R4	Attack Ent1:T16 Ent2:T7	
+R5	Attack Ent1:T20 Ent2:T8	
+R6	Attack Ent1:T15 Ent2:T7	
+R7	Attack Ent1:T20 Ent2:T9	

@@ -1,0 +1,49 @@
+T1	Premise 41 164	A 43-year-old man with no diseases of interest comes to the emergency department for 4 melaenic stools in the last 12 hours
+T2	Claim 804 974	Since the patient is young, with no associated diseases and the ulcer has stopped bleeding, he can be discharged early with treatment with a PPI and H. Pylori eradication
+T3	Treatment 945 948	PPI
+T4	Treatment 953 974	H. Pylori eradication
+T5	Claim 1105 1255	Take biopsy for H. Pylori, remove the endoscope taking care not to dislodge the platelet thrombus and continue pharmacological treatment with i.v. PPI
+T6	Claim 979 1100	Remove the endoscope, place nasogastric tube for continuous aspiration and initiate treatment with a PPI and somatostatin
+T7	Treatment 979 999	Remove the endoscope
+T8	Treatment 1001 1049	place nasogastric tube for continuous aspiration
+T9	Treatment 1080 1083	PPI
+T10	Treatment 1088 1100	somatostatin
+T11	Treatment 1105 1130	Take biopsy for H. Pylori
+T12	Treatment 1132 1202	remove the endoscope taking care not to dislodge the platelet thrombus
+T13	Treatment 1247 1255	i.v. PPI
+T14	Claim 1260 1334	Consultation to the surgical service to consider urgent surgical treatment
+T15	Claim 1339 1479	Endoscopic treatment by injection of adrenaline into the ulcer and placement of clips (metal staples) followed by i.v. administration of PPI
+T16	Treatment 1339 1401	Endoscopic treatment by injection of adrenaline into the ulcer
+T17	Treatment 1406 1440	placement of clips (metal staples)
+T18	Treatment 1453 1479	i.v. administration of PPI
+T19	Treatment 1260 1296	Consultation to the surgical service
+T20	Premise 166 206	He refers taking NSAIDs in previous days
+T21	Premise 208 268	Physical examination revealed pale skin and mucous membranes
+T22	Premise 270 293	BP 95/65 and HR 110 bpm
+T23	Premise 295 365	The abdomen is not painful and rectal examination shows melenic stools
+T24	Premise 367 398	The CBC shows a Hb of 8.1 gr/dl
+T25	Premise 551 751	clots were found in the stomach and a 2 cm ulcer in the gastric antrum with fibrin background and a small grayish-white protrusion of 3 mm in the center of the ulcer (visible platelet thrombus vessel)
+T26	Premise 400 513	After infusion of saline and the start of red blood cell concentrate transfusion, the BP was 120/85 and HR 90 bpm
+T27	Claim 2116 2142	the correct one would be 5
+T28	Marker 2113 2115	so
+T29	Claim 2048 2111	endoscopic therapy is recommended, preferably with 2 techniques
+R1	Support Ent1:T29 Ent2:T27	
+T30	Claim 1668 1721	Answer 1 is not in accordance with what has been said
+T31	Premise 1731 1829	an unstable patient who has bled a lot, who has a Forrest IIa ulcer with a high risk of rebleeding
+R2	Support Ent1:T31 Ent2:T30	
+T32	Premise 1532 1665	Young patient, with no previous history, who after taking NSAIDs presents bleeding with hemodynamic instability requiring transfusion
+T33	Claim 1919 1989	4 will only be considered if bleeding is not controlled endoscopically
+R3	Attack Ent1:T25 Ent2:T14	
+R4	Support Ent1:T25 Ent2:T33	
+R5	Attack Ent1:T30 Ent2:T2	
+R6	Attack Ent1:T31 Ent2:T2	
+T34	Premise 1831 1917	Answer 2 speaks of somatostatin, which is used for bleeding due to portal hypertension
+R7	Support Ent1:T29 Ent2:T15	
+R8	Attack Ent1:T34 Ent2:T6	
+R9	Attack Ent1:T29 Ent2:T5	
+R10	Attack Ent1:T25 Ent2:T2	
+T35	Marker 1891 1897	due to
+R11	Attack Ent1:T33 Ent2:T14	
+T36	Premise 2014 2046	there is a high risk of bleeding
+R12	Support Ent1:T36 Ent2:T29	
+T37	Marker 2008 2013	since

@@ -1,0 +1,10 @@
+QUESTION TYPE: ALLERGOLOGY
+CLINICAL CASE: 
+16-year-old woman diagnosed with allergic rhinoconjunctivitis due to sensitization to grass pollens since she was 10 years old, who does not fully control the symptomatology during the pollination season with oral antihistamines and nasal topical corticosteroids. Which etiologic therapeutic option would be indicated:
+1- Specific immunotherapy by sublingual or subcutaneous route for a minimum period of 3 years.
+2- Specific immunotherapy by sublingual or subcutaneous route for a maximum period of 1 year.
+3- Omalizumab subcutaneously every 4 weeks for up to 1 year.
+4- Omalizumab subcutaneously every 4 weeks for a minimum period of 6 months.
+5- nan
+CORRECT ANSWER: 1
+Currently the only effective treatment capable of modifying the natural course of respiratory allergy is specific allergen immunotherapy for a minimum of 3 consecutive years. In this patient the conventional treatment has not worked, so it is possible to escalate to specific allergen immunotherapy. It is true that it is not necessary to wait 10 years to start it since it is indicated and its use is allowed if there is clinical relevance in patients older than 5 years. Omalizumab is a biological treatment that would only be indicated in cases of severe moderate bronchial asthma secondary to respiratory allergy.

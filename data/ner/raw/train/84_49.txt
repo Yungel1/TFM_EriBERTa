@@ -1,0 +1,10 @@
+QUESTION TYPE: CARDIOLOGY AND VASCULAR SURGERY
+CLINICAL CASE: 
+A 75-year-old man, hypertensive and dyslipidemic with a history of heart failure due to left ventricular systolic dysfunction (EF < 30%). He comes to our office for worsening of his usual dyspnea in recent weeks. His systolic blood pressure is 160/95 mmHg with a heart rate of 65 bpm. In the physical examination no crackles were heard and his jugular venous pressure was normal. He provides a creatinine determination that is 3.7 mg/dL with ions within normal. Which of the following drugs is the most appropriate to improve the prognosis of his heart failure?
+1- Enalapril.
+2- Losartan.
+3- Spironolactone.
+4- Bisoprolol.
+5- Eplerenone.
+CORRECT ANSWER: 4
+In a patient with multiple CVRF with concomitant heart and renal failure (presumably of multiple etiology: renal hypoperfusion, arteriosclerosis...), we must be very careful when using diuretics and ACEI/ARA-II, since we can worsen renal function and/or increase potassium levels (among diuretics, spironolactone and eplerenone are "potassium-sparing"). Therefore, in this case we will use bisoprolol.

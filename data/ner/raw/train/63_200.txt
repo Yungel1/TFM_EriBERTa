@@ -1,0 +1,10 @@
+QUESTION TYPE: ANATOMY
+CLINICAL CASE: 
+A 31-year-old bricklayer comes to the emergency department with tenosynovitis caused by a penetrating wound. On examination, the ulnar bursa is found to be infected with consequent tendon necrosis. Which tendon will be affected?
+1- Tendon of the flexor carpi ulnaris.
+2- Tendon of the abductor pollicis longus.
+3- Tendon of the deep flexor of the fingers.
+4- Radial carpal flexor tendon.
+5- Palmaris longus tendon.
+CORRECT ANSWER: 1
+Both the flexor carpi radialis and the abductor pollicis longus are anatomically far from the ulnar. The palmaris longus is medial, as is the flexor digitorum profundus. The tendon that runs alongside the ulnar nerve, inserting into the pisiform, is the flexor carpi ulnaris, thus answer 1.

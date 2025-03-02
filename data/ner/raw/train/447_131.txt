@@ -1,0 +1,10 @@
+QUESTION TYPE: NEPHROLOGY
+CLINICAL CASE: 
+A 25-year-old man with no known history of interest. He has been presenting with foamy and loaded urine for 2 months, with no other symptoms. Physical examination without findings. Elemental urine: pH 5; glucose negative; hemoglobin ++; protein ++; leukocyte esterase negative; proteinuria 1.5 g/24 hours; urinary Na 60 mEq/L; urinary K 30 mEq/L; urinary Cl 100 mEq/L. Blood biochemistry: creatinine 1.6 mg/dL; urea 80 mg/dL; Na 140 mEq/L; K 3.8 mEq/L. Immunological study: antiDNA negative; ANCA negative; antiMBG negative, rheumatoid factor negative; C3 20 mg/dL (normal 60-120); C4 10 mg/dL (normal 20-40). A renal biopsy is performed. Which of these diagnoses do you think is the most likely to be found in the biopsy?
+1- Membranous glomerulonephritis.
+2- Glomerulonephritis with minimal changes.
+3- Mesangial IgA glomerulonephritis.
+4- Membranoproliferative glomerulonephritis.
+5- nan
+CORRECT ANSWER: 4
+We are presented with a lot of analytical data but we only have to look at two: the levels of complement fractions C3 and C4 are low. Of the options given, only membranoproliferative glomerulonephritis presents with hypocomplementemia (option 4 correct).

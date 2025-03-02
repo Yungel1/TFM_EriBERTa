@@ -1,0 +1,30 @@
+T1	Claim 1085 1208	This is indicated regardless of the Consultant's genotype, since SCA3 ataxia is maternally inherited (transmitted by women)
+T2	Claim 599 686	It is indicated after studying the Consultant's genotype and only if it is heterozygous
+T3	Claim 962 1080	SCA3 ataxia is recessively inherited, so there is no appreciable risk of disease transmission and PND is not indicated
+T4	Claim 835 957	It may be indicated in the next pregnancy, after studying the genotype of the first child and detecting the mutation in it
+T5	Claim 691 830	This is not indicated, since SCA3 ataxia is full penetrance and the Consultant is asymptomatic and therefore has not inherited the mutation
+T6	Premise 40 174	An asymptomatic 31-year-old woman (Consultant) is asymptomatic and has a 10-week gestation according to ultrasound study (primiparous)
+T7	Premise 176 372	Her younger brother (index case) aged 26 years is affected by ataxia and genetically diagnosed as a heterozygous carrier of an expansive mutation of 70 CAG repeats in the SCA3 gene (chromosome 14)
+T8	Premise 374 512	The patient is referred to the genetic counseling office where a possible chorionic villus biopsy to study the fetal genotype is evaluated
+T9	Claim 1746 1857	I think that before doing the chorion biopsy, the pregnant woman should be tested to know her ATXN3 gene status
+T10	Claim 2331 2374	I think answer 1 is more true than answer 2
+T11	Marker 2006 2018	Nevertheless
+R1	Support Ent1:T10 Ent2:T2	
+T12	Disease 720 731	SCA3 ataxia
+T13	Disease 962 973	SCA3 ataxia
+T14	Disease 1150 1161	SCA3 ataxia
+T15	Claim 2006 2092	Nevertheless, I would do the genetic test on the pregnant woman to be on the safe side
+T16	Claim 1859 2004	She has a 50% chance of carrying the mutation and having the disease, but since she is 31 years old, I think she should have already had symptoms
+R2	Attack Ent1:T16 Ent2:T15	
+T17	Marker 1929 1932	but
+T18	Claim 2094 2216	If she came out without the mutation, there would be nothing more to do because the disease would no longer be transmitted
+T19	Claim 2218 2294	If she came out with the mutation, then I would do a chorionic villus biopsy
+R3	Attack Ent1:T10 Ent2:T5	
+R4	Support Ent1:T16 Ent2:T5	
+T20	Marker 2327 2330	but
+T21	Claim 2296 2325	Answers 1 and 2 are both true
+R5	Support Ent1:T21 Ent2:T2	
+R6	Support Ent1:T21 Ent2:T5	
+R7	Support Ent1:T7 Ent2:T16	
+T22	Premise 1600 1744	In this clinical case, the one who has the disease and has the mutated gene in heterozygosis is the brother (26 years old) of the pregnant woman
+R8	Support Ent1:T22 Ent2:T16	

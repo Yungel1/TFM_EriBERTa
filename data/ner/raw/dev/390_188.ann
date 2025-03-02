@@ -1,0 +1,30 @@
+T1	Premise 42 176	An 80-year-old man is brought to the ER by the police to find him at night, on the street, several blocks from his home, somewhat lost
+T2	Premise 178 244	He tells the ER doctor "I feel fine, I was walking and I got lost"
+T3	Premise 287 340	When asked about his medication, he does not remember
+T4	Premise 342 400	His history includes glipizide, atenolol and acenocoumarol
+T5	Premise 402 504	She has been to the ER 3 times in the last three months for "dizziness", low back pain and an INR of 5
+T6	Premise 506 583	She reports independence in basic and instrumental activities of daily living
+T7	Premise 747 860	In the physical examination, only temperature of 37.7, BMI of 16, BP of 160/90, HR of 90 and SO2 of 99% stand out
+T8	Premise 862 895	He has global loss of muscle mass
+T9	Premise 897 942	He is dressed in his robe and smells of urine
+T10	Premise 944 987	He refuses to answer Minimental's questions
+T11	Premise 989 1181	Laboratory tests include 13,000 leukocytes, blood glucose 300, glycosylated hemoglobin 11%, INR 0.9, urine over 50 leukocytes/field, nitrites+ and urine culture > 100,000 Gram negative bacilli
+T12	Premise 1183 1291	He is admitted to the hospital, receives antibiotics, insulin and restarts acenocoumarol with good evolution
+T13	Premise 1293 1326	He is stable and wants to go home
+T14	Premise 1328 1387	The ward nurse says he is unable to self-administer insulin
+T15	Claim 1477 1554	Refer to Primary Care and social work in the area to determine safety at home
+T16	Claim 1559 1634	Formal evaluation of the capacity to make decisions concerning their health
+T17	Claim 1639 1670	Evaluation to rule out dementia
+T18	Claim 1675 1708	Evaluation to rule out depression
+T19	Claim 1735 1897	Assessing capacity is not about taking away the patient's autonomy, but making sure that the patient understands and is aware of the consequences of his decisions
+R1	Support Ent1:T19 Ent2:T16	
+T20	Claim 1990 2056	This is not done by a psychiatrist, but by the attending physician
+R2	Support Ent1:T20 Ent2:T16	
+T21	Claim 2058 2208	There are several tests or semi-structured interviews to assess the capacity of patients, and all physicians should be familiar with these instruments
+T22	Claim 1899 1988	In fact, it is a protective measure for the most fragile patients to ensure the best care
+R3	Support Ent1:T22 Ent2:T16	
+T23	Marker 1653 1661	rule out
+T24	Diagnostics 1639 1670	Evaluation to rule out dementia
+T25	Marker 1689 1697	rule out
+T26	Diagnostics 1675 1708	Evaluation to rule out depression
+T27	Diagnostics 1559 1634	Formal evaluation of the capacity to make decisions concerning their health

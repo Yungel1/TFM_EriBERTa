@@ -1,0 +1,10 @@
+QUESTION TYPE: PEDIATRICS
+CLINICAL CASE: 
+A 4-year-old boy comes to the health center who, 5 minutes before, starts with angioedema in the face, conjunctivitis, nasal congestion and hoarseness, coinciding with the ingestion of a spoonful of yogurt given to him by mistake at school. Among the antecedents, he was diagnosed with cow's milk protein allergy. Examination revealed mild hypotension, heart rate 110 bpm, O2 Sat 93%, pale and slightly sweaty, with scattered wheezing. What is the first treatment of choice?
+1- Provoke vomiting.
+2- Adrenaline 1/1000 subcutaneous.
+3- Intramuscular adrenaline 1/1000.
+4- Intramuscular methylprednisolone.
+5- Nebulized salbutamol.
+CORRECT ANSWER: 3
+We are facing a case of Anaphylaxis so the first measure is to administer Adrenaline 1/1000 intramuscular (0.01mg/kg). Subsequently, systemic corticosteroids such as methylprednisolone will be given, which will take a few hours to take effect. So adrenaline first, as it is faster acting, then the rest (Question very similar to one last year, instead of yogurt, it was omelet).

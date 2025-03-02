@@ -1,0 +1,21 @@
+T1	Premise 44 136	A 27-year-old male, a regular athlete, refers pain in the right leg after continuous running
+T2	Premise 138 233	He has visited a physiotherapist on several occasions and has been diagnosed with calf overload
+T3	Premise 235 389	Several months have passed, he has not improved and refers intense pain after physical activity that subsides with rest in the following hours of exercise
+T4	Claim 431 471	Positron emission tomography with 18 FDG
+T5	Claim 476 550	Determination of posterior compartment pressure immediately after activity
+T6	Claim 555 631	Doppler ultrasound to rule out a circulatory disorder of the lower extremity
+T7	Claim 636 670	Spectrometry by magnetic resonance
+T8	Claim 697 746	We present a case of chronic compartment syndrome
+T9	Disease 718 746	chronic compartment syndrome
+T10	Claim 748 861	For its diagnosis it is necessary to measure the pressure of the affected compartments at rest and after activity
+T11	Claim 863 879	answer 2 correct
+R1	Support Ent1:T10 Ent2:T11	
+R2	Support Ent1:T8 Ent2:T10	
+T12	Diagnostics 785 861	measure the pressure of the affected compartments at rest and after activity
+R3	Support Ent1:T11 Ent2:T5	
+T13	Diagnostics 431 471	Positron emission tomography with 18 FDG
+T14	Diagnostics 476 550	Determination of posterior compartment pressure immediately after activity
+T15	Diagnostics 555 573	Doppler ultrasound
+T16	Marker 577 585	rule out
+T17	Disease 588 631	circulatory disorder of the lower extremity
+T18	Diagnostics 636 670	Spectrometry by magnetic resonance

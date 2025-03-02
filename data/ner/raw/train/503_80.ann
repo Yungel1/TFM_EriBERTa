@@ -1,0 +1,32 @@
+T1	Premise 42 149	An 8-year-old boy consults for the appearance of pubic hair at the base of the penis for the last 12 months
+T2	Premise 151 231	The testicle has not increased in volume and the penis has not increased in size
+T3	Premise 233 285	There is no increase in growth rate in the last year
+T4	Premise 287 344	The bone age is one year older than the chronological age
+T5	Claim 384 410	Central precocious puberty
+T6	Claim 415 444	Peripheral precocious puberty
+T7	Claim 449 465	Early adrenarche
+T8	Claim 470 483	Adrenal tumor
+T9	Claim 510 588	In the male, the onset of puberty is considered normal from the age of 9 years
+T10	Claim 590 638	therefore in this case it is a premature puberty
+T11	Marker 590 599	therefore
+R1	Support Ent1:T9 Ent2:T10	
+T12	Claim 640 738	The onset of puberty is defined as an increase in testicular volume (greater than or equal to 4cc)
+T13	Premise 759 796	the testicular size has not increased
+T14	Claim 798 829	we can rule out options 1 and 2
+R4	Support Ent1:T13 Ent2:T14	
+R5	Attack Ent1:T14 Ent2:T5	
+R6	Attack Ent1:T14 Ent2:T6	
+R7	Support Ent1:T12 Ent2:T14	
+R8	Attack Ent1:T12 Ent2:T13	
+T15	Claim 831 1000	The excessive secretion of androgens produced by an adrenal tumor would cause a greater amount of hair and an increase in penile size, which our patient does not present
+T16	Claim 1002 1051	Therefore, the correct option is early adrenarche
+R2	Support Ent1:T15 Ent2:T16	
+T17	Marker 1002 1011	Therefore
+R9	Attack Ent1:T15 Ent2:T8	
+R10	Attack Ent1:T1 Ent2:T15	
+R11	Attack Ent1:T2 Ent2:T15	
+R3	Support Ent1:T16 Ent2:T7	
+T18	Disease 384 410	Central precocious puberty
+T19	Disease 415 444	Peripheral precocious puberty
+T20	Disease 449 465	Early adrenarche
+T21	Disease 470 483	Adrenal tumor

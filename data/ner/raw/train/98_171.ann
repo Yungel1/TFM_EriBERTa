@@ -1,0 +1,20 @@
+T1	Claim 425 446	Pityriasis versicolor
+T2	Claim 451 468	Mycosis fungoides
+T3	Claim 473 491	Psoriasis in drops
+T4	Claim 496 522	Pityriasis rosea of Gibert
+T5	Claim 527 540	Lichen planus
+T6	Claim 560 787	Lichen planus is a very common dermatosis of unknown etiology characterized by the appearance of pruritic polygonal papules, with a purplish color and shiny surface, preferentially located in the distal areas of the extremities
+R1	Support Ent1:T6 Ent2:T5	
+T7	Premise 76 316	The patient presents since 2 weeks ago a pruritic eruption consisting of multiple polygonal erythematous-violaceous papules, with flattened surface, preferentially located on the anterior aspect of the wrists, pretibial area and lumbar area
+R2	Support Ent1:T7 Ent2:T6	
+T8	Premise 318 383	She also presents whitish reticulated lesions in the jugal mucosa
+T9	Claim 789 943	Characteristically these papules show a symmetrical distribution and are preferentially located on the anterior aspect of the wrists (Figure 1) and ankles
+R3	Support Ent1:T9 Ent2:T6	
+T10	Claim 945 1120	Oral mucosal involvement is very frequent, and approximately 75% of patients with lichen planus show an asymptomatic whitish reticulation affecting the jugal or lingual mucosa
+R4	Support Ent1:T8 Ent2:T6	
+R5	Support Ent1:T10 Ent2:T6	
+T11	Disease 425 446	Pityriasis versicolor
+T12	Disease 451 468	Mycosis fungoides
+T13	Disease 473 491	Psoriasis in drops
+T14	Disease 496 522	Pityriasis rosea of Gibert
+T15	Disease 527 540	Lichen planus

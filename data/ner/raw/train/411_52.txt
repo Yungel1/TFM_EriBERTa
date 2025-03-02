@@ -1,0 +1,10 @@
+QUESTION TYPE: BIOSTATISTICS
+CLINICAL CASE: 
+A couple with a first male child (index case) with cystic fibrosis (mucoviscidosis) come for genetic counseling. Molecular diagnosis indicates that the index case is homozygous for the F5O8del mutation and his parents are heterozygous carriers. The clinical geneticist will inform them about the mode of transmission of the disease. Which statement is correct?
+1- The probability that the next offspring will be affected is 25%.
+2- The probability that the next offspring will be affected is 50%.
+3- Having had an affected child, the next offspring will also be affected.
+4- Having had a homozygous F5O8del child, the next offspring will be heterozygous carriers (67%) or homozygous genotype without the mutation (33%).
+5- nan
+CORRECT ANSWER: 1
+Both parents are carriers of a mutation (because they are not sick and have already had a homozygous child), and the next offspring has a 50% chance of receiving the mutation from each parent, so the probability of receiving it from both is 50%x50%=25%.

@@ -1,0 +1,10 @@
+QUESTION TYPE: TRAUMATOLOGY
+CLINICAL CASE: 
+95-year-old woman living in a nursing home, independent for her basic activities of daily living, goes out to the garden for walks. She has a history of hypertension, dyslipidemia, osteoporosis and mild cognitive impairment. She suffers a fall when getting up at night to go to the bathroom. X-ray shows a displaced subcapital fracture of the right hip. What is the recommended treatment?
+1- Hip hemiarthroplasty.
+2- Trochanteric nail fixation.
+3- Fixation with cannulated screws.
+4- Conservative: bed-chair life.
+5- nan
+CORRECT ANSWER: 1
+We are told of a case of a 95-year-old patient with a displaced intracapsular (subcapital) hip fracture. In this case, the surgical options may be the use of cannulated screws or hip arthroplasty. Cannulated screws are reserved for cases of non-displaced fractures (Wrong answer 2) so the most indicated option would be arthroplasty, in this case hemiarthroplasty (Correct answer 1). Trochanteric pins are reserved for extracapsular fractures (Wrong answer 2) and conservative treatment is only considered in patients with very low functional demand or surgical contraindication (Wrong answer 4).

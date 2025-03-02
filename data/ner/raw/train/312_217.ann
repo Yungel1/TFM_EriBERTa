@@ -1,0 +1,56 @@
+T1	Premise 45 163	An 84-year-old woman presents with loss of vision in the left eye of 4 days of evolution accompanied by metamorphopsia
+T2	Premise 165 280	The macula shows abundant hard exudates, two small deep hemorrhages and a localized neurosensory retinal detachment
+T3	Premise 282 337	In the contralateral eye there are abundant soft drusen
+T4	Claim 428 463	Acute posterior vitreous detachment
+T5	Claim 468 516	Exudative age-related macular degeneration (AMD)
+T6	Claim 521 555	Central retinal artery obstruction
+T7	Claim 560 608	Non-arteritic anterior ischemic optic neuropathy
+T8	Claim 748 786	The description is typical of option 2
+R1	Support Ent1:T8 Ent2:T5	
+T9	Premise 941 1027	In any case, we have an elderly patient with vision loss and metamorphopsia in one eye
+T10	Claim 788 810	It is an exudative AMD
+T11	Claim 812 938	although as we said in question 215, with the new classification, we would speak of an advanced AMD in its neovascular variant
+T12	Premise 1029 1079	In the examination there are lesions in the macula
+T13	Claim 1081 1225	With that we can rule out acute posterior vitreous detachment, which does not produce visual loss, nor metamorphopsia, nor lesions in the macula
+T14	Marker 812 820	although
+R2	Attack Ent1:T11 Ent2:T10	
+R3	Support Ent1:T10 Ent2:T5	
+T15	Marker 1098 1106	rule out
+T16	Disease 1107 1142	acute posterior vitreous detachment
+R4	Attack Ent1:T9 Ent2:T13	
+R5	Attack Ent1:T12 Ent2:T13	
+R6	Attack Ent1:T13 Ent2:T4	
+T17	Claim 1227 1284	And also non-arteritic anterior ischemic optic neuropathy
+T18	Marker 1286 1293	because
+T19	Claim 1294 1393	although it produces visual loss and is typical of older people, it does not produce metamorphopsia
+R7	Support Ent1:T19 Ent2:T17	
+R8	Attack Ent1:T17 Ent2:T7	
+T20	Claim 1395 1451	And there are no lesions in the macula but papilla edema
+R9	Support Ent1:T20 Ent2:T17	
+T21	Claim 1453 1623	In central retinal artery obstruction, metamorphopsia is not particularly characteristic (visual loss and advanced age are), but the lesions in the fundus of the eye vary
+R10	Attack Ent1:T9 Ent2:T21	
+T22	Claim 1625 1754	In the case of arterial occlusion, there is intracellular edema that is seen as absence of hemorrhages and a whitish, pale fundus
+R11	Attack Ent1:T21 Ent2:T6	
+T23	Claim 1756 1855	In addition, the entire retina is globally affected, and a cherry-red spot may appear in the macula
+T24	Claim 1857 1903	In this case the lesions are totally different
+T25	Premise 1905 1996	They describe hard exudates, deep hemorrhages and localized neurosensory retinal detachment
+T26	Premise 1998 2020	All this in the macula
+T27	Claim 2022 2093	These are the characteristic findings of neovascular (or exudative) AMD
+R12	Attack Ent1:T24 Ent2:T6	
+R13	Attack Ent1:T23 Ent2:T6	
+R14	Attack Ent1:T22 Ent2:T6	
+R15	Support Ent1:T25 Ent2:T27	
+R16	Support Ent1:T26 Ent2:T27	
+T28	Premise 2095 2153	As a clue, in the other eye there are abundant soft drusen
+R17	Support Ent1:T28 Ent2:T27	
+T29	Claim 2155 2193	Drusen are the typical findings of AMD
+R18	Support Ent1:T28 Ent2:T29	
+R19	Support Ent1:T27 Ent2:T4	
+R20	Support Ent1:T29 Ent2:T4	
+T30	Claim 2195 2317	So he has AMD in both eyes and in the right eye it has recently become complicated by the appearance of neovascularization
+T31	Marker 2195 2197	So
+R21	Support Ent1:T30 Ent2:T4	
+T32	Disease 428 463	Acute posterior vitreous detachment
+T33	Disease 468 516	Exudative age-related macular degeneration (AMD)
+T34	Disease 521 555	Central retinal artery obstruction
+T35	Disease 560 608	Non-arteritic anterior ischemic optic neuropathy

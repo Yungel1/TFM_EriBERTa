@@ -1,0 +1,10 @@
+QUESTION TYPE: BIOSTATISTICS
+CLINICAL CASE: 
+In a subject over 65 years of age a tuberculin test has shown an induration of 3 mm. The induration on a second test, performed 10 days later, is 13 mm. Point out the correct answer:
+1- The first reaction is a false positive.
+2- The second reaction is a true positive.
+3- The first reaction is a true negative.
+4- The second reaction is a false positive.
+5- nan
+CORRECT ANSWER: 3
+Let's see, if that subject was not in any risk group, the positive is in the 15mm, therefore both tests are negative, and as only one answer refers to negative, that's it. But both could be false negatives.

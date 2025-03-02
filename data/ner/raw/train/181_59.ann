@@ -1,0 +1,18 @@
+T1	Premise 45 126	A type 1 diabetic who comes to the emergency room for dyspnea and general malaise
+T2	Premise 128 230	The blood test showed blood glucose 450 mg/dl, Na 142 mEq/l, K 4 mEq/l, pH 7.15, bicarbonate 12 mmol/l
+T3	Diagnostics 128 142	The blood test
+T4	Claim 275 289	Fast IV saline
+T5	Claim 294 355	Serum glucose 5% iv when blood glucose is less than 250 mg/dl
+T6	Claim 360 382	Rapid human insulin iv
+T7	Claim 387 435	Potassium chloride 100 mEq / day diluted in sera
+T8	Claim 440 485	Sodium bicarbonate 1M 100 cc iv in 30 minutes
+T9	Treatment 275 289	Fast IV saline
+T10	Treatment 294 313	Serum glucose 5% iv
+T11	Treatment 360 382	Rapid human insulin iv
+T12	Treatment 387 435	Potassium chloride 100 mEq / day diluted in sera
+T13	Treatment 440 485	Sodium bicarbonate 1M 100 cc iv in 30 minutes
+T14	Claim 601 635	Bicarbonate is indicated at pH < 7
+T15	Treatment 601 612	Bicarbonate
+T16	Disease 542 563	diabetic ketoacidosis
+R1	Attack Ent1:T14 Ent2:T8	
+R2	Attack Ent1:T2 Ent2:T8	

@@ -1,0 +1,10 @@
+QUESTION TYPE: RHEUMATOLOGY
+CLINICAL CASE: 
+A 62-year-old man with a history of arterial hypertension under treatment with captopril, duodenal ulcer and uric acid urolithiasis. He consults for typical podagra crisis similar to others presented in the last two years. Examination showed tophi in both pinnae. Analyses show uric acid 10.1 mg/dl, creatine 1.5 mg/dl. Indicate which of the following answers is FALSE in relation to his possible treatment with allopurinol.
+1- Its use is second choice when uricosurics have failed.
+2- Its prolonged use is practically obligatory because there are tophi.
+3- Its introduction should be delayed until the current attack has resolved with anti-inflammatory drugs or colchicine.
+4- Its introduction should be gradual up to a dose that achieves a uricemia below 6 mg/dL.
+5- In the first months of treatment it is advisable to associate low doses of colchicine to prevent new attacks.
+CORRECT ANSWER: 1
+Allopurinol is always the treatment of choice, especially in the case of tophaceous gout. Moreover, in this case, uricosuric acid could worsen urolithiasis by increasing uricosuria (sorry for the redundancy...).

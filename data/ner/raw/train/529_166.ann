@@ -1,0 +1,28 @@
+T1	Premise 42 84	An 18-year-old patient consulted for edema
+T2	Premise 86 229	A complete blood test showed proteinuria of 8 g/day without microhematuria, hypoalbuminemia and hypercholesterolemia with normal renal function
+T3	Premise 231 278	He was empirically administered corticosteroids
+T4	Premise 280 344	After one month, the clinical picture has completely disappeared
+T5	Claim 385 396	Amyloidosis
+T6	Claim 401 436	IgA nephropathy or Berger's disease
+T7	Claim 441 456	Alport syndrome
+T8	Claim 461 493	Nephropathy with minimal changes
+T9	Claim 520 626	We describe a young patient with criteria of nephrotic syndrome with excellent response to corticosteroids
+R1	Support Ent1:T4 Ent2:T9	
+R2	Support Ent1:T2 Ent2:T9	
+R3	Support Ent1:T3 Ent2:T9	
+T10	Claim 628 892	Without biopsy, the clinical presentation and evolution suggest a nephropathy with minimal changes, which usually presents with normal or slightly altered renal function together with nephrotic syndrome, and which in 85-90% of cases resolves with steroid treatment
+R4	Support Ent1:T10 Ent2:T8	
+T11	Disease 694 726	nephropathy with minimal changes
+T12	Claim 894 938	The age is the only data that is a bit shaky
+T13	Claim 940 1140	since although it is the most frequent cause of idiopathic nephrotic syndrome in children and adolescents, it is usually recommended to perform a biopsy prior to treatment in those older than 16 years
+T14	Marker 940 945	since
+T15	Marker 946 954	although
+R5	Support Ent1:T13 Ent2:T12	
+T16	Claim 1142 1187	in any case it does not admit much discussion
+R6	Attack Ent1:T16 Ent2:T13	
+R7	Attack Ent1:T12 Ent2:T10	
+T17	Disease 385 396	Amyloidosis
+T18	Disease 401 416	IgA nephropathy
+T19	Disease 420 436	Berger's disease
+T20	Disease 441 456	Alport syndrome
+T21	Disease 461 493	Nephropathy with minimal changes

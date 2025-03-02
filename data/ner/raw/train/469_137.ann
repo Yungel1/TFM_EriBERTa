@@ -1,0 +1,39 @@
+T1	Premise 67 174	93-year-old woman with a history of COPD, AHT, dyslipidemia, atrial fibrillation and ischemic heart disease
+T2	Premise 176 191	She lives alone
+T3	Premise 193 276	She has ventricular ejection fraction 53%, creatinine 1.5 mg/dL, normal coagulation
+T4	Premise 278 352	She receives treatment with inhaled bronchodilators and ASA 100 mg per day
+T5	Premise 354 546	She suffers a fall in the street, after which it is impossible for her to stand or sit up, with intense pain in the right hip on mobilization, great shortening and external rotation of the leg
+T6	Claim 587 707	Admission for transthoracic ultrasound, assessment by Cardiology and then closed reduction and fixation with plate screw
+T7	Claim 712 854	Admission for evaluation by Nephrology and Cardiology, and then Traumatology will decide whether to use an arthroplasty or a trochanteric nail
+T8	Claim 859 981	Admission to Internal Medicine / Geriatrics, progressive stabilization of comorbidities, conservative orthopedic treatment
+T9	Claim 986 1095	Closed reduction and fixation of the fracture within 48 hours, very early sedation, orthogeriatric management
+T10	Claim 1122 1410	A new approach is currently being developed for the treatment of these patients, which tries to coordinate from the beginning the activity of the different sectors involved, avoiding that the transfer of the patient from one to another takes place at the end of the treatment of each part
+T11	Claim 1412 1621	This idea gave rise to the so-called orthogeriatric units", which combine the surgeon's surgical activity with that of the patient's immediate rehabilitation and the controls and follow-up of internal medicine
+T12	Premise 2286 2370	There is no data to suggest that he has any unstable comorbidity at the present time
+T13	Claim 2375 2449	surgery in less than 48 hours and orthogeriatric management is of interest
+T14	Marker 2372 2374	so
+R1	Support Ent1:T12 Ent2:T13	
+R2	Support Ent1:T13 Ent2:T9	
+T15	Claim 1804 1914	In most cases, surgery should be performed as soon as possible, as soon as the patient is medically stabilized
+T16	Claim 1916 2102	There is a contraindication to surgery in patients with unstable medical comorbidity, but several studies have shown that delaying surgery beyond 48 h after admission increases mortality
+T17	Marker 2002 2005	but
+R3	Support Ent1:T15 Ent2:T9	
+R4	Support Ent1:T16 Ent2:T9	
+T18	Claim 2104 2283	This is why the ideal time to intervene in these patients is after achieving stabilization of their medical pathologies, taking care that this takes place before 48 h have elapsed
+R5	Support Ent1:T18 Ent2:T9	
+T19	Claim 1623 1798	From the very beginning of the process, the social workers and the various vital and support aids are put in place to ensure that recovery is as rapid and complete as possible
+T20	Diagnostics 601 625	transthoracic ultrasound
+T21	Diagnostics 627 651	assessment by Cardiology
+T22	Treatment 661 677	closed reduction
+T23	Treatment 682 707	fixation with plate screw
+T24	Diagnostics 726 788	evaluation by Nephrology and Cardiology, and then Traumatology
+T25	Treatment 819 831	arthroplasty
+T26	Marker 832 834	or
+T27	Treatment 837 854	trochanteric nail
+T28	Treatment 904 946	progressive stabilization of comorbidities
+T29	Treatment 948 981	conservative orthopedic treatment
+T30	Treatment 1070 1095	orthogeriatric management
+R6	Attack Ent1:T12 Ent2:T8	
+T31	Treatment 986 1002	Closed reduction
+T32	Treatment 1007 1047	fixation of the fracture within 48 hours
+T33	Treatment 1049 1068	very early sedation

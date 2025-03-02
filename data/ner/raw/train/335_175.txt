@@ -1,0 +1,10 @@
+QUESTION TYPE: PHARMACOLOGY
+CLINICAL CASE: 
+An 88-year-old man comes for consultation because he has fallen 3 times in the last 6 months. None of the falls was accompanied by dizziness or syncope. One fall occurred while he was walking in the garden. His medical history includes hypertension without postural changes in blood pressure, gout, osteoarthritis, and depression. She takes 5 medications regularly. Which of the following is most likely to contribute to falls in this patient?
+1- Allopurinol.
+2- Hydrochlorothiazide.
+3- Lisinopril.
+4- Paroxetine.
+5- nan
+CORRECT ANSWER: 4
+Paroxetine; complicated question since both hydrochlorothiazide and lisinopril can also produce falls in the elderly, but they would generally be accompanied by dizziness.

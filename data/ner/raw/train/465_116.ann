@@ -1,0 +1,15 @@
+T1	Premise 45 128	In a subject over 65 years of age a tuberculin test has shown an induration of 3 mm
+T2	Premise 130 196	The induration on a second test, performed 10 days later, is 13 mm
+T3	Claim 231 269	The first reaction is a false positive
+T4	Claim 274 312	The second reaction is a true positive
+T5	Claim 317 354	The first reaction is a true negative
+T6	Claim 359 398	The second reaction is a false positive
+T7	Premise 439 506	that subject was not in any risk group, the positive is in the 15mm
+T8	Claim 508 596	therefore both tests are negative, and as only one answer refers to negative, that's it.
+T9	Marker 508 517	therefore
+T10	Marker 547 549	as
+R1	Support Ent1:T8 Ent2:T5	
+T11	Claim 597 630	But both could be false negatives
+T12	Marker 597 600	But
+R2	Support Ent1:T11 Ent2:T8	
+R3	Support Ent1:T7 Ent2:T8	

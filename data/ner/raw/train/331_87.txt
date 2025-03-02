@@ -1,0 +1,10 @@
+QUESTION TYPE: ENDOCRINOLOGY
+CLINICAL CASE: 
+In a hospitalized patient who is unable to feed orally for more than 6 days, in which of the following clinical situations are we necessarily to use parenteral nutrition?
+1- Cardioembolic stroke with complete neurologic dysphagia.
+2- Cachexia due to chronic empyema in immunocompromised patient.
+3- Prolonged paralytic syndrome.
+4- Advanced Alzheimer's disease with severe risk of bronchial aspiration.
+5- nan
+CORRECT ANSWER: 3
+Paralytic ileus is a failure of intestinal propulsion that appears acutely in the absence of mechanical obstruction; it is secondary to various causes and affects intestinal contractility. Therefore, parenteral administration is necessary.

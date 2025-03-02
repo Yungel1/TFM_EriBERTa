@@ -1,0 +1,52 @@
+T1	Premise 42 212	An 82-year-old patient presents with sudden and frequent dizziness, without prodromes, of short duration and which subsides spontaneously, without ever presenting syncope
+T2	Premise 214 276	Physical examination and baseline electrocardiogram are normal
+T3	Premise 278 468	In an ambulatory electrocardiogram recording during 24 hours, short phases of absence of P waves prior to QRS with an escape rhythm of the atrioventricular junction with narrow QRS at 40 bpm
+T4	Premise 473 580	a wave at the beginning of the ST segment corresponding to a retrograde P were detected in the vigil period
+T5	Premise 582 636	No asystole periods longer than 3 seconds are detected
+T6	Claim 667 737	The patient has a third-degree AVB and requires pacemaker implantation
+T7	Claim 742 825	The absence of periods of asystole >3 seconds excludes a cardiac cause of dizziness
+T8	Claim 830 901	Drug treatment to increase conduction in the AV node would be indicated
+T9	Claim 906 1018	The patient presents sinus dysfunction with sinoatrial block and requires pacemaker implantation due to symptoms
+T10	Claim 1023 1175	The alterations detected in the ambulatory electrocardiogram are typical of patients of this age and there is no indication for therapeutic intervention
+T11	Claim 1643 1664	Option 1 is ruled out
+T12	Claim 1666 1690	it is not a complete AVB
+R1	Support Ent1:T12 Ent2:T11	
+R2	Attack Ent1:T11 Ent2:T6	
+T13	Marker 1655 1664	ruled out
+T14	Claim 1692 1766	Option 2 cannot be answered either: to exclude, what is said to exclude...
+R3	Attack Ent1:T14 Ent2:T7	
+T15	Claim 1767 1790	It is like never/always
+R4	Support Ent1:T15 Ent2:T14	
+T16	Claim 1792 1825	Option 3 does not make much sense
+T17	Claim 1312 1359	In 10% of people there is retrograde conduction
+T18	Marker 1361 1363	so
+T19	Premise 1234 1310	If the sinus node fails, the AV node takes over and stimulates the ventricle
+T20	Premise 1508 1601	Likewise, there are also no pauses longer than 3 seconds that could cause cardiogenic syncope
+T21	Premise 1603 1640	which, in fact, he has never suffered
+R5	Support Ent1:T21 Ent2:T20	
+T22	Marker 1508 1516	Likewise
+T23	Premise 1364 1479	that beat generated in the AVN stimulates both ventricles and atria, giving a retrograde P as reported in the study
+T24	Claim 1827 1909	we could suspend those that impair conduction (beta-blockers, calcium antagonists)
+T25	Claim 1911 2007	but drugs that facilitate, as long as we do not give him a perfusion of atropine to take home...
+T26	Marker 1911 1914	but
+R6	Attack Ent1:T24 Ent2:T16	
+R7	Support Ent1:T25 Ent2:T16	
+T27	Claim 2008 2132	In option 4, stating that he has sinoatrial block is a bit of a rap: without an electrophysiological study it cannot be said
+T28	Premise 2034 2057	he has sinoatrial block
+R8	Support Ent1:T28 Ent2:T27	
+T29	Premise 2134 2171	he does not necessarily have SA block
+T30	Claim 2177 2239	this alone would not indicate the implantation of a pacemaker.
+R9	Support Ent1:T29 Ent2:T30	
+R10	Attack Ent1:T27 Ent2:T9	
+R11	Attack Ent1:T16 Ent2:T8	
+R12	Attack Ent1:T30 Ent2:T9	
+T31	Claim 2240 2275	So, finally, I would check option 5
+R13	Support Ent1:T31 Ent2:T10	
+T32	Marker 2240 2242	So
+T33	Marker 2244 2251	finally
+R14	Support Ent1:T19 Ent2:T12	
+T34	Disease 685 701	third-degree AVB
+T35	Treatment 715 737	pacemaker implantation
+T36	Disease 927 966	sinus dysfunction with sinoatrial block
+T37	Treatment 980 1002	pacemaker implantation
+T38	Marker 1003 1009	due to

@@ -1,0 +1,23 @@
+T1	Premise 41 222	A 39-year-old man who in the last 3 months has had two episodes of wide and involuntary jumping movements of the left limbs, which in about two minutes lead to loss of consciousness
+T2	Premise 224 327	In the neuroradiological study a right frontal expansive lesion suggestive of cerebral glioma was found
+T3	Claim 379 402	Generalized symptomatic
+T4	Claim 407 428	Partially symptomatic
+T5	Claim 433 452	Partial cryptogenic
+T6	Claim 457 500	Partial secondarily generalized symptomatic
+T7	Premise 527 609	They refer to a partial seizure that is followed by loss of level of consciousness
+T8	Marker 611 613	so
+T9	Claim 614 809	strictly speaking it would be a symptomatic complex partial seizure, not a secondarily generalized partial seizure (which occurs when tonic-clonic movements extend to the rest of the extremities)
+T10	Marker 683 686	not
+T11	Disease 646 681	symptomatic complex partial seizure
+R1	Support Ent1:T7 Ent2:T9	
+R2	Support Ent1:T9 Ent2:T4	
+R3	Attack Ent1:T9 Ent2:T6	
+T12	Disease 689 728	secondarily generalized partial seizure
+T13	Claim 811 863	For this reason the most correct option would be two
+R4	Support Ent1:T9 Ent2:T13	
+T14	Marker 864 871	because
+T15	Claim 872 1031	it does not specify that it is a simple symptomatic partial seizure, but leaves open the possibility that it is a simple or complex symptomatic partial seizure
+T16	Marker 941 944	but
+R5	Support Ent1:T15 Ent2:T13	
+R6	Support Ent1:T13 Ent2:T4	
+T17	Disease 986 1031	simple or complex symptomatic partial seizure

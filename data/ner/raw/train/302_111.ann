@@ -1,0 +1,27 @@
+T1	Premise 45 272	a patient with rheumatoid arthritis treated with methotrexate, prednisone and indomethacin who acutely presents edema and increased plasma creatinine with a poorly expressive urine sediment and proteinuria less than 100 mg/24 h
+T2	Claim 302 319	Renal amyloidosis
+T3	Claim 324 376	Glomerulonephritis secondary to rheumatoid arthritis
+T4	Claim 381 439	Renal failure due to non-steroidal anti-inflammatory drugs
+T5	Claim 444 486	Interstitial nephritis due to methotrexate
+T6	Claim 513 600	Prerenal acute renal failure due to NSAIDs seems the most plausible option in this case
+R1	Support Ent1:T6 Ent2:T4	
+T7	Claim 602 715	Tubulointerstitial nephritis due to methotrexate is less likely due to the absence of rash, fever or eosinophilia
+R2	Attack Ent1:T7 Ent2:T5	
+T8	Marker 631 637	due to
+T9	Disease 602 630	Tubulointerstitial nephritis
+T10	Marker 666 672	due to
+T11	Claim 764 828	Although GMN and renal amyloidosis are relatively frequent in RA
+T12	Claim 830 915	the anodyne urine sediment and the absence of proteinuria make these options unlikely
+R3	Attack Ent1:T12 Ent2:T11	
+R4	Attack Ent1:T12 Ent2:T2	
+R5	Attack Ent1:T12 Ent2:T3	
+T13	Disease 773 776	GMN
+T14	Disease 781 798	renal amyloidosis
+T15	Disease 302 319	Renal amyloidosis
+T16	Disease 324 342	Glomerulonephritis
+T17	Disease 356 376	rheumatoid arthritis
+T18	Marker 343 355	secondary to
+T19	Disease 381 394	Renal failure
+T20	Marker 395 401	due to
+T21	Disease 444 466	Interstitial nephritis
+T22	Marker 467 473	due to

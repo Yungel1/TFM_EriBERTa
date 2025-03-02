@@ -1,0 +1,10 @@
+QUESTION TYPE: OTORHINOLARYNGOLOGY AND MAXILLOFACIAL SURGERY
+CLINICAL CASE: 
+Given a patient with poor general condition, fever (axillary temperature 39.5º), bilateral submandibular swelling of six days' evolution, mouth pain and trismus, which of the following statements is correct?
+1- The first diagnostic probability is carcinoma of the floor of the mouth with bilateral cervical metastases.
+2- The therapeutic priority is to ensure the patient's nutrition.
+3- We are almost certainly facing a mediastinitis.
+4- We must consider as a priority the risk of airway obstruction.
+5- We must perform as a first diagnostic measure a cytology by fine needle aspiration puncture.
+CORRECT ANSWER: 4
+This patient is in serious condition. The trismus and fever suggest a deep cervical space infection and that is not a game because the airway can become obstructed. Knowing this, options 1, 2 and 5 are out of place and I am left with 3 and 4. There may already be mediastinitis; after all, that is the natural history of cervical deep space infections, but answer 4 is more correct and besides, we are in the ENT block, the airway specialty. I like this question because it requires knowledge that is important in clinical practice.

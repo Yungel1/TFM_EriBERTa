@@ -1,0 +1,43 @@
+T1	Premise 59 106	A 56-year-old patient is found comatose at home
+T2	Premise 108 171	He has a history of arterial hypertension and diabetes mellitus
+T3	Premise 173 224	He has no toxic habits or any other chronic disease
+T4	Premise 226 277	He is on treatment with irbesartan and empaglifozin
+T5	Premise 279 312	He shows no signs of malnutrition
+T6	Premise 314 434	His blood pressure is 110/60 mmHg, heart rate 110 bpm, 90% SatO2, capillary glucose 120 mg/dl and respiratory rate 7 rpm
+T7	Claim 508 552	Administer naloxone, flumazenil and thiamine
+T8	Claim 557 611	Administer naloxone, flumazenil and hypertonic glucose
+T9	Claim 616 650	Administer naloxone and flumazenil
+T10	Claim 655 697	Administer thiamine and hypertonic glucose
+T11	Claim 724 762	We find a patient with hypoventilation
+R1	Support Ent1:T6 Ent2:T11	
+R2	Support Ent1:T1 Ent2:T11	
+T12	Claim 764 783	Glycemia is correct
+T13	Claim 785 847	we rule out hyperosmolar coma and hypoglycemia, option 2 and 4
+T14	Disease 797 814	hyperosmolar coma
+T15	Disease 819 831	hypoglycemia
+T16	Marker 788 796	rule out
+R3	Attack Ent1:T13 Ent2:T8	
+R4	Attack Ent1:T13 Ent2:T10	
+T17	Claim 850 1029	so, although there is no history of intoxication, we have to go to the most frequent and that we can antagonize with antidotes: benzodiazepines (flumazenil) and opiates (naloxone)
+T18	Marker 850 852	so
+T19	Marker 854 862	although
+R5	Support Ent1:T17 Ent2:T9	
+T20	Treatment 978 1006	benzodiazepines (flumazenil)
+T21	Treatment 1011 1029	opiates (naloxone)
+T22	Treatment 568 576	naloxone
+T23	Treatment 578 588	flumazenil
+T24	Treatment 593 611	hypertonic glucose
+T25	Treatment 627 635	naloxone
+T26	Treatment 640 650	flumazenil
+T27	Claim 1031 1103	If we suspect ethylene glycol intoxication, we would administer thiamine
+T28	Premise 1105 1145	but there are no data to make us suspect
+T29	Marker 1105 1108	but
+R6	Attack Ent1:T28 Ent2:T27	
+R7	Attack Ent1:T27 Ent2:T7	
+T30	Treatment 519 527	naloxone
+T31	Treatment 1095 1103	thiamine
+T32	Disease 1045 1073	ethylene glycol intoxication
+T33	Treatment 529 539	flumazenil
+T34	Treatment 544 552	thiamine
+T35	Treatment 666 674	thiamine
+T36	Treatment 679 697	hypertonic glucose

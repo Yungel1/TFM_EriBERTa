@@ -1,0 +1,10 @@
+QUESTION TYPE: PEDIATRICS
+CLINICAL CASE: 
+A 5-month-old infant exclusively breastfed until the present, who due to maternal work was introduced a bottle with formula and a few days ago was added cereals with and without gluten. Family history: 28-year-old mother with asthma, 32-year-old healthy father and 5-year-old brother with celiac disease and atopic dermatitis. As personal history, pregnancy without incidents and delivery by cesarean section, having been offered a bottle with starter formula on the first day of life in the maternity ward. Since a few days ago she starts with abdominal distension, diarrhea stools, refusal to feed, peribuccal erythema with longer duration after bottle feeding and lately vomiting after feeding, tolerating well the breast. What is the most probable diagnosis?
+1- Celiac disease.
+2- Acute gastroenteritis.
+3- Cow's milk protein allergy.
+4- Bottle allergy.
+5- nan
+CORRECT ANSWER: 3
+Child with multiple family history of allergy (asthma, atopy), who has received artificial milk in the first hours of life (sensitization to cow's milk protein) and who, coinciding with the intake of artificial milk, starts digestive symptoms and exanthema = APLV.

@@ -1,0 +1,10 @@
+QUESTION TYPE: CARDIOLOGY AND CARDIOVASCULAR SURGERY
+CLINICAL CASE: 
+What examination would you advise in the first place for an 82-year-old patient with exertional angina and a systolic ejection murmur of intensity 3/6 on auscultation?
+1- A stress test.
+2- Coronary angiography.
+3- Exercise echocardiogram.
+4- Coronary CT scan.
+5- Doppler echocardiogram.
+CORRECT ANSWER: 5
+Ejective murmur, our first suspicion is aortic stenosis. Angina may be due to the stenosis itself or to underlying coronary artery disease (probable, given the age). And with this information, we cannot know if the stenosis is severe. Therefore, the first thing we will have to do will be to study the valve disease: we do not want to put the patient to run or overload him with dobuta and have a syncope, nor do we want to do a catheterization without having first performed another noninvasive test. And cardioTC, in someone 80 years old, is going to tell us what we already know: that he has calcium up to his eyebrows.

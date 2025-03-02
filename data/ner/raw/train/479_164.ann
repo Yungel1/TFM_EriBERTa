@@ -1,0 +1,20 @@
+T1	Premise 45 152	A 72-year-old man presenting since 48 hours with fever of 38.7°C, cough, purulent expectoration and dyspnea
+T2	Premise 154 234	Constants: BP 85/60 mmHg, heart rate 100 bpm, respiratory rate 35 rpm, SatO2 80%
+T3	Premise 236 315	Of note was the presence of confusion and crackles in the left lower lung field
+T4	Premise 317 399	Chest X-ray confirms the existence of pneumonia of the lingula and left lower lobe
+T5	Claim 449 477	Outpatient treatment at home
+T6	Claim 482 524	Admission to an emergency observation unit
+T7	Claim 529 559	Hospital admission to the ward
+T8	Claim 564 600	Admission to the Intensive Care Unit
+T9	Claim 963 1073	Since there are no criteria that contraindicate admission to the ICU, admission to the unit would be indicated
+T10	Marker 963 968	Since
+R1	Support Ent1:T9 Ent2:T8	
+T11	Claim 627 961	Applying the CURB-65 severity scale (one of the most commonly used in the ED for stratifying the severity of pneumonia, although in this case simply applying common sense, the patient should be admitted to the ICU), we would have a score of at least 4 points (we would be missing the serum urea data), which gives us severity criteria
+T12	Marker 747 755	although
+T13	Claim 747 840	although in this case simply applying common sense, the patient should be admitted to the ICU
+R2	Support Ent1:T11 Ent2:T8	
+R3	Support Ent1:T13 Ent2:T8	
+T14	Treatment 449 477	Outpatient treatment at home
+T15	Treatment 482 524	Admission to an emergency observation unit
+T16	Treatment 529 559	Hospital admission to the ward
+T17	Treatment 564 600	Admission to the Intensive Care Unit

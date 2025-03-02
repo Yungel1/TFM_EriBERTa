@@ -1,0 +1,73 @@
+T1	Premise 42 158	A 23-year-old woman comes to the emergency department because she is very nervous after an argument with her partner
+T2	Premise 160 277	Her medical history shows several similar complaints in the previous year, two of them after a self-injurious gesture
+T3	Premise 279 375	Frequent conflicts in the couple's relationship, job changes and family arguments are also noted
+T4	Premise 377 464	She says she feels misunderstood by everyone, including the psychiatrists attending her
+T5	Claim 487 518	Borderline personality disorder
+T6	Claim 523 554	Histrionic personality disorder
+T7	Claim 559 568	Dysthymia
+T8	Claim 573 594	Dissociative disorder
+T9	Claim 599 625	Depersonalization disorder
+T10	Disease 487 518	Borderline personality disorder
+T11	Disease 523 555	Histrionic personality disorder.
+T12	Disease 559 568	Dysthymia
+T13	Disease 573 594	Dissociative disorder
+T14	Disease 599 625	Depersonalization disorder
+T15	Premise 645 688	The woman is 23 years old and is pissed off
+R1	Support Ent1:T1 Ent2:T15	
+T16	Claim 690 816	She needs support and a lot of emotional education to curb her impulsivity... she feels misunderstood... maybe she is right...
+T17	Claim 817 893	The issue is that she cannot stand rejection and has self-injurious gestures
+T18	Claim 895 913	The diagnosis is 1
+R2	Support Ent1:T18 Ent2:T5	
+R3	Support Ent1:T17 Ent2:T18	
+T19	Claim 915 1000	3, 4 and 5 are not even close, there is no clinical picture described in the question
+R4	Attack Ent1:T19 Ent2:T7	
+R5	Attack Ent1:T19 Ent2:T8	
+R6	Attack Ent1:T19 Ent2:T9	
+T20	Claim 1002 1173	Then in real life exploring well almost certainly there would be dissociative and depersonalization symptoms, as well as depressive symptoms... but symptom is not disorder
+T21	Marker 1146 1149	but
+R7	Attack Ent1:T20 Ent2:T8	
+R8	Attack Ent1:T20 Ent2:T9	
+R9	Attack Ent1:T20 Ent2:T7	
+T22	Claim 1432 1685	The limit: A general pattern of instability in interpersonal relationships, self-image and self-efficacy, and notable impulsivity, beginning in early adulthood and occurring in a variety of contexts, as indicated by five (or more) of the following items
+R10	Support Ent1:T1 Ent2:T22	
+R11	Support Ent1:T2 Ent2:T22	
+R12	Support Ent1:T4 Ent2:T22	
+T23	Premise 1690 1743	Frantic efforts to avoid real or imagined abandonment
+T24	Claim 1751 1826	Do not include suicidal or self-mutilating behaviors covered in Criterion 5
+T25	Premise 1831 1970	A pattern of unstable and intense interpersonal relationships characterized by alternating between extremes of idealization and devaluation
+T26	Premise 1975 2057	Identity disturbance: marked and persistently unstable self-image or sense of self
+T27	Premise 2059 2198	Impulsivity in at least two areas, which is potentially self-harming (e.g., spending, sex, substance abuse, reckless driving, binge eating)
+T28	Claim 2206 2280	Do not include suicidal or self-mutilating behaviors listed in Criterion 5
+T29	Premise 2285 2363	Recurrent suicidal behaviors, attempts or threats, or self-mutilating behavior
+T30	Premise 2365 2531	Affective instability due to marked mood reactivity (e.g., episodes of intense dysphoria, irritability, or anxiety, usually lasting a few hours and rarely a few days)
+T31	Marker 2387 2393	due to
+T32	Premise 2536 2565	Chronic feelings of emptiness
+T33	Premise 2570 2718	Inappropriate and intense anger or difficulties in controlling anger (e.g., frequent displays of temper, constant anger, recurrent physical fights).
+T34	Premise 2722 2797	Transient stress-related paranoid ideation or severe dissociative symptoms.
+R13	Support Ent1:T22 Ent2:T5	
+R14	Support Ent1:T23 Ent2:T22	
+R15	Support Ent1:T25 Ent2:T22	
+R16	Support Ent1:T26 Ent2:T22	
+R17	Support Ent1:T27 Ent2:T22	
+R18	Support Ent1:T29 Ent2:T22	
+R19	Support Ent1:T30 Ent2:T22	
+R20	Support Ent1:T32 Ent2:T22	
+R21	Support Ent1:T33 Ent2:T22	
+R22	Support Ent1:T34 Ent2:T22	
+T35	Claim 2800 3005	The histrionic: A general pattern of excessive emotionality and attention-seeking, beginning in early adulthood and occurring in a variety of contexts, as indicated by five (or more) of the following items
+T36	Premise 3010 3083	Not comfortable in situations where he/she is not the center of attention
+T37	Premise 3085 3177	Interaction with others is often characterized by sexually seductive or provocative behavior
+T38	Premise 3185 3249	Displays a superficial and rapidly changing emotional expression
+T39	Premise 3254 3322	Constantly uses physical appearance to draw attention to him/herself
+T40	Premise 3327 3401	Has a way of speaking that is excessively subjective and lacking in nuance
+T41	Premise 3406 3482	Shows self-dramatization, theatricality and exaggerated emotional expression
+T42	Premise 3487 3556	Is suggestible, e.g., easily influenced by others or by circumstances
+T43	Premise 3561 3623	considers his relationships more intimate than they really are
+R23	Support Ent1:T36 Ent2:T35	
+R24	Support Ent1:T37 Ent2:T35	
+R25	Attack Ent1:T38 Ent2:T35	
+R26	Support Ent1:T39 Ent2:T35	
+R27	Support Ent1:T40 Ent2:T35	
+R28	Support Ent1:T41 Ent2:T35	
+R29	Support Ent1:T42 Ent2:T35	
+R30	Support Ent1:T43 Ent2:T35	

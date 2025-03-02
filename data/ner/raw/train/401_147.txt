@@ -1,0 +1,10 @@
+QUESTION TYPE: TRAUMATOLOGY AND ORTHOPEDICS
+CLINICAL CASE: 
+A 13-year-old boy presents dorsal pain of several months of evolution, only when standing and walking, what diagnosis should we consider?
+1- Scheuermann's disease.
+2- Thoracic scoliosis.
+3- Malignant tumor of the vertebral body.
+4- It is a mechanical overload.
+5- nan
+CORRECT ANSWER: 4
+A malignant tumor would also hurt at rest. As for Scheuermann and scoliosis, we should be given some physical data because the patient presents with a specific examination that would give us the diagnosis.

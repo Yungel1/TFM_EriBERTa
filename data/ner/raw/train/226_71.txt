@@ -1,0 +1,10 @@
+QUESTION TYPE: CARDIOLOGY
+CLINICAL CASE: 
+An 82-year-old hypertensive woman on atenolol, hydrochlorothiazide and digoxin. She comes to the emergency room for atrial fibrillation and is administered IV verapamil. The ECG showed complete atrioventricular block. What is the most probable cause of this clinical situation?
+1- Digitalis intoxication due to pharmacokinetic interaction with verapamil.
+2- Hypokalemia due to administration of thiazide and digoxin.
+3- Pharmacodynamic interaction of beta-blocker, digoxin and verapamil.
+4- Hypotensive effect of thiazide diuretic.
+5- Cardiac arrhythmia due to verapamil.
+CORRECT ANSWER: 3
+He already takes two AV node brakers and you add a third, and are you surprised that he gets complete AV block after messing with drugs from different families but same effect (pharmacodynamics)? Three. And remember that drugs are like drinks when you go to a bar: don't mix!

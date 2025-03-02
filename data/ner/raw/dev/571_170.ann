@@ -1,0 +1,61 @@
+T1	Premise 42 149	A 75-year-old woman on sertraline treatment who comes to the emergency department with confusional symptoms
+T2	Premise 151 209	There is no evidence of edema and blood pressure is 130/70
+T3	Premise 211 320	The blood test shows Na 126 mEq/l and K 4 mEq/l, natriuria is 45 mEq/l and diuretic intake has been ruled out
+T4	Claim 378 456	It is Addison's disease and corticosteroids should be administered immediately
+T5	Claim 461 529	Administer hypertonic saline to restore natremia as soon as possible
+T6	Claim 534 625	Indicate water restriction and if natremia does not rise, switch to slow infusion of saline
+T7	Claim 630 688	Request brain MRI, since it is probably diabetes insipidus
+T8	Marker 311 320	ruled out
+T9	Claim 715 939	We are presented with a patient with moderate euvolemic hyponatremia, suggesting a syndrome of inadequate antidiuresis (SIAD) secondary to sertraline, although it would be necessary to have urinary osmolality to confirm this
+T10	Marker 866 874	although
+T11	Disease 752 783	moderate euvolemic hyponatremia
+R1	Support Ent1:T1 Ent2:T9	
+R2	Support Ent1:T3 Ent2:T9	
+T12	Disease 798 840	syndrome of inadequate antidiuresis (SIAD)
+T13	Claim 941 1004	Primary adrenal insufficiency produces hypovolemic hyponatremia
+R3	Attack Ent1:T13 Ent2:T4	
+T14	Claim 1006 1024	incorrect option 1
+R4	Attack Ent1:T14 Ent2:T4	
+T15	Disease 384 401	Addison's disease
+R5	Attack Ent1:T9 Ent2:T13	
+R6	Support Ent1:T13 Ent2:T14	
+T16	Claim 1027 1118	Diabetes insipidus is the opposite of this pathology, usually presenting with hypernatremia
+T17	Claim 1120 1138	option 4 incorrect
+T18	Diagnostics 638 647	brain MRI
+T19	Treatment 406 421	corticosteroids
+T20	Marker 649 654	since
+T21	Disease 670 688	diabetes insipidus
+R7	Attack Ent1:T16 Ent2:T7	
+T22	Disease 1105 1118	hypernatremia
+T23	Disease 1027 1045	Diabetes insipidus
+R8	Support Ent1:T16 Ent2:T17	
+R9	Support Ent1:T17 Ent2:T7	
+R10	Attack Ent1:T9 Ent2:T16	
+T24	Claim 1141 1275	The question remains whether to treat aggressively with hypertonic saline, or to be more conservative by indicating hydric restriction
+T25	Claim 1277 1433	With natremia above 125 mmol/l it is not indicated to treat with HSS unless the patient has severe neurological symptoms, which does not seem to be the case
+T26	Marker 1346 1352	unless
+R11	Attack Ent1:T25 Ent2:T5	
+T27	Treatment 472 489	hypertonic saline
+T28	Treatment 1197 1214	hypertonic saline
+T29	Treatment 1342 1345	HSS
+T30	Treatment 1257 1275	hydric restriction
+T31	Premise 1435 1470	they describe a confusional picture
+T32	Claim 1471 1523	that would be a moderate hyponatremic encephalopathy
+R12	Support Ent1:T31 Ent2:T32	
+R13	Support Ent1:T32 Ent2:T25	
+T33	Claim 1530 1641	it is not indicated to restore natremia as soon as possible (due to the risk of osmotic demyelination syndrome)
+T34	Marker 1591 1597	due to
+T35	Claim 1643 1683	Therefore, the correct answer would be 3
+T36	Marker 1643 1652	Therefore
+R14	Support Ent1:T33 Ent2:T25	
+R15	Support Ent1:T25 Ent2:T35	
+R16	Support Ent1:T35 Ent2:T6	
+T37	Claim 1685 1824	What I do not like about this answer is that the second part ("if natraemia does not rise, switch to slow infusion of saline") is incorrect
+T38	Claim 1826 1918	since in this case the use of furosemide, tolvaptan or urea should be considered, not saline
+T39	Marker 1826 1831	since
+R17	Support Ent1:T38 Ent2:T37	
+T40	Claim 1920 2006	and it does not indicate tonicity either, since isotonic is not the same as hypertonic
+R18	Support Ent1:T40 Ent2:T37	
+T41	Marker 1962 1967	since
+T42	Claim 2009 2069	In any case, I do not see it as very likely to be overridden
+T43	Treatment 543 560	water restriction

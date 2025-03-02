@@ -1,0 +1,32 @@
+T1	Premise 42 156	A 7-month-old infant comes to the emergency department referred by his pediatrician for suspected Kawasaki disease
+T2	Disease 140 156	Kawasaki disease
+T3	Premise 158 333	He reports a fever of up to 39.5ºC of 5 days evolution that does not subside despite treatment with amoxicillin prescribed 72 hours ago for suspected acute pharyngotonsillitis
+T4	Disease 308 333	acute pharyngotonsillitis
+T5	Treatment 258 269	amoxicillin
+T6	Premise 335 433	During the last 24 hours he has had erythematous and pruritic exanthema of cephalocaudal evolution
+T7	Premise 438 522	during the last few days his parents have noticed a cough and intense conjunctivitis
+T8	Disease 508 522	conjunctivitis
+T9	Premise 524 550	No rhinorrhea was reported
+T10	Premise 552 662	Clinical examination showed subcrepitant in both lung bases without tachypnea or signs of respiratory distress
+T11	Premise 664 736	On oropharyngeal examination there are whitish spots in the jugal mucosa
+T12	Claim 778 794	Kawasaki disease
+T13	Claim 799 812	Scarlet fever
+T14	Claim 817 849	Allergic reaction to amoxicillin
+T15	Claim 854 878	Infectious mononucleosis
+T16	Claim 883 890	Measles
+T17	Disease 778 794	Kawasaki disease
+T18	Disease 799 812	Scarlet fever
+T19	Treatment 838 849	amoxicillin
+T20	Disease 854 878	Infectious mononucleosis
+T21	Disease 883 890	Measles
+T22	Claim 910 933	The correct answer is 5
+R1	Support Ent1:T22 Ent2:T16	
+T23	Claim 935 1216	The clue is in the whitish lesions of the jugal mucosa corresponding to Koplik's spots, which are pathognomonic of measles, although as an observation I would say that they usually appear in the prodromal phase of the disease and are often no longer seen when the exanthema appears
+T24	Disease 1050 1057	measles
+T25	Marker 1059 1067	although
+R2	Support Ent1:T23 Ent2:T16	
+R3	Support Ent1:T11 Ent2:T16	
+T26	Claim 1218 1282	In this case you are describing measles complicated by pneumonia
+T27	Disease 1250 1257	measles
+T28	Disease 1273 1282	pneumonia
+R4	Support Ent1:T26 Ent2:T16	

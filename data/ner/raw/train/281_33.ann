@@ -1,0 +1,30 @@
+T1	Premise 52 168	A 67-year-old woman diagnosed with an infiltrating ductal carcinoma of the breast and no family history of neoplasia
+T2	Claim 273 316	Complete phenotypic study by flow cytometry
+T3	Claim 321 356	Study of hormone receptors and HER2
+T4	Claim 361 435	Study of hormone receptors, e-cadherin and study of first degree relatives
+T5	Claim 440 493	Study of BRCA 1-2 and study of first-degree relatives
+T6	Claim 520 582	The correct answer would be 2, HORMONE AND HER2 RECEPTOR STUDY
+T7	Claim 590 655	positive HER2 receptors imply greater aggressiveness of the tumor
+T8	Marker 584 589	since
+T9	Marker 656 659	but
+T10	Claim 660 756	treatment with trastuzumab and positive hormone receptors would imply the use of hormone therapy
+R1	Support Ent1:T6 Ent2:T3	
+R2	Support Ent1:T7 Ent2:T6	
+T11	Claim 758 793	Answer 1 can be ruled out visu visu
+R3	Attack Ent1:T11 Ent2:T2	
+T12	Claim 795 836	while answers 3 and 4 should be ruled out
+T13	Premise 844 901	being the first woman in the family with breast carcinoma
+R5	Attack Ent1:T12 Ent2:T4	
+R6	Attack Ent1:T12 Ent2:T5	
+R7	Support Ent1:T10 Ent2:T6	
+T14	Diagnostics 282 316	phenotypic study by flow cytometry
+T15	Diagnostics 321 356	Study of hormone receptors and HER2
+T16	Diagnostics 361 399	Study of hormone receptors, e-cadherin
+T17	Diagnostics 404 435	study of first degree relatives
+T18	Diagnostics 440 457	Study of BRCA 1-2
+T19	Diagnostics 462 493	study of first-degree relatives
+T20	Marker 837 842	since
+T21	Marker 827 836	ruled out
+T22	Claim 903 963	the study of the patient's relatives would not be obligatory
+R4	Support Ent1:T13 Ent2:T22	
+R8	Support Ent1:T22 Ent2:T12	

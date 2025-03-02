@@ -30,7 +30,7 @@ def run_ner_pipeline():
     DEV_RAW = config["paths"]["ner"]["raw"]["dev"]
     TRAIN_PROCESSED = config["paths"]["ner"]["processed"]["train"]
     DEV_PROCESSED = config["paths"]["ner"]["processed"]["dev"]
-    LABEL2ID_PATH = config["paths"]["ner"]["label_maps"]["label2id"]
+    LABEL2ID_PATH = config["paths"]["ner"]["label_map"]
 
     # Model to be trained
     medical_model = "HiTZ/EriBERTa-base"

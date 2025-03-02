@@ -1,0 +1,10 @@
+QUESTION TYPE: NEPHROLOGY
+CLINICAL CASE: 
+24-year-old male presenting with dysmorphic microhematuria, proteinuria of 3 g/24 h, eGFR (CKD-EPI) 85 ml/min and sensorineural hearing loss. He reports that his maternal grandmother required dialysis at 70 years of age and both his mother and younger sister have isolated microhematuria. Which of the following diseases is more likely?
+1- Alport syndrome.
+2- IgA nephropathy.
+3- Fabry disease.
+4- Autosomal dominant polycystic kidney disease.
+5- nan
+CORRECT ANSWER: 1
+Textbook case, little to add. Microhematuria, proteinuria and sensorineural hearing loss in a young male with a family history of women with hematuria = Alport syndrome.

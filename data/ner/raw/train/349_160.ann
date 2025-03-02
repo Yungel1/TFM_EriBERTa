@@ -1,0 +1,17 @@
+T1	Premise 57 139	A 45-year-old woman, mother of 3 children, attends an early diagnosis consultation
+T2	Premise 141 228	Cervicovaginal cytology is compatible with a high-grade squamous intraepithelial lesion
+T3	Claim 282 308	Repeat cytology in 1 month
+T4	Claim 313 344	Colposcopy with possible biopsy
+T5	Claim 349 416	Hysterectomy with bilateral salpinguectomy and ovarian conservation
+T6	Claim 421 451	Fractionated uterine curettage
+T7	Claim 478 501	The correct answer is 2
+R1	Support Ent1:T7 Ent2:T4	
+T8	Claim 503 772	According to the 2014 SEGO Oncoguide on cervical cancer prevention, when a cytology shows a high-grade squamous intraepithelial lesion, the action to be taken is a colposcopy, with or without biopsy depending on the findings (regardless of the patient's age and parity)
+R2	Support Ent1:T2 Ent2:T8	
+T9	Diagnostics 667 677	colposcopy
+R3	Support Ent1:T1 Ent2:T8	
+T10	Diagnostics 282 308	Repeat cytology in 1 month
+T11	Diagnostics 313 344	Colposcopy with possible biopsy
+T12	Treatment 349 391	Hysterectomy with bilateral salpinguectomy
+T13	Treatment 396 416	ovarian conservation
+T14	Treatment 421 451	Fractionated uterine curettage

@@ -1,0 +1,22 @@
+T1	Premise 69 161	A 45-year-old woman presents arterial hypertension (190/120 mmHg) accompanied by K 2.5 mEq/l
+T2	Premise 163 224	An abdominal ultrasound shows stenosis of both renal arteries
+T3	Diagnostics 166 186	abdominal ultrasound
+T4	Claim 274 283	Enalapril
+T5	Claim 288 298	Propanolol
+T6	Claim 303 312	Amiloride
+T7	Claim 317 325	Prazosin
+T8	Claim 330 340	Amlodipine
+T9	Treatment 274 283	Enalapril
+T10	Treatment 288 298	Propanolol
+T11	Treatment 303 312	Amiloride
+T12	Treatment 317 325	Prazosin
+T13	Treatment 330 340	Amlodipine
+T14	Claim 360 437	If the renal arteries are stenosed, blood has difficulty reaching the kidneys
+R1	Support Ent1:T2 Ent2:T14	
+T15	Claim 439 580	That is, both are poorly perfused and can only create the pressure gradient necessary for filtration by contraction of the efferent arteriole
+T16	Marker 439 446	That is
+T17	Claim 582 703	If we administer an ACEI, we will provoke the relaxation of this arteriole and the fall of the glomerular filtration rate
+T18	Claim 705 790	And if neither kidney filters, because both have arterial stenosis, we have a problem
+T19	Marker 736 743	because
+R2	Support Ent1:T17 Ent2:T4	
+R3	Support Ent1:T17 Ent2:T18	

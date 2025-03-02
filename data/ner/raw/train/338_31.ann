@@ -1,0 +1,26 @@
+T1	Claim 531 546	Teratocarcinoma
+T2	Premise 57 192	20-year-old woman with ovarian tumor of 15 cm, solid-cystic, detected by ultrasound after presenting with unspecific abdominal symptoms
+T3	Premise 194 466	In the histopathological study of the corresponding specimen, teeth, hairs, areas of intestinal epithelium, areas of squamous epithelium (15%) and bronchial epithelium, as well as neuroectodermal and embryonic elements are found in several of the histological preparations
+T4	Claim 551 568	Immature teratoma
+T5	Claim 573 595	Mature cystic teratoma
+T6	Claim 600 612	Dysgerminoma
+T7	Claim 639 703	Mature cystic teratoma (common in the ovary of the adult female)
+R1	Support Ent1:T2 Ent2:T7	
+T8	Claim 705 801	Mass with a large cyst occupying most of it; in its cavity there is sebaceous material and hairs
+R2	Support Ent1:T3 Ent2:T8	
+T9	Claim 922 1020	Because of this preponderant development of cutaneous structures it is usually called dermoid cyst
+T10	Claim 803 920	The wall, generally a few millimeters thick, has the structure of skin, with its epidermal surface towards the cavity
+T11	Claim 1022 1103	The tissues that compose the tumor are well differentiated (mature or adult type)
+T12	Claim 1105 1287	apart from skin structures many other tissues can be observed, particularly in a thickening or spur that eminences into the cavity, in which there are often teeth, cartilage and bone
+R3	Support Ent1:T3 Ent2:T12	
+R4	Support Ent1:T2 Ent2:T11	
+R5	Support Ent1:T7 Ent2:T5	
+R6	Support Ent1:T12 Ent2:T7	
+R7	Support Ent1:T8 Ent2:T7	
+R8	Support Ent1:T10 Ent2:T7	
+R9	Support Ent1:T9 Ent2:T7	
+R10	Support Ent1:T11 Ent2:T7	
+T13	Disease 531 546	Teratocarcinoma
+T14	Disease 551 568	Immature teratoma
+T15	Disease 573 595	Mature cystic teratoma
+T16	Disease 600 612	Dysgerminoma

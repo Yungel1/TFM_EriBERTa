@@ -1,0 +1,10 @@
+QUESTION TYPE: NEUROSURGERY
+CLINICAL CASE: 
+A 36-year-old man with no PA of interest comes to the emergency department with sudden onset of severe pain in the posterior aspect of the right lower limb extending to the foot. On examination he presented: Positive right Lasège at 10º, decreased strength in plantar flexion of the right foot, hypoesthesia in the external border of the right foot and absence of right Achilles reflex. The simple X-ray of the lumbar spine does not show significant alterations. Which of the following is the most probable diagnosis?
+1- Herniated disc L1/L2.
+2- Horsetail syndrome.
+3- L4/L5 disc herniation.
+4- Herniated disc L5/S1.
+5- nan
+CORRECT ANSWER: 4
+Acute sciatica probably due to disc extrusion. Both the sensory distribution, the paresis for plantar flexion (tiptoe) and the absence of the Achilles reflex are typical of S1 root involvement, which is typically affected with L5/S1 disc herniation (posterolateral). An L1/L2 (posterolateral) herniation would affect the L2 root, an L4/L5 herniation would affect the L5 and cauda equina would involve more symptomatology than simple S1 involvement.

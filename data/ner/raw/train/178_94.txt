@@ -1,0 +1,10 @@
+QUESTION TYPE: HEMATOLOGY
+CLINICAL CASE: 
+18-month-old boy, with complete vaccination schedule to date, who consults the Emergency Department for swelling of the right knee after playing in the park, without obvious trauma. In the directed anamnesis, the mother refers that an uncle of hers had similar problems. The ultrasound examination is compatible with hemarthrosis and in the analysis performed only an APTT lengthening of 52″ (normal 25-35″) stands out. What is the most likely diagnostic hypothesis?
+1- Marfan syndrome.
+2- Von Willebrand's disease.
+3- Ehlers-Danlos disease.
+4- Hemophilia A.
+5- Bemard-Soulier disease.
+CORRECT ANSWER: 4
+In this question they also do not stop dropping clues to throw us headlong into the correct diagnosis. Let's review: a small child who suffers a hemarthrosis without clear trauma. An uncle of his had similar problems, so we suspect hereditary disease. The APTT, which evaluates the intrinsic coagulation pathway (involving factors V, VIII, IX, X, XI and XII) is elongated. Hereditary coagulation problem. We thus discard answers 1, 2 and 5. We are left with von Willebrand's disease and hemophilia A. I consider that the correct answer is 4, hemophilia A, since the inheritance pattern is X-linked and its main clinical manifestation is soft tissue bruising and spontaneous hemarthrosis, without apparent trauma, while von Willebrand disease is characterized by bleeding after surgery or trauma and a prolonged bleeding time with a normal platelet count is characteristic (data not mentioned in the statement).

@@ -1,0 +1,39 @@
+T1	Claim 679 810	Debut of type 2 diabetes mellitus, with dyspnea probably due to pneumonia or thromboembolism, since she is taking anovulatory drugs
+T2	Claim 815 957	It is a diabetic ketoacidosis. It must be treated with intravenous insulin, serum therapy, general measures and search for precipitating cause
+T3	Claim 962 1086	Debut of type 1 diabetes with ketoacidosis. Treat with bicarbonate and after correction of acidosis, add intravenous insulin
+T4	Claim 1091 1211	It looks like diabetic ketoacidosis, but it could be alcoholic. BAC should be determined before starting insulin therapy
+T5	Claim 1216 1306	Treat with rapid subcutaneous insulin, serum therapy and ask him to drink plenty of fluids
+T6	Claim 1326 1355	Debut of DM with ketoacidosis
+T7	Treatment 870 889	intravenous insulin
+T8	Treatment 891 904	serum therapy
+T9	Disease 823 844	diabetic ketoacidosis
+T10	Disease 679 771	Debut of type 2 diabetes mellitus, with dyspnea probably due to pneumonia or thromboembolism
+T11	Disease 962 1004	Debut of type 1 diabetes with ketoacidosis
+T12	Treatment 1017 1028	bicarbonate
+T13	Treatment 1033 1086	after correction of acidosis, add intravenous insulin
+T14	Disease 1105 1126	diabetic ketoacidosis
+T15	Diagnostics 1155 1158	BAC
+T16	Treatment 1228 1253	apid subcutaneous insulin
+T17	Treatment 1255 1268	serum therapy
+T18	Treatment 1281 1306	to drink plenty of fluids
+T19	Claim 1357 1412	Priority is iv insulin administration and serum therapy
+T20	Claim 1414 1435	Bicarbonate if pH < 7
+R1	Support Ent1:T6 Ent2:T2	
+R2	Support Ent1:T19 Ent2:T2	
+R3	Support Ent1:T20 Ent2:T2	
+T21	Premise 45 252	A 22-year-old female student with no history of pathology or use of medications except anovulatory drugs comes to the emergency department for deterioration of general condition and need to take deep breaths
+T22	Premise 254 331	She reports weight loss in the last 2-3 days, polydipsia, polyuria and nausea
+T23	Premise 333 362	No cough or febrile sensation
+T24	Premise 377 398	appearance of gravity
+T25	Premise 400 426	blood pressure 100/60 mmHg
+T26	Premise 428 460	deep and rapid breathing (28rpm)
+T27	Premise 462 494	level of consciousness preserved
+T28	Premise 496 516	dry mucous membranes
+T29	Premise 518 526	No fever
+T30	Premise 528 632	CBC: blood glucose 420 mg/dL, Na+ 131 mEq/L, K+ normal, pH 7.08, bicarbonate 8 mEq/L and ketonuria (+++)
+T31	Claim 1437 1483	Insulin administration should never be delayed
+R4	Support Ent1:T31 Ent2:T2	
+T32	Disease 1326 1355	Debut of DM with ketoacidosis
+T33	Treatment 1369 1394	iv insulin administration
+T34	Treatment 1399 1412	serum therapy
+T35	Treatment 1414 1435	Bicarbonate if pH < 7

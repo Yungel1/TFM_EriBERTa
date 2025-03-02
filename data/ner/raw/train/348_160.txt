@@ -1,0 +1,10 @@
+QUESTION TYPE: GYNECOLOGY AND OBSTETRICS
+CLINICAL CASE: 
+45-year-old woman, mother of 3 children, attends an early diagnosis consultation. The cervicovaginal cytology is compatible with a high-grade squamous intraepithelial lesion. Which of the following options would you choose?
+1- Repeat cytology in 1 month.
+2- Colposcopy with possible biopsy.
+3- Hysterectomy with bilateral salpinguectomy and ovarian conservation.
+4- Fractionated uterine curettage.
+5- nan
+CORRECT ANSWER: 2
+Colposcopy is indicated for all patients with altered cytology (intraepithelial lesion or suspicion of invasive cancer or HPV infection), as a second level of screening. If lesions are observed in this test, a biopsy of the lesion will be performed. There is no point in repeating the cytology (since this is a screening test, not a diagnostic test), performing a hysterectomy for an intraepithelial lesion that has not been confirmed by biopsy is not indicated either, and performing curettage of the endometrial cavity does not provide information since the lesion is from the cervix.

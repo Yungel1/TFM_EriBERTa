@@ -1,0 +1,10 @@
+QUESTION TYPE: DERMATOLOGY
+CLINICAL CASE: 
+A 72-year-old patient comes to the emergency department for presenting with severe and significant lingual angioedema. She does not present associated urticaria and has no history of drug or food allergy. His personal history includes type 2 diabetes mellitus, dyslipidemia, hypertension, hypothyroidism and Parkinson's disease. She is on regular treatment with metformin, simvastatin, enalapril, thyroxine and levodopa. Which of the following drugs is most likely the causal drug of the clinical picture described?
+1- Enalapril.
+2- Simvastatin.
+3- Metformin or levodopa equally.
+4- Levodopa.
+5- nan
+CORRECT ANSWER: 1
+Angioedema is a type of profound urticaria that can be of drug etiology (not IgE-mediated) and in this case, ACEIs (such as enalapril) are considered the most frequent pharmacological cause, so in this case it would be the correct answer (if we speak in probabilistic terms).

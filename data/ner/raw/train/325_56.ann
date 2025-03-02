@@ -1,0 +1,23 @@
+T1	Claim 1272 1295	The correct answer is 1
+T2	Premise 71 243	A 54-year-old patient is admitted for thermometric fever of 38°C in the previous five days and dyspnea at rest (NYHA lV) that appeared 6 hours before coming to the hospital
+T3	Premise 245 405	Examination in the emergency room was compatible with heart failure and the ECG showed complete atrioventricular block with an escape ventricular rate of 45 bpm
+T4	Premise 407 573	Signs of heart failure are refractory to medical treatment and transesophageal echocardiography shows an aortic valve with an effective regurgitant orifice of 0.5 cm2
+T5	Premise 575 634	Serial cultures are positive for Streptococcus gallolyticus
+T6	Claim 675 793	Cardiac surgery for aortic valve replacement by mechanical prosthesis with antibiotic therapy according to antibiogram
+T7	Claim 798 994	Antibiotic therapy according to antibiogram and implantation of intra-aortic balloon counterpulsation and transient pacemaker for up to 3 weeks, after which a permanent pacemaker will be implanted
+T8	Claim 999 1136	Implantation of transient pacemaker, antibiotic therapy according to antibiogram and percutaneous implantation of aortic valve prosthesis
+T9	Claim 1141 1245	Urgent implantation of definitive pacemaker with antibiotic therapy according to antibiogram for 6 weeks
+T10	Marker 1297 1302	since
+T11	Claim 1303 1441	the indications for cardiac surgery include the appearance of heart failure or new conduction disorders, and in this case it presents both
+R1	Support Ent1:T3 Ent2:T11	
+R2	Support Ent1:T11 Ent2:T1	
+R3	Support Ent1:T1 Ent2:T6	
+T12	Treatment 675 744	Cardiac surgery for aortic valve replacement by mechanical prosthesis
+T13	Treatment 750 793	antibiotic therapy according to antibiogram
+T14	Treatment 798 841	Antibiotic therapy according to antibiogram
+T15	Treatment 846 994	implantation of intra-aortic balloon counterpulsation and transient pacemaker for up to 3 weeks, after which a permanent pacemaker will be implanted
+T16	Treatment 999 1034	Implantation of transient pacemaker
+T17	Treatment 1036 1079	antibiotic therapy according to antibiogram
+T18	Treatment 1084 1136	percutaneous implantation of aortic valve prosthesis
+T19	Treatment 1141 1184	Urgent implantation of definitive pacemaker
+T20	Treatment 1190 1245	antibiotic therapy according to antibiogram for 6 weeks

@@ -1,0 +1,10 @@
+QUESTION TYPE: TRAUMATOLOGY
+CLINICAL CASE: 
+95-year-old woman living in a nursing home, independent for her basic activities of daily living, goes out to the garden for walks. She has a history of hypertension, dyslipidemia, osteoporosis and mild cognitive impairment. She suffers a fall when getting up at night to go to the bathroom. X-ray shows a displaced subcapital fracture of the right hip. What is the recommended treatment?
+1- Hip hemiarthroplasty.
+2- Trochanteric nail fixation.
+3- Fixation with cannulated screws.
+4- Conservative: bed-chair life.
+5- nan
+CORRECT ANSWER: 1
+Correct Answer 1: Given that this is a displaced subcapital hip fracture, the surgical treatment we should consider is hip joint replacement, given that the injury described presents a high probability of necrosis of the femoral head. The options would be total or partial arthroplasty: in elderly patients, partial arthroplasty is preferred because it is a shorter and less aggressive surgery than total hip arthroplasty. Answer 2 incorrect: We would consider this technique in basicervical fractures and trochanteric mass lesions, not in subcapital fractures. Incorrect Answer 3: We would consider this technique in nondisplaced subcapital fractures in young patients. Incorrect answer 4: We would only consider non-surgical treatment in a patient with a very poor baseline general condition: bedridden patients with low life expectancy.

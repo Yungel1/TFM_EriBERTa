@@ -1,0 +1,10 @@
+QUESTION TYPE: SURGERY
+CLINICAL CASE: 
+A 76-year-old woman with no history other than hypertension consults for painless jaundice and pruritus with anorexia. Laboratory tests show a bilirubin level of 12 mg/dl (with 9.5 direct bilirubin). Abdominal ultrasound shows dilatation of the intrahepatic and extrahepatic biliary tract, together with a single 2 cm nodule located peripherally in the anterior aspect of the left lobe. CT scan confirms the findings, also demonstrating the presence of a 3.5 cm mass in the head of the pancreas. Fine needle aspiration confirms the diagnosis of adenocarcinoma. Indicate the best therapeutic option:
+1- Adjuvant chemo/radiotherapy, conditioning radical surgery to the initial response.
+2- Percutaneous external drainage is palliative, with eventual conversion to internal drainage in case of intolerance or complications.
+3- Surgical biliary bypass, with or without prophylactic gastrojejunostomy depending on intraoperative findings.
+4- Metallic biliary prosthesis by endoscopic retrograde cholangiography, with the option of palliative chemotherapy.
+5- Cephalic duodenopancreatectomy with radiofrequency ablation or alcoholization of the liver lesion.
+CORRECT ANSWER: 4
+I think the correct answer is 4, although both lesions are resectable, pancreatic adenocarcinoma with synchronous hepatic metastases has no surgical indication because it does not prolong survival and has a high morbidity. Surgical bypass has more complications than placing a self-expanding metallic prosthesis that has a median patency of 6 months which is similar to the median survival of a patient with hepatic metastases of pancreatic adenocarcinoma.

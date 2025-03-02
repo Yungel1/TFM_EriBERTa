@@ -1,0 +1,24 @@
+T1	Premise 57 260	A 27-year-old woman referred to a gynecology office for evaluation, reporting dyspareunia for about 8 months, along with dyschezia and occasional rectorrhagia coinciding with menstruation for 3-4 months.
+T2	Premise 261 340	She also reports dysmenorrhea for years, which she controls well with ibuprofen
+T3	Premise 342 407	She has been trying to get pregnant for 16 months without success
+T4	Premise 409 507	In the gynecological examination she only shows pain when pressing on the posterior vaginal fornix
+T5	Claim 607 630	Transvaginal ultrasound
+T6	Claim 635 657	Diagnostic laparoscopy
+T7	Claim 662 688	Magnetic resonance imaging
+T8	Claim 693 704	Colonoscopy
+T9	Premise 731 852	The clinical case presented is a woman of childbearing age (27 years) presenting dyspareunia + dysmenorrhea + infertility
+T10	Claim 854 900	which should lead us to think of endometriosis
+R1	Support Ent1:T9 Ent2:T10	
+T11	Disease 887 900	endometriosis
+T12	Claim 902 967	The clinical history and ultrasound give a diagnosis of suspicion
+T13	Claim 969 1142	but the diagnosis of certainty is given by direct observation (with or without associated biopsy) of ectopic endometrial tissue implants, either by laparotomy or laparoscopy
+R2	Attack Ent1:T13 Ent2:T12	
+R3	Attack Ent1:T12 Ent2:T5	
+R4	Support Ent1:T13 Ent2:T6	
+T14	Diagnostics 927 937	ultrasound
+T15	Diagnostics 1117 1127	laparotomy
+T16	Diagnostics 1131 1142	laparoscopy
+T17	Diagnostics 607 630	Transvaginal ultrasound
+T18	Diagnostics 635 657	Diagnostic laparoscopy
+T19	Diagnostics 662 688	Magnetic resonance imaging
+T20	Diagnostics 693 704	Colonoscopy

@@ -1,0 +1,10 @@
+QUESTION TYPE: DERMATOLOGY, VENEREOLOGY AND PLASTIC SURGERY
+CLINICAL CASE: 
+An 8-year-old patient presenting with superficial pustular lesions, erosions and yellowish crusts around the mouth for the last 3 days:
+1- Exudative erythema multiforme.
+2- Contagious impetigo.
+3- Infantile acne.
+4- Pustular psoriasis.
+5- nan
+CORRECT ANSWER: 2
+It is a typical and frequent clinical picture in children. You are describing a contagious impetigo. There is not much dispute. The most frequent causative agent in the bullous form is S. aureus phage II.

@@ -1,0 +1,34 @@
+T1	Premise 63 205	A 78-year-old woman with a history of hypertension treated with amlodipine was admitted 3 months ago for heart failure and atrial fibrillation
+T2	Premise 261 465	The discharge report shows the result of the echocardiogram showing moderate left ventricular dysfunction and the discharge treatment: amlodipine was discontinued and furosemide and enalapril were started
+T3	Premise 467 542	The patient reports feeling better, without fatigue and with less leg edema
+T4	Marker 544 547	but
+T5	Premise 548 580	she is still not completely well
+T6	Premise 719 767	The ECG shows atrial fibrillation at 110-120 bpm
+T7	Premise 582 635	Physical examination showed no signs of heart failure
+T8	Marker 637 640	but
+T9	Premise 641 717	her blood pressure and heart rate were 150/90 mmHg and 120 bpm, respectively
+T10	Claim 872 904	Digoxin and acetylsalicylic acid
+T11	Claim 909 942	Atenolol and acetylsalicylic acid
+T12	Claim 947 973	Verapamil and acenocoumaro
+T13	Claim 979 1007	Carvedilol and acenocoumarol
+T14	Claim 1012 1038	Carvedilol and clopidogrel
+T15	Treatment 872 879	Digoxin
+T16	Treatment 884 904	acetylsalicylic acid
+T17	Treatment 909 917	Atenolol
+T18	Treatment 922 942	acetylsalicylic acid
+T19	Treatment 947 956	Verapamil
+T20	Treatment 961 974	acenocoumarol
+T21	Treatment 979 989	Carvedilol
+T22	Treatment 994 1007	acenocoumarol
+T23	Treatment 1012 1022	Carvedilol
+T24	Treatment 1027 1038	clopidogrel
+T25	Premise 1132 1239	The patient is in heart failure with moderate ventricular dysfunction and also presents atrial fibrillation
+T26	Premise 1241 1277	she has criteria for anticoagulation
+T27	Claim 1283 1368	between the two options that include acenocoumarol we are inclined to choose option 4
+R1	Support Ent1:T26 Ent2:T27	
+T28	Claim 1376 1464	it includes carvedilol, a drug that has been shown to increase survival in heart failure
+T29	Marker 1370 1375	since
+R2	Support Ent1:T28 Ent2:T27	
+R3	Support Ent1:T27 Ent2:T13	
+T30	Claim 1466 1802	Verapamil (and calcium antagonists in general) are contraindicated in systolic heart failure: they do not increase survival (they even increase morbidity and mortality) and specifically the non-dihydropyridines (verapamil and diltiazem) should not be associated with beta-blockers due to the increased risk of conduction system blockade
+R4	Attack Ent1:T30 Ent2:T12	

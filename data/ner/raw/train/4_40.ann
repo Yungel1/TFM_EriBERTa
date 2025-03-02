@@ -1,0 +1,30 @@
+T1	Claim 282 301	Chronic hepatitis B
+T2	Claim 306 331	Non-viral acute hepatitis
+T3	Claim 336 353	Acute hepatitis B
+T4	Claim 358 388	D (delta) virus superinfection
+T5	Claim 393 416	Acute hepatitis A and B
+T6	Premise 41 126	A man presents abruptly with asthenia and jaundice with transaminases above 2000 IU/L
+T7	Premise 128 254	Serological markers show the following pattern: anti-HAV IgM negative, HBsAg negative anti-HBc IgM positive, anti-HCV negative
+T8	Disease 282 301	Chronic hepatitis B
+T9	Disease 306 331	Non-viral acute hepatitis
+T10	Disease 336 353	Acute hepatitis B
+T11	Disease 358 388	D (delta) virus superinfection
+T12	Disease 393 416	Acute hepatitis A and B
+T13	Marker 555 557	so
+T14	Claim 558 579	option 1 is ruled out
+T15	Claim 492 553	By the form of presentation, it is clearly an acute hepatitis
+R1	Support Ent1:T15 Ent2:T14	
+R2	Attack Ent1:T14 Ent2:T1	
+R3	Attack Ent1:T15 Ent2:T1	
+T16	Claim 581 616	The negative IgM of HAV rules out 5
+T17	Claim 621 652	the negative HBs Ag rules out 4
+T18	Premise 654 700	to have delta virus you need surface antigen B
+R4	Support Ent1:T18 Ent2:T17	
+R5	Attack Ent1:T17 Ent2:T4	
+R6	Attack Ent1:T16 Ent2:T5	
+T19	Claim 703 764	When having IgM anti HBc we speak of an acute hepatitis B (3)
+R7	Support Ent1:T19 Ent2:T3	
+T20	Marker 766 771	since
+T21	Premise 772 829	there is a window period of negativization of the antigen
+R8	Support Ent1:T21 Ent2:T19	
+T22	Disease 538 553	acute hepatitis

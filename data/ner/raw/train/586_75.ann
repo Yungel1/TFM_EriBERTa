@@ -1,0 +1,18 @@
+T1	Premise 57 110	A 30-year-old woman requesting a contraceptive method
+T2	Premise 112 212	She has a history of an emergency cesarean section 7 months ago, giving birth to a 3,550 g baby girl
+T3	Premise 214 246	She is exclusively breastfeeding
+T4	Claim 284 437	Explain to her that, if she is amenorrheic, she does not require another contraceptive method since breastfeeding is sufficient as a contraceptive method
+T5	Claim 442 559	He informed her that the levonogestrel IUD is contraindicated because she had a cesarean section less than a year ago
+T6	Claim 564 626	He explains that she could use a gestagen-only hormonal method
+T7	Claim 631 677	She is offered combined hormonal contraception
+T8	Claim 704 848	Given her circumstances and taking into account that she is exclusively breastfeeding, the best thing to do would be to prescribe only gestagens
+R1	Support Ent1:T3 Ent2:T8	
+R2	Support Ent1:T2 Ent2:T8	
+T9	Treatment 839 848	gestagens
+R3	Support Ent1:T8 Ent2:T6	
+T10	Marker 378 383	since
+T11	Marker 504 511	because
+T12	Treatment 597 626	gestagen-only hormonal method
+T13	Treatment 646 677	combined hormonal contraception
+T14	Treatment 467 484	levonogestrel IUD
+T15	Marker 488 503	contraindicated

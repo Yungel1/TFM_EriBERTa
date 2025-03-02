@@ -1,0 +1,10 @@
+QUESTION TYPE: NEUROLOGY
+CLINICAL CASE: 
+A 29-year-old obese woman, with no past history of interest, consults for a month of intense, bilateral, pulsating headache, accompanied by horizontal diplopia and episodes of monocular amaurosis lasting seconds. Examination is normal, except for the presence of bilateral papilledema. Which of these tests do you think will allow you to fully confirm the diagnosis?
+1- Ultrasound of supra-aortic trunks.
+2- Cranial magnetic resonance imaging.
+3- Electroencephalogram.
+4- Lumbar puncture.
+5- Visual evoked potentials.
+CORRECT ANSWER: 4
+Again we are presented with a case to make a diagnosis and then, in this case, perform a confirmatory test. Now the guiding symptom is bilateral papilledema which is indicative of intracranial hypertension. Although he does not comment that a space-occupying lesion has been ruled out, given the normal neurological examination and the other symptoms, it is deduced that it is idiopathic intracranial hypertension or pseudotumor cerebri. Other data suggestive of this entity include: women of reproductive age, obesity, and diplopia (due to involvement of the VI cranial nerve). It is characteristic that the headache and visual blurriness suddenly worsen in the mornings when getting up or changing posture, producing transitory blindness (Neurology, Zarranz). The lumbar puncture invariably shows an increase in cerebrospinal fluid pressure, so the correct answer is 4.

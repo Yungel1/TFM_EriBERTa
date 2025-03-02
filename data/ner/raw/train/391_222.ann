@@ -1,0 +1,18 @@
+T1	Premise 42 154	A 26-year-old single man is brought in by his family because he has been refusing to leave his home for 3 months
+T2	Premise 156 252	The reason given by the patient is the belief that he has an asymmetrical jaw and a crooked face
+T3	Premise 254 373	According to the patient, this situation is progressive and he looks more and more deformed when he looks in the mirror
+T4	Premise 375 543	He is ashamed of his appearance, so he does not want to go out, he gets very anxious when he sees his image and he cannot stop thinking about his deformity all day long
+T5	Premise 545 681	He has consulted several maxillofacial surgeons but they tell him that he does not have facial asymmetry and refer him to a psychiatrist
+T6	Claim 714 783	Major depressive disorder with delusional ideas incongruent with mood
+T7	Claim 849 873	Body dysmorphic disorder
+T8	Claim 822 844	Paranoid schizophrenia
+T9	Claim 788 817	Obsessive-compulsive disorder
+T10	Premise 973 1110	It describes a patient worried about a non-existent physical defect, whose concern distresses him and prevents him from leaving the house
+T11	Claim 1112 1332	As a psychiatry resident, I wish the MIR questions in my specialty were a bit more thought-provoking and in-depth, although I know that the seconds you will have saved by marking the fourth one directly are very valuable
+R1	Support Ent1:T11 Ent2:T7	
+T12	Marker 1227 1235	although
+R2	Support Ent1:T10 Ent2:T7	
+T13	Disease 714 783	Major depressive disorder with delusional ideas incongruent with mood
+T14	Disease 788 817	Obsessive-compulsive disorder
+T15	Disease 822 844	Paranoid schizophrenia
+T16	Disease 849 873	Body dysmorphic disorder

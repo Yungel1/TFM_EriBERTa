@@ -1,0 +1,18 @@
+T1	Premise 42 164	In a 3-month-old infant all the clinical manifestations outlined below would make it necessary to rule out cystic fibrosis
+T2	Disease 149 164	cystic fibrosis
+T3	Claim 177 204	Delayed meconium evacuation
+T4	Claim 209 232	Salty taste of the skin
+T5	Claim 237 286	Isolation of secretions of Pseudomonas aeruginosa
+T6	Claim 291 334	Deterioration/detention of the weight curve
+T7	Claim 339 364	Hypernatremic dehydration
+T8	Disease 339 364	Hypernatremic dehydration
+T9	Claim 384 438	Dehydration may be due to diarrhea of other etiologies
+T10	Marker 403 409	due to
+R1	Support Ent1:T9 Ent2:T7	
+T11	Claim 440 524	I have doubts about answer 3 since it does not specify which secretions are involved
+T12	Marker 469 474	since
+T13	Claim 526 630	We have to understand that the growth of Pseudomona aeruginosa is in the culture of bronchial secretions
+T14	Claim 632 792	Because clearly the indication to perform a sweat chlorine (to rule out FQP) are the HIPOnatremic dehydrations and not the hypernatremic ones as the answer says
+T15	Marker 632 639	Because
+R2	Support Ent1:T13 Ent2:T14	
+R3	Attack Ent1:T14 Ent2:T7	

@@ -1,0 +1,10 @@
+QUESTION TYPE: PEDIATRICS
+CLINICAL CASE: 
+A 1-year-old boy whose mother has just been diagnosed with bacilliferous pulmonary tuberculosis, having started correct treatment. The child is asymptomatic with a normal examination, negative tuberculin test (PT) and normal chest Rx. What would be the attitude to adopt in the child?
+1- Only separate him from the mother until her treatment is completed (at least 6 months).
+2- Perform a high-resolution CT scan of the lung, and if normal, repeat PT at 8-12 weeks.
+3- Chemoprophylaxis with isoniazid (INH) until the mother's smear test is negative.
+4- Chemoprophylaxis with INH 6-9 months. New PT and chest X-ray at the end of treatment, to decide whether or not to conclude treatment.
+5- Chemoprophylaxis with INH, 8-12 weeks. Repeat PT. If negative, stop treatment. If positive, perform chest X-ray to decide whether or not there is disease.
+CORRECT ANSWER: 5
+The correct answer is 5. The mother should be isolated for the first 2-4 weeks of treatment, after which she would no longer be contagious. If the result of the repeat PT is still negative, the child should not be tested again. If it is positive, the X-ray (or pulmonary CT in younger children) should be repeated.

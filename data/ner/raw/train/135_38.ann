@@ -1,0 +1,46 @@
+T1	Premise 40 120	A 64-year-old man with Child A liver cirrhosis with no history of decompensation
+T2	Disease 63 86	Child A liver cirrhosis
+T3	Premise 122 243	After detection of a focal hepatic lesion on screening ultrasound, the study is completed with a thoracoabdominal CT scan
+T4	Diagnostics 167 187	screening ultrasound
+T5	Diagnostics 219 243	thoracoabdominal CT scan
+T6	Premise 245 434	This scan showed the presence of 4 liver lesions (one of them up to 6 cm) with uptake pattern typical of hepatocarcinoma, tumor vascular invasion and a metastasis in the right adrenal gland
+T7	Diagnostics 245 254	This scan
+T8	Disease 350 365	hepatocarcinoma
+T9	Premise 436 458	No ascites is observed
+T10	Premise 460 518	The patient reports only asthenia, but no general syndrome
+T11	Marker 495 498	but
+T12	Claim 563 685	Symptomatic and supportive treatment, since he presented an advanced hepatocarcinoma with vascular invasion and metastasis
+T13	Marker 601 606	since
+T14	Claim 690 810	Transarterial chemoembolization (TACE), since the treatment increases survival in patients with advanced hepatocarcinoma
+T15	Disease 632 647	hepatocarcinoma
+T16	Disease 795 810	hepatocarcinoma
+T17	Treatment 690 728	Transarterial chemoembolization (TACE)
+T18	Marker 730 735	since
+T19	Claim 815 931	Systemic chemotherapy with doxorubicin iv since he presents disseminated disease but he is in good general condition
+T20	Marker 857 862	since
+T21	Treatment 815 856	Systemic chemotherapy with doxorubicin iv
+T22	Marker 896 899	but
+T23	Claim 936 1069	Treatment with oral sorafenib, since this is a patient with good general condition, Child A and advanced stage hepatocarcinoma BCLC-C
+T24	Treatment 936 965	Treatment with oral sorafenib
+T25	Marker 967 972	since
+T26	Disease 1020 1027	Child A
+T27	Disease 1047 1069	hepatocarcinoma BCLC-C
+T28	Claim 1074 1242	The appropriate treatment is liver transplantation as it is the only procedure that completely eliminates the primary tumor and avoids future complications of cirrhosis
+T29	Treatment 1090 1124	treatment is liver transplantation
+T30	Marker 1125 1127	as
+T31	Disease 1233 1242	cirrhosis
+T32	Claim 1271 1483	The patient presents a good general condition with a recently diagnosed hepatocarcinoma, not giving him any type of treatment other than symptomatic and supportive at this stage would not be the right thing to do
+T33	Disease 1343 1358	hepatocarcinoma
+R1	Attack Ent1:T32 Ent2:T12	
+T34	Claim 1485 1548	TACE would not be indicated because of extrahepatic involvement
+T35	Marker 1513 1520	because
+R2	Attack Ent1:T34 Ent2:T14	
+T36	Claim 1550 1619	Transplantation would also not be done if he has extrahepatic disease
+R3	Attack Ent1:T36 Ent2:T28	
+T37	Claim 1725 1783	the correct answer is 4, for all the reasons given therein
+R4	Support Ent1:T37 Ent2:T23	
+T38	Claim 1638 1720	answers 3 and 4, both with systemic treatment (indicated because it is metastatic)
+R5	Support Ent1:T38 Ent2:T19	
+R6	Support Ent1:T38 Ent2:T23	
+R7	Support Ent1:T6 Ent2:T19	
+R8	Support Ent1:T6 Ent2:T23	

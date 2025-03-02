@@ -1,0 +1,10 @@
+QUESTION TYPE: ENDOCRINOLOGY
+CLINICAL CASE: 
+58-year-old male, obese, asymptomatic, moderate drinker, who presents a first baseline blood glucose of 153 mg/d with negative glycosuria. In the following weeks he has had two other baseline blood glucose readings of 118 and 136 mg/dl. Which of the following is the most appropriate approach to confirm the diagnosis of diabetes mellitus:
+1- Practice a blood glucose curve with 75 g of glucose.
+2- Already meets diagnostic criteria for diabetes mellitus.
+3- Request a determination of basal insulinemia or C-peptide.
+4- Request a determination of glycosylated hemoglobin.
+5- nan
+CORRECT ANSWER: 2
+Diagnostic Criteria for DM according to ISPAD 2018 *Classic symptoms of diabetes with blood glucose > 200mgr/dl or: * Fasting glycemia ≥ 126mgr/dl (fasting at least 8h) or * Glycemia at 2h SOG ≥ 200mgr/dl (on 2 occasions) or * HbA1C ≥ 6.5%.

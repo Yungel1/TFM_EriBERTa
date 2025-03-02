@@ -1,0 +1,10 @@
+QUESTION TYPE: TRAUMATOLOGY
+CLINICAL CASE: 
+A 41-year-old male consults for gonalgia of several days' evolution. During the examination, the Thessaly test (pain with internal and external rotation movements with the knee flexed) is positive. Which of the following lesions is most likely to occur?
+1- Meniscal injury.
+2- Injury by rupture of the anterior cruciate ligament.
+3- Injury by rupture of the posterior cruciate ligament.
+4- Degenerative arthropathy injury.
+5- nan
+CORRECT ANSWER: 1
+The Thessaly maneuver consists of the patient, using monopodal support and knee flexion of 5º and then 20º, performing internal and external rotations of the leg. In case this reproduces the pain that the patient refers, the test will be considered as positive. It is a test used for the diagnosis of meniscal pathology (sensitivity greater than 90% and specificity greater than 95%) (Answer 1 correct).

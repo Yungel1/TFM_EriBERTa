@@ -1,0 +1,10 @@
+QUESTION TYPE: GENERAL SURGERY
+CLINICAL CASE: 
+A 78-year-old woman with dementia and institutionalized is brought in by her caregivers for significant abdominal pain with deterioration of general condition and abdominal distension. CBC shows leukocytosis, elevated hematocrit, renal failure and metabolic acidosis. ECG shows atrial fibrillation. Abdominal tomography shows edematous small bowel loops, with intestinal and portal accumulation. The most probable diagnosis is:
+1- Perforation of gastric or duodenal ulcus.
+2- Biliary leak.
+3- Obstructive neoplasm of the sigma with perforation.
+4- Mesenteric ischemia.
+5- nan
+CORRECT ANSWER: 4
+This is a classic picture and the author of the question has taken care to give us enough clues so that we do not miss it. When reading this statement, multiple alarms go off: - Atrial Fibrillation: at the mir and at the ED door, any elderly person with AF and abdominal pain is emboligenic mesenteric ischemia until proven otherwise. - Acute abdominal pain, SIRS, renal failure, metabolic acidosis (ischemia!), probably an elevated lactic... - CT: The finding of portal gas is also highly indicative of mesenteric ischemia, we could also have been told of intestinal pneumatosis. Why are not the other pictures? - Perforated ulcus: We would have been told of a history of NSAID use, or a history of pain that improves with ingestion, of pneumoperitoneum on chest X-ray. - Biliary ileus: There would be a history of biliary colic or pain in the right hypochondrium, they would also speak of aerobilia in the imaging test and dilatation of the small loops with image (or not) of biliary lithiasis in the terminal ileum. - Neo sigmoidoscopy: In the myocardial imaging they would speak of weight loss, change of stool habit, pneumoperitoneum in Rx or CT and peritonitic abdominal exploration and may even be able to palpate the mass.

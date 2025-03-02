@@ -1,0 +1,10 @@
+QUESTION TYPE: ANESTHESIOLOGY, CRITICAL CARE AND EMERGENCIES
+CLINICAL CASE: 
+76-year-old woman with obesity and type 2 diabetes mellitus on metformin. She comes to the emergency room because for 3 days she presents fever of 38ºC, polyuria, dysuria, intense thirst and progressive decrease in the level of consciousness. Physical examination showed signs of dehydration, BP 95/54 mm Hg and no signs of neurological localization. The CBC shows leukocytosis, creatinine of 1.8 mg/dL and blood glucose of 855 mg/dL. What is the most likely diagnosis?
+1- Hyperglycemic hyperosmolar non-ketotic hyperglycemic coma.
+2- Cardiac failure.
+3- Subdural hematoma.
+4- Obstructive renal failure.
+5- Diabetic ketoacidosis with coma.
+CORRECT ANSWER: 1
+The question relates the case of a type 2 diabetic patient with hyperglycemia and decreased level of consciousness without neurological focality in the context of a urinary tract infection and who has developed acute renal failure of probable prerenal origin. Option 2 is immediately ruled out because the clinical picture is not one of heart failure. Option 3 is also discarded because it does not fit with the clinical picture and in addition HSD would give neurological symptoms with locality. Option 4 is discarded because obstructive renal failure does not give polyuria, dysuria or the rest of the clinical picture. Option 5 is less likely because diabetic ketoacidosis is more typical of type 1 DM. Therefore the correct option is 1.

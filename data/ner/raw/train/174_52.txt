@@ -1,0 +1,10 @@
+QUESTION TYPE: PNEUMOLOGY
+CLINICAL CASE: 
+A 67-year-old man consults for moderate exertional dyspnea of progressive onset in recent years. He has daily whitish expectoration and sometimes breath sounds, especially in winter with respiratory infections. He has been a smoker of about 20 cigarettes a day for the last 45 years. On examination he is eupneic, normocolored, with an oxygen saturation of 94%, and has generalized decreased vesicular murmur on chest auscultation as the only findings of interest. Chest X-ray shows an elongated cardiac silhouette, with signs of hyperinflation or pulmonary air trapping, without other alterations. Spirometry was performed with the following result: FVC 84%, FEV1 58%, FEV1/FVC 61%, unchanged after bronchodilator. Among those indicated, indicate the most appropriate treatment for this patient:
+1- Daily inhaled corticosteroid.
+2- Home oxygen therapy with portable oxygen source for ambulation.
+3- Oral leukotriene antagonist.
+4- Oral corticosteroid for three months.
+5- Inhaled tiotropium.
+CORRECT ANSWER: 5
+In a patient with a low symptomatic COPD that could probably be classified as GOLD 2, the starting treatment can be either with inhaled tiotropium or with a long-acting beta two. Therefore there is no doubt in the correct answer.

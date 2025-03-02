@@ -1,0 +1,10 @@
+QUESTION TYPE: GYNECOLOGY AND OBSTETRICS
+CLINICAL CASE: 
+20-year-old woman with ovarian tumor of 15 cm, solid-cystic, detected by ultrasound after presenting with unspecific abdominal symptoms. In the histopathological study of the corresponding specimen, teeth, hairs, areas of intestinal epithelium, areas of squamous epithelium (15%) and bronchial epithelium, as well as neuroectodermal and embryonic elements are found in several of the histological preparations. In reference to this case, point out the correct diagnosis:
+1- Teratocarcinoma.
+2- Immature teratoma.
+3- Mature cystic teratoma.
+4- Dysgerminoma.
+5- nan
+CORRECT ANSWER: 3
+Mature cystic teratoma (common in the ovary of the adult female). Mass with a large cyst occupying most of it; in its cavity there is sebaceous material and hairs. The wall, generally a few millimeters thick, has the structure of skin, with its epidermal surface towards the cavity. Because of this preponderant development of cutaneous structures it is usually called dermoid cyst. The tissues that compose the tumor are well differentiated (mature or adult type); apart from skin structures many other tissues can be observed, particularly in a thickening or spur that eminences into the cavity, in which there are often teeth, cartilage and bone.

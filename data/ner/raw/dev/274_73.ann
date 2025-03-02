@@ -1,0 +1,26 @@
+T1	Premise 48 195	A 52-year-old man with no concomitant diseases comes to the emergency department for melena of 24 hours evolution without hemodynamic repercussions
+T2	Premise 197 250	He denies taking nonsteroidal anti-inflammatory drugs
+T3	Premise 252 321	The hematocrit is 33% and the rest of the laboratory tests are normal
+T4	Premise 323 605	The upper gastrointestinal endoscopy performed urgently 6 hours after admission shows a normal stomach, without blood or hematic debris and an excavated ulcer of 8 mm in diameter in the anterior face of the duodenal bulb with "visible vessel" at its base and without active bleeding
+T5	Claim 653 907	In the initial endoscopy it is indicated to apply an endoscopic therapy and subsequently to establish endovenous treatment with high doses of a proton pump inhibitor. This strategy has been shown to reduce the risk of hemorrhagic recurrence and mortality
+T7	Claim 912 1155	In the initial endoscopy, given the absence of active bleeding, endoscopic therapy is not indicated. Subsequently, to reduce the risk of hemorrhagic recurrence, intravenous treatment with high doses of a proton pump inhibitor should be started
+T6	Claim 1160 1328	n initial endoscopy, endoscopic therapy is indicated. Subsequent treatment with high doses of a proton pump inhibitor has not been shown to be of any additional benefit
+T8	Claim 1333 1481	Since this is a complicated ulcer (hemorrhage) the best therapeutic option, once the hemorrhagic episode is resolved, is a vagotomy and pyloroplasty
+T9	Claim 1508 1590	This is a grade IIa ulcer (Forrest classification), with a high risk of recurrence
+T10	Claim 1592 1765	Therefore, endoscopic treatment and hospitalization with intravenous treatment with PPIs (in our setting it is usually omeprazole) for at least 72 hours is clearly indicated
+T11	Marker 1592 1601	Therefore
+R1	Support Ent1:T9 Ent2:T10	
+T12	Claim 1767 1851	Surgery is indicated in massive bleeding or bleeding refractory to medical treatment
+T13	Disease 133 139	melena
+R2	Attack Ent1:T1 Ent2:T12	
+T14	Treatment 1676 1680	PPIs
+T15	Treatment 1711 1721	omeprazole
+T16	Treatment 706 724	endoscopic therapy
+T17	Treatment 755 818	endovenous treatment with high doses of a proton pump inhibitor
+T18	Treatment 976 994	endoscopic therapy
+T19	Marker 998 1011	not indicated
+T20	Treatment 1073 1137	intravenous treatment with high doses of a proton pump inhibitor
+T21	Treatment 1181 1199	endoscopic therapy
+T22	Disease 1349 1379	complicated ulcer (hemorrhage)
+T23	Treatment 1456 1464	vagotomy
+T24	Treatment 1469 1481	pyloroplasty

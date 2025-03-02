@@ -1,0 +1,21 @@
+T1	Premise 39 372	Faced with a 49-year-old man, asymptomatic, with a family history of a father who died of prostate cancer, who in a routine company control is identified a PSA (Prostate Specific Antigen) of 5.9 ng / ml, with a ratio of free PSA / total PSA of 11% and that a rectal examination shows increased consistency in the right prostatic lobe
+T2	Claim 420 506	Suggest to the patient the performance of a transrectal ultrasound and prostate biopsy
+T3	Claim 511 544	Perform an abdominopelvic CT scan
+T4	Claim 549 630	Initiate treatment with 5 alpha Reductase Inhibitors to reduce PSA levels by half
+T5	Claim 635 698	Initiate combined treatment of LHRH analogues and antiandrogens
+T6	Claim 703 722	Perform a bone scan
+T7	Premise 742 809	The patient has a PSA >4 and a palpation with increased consistency
+T8	Claim 825 950	the need for a transrectal ultrasound-guided biopsy to diagnose whether it is Benign Prostatic Hyperplasia or Prostate Cancer
+T9	Marker 817 824	implies
+R1	Support Ent1:T7 Ent2:T8	
+R2	Support Ent1:T8 Ent2:T2	
+T10	Diagnostics 840 876	transrectal ultrasound-guided biopsy
+T11	Disease 903 931	Benign Prostatic Hyperplasia
+T12	Disease 935 950	Prostate Cancer
+R3	Support Ent1:T8 Ent2:T2	
+T13	Diagnostics 464 486	transrectal ultrasound
+T14	Diagnostics 491 506	prostate biopsy
+T15	Diagnostics 522 544	abdominopelvic CT scan
+T16	Treatment 558 630	treatment with 5 alpha Reductase Inhibitors to reduce PSA levels by half
+T17	Treatment 644 698	combined treatment of LHRH analogues and antiandrogens
+T18	Diagnostics 713 722	bone scan

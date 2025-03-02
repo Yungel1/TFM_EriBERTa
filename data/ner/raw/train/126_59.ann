@@ -1,0 +1,29 @@
+T1	Premise 63 281	A 65-year-old man, a retired office worker and smoker of 1 pack of cigarettes a day, comes to the clinic with a persistent, generally dry cough and progressive dyspnea of 2 years of evolution which is currently grade 2
+T2	Premise 283 316	The patient denies other symptoms
+T3	Premise 318 361	Physical examination shows no relevant data
+T4	Claim 399 443	Start treatment with inhaled bronchodilators
+T5	Claim 448 499	Chest X-ray and spirometry with bronchodilator test
+T6	Claim 504 534	Prescribe oral corticosteroids
+T7	Claim 539 555	Thoracic CT scan
+T8	Claim 560 595	Perform basal arterial blood gases.
+T9	Treatment 405 443	treatment with inhaled bronchodilators
+T10	Diagnostics 448 459	Chest X-ray
+T11	Diagnostics 464 499	spirometry with bronchodilator test
+T12	Treatment 514 534	oral corticosteroids
+T13	Diagnostics 539 555	Thoracic CT scan
+T14	Diagnostics 560 594	Perform basal arterial blood gases
+T15	Claim 614 699	The correct answer is 2 (Perform chest X-ray and spirometry with bronchodilator test)
+R1	Support Ent1:T15 Ent2:T5	
+T16	Marker 721 724	but
+T17	Claim 701 828	It is probably COPD but we must confirm it and assess the severity of the obstruction with spirometry before starting treatment
+T18	Disease 716 720	COPD
+R2	Support Ent1:T17 Ent2:T5	
+T19	Claim 830 1043	He is a patient at risk for lung cancer so it is mandatory to perform a chest X-ray to rule out this or other pathologies that would justify the symptoms, although most likely they are due to the debut of his COPD
+T20	Disease 1039 1043	COPD
+T21	Disease 858 869	lung cancer
+T22	Diagnostics 902 913	chest X-ray
+T23	Marker 931 933	or
+T24	Marker 985 993	although
+T25	Marker 1015 1021	due to
+R3	Support Ent1:T19 Ent2:T5	
+R4	Support Ent1:T1 Ent2:T5	

@@ -1,0 +1,22 @@
+T1	Premise 47 225	78-year-old woman with dementia and institutionalized is brought by her caregivers for significant abdominal pain with deterioration of general condition and abdominal distension
+T2	Premise 227 308	CBC shows leukocytosis, elevated hematocrit, renal failure and metabolic acidosis
+T3	Premise 310 339	ECG shows atrial fibrillation
+T4	Premise 341 436	Abdominal tomography shows edematous small bowel loops, with intestinal and portal accumulation
+T5	Claim 473 513	Perforation of gastric or duodenal ulcus
+T6	Claim 518 530	Biliary leak
+T7	Claim 535 586	Obstructive neoplasia of the sigma with perforation
+T8	Claim 591 610	Mesenteric ischemia
+T9	Claim 637 880	Typical case of acute mesenteric ischemia, which should be suspected in elderly patients with abdominal pain and distension of sudden onset, diarrhea or vomiting and who present cardiovascular risk factors, especially emboligenic heart disease
+T10	Disease 653 678	acute mesenteric ischemia
+R1	Support Ent1:T1 Ent2:T9	
+R2	Support Ent1:T3 Ent2:T9	
+R3	Support Ent1:T2 Ent2:T9	
+T11	Premise 882 1126	In this case we are given characteristic biochemical data (leukocytosis, metabolic acidosis due to lactic acid, hemoconcentration due to loss of fluid to the third space...) and imaging tests (dilated loops, pneumatosis, gas at portal level...)
+T12	Claim 1127 1160	suggestive of mesenteric ischemia
+T13	Disease 1141 1160	mesenteric ischemia
+R4	Support Ent1:T9 Ent2:T8	
+R5	Support Ent1:T12 Ent2:T8	
+T14	Disease 473 513	Perforation of gastric or duodenal ulcus
+T15	Disease 518 530	Biliary leak
+T16	Disease 535 586	Obstructive neoplasia of the sigma with perforation
+T17	Disease 591 610	Mesenteric ischemia

@@ -1,0 +1,10 @@
+QUESTION TYPE: HEMATOLOGY
+CLINICAL CASE: 
+A 35-year-old woman, taking contraceptives, comes to the emergency department with febrile syndrome and paresthesias in the left hemibody. Blood tests show Hb 7.5 g/dL, platelets 7,000/microl, normal leukocytes with normal differential count, LDH 1,200 IU/l, reticulocytes 10% (normal 0.5-2%), undetectable serum haptoglobin, negative direct Coombs' test and peripheral blood smear with schistocytes. Coagulation (prothrombin time and APTT) normal. Which of the following is the most likely diagnosis:
+1- Autoimmune hemolytic anemia.
+2- Thrombotic thrombocytopenic purpura.
+3- Evans syndrome (hemolytic anemia and immune thrombopenia).
+4- Idiopathic immune thrombocytopenia.
+5- nan
+CORRECT ANSWER: 2
+The fear of all on-call hematologists... that you will get a TTP. Because, although infrequent, it is the greatest hematologic emergency.  The clinical case is fairly typical. A young person with fever and neurological symptoms that make him go to the emergency department (he is on the run). Laboratory tests show anemia with evidence of hemolysis (increased LDH and retis, presence of schistocytes in peripheral blood) and severe thrombopenia. In addition, coagulation is normal. To distinguish it from the rest of things (although you should not hesitate...) it tells you that the coombs is negative. As a reminder: URGENT TREATMENT: PLASMATIC REPLACEMENTS. The diagnostic confirmation is the ADAMTS 13 deficit, but treatment is started before having that value, which is not usually done urgently. And, as we all know, these things usually come at night and/or weekends, to make things more difficult....

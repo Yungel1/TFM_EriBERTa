@@ -1,0 +1,18 @@
+T1	Premise 43 160	A 72-year-old patient comes to the emergency department for presenting with severe and significant lingual angioedema
+T2	Premise 162 246	She does not present associated urticaria and has no history of drug or food allergy
+T3	Premise 248 370	His personal history includes type 2 diabetes mellitus, dyslipidemia, hypertension, hypothyroidism and Parkinson's disease
+T4	Premise 372 462	She is on regular treatment with metformin, simvastatin, enalapril, thyroxine and levodopa
+T5	Claim 562 571	Enalapril
+T6	Claim 576 587	Simvastatin
+T7	Claim 592 621	Metformin or levodopa equally
+T8	Claim 626 634	Levodopa
+T9	Claim 661 751	Angioedema is a type of profound urticaria that can be of drug etiology (not IgE-mediated)
+T10	Disease 661 671	Angioedema
+T11	Disease 685 703	profound urticaria
+T12	Claim 756 850	in this case, ACEIs (such as enalapril) are considered the most frequent pharmacological cause
+T13	Claim 852 935	so in this case it would be the correct answer (if we speak in probabilistic terms)
+T14	Marker 852 854	so
+R1	Support Ent1:T9 Ent2:T12	
+R2	Support Ent1:T12 Ent2:T13	
+R3	Support Ent1:T13 Ent2:T5	
+R4	Support Ent1:T12 Ent2:T5	

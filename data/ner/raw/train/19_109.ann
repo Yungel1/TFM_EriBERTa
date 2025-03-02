@@ -1,0 +1,35 @@
+T1	Claim 830 881	In this case I believe that the correct answer is 5
+T2	Claim 702 726	Infectious mononucleosis
+T3	Claim 731 749	Allergic exanthema
+T4	Claim 754 775	P. falciparum malaria
+T5	Claim 780 793	Typhoid fever
+T6	Claim 798 810	Dengue fever
+T7	Disease 702 726	Infectious mononucleosis
+T8	Disease 731 749	Allergic exanthema
+T9	Disease 754 775	P. falciparum malaria
+T10	Disease 780 793	Typhoid fever
+T11	Disease 798 810	Dengue fever
+T12	Premise 911 989	although the clinical picture is suggestive, it does not present lymphocytosis
+T13	Marker 903 910	because
+T14	Marker 911 919	although
+T15	Claim 883 902	The 1 should not be
+R1	Support Ent1:T12 Ent2:T15	
+T16	Claim 991 1061	It does not seem to be an allergic exanthema from the clinical picture
+T17	Premise 1164 1243	What points to dengue, in addition to the clinical signs, is the plateletopenia
+R2	Attack Ent1:T12 Ent2:T2	
+T18	Premise 51 129	A 32-year-old woman has traveled to Cuba from where she arrived three days ago
+T19	Premise 131 277	The day after her return, she goes to her family doctor for high fever, intense arthromyalgia and headache that had started before the return trip
+T20	Premise 1067 1162	certainly she does not have symptoms or clinical signs compatible with malaria or typhoid fever
+T21	Premise 313 554	Three days later and with no improvement, he presented in the morning with a generalized pruritic maculo-papular rash, which was more intense on the lower limbs where it developed into petechiae, for which he went to the emergency department
+T22	Premise 599 662	platelets 75000/mm3 (htco 36%, leukocytes 4100 79% neutrophils)
+R3	Support Ent1:T17 Ent2:T1	
+R4	Attack Ent1:T16 Ent2:T3	
+R5	Attack Ent1:T20 Ent2:T4	
+R6	Attack Ent1:T20 Ent2:T5	
+R7	Support Ent1:T17 Ent2:T6	
+R8	Support Ent1:T22 Ent2:T6	
+T23	Disease 976 989	lymphocytosis
+T24	Disease 1138 1145	malaria
+T25	Disease 1149 1162	typhoid fever
+T26	Disease 1179 1185	dengue
+T27	Disease 1229 1243	plateletopenia

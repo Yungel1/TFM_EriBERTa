@@ -1,0 +1,22 @@
+T1	Premise 44 136	An 88-year-old man comes for consultation because he has fallen 3 times in the last 6 months
+T2	Premise 138 195	None of the falls was accompanied by dizziness or syncope
+T3	Premise 197 249	One fall occurred while he was walking in the garden
+T4	Premise 251 373	His medical history includes hypertension without postural changes in blood pressure, gout, osteoarthritis, and depression
+T5	Premise 375 408	She takes 5 medications regularly
+T6	Claim 491 502	Allopurinol
+T7	Claim 507 526	Hydrochlorothiazide
+T8	Claim 531 541	Lisinopril
+T9	Claim 546 556	Paroxetine
+T10	Claim 583 593	Paroxetine
+T11	Claim 622 753	both hydrochlorothiazide and lisinopril can also produce falls in the elderly, but they would generally be accompanied by dizziness
+T12	Marker 701 704	but
+R1	Attack Ent1:T11 Ent2:T7	
+R2	Attack Ent1:T11 Ent2:T8	
+R3	Support Ent1:T10 Ent2:T9	
+T13	Treatment 583 593	Paroxetine
+T14	Treatment 627 646	hydrochlorothiazide
+T15	Treatment 651 661	lisinopril
+T16	Treatment 491 502	Allopurinol
+T17	Treatment 507 526	Hydrochlorothiazide
+T18	Treatment 531 541	Lisinopril
+T19	Treatment 546 556	Paroxetine

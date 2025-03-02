@@ -1,0 +1,26 @@
+T1	Premise 44 106	A 13-year-old boy presents with subacute headache and diplopia
+T2	Premise 108 255	Neurologic examination shows vertical gaze palsy and MRI shows a contrast-enhancing lesion in the pineal region obstructing the aqueduct of Sylvius
+T3	Claim 290 302	Glioblastoma
+T4	Claim 307 322	Medulloblastoma
+T5	Claim 327 342	Germ cell tumor
+T6	Claim 347 357	Meningioma
+T7	Claim 384 454	Germinal tumors are the most frequent in children in the pineal region
+R1	Support Ent1:T2 Ent2:T7	
+R2	Support Ent1:T7 Ent2:T5	
+T8	Claim 456 543	They usually capitate homogeneously and cause triventricular hydrocephalus and Parinaud
+T9	Claim 545 601	Glioblastomas usually occur in adults at the lobar level
+R3	Attack Ent1:T1 Ent2:T9	
+R4	Attack Ent1:T2 Ent2:T9	
+R5	Attack Ent1:T9 Ent2:T3	
+T10	Claim 603 766	medulloblastomas are the most frequent malignant tumors at the posterior fossa level in children (vermis and roof of the IV ventricle) but rare at the pineal level
+T11	Marker 738 741	but
+R6	Attack Ent1:T2 Ent2:T10	
+R7	Attack Ent1:T10 Ent2:T4	
+T12	Claim 771 833	meningiomas are rare in children and also in the pineal region
+R8	Attack Ent1:T1 Ent2:T12	
+R9	Attack Ent1:T2 Ent2:T12	
+R10	Attack Ent1:T12 Ent2:T6	
+T13	Disease 290 302	Glioblastoma
+T14	Disease 307 322	Medulloblastoma
+T15	Disease 327 342	Germ cell tumor
+T16	Disease 347 357	Meningioma

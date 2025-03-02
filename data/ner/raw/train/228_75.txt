@@ -1,0 +1,10 @@
+QUESTION TYPE: CARDIOLOGY
+CLINICAL CASE: 
+In a patient with clinical signs of heart failure who presents with ascites disproportionately elevated in relation to peripheral edema, the most likely etiology would be:
+1- Severe aortic stenosis.
+2- Dilated cardiomyopathy with significant left ventricular dysfunction.
+3- Primary pulmonary hypertension.
+4- Obstructive hypertrophic cardiomyopathy.
+5- Constrictive pericarditis.
+CORRECT ANSWER: 5
+They tell us about clinical symptoms of right failure, with edema and ascites. Therefore, we rule out left heart failure: EAo, dilated with DSVI and a MHO. Of the two we are left with, in constrictive pericarditis we have increased filling pressures in right chambers, which cause retrograde pressure increase with hepatic congestion, ascites, edema, etc. On the contrary, in pulmonary hypertension, the tricuspid valve is responsible (a priori) for "containing" this overpressure.

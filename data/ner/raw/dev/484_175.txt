@@ -1,0 +1,10 @@
+QUESTION TYPE: CRITICAL CARE
+CLINICAL CASE: 
+An 18-year-old man arrives at the hospital emergency department transported by a basic life support unit. He has been hit by a car while riding a bicycle. On arrival he has a heart rate of 115 bpm, a blood pressure of 110/75 mmHg, a palpable radial pulse, a capillary refill of 2.5 seconds and a respiratory rate of 25 rpm. What do these data tell us:
+1- The patient has lost 15 to 30% of blood volume and requires volume replacement.
+2- She has lost more than 30% of volemia and needs volume and blood replacement.
+3- He has lost more than 40% of blood volume and will require surgical treatment.
+4- Has lost more than 50% of volemia and requires volume and blood replacement.
+5- nan
+CORRECT ANSWER: 1
+Technically the patient is in a grade II hemorrhage according to the ATLS classification, in principle this means a loss of between 750 and 1500mL of blood and the indicated action is resuscitation with crystalloids; however, in the guidelines for the care of severe polytraumatized patients, the early use of blood products is increasingly recommended, especially in borderline cases like this one, and in young patients, who may not be able to translate the severity of the blood loss until it becomes much more significant. I would therefore hesitate between options 1 and 2.

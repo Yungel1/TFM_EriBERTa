@@ -1,0 +1,10 @@
+QUESTION TYPE: GENERAL SURGERY
+CLINICAL CASE: 
+An 80-year-old woman comes to the emergency department with abdominal pain starting in the epigastrium and radiating later to the left iliac fossa. An abdominal CT scan is performed, showing inflammation of the sigmoid walls and a 2 cm mesenteric abscess. The treatment of choice is:
+1- Admission to the ward with absolute diet and broad-spectrum antibiotic treatment.
+2- Discharge colostomy.
+3- Drainage by laparoscopic surgery.
+4- Urgent surgery with sigmoidectomy and colorectal anastomosis.
+5- nan
+CORRECT ANSWER: 1
+In this question we are presented with a clinical picture whose manifestations are compatible with acute diverticulitis, already asked on numerous occasions previously. A case of acute diverticulitis complicated with small mesenteric abscess (< 2-3 cm) is presented. Abscesses should be drained by CT-guided percutaneous puncture, since the intra-abdominal approach can spread the contents into the abdominal cavity. However, in small abscesses with Hinchey grade I divertciulitis, in patients without great deterioration of the general condition as in the proposed case, they can be managed by conservative treatment with intravenous antiobiotic therapy and absolute diet, therefore the correct option is 1. The urgent surgical approach should be reserved for cases that present peritonitis (grade III, IV) by resection of the affected segment and primary anastomosis in stable patients or carry out the Hartamn intervention that includes resection with terminal colostomy and closure of the distal rectal stump performing anastomosis in a second surgical time.

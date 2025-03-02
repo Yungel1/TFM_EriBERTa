@@ -1,0 +1,15 @@
+T1	Premise 103 264	a 30-year-old woman who consults because she is a carrier of a premutation in the FMR1 gene, responsible for Fragile X syndrome, and who wishes to have offspring
+T2	Claim 299 379	All her male children will be carriers and, therefore, will manifest the disease
+T3	Marker 343 352	therefore
+T4	Claim 384 495	There is a phenomenon of genetic anticipation, so their offspring will present more severe and earlier symptoms
+T5	Marker 431 433	so
+T6	Claim 500 648	Preimplantation genetic diagnosis for sex selection of embryos by fluorescence in situ hybridization (FISH) is the best option for healthy offspring
+T7	Claim 653 751	50% of her daughters will be carriers, but will not present clinical manifestations of the disease
+T8	Marker 692 695	but
+T9	Claim 928 1312	Triplet expansion diseases, such as this one, can have the anticipation phenomenon whereby females with premutations (between 55-200 repeats) can have children with full mutations (more than 200 repeats of the triplet) and more obvious, more severe and/or earlier clinical, in both males and females (Fragile X syndrome, early ovarian failure, tremor/ataxia associated with Fragile X)
+R1	Support Ent1:T9 Ent2:T4	
+T10	Claim 778 844	Another classic MIR, asked in 2019 and in 2017, fragile X syndrome
+T11	Claim 846 926	Also, on the same concept as question 44, the phenomenon of genetic anticipation
+T12	Marker 846 850	Also
+R2	Support Ent1:T11 Ent2:T4	
+T13	Disease 826 844	fragile X syndrome

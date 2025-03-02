@@ -1,0 +1,26 @@
+T1	Premise 68 180	A 65-year-old woman who underwent hematopoietic precursor transplantation 30 days ago and has severe neutropenia
+T2	Premise 182 419	She starts with cough and hemoptotic expectoration in addition to fever and moderate exertional dyspnea that does not improve despite five days of treatment with amoxicillin-clavulanic acid (875/125 mg/8 h) and levofloxacin (500 mg/12 h)
+T3	Premise 421 501	Chest X-ray shows multiple ill-defined pulmonary nodules, some of them cavitated
+T4	Claim 578 594	Septic embolisms
+T5	Claim 599 631	Invasive pulmonary aspergillosis
+T6	Claim 636 674	Pneumonia due to Staphylococcus aureus
+T7	Claim 679 699	Systemic candidiasis
+T8	Premise 726 885	Patient on her 30th post-transplant day of hematopoietic precursor transplantation, in severe neutropenia who presents with cough with hemoptotic expectoration
+T9	Claim 887 947	This picture is usually seen in infection by Aspergillus spp
+R1	Support Ent1:T8 Ent2:T9	
+T10	Claim 949 1029	We can rule out infection by Staphylococcus aureus because of previous treatment
+R2	Support Ent1:T9 Ent2:T5	
+R3	Attack Ent1:T10 Ent2:T6	
+T11	Disease 578 594	Septic embolisms
+T12	Disease 599 631	Invasive pulmonary aspergillosis
+T13	Disease 636 674	Pneumonia due to Staphylococcus aureus
+T14	Marker 646 652	due to
+T15	Disease 679 699	Systemic candidiasis
+T16	Disease 919 947	infection by Aspergillus spp
+T17	Marker 956 964	rule out
+T18	Disease 965 999	infection by Staphylococcus aureus
+T19	Marker 1000 1010	because of
+R4	Support Ent1:T2 Ent2:T10	
+T20	Disease 1097 1101	MRSA
+T21	Claim 1031 1101	although we do not know if it raises the response also a possible MRSA
+T22	Marker 1031 1039	although

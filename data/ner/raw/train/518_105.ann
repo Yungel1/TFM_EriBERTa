@@ -1,0 +1,33 @@
+T1	Premise 59 249	A 24-year-old woman with a history of migraine, on propranolol and oral contraceptives, presents with severe dyspnea, hoarseness, rash, nausea and vomiting 30 minutes after taking metamizole
+T2	Premise 251 300	His blood pressure is 90/40 mmHg and SatO2 is 90%
+T3	Claim 364 374	Adrenaline
+T4	Claim 379 413	Adrenaline and dexchlorpheniramine
+T5	Claim 418 472	Adrenaline, dexchlorpheniramine and methylprednisolone
+T6	Claim 477 521	Adrenaline, dexchlorpheniramine and glucagon
+T7	Claim 548 693	We are faced with an anaphylactic reaction to metamizole, in which it is necessary to act quickly or the patient could progress to cardiac arrest
+R1	Support Ent1:T1 Ent2:T7	
+T8	Claim 695 851	It is important to assess the severity of the allergic reactions, since, in this case, early treatment is essential to prevent high mortality if not applied
+T9	Claim 853 1067	The treatment of choice is IM adrenaline (only switch to IV if anaphylaxis is refractory), which has been shown to increase survival, and administration can be repeated every 5-15 minutes if symptoms do not subside
+T10	Treatment 880 942	IM adrenaline (only switch to IV if anaphylaxis is refractory)
+T11	Claim 1069 1133	As adjuvant treatment, dexchlorpheniramine could be administered
+T12	Premise 1135 1217	In this particular case, since the patient was previously treated with propranolol
+T13	Claim 1219 1309	this indicates that the correct answer is 4, which includes the administration of glucagon
+R2	Support Ent1:T12 Ent2:T13	
+T14	Marker 1333 1340	because
+T15	Claim 1341 1477	patients taking beta-blockers can be resistant to treatment with adrenaline and develop refractory hypotension and prolonged bradycardia
+R3	Support Ent1:T15 Ent2:T13	
+R4	Support Ent1:T13 Ent2:T6	
+R5	Support Ent1:T9 Ent2:T6	
+R6	Support Ent1:T11 Ent2:T6	
+T16	Treatment 1301 1309	glucagon
+T17	Treatment 1092 1111	dexchlorpheniramine
+T18	Claim 1479 1597	The dose in adults is 1 to 2mg, IV or IM, which can be repeated in 5 minutes or followed by an infusion at 5-15mcg/min
+T19	Treatment 364 374	Adrenaline
+T20	Treatment 379 389	Adrenaline
+T21	Treatment 394 413	dexchlorpheniramine
+T22	Treatment 418 428	Adrenaline
+T23	Treatment 430 449	dexchlorpheniramine
+T24	Treatment 454 472	methylprednisolone
+T25	Treatment 477 487	Adrenaline
+T26	Treatment 489 508	dexchlorpheniramine
+T27	Treatment 513 521	glucagon

@@ -1,0 +1,45 @@
+T1	Premise 44 174	95-year-old woman living in a nursing home, independent for her basic activities of daily living, goes out to the garden for walks
+T2	Premise 176 267	She has a history of hypertension, dyslipidemia, osteoporosis and mild cognitive impairment
+T3	Premise 269 334	She suffers a fall when getting up at night to go to the bathroom
+T4	Premise 336 396	X-ray shows a displaced subcapital fracture of the right hip
+T5	Claim 436 456	Hip hemiarthroplasty
+T6	Claim 461 487	Trochanteric nail fixation
+T7	Claim 492 523	Fixation with cannulated screws
+T8	Claim 528 556	Conservative: bed-chair life
+T9	Premise 583 686	We are told of a case of a 95-year-old patient with a displaced intracapsular (subcapital) hip fracture
+T10	Claim 688 778	In this case, the surgical options may be the use of cannulated screws or hip arthroplasty
+R1	Support Ent1:T9 Ent2:T10	
+T11	Claim 780 847	Cannulated screws are reserved for cases of non-displaced fractures
+T12	Claim 849 863	Wrong answer 2
+R2	Attack Ent1:T11 Ent2:T10	
+R3	Support Ent1:T11 Ent2:T12	
+R4	Attack Ent1:T12 Ent2:T7	
+T13	Claim 865 946	so the most indicated option would be arthroplasty, in this case hemiarthroplasty
+T14	Claim 948 964	Correct answer 1
+T15	Marker 865 867	so
+R5	Support Ent1:T11 Ent2:T13	
+R6	Support Ent1:T10 Ent2:T13	
+R7	Support Ent1:T13 Ent2:T14	
+R8	Support Ent1:T14 Ent2:T5	
+T16	Claim 967 1025	Trochanteric pins are reserved for extracapsular fractures
+T17	Disease 1002 1025	extracapsular fractures
+T18	Disease 637 686	displaced intracapsular (subcapital) hip fracture
+T19	Treatment 762 778	hip arthroplasty
+T20	Treatment 734 758	use of cannulated screws
+T21	Disease 824 847	non-displaced fractures
+T22	Treatment 780 797	Cannulated screws
+T23	Treatment 903 915	arthroplasty
+T24	Treatment 930 946	hemiarthroplasty
+T25	Claim 1027 1041	Wrong answer 2
+T26	Treatment 967 984	Trochanteric pins
+R9	Support Ent1:T16 Ent2:T25	
+T27	Claim 1047 1161	conservative treatment is only considered in patients with very low functional demand or surgical contraindication
+T28	Claim 1163 1177	Wrong answer 4
+R10	Attack Ent1:T25 Ent2:T6	
+T29	Treatment 1047 1069	conservative treatment
+R11	Support Ent1:T27 Ent2:T28	
+R12	Attack Ent1:T28 Ent2:T8	
+T30	Treatment 436 456	Hip hemiarthroplasty
+T31	Treatment 461 487	Trochanteric nail fixation
+T32	Treatment 492 523	Fixation with cannulated screws
+T33	Treatment 528 556	Conservative: bed-chair life

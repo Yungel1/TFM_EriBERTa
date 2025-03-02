@@ -1,0 +1,11 @@
+T1	Premise 45 182	58-year-old male, obese, asymptomatic, moderate drinker, who presents a first baseline blood glucose of 153 mg/d with negative glycosuria
+T2	Premise 184 280	In the following weeks he has had two other baseline blood glucose readings of 118 and 136 mg/dl
+T3	Claim 388 439	Practice a blood glucose curve with 75 g of glucose
+T4	Claim 444 499	Already meets diagnostic criteria for diabetes mellitus
+T5	Claim 504 561	Request a determination of basal insulinemia or C-peptide
+T6	Claim 566 616	Request a determination of glycosylated hemoglobin
+T7	Claim 643 882	Diagnostic Criteria for DM according to ISPAD 2018 *Classic symptoms of diabetes with blood glucose > 200mgr/dl or: * Fasting glycemia ≥ 126mgr/dl (fasting at least 8h) or * Glycemia at 2h SOG ≥ 200mgr/dl (on 2 occasions) or * HbA1C ≥ 6.5%
+R1	Support Ent1:T7 Ent2:T4	
+T8	Diagnostics 388 439	Practice a blood glucose curve with 75 g of glucose
+T9	Diagnostics 504 561	Request a determination of basal insulinemia or C-peptide
+T10	Diagnostics 566 616	Request a determination of glycosylated hemoglobin

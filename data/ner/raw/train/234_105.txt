@@ -1,0 +1,10 @@
+QUESTION TYPE: HEMATOLOGY
+CLINICAL CASE: 
+A 72-year-old man comes to the Emergency Department with a pathological fracture of the left femur. After surgery, a diagnostic study is performed to determine the underlying pathology with the following findings: hemoglobin 9.5 g/dl, total proteins 11 g/dl, (VN: 6-8 g/dl), serum albumin 2 g/dl, (VN 3.5-5.0 g/dl), beta 2 microglobulin 6 mg/l (VN 1.1-2.4 mg/l), serum creatinine 1.8 mg/dl (VN: 0.1-1.4 mg/dl). Indicate which diagnostic tests would be necessary to confirm the most likely diagnosis:
+1- Radiological bone series and bone marrow aspirate.
+2- Serum and urine electrophoresis and renal function tests.
+3- Bone marrow aspirate and serum calcium concentration.
+4- Bone marrow aspirate and serum and urine electrophoresis.
+5- Biopsy of the pathological fracture and radiological bone series.
+CORRECT ANSWER: 4
+She is going to have myeloma. For diagnosis, a sample (bone marrow) and electrophoresis to determine the type of monoclonal peak. Then, for extension, prognostic value and to decide treatments, the rest, but once diagnosed.

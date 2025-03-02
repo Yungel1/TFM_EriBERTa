@@ -1,0 +1,49 @@
+T1	Premise 51 158	A 58-year-old man reported a weeks-long history of progressive, mildly painful skin lesions on his left arm
+T2	Premise 160 218	It had started as an erythematous lesion on his left thumb
+T3	Premise 220 289	He had visible reddish striae as connecting lines between the lesions
+T4	Premise 291 341	The patient had no fever or other general symptoms
+T5	Premise 343 410	He had been working in his garden but did not remember any injuries
+T6	Premise 412 472	The etiologic diagnosis was made by culture of a skin biopsy
+T7	Claim 534 572	Dermatophytosis by Microsporum gypseum
+T8	Claim 577 621	Cutaneous infection by Staphylococcus aureus
+T9	Claim 626 640	Sporotrichosis
+T10	Claim 645 689	Cutaneous infection by Mycobacterium marinum
+T11	Premise 716 823	The patient carries out an activity in contact with soil and plants (which are not provided free of charge)
+T12	Premise 825 941	The symptoms are chronic, which started distally (left thumb) and are affecting the ipsilateral arm (reddish striae)
+T13	Premise 943 974	There were no systemic symptoms
+T14	Premise 976 1051	They also comment that the diagnosis was made on the basis of a skin biopsy
+T15	Claim 1053 1183	Of the microorganisms discussed, Microsporum gypseum does not usually manifest dissemination of infection of a lymphangitic aspect
+T16	Claim 1185 1279	in general keratinophilic fungi (dermatophytes) do not have any ability to invade deep tissues
+T17	Marker 1281 1283	so
+T18	Claim 1284 1308	we ruled out this option
+T19	Marker 1287 1296	ruled out
+R1	Attack Ent1:T15 Ent2:T7	
+R2	Attack Ent1:T16 Ent2:T7	
+R3	Attack Ent1:T18 Ent2:T7	
+T20	Claim 1310 1550	Staphylococcus aureus infection can affect superficial and deep tissue layers, they can spread following a lymphangitic path, but it is not usual such a long evolution, it is usually acute (days) and usually accompanied by systemic symptoms
+T21	Marker 1436 1439	but
+T22	Marker 1552 1554	so
+T23	Claim 1555 1577	we discard this option
+R4	Support Ent1:T16 Ent2:T18	
+R5	Support Ent1:T15 Ent2:T18	
+R6	Support Ent1:T20 Ent2:T23	
+R7	Attack Ent1:T23 Ent2:T8	
+R8	Attack Ent1:T20 Ent2:T8	
+T24	Claim 1579 1739	Mycobacterium marinum (and not Mycobacterum marinum) is a non-tuberculous mycobacterium characterized by being environmental, opportunistic and photochromogenic
+T25	Claim 1741 1823	It has a slow growth, from 2 to 8 weeks, at a temperature ranging from 30 to 37 °C
+T26	Claim 1826 1965	t affects different species of fish in cold, warm, fresh or salt water, especially stagnant waters of fish tanks and pools without chlorine
+T27	Claim 1967 2108	Infection in humans occurs by direct contact with fish or contaminated water in the presence of a loss of continuity in the skin of the host.
+T28	Premise 2109 2181	Our patient has no history of exposure to fish or water (they don't say)
+T29	Marker 2183 2185	so
+T30	Claim 2186 2342	considering that usually the diagnosis is based on a high index of suspicion and specifically asking for this history, our case is far from this possibility
+R9	Support Ent1:T28 Ent2:T30	
+R10	Attack Ent1:T30 Ent2:T10	
+R11	Support Ent1:T27 Ent2:T30	
+T31	Claim 2344 2683	The Sporothrix schenckii complex is the causative agent of Sporotrichosis, this dimorphic fungus is located in the soil, the complex is formed by 5 species, S. schenckii sensu strictu, S. brasiliensis and S. globosa, capable of causing human and animal disease; the other two are S. mexicana and S. albicana not associated with any disease
+R12	Support Ent1:T11 Ent2:T31	
+T32	Claim 2685 2925	Patients are usually infected by exposure to soil by means of a sharp object (thorns, stems, animal claws, etc.) and have a slow evolution, affect deep tissues and their dissemination typically follows a pathway as described in the question
+R13	Support Ent1:T32 Ent2:T9	
+T33	Disease 534 572	Dermatophytosis by Microsporum gypseum
+T34	Disease 577 621	Cutaneous infection by Staphylococcus aureus
+T35	Disease 626 640	Sporotrichosis
+T36	Disease 645 689	Cutaneous infection by Mycobacterium marinum

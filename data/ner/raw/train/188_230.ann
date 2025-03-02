@@ -1,0 +1,41 @@
+T1	Premise 45 186	A 57-year-old patient had an acute myocardial infarction and has a blood test with cholesterol 312 mg/dl, LDL 241 mg/dl, HDL 29 and normal TG
+T2	Diagnostics 112 122	blood test
+T3	Disease 74 101	acute myocardial infarction
+T4	Premise 188 289	He smoked 30 cig/day, was not obese, his blood pressure was 145/90 mm Hg and he did not have diabetes
+T5	Disease 281 289	diabetes
+T6	Premise 291 404	When asked about family history, he mentioned that an uncle on his mother's side died suddenly at 53 years of age
+T7	Claim 450 564	Treat with statins until cholesterol is normalized and recommend healthy lifestyle (diet, exercise and no smoking)
+T8	Treatment 461 468	statins
+T9	Claim 569 697	Rule out hypothyroidism or other systemic disease, recommend a healthy lifestyle and treat with fibrates to normalize cholestero
+T10	Disease 578 592	hypothyroidism
+T11	Treatment 665 673	fibrates
+T13	Disease 735 757	secondary dyslipidemia
+T14	Marker 758 765	because
+T16	Diagnostics 786 806	family lipid profile
+T18	Disease 840 862	secondary dyslipidemia
+T19	Treatment 875 903	resins (resincholestyramine)
+T20	Treatment 908 916	fibrates
+T23	Disease 983 1005	secondary dyslipidemia
+T24	Treatment 1045 1052	statins
+T25	Claim 1230 1310	The treatment for hypercholesterolemia is statins so we rule out answers 2 and 4
+T26	Disease 1248 1268	hypercholesterolemia
+T27	Treatment 1272 1279	statins
+T28	Marker 1280 1282	so
+R1	Attack Ent1:T25 Ent2:T9	
+T29	Claim 1312 1474	The statin in a patient with cardiovascular disease (such as an AMI) is a lifelong treatment (we discard 1) since it is not taken until LDL levels are normalized.
+T30	Treatment 1316 1322	statin
+T31	Disease 1341 1363	cardiovascular disease
+T32	Disease 1376 1379	AMI
+T33	Marker 1420 1425	since
+R3	Attack Ent1:T29 Ent2:T7	
+T34	Claim 1475 1569	Between 3 and 5, 5 is more complete as it includes treatment and control of other risk factors
+T35	Marker 1511 1513	as
+T36	Claim 1571 1687	Ruling out secondary dyslipidemia is easy with the patient's clinical history and a blood test with thyroid function
+T17	Claim 831 969	Rule out secondary dyslipidemia, treat with resins (resincholestyramine) and fibrates and re-commend a healthy lifestyle. Prohibit alcohol
+T21	Claim 974 1116	Rule out secondary dyslipidemia, request a family study and treat with statins to maintain a good lipid profile. Control of other risk factors
+R2	Attack Ent1:T25 Ent2:T17	
+T12	Claim 703 826	It is not necessary to rule out secondary dyslipidemia because it is infrequent. A family lipid profile should be performed
+R4	Support Ent1:T34 Ent2:T21	
+R5	Support Ent1:T1 Ent2:T36	
+R6	Support Ent1:T4 Ent2:T36	
+R7	Support Ent1:T36 Ent2:T21	

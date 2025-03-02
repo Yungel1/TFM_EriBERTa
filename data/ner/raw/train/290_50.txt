@@ -1,0 +1,10 @@
+QUESTION TYPE: DERMATOLOGY, VENEREOLOGY AND PLASTIC SURGERY
+CLINICAL CASE: 
+A 58-year-old man referred a 3-week history of progressive, mildly painful skin lesions on his left arm. It had started as an erythematous lesion on his left thumb. He had visible reddish striae as connecting lines between the lesions. The patient had no fever or other general symptoms. He had been working in his garden but did not remember any injuries. The etiologic diagnosis was made by culture of a skin biopsy. What is the most likely causative agent of this process?
+1- Dermatophytosis due to Microsporum gypseum.
+2- Cutaneous infection by Staphylococcus aureus.
+3- Sporotrichosis.
+4- Cutaneous infection by Mycobacterium marinum.
+5- nan
+CORRECT ANSWER: 3
+The lesions with sporotrichoid or lymphocutaneous pattern described may correspond to sporotrichosis or aquarium granuloma, so the first two would be ruled out. The history of having been working in the garden points more to a sporotrichosis, although the fact that the question asks for the "causative agent" and not the name of the disease misleads a little, so that if we consider sporotrichosis in reality the answer should be Sporothrix schenckii Despite this, knowing that this question will be correct for many examinees although it is poorly worded -which cancels it directly- the challenge will not be promoted.

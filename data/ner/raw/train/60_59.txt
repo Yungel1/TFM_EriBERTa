@@ -1,0 +1,10 @@
+QUESTION TYPE: ANESTHESIOLOGY AND CRITICAL CARE
+CLINICAL CASE: 
+A 40-year-old male, foreign tourist, is referred to the ED for low level of consciousness, temperature of 37.7°C and dyspnea. He has no trauma. Several tests were performed. The most immediate is an ABE without oxygen, showing PH 7.33, PCO2 50, PO2 65, HCO3 27:
+1- PET SCAN.
+2- Lobar pneumonia.
+3- EAP.
+4- Alveolar hypoventilation.
+5- Bronchopneumonia.
+CORRECT ANSWER: 5
+Actually, it can be all of them, but the most frequent cause of acute uncompensated respiratory acidosis in a young person is bronchopneumonia.

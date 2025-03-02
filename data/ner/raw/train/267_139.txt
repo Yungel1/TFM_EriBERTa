@@ -1,0 +1,10 @@
+QUESTION TYPE: PNEUMOLOGY
+CLINICAL CASE: 
+In a patient with liver cirrhosis and ascites, who develops a pleural effusion with the following data in the pleural fluid: LDH 45 U/L (serum 220 U/L), pleural/serum protein ratio 0.3 and pleural/serum LDH ratio 0.2. What would be the appropriate attitude?
+1- The study of the fluid with cell count, glucose, pH, ADA, cholesterol and culture should be extended. ADA, cholesterol and culture.
+2- Blind pleural biopsy.
+3- Diagnostic videothoracoscopy.
+4- Empirical antibiotherapy for suspected parapneumonic effusion.
+5- Continue treatment of his liver disease.
+CORRECT ANSWER: 5
+They describe pleural fluid parameters of transudate, so if the patient is not in heart failure it is a hydropic decompensation. No other studies are needed.

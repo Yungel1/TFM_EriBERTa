@@ -1,0 +1,10 @@
+QUESTION TYPE: PNEUMOLOGY AND THORACIC SURGERY
+CLINICAL CASE: 
+A 65-year-old man, a retired office worker and smoker of 1 pack of cigarettes a day, comes to the clinic with a persistent, generally dry cough and progressive dyspnea of 2 years of evolution which is currently grade 2. The patient denies other symptoms. Physical examination shows no relevant data. The attitude to follow would be:
+1- Start treatment with inhaled bronchodilators.
+2- Chest X-ray and spirometry with bronchodilator test.
+3- Prescribe oral corticosteroids.
+4- Thoracic CT scan.
+5- Perform basal arterial blood gases.
+CORRECT ANSWER: 2
+The correct answer is 2 (Perform chest X-ray and spirometry with bronchodilator test). It is probably COPD but we must confirm it and assess the severity of the obstruction with spirometry before starting treatment. He is a patient at risk for lung cancer so it is mandatory to perform a chest X-ray to rule out this or other pathologies that would justify the symptoms, although most likely they are due to the debut of his COPD.

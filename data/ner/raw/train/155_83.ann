@@ -1,0 +1,25 @@
+T1	Premise 44 175	A 62-year-old man with a history of arterial hypertension under treatment with captopril, duodenal ulcer and uric acid urolithiasis
+T2	Disease 80 101	arterial hypertension
+T3	Treatment 108 132	treatment with captopril
+T4	Disease 134 148	duodenal ulcer
+T5	Disease 153 175	uric acid urolithiasis
+T6	Premise 177 265	He consults for typical podagra crisis similar to others presented in the last two years
+T7	Premise 267 306	Examination showed tophi in both pinnae
+T8	Premise 308 362	Analyses show uric acid 10.1 mg/dl, creatine 1.5 mg/dl
+T9	Diagnostics 308 316	Analyses
+T10	Treatment 441 467	treatment with allopurinol
+T11	Claim 472 525	Its use is second choice when uricosurics have failed
+T12	Claim 530 597	Its prolonged use is practically obligatory because there are tophi
+T13	Claim 602 717	Its introduction should be delayed until the current attack has resolved with anti-inflammatory drugs or colchicine
+T14	Claim 722 808	Its introduction should be gradual up to a dose that achieves a uricemia below 6 mg/dL
+T15	Claim 813 921	In the first months of treatment it is advisable to associate low doses of colchicine to prevent new attacks
+T16	Treatment 680 717	anti-inflammatory drugs or colchicine
+T17	Treatment 888 898	colchicine
+T18	Treatment 502 513	uricosurics
+T19	Claim 941 1029	Allopurinol is always the treatment of choice, especially in the case of tophaceous gout
+T20	Treatment 941 952	Allopurinol
+T21	Claim 1031 1121	Moreover, in this case, uricosuric acid could worsen urolithiasis by increasing uricosuria
+T22	Marker 1031 1039	Moreover
+T23	Disease 1084 1096	urolithiasis
+R1	Support Ent1:T19 Ent2:T11	
+R2	Support Ent1:T21 Ent2:T19	

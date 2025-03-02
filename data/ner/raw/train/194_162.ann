@@ -1,0 +1,25 @@
+T2	Premise 188 260	Physical examination showed marked splenomegaly and mucocutaneous pallor
+T3	Diagnostics 188 208	Physical examination
+T4	Premise 262 497	Complementary tests include: hemoglobin 8.5 mg/dL, hematocrit 26%, MCV 86 fL, MCH 29 pg, leukocytes 2800/mL with 300 neutrophils /ml, platelets 54000/ml, GOT 85 U/l, GPT92 U/l and polyclonal hypergammaglobulinemia in serum proteinogram
+T5	Diagnostics 262 281	Complementary tests
+T6	Claim 577 605	Acute lymphoblastic leukemia
+T7	Claim 610 628	Burkitt's lymphoma
+T8	Claim 633 655	Visceral leishmaniasis
+T9	Claim 660 680	Miliary tuberculosis
+T10	Claim 685 700	Chronic malaria
+T11	Disease 577 605	Acute lymphoblastic leukemia
+T12	Disease 610 628	Burkitt's lymphoma
+T13	Disease 633 655	Visceral leishmaniasis
+T14	Disease 660 680	Miliary tuberculosis
+T15	Disease 685 700	Chronic malaria
+T16	Claim 720 809	Data such as pancytopenia and hypergammaglobulinemia are very characteristic of kala-azar
+T17	Disease 800 809	kala-azar
+R1	Support Ent1:T4 Ent2:T16	
+R2	Support Ent1:T16 Ent2:T8	
+T18	Claim 811 939	The origin of the girl is also indicative of this diagnosis, although it is a disease that also occurs in the Mediterranean area
+T19	Marker 872 880	although
+T1	Premise 42 75	A 3-year-old girl from Bangladesh
+T20	Premise 89 186	intermittent febrile episodes of 3 weeks' duration, associated with weakness and loss of appetite
+R3	Support Ent1:T1 Ent2:T18	
+T21	Claim 941 1031	In the differential diagnosis, it is important to keep in mind the possibility of leukosis
+T22	Disease 1024 1032	eukosis.

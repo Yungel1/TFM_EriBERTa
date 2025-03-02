@@ -1,0 +1,10 @@
+QUESTION TYPE: HEMATOLOGY
+CLINICAL CASE: 
+A 35-year-old patient who, due to hematemesis due to ulcus, receives a transfusion of 2 packed red blood cells. 5-10 minutes after starting the transfusion, she begins with fever, chills, hypotension and pain in the lumbar region. What would be the most likely diagnosis?
+1- Bacterial contamination of the blood.
+2- Febrile reaction secondary to transfusion.
+3- Febrile reaction due to plasma contaminating red blood cells.
+4- Hemolytic transfusion reaction.
+5- nan
+CORRECT ANSWER: 4
+Acute hemolytic transfusion reactions can occur within minutes. Clinically they are characterized by chills, fever, urticaria, tachycardia, nausea and vomiting, lumbar pain, hemorrhage due to disseminated intravascular coagulation (DIC)..... We are told of a patient who, within minutes of starting a transfusion, presented with an acute and very serious condition (with shock). Such an acute and severe situation only fits option 4.

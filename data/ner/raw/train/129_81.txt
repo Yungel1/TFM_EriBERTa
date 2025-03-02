@@ -1,0 +1,10 @@
+QUESTION TYPE: NEUROLOGY AND NEUROSURGERY
+CLINICAL CASE: 
+A 78-year-old male consults for a year-long history of progressive cognitive impairment with memory and orientation lapses. His family reports recurrent visual hallucinations, occasional falls and striking motor slowing. What is the most likely diagnosis?
+1- Multi-infarct vascular dementia.
+2- Alzheimer's type dementia.
+3- Dementia with diffuse Lewy bodies.
+4- Frontotemporal dementia.
+5- Normal pressure hydrocephalus.
+CORRECT ANSWER: 3
+Dementia with visual hallucinations at the beginning of the course (in the first 2 years) is very suggestive of Lewy bodies, and is the guiding symptom in these questions. If we add to this the falls and motor slowing suggestive of parkinsonism, it makes the question easier. Therefore, number 3 is correct.

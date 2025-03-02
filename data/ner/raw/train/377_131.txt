@@ -1,0 +1,10 @@
+QUESTION TYPE: NEUROLOGY
+CLINICAL CASE: 
+A 65-year-old female patient debuted two years earlier with an apraxia of speech and has developed rigid-akinetic parkinsonism predominantly in the right hemibody with superimposed myoclonias and alien hand or foreign limb phenomenon.What diagnosis do you consider most likely?
+1- Parkinson's disease.
+2- Corticobasal degeneration.
+3- Alzheimer's disease.
+4- Huntington's disease.
+5- nan
+CORRECT ANSWER: 2
+As it is described as an apraxic phenomenon followed by an asymmetric rigid-akinetic parkinsonism and with superimposed myoclonias, it is typical of corticobasal degeneration. Parkinson's disease cannot be because they do not present apraxia as initial feature, Alzheimer's disease does not present an asymmetric parkinsonism and the typical Huntinton's disease is not of so old people and when it debuts with advanced age it behaves like a chorea.

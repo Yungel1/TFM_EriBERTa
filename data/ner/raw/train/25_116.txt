@@ -1,0 +1,10 @@
+QUESTION TYPE: INFECTIOUS
+CLINICAL CASE: 
+A 40-year-old woman is admitted to the Emergency Department with a fever of 38ºC and right lumbar pain. The CBC shows 25000 leukocytes/mm3 with left deviation and an abdominal ultrasound shows a coralliform lithiasis. What microorganism do we expect to find?
+1- Escherichia coli.
+2- Enterococcus faecalis.
+3- Salmonella typhi.
+4- Candida albicans.
+5- Proteus mirabilis.
+CORRECT ANSWER: 5
+Epidemiology question shared with URO. Coraliform lithiasis are associated with urea-folding germs: Proteus in the first place, Pseudomonas, Klebsiella and some staphylococci.

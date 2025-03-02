@@ -1,0 +1,21 @@
+T1	Premise 43 328	A 60-year-old man on carbamazepine treatment for epilepsy presenting with fever (38.8°C), odynophagia, conjunctivitis, brownish skin lesions spread over a large body surface, target-like in appearance and accompanied by epidermal detachment (greater than 30%) at the slightest friction
+T2	Claim 397 437	Acute urticaria of pharmacological cause
+T3	Claim 442 485	Erythema minor exudative secondary to drugs
+T4	Claim 490 530	Pharmacological Stevens-Johnson syndrome
+T5	Claim 535 561	Epidermal toxic necrolysis
+T6	Claim 588 699	We are dealing with a severe patient, with target lesions and Nikolsky's sign in > 30% of the body surface area
+R1	Support Ent1:T1 Ent2:T6	
+T7	Claim 701 822	Together with the history of treatment with carbamazepine, the suspicion will be of toxic epidermal necrolysis (answer 4)
+R2	Support Ent1:T7 Ent2:T5	
+R3	Support Ent1:T6 Ent2:T7	
+T8	Claim 824 996	If the epidermal detachment is less than 10% then we would be dealing with Stevens-Johnson (and intermediate cases are referred to as overlap, since it is a whole spectrum)
+R4	Attack Ent1:T1 Ent2:T8	
+R5	Attack Ent1:T8 Ent2:T4	
+T9	Disease 899 914	Stevens-Johnson
+T10	Disease 785 811	toxic epidermal necrolysis
+T11	Claim 998 1071	Incidentally, we would recommend immediate admission to a major burn unit
+R6	Support Ent1:T7 Ent2:T11	
+T12	Disease 397 437	Acute urticaria of pharmacological cause
+T13	Disease 442 485	Erythema minor exudative secondary to drugs
+T14	Disease 490 530	Pharmacological Stevens-Johnson syndrome
+T15	Disease 535 561	Epidermal toxic necrolysis

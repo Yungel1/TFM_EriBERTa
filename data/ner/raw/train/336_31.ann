@@ -1,0 +1,19 @@
+T1	Premise 57 192	A 20-year-old woman with a 15-cm solid-cystic ovarian tumor detected by ultrasound after presenting with nonspecific abdominal symptoms
+T2	Premise 194 466	In the histopathological study of the corresponding specimen, teeth, hairs, areas of intestinal epithelium, areas of squamous epithelium (15%) and bronchial epithelium, as well as neuroectodermal and embryonal elements are found in several of the histological preparations
+T3	Claim 531 546	Teratocarcinoma
+T4	Claim 551 568	Immature teratoma
+T5	Claim 573 595	Mature cystic teratoma
+T6	Claim 600 612	Dysgerminoma
+T7	Claim 639 714	Mature cystic teratoma is a common benign tumor of the ovary in adult women
+T8	Claim 716 797	The tissues that make up the tumor are well differentiated (mature or adult-type)
+T9	Claim 799 982	apart from cutaneous structures many other tissues can be seen, particularly in a thickening or spur that eminences into the cavity, in which there are often teeth, cartilage and bone
+R1	Support Ent1:T2 Ent2:T9	
+R2	Support Ent1:T1 Ent2:T8	
+R3	Support Ent1:T8 Ent2:T7	
+R4	Support Ent1:T9 Ent2:T7	
+R5	Support Ent1:T7 Ent2:T5	
+T10	Disease 531 546	Teratocarcinoma
+T11	Disease 551 568	Immature teratoma
+T12	Disease 573 595	Mature cystic teratoma
+T13	Disease 600 612	Dysgerminoma
+T14	Disease 639 661	Mature cystic teratoma

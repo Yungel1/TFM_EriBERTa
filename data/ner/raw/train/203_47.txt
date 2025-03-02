@@ -1,0 +1,10 @@
+QUESTION TYPE: GENERAL SURGERY
+CLINICAL CASE: 
+55-year-old woman, operated on for appendicitis 24 years ago, who comes in because while previously well, she has started with repeated vomiting after breakfast, about 12 hours ago, associated with abdominal distention. She presented a diarrhea stool a few hours after the onset of the symptoms. Examination revealed abdominal distension, tympanism and increased bowel sounds, but no peritoneal irritation. Laboratory tests showed no abnormalities. The abdominal X-ray showed dilatation of the small bowel loops, without gas in the rectal ampulla. Regarding this case it is true that:
+1- This is a picture of intestinal flange obstruction requiring emergency laparotomy.
+2- Most likely we are facing a case of obstruction at the level of the large intestine.
+3- The fact that the patient presented a diarrheal stool allows us to exclude the diagnosis of intestinal obstruction. Further imaging studies are necessary to ensure a diagnosis.
+4- We should indicate the practice of a decompressive colonoscopy.
+5- Initial management should be conservative, with serum therapy, nasogastric aspiration and periodic clinical, analytical and radiographic monitoring.
+CORRECT ANSWER: 5
+This is a typical description of a picture of intestinal obstruction due to bridging or adhesions due to previous surgery. The correct answer is 5 and not 1 because most of these situations resolve spontaneously with conservative treatment.

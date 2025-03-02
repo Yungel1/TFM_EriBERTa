@@ -1,0 +1,17 @@
+T1	Premise 42 166	46-year-old woman with a history of rheumatic valve disease, requiring mitral valve replacement with a mechanical prosthesis
+T2	Premise 168 216	The initial postoperative evolution is favorable
+T3	Marker 218 225	However
+T4	Premise 218 358	However, after starting treatment with acenocoumarol, she develops a picture of skin necrosis affecting the abdominal region and extremities
+T5	Claim 426 449	Antithrombin deficiency
+T6	Claim 454 469	Factor V Leiden
+T7	Claim 474 494	Hyperhomocysteinemia
+T8	Claim 499 519	Protein C deficiency
+T9	Claim 546 755	Warfarin-induced skin necrosis is a rare and serious adverse effect of oral anticoagulant therapy, occurring in only 0.01 to 0.1% of patients and is especially related to coagulation protein C and S deficiency
+R1	Support Ent1:T9 Ent2:T8	
+T10	Disease 546 576	Warfarin-induced skin necrosis
+T11	Disease 717 755	coagulation protein C and S deficiency
+T12	Disease 426 449	Antithrombin deficiency
+T13	Disease 454 469	Factor V Leiden
+T14	Disease 474 494	Hyperhomocysteinemia
+T15	Disease 499 519	Protein C deficiency
+R2	Support Ent1:T4 Ent2:T9	

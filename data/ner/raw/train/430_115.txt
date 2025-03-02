@@ -1,0 +1,10 @@
+QUESTION TYPE: INFECTIOUS DISEASES AND MICROBIOLOGY
+CLINICAL CASE: 
+A 65-year-old woman who underwent hematopoietic precursor transplantation 30 days ago and has severe neutropenia. She starts with cough and hemoptotic expectoration in addition to fever and moderate exertional dyspnea that does not improve despite five days of treatment with amoxicillin-clavulanic acid (875/125 mg/8 h) and levofloxacin (500 mg/12 h). Chest X-ray shows multiple ill-defined pulmonary nodules, some of them cavitated. Among the following, which is the most probable diagnosis of suspicion?
+1- Septic embolisms.
+2- Invasive pulmonary aspergillosis.
+3- Pneumonia due to Staphylococcus aureus.
+4- Systemic candidiasis.
+5- nan
+CORRECT ANSWER: 2
+Patient on her 30th post-transplant day of hematopoietic precursor transplantation, in severe neutropenia who presents with cough with hemoptotic expectoration. This picture is usually seen in infection by Aspergillus spp. We can rule out infection by Staphylococcus aureus because of previous treatment, although we do not know if it raises the response also a possible MRSA.

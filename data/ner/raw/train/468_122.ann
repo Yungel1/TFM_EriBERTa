@@ -1,0 +1,35 @@
+T1	Premise 67 241	A 70-year-old man consults for non-radiating lumbar pain of 1 week's duration, of progressive intensity, accompanied by marked limitation of spinal mobility and febrile fever
+T2	Premise 243 286	The lumbar spine X-ray shows no alterations
+T3	Claim 356 401	Vertebral crush with computed tomography (CT)
+T4	Claim 406 447	Bone metastases with technetium bone scan
+T5	Claim 452 514	Vertebral ankylosing hyperostosis with dorsolumbar spine x-ray
+T6	Claim 519 582	Pyogenic spondylodiscitis with magnetic resonance imaging (MRI)
+T7	Claim 609 636	We suspect spondylodiscitis
+T8	Disease 620 636	spondylodiscitis
+T9	Premise 639 735	the febrile fever and the limitation of mobility of the spine with the acute course give the key
+R1	Support Ent1:T9 Ent2:T7	
+T10	Claim 743 772	the indicated test is the MRI
+R2	Support Ent1:T7 Ent2:T10	
+R3	Support Ent1:T10 Ent2:T6	
+T11	Claim 774 961	"The most demonstrative test is magnetic resonance imaging (MRI), which is positive even in the first 2 weeks of the picture, which facilitates early diagnosis, with a sensitivity of 90%"
+R4	Support Ent1:T11 Ent2:T10	
+T12	Claim 963 1081	Vertebral crushing would be seen in the simple X-ray, as well as vertebral ankylosing hyperostosis and many metastases
+T13	Premise 1083 1192	In addition, there is no data in the history pointing to bone metastases (oncologic history, weight loss etc)
+R5	Attack Ent1:T13 Ent2:T4	
+R6	Attack Ent1:T12 Ent2:T3	
+T14	Disease 356 371	Vertebral crush
+T15	Diagnostics 377 401	computed tomography (CT)
+T16	Disease 406 421	Bone metastases
+T17	Diagnostics 427 447	technetium bone scan
+T18	Diagnostics 1010 1015	X-ray
+T19	Diagnostics 769 772	MRI
+T20	Diagnostics 806 838	magnetic resonance imaging (MRI)
+T21	Disease 1028 1061	vertebral ankylosing hyperostosis
+T22	Disease 963 981	Vertebral crushing
+T23	Disease 1071 1081	metastases
+T24	Disease 1140 1155	bone metastases
+T25	Disease 452 485	Vertebral ankylosing hyperostosis
+T26	Diagnostics 491 514	dorsolumbar spine x-ray
+T27	Disease 519 544	Pyogenic spondylodiscitis
+T28	Diagnostics 550 582	magnetic resonance imaging (MRI)
+R7	Support Ent1:T7 Ent2:T6	

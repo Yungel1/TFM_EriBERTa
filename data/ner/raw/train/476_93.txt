@@ -1,0 +1,10 @@
+QUESTION TYPE: CRITICAL CARE
+CLINICAL CASE: 
+A 58-year-old hypertensive man comes to the emergency department for a 30-second syncope while jogging, with spontaneous recovery and no sequelae. Blood pressure is 135/65 mmHg. Cardiac auscultation shows a loud, intense systolic murmur, which is reduced with Valsalva maneuvers and an attenuated second tone. The ECG shows sinus rhythm at 72 bpm, with criteria of left ventricular hypertrophy and inverted T waves in anterior face. Point out the correct statement:
+1- The clinical picture suggests pulmonary thromboembolism.
+2- The data provided indicate hypertrophic cardiomyopathy with severe obstruction of the left ventricular outflow tract.
+3- These data correspond to severe aortic stenosis.
+4- Aortic dissection should be excluded by contrast-enhanced computed tomography.
+5- nan
+CORRECT ANSWER: 3
+The data provided on the characteristics of the murmur (it DECREASES with Valsalva) and the data on left ventricular hypertrophy, lead us to the diagnosis of severe aortic stenosis.

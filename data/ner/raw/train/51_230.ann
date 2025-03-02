@@ -1,0 +1,27 @@
+T1	Claim 261 320	Administer hepatitis B vaccine at birth. Artificial feeding
+T2	Claim 325 426	Vaccination and immunoglobulins should be administered at birth. Breastfeeding from one month onwards
+T3	Claim 431 484	Immunoglobulins at birth and artificial breastfeeding
+T4	Claim 489 547	Vaccination and immunoglobulins at birth. Maternal feeding
+T5	Claim 552 596	Artificial feeding and isolation for 4 weeks
+T6	Claim 616 639	The correct answer is 4
+T7	Claim 641 801	Children born to HBV carrier mothers should be administered hepatitis B vaccine and immunoglobulin at different puncture sites within the first 24 hours of life
+R1	Support Ent1:T7 Ent2:T6	
+T8	Premise 42 112	37-week pregnant woman with positive hepatitis B virus surface antigen
+T9	Premise 803 897	Although the virus is excreted in breast milk, the risk of infection by this route is very low
+T10	Marker 803 811	Although
+T11	Marker 902 911	therefore
+R2	Support Ent1:T9 Ent2:T7	
+T12	Treatment 272 300	hepatitis B vaccine at birth
+T13	Treatment 325 388	Vaccination and immunoglobulins should be administered at birth
+T14	Treatment 431 454	Immunoglobulins at birt
+T15	Treatment 489 529	Vaccination and immunoglobulins at birth
+T16	Treatment 302 320	Artificial feeding
+T17	Treatment 390 426	Breastfeeding from one month onwards
+T18	Treatment 460 484	artificial breastfeeding
+T19	Treatment 531 547	Maternal feeding
+T20	Treatment 552 570	Artificial feeding
+T21	Treatment 575 596	isolation for 4 weeks
+T22	Claim 912 968	it is not currently a contraindication for breastfeeding
+R3	Support Ent1:T22 Ent2:T6	
+T23	Treatment 701 720	hepatitis B vaccine
+T24	Treatment 725 739	immunoglobulin

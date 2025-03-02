@@ -1,0 +1,10 @@
+QUESTION TYPE: CRITICAL, PALLIATIVE AND EMERGENCY CARE
+CLINICAL CASE: 
+A 70-year-old female patient is admitted to the ICU after suffering anterior AMI treated by coronary angioplasty and stent placement in the anterior descending artery. Four days later, she suddenly presents hypotension that requires vigorous volume support, initiation of vasoactive drugs, orotracheal intubation and connection to mechanical ventilation. Physical examination revealed a murmur not previously present. Suspecting a mechanical complication of the infarction, transthoracic echocardiography showed pericardial effusion. Mark the CORRECT answer:
+1- Mortality with medical treatment is 20%.
+2- In case of free wall rupture, there is an oxymetric jump in the right ventricle in the Swan-Ganz catheterization.
+3- In case of free wall rupture, there is no palpable frémito.
+4- Mechanical complications usually appear on the first post-infarction day.
+5- nan
+CORRECT ANSWER: 3
+Mortality is not so low, the oximetric jump occurs in the case of septum rupture, as well as fremitus (hence the correct answer is 3) and complications can occur up to the first week.

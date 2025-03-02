@@ -1,0 +1,10 @@
+QUESTION TYPE: NEPHROLOGY
+CLINICAL CASE: 
+A 35-year-old man presenting hematuria after respiratory infections for several years, a blood test shows creatinine 1 mg/dl with no other alterations and urine hematocytes 50/field being 80% dysmorphic, with proteinuria of 0.8 grams in 24 hours. What is the most likely diagnosis?
+1- Minimal change nephropathy.
+2- Membranous glomerulonephritis.
+3- IgA nephropathy.
+4- Proliferative and diffuse glomerulonephritis.
+5- Focal and primary segmental glomerulosclerosis.
+CORRECT ANSWER: 3
+The correct answer is: 3. IgA nephropathy. Given that the clinical presentation of this nephropathy appears in a very unspecific way, to identify the responsible disease we must rely on its epidemiology. Since he is a young male, with a history of previous respiratory infections, a relationship between these infections and renal pathology is established. Based on this we think about IgA nephropathy, which besides being the most frequent glomerulonephritis, it is presented in most of the cases as described.

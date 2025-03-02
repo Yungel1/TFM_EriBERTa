@@ -1,0 +1,29 @@
+T1	Premise 42 137	A 67-year-old man consults for moderate exertional dyspnea of progressive onset in recent years
+T2	Premise 139 251	He has daily whitish expectoration and sometimes breath sounds, especially in winter with respiratory infections
+T3	Premise 253 324	He has been a smoker of about 20 cigarettes a day for the last 45 years
+T4	Premise 326 505	On examination he is eupneic, normocolored, with an oxygen saturation of 94%, and has generalized decreased vesicular murmur on chest auscultation as the only findings of interest
+T5	Diagnostics 454 472	chest auscultation
+T6	Premise 507 639	Chest X-ray shows an elongated cardiac silhouette, with signs of hyperinflation or pulmonary air trapping, without other alterations
+T7	Diagnostics 507 518	Chest X-ray
+T8	Premise 641 756	Spirometry was performed with the following result: FVC 84%, FEV1 58%, FEV1/FVC 61%, unchanged after bronchodilator
+T9	Treatment 742 756	bronchodilator
+T10	Diagnostics 641 651	Spirometry
+T11	Claim 842 870	Daily inhaled corticosteroid
+T12	Treatment 842 870	Daily inhaled corticosteroid
+T13	Claim 875 937	Home oxygen therapy with portable oxygen source for ambulation
+T14	Treatment 875 937	Home oxygen therapy with portable oxygen source for ambulation
+T15	Claim 942 969	Oral leukotriene antagonist
+T16	Treatment 942 969	Oral leukotriene antagonist
+T17	Claim 974 1010	Oral corticosteroid for three months
+T18	Treatment 974 1010	Oral corticosteroid for three months
+T19	Claim 1015 1033	Inhaled tiotropium
+T20	Treatment 1015 1033	Inhaled tiotropium
+T21	Claim 1053 1230	In a patient with a low symptomatic COPD that could probably be classified as GOLD 2, the starting treatment can be either with inhaled tiotropium or with a long-acting beta two
+R1	Support Ent1:T21 Ent2:T19	
+T22	Disease 1089 1093	COPD
+T23	Treatment 1181 1199	inhaled tiotropium
+T24	Treatment 1210 1230	long-acting beta two
+R2	Support Ent1:T4 Ent2:T21	
+R3	Support Ent1:T1 Ent2:T21	
+R4	Support Ent1:T2 Ent2:T21	
+R5	Support Ent1:T6 Ent2:T21	

@@ -1,0 +1,16 @@
+T1	Premise 60 191	A 60-year-old, insulin-dependent diabetic woman presents with right-sided, nocturnal-predominant omalgia of several weeks' duration
+T2	Premise 193 223	She does not report any trauma
+T3	Premise 225 325	Physical examination shows active and passive limitation of all the arcs of movement of the shoulder
+T4	Claim 405 471	A malignant tumor located in the proximal epiphysis of the humerus
+T5	Claim 476 508	Septic arthritis of the shoulder
+T6	Claim 513 532	Adhesive capsulitis
+T7	Claim 537 587	A degenerative acromioclavicular arthrosis process
+T8	Claim 614 666	Everything points to adhesive capsulitis, as you say
+R1	Support Ent1:T8 Ent2:T6	
+T9	Claim 668 710	The age, the sex, the clinic... the DM....
+R2	Support Ent1:T9 Ent2:T8	
+R3	Support Ent1:T1 Ent2:T9	
+T10	Disease 407 471	malignant tumor located in the proximal epiphysis of the humerus
+T11	Disease 476 508	Septic arthritis of the shoulder
+T12	Disease 513 532	Adhesive capsulitis
+T13	Disease 539 587	degenerative acromioclavicular arthrosis process

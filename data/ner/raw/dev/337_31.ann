@@ -1,0 +1,18 @@
+T1	Premise 57 192	20-year-old woman with ovarian tumor of 15 cm, solid-cystic, detected by ultrasound after presenting with unspecific abdominal symptoms
+T2	Premise 194 466	In the histopathological study of the corresponding specimen, teeth, hairs, areas of intestinal epithelium, areas of squamous epithelium (15%) and bronchial epithelium, as well as neuroectodermal and embryonic elements are found in several of the histological preparations
+T3	Claim 531 546	Teratocarcinoma
+T4	Claim 926 974	Mature teratoma is a tumor of ovarian germ cells
+T5	Claim 551 568	Immature teratoma
+T6	Claim 600 612	Dysgerminoma
+T7	Claim 573 595	Mature cystic teratoma
+T8	Claim 639 678	The answer is 3, mature cystic teratoma
+R1	Support Ent1:T8 Ent2:T7	
+T9	Claim 680 924	This is due to the characteristics of the tumor: mature teratomas are constituted by adult tissues, coming from the three embryonic leaves, with a clear predominance of ectodermal elements (epidermis, pilosebaceous structures and neural tissue)
+T10	Marker 688 694	due to
+R2	Support Ent1:T1 Ent2:T9	
+R3	Support Ent1:T2 Ent2:T9	
+R4	Support Ent1:T9 Ent2:T8	
+T11	Disease 531 546	Teratocarcinoma
+T12	Disease 551 568	Immature teratoma
+T13	Disease 573 595	Mature cystic teratoma
+T14	Disease 600 612	Dysgerminoma

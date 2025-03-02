@@ -1,0 +1,10 @@
+QUESTION TYPE: PEDIATRICS
+CLINICAL CASE: 
+A 12-month-old boy, who in the health examinations performed since birth presents right testicle in the inguinal canal that is not possible to descend to the scrotum. Mark the correct answer:
+1- The most probable diagnosis is retractile testicle.
+2- Wait until two years of age for its spontaneous decrease.
+3- Human chorionic gonadotropin is the treatment of first choice.
+4- The indication for orchidopexy should not be deferred.
+5- nan
+CORRECT ANSWER: 4
+The retractile testicle is characterized by the testicle being permanently outside the scrotal sac, being possible to descend it manually (although when it is released it automatically returns to its initial location). It is usually due to a short pedicle. In this case we are being told that the teste is always in the inguinal canal (cryptorchidism) so we can discard option 1. Hormonal treatment with HCG has already fallen into disuse, due to its low efficacy, possibility of reascension and because apoptotic and inflammatory phenomena have been described in the teste associated with its use (we discard option 3). Orchidopexy is the treatment of choice when we are faced with cryptorchidism, being desirable to perform it between 6 months and one year of age, and should not be deferred beyond two years of age.

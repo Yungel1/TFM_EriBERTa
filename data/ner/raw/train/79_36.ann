@@ -1,0 +1,26 @@
+T1	Claim 245 285	Weight loss with or without rectorrhagia
+T2	Claim 290 330	Persistence of diarrhea during the night
+T3	Premise 133 190	a patient with diarrhea of more than 4 weeks of evolution
+T4	Claim 335 365	Onset of symptoms after age 50
+T5	Claim 370 432	Presence of dermatitis and/or arthritis during the examination
+T6	Claim 437 487	Expulsion of mucus in more than 25% of defecations
+T7	Disease 245 285	Weight loss with or without rectorrhagia
+T8	Marker 262 264	or
+T9	Disease 305 313	diarrhea
+T10	Disease 382 392	dermatitis
+T11	Disease 400 409	arthritis
+T12	Disease 437 487	Expulsion of mucus in more than 25% of defecations
+T13	Marker 507 515	Although
+T14	Premise 215 240	without organic pathology
+T15	Claim 507 653	Although mucus is usually more frightening in the consultation, it falls within the Rome II criteria for the diagnosis of Irritable Bowel Syndrome
+R1	Support Ent1:T15 Ent2:T6	
+T16	Claim 655 699	All the rest are typical signs of organicity
+R2	Attack Ent1:T16 Ent2:T1	
+R3	Attack Ent1:T16 Ent2:T2	
+R4	Attack Ent1:T16 Ent2:T4	
+R5	Attack Ent1:T16 Ent2:T5	
+T17	Claim 701 748	although I think the question is poorly phrased
+T18	Marker 701 709	although
+T19	Marker 750 755	since
+T20	Premise 750 915	since any of these data (especially age) can be found in patients who in the end have nothing, what happens is that in these cases we must always look for organicity
+R6	Support Ent1:T20 Ent2:T17	

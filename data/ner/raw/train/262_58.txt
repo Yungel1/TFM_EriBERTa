@@ -1,0 +1,10 @@
+QUESTION TYPE: PHARMACOLOGY
+CLINICAL CASE: 
+A 70-year-old woman with a history of hypertension and moderate heart failure presents with a persistent, dry cough that begins as an itchy sensation in the throat. What is the drug suspected of causing the patient's clinical and laboratory alteration?
+1- Hydrochlorothiazide.
+2- Bisoprolol.
+3- Furosemide.
+4- Enalapril.
+5- Hydralazine.
+CORRECT ANSWER: 4
+These are typical adverse effects of ACEIs, in the case of cough it is usually dry and irritative and appears in up to 3% of patients. Hyperkalemia may also appear in 1%.

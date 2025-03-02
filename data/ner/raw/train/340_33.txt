@@ -1,0 +1,10 @@
+QUESTION TYPE: GYNECOLOGY AND OBSTETRICS
+CLINICAL CASE: 
+A 67-year-old woman diagnosed with infiltrating ductal carcinoma of the breast with no family history of neoplasia. What additional studies should be performed on the tumor because of its clinical and therapeutic implications?
+1- Complete phenotypic study by flow cytometry.
+2- Study of hormone receptors and HER2.
+3- Study of hormone receptors, e-cadherin and study of first degree relatives.
+4- Study of BRCA 1-2 and study of first-degree relatives.
+5- nan
+CORRECT ANSWER: 2
+The answer is 2, study of hormone receptors and HER2. This is because no study of first-degree relatives is appropriate, as it does not appear to be hereditary breast cancer since there is no family history of neoplasia. On the other hand, there is no indication for BRCA 1-2 study.

@@ -1,0 +1,10 @@
+QUESTION TYPE: INFECTIOUS DISEASES
+CLINICAL CASE: 
+A 32-year-old woman has traveled to Cuba from where she arrived three days ago. The day after her return, she goes to her family doctor for high fever, intense arthromyalgia and headache that had started before the return trip and he prescribes her paracetamol. Three days later and with no improvement, he presented in the morning with a generalized pruritic maculo-papular rash, which was more intense on the lower limbs where it developed into petechiae, for which he went to the emergency department. There is no relevant data in the EC except platelets 75000/mm3 (htco 36%, leukocytes 4100 79% neutrophils). What is the most likely diagnosis?
+1- Infectious mononucleosis.
+2- Allergic exanthema.
+3- P. falciparum malaria.
+4- Typhoid fever.
+5- Dengue fever.
+CORRECT ANSWER: 5
+In this case I believe that the correct answer is 5. The 1 should not be because although the clinical picture is suggestive, it does not present lymphocytosis. It does not seem to be an allergic exanthema from the clinical picture. And certainly she does not have symptoms or clinical signs compatible with malaria or typhoid fever. What points to dengue, in addition to the clinical signs, is the plateletopenia.

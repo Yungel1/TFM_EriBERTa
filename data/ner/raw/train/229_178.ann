@@ -1,0 +1,40 @@
+T1	Premise 42 224	Previously healthy 10-month-old infant with acute gastroenteritis of one day's evolution and signs of mild dehydration, without blood or mucus in the stool and without oral tolerance
+T2	Claim 289 374	Intravenous rehydration, absolute diet 8 hours and start feeding with astringent diet
+T3	Claim 379 490	Rehydration with low osmolality oral rehydration solution (sodium 60-75 mEq/L) and continue with his usual diet
+T4	Claim 495 625	Rehydration with low osmolality oral rehydration solution (sodium 60-75 mEq/L) maintain usual feeding and oral amoxicillin 10 days
+T5	Claim 630 753	Rehydration with low osmolality oral rehydration solution (sodium 60-75 mEq/L) and start feeding with lactose-free formulas
+T6	Claim 758 881	Rehydration with low osmolality oral rehydration solution (sodium 60-75 mEq/L) maintain usual feeding and loperamide 7 days
+T7	Premise 901 980	The infant presents with acute GEA without signs of alarm or severe dehydration
+T8	Claim 982 1107	The first step would be to try oral tolerance with oral rehydration saline and continue with normal feeding if well tolerated
+R1	Support Ent1:T7 Ent2:T8	
+R2	Support Ent1:T8 Ent2:T3	
+T9	Claim 1109 1234	Answer 1 may give rise to doubts, due to the fact that the statement says that the patient "does not tolerate the oral route"
+T10	Marker 1143 1149	due to
+T11	Claim 1236 1293	In this case, intravenous rehydration could be started...
+T12	Claim 1294 1410	but it would not be advisable to leave the patient on an absolute diet for 8 hours, nor a subsequent astringent diet
+T13	Marker 1294 1297	but
+T14	Marker 1378 1381	nor
+R3	Support Ent1:T11 Ent2:T9	
+R4	Attack Ent1:T12 Ent2:T9	
+R5	Attack Ent1:T9 Ent2:T2	
+R6	Attack Ent1:T12 Ent2:T2	
+T15	Claim 1412 1432	so I prefer answer 2
+T16	Marker 1412 1414	so
+R7	Support Ent1:T15 Ent2:T3	
+T17	Claim 1434 1487	The rest of the treatments do not provide any benefit
+R8	Attack Ent1:T17 Ent2:T4	
+R9	Attack Ent1:T17 Ent2:T5	
+R10	Attack Ent1:T17 Ent2:T6	
+T18	Treatment 289 312	Intravenous rehydration
+T19	Treatment 314 335	absolute diet 8 hours
+T20	Treatment 340 374	start feeding with astringent diet
+T21	Treatment 379 457	Rehydration with low osmolality oral rehydration solution (sodium 60-75 mEq/L)
+T22	Treatment 462 490	continue with his usual diet
+T23	Treatment 495 573	Rehydration with low osmolality oral rehydration solution (sodium 60-75 mEq/L)
+T24	Treatment 574 596	maintain usual feeding
+T25	Treatment 601 625	oral amoxicillin 10 days
+T26	Treatment 630 708	Rehydration with low osmolality oral rehydration solution (sodium 60-75 mEq/L)
+T27	Treatment 713 753	start feeding with lactose-free formulas
+T28	Treatment 758 836	Rehydration with low osmolality oral rehydration solution (sodium 60-75 mEq/L)
+T29	Treatment 837 859	maintain usual feeding
+T30	Treatment 864 881	loperamide 7 days

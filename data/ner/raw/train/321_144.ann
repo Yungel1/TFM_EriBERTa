@@ -1,0 +1,17 @@
+T1	Premise 44 201	A 50-year-old man diagnosed with polyangiitis with granulomatosis 10 years earlier and untreated for the past 5 years is asymptomatic at a scheduled check-up
+T2	Premise 203 410	Chest X-ray, blood tests and urine sediment are normal except for positive anti-neutrophil cytoplasmic antibodies (ANCA) at titer 1/320, with anti-proteinase 3 specificity, which had previously been negative
+T3	Claim 464 500	Start treatment with corticosteroids
+T4	Claim 505 545	Initiate treatment with cyclophosphamide
+T5	Claim 550 595	Initiate treatment with mycophenolate mofetil
+T6	Claim 600 616	Watchful waiting
+T7	Claim 830 1006	In this case, with the patient being asymptomatic and with objective evidence of lack of activity, close follow-up should be performed without restarting or modifying treatment
+R1	Support Ent1:T7 Ent2:T6	
+R2	Support Ent1:T1 Ent2:T7	
+T8	Disease 646 661	ANCA vasculitis
+T9	Claim 643 828	In ANCA vasculitis, whatever it is, these antibodies have been shown to be related to the activity of the disease, but at no time are changes in treatment obligatory due to their levels
+T10	Marker 758 761	but
+T11	Marker 809 815	due to
+R3	Support Ent1:T9 Ent2:T6	
+T12	Treatment 485 500	corticosteroids
+T13	Treatment 529 545	cyclophosphamide
+T14	Treatment 574 595	mycophenolate mofetil

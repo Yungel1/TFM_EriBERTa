@@ -1,0 +1,10 @@
+QUESTION TYPE: PATHOLOGICAL ANATOMY
+CLINICAL CASE: 
+A 56-year-old man, diabetic and moderately overweight, presents a discrete hepatomegaly. The patient indicates that he is not a regular drinker, only exceptionally does he drink some wine. A liver biopsy shows accumulations of clear cytoplasmic vacuoles in 50% of the hepatocytes. Multiple inflammatory foci with neutrophils, Mallory's hyaline degeneration and fibrosis around the terminal hepatic venules. Point out the correct answer in this case:
+1- Biopsy should be repeated to see if the changes are diffuse.
+2- Diagnosis is hepatic glycogenosis associated with diabetes.
+3- Histological changes are irreversible and will eventually lead to cirrhosis.
+4- The injury is clearly caused by alcohol despite the patient's refusal.
+5- It is important to reduce weight and adequately control diabetes to avoid the possible development of cirrhosis.
+CORRECT ANSWER: 5
+The changes described in the question statement correspond to an early precirrhotic situation. Although alcohol is the most frequent toxicant that causes this condition, it is not the exclusive cause. Diabetes mellitus causes similar hepatic alterations: fat accumulation in hepatocytes, centroacinar fibrosis, inflammatory infiltrate by polymorphonuclear neutrophils and hyaline degeneration of perinuclear mallory. Taking this into consideration, we can rule out the second question (they are intracellular fat accumulations, not glycogen) and the fourth (if diabetes also produces this situation, there is no reason to mistrust the patient). Based on the primum non nocere and not having special relevance for the treatment if it is a focal or generalized disease, it is not necessary to repeat a liver biopsy that would not expand information, discarding the first question. Fortunately for the hypothetical patient, in the initial phase these changes are reversible when the noxa disappears, so we are left with answer number 5.

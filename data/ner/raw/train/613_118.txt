@@ -1,0 +1,10 @@
+QUESTION TYPE: TRAUMATOLOGY
+CLINICAL CASE: 
+A 41-year-old male consults for gonalgia of several days' evolution. On examination, the Thessaly test (pain with internal and external rotation movements with the knee flexed) is positive. Which of the following injuries is more likely?
+1- Meniscal injury.
+2- Injury due to rupture of the anterior cruciate ligament.
+3- Injury by rupture of the posterior cruciate ligament.
+4- Degenerative arthropathy injury.
+5- nan
+CORRECT ANSWER: 1
+Thessaly test. Provocation test performed in suspected meniscal injury.

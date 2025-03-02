@@ -1,0 +1,31 @@
+T1	Premise 42 117	A 28-year-old man comes to the hospital emergency room with gross hematuria
+T2	Disease 196 214	glomerulonephritis
+T3	Claim 219 266	Dysmorphic red blood cells and/or hematic casts
+T4	Claim 271 381	Proteinuria of 1 g/day, with negative test strip result and with microalbuminuria greater than 300 mg/24 hours
+T5	Claim 386 442	Coexistence of hematuria with pyuria without bacteriuria
+T6	Claim 447 484	Clots in the urine with the naked eye
+T7	Claim 511 619	Glomerulonephritis is typically associated with dysmorphic red blood cells and hematic casts in the sediment
+T8	Disease 511 529	Glomerulonephritis
+R1	Support Ent1:T7 Ent2:T3	
+T9	Claim 621 637	option 1 correct
+R2	Support Ent1:T7 Ent2:T9	
+R3	Support Ent1:T9 Ent2:T3	
+T10	Claim 640 685	Proteinuria can also appear in variable range
+T11	Claim 687 752	although it is not usual in the form of isolated microalbuminuria
+T12	Marker 687 695	although
+R4	Attack Ent1:T11 Ent2:T10	
+T13	Claim 754 772	incorrect option 2
+R5	Support Ent1:T11 Ent2:T13	
+R6	Attack Ent1:T13 Ent2:T4	
+R7	Attack Ent1:T11 Ent2:T4	
+T14	Claim 779 834	hematuria with pyuria although it is not characteristic
+T15	Marker 801 809	although
+T16	Claim 836 854	incorrect option 3
+R8	Support Ent1:T14 Ent2:T16	
+R9	Attack Ent1:T16 Ent2:T5	
+R10	Attack Ent1:T14 Ent2:T5	
+T17	Claim 857 934	Clots usually appear in the context of alterations of the lower urinary tract
+T18	Claim 936 954	option 4 incorrect
+R11	Support Ent1:T17 Ent2:T18	
+R12	Attack Ent1:T18 Ent2:T6	
+R13	Attack Ent1:T17 Ent2:T6	

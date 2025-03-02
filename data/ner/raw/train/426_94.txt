@@ -1,0 +1,10 @@
+QUESTION TYPE: ENDOCRINOLOGY
+CLINICAL CASE: 
+A 73-year-old patient...swallowing a complete neurological dysphagia secondary to a cardioembolic stroke in the left middle cerebral artery territory. will require long-term nutritional support. Of the following treatment modalities, which do you consider most appropriate for this case?
+1- Enteral nutrition by nasogastric tube.
+2- Enteral nutrition by nasoduodenal tube.
+3- Enteral nutrition by gastrostomy.
+4- Enteral nutrition by jejunostomy.
+5- nan
+CORRECT ANSWER: 3
+Enteral nutrition is a nutritional support technique that involves administering nutrients directly into the gastrointestinal tract by gavage. The choice of the route of formula administration depends on the nutritional status, age of the patient and the underlying disease. If enteral nutrition is considered to be of short duration, the route of choice is the nasogastric or nasoduodenal- nasojejunal tube... If prolonged nutrition is anticipated the route of choice is gastrostomy (option 3), with jejunostomy being reserved for cases in which it is not possible to use the gastric route.

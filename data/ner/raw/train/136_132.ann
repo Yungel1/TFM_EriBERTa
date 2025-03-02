@@ -1,0 +1,18 @@
+T1	Premise 40 109	A 60-year-old man comes to the emergency department for a coma crisis
+T2	Premise 111 167	Ex-smoker for 3 years, with no other history of interest
+T3	Premise 169 204	A CT scan shows multiple metastases
+T4	Diagnostics 171 178	CT scan
+T5	Claim 243 263	Head and neck cancer
+T6	Disease 243 263	Head and neck cancer
+T7	Claim 268 279	Lung cancer
+T8	Disease 268 279	Lung cancer
+T9	Claim 284 307	Urinary bladder cancer.
+T10	Disease 284 306	Urinary bladder cancer
+T11	Claim 311 323	Colon cancer
+T12	Disease 311 323	Colon cancer
+T13	Claim 328 345	Pancreatic cancer
+T14	Disease 328 345	Pancreatic cancer
+T15	Claim 388 541	Lung cancer is the most frequent cause of brain metastases and in 20-30% of cases it is as a result of them that the primary tumor is diagnosed (as here)
+R1	Support Ent1:T15 Ent2:T7	
+T16	Disease 388 399	Lung cancer
+R2	Support Ent1:T3 Ent2:T7	

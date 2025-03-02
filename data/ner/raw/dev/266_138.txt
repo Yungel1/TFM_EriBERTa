@@ -1,0 +1,10 @@
+QUESTION TYPE: PNEUMOLOGY
+CLINICAL CASE: 
+In a patient with mild chronic obstructive pulmonary disease (COPD) in stable phase, polyglobulia and respiratory insufficiency are evident. In the chest X-ray there are no notable alterations. Which of the following procedures would you consider performing first to rule out the coexistence of other diseases that may justify the findings described?
+1- Respiratory polygraphy.
+2- Echocardiogram.
+3- Thoracic computed tomography.
+4- Pulmonary scintigraphy.
+5- Bone marrow puncture.
+CORRECT ANSWER: 1
+The approach is questionable due to lack of sufficient data. The correct answer could be respiratory polygraphy, especially in the case of an obese patient, which we do not know, but it could also be correct 2 (echocardiogram) in the case of suspicion of associated cardiopathy, less frequent but also possible. The association of COPD with OSAHS is a frequent cause of COPD deterioration, greater than that which would correspond to functional impairment.

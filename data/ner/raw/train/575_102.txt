@@ -1,0 +1,10 @@
+QUESTION TYPE: NEUROLOGY
+CLINICAL CASE: 
+A 29-year-old woman with a history of febrile seizures and a heavy smoker. She consults for frequent, stereotyped episodes that begin with an ascending epigastric sensation and an unpleasant odor, followed by disconnection from the environment. Family members who are with her observe that she makes sucking movements and repeated opening and closing movements of the left hand. After two minutes the movements subside, but she has difficulty responding appropriately and only partially remembers what happened. Which of the following is the most likely diagnosis?
+1- Complex focal temporal lobe seizures.
+2- Transient ischemic attacks in right carotid territory.
+3- Simple focal motor seizures.
+4- Episodes of transient global amnesia.
+5- nan
+CORRECT ANSWER: 1
+The clinical case makes a textbook description of a medial temporal seizure. The aura of ascending epigastric sensation and olfactory alteration and the subsequent description of the seizure with alteration of the level of consciousness (disconnection from the environment) with oral and manual automatisms. The current classification is the 2017 ILAE classification that would describe this seizure as focal seizure with altered level of consciousness, but in the MIR they still use the old terminology (complex is what altered level of consciousness was called).

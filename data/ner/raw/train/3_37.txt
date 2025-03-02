@@ -1,0 +1,10 @@
+QUESTION TYPE: DIGESTIVE
+CLINICAL CASE: 
+A 76-year-old woman with no history other than hypertension consults for painless jaundice and pruritus with anorexia. Laboratory tests show bilirubin of 12 mg/dl (9.5 direct). Ultrasound shows intrahepatic and extrahepatic biliary dilatation together with a single hepatic nodule smaller than 2 cm located peripherally on the anterior aspect of the left lobe. The CT scan confirms these findings also demonstrating the presence of a pancreatic mass of 3.5 cm. In the pancreatic head. The aspiration puncture of the hepatic nodule is conclusive for adenocarcinoma. Indicate the best therapeutic option:
+1- Neoadjuvant chemo/radiotherapy, conditioning the option of radical surgery on initial response.
+2- Percutaneous external biliary drainage with palliative character with eventual reconversion to internal drainage in case of intolerance or complications.
+3- Palliative surgical biliary bypass with or without prophylactic gastrojejunostomy depending on intraoperative findings.
+4- Metallic biliary prosthesis by endoscopic retrograde cholangiopancreatography with the option of palliative chemotherapy.
+5- Cephalic duodenopancreatectomy, with percutaneous ablation by radiofrequency or alcoholization of the hepatic lesion.
+CORRECT ANSWER: 4
+This case does not seem so easy to me. It is a pancreatic adenocarcinoma with metastasis, so the treatment should be palliative, so we remove options 1 and 5. In principle she is a patient in moderately good general condition, so the ideal would be to perform a permanent biliary diversion and chemotherapy, option 4 being the one I consider most correct.

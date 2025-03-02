@@ -1,0 +1,10 @@
+QUESTION TYPE: GYNECOLOGY AND OBSTETRICS
+CLINICAL CASE: 
+20-year-old woman with ovarian tumor of 15 cm, solid-cystic, detected by ultrasound after presenting with unspecific abdominal symptoms. In the histopathological study of the corresponding specimen, teeth, hairs, areas of intestinal epithelium, areas of squamous epithelium (15%) and bronchial epithelium, as well as neuroectodermal and embryonic elements are found in several of the histological preparations. In reference to this case, point out the correct diagnosis:
+1- Teratocarcinoma.
+2- Immature teratoma.
+3- Mature cystic teratoma.
+4- Dysgerminoma.
+5- nan
+CORRECT ANSWER: 3
+The answer is 3, mature cystic teratoma. This is due to the characteristics of the tumor: mature teratomas are constituted by adult tissues, coming from the three embryonic leaves, with a clear predominance of ectodermal elements (epidermis, pilosebaceous structures and neural tissue). Mature teratoma is a tumor of ovarian germ cells.

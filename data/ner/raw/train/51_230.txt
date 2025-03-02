@@ -1,0 +1,10 @@
+QUESTION TYPE: PEDIATRICS
+CLINICAL CASE: 
+37-week pregnant woman with positive hepatitis B virus surface antigen. She consults about the guidelines to be followed with the newborn and whether she can breastfeed. What advice do you think is most appropriate?
+1- Administer hepatitis B vaccine at birth. Artificial feeding.
+2- Vaccination and immunoglobulins should be administered at birth. Breastfeeding from one month onwards.
+3- Immunoglobulins at birth and artificial breastfeeding.
+4- Vaccination and immunoglobulins at birth. Maternal feeding.
+5- Artificial feeding and isolation for 4 weeks.
+CORRECT ANSWER: 4
+The correct answer is 4. Children born to HBV carrier mothers should be administered hepatitis B vaccine and immunoglobulin at different puncture sites within the first 24 hours of life. Although the virus is excreted in breast milk, the risk of infection by this route is very low and therefore it is not currently a contraindication for breastfeeding.

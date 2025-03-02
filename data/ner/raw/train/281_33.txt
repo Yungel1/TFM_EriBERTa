@@ -1,0 +1,10 @@
+QUESTION TYPE: PATHOLOGICAL ANATOMY
+CLINICAL CASE: 
+A 67-year-old woman diagnosed with an infiltrating ductal carcinoma of the breast and no family history of neoplasia. What additional studies should be performed on the tumor for its clinical-therapeutic implications?
+1- Complete phenotypic study by flow cytometry.
+2- Study of hormone receptors and HER2.
+3- Study of hormone receptors, e-cadherin and study of first degree relatives.
+4- Study of BRCA 1-2 and study of first-degree relatives.
+5- nan
+CORRECT ANSWER: 2
+The correct answer would be 2, HORMONE AND HER2 RECEPTOR STUDY, since positive HER2 receptors imply greater aggressiveness of the tumor but treatment with trastuzumab and positive hormone receptors would imply the use of hormone therapy. Answer 1 can be ruled out visu visu, while answers 3 and 4 should be ruled out since, being the first woman in the family with breast carcinoma, the study of the patient's relatives would not be obligatory. Likewise, e-cadherin is important for the differential diagnosis of a lobular breast carcinoma, not a ductal one.

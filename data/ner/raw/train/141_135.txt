@@ -1,0 +1,10 @@
+QUESTION TYPE: PEDIATRICS
+CLINICAL CASE: 
+A 2-year-old boy, his personal history includes: 3 episodes of acute otitis media, 1 meningococcal meningitis and 2 pneumonias (one middle lobe and one left upper lobe). She has been admitted on 3 occasions for thrombopenic purpura (on three occasions antiplatelet antibodies were negative and bone marrow showed normal megakaryocytes). Several males of the maternal family had died in childhood due to infectious processes. The examination showed typical lesions of atopic dermatitis. The immunological study showed a slight decrease in T lymphocyte subpopulations; elevated IgA and IgE; decreased IgM and IgG at the lower limit of normal. What is the most likely diagnosis?
+1- Wiskott-Aldrich syndrome.
+2- Hyper IgE syndrome.
+3- Transient hypogammaglobulinemia of infancy.
+4- Severe X-associated combined immunodeficiency.
+5- Common variable immunodeficiency.
+CORRECT ANSWER: 1
+The correct answer is 1. Wiskott-Aldrich syndrome associates immunodeficiency, thrombopenia and atopic dermatitis with the immunological study described in the statement.

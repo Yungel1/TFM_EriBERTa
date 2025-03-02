@@ -1,0 +1,36 @@
+T1	Premise 59 148	A 72-year-old patient presents to the emergency department with severe lingual angioedema
+T2	Premise 150 220	She has no associated urticaria and no history of drug or food allergy
+T3	Premise 222 344	His personal history includes type 2 diabetes mellitus, dyslipidemia, hypertension, hypothyroidism and Parkinson's disease
+T4	Premise 346 429	In regular treatment with metformin, simvastatin, enalapril, thyroxine and levodopa
+T5	Claim 529 538	Enalapril
+T6	Claim 543 554	Simvastatin
+T7	Claim 559 588	Metformin or levodopa equally
+T8	Claim 593 601	Levodopa
+T9	Claim 628 686	Of the proposed drugs, the least likely options would be 3
+T10	Claim 694 801	metformin very rarely causes lingual angioedema (in March 2020 there was only one case described worldwide)
+T11	Marker 688 693	since
+T12	Claim 802 807	and 4
+R1	Support Ent1:T9 Ent2:T12	
+T13	Marker 809 814	since
+R2	Attack Ent1:T9 Ent2:T7	
+R3	Attack Ent1:T12 Ent2:T8	
+T14	Claim 816 933	among the adverse reactions of levodopa, angioedema is classified among the very rare ones (frequency less than 0.1%)
+R4	Attack Ent1:T1 Ent2:T10	
+R5	Attack Ent1:T1 Ent2:T14	
+R6	Support Ent1:T10 Ent2:T9	
+R7	Support Ent1:T14 Ent2:T12	
+T15	Claim 935 1147	Of the two remaining options, the drugs most frequently and classically associated with lingual angioedema are ACE inhibitors (frequency around 0.2%), and their association with simvastatin is also less than 0.1%
+R8	Support Ent1:T15 Ent2:T5	
+R9	Support Ent1:T1 Ent2:T15	
+R10	Attack Ent1:T15 Ent2:T6	
+T16	Treatment 1046 1060	ACE inhibitors
+T17	Treatment 1113 1124	simvastatin
+T18	Disease 723 741	lingual angioedema
+T19	Treatment 847 855	levodopa
+T20	Treatment 694 703	metformin
+T21	Disease 857 867	angioedema
+T22	Disease 1023 1041	lingual angioedema
+T23	Treatment 529 538	Enalapril
+T24	Treatment 543 554	Simvastatin
+T25	Treatment 559 588	Metformin or levodopa equally
+T26	Treatment 593 601	Levodopa

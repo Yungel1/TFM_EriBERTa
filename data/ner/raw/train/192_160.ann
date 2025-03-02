@@ -1,0 +1,22 @@
+T1	Premise 42 313	The parents of a 5-month-old infant come because their child, who attends day care, has been presenting for 3 days, coinciding with an upper respiratory tract infection, liquid stools numbering 4 per day, occasional alimentary vomiting, and axillary temperature of 38.3°C
+T2	Marker 83 90	because
+T3	Disease 177 210	upper respiratory tract infection
+T4	Premise 315 355	He is being fed with mixed breastfeeding
+T5	Premise 357 553	On examination the infant is in good general condition, is well nourished and hydrated and his breathing is eupneic; his weight is 4,730g and has decreased by 70g with respect to the previous week
+T6	Premise 555 653	The abdomen is soft and depressible, without masses or megaliths, and the fontanel is normotensive
+T7	Premise 655 760	Except for the presence of watery rhinorrhea, the rest of the examination by organs and devices is normal
+T8	Claim 841 966	An estimation of losses should be made, recommend a 4-hour fast and rehydrate during this time with oral rehydration solution
+T9	Claim 971 1040	It is advisable to introduce rice cereals for their astringent effect
+T10	Claim 1045 1130	A stool culture should be performed as soon as possible to exclude a bacterial origin
+T11	Claim 1135 1188	The use of lactose-free formula should be recommended
+T12	Claim 1193 1326	It is advisable to replace losses after each bowel movement with oral rehydration solution and continue with the patient's usual diet
+T13	Treatment 941 966	oral rehydration solution
+T14	Treatment 1258 1283	oral rehydration solution
+T15	Premise 1346 1405	The baby is not dehydrated and is in good general condition
+R1	Support Ent1:T5 Ent2:T15	
+T16	Claim 1407 1530	Try to avoid dehydration by replenishing what is being lost, avoiding drastic changes in feeding habits as much as possible
+R2	Support Ent1:T6 Ent2:T15	
+R3	Support Ent1:T7 Ent2:T15	
+R4	Support Ent1:T16 Ent2:T12	
+T17	Claim 1626 1762	There is also no evidence of lactose intolerance (perianal irritation, frothy and acid stools, etc.) that would advise lactose-free milk
+R5	Attack Ent1:T17 Ent2:T11	

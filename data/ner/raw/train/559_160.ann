@@ -1,0 +1,30 @@
+T1	Premise 42 179	A 35-year-old woman, taking contraceptives, comes to the emergency department with febrile syndrome and paresthesias in the left hemibody
+T2	Premise 181 441	Blood tests show Hb 7.5 g/dL, platelets 7,000/microl, normal leukocytes with normal differential count, LDH 1,200 IU/l, reticulocytes 10% (normal 0.5-2%), undetectable serum haptoglobin, negative direct Coombs' test and peripheral blood smear with schistocytes
+T3	Premise 443 489	Coagulation (prothrombin time and APTT) normal
+T4	Claim 547 574	Autoimmune hemolytic anemia
+T5	Claim 579 614	Thrombotic thrombocytopenic purpura
+T6	Claim 619 676	Evans syndrome (hemolytic anemia and immune thrombopenia)
+T7	Claim 681 715	Idiopathic immune thrombocytopenia
+T8	Claim 742 806	The fear of all on-call hematologists... that you will get a TTP
+T9	Claim 808 878	Because, although infrequent, it is the greatest hematologic emergency
+T10	Marker 808 815	Because
+T11	Marker 817 825	although
+T12	Claim 881 916	The clinical case is fairly typical
+R1	Support Ent1:T8 Ent2:T5	
+R2	Support Ent1:T9 Ent2:T12	
+R3	Support Ent1:T12 Ent2:T5	
+T13	Premise 918 1014	A young person with fever and neurological symptoms that make him go to the emergency department
+T14	Premise 1035 1186	Laboratory tests show anemia with evidence of hemolysis (increased LDH and retis, presence of schistocytes in peripheral blood) and severe thrombopenia
+T15	Premise 1188 1222	In addition, coagulation is normal
+T16	Claim 1224 1303	To distinguish it from the rest of things (although you should not hesitate...)
+T17	Premise 1304 1344	it tells you that the coombs is negative
+R4	Support Ent1:T17 Ent2:T16	
+R5	Support Ent1:T15 Ent2:T16	
+R6	Support Ent1:T14 Ent2:T16	
+R7	Support Ent1:T13 Ent2:T16	
+R8	Support Ent1:T16 Ent2:T12	
+T18	Claim 1346 1401	As a reminder: URGENT TREATMENT: PLASMATIC REPLACEMENTS
+T19	Disease 547 574	Autoimmune hemolytic anemia
+T20	Disease 579 614	Thrombotic thrombocytopenic purpura
+T21	Disease 619 676	Evans syndrome (hemolytic anemia and immune thrombopenia)
+T22	Disease 681 715	Idiopathic immune thrombocytopenia

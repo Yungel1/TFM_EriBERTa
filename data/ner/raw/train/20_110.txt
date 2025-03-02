@@ -1,0 +1,10 @@
+QUESTION TYPE: INFECTIOUS
+CLINICAL CASE: 
+A 40-year-old male patient, smoker since he was 18 years old, with no history of interest. He consults for symptoms of 24 hours of evolution of chills, thermometric fever of 39ºC and cough with expectoration. Chest X-ray shows an increased density with alveolar pattern in the LSD and the patient is diagnosed with CAP. What is the most frequent etiological agent and therefore of obligatory coverage when choosing empirical atb treatment?
+1- Mycoplasma pneumoniae.
+2- Chlamydia pneumoniae.
+3- Streptococcus pneumoniae.
+4- Legionella pneumophila serogroup 1.
+5- Haemophilus influenzae.
+CORRECT ANSWER: 3
+This is a fairly easy epidemiology question, in adults without other data, Pneumococcus is the 1st.

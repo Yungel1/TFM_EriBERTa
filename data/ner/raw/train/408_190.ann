@@ -1,0 +1,33 @@
+T1	Premise 44 176	A 45-year-old woman diagnosed with stage IV breast cancer with multiple bone metastases on hormonal treatment and iv bisphosphonates
+T2	Premise 178 389	She comes to your office referring intense bone pain (VAS=7), in several locations without associated neurological symptoms and exarcerbations of pain (VAS=9) several times a day that force her to remain at rest
+T3	Premise 398 471	treatment with ibuprofen (600 mg every 8 h) and tramadol (150 mg per day)
+T4	Claim 564 649	Suspend ibuprofen and tramadol and start a major opioid such as morphine or oxycodone
+T5	Claim 654 749	Suspend tramadol, maintain ibuprofen and initiate a major opioid such as morphine and oxycodone
+T6	Claim 754 926	Discontinue ibuprofen and tramadol and start a major opioid such as morphine or oxycodone and at the same time start treatment of breakthrough pain with sublingual fentanyl
+T7	Claim 931 1104	Suspend tramadol, maintain ibuprofen and initiate a major opioid such as morphine and oxycodone and at the same time treatment for breakthrough pain with sublingual fentanyl
+T8	Claim 1131 1154	The correct answer is 4
+T9	Claim 1163 1270	if the patient has bone metastases and may suffer fractures we can control inflammatory pain with ibuprofen
+R1	Support Ent1:T1 Ent2:T9	
+T10	Claim 1275 1323	it will also help us to use the antalgic synergy
+R2	Support Ent1:T9 Ent2:T8	
+T11	Marker 1155 1162	because
+R3	Support Ent1:T10 Ent2:T8	
+T12	Treatment 1261 1270	ibuprofen
+T13	Claim 1325 1415	We should change the treatment to a major opioid and treat the disrruptive pain vigorously
+T14	Premise 1416 1468	since she is at almost the maximum pain she can bear
+T15	Marker 1416 1421	since
+R4	Support Ent1:T14 Ent2:T13	
+T16	Treatment 1361 1373	major opioid
+R5	Support Ent1:T13 Ent2:T7	
+R6	Support Ent1:T8 Ent2:T7	
+T17	Treatment 931 947	Suspend tramadol
+T18	Treatment 949 967	maintain ibuprofen
+T19	Treatment 972 1104	initiate a major opioid such as morphine and oxycodone and at the same time treatment for breakthrough pain with sublingual fentanyl
+T20	Treatment 564 594	Suspend ibuprofen and tramadol
+T21	Treatment 599 649	start a major opioid such as morphine or oxycodone
+T22	Treatment 654 670	Suspend tramadol
+T23	Treatment 672 690	maintain ibuprofen
+T24	Treatment 695 749	initiate a major opioid such as morphine and oxycodone
+T25	Treatment 754 788	Discontinue ibuprofen and tramadol
+T26	Treatment 793 843	start a major opioid such as morphine or oxycodone
+T27	Treatment 848 926	at the same time start treatment of breakthrough pain with sublingual fentanyl

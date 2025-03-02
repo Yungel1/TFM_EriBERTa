@@ -1,0 +1,13 @@
+T1	Claim 215 257	Maintain blood pressure below 110/70 mmHg.
+T2	Claim 261 278	Smoking cessation
+T3	Claim 283 328	Maintain a body mass index (BMI) less than 21
+T4	Claim 333 371	Perform daily basal capillary glycemia
+T5	Claim 376 412	Avoidance of animal fats in the diet
+T6	Premise 45 147	A 60-year-old diabetic patient is consulting for the first time regarding the treatment of his disease
+T7	Claim 432 460	The rest are not indications
+T8	Claim 462 492	The target BP is < 130/85 mmHg
+T9	Treatment 215 256	Maintain blood pressure below 110/70 mmHg
+T10	Treatment 261 278	Smoking cessation
+T11	Treatment 283 328	Maintain a body mass index (BMI) less than 21
+T12	Treatment 333 371	Perform daily basal capillary glycemia
+T13	Treatment 376 413	Avoidance of animal fats in the diet.

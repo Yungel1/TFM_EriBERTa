@@ -1,0 +1,29 @@
+T1	Premise 43 307	33-year-old patient, resident of Valencia, who consults for presenting on the right cheek an erythematous-orange plaque after an insect bite that has been growing slowly until reaching 1.5 cm and that in the last weeks has ulcerated and covered with a scammocostra
+T2	Premise 309 364	The lesion only causes discrete discomfort if scratched
+T3	Premise 366 448	The patient has a history of plaque psoriasis treated with subcutaneous adalimumab
+T4	Premise 450 555	She is in good general condition and does not take any other drugs and does not report any drug allergies
+T5	Claim 598 615	Oral isotretinoin
+T6	Claim 620 655	Intralesional meglumine antimoniate
+T7	Claim 660 684	Systemic corticosteroids
+T8	Claim 689 705	Oral amoxicillin
+T9	Premise 811 929	A "bite" that transforms into a lesion in an uncovered area with a crusty surface and that bothers little or nothing..
+T10	Claim 732 809	The fact that the place of residence is mentioned already gives us many clues
+R1	Support Ent1:T1 Ent2:T10	
+T11	Claim 931 1008	in the Mediterranean basin this is cutaneous leishmaniasis or oriental button
+R2	Support Ent1:T9 Ent2:T11	
+R3	Support Ent1:T10 Ent2:T11	
+T12	Premise 1010 1163	And while it is true that the lesion is < 4 cm and unique, we are told that the patient is being treated with adalimumab, an anti-TNF monoclonal antibody
+T13	Claim 1165 1303	With the exception of meglumine antimoniate, none of the other treatments proposed in the different options are indicated in leishmaniasis
+R4	Attack Ent1:T12 Ent2:T13	
+R5	Support Ent1:T11 Ent2:T13	
+R6	Support Ent1:T13 Ent2:T6	
+T14	Claim 1308 1319	it is clear
+T15	Marker 1305 1307	so
+R7	Support Ent1:T13 Ent2:T14	
+R8	Support Ent1:T14 Ent2:T6	
+T16	Claim 1321 1461	The only thing that is more debatable is that, as this is an immunosuppressed patient, systemic treatment would probably be more appropriate
+T17	Treatment 598 615	Oral isotretinoin
+T18	Treatment 620 655	Intralesional meglumine antimoniate
+T19	Treatment 660 684	Systemic corticosteroids
+T20	Treatment 689 705	Oral amoxicillin
+T21	Treatment 1187 1208	meglumine antimoniate

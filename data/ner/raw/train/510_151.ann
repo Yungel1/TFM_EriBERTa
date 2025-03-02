@@ -1,0 +1,40 @@
+T1	Premise 41 190	A 43-year-old male with no past history of interest consults for a ten-day history of jaundice of the skin and mucous membranes, choluria and acholia
+T2	Premise 192 285	He does not report abdominal pain, weight loss or other symptoms, except generalized pruritus
+T3	Premise 287 317	She denies alcohol consumption
+T4	Premise 319 419	She does not take any medication except occasional ibuprofen for muscle pain after sports activities
+T5	Premise 421 489	The CBC shows increased bilirubin at the expense of direct bilirubin
+T6	Premise 491 632	An urgent ultrasound shows a normal liver, vesicular cholesterosis and absence of bile duct dilatation, with no other alterations of interest
+T7	Claim 672 708	Acute cholangitis due to biliary mud
+T8	Claim 713 745	Toxic hepatitis due to ibuprofen
+T9	Claim 750 768	Cholangiocarcinoma
+T10	Claim 773 791	Gilbert's syndrome
+T11	Claim 870 989	Ibuprofen hepatitis is a rare adverse effect with a prevalence of about 3.7/100,000 users and 1.1/100,000 prescriptions
+T12	Claim 991 1096	It appears that it may be related to dose and duration of treatment, but there is little evidence on this
+T13	Marker 1060 1063	but
+T14	Claim 1098 1164	Among the NSAIDs with the highest risk are diclofenac and sulindac
+T15	Claim 1166 1276	In terms of frequency, the prevalence of cholangiocarcinoma is 2/100,000 patients, a very comparable frequency
+T16	Claim 1278 1447	The absence of bile duct dilatation in cholangiocarcinomas can be seen in cases of intrahepatic cholangiocarcinomas or in those with mixed histology with hepatocarcinoma
+T17	Claim 1449 1610	It is true that the acute course and the absence of constitutional syndrome may make us think against this option and tip the balance towards ibuprofen hepatitis
+R1	Support Ent1:T6 Ent2:T16	
+T18	Disease 870 889	Ibuprofen hepatitis
+T19	Disease 1207 1225	cholangiocarcinoma
+T20	Disease 1361 1393	intrahepatic cholangiocarcinomas
+R2	Attack Ent1:T2 Ent2:T17	
+R3	Attack Ent1:T17 Ent2:T16	
+R4	Support Ent1:T17 Ent2:T8	
+R5	Support Ent1:T16 Ent2:T9	
+T21	Claim 1641 1726	acute cholangitis is characterized by the triad of jaundice, abdominal pain and fever
+R6	Attack Ent1:T2 Ent2:T21	
+T22	Claim 1728 1805	Gilbert's syndrome is an increase in bilirubin at the expense of indirectness
+T23	Disease 1641 1658	acute cholangitis
+R7	Attack Ent1:T21 Ent2:T7	
+R8	Attack Ent1:T17 Ent2:T9	
+R9	Attack Ent1:T5 Ent2:T22	
+R10	Attack Ent1:T22 Ent2:T10	
+T24	Disease 1728 1746	Gilbert's syndrome
+T25	Disease 672 689	Acute cholangitis
+T26	Marker 690 696	due to
+T27	Disease 713 728	Toxic hepatitis
+T28	Marker 729 735	due to
+T29	Disease 750 768	Cholangiocarcinoma
+T30	Disease 773 791	Gilbert's syndrome

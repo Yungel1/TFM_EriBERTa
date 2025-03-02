@@ -1,0 +1,10 @@
+QUESTION TYPE: ANESTHESIOLOGY, CRITICAL CARE AND EMERGENCY MEDICINE
+CLINICAL CASE: 
+Elderly woman brought to the ER by her neighbors because they see her somewhat groggy and with stool stains on her clothes. BP 100/60 mmHg, HR 100 bpm, sitting 70/30, HR 105 bpm. PVY normal. Kussmaul's respiration. No neurological focality. Weight 50 kg. Lab: PH 7.25, PCO2 14, Bicarbonate 5, Na 133, K 2.5, Cl 118, Creat 3.4, NUS 60, Prot 8. Which of the following answers is correct?
+1- The presenting acid-base disorder is a respiratory acidosis.
+2- Compensation to correct the acidosis is inadequate.
+3- With this exploration, we rule out that she is dehydrated.
+4- In any case, we should not put bicarbonate.
+5- She has an acute renal failure of prerenal cause.
+CORRECT ANSWER: 5
+This is a case of hyperchloremic metabolic acidosis with normal anion gap. Severe metabolic acidosis causes myocardial contractile depression, reduced effectiveness of catecholamines, increased incidence of arrhythmias, vasodilatation and increased capillary permeability, with the consequent reduction of tissue flow, at the cerebral level (leading to states of confusion and even coma), at the renal level, at the hepatic level... These patients frequently present intense tachypnea (Kussmaul's breathing) in an attempt to compensate for MCA by hyperventilation. We must take into account that, in this case, potassium is decreased, so the most frequent cause (supported by the stains on the dress) would be diarrhea, so it is most likely that their renal failure (although they do not give us urine ion data to confirm it) is of prerenal type. The treatment would be water and electrolyte replacement and, in principle, unless the patient worsens and the pH is less than 7.10, we should not administer bicarbonate.

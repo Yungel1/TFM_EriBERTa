@@ -1,0 +1,23 @@
+T1	Premise 45 149	An 18-year-old man arrives at the hospital emergency department transported by a basic life support unit
+T2	Premise 151 198	He has been hit by a car while riding a bicycle
+T3	Premise 200 367	On arrival he has a heart rate of 115 bpm, a blood pressure of 110/75 mmHg, a palpable radial pulse, a capillary refill of 2.5 seconds and a respiratory rate of 25 rpm
+T4	Claim 400 478	The patient has lost 15 to 30% of blood volume and requires volume replacement
+T5	Claim 483 559	She has lost more than 30% of volemia and needs volume and blood replacement
+T6	Claim 564 641	He has lost more than 40% of blood volume and will require surgical treatment
+T7	Claim 646 721	Has lost more than 50% of volemia and requires volume and blood replacement
+T8	Claim 748 836	Technically the patient is in a grade II hemorrhage according to the ATLS classification
+T9	Claim 838 963	in principle this means a loss of between 750 and 1500mL of blood and the indicated action is resuscitation with crystalloids
+R1	Support Ent1:T8 Ent2:T9	
+T10	Claim 965 1273	however, in the guidelines for the care of severe polytraumatized patients, the early use of blood products is increasingly recommended, especially in borderline cases like this one, and in young patients, who may not be able to translate the severity of the blood loss until it becomes much more significant
+R2	Support Ent1:T1 Ent2:T10	
+T11	Marker 965 972	however
+R3	Support Ent1:T3 Ent2:T8	
+T12	Claim 1275 1325	I would therefore hesitate between options 1 and 2
+T13	Marker 1283 1292	therefore
+R4	Support Ent1:T9 Ent2:T4	
+R5	Support Ent1:T12 Ent2:T4	
+R6	Support Ent1:T12 Ent2:T5	
+T14	Treatment 460 478	volume replacement
+T15	Treatment 531 559	volume and blood replacement
+T16	Treatment 623 641	surgical treatment
+T17	Treatment 693 721	volume and blood replacement

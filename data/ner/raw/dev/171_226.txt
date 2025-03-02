@@ -1,0 +1,10 @@
+QUESTION TYPE: CARDIOLOGY AND CARDIOVASCULAR SURGERY
+CLINICAL CASE: 
+A 26-year-old male patient, competitive athlete, is studied because his brother has had a sudden death. Complementary tests detect the existence of obstructive hypertrophic cardiomyopathy. Mark the FALSE option regarding this pathology:
+1- Treatment with beta-blockers helps to reduce symptoms.
+2- Abandonment of competitive sport should be recommended.
+3- Digoxin is useful to reduce the subaortic gradient.
+4- Diuretics should be avoided or used with great care.
+5- Given the hereditary nature of the pathology, a screening study should be performed in the rest of the direct relatives.
+CORRECT ANSWER: 3
+Our myocardium is thicker than it should be, predominantly in the septum, and it is so thick that it obstructs the LV outflow, producing a "functional" stenosis with a pressure gradient. Our objective will be, first of all, to "relax" the myocardium: for this purpose, a beta-blocker is recommended, whereas digoxin, as a good positive inotrope, increases the gradient and is contraindicated. Sport is not highly recommended, given the increased risk of sudden death associated with this pathology. And if we have a fat septum, which protrudes into the LV cavity, it is not advisable to perform volume depletion, since we would also be increasing the gradient. Regarding number 5, it is true: it is convenient to perform a careful exploration and an ECG in the relatives of patients with hypertrophy.

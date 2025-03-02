@@ -1,0 +1,26 @@
+T1	Premise 48 309	A 60-year-old man with extensive ulcerative colitis of 15 years of evolution and in clinical remission for the last 3 years, comes to our office to be informed about the risk of colorectal cancer and about the possibility of participating in prevention programs
+T2	Claim 348 440	Ulcerative colitis is only associated with an increased risk of colorectal cancer in smokers
+T3	Claim 445 573	In her case, given that she is in long-term remission, the screening advised to the general population is considered appropriate
+T4	Claim 578 720	In cases such as yours, it is considered appropriate to undergo periodic colonoscopies with multiple biopsies staggered along the entire colon
+T5	Claim 725 903	In cases such as yours, screening with periodic fecal occult blood tests is considered appropriate, but with a higher frequency than that used in screening the general population
+T7	Claim 930 1053	Patients with inflammatory bowel disease (IBD) have an increased risk of colorectal cancer, whether or not they are smokers
+R1	Support Ent1:T1 Ent2:T7	
+T8	Disease 1003 1020	colorectal cancer
+T9	Marker 1022 1036	whether or not
+T10	Claim 1055 1215	It is recommended to start screening 8-10 years after diagnosis of IBD (or earlier if primary sclerosing cholangitis or other events occur during this interval)
+T11	Claim 1217 1374	The recommended techniques are colonoscopy with random biopsies (answer 3) and pancolonic chromoendoscopy with staining, which is currently the gold standard
+R2	Support Ent1:T7 Ent2:T10	
+R3	Support Ent1:T10 Ent2:T11	
+T12	Marker 1375 1382	because
+T13	Claim 1383 1458	it detects dysplasia better, although it requires more technical experience
+R4	Support Ent1:T13 Ent2:T11	
+T14	Diagnostics 1248 1280	colonoscopy with random biopsies
+T15	Diagnostics 1296 1336	pancolonic chromoendoscopy with staining
+R5	Support Ent1:T11 Ent2:T4	
+T16	Disease 348 366	Ulcerative colitis
+T17	Disease 412 429	colorectal cancer
+R6	Attack Ent1:T7 Ent2:T2	
+T18	Diagnostics 642 720	periodic colonoscopies with multiple biopsies staggered along the entire colon
+T19	Diagnostics 749 797	screening with periodic fecal occult blood tests
+T20	Marker 825 828	but
+T6	Marker 1412 1420	although

@@ -1,0 +1,10 @@
+QUESTION TYPE: PEDIATRICS
+CLINICAL CASE: 
+The appearance of a high fever of 39°C in a 10-month-old infant that abruptly subsides after 3-5 days, followed by a cephalocaudal morbilliform exanthema with enanthema consisting of reddish papules on the palate, and resolving within a week, associated with good general condition, is usually caused by:
+1- Parvovirus B19.
+2- Herpes virus type 6.
+3- Coxackie A16 virus.
+4- Primoinfection by Epstein-Barr virus.
+5- nan
+CORRECT ANSWER: 2
+The question of exanthematous diseases that pediatricians and MIR exam takers like so much. By the picture of high fever of several days that suddenly subsides with the appearance of a rash, we have a sudden exanthem, caused by Herpes virus type 6 (remember the mnemonic rule of "sudden Hexanthem"). Parvovirus B19 is the cause of erythema infectiosum or "fifth disease", whose characteristic rash is on the cheeks, giving the appearance of a slapped face. Coxackie A16 causes herpangina and also boca-mano-pie disease, which presents an initially macular rash, which does not respect palms or soles and evolves into bursting vesicles. Finally, EBV infection produces a mononucleosis syndrome with high fever lasting several days, with pharyngeal erythema and grayish exudates on the tonsils. It can present if penicillins are given to treat it (when confused with a streptococcal pharyngotonsillitis) a generalized exanthema. In addition, it also presents with fatigue, hepatic inflammation with increased transaminases and splenomegaly.

@@ -1,0 +1,18 @@
+T1	Premise 42 95	A 5-year-old boy diagnosed with chronic renal failure
+T2	Premise 97 174	He comes to the emergency department with vomiting, malaise, and palpitations
+T3	Premise 176 285	An electrocardiogram was performed with T-wave elevation and blood tests showed potassium levels of 5.9 mEq/L
+T4	Premise 287 343	Immediate administration of calcium gluconate is decided
+T5	Claim 387 475	Encourage the displacement of potassium from the plasma space to the intracellular space
+T6	Claim 480 542	Chelate circulating potassium to favor its hepatic elimination
+T7	Claim 547 607	Chelate circulating potassium to favor its renal elimination
+T8	Claim 612 678	Antagonize the action of potassium on the myocardial cell membrane
+T9	Claim 705 762	Calcium gluconate has no effect on blood potassium levels
+T10	Claim 764 806	therefore options 1, 2 and 3 are ruled out
+T11	Marker 764 773	therefore
+T12	Marker 797 806	ruled out
+R1	Support Ent1:T9 Ent2:T10	
+R2	Attack Ent1:T10 Ent2:T5	
+R3	Attack Ent1:T10 Ent2:T6	
+R4	Attack Ent1:T10 Ent2:T7	
+T13	Claim 809 937	Its function is to decrease the excitability of cardiac myocytes to decrease the likelihood of developing heart rhythm disorders
+R5	Support Ent1:T13 Ent2:T8	

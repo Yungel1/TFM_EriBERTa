@@ -1,0 +1,33 @@
+T1	Premise 57 137	45-year-old woman, mother of 3 children, attends an early diagnosis consultation
+T2	Premise 139 230	The cervicovaginal cytology is compatible with a high-grade squamous intraepithelial lesion
+T3	Claim 284 310	Repeat cytology in 1 month
+T4	Claim 315 346	Colposcopy with possible biopsy
+T5	Claim 351 418	Hysterectomy with bilateral salpinguectomy and ovarian conservation
+T6	Claim 423 453	Fractionated uterine curettage
+T7	Claim 480 648	Colposcopy is indicated for all patients with altered cytology (intraepithelial lesion or suspicion of invasive cancer or HPV infection), as a second level of screening
+R1	Support Ent1:T2 Ent2:T7	
+R2	Support Ent1:T7 Ent2:T4	
+T8	Diagnostics 480 490	Colposcopy
+T9	Claim 650 728	If lesions are observed in this test, a biopsy of the lesion will be performed
+R3	Support Ent1:T9 Ent2:T4	
+T10	Claim 730 773	There is no point in repeating the cytology
+T11	Claim 781 828	this is a screening test, not a diagnostic test
+T12	Marker 775 780	since
+R4	Support Ent1:T11 Ent2:T10	
+R5	Attack Ent1:T10 Ent2:T3	
+T13	Claim 831 948	performing a hysterectomy for an intraepithelial lesion that has not been confirmed by biopsy is not indicated either
+R6	Attack Ent1:T13 Ent2:T5	
+T14	Claim 954 1029	performing curettage of the endometrial cavity does not provide information
+T15	Premise 1036 1065	the lesion is from the cervix
+T16	Marker 1030 1035	since
+R7	Support Ent1:T15 Ent2:T14	
+R8	Attack Ent1:T14 Ent2:T6	
+T17	Diagnostics 690 696	biopsy
+T18	Diagnostics 765 773	cytology
+T19	Treatment 844 886	hysterectomy for an intraepithelial lesion
+T20	Treatment 965 1000	curettage of the endometrial cavity
+T21	Diagnostics 284 310	Repeat cytology in 1 month
+T22	Diagnostics 315 346	Colposcopy with possible biopsy
+T23	Treatment 351 393	Hysterectomy with bilateral salpinguectomy
+T24	Treatment 398 418	ovarian conservation
+T25	Treatment 423 453	Fractionated uterine curettage

@@ -1,0 +1,20 @@
+T1	Premise 44 195	13-year-old female, with no relevant history, with menarche 3 months ago, followed since the age of 10 years for idiopathic scoliosis that has worsened
+T2	Premise 197 362	In the physical examination she presents a hump of 7 degrees in the Adams test and in the scoliogram a T4-L1 thoracolumbar curve of 35 degrees of Cobb and a Risser 0
+T3	Claim 367 412	Recommend swimming and review in three months
+T4	Claim 417 448	Prescribe a brace-type orthosis
+T5	Claim 453 500	Refer to physiotherapy for spine elastification
+T6	Claim 505 539	Check in 6 months with a new X-ray
+T7	Claim 566 628	Treatment with a brace in Risser from 0 to 2 can be considered
+R1	Support Ent1:T2 Ent2:T7	
+T8	Claim 629 695	since there is still growth to occur and correction can take place
+T9	Marker 629 634	since
+R2	Support Ent1:T7 Ent2:T4	
+T10	Claim 697 744	Its use is considered for curves between 30-40º
+R3	Support Ent1:T10 Ent2:T7	
+R4	Support Ent1:T8 Ent2:T7	
+R5	Support Ent1:T2 Ent2:T10	
+T11	Treatment 377 385	swimming
+T12	Diagnostics 390 412	review in three months
+T13	Treatment 429 448	brace-type orthosis
+T14	Treatment 462 500	physiotherapy for spine elastification
+T15	Diagnostics 505 539	Check in 6 months with a new X-ray

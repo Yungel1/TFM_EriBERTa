@@ -1,0 +1,10 @@
+QUESTION TYPE: TRAUMATOLOGY
+CLINICAL CASE: 
+35-year-old male, letter carrier, with no history of interest, who comes to the emergency department for acute cervical pain of 24 hours of evolution, without previous trauma, which radiates to the left arm up to the hand and is accompanied by paresthesia in the radial border of the forearm. She presents no objectifiable loss of strength, preserves neck mobility although it is painful and contracture of the paravertebral musculature is appreciated. The first attitude will be:
+1- Conservative treatment with non-steroidal anti-inflammatory drugs, local heat and relative rest.
+2- Urgent call to the neurosurgeon for surgical evaluation.
+3- Preferential request for MRI and electromyogram.
+4- Preferential referral to traumatology outpatients.
+5- nan
+CORRECT ANSWER: 1
+Correct answer 1. 75% of patients with radiculopathy improve with non-surgical treatment, this being the treatment of choice in the initial stages. Magnetic resonance imaging is of choice in certain "red flags": fever, weight loss, nocturnal pain, persistence of symptoms despite conservative treatment and loss of strength (incorrect answer 3).

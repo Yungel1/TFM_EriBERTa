@@ -1,0 +1,10 @@
+QUESTION TYPE: GYNECOLOGY AND OBSTETRICS
+CLINICAL CASE: 
+A pregnant woman, 10 weeks pregnant, comes to the emergency room with a blood pressure of 160/105 mmHg. She is in good general condition, with only mild headache, which is the reason for taking her blood pressure. After 4 hours of rest she presented with a blood pressure of 150/95mmHg. A complete blood count is normal and proteinuria is negative. What type of hypertension does she have?
+1- Moderate pre-eclampsia.
+2- Pregnancy-induced hypertension.
+3- Chronic hypertension.
+4- Eclampsia.
+5- nan
+CORRECT ANSWER: 3
+Chronic hypertension. This is hypertension that is detected before pregnancy or before the 20th week of pregnancy and/or persists at 12 weeks postpartum.

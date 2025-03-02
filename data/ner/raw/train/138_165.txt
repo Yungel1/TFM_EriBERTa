@@ -1,0 +1,10 @@
+QUESTION TYPE: OTORHINOLARYNGOLOGY AND MAXILLOFACIAL SURGERY
+CLINICAL CASE: 
+A child who comes to the outpatient clinic because he brings his hand to his ear, without fever or acute inflammatory signs and who on examination shows a pinkish/amber eardrum. As history he refers that one month ago he presented an episode of otalgia, fever accompanied by irritability and that he was treated with amoxicillin 40 mg/kg/day. What is the most probable diagnosis?
+1- Recurrent acute otitis media.
+2- Serous otitis media.
+3- Simple chronic otitis media.
+4- Chronic cholesteatomatous otitis media.
+5- Mastoiditis.
+CORRECT ANSWER: 2
+Reading the case, we are discarding options: child with otalgia, but without fever or acute inflammatory signs: it is neither 1 (recurrent acute otitis media) nor 5 (mastoiditis). On otoscopy, a pinkish and amber eardrum is observed: there are no scales, so it is not 4 (cholesteatomatous chronic otitis media); nor perforations or adhesions, so it is not 3 (simple chronic otitis media). Otoscopy is characteristic of serous otitis media (answer 2 correct). It is known by ENT, pediatricians and family physicians that in the month following an acute otitis media, the middle ear is occupied by a mucous content whose evolution should be monitored. I do not think that this is a contestable issue either.

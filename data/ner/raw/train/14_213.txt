@@ -1,0 +1,10 @@
+QUESTION TYPE: SURGERY
+CLINICAL CASE: 
+A 41-year-old man comes to the clinic with a nodule in the right thyroid, a fine needle aspiration is performed. Cytological analysis will allow us:
+1- Distinguish between follicular adenoma or minimally invasive follicular carcinoma.
+2- Identify the areas of capsular or vascular invasion of the follicular carcinoma.
+3- Recognize G-cell hyperplasia associated with familial spinal cancer.
+4- Distinguish between a Hurthle cell tumor and an oxyphilic follicular adenoma.
+5- Identify the typical cytologic features of papillary carcinoma.
+CORRECT ANSWER: 5
+I think the correct answer is 5; FNA does not allow a histological study but a cytological one, therefore questions 1, 2 are eliminated. Question 3 seems to have been put as a filler because it is not relevant. Question 4 could raise doubts if you are not a pathologist but the most logical answer is 5 since papillary carcinoma is the most frequent.

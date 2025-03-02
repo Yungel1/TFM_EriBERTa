@@ -1,0 +1,42 @@
+T1	Premise 42 222	18-month-old boy, with complete vaccination schedule to date, who consults the Emergency Department for swelling of the right knee after playing in the park, without obvious trauma
+T2	Premise 224 311	In the directed anamnesis, the mother refers that an uncle of hers had similar problems
+T4	Diagnostics 317 339	ultrasound examination
+T5	Disease 359 371	hemarthrosis
+T6	Diagnostics 383 391	analysis
+T7	Claim 512 527	Marfan syndrome
+T8	Claim 532 556	Von Willebrand's disease
+T9	Claim 561 582	Ehlers-Danlos disease
+T10	Claim 587 599	Hemophilia A
+T11	Claim 604 626	Bemard-Soulier disease
+T12	Disease 512 527	Marfan syndrome
+T13	Disease 532 556	Von Willebrand's disease
+T14	Disease 561 582	Ehlers-Danlos disease
+T15	Disease 587 599	Hemophilia A
+T16	Disease 604 626	Bemard-Soulier disease
+T17	Premise 763 824	a small child who suffers a hemarthrosis without clear trauma
+T18	Disease 791 803	hemarthrosis
+R1	Support Ent1:T1 Ent2:T17	
+T3	Premise 313 371	The ultrasound examination is compatible with hemarthrosis
+T19	Premise 376 460	in the analysis performed only an APTT lengthening of 52″ (normal 25-35″) stands out
+R2	Support Ent1:T3 Ent2:T17	
+T20	Claim 826 896	An uncle of his had similar problems, so we suspect hereditary disease
+T21	Marker 864 866	so
+R3	Support Ent1:T2 Ent2:T20	
+T22	Premise 898 1017	The APTT, which evaluates the intrinsic coagulation pathway (involving factors V, VIII, IX, X, XI and XII) is elongated
+R4	Support Ent1:T19 Ent2:T22	
+T23	Claim 1019 1049	Hereditary coagulation problem
+T24	Claim 1051 1085	We thus discard answers 1, 2 and 5
+T25	Marker 1054 1058	thus
+R5	Support Ent1:T23 Ent2:T24	
+R6	Attack Ent1:T23 Ent2:T7	
+R8	Attack Ent1:T23 Ent2:T11	
+T26	Claim 1087 1145	We are left with von Willebrand's disease and hemophilia A
+T27	Claim 1147 1555	I consider that the correct answer is 4, hemophilia A, since the inheritance pattern is X-linked and its main clinical manifestation is soft tissue bruising and spontaneous hemarthrosis, without apparent trauma, while von Willebrand disease is characterized by bleeding after surgery or trauma and a prolonged bleeding time with a normal platelet count is characteristic (data not mentioned in the statement)
+T28	Disease 1188 1200	hemophilia A
+R9	Support Ent1:T27 Ent2:T10	
+T29	Marker 1202 1207	since
+T30	Disease 1320 1332	hemarthrosis
+T31	Marker 1359 1364	while
+T32	Disease 1369 1387	Willebrand disease
+R10	Attack Ent1:T27 Ent2:T8	
+R7	Attack Ent1:T24 Ent2:T9	

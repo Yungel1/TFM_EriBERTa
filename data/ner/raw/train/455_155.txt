@@ -1,0 +1,10 @@
+QUESTION TYPE: NEUROLOGY
+CLINICAL CASE: 
+In a 70-year-old man, hypertensive, with a right hemiplegia of sudden onset with mild dysarthria, without alterations in evocation or language comprehension, what type of stroke do you think is most likely to have suffered?
+1- Left capsular lacunar lacunar infarction.
+2- A cortico-subcortical left frontotemporal sylvian infarction.
+3- Brain stem infarction.
+4- A left lenticular hemorrhage.
+5- nan
+CORRECT ANSWER: 1
+The closest answer is 1. If we are strict we would be talking about a pure motor lacunar infarction (with mild dysarthria). Since the other 3 options do not give us a clinical picture like the one in the statement. Both options 2 and 3 give us a much more florid and extensive clinical picture.

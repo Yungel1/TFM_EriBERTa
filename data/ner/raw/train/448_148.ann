@@ -1,0 +1,16 @@
+T1	Premise 44 137	A 59-year-old woman with recent onset of epileptic seizures comes to the emergency department
+T2	Premise 139 202	The examination showed left pyramidal signs and papillary edema
+T3	Premise 204 309	Brain MRI showed a right hemispheric mass with edema, midline deviation and signs of tentorial herniation
+T4	Premise 311 390	She reports a headache that has been progressing in intensity for the past week
+T5	Claim 487 514	Predominance in the morning
+T6	Claim 519 549	It does not change with effort
+T7	Claim 554 565	Photophobia
+T8	Claim 570 580	Sonophobia
+T9	Claim 607 695	They describe a recent diagnosis of cerebral LOE with signs of intracranial hypertension
+T10	Premise 697 734	edema, midline deviation, papilledema
+R1	Support Ent1:T10 Ent2:T9	
+T11	Claim 737 827	The associated headache is typically morning headache, with increasing ICP values at night
+R2	Support Ent1:T9 Ent2:T11	
+R3	Support Ent1:T4 Ent2:T11	
+T12	Disease 554 565	Photophobia
+T13	Disease 570 580	Sonophobia

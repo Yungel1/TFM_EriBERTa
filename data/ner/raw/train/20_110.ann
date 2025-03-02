@@ -1,0 +1,14 @@
+T1	Claim 646 744	This is a fairly easy epidemiology question, in adults without other data, Pneumococcus is the 1st
+T2	Claim 485 506	Mycoplasma pneumoniae
+T3	Claim 511 531	Chlamydia pneumoniae
+T4	Claim 536 560	Streptococcus pneumoniae
+T5	Claim 565 599	Legionella pneumophila serogroup 1
+T6	Claim 604 626	Haemophilus influenzae
+T7	Disease 485 506	Mycoplasma pneumoniae
+T8	Disease 511 531	Chlamydia pneumoniae
+T9	Disease 536 560	Streptococcus pneumoniae
+T10	Disease 565 599	Legionella pneumophila serogroup 1
+T11	Disease 604 626	Haemophilus influenzae
+T12	Premise 251 360	Chest X-ray shows an increased density with alveolar pattern in the LSD and the patient is diagnosed with CAP
+T13	Premise 133 249	He consults for symptoms of 24 hours of evolution of chills, thermometric fever of 39ºC and cough with expectoration
+T14	Disease 721 733	Pneumococcus

@@ -1,0 +1,26 @@
+T1	Premise 44 139	A 20-year-old boy consults for lumbosacral pain of inflammatory rhythm of 4 months of evolution
+T2	Premise 141 198	Also bilateral thalalgia and morning stiffness for 1 hour
+T3	Premise 200 267	In the last 2 months, onset of diarrhea with loss of 4 kg of weight
+T4	Claim 318 488	Given the patient's age, he most likely suffers from non-specific low back pain and tendonitis in the feet. If the diarrhea persists, a digestive study would be performed
+T5	Claim 493 604	I would perform a digestive study to rule out tumor pathology. The lumbar pain may be due to visceral pathology
+T6	Claim 609 717	The clinical picture is very suggestive of spondyloarthritis. Inflammatory bowel disease should be ruled out
+T7	Claim 722 822	I would request a lumbar MRI to rule out disc herniation and if diarrhea persists, a digestive study
+T8	Disease 652 669	spondyloarthritis
+T9	Claim 849 1001	The clinical picture is typical of spondyloarthritis, and together with the digestive symptoms it is probably associated with inflammatory bowel disease
+R1	Support Ent1:T3 Ent2:T9	
+T10	Disease 884 901	spondyloarthritis
+T11	Disease 975 1001	inflammatory bowel disease
+T12	Disease 402 424	tendonitis in the feet
+T13	Diagnostics 454 469	digestive study
+T14	Diagnostics 511 526	digestive study
+T15	Marker 530 538	rule out
+T16	Disease 539 554	tumor pathology
+T17	Marker 579 585	due to
+T18	Disease 560 571	lumbar pain
+T19	Disease 586 604	visceral pathology
+T20	Disease 671 697	Inflammatory bowel disease
+T21	Marker 708 717	ruled out
+T22	Diagnostics 740 750	lumbar MRI
+T23	Marker 754 762	rule out
+T24	Disease 763 778	disc herniation
+T25	Diagnostics 807 822	digestive study

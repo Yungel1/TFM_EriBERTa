@@ -1,0 +1,16 @@
+T1	Premise 42 111	15-year-old female presenting with delayed menarche and short stature
+T2	Premise 113 154	She does not have intellectual disability
+T3	Claim 255 279	Massive sequencing (NGS)
+T4	Claim 284 288	FISH
+T5	Claim 293 319	DNA and/or RNA microarrays
+T6	Claim 324 333	Karyotype
+T7	Claim 360 514	In a woman with delayed puberty and short stature we should always think about and rule out Turner syndrome, whose diagnosis is made by karyotyping (45X0)
+R1	Support Ent1:T1 Ent2:T7	
+T8	Marker 443 451	rule out
+T9	Disease 452 467	Turner syndrome
+T10	Diagnostics 496 514	karyotyping (45X0)
+R2	Support Ent1:T7 Ent2:T6	
+T11	Diagnostics 255 279	Massive sequencing (NGS)
+T12	Diagnostics 284 288	FISH
+T13	Diagnostics 293 319	DNA and/or RNA microarrays
+T14	Diagnostics 324 333	Karyotype

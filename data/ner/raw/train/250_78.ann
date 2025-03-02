@@ -1,0 +1,20 @@
+T1	Claim 285 338	Determination of anti-transglutaminase IgA antibodies
+T2	Premise 48 220	A 55-year-old man, father of a celiac child, with iron-deficiency anemia and a recent increase in the stool rhythm, has been tested negative for HLA-DQ2 and HLA-DQ8 alleles
+T3	Claim 343 381	Upper endoscopy with duodenal biopsies
+T4	Claim 386 399	D-xylose test
+T5	Claim 404 441	Evaluate response to gluten-free diet
+T6	Claim 446 457	Colonoscopy
+T7	Premise 477 552	Middle-aged male with iron deficiency anemia and increased number of stools
+T8	Claim 554 615	a colonoscopy should be done to rule out colorectal cancer!!!
+R1	Support Ent1:T7 Ent2:T8	
+R2	Support Ent1:T8 Ent2:T6	
+T9	Diagnostics 556 567	colonoscopy
+T10	Marker 586 594	rule out
+T11	Disease 595 612	colorectal cancer
+T12	Claim 616 712	If the HLA is negative it is very unlikely to be celiac disease (high negative predictive value)
+T13	Diagnostics 285 338	Determination of anti-transglutaminase IgA antibodies
+T14	Diagnostics 343 381	Upper endoscopy with duodenal biopsies
+T15	Diagnostics 386 399	D-xylose test
+R3	Attack Ent1:T12 Ent2:T1	
+T16	Diagnostics 404 441	Evaluate response to gluten-free diet
+T17	Diagnostics 446 457	Colonoscopy

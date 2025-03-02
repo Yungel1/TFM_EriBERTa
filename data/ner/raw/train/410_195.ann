@@ -1,0 +1,27 @@
+T1	Premise 44 139	A 75 a man is admitted to the hospital because he refuses to eat and has lost 30% of his weight
+T2	Premise 141 215	He has a history of multiple sclerosis which has worsened in recent months
+T3	Premise 217 311	His only family member who was his sister died 3 months ago and since then he has deteriorated
+T4	Marker 83 90	because
+T5	Marker 281 291	since then
+T6	Premise 313 393	He has become incontinent, has stopped eating and participating in social events
+T7	Premise 395 436	He is suffering from psychotic depression
+T8	Premise 438 466	He is physically able to eat
+T9	Premise 468 541	Psychotropic medication is started and discontinued due to adverse events
+T10	Marker 520 526	due to
+T11	Premise 543 618	If his nutritional status improves it is possible to resume his medications
+T12	Premise 620 711	He refuses intravenous fluids and then accepts them but the IV is started a few hours later
+T13	Premise 713 820	An alternative is to perform a percutaneous endoscopic gastrostomy (PEG) and discharge him to his residence
+T14	Claim 907 1015	Ask the hospital ethics committee to help determine the decision that is in the best interest of the patient
+T15	Claim 1020 1094	Assess whether the residence will take the patient if PEG is not performed
+T16	Claim 1099 1132	Seek a court order to perform PEG
+T17	Claim 1137 1186	Enrolling the patient in terminal palliative care
+T18	Premise 1243 1415	the patient is in a situation of psychotic depression and is not able to decide for his life and it does not seem that the patient has filled in the last will and testament
+T19	Claim 1213 1236	The correct answer is 1
+T20	Marker 1237 1242	since
+R1	Support Ent1:T18 Ent2:T19	
+T21	Claim 1417 1569	the most convenient thing to do is to present the case to the ethics committee of the center to make a decision on the matter in accordance with the law
+R2	Support Ent1:T18 Ent2:T21	
+R3	Support Ent1:T19 Ent2:T14	
+R4	Support Ent1:T21 Ent2:T14	
+T22	Treatment 744 785	percutaneous endoscopic gastrostomy (PEG)
+T23	Treatment 1129 1132	PEG

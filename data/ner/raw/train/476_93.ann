@@ -1,0 +1,19 @@
+T1	Premise 45 190	A 58-year-old hypertensive man comes to the emergency department for a 30-second syncope while jogging, with spontaneous recovery and no sequelae
+T2	Premise 192 221	Blood pressure is 135/65 mmHg
+T3	Premise 223 353	Cardiac auscultation shows a loud, intense systolic murmur, which is reduced with Valsalva maneuvers and an attenuated second tone
+T4	Premise 355 476	The ECG shows sinus rhythm at 72 bpm, with criteria of left ventricular hypertrophy and inverted T waves in anterior face
+T5	Claim 514 569	The clinical picture suggests pulmonary thromboembolism
+T6	Disease 544 569	pulmonary thromboembolism
+T7	Claim 574 690	The data provided indicate hypertrophic cardiomyopathy with severe obstruction of the left ventricular outflow tract
+T8	Disease 601 690	hypertrophic cardiomyopathy with severe obstruction of the left ventricular outflow tract
+T9	Claim 695 742	These data correspond to severe aortic stenosis
+T10	Claim 747 824	Aortic dissection should be excluded by contrast-enhanced computed tomography
+T11	Disease 720 742	severe aortic stenosis
+T12	Disease 747 764	Aortic dissection
+T13	Marker 775 783	excluded
+T14	Diagnostics 787 824	contrast-enhanced computed tomography
+T15	Claim 851 1031	The data provided on the characteristics of the murmur (it DECREASES with Valsalva) and the data on left ventricular hypertrophy, lead us to the diagnosis of severe aortic stenosis
+R1	Support Ent1:T3 Ent2:T15	
+R2	Support Ent1:T4 Ent2:T15	
+T16	Disease 1009 1031	severe aortic stenosis
+R3	Support Ent1:T15 Ent2:T9	

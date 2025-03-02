@@ -1,0 +1,10 @@
+QUESTION TYPE: HEMATOLOGY
+CLINICAL CASE: 
+A 35-year-old woman, taking contraceptives, comes to the emergency department with febrile syndrome and paresthesias in the left hemibody. Blood tests showed Hb 7.5 g/dL, platelets 7,000/microl, normal leukocytes with normal differential count, LDH 1,200 IU/l, reticulocytes 10% (normal 0.5-2%), undetectable serum haptoglobin, negative direct Coombs' test and peripheral blood smear with schistocytes. Coagulation (prothrombin time and APTT) normal. Which of the following is the most likely diagnosis:
+1- Autoimmune hemolytic anemia.
+2- Thrombotic thrombocytopenic purpura.
+3- Evans syndrome (hemolytic anemia and immune thrombopenia).
+4- Idiopathic immune thrombocytopenia.
+5- nan
+CORRECT ANSWER: 2
+The patient presents criteria for Thrombotic Thrombocytopenic Purpura (TTP): 1. Neurological alteration. 2. Febrile syndrome (fever). 3. Coombs negative migroangiopathic hemolytic anemia (presence of schistocytes). 4. Thrombopenia.

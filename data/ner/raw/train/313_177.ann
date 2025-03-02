@@ -1,0 +1,42 @@
+T1	Premise 40 117	A 57-year-old patient diagnosed with stage T3N1M0 adenocarcinoma of the colon
+T2	Premise 119 250	He was treated with resection followed by postoperative FOLFOX chemotherapy (fluorouracil, leucovorin and oxaliplatin) for 6 months
+T3	Premise 252 387	In a routine control, two years later, carcinoembryonic antigen (CEA) elevation to 30 ng/mL (previously less than 2 ng/mL) was detected
+T4	Premise 389 469	She has no symptoms, physical examination is unremarkable, chest X-ray is normal
+T5	Premise 471 546	CT scan shows a 3 cm mass in the right hepatic lobe that is captured on PET
+T6	Premise 548 594	No other alterations are observed in CT or PET
+T7	Claim 634 718	Chemotherapy with FOLFIRI (fluorouracil, leucovorin and irinotecan) plus bevacizumab
+T8	Claim 723 757	Monochemotherapy with capecitabine
+T9	Claim 762 817	Assessment for surgical resection of the hepatic lesion
+T10	Claim 822 842	Hepatic radiotherapy
+T11	Premise 869 985	We are faced with a situation of probable liver metastasis from a localized colon adenocarcinoma treated 2 years ago
+T12	Marker 902 910	probable
+T13	Claim 1101 1344	As this is a situation of oligometastasis and the treatments for advanced colon adenocarcinoma allow prolonged survival with good quality of life in these patients, if there is nothing to contraindicate surgery, this should be the first option
+T14	Claim 1346 1362	correct answer 3
+R1	Support Ent1:T13 Ent2:T9	
+R2	Support Ent1:T14 Ent2:T9	
+T15	Claim 1503 1666	n case of an unresectable situation, chemotherapy treatment would be considered with the intention of converting the single metastatic lesion into a resectable one
+T16	Claim 1668 1759	Since more than 12 months have passed since FOLFOX treatment, the same scheme could be used
+T17	Marker 1668 1673	Since
+T18	Claim 1761 1810	although FOLFIRI+bevacizumab would also be useful
+T19	Marker 1761 1769	although
+T20	Treatment 634 718	Chemotherapy with FOLFIRI (fluorouracil, leucovorin and irinotecan) plus bevacizumab
+T21	Claim 1812 1914	Capecitabine monotherapy, in the patient's current situation, would also not be a good starting option
+T22	Marker 1916 1921	since
+T23	Claim 1922 2008	the responses are lower compared to FOLFOX or FOLFIRI plus antiangiogenic combinations
+R3	Support Ent1:T23 Ent2:T21	
+T24	Claim 2010 2050	Hepatic radiotherapy could be considered
+T25	Marker 2052 2057	since
+T26	Claim 2058 2114	there are SBRT techniques that achieve very good results
+R4	Support Ent1:T26 Ent2:T24	
+T27	Claim 2116 2246	but in this case it is best to start by asking for an assessment by the surgeons and if they rule out surgery we would consider RT
+T28	Marker 2116 2119	but
+R5	Support Ent1:T27 Ent2:T9	
+R6	Attack Ent1:T27 Ent2:T24	
+R7	Support Ent1:T18 Ent2:T7	
+R8	Attack Ent1:T21 Ent2:T8	
+R9	Support Ent1:T24 Ent2:T10	
+R10	Attack Ent1:T27 Ent2:T10	
+T29	Treatment 723 757	Monochemotherapy with capecitabine
+T30	Diagnostics 762 795	Assessment for surgical resection
+T31	Disease 803 817	hepatic lesion
+T32	Treatment 822 842	Hepatic radiotherapy

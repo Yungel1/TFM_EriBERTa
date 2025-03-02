@@ -1,0 +1,54 @@
+T1	Premise 45 174	A parent comes to the emergency department with his 2-year-old son because he reports that he has hit his right eye while playing
+T2	Premise 176 255	Indeed, a hematoma is observed on the right eyelid, apparently of no importance
+T3	Premise 257 381	The fundus examination showed intraretinal hemorrhages not only in the eye referred by the parents but also in the other eye
+T4	Premise 405 450	the child appears drowsy and with little tone
+T5	Claim 542 590	It is a highly suggestive history of child abuse
+T6	Claim 595 661	It is the normal evolution of a non-perforating intraocular trauma
+T7	Claim 666 707	The most likely diagnosis is Berlin edema
+T8	Claim 712 788	It is the characteristic picture of Purstcher's traumatic retinal angiopathy
+T9	Premise 1044 1111	we have a blow to the right eye area, with a hematoma on the eyelid
+T10	Claim 986 1031	The problem is option 4, which can confuse us
+T11	Premise 1131 1336	The problem is that retinal hemorrhages appear not only in that eye (which in itself is rare, because an external blow to the eye in a child rarely causes bleeding in the retina), but also in the other eye
+T12	Claim 1338 1417	Therefore, something other than the blow has caused hemorrhages in both retinas
+T13	Marker 1338 1347	Therefore
+R1	Support Ent1:T9 Ent2:T12	
+R2	Support Ent1:T11 Ent2:T12	
+T14	Premise 1419 1484	Then we are told that the child seems drowsy and with little tone
+T15	Marker 1419 1423	Then
+T16	Claim 1486 1658	Here we already have the two keys; we have to suspect what is not mentioned in the answers, but which is what the child has: the shaken baby syndrome (shaken baby syndrome)
+T17	Marker 1578 1581	but
+T18	Claim 1660 1763	Characteristic of this syndrome are bilateral retinal hemorrhages, cerebral edema and subdural hematoma
+R3	Support Ent1:T9 Ent2:T18	
+R4	Support Ent1:T11 Ent2:T18	
+R5	Support Ent1:T18 Ent2:T16	
+T19	Claim 1765 1824	There may also be fracture of long bones and other problems
+T20	Claim 1897 1953	The cause of shaken baby syndrome is almost always abuse
+T21	Marker 1955 1957	so
+T22	Claim 1958 1973	the answer is 1
+R6	Support Ent1:T20 Ent2:T22	
+R7	Support Ent1:T22 Ent2:T5	
+R8	Support Ent1:T20 Ent2:T5	
+T23	Claim 1975 2011	Options 2 and 3 are easy to rule out
+T24	Marker 2003 2011	rule out
+R9	Attack Ent1:T23 Ent2:T6	
+R10	Attack Ent1:T23 Ent2:T7	
+T25	Premise 2013 2107	nothing indicates perforating trauma, and it does not explain the hemorrhages in the other eye
+R11	Support Ent1:T25 Ent2:T23	
+T26	Claim 2109 2228	And the berlin edema is an edema of the macula and appears as a whitish lesion, which is not described in the statement
+R12	Attack Ent1:T26 Ent2:T7	
+T27	Claim 2253 2388	Purstcher's retinopathy can also appear in the context of the child of the shaken child, and therefore occur in the case of child abuse
+T28	Marker 2346 2355	therefore
+T29	Claim 2450 2565	However, if we read answer 4 carefully, it does not tell us that if there is child maltreatment Purstcher can occur
+T30	Marker 2450 2457	However
+R13	Attack Ent1:T29 Ent2:T27	
+T31	Claim 2567 2715	It states that the picture described above (intraretinal hemorrhages, without other findings) is characteristic of Purstcher's angiopathy. It is not
+R14	Attack Ent1:T31 Ent2:T27	
+T32	Claim 2717 2790	In Purstcher's there are hemorrhages, but also cottony exudates and edema
+R15	Attack Ent1:T32 Ent2:T27	
+T33	Claim 2792 2843	If there are only hemorrhages, it's not Purstcher's
+R16	Support Ent1:T31 Ent2:T33	
+R17	Support Ent1:T32 Ent2:T33	
+R18	Attack Ent1:T33 Ent2:T8	
+R19	Attack Ent1:T31 Ent2:T8	
+T34	Disease 695 707	Berlin edema
+T35	Disease 748 788	Purstcher's traumatic retinal angiopathy

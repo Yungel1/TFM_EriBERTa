@@ -1,0 +1,10 @@
+QUESTION TYPE: ENDOCRINOLOGY
+CLINICAL CASE: 
+A 45-year-old woman comes to the emergency department with confusional symptoms accompanied by dysphonia. On examination she has a palpable neck mass and a blood test shows plasma calcium levels of 15 mg/dL (normal up to 10.2 mg/dL). Given these findings, which of the following diagnoses should be suspected?
+1- Parathyroid carcinoma.
+2- Medullary thyroid carcinoma.
+3- MEN type I.
+4- Parathyroid adenoma.
+5- nan
+CORRECT ANSWER: 1
+Palpable mass in the neck: suspect thyroid/parathyroid pathology. It is associated with hypercalcemia, therefore, the option of medullary thyroid cancer is ruled out (it does not affect the level of calcemia). To think of MEN type I we should associate other pathologies (pituitary, pancreatic or duodenal tumors). The presence of a calcemia higher than 13mgr/dl, together with dysphonia, indicates a malignant tumor (higher calcemia level and infiltration), therefore we opt for option 1.

@@ -1,0 +1,10 @@
+QUESTION TYPE: PEDIATRICS
+CLINICAL CASE: 
+A newborn of 37 weeks gestational age, with no pathological findings in the prenatal ultrasound, presents in the examination performed in the delivery room a "stop" to the passage of the nasogastric tube. Chest and abdominal X-ray showed an atresic esophageal pouch, with normal gastrointestinal pneumatization. After a diagnostic evaluation that ruled out other anomalies and being in a stable respiratory condition, surgical intervention was decided. On what basis was the priority to intervene in this patient based?
+1- Due to the impossibility of swallowing saliva.
+2- Because of frequently associated cardiac malformations.
+3- Because of the risk of aspiration pneumonitis.
+4- Due to the impossibility of enteral feeding.
+5- Associated tracheomalacia.
+CORRECT ANSWER: 3
+The correct answer is 3. The fact that there is intestinal aeration points to the existence of a fistula of the lower esophageal segment with the trachea or with a bronchus. In this case, pulmonary complications are frequent due to the passage of gastric contents into the airway.

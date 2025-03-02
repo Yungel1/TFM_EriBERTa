@@ -1,0 +1,10 @@
+QUESTION TYPE: CRITICAL CARE
+CLINICAL CASE: 
+35-year-old male, transferred to the emergency department after a traffic accident. On admission, a Glasgow scale score of 15, blood pressure of 140/90 mmHg, respiratory rate of 35 rpm and heart rate of 110 bpm, with a baseline oxygen saturation of 91%. On examination there is right thoracic hypophonesis and tympanism on percussion.What is the presumptive diagnosis? :
+1- Traumatic cardiac tamponade.
+2- Right tension pneumothorax.
+3- Massive right hemothorax.
+4- Pulmonary contusion.
+5- nan
+CORRECT ANSWER: 2
+This is an easy and classic question that you can also apply to daily clinical practice. Hypophonesis in a hemithorax + tympanism = pneumothorax. If there is dullness on percussion: hemothorax. In either case, in case of hypophonesis of a hemithorax in a severe and unstable polytraumatized patient: thoracic drainage (if possible, large caliber if placed in a hospital environment, since although the predominant lesion is pneumothorax, a hemothorax component can be found which, in case of placing a fine drainage, could obstruct it).

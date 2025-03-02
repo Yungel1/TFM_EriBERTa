@@ -1,0 +1,10 @@
+QUESTION TYPE: RHEUMATOLOGY
+CLINICAL CASE: 
+A 70-year-old woman who has been complaining for 1 month of pain and stiffness in the shoulder girdle and pelvic girdle, which predominates when she gets up and improves with mobilization, without fever, headache or general condition. Physical examination showed stiffness and pain on mobilization of the shoulders and hips. Laboratory tests show elevated ESR and C-reactive protein. What is the most likely diagnosis and what treatment would you prescribe?
+1- Rheumatoid arthritis, would initiate treatment with methotrexate.
+2- Fibromyalgia, would initiate treatment with duloxetine.
+3- Polymyalgia rheumatica, would initiate treatment with corticosteroids.
+4- Ankylosing spondylitis, I would initiate treatment with non-steroidal anti-inflammatory drugs.
+5- nan
+CORRECT ANSWER: 3
+In this case, he is describing the cardinal symptoms of polymyalgia rheumatica. Older patient, over 50 years of age, presenting with pain and stiffness in both girdles, associated with an elevation of acute phase reactants. He presents all the indispensable criteria: age equal to or greater than 50 years, bilateral omalgia and increased acute phase reactants. Of the optional criteria, he presents stiffness, pain or limitation in the hip. Initial treatment is corticosteroids at medium doses.

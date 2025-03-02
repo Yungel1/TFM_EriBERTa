@@ -1,0 +1,10 @@
+QUESTION TYPE: PEDIATRICS
+CLINICAL CASE: 
+Given a 7-month-old child with fever and irritability, bulging fontanel and a cerebrospinal fluid study with 110 cells/mm3 (75% lymphocytes), protein 120 mg/dl and glucose 28 mg/dl (serum glycemia 89 mg/dl), what is the most reasonable diagnostic suspicion?
+1- Viral meningitis.
+2- Bacterial meningitis.
+3- Tuberculous meningitis.
+4- Mononucleosis syndrome.
+5- Guillain-Barre syndrome.
+CORRECT ANSWER: 3
+The correct answer is 3. It defines a typical cerebrospinal fluid of tuberculosis. In clinical practice things might not be so simple......

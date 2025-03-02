@@ -1,0 +1,18 @@
+T1	Premise 57 159	A pregnant woman, 10 weeks pregnant, comes to the emergency room with a blood pressure of 160/105 mmHg
+T2	Premise 161 269	She is in good general condition, with only mild headache, which is the reason for taking her blood pressure
+T3	Premise 271 342	After 4 hours of rest she presented with a blood pressure of 150/95mmHg
+T4	Premise 344 404	A complete blood count is normal and proteinuria is negative
+T5	Claim 450 472	Moderate pre-eclampsia
+T6	Claim 477 507	Pregnancy-induced hypertension
+T7	Claim 512 532	Chronic hypertension
+T8	Claim 537 546	Eclampsia
+T9	Claim 573 593	Chronic hypertension
+T10	Disease 573 593	Chronic hypertension
+T11	Claim 595 725	This is hypertension that is detected before pregnancy or before the 20th week of pregnancy and/or persists at 12 weeks postpartum
+R1	Support Ent1:T11 Ent2:T9	
+R2	Support Ent1:T1 Ent2:T11	
+R3	Support Ent1:T9 Ent2:T7	
+T12	Disease 450 472	Moderate pre-eclampsia
+T13	Disease 477 507	Pregnancy-induced hypertension
+T14	Disease 512 532	Chronic hypertension
+T15	Disease 537 546	Eclampsia

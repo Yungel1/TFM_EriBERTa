@@ -1,0 +1,22 @@
+T1	Premise 47 129	In a colon cancer screening program, a 52-year-old patient undergoes a colonoscopy
+T2	Premise 131 261	The entire colon is normal except for the finding of a 2 cm pedunculated polyp in the sigma which is removed with a diathermy loop
+T3	Premise 263 370	The anatomopathological result indicates that there is a carcinoma in situ limited to the head of the polyp
+T4	Premise 372 425	She has a thoracoabdominal CT scan reported as normal
+T5	Claim 469 510	Segmental resection of the affected colon
+T6	Claim 515 547	Periodic endoscopic surveillance
+T7	Claim 552 592	Local resection of the base of the polyp
+T8	Claim 597 631	Sigmoidectomy plus lymphadenectomy
+T9	Premise 658 742	Carcinoma in situ is delimited by the basement membrane, i.e. it is not invasive yet
+T10	Claim 748 809	therefore the treatment is polypectomy, which is already done
+T11	Marker 748 757	therefore
+R1	Support Ent1:T9 Ent2:T10	
+T12	Claim 811 984	Subsequently, an endoscopic follow-up (with biopsies) should be performed at an interval of 3 to 6 months depending on the patient's history, age and concomitant pathologies
+T13	Marker 811 823	Subsequently
+R2	Support Ent1:T10 Ent2:T12	
+R3	Support Ent1:T12 Ent2:T6	
+T14	Treatment 469 510	Segmental resection of the affected colon
+T15	Diagnostics 515 547	Periodic endoscopic surveillance
+T16	Treatment 552 592	Local resection of the base of the polyp
+T17	Treatment 597 631	Sigmoidectomy plus lymphadenectomy
+T18	Treatment 775 786	polypectomy
+T19	Diagnostics 828 864	endoscopic follow-up (with biopsies)

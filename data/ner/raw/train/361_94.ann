@@ -1,0 +1,44 @@
+T1	Premise 42 149	A 51-year-old man is admitted from the emergency department for macrocytic anemia (Hb 6.3 g/dL, MCV 120 fL)
+T2	Premise 151 188	Studies ruled out a deficiency origin
+T3	Marker 159 168	ruled out
+T4	Premise 190 221	Reticulocytes were 24000/microL
+T5	Premise 223 294	The bone marrow study is compatible with myelodysplastic syndrome (MDS)
+T6	Premise 296 328	Cytogenetics shows a 5q deletion
+T7	Claim 388 486	This deletion (5q-) is an alteration of good prognosis and has a specific treatment (lenalidomide)
+T8	Claim 491 596	It would be advisable in this patient to perform HLA typing in order to organize an allogeneic transplant
+T9	Claim 601 668	This is a patient with a high International Prognostic Index (IPSS)
+T10	Claim 673 721	Treatment in this case would be transfusion only
+T11	Premise 748 793	This is a young patient with no comorbidities
+T12	Claim 798 857	is therefore a candidate for treatment with curative intent
+T13	Marker 801 810	therefore
+T14	Marker 859 861	so
+T15	Claim 862 883	option 4 is ruled out
+T16	Marker 874 883	ruled out
+T17	Claim 885 911	Option 3 is also incorrect
+R1	Support Ent1:T11 Ent2:T12	
+R2	Support Ent1:T12 Ent2:T15	
+R3	Attack Ent1:T15 Ent2:T10	
+T18	Treatment 705 716	transfusion
+T19	Claim 918 951	we cannot know the patient's IPSS
+T20	Premise 958 1058	we do not know the number of blasts and the number of leukocytes and platelets to calculate the risk
+T21	Marker 952 957	since
+T22	Marker 912 917	since
+R4	Support Ent1:T19 Ent2:T17	
+R5	Support Ent1:T20 Ent2:T19	
+R6	Attack Ent1:T17 Ent2:T9	
+T23	Claim 1060 1086	Option 2 is also incorrect
+T24	Marker 1087 1092	since
+T25	Claim 1093 1194	the indication for a bone marrow transplant in MDS is those patients with high or intermediate-2 IPSS
+T26	Premise 1200 1350	in this case we do not know the risk, the only thing we know about the risk is the cytogenetics which is of good prognosis that would give us 0 points
+R7	Support Ent1:T25 Ent2:T23	
+R8	Attack Ent1:T23 Ent2:T8	
+R9	Support Ent1:T26 Ent2:T23	
+T27	Claim 1352 1382	Therefore the correct one is 1
+R10	Support Ent1:T27 Ent2:T7	
+T28	Marker 1383 1388	since
+T29	Claim 1389 1541	it is true that it has a favorable cytogenetics (5q-) and has a specific treatment lenalidomide, also used in other pathologies such as multiple myeloma
+R11	Support Ent1:T29 Ent2:T27	
+T30	Treatment 1472 1484	lenalidomide
+T31	Disease 1525 1541	multiple myeloma
+T32	Treatment 473 485	lenalidomide
+T33	Diagnostics 540 550	HLA typing

@@ -1,0 +1,18 @@
+T1	Premise 41 172	An 87-year-old patient with a history of chronic bronchitis and heart failure has been diagnosed with acute calculous cholecystitis
+T2	Premise 174 355	After 4 days of hospitalization and treatment with absolute diet, piperacillin-tazobactam serum therapy, the patient continues with fever, persistent abdominal pain and leukocytosis
+T3	Claim 413 438	Urgent surgical treatment
+T4	Claim 443 491	Biliary drainage by percutaneous cholecystostomy
+T5	Claim 496 557	Replace piperacillin-tazobactam with metronidazole-cefotaxime
+T6	Claim 562 619	Replace piperacillin-tazobactam with amikacin-clindamycin
+T7	Claim 624 682	Add an aminoglycoside such as gentamicin to the treatment.
+T8	Claim 811 844	the answer will probably not be 1
+T9	Marker 808 810	so
+T10	Premise 701 806	In this question, they insist on the age and comorbidity of the patient, as well as the time of evolution
+R1	Support Ent1:T10 Ent2:T8	
+T11	Claim 847 969	In any case, the ideal would be to drain the gallbladder that has not gone up again, so the answer I would give would be 2
+R2	Support Ent1:T11 Ent2:T4	
+T12	Treatment 413 438	Urgent surgical treatment
+T13	Treatment 443 491	Biliary drainage by percutaneous cholecystostomy
+T14	Treatment 496 557	Replace piperacillin-tazobactam with metronidazole-cefotaxime
+T15	Treatment 562 619	Replace piperacillin-tazobactam with amikacin-clindamycin
+T16	Treatment 624 664	Add an aminoglycoside such as gentamicin

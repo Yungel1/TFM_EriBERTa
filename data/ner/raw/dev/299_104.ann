@@ -1,0 +1,23 @@
+T1	Premise 51 277	A 46-year-old male parenteral drug user came to the emergency department with fever with chills, mental confusion, diffuse myalgias and intense pain in the left hand of 24 hours of evolution without clear local phlogosis signs
+T2	Premise 279 319	She does not refer any traumatic history
+T3	Premise 321 436	Examination revealed: temperature 38.9°C, 120 beats per minute, respiratory rate 30/min, blood pressure 90/54 mm Hg
+T4	Premise 438 586	Laboratory tests showed leukocytosis with left deviation (25,000 leukocytes/mm3, 80% neutrophils); increased creatinine (1.6 mg/dL) and CK (138 U/L)
+T5	Claim 648 683	Streptococcal necrotizing fasciitis
+T6	Claim 688 719	Gangrene due to Clostridium spp
+T7	Claim 724 748	Mycobacterial cellulitis
+T8	Claim 753 763	Erysipelas
+T9	Claim 790 822	I have my doubts between 1 and 2
+R1	Attack Ent1:T9 Ent2:T7	
+R2	Attack Ent1:T9 Ent2:T8	
+T10	Claim 824 956	exceptionally C. botulinum can infect traumatic or puncture wounds in IVDUs using brown heroin or cause sinusitis in cocaine addicts
+T11	Marker 919 921	or
+T12	Claim 958 1108	On the other hand, the case may refer to a severe sepsis with poor initial manifestation at first sight, with incipient rhabdomyolysis and muscle pain
+T13	Marker 958 975	On the other hand
+T14	Claim 1110 1214	in this case it may be a necrotizing fasciitis, where the most frequently implicated germ is S. pyogenes
+R3	Support Ent1:T12 Ent2:T14	
+R4	Support Ent1:T14 Ent2:T5	
+T15	Disease 648 683	Streptococcal necrotizing fasciitis
+T16	Disease 688 719	Gangrene due to Clostridium spp
+T17	Marker 697 703	due to
+T18	Disease 724 748	Mycobacterial cellulitis
+T19	Disease 753 763	Erysipelas

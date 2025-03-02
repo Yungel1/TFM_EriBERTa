@@ -1,0 +1,10 @@
+QUESTION TYPE: NEUROLOGY
+CLINICAL CASE: 
+A patient who presents with problems in understanding spoken and written language, inability to name objects and repeat words that are said to him, incomprehensible fluent speech with semantic and phonemic paraphasias. This is a:
+1- Global aphasia.
+2- Wernicke's aphasia.
+3- Broca's aphasia.
+4- Sensitive transcortical aphasia.
+5- Transcortical motor aphasia.
+CORRECT ANSWER: 2
+Transcortical have preserved repetition. Broca's aphasia has preserved comprehension and absence of fluent speech. Wernicke's aphasia is characterized by fluent speech (even in excess) with paraphasias and problems with comprehension, nomination and repetition.

@@ -1,0 +1,29 @@
+T1	Premise 48 158	An 80-year-old woman consults for presenting, since 1 month ago, a progressive increase in abdominal perimeter
+T2	Premise 160 247	During the previous 4-5 months she noted asthenia, anorexia and unspecified weight loss
+T3	Premise 249 344	Physical examination revealed tension ascites and malleolar edema, with no other relevant signs
+T4	Premise 347 500	n ultrasound and CT scan of the abdomen showed the presence of ascites, of homogeneous density, without peritoneal implants or abdominal or pelvic masses
+T5	Premise 502 575	Liver, pancreas, adrenal, spleen and kidneys without significant findings
+T6	Premise 577 701	Paracentesis is performed through a thick needle, obtaining with difficulty a somewhat yellowish, dense and gelatinous fluid
+T7	Claim 742 794	Hydropic decompensation secondary to liver cirrhosis
+T8	Claim 799 844	Chylous ascites due to non-Hodgkin's lymphoma
+T9	Claim 849 872	Peritoneal tuberculosis
+T10	Claim 877 916	Peritoneal metastasis of adenocarcinoma
+T11	Claim 921 967	Ascites secondary to constrictive pericarditis
+T12	Premise 987 1039	The characteristics of the fluid described are milky
+T13	Claim 1047 1068	chylous ascitic fluid
+T14	Marker 815 821	due to
+R1	Support Ent1:T12 Ent2:T13	
+R2	Support Ent1:T13 Ent2:T8	
+T15	Premise 1070 1154	Taking into account the age of the patient and the constitutional syndrome described
+T16	Claim 1156 1273	it is most likely to be a non-Hodgkin's lymphoma and not tuberculosis, which also presents with chylous ascitic fluid
+T17	Disease 1182 1204	non-Hodgkin's lymphoma
+R3	Support Ent1:T15 Ent2:T16	
+R4	Support Ent1:T16 Ent2:T8	
+T18	Marker 1275 1280	since
+T19	Premise 1281 1323	there is no mention of infectious symptoms
+R5	Support Ent1:T19 Ent2:T16	
+T20	Claim 1325 1399	The rest of the entities offered do not present with chylous ascitic fluid
+R6	Attack Ent1:T20 Ent2:T7	
+R8	Attack Ent1:T20 Ent2:T10	
+R7	Attack Ent1:T16 Ent2:T9	
+R9	Attack Ent1:T20 Ent2:T11	

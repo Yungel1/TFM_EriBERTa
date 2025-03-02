@@ -1,0 +1,10 @@
+QUESTION TYPE: CARDIOLOGY AND VASCULAR SURGERY
+CLINICAL CASE: 
+What therapeutic intervention would you consider in a 67-year-old patient with idiopathic dilated cardiomyopathy, left bundle branch block, left ventricular ejection fraction of 26%, mitral insufficiency grade II-III/IV, undergoing treatment with furosemide, spironolactone, enalapril and bisoprolol and who remains in NYHA functional class III?
+1- Surgical coronary revascularization.
+2- Mitral valve replacement.
+3- Implantation of an aortic balloon pump.
+4- Implantation of a ventricular assist device.
+5- Implantation of a cardiac resynchronization system.
+CORRECT ANSWER: 5
+We are talking about a patient with heart failure with severe LV dysfunction (EF < 35%), LBBB (wide QRS), who is following optimal medical treatment and who remains in advanced functional class despite this. Coronary revascularization does not appear to be of much benefit in this patient at this time. Nor does mitral valve replacement, firstly because mitral regurgitation is most likely the result of mitral annular dilatation, and secondly because we would need an echocardiographic assessment of the mitral valve to determine whether there is any alteration. Intra-aortic balloon counterpulsation implantation would not be indicated in this patient (it is used in situations of cardiogenic shock, in post-AMI mechanical complications, as a bridge to cardiac Tx...). The ventricular assist device would also not be indicated in this patient. What would really benefit him of all the answers is number 5, the resynchronization device. By achieving simultaneous stimulation of both ventricles, a mechanical synergy is achieved that improves cardiac function. The indications for the application of CRT (cardiac resynchronization therapy) are precisely those mentioned at the beginning: severe ventricular dysfunction, asynchrony demonstrated by the presence of wide QRS in the ECG (usually due to LBBB) and advanced functional class (III-IV) despite optimal medical treatment.

@@ -1,0 +1,10 @@
+QUESTION TYPE: OPHTHALMOLOGY
+CLINICAL CASE: 
+A 47-year-old man with myopia magna, who underwent cataract surgery 2 years ago, comes to the emergency room reporting a profound and painless loss of vision in his right eye. Which of the following diagnoses can cause this symptomatology?
+1- Post-surgical endophthalmitis.
+2- Retinal detachment.
+3- Age-related macular degeneration, wet form.
+4- Posterior vitreous detachment.
+5- nan
+CORRECT ANSWER: 2
+He refers to a patient post cataract surgery 2 years ago with deep and painless loss of OD. Post-surgical endophthalmitis is more associated with patients in the immediate postoperative period, besides being very painful with rapidly progressive decrease in visual acuity, so it is not correct. Retinal detachment is consistent with the clinical case because it is also a myopic patient who tend to have a special predisposition to detachment. ARMD usually occurs in older patients and the decrease in vision is progressive. In PVD there may or may not be a slight decrease in visual acuity and the patient usually reports some discomfort or pain at the onset of the clinical picture.

@@ -1,0 +1,17 @@
+T1	Claim 578 613	The presence of anemia at diagnosis
+T2	Premise 47 171	A 52-year-old man was referred to the gastroenterology department for hematochezia, tenesmus and reduction of stool diameter
+T3	Premise 173 288	A series of tests were performed and a diagnosis of adenocarcinoma of the sigma without distant metastasis was made
+T4	Premise 290 426	The patient underwent surgery and was referred to the medical oncology department for evaluation of complementary chemotherapy treatment
+T5	Claim 618 672	The existence of a family history of colorectal cancer
+T6	Claim 677 740	The size of the primary lesion and histological differentiation
+T7	Claim 745 800	Perforation or adhesion of the tumor to adjacent organs
+T8	Claim 827 936	They are not asking about factors that affect oncologic prognosis and therefore imply a change in QT strategy
+T9	Marker 897 906	therefore
+T10	Claim 972 1065	Option 4 is describing to us a T4 stage, either by invasion of adjacent organs or perforation
+T11	Claim 1067 1115	The T4s carry a much higher chance of recurrence
+R1	Support Ent1:T10 Ent2:T7	
+R2	Support Ent1:T11 Ent2:T7	
+T12	Claim 1117 1247	in fact there are ongoing studies that propose prophylactic HIPEC in T4 and second look surgery + HIPEC in perforated colon tumors
+R3	Support Ent1:T12 Ent2:T7	
+T13	Marker 1013 1019	either
+T14	Marker 1051 1053	or

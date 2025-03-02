@@ -1,0 +1,18 @@
+T1	Premise 43 216	A 7-year-old girl who comes for consultation because her parents notice her red face since the previous day and in the last few hours they have noticed red spots on her body
+T2	Premise 218 328	On examination she is afebrile, with tonsils and ears without alterations, normal cardiopulmonary auscultation
+T3	Premise 330 443	He presents a confluent maculo papular rash on both cheeks, respecting the upper lip, resembling a "slapped" face
+T4	Premise 445 512	In the thorax she presents a reticular, lacy, non-pruritic exanthem
+T5	Claim 563 573	Chickenpox
+T6	Claim 578 585	Rubella
+T7	Claim 590 625	Erythema infectiosum or 5th disease
+T8	Claim 630 661	Sudden exanthema or 6th disease
+T9	Claim 789 902	We are being told about erythema súdenita or fifth disease (also called megaloerythema), caused by parvovirus B19
+T10	Claim 904 1078	It is typical that after an episode of high fever an erythema appears on both cheeks in the form of a "slap" that usually has a cranial-caudal extension in the following days
+R1	Support Ent1:T10 Ent2:T9	
+R2	Support Ent1:T9 Ent2:T7	
+T11	Disease 813 876	erythema súdenita or fifth disease (also called megaloerythema)
+T12	Disease 590 625	Erythema infectiosum or 5th disease
+T13	Disease 563 573	Chickenpox
+T14	Disease 578 585	Rubella
+T15	Disease 630 661	Sudden exanthema or 6th disease
+T16	Marker 878 887	caused by

@@ -1,0 +1,46 @@
+T1	Premise 41 123	An 80-year-old man is admitted for a sudden onset of aphasia and right hemiparesis
+T2	Premise 125 261	His history includes hypertension, well controlled with diet and cognitive deterioration in the last year under study by his neurologist
+T3	Premise 263 352	The emergency cranial CT scan shows a left frontal lobar hematoma without contrast uptake
+T4	Claim 406 457	Arteriovenous malformation masked by acute hematoma
+T5	Claim 462 491	Chronic arterial hypertension
+T6	Claim 496 537	Isolated vasculitis of the nervous system
+T7	Claim 542 553	Brain tumor
+T8	Claim 558 610	Cerebral amyloid angiopathy (congophilic angiopathy)
+T9	Claim 630 787	Amyloid angiopathy is the most common cause of spontaneous non-hypertensive hemorrhage in elderly patients, and is usually lobar in location (as in the case)
+R1	Support Ent1:T3 Ent2:T9	
+T10	Disease 630 648	Amyloid angiopathy
+T11	Disease 677 716	spontaneous non-hypertensive hemorrhage
+R2	Support Ent1:T9 Ent2:T8	
+T12	Claim 861 923	The response that may cause the most doubts is 2, hypertension
+T13	Marker 925 928	but
+T14	Claim 929 1004	the most frequent localizations are: putamen, thalamus, pons and cerebellum
+R3	Attack Ent1:T14 Ent2:T12	
+R4	Attack Ent1:T3 Ent2:T14	
+T15	Claim 1006 1073	Therefore, most of the time these are deep hemorrhages (CTO Manual)
+T16	Claim 789 859	They often appear in association with Alzheimer's disease (CTO Manual)
+T17	Marker 1006 1015	Therefore
+T18	Premise 1075 1173	In addition, as a clue it tells us that the patient has well-controlled hypertension without drugs
+T19	Claim 1175 1234	although this data would not serve to rule out the response
+T20	Marker 1175 1183	although
+T21	Marker 1213 1221	rule out
+R5	Attack Ent1:T18 Ent2:T12	
+R6	Attack Ent1:T18 Ent2:T19	
+T22	Claim 1236 1311	Answer 1, a malformation is typical of young patients, rare in older people
+R7	Support Ent1:T1 Ent2:T22	
+R8	Attack Ent1:T22 Ent2:T4	
+T23	Claim 1399 1444	Answer 4, a brain tumor, does not seem likely
+T24	Marker 1445 1450	since
+T25	Premise 1451 1477	the mass is not seen on CT
+R9	Support Ent1:T25 Ent2:T23	
+R10	Attack Ent1:T23 Ent2:T7	
+R11	Attack Ent1:T18 Ent2:T5	
+T26	Claim 1508 1584	it is more difficult not to find such a lesion after contrast administration
+R12	Support Ent1:T26 Ent2:T23	
+T27	Claim 1586 1678	Answer 3 does not seem correct since vasculitis is a rare entity and more so in older people
+R13	Attack Ent1:T27 Ent2:T6	
+T28	Marker 1617 1622	since
+T29	Disease 406 457	Arteriovenous malformation masked by acute hematoma
+T30	Disease 462 491	Chronic arterial hypertension
+T31	Disease 496 537	Isolated vasculitis of the nervous system
+T32	Disease 542 553	Brain tumor
+T33	Disease 558 610	Cerebral amyloid angiopathy (congophilic angiopathy)

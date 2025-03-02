@@ -1,0 +1,10 @@
+QUESTION TYPE: NEPHROLOGY
+CLINICAL CASE: 
+A 47-year-old woman consults for voiding syndrome. She is diagnosed with uncomplicated urinary tract infection and treated with ciprofloxacin for 5 days. A week later, she consulted again for general malaise, arthralgias and the appearance of a skin rash. In the analytical analysis, the glomerular filtration rate was 45 ml/min (CKD-EPI), whereas 6 months ago it was 100 ml/min. In the sediment leukocytes are identified, being negative for nitrites. Of the following, which is the most probable cause of his renal failure?
+1- Postinfectious glomerulonephritis.
+2- Ciprofloxacin nephrotoxicity.
+3- Acute pyelonephritis.
+4- Acute interstitial nephritis.
+5- nan
+CORRECT ANSWER: 4
+General malaise, arthralgias, skin rash, acute renal failure and active sediment with sterile leukocyturia following the intake of a drug is highly suggestive of AIN (option 4 correct). Among drugs, antibiotics are the most frequent cause, and ciprofloxacin is one of the most common. Direct nephrotoxicity is very rare and is characterized by crystallization in the renal tubules (incorrect option 2). Postinfectious glomerulonephritis is more typical of children and adults older than 60 years, and usually manifests with hematuria after streptococcal infections (option 1 incorrect). Acute pyelonephritis would have been presented with high fever and renal fossa pain (option 3 incorrect).

@@ -1,0 +1,30 @@
+T1	Premise 43 160	A 17-year-old woman comes to the emergency department with a high fever, pharyngeal pain and cervical lymphadenopathy
+T2	Premise 162 309	She had previously been diagnosed with acute pharyngitis and was treated with amoxicillin, and later presented with a generalized macular skin rash
+T3	Disease 201 218	acute pharyngitis
+T4	Treatment 240 251	amoxicillin
+T5	Premise 311 469	Laboratory tests showed slight leukocytosis with lymphocytosis and presence of activated lymphocytes, slight thrombopenia and slightly increased transaminases
+T6	Diagnostics 311 327	Laboratory tests
+T7	Claim 540 591	It is a typical picture of infectious mononucleosis
+T8	Disease 567 591	infectious mononucleosis
+T9	Claim 596 628	Varicella zoster virus infection
+T10	Disease 596 612	Varicella zoster
+T11	Claim 633 652	Acute toxoplasmosis
+T12	Disease 633 652	Acute toxoplasmosis
+T13	Disease 657 669	Lyme disease
+T14	Claim 657 669	Lyme disease
+T15	Claim 674 701	Infection by herpes virus 8
+T16	Disease 687 701	herpes virus 8
+T17	Claim 721 782	Of course it is a typical picture (EBV, CMV, VH6, Toxoplasma)
+R1	Support Ent1:T5 Ent2:T17	
+T18	Claim 870 1069	Be careful with the bad blood in answer 3, because an acute toxoplasmosis can behave like this and also give a macular exanthema, although the one of this girl is related to the intake of amoxicillin
+T19	Marker 913 920	because
+T20	Disease 924 943	acute toxoplasmosis
+T21	Marker 1000 1008	although
+R2	Attack Ent1:T18 Ent2:T11	
+R3	Support Ent1:T2 Ent2:T18	
+T23	Disease 1211 1229	HIV primoinfection
+T24	Disease 1244 1266	mononucleosis syndrome
+T25	Marker 1230 1243	as a cause of
+T22	Premise 1097 1191	if instead of a girl of 17 years so clear it were a young man/girl with risky sexual relations
+T26	Claim 1193 1266	do not forget the HIV primoinfection as a cause of mononucleosis syndrome
+R4	Support Ent1:T22 Ent2:T26	

@@ -1,0 +1,10 @@
+QUESTION TYPE: BIOSTATISTICS
+CLINICAL CASE: 
+Elizabeth has three sons and one daughter (Mary), all of whom are healthy. A brother and a maternal uncle of Isabel died of Duchenne disease: an X-linked recessive disease. At present, Maria wants to become pregnant and wants to know the risk of transmitting the disease to her offspring. With the data collected, what is the probability that Maria is a carrier of Duchenne disease?
+1- 2/3.
+2- 1/2.
+3- 1/4.
+4- Less than 1/4.
+5- nan
+CORRECT ANSWER: 3
+The maternal grandmother carried the mutation in one copy of the gene on an X chromosome (we are not told that she had the disease, but a son of hers, Isabel's maternal uncle, did have the disease). Isabel's mother continues to carry it, since one of Isabel's brothers has suffered from the disease but not her father. Thus, Isabel has a 50% chance of having inherited the mutated gene from her mother (as her children are all healthy, we are not sure if she is a carrier), and therefore her daughter has a 25% chance of having inherited the mutated gene from her grandmother.

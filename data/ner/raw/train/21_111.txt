@@ -1,0 +1,10 @@
+QUESTION TYPE: INFECTIOUS
+CLINICAL CASE: 
+A 32-year-old man, ADVP and recently released from prison, has a protein derivative skin test (PPD) with 10 mm of induration. One year ago, the PPD was negative, he is currently asymptomatic, his HIV serology is negative, and his Chest X-ray is normal. Which of the following approaches do you think is most appropriate?
+1- Do not perform treatment and annual Rx control.
+2- Sputum culture for mycobacteria and treat only if positive.
+3- Isoniazid for 9 months.
+4- Treatment with 4 drugs 4 months.
+5- Treatment with RIF and PRZ for 2 months.
+CORRECT ANSWER: 3
+In the face of a PPD conversion within 2 years, and ruling out current TB disease, INH chemoprophylaxis is indicated, although I thought it was for 6 months and not 9. The rest is not questionable.

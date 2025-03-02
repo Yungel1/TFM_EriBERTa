@@ -1,0 +1,15 @@
+T1	Premise 42 190	A 79-year-old patient is brought to the ED at 7 pm from a nursing home, but we do not have the referral report and therefore do not know his history
+T2	Premise 192 227	He is disoriented in time and space
+T3	Premise 229 274	He has trouble remembering simple information
+T4	Premise 276 381	Sometimes he becomes very nervous and agitated, because he sees threatening people, even when he is alone
+T5	Premise 383 431	At other times he appears drowsy and inattentive
+T6	Disease 475 483	delirium
+T7	Marker 484 497	as opposed to
+T8	Disease 498 506	dementia
+T9	Claim 514 551	The presence of visual hallucinations
+T10	Claim 556 574	Cognitive symptoms
+T11	Claim 579 600	Psychomotor agitation
+T12	Claim 605 635	Fluctuation of the alert level
+T13	Claim 662 713	Little to comment.... is the definition of delirium
+T14	Claim 715 745	Altered state of consciousness
+R1	Support Ent1:T14 Ent2:T12	

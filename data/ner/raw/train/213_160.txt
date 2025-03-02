@@ -1,0 +1,10 @@
+QUESTION TYPE: RHEUMATOLOGY
+CLINICAL CASE: 
+A 75-year-old woman, with menopause at age 52, with no family or personal history of fracture, diagnosed with temporal arteritis, who is going to start treatment with high-dose prednisone and expects to be treated for at least one year. The delay of densitometry (DXA) in her center is 4-5 months. Preventive treatment for osteoporosis is considered. Which of the following is the most appropriate approach?
+1- Request DXA and wait for the result.
+2- Assess absolute risk of fracture using the FRAX questionnaire without BMD and treat only if it is high.
+3- Start treatment with bisphosphonates and vitamin D (800 IU/day).
+4- Administer calcium supplementation (1g) and vitamin D (800 IU/day).
+5- Assess for osteopenia on radiographs and treat if present.
+CORRECT ANSWER: 4
+In the data you provide there are no clinical risk factors for osteoporosis prior to the current disease. Since a prolonged and high-dose prednisone regimen will be established, it is advisable, in addition to the non-pharmacological preventive measures, to initiate treatment in any case to minimize the secondary loss of bone mass that occurs with the administration of glucocorticoids (and, above all, in the first months). Therefore, and for this reason alone, options 1, 2 and 5 would be discarded (the three of them have another conditioning factor). In this context, and in the case of a person over 65 years of age, an appropriate attitude would be to administer calcium supplements (corticosteroids are osteopenizantes because they produce, among other mechanisms, a negative balance of this element) and vitamin D. The option of associating a bisphosphonate could also be considered, but calcium supplementation is missing in proposal 3.

@@ -1,0 +1,10 @@
+QUESTION TYPE: SURGERY
+CLINICAL CASE: 
+A 30-year-old man suffers a fall from a standing height of 2 meters. On arrival at the emergency room on a stretcher, he is conscious and oriented, with bladder catheterization and clear urine. He shows swelling of the left heel and mild tingling in the anterior aspect of the left thigh and scrotum as well as dysesthesia in both feet. The patient says goodbye to the stretcher-bearer with a handshake and a simultaneous pat on the shoulder. Rotation of the lower limbs on the stretcher grasped by the ankles is painless and compression of the pelvis is asymptomatic. Next:
+1- The patient will be seated on the stretcher so that the cervical spine can be explored.
+2- Refer to radiology for study of the lower extremities (feet, femurs, pelvis).
+3- We will palpate the abdomen and roll en bloc to palpate the thoracolumbar spine.
+4- We will place a cervical collar and refer to radiology for imaging of the lower extremities and cervical spine.
+5- We will request an abdominal ultrasound.
+CORRECT ANSWER: 3
+I believe that the correct answer is 3. The patient, due to the mechanism of injury (foot fall), the calcaneal fracture and the neurological symptoms, suggests a low spinal cord injury due to a fracture of the lumbar spine. The injury is not high because he moves his arms. It also does not appear to be a pelvic injury because of the absence of pain on mobilization or palpation. If there is a suspicion of pelvic injury in the primary evaluation of all polytraumatized (ATLS) a spinal exploration should be performed by rotating the spine en bloc to avoid producing more injury. Abdominal palpation is also part of the initial evaluation. Abdominal ultrasound may be indicated in hemodynamically unstable patients if abdominal injuries are suspected but in any case it is done after the initial evaluation.

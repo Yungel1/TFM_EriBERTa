@@ -1,0 +1,23 @@
+T1	Premise 45 160	A 22-year-old woman presents with sudden cardiac arrest with a rhythm that is considered amenable to defibrillation
+T2	Premise 162 309	Chest compressions and ventilations are being performed, a defibrillator shock has been delivered, and a peripheral venous line has been cannulated
+T3	Claim 360 410	Administration of 150 mg of intravenous amiodarone
+T4	Claim 415 465	Administration of 300 mg of intravenous amiodarone
+T5	Claim 470 516	Administration of 1 mg of intravenous atropine
+T6	Claim 521 560	Administer 2 mg of intravenous atropine
+T7	Claim 587 735	Controversial question, since amiodarone (the dose is correct, 300mg), is administered after the third shock, and not after the first defibrillation
+T8	Marker 611 616	since
+T9	Treatment 617 627	amiodarone
+T10	Claim 781 834	Although, be careful, that is what the guidelines say
+T11	Marker 781 789	Although
+R1	Attack Ent1:T10 Ent2:T7	
+T12	Claim 836 980	I am sure that more than one of us has administered amiodarone as soon as we have had venous access available in the event of a shockable rhythm
+T13	Claim 982 1013	The other options are incorrect
+R2	Support Ent1:T12 Ent2:T4	
+R3	Attack Ent1:T13 Ent2:T3	
+R4	Attack Ent1:T13 Ent2:T5	
+R5	Attack Ent1:T13 Ent2:T6	
+R6	Attack Ent1:T12 Ent2:T7	
+T14	Treatment 378 410	150 mg of intravenous amiodarone
+T15	Treatment 433 465	300 mg of intravenous amiodarone
+T16	Treatment 488 516	1 mg of intravenous atropine
+T17	Treatment 532 560	2 mg of intravenous atropine

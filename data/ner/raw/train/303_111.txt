@@ -1,0 +1,10 @@
+QUESTION TYPE: NEPHROLOGY
+CLINICAL CASE: 
+In a patient with rheumatoid arthritis on methotrexate, prednisone and indomethacin who acutely presents with edema and increased plasma creatinine with poorly expressive urine sediment and proteinuria less than 100 mg/24 h the most likely cause is:
+1- Renal amyloidosis.
+2- Glomerulonephritis secondary to rheumatoid arthritis.
+3- Renal failure due to nonsteroidal anti-inflammatory drugs.
+4- Interstitial nephritis due to methotrexate.
+5- nan
+CORRECT ANSWER: 4
+Amyloidosis presents with proteinuria usually in the nephrotic range, and has a more chronic course. GMN associated with rheumatoid arthritis characteristically alters the sediment, and renal failure due to NSAIDs has a more chronic course, with papillary necrosis. Thus, given the course and the alterations described, interstitial nephritis due to methotrexate is more likely, which is more directly toxic than allergic, hence the absence of pyuria, eosinophilia, fever or other hypersensitivity data.

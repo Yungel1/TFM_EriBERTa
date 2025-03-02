@@ -1,0 +1,10 @@
+QUESTION TYPE: TRAUMATOLOGY
+CLINICAL CASE: 
+13-year-old female, with no relevant history, with menarche 3 months ago, followed since the age of 10 years for idiopathic scoliosis that has worsened. In the physical examination she presents a hump of 7 degrees in the Adams test and in the scoliogram a T4-L1 thoracolumbar curve of 35 degrees of Cobb and a Risser 0:
+1- Recommend swimming and review in three months.
+2- Prescribe a brace-type orthosis.
+3- Refer to physiotherapy for spine elastification.
+4- Check in 6 months with a new X-ray.
+5- nan
+CORRECT ANSWER: 2
+Treatment with a brace in Risser from 0 to 2 can be considered since there is still growth to occur and correction can take place. Its use is considered for curves between 30-40º.

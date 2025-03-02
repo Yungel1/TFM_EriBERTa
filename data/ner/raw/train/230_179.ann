@@ -1,0 +1,22 @@
+T1	Premise 42 281	A 4-year-old boy comes to the health center who, 5 minutes before, starts with angioedema in the face, conjunctivitis, nasal congestion and hoarseness, coinciding with the ingestion of a spoonful of yogurt given to him by mistake at school
+T2	Premise 283 354	Among the antecedents, he was diagnosed with cow's milk protein allergy
+T3	Premise 356 476	Examination revealed mild hypotension, heart rate 110 bpm, O2 Sat 93%, pale and slightly sweaty, with scattered wheezing
+T4	Claim 520 536	Provoke vomiting
+T5	Claim 541 571	Adrenaline 1/1000 subcutaneous
+T6	Claim 576 607	Intramuscular adrenaline 1/1000
+T7	Claim 612 644	Intramuscular methylprednisolone
+T8	Claim 649 669	Nebulized salbutamol
+T9	Claim 689 724	We are facing a case of Anaphylaxis
+T10	Claim 728 806	the first measure is to administer Adrenaline 1/1000 intramuscular (0.01mg/kg)
+T11	Marker 725 727	so
+R1	Support Ent1:T9 Ent2:T10	
+R2	Support Ent1:T10 Ent2:T6	
+T12	Claim 808 931	Subsequently, systemic corticosteroids such as methylprednisolone will be given, which will take a few hours to take effect
+T13	Marker 808 820	Subsequently
+T14	Claim 933 991	So adrenaline first, as it is faster acting, then the rest
+R3	Support Ent1:T14 Ent2:T6	
+T15	Treatment 520 536	Provoke vomiting
+T16	Treatment 541 571	Adrenaline 1/1000 subcutaneous
+T17	Treatment 576 607	Intramuscular adrenaline 1/1000
+T18	Treatment 612 644	Intramuscular methylprednisolone
+T19	Treatment 649 669	Nebulized salbutamol

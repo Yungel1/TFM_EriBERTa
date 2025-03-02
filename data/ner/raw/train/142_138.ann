@@ -1,0 +1,30 @@
+T1	Premise 42 109	12-year-old girl, only child of healthy, non-consanguineous parents
+T2	Premise 111 161	There is no personal or family history of interest
+T3	Premise 163 480	In the clinical examination to start a sports activity, you find a discrete hepatomegaly of normal consistency, so you request a blood test, which highlights an ASAT of 80U / l, ALAT 105 U / l, electrophoretic proteinogram with all protein fractions in normal range and negativity of serology for hepatotropic viruses
+T4	Claim 551 619	Deficiency of alpha 1 antitrypsin. Thoracic TAC to confirm emphysema
+T5	Diagnostics 586 619	Thoracic TAC to confirm emphysema
+T6	Claim 624 674	Mucoviscidosis. Determination of chlorine in sweat
+T7	Disease 551 584	Deficiency of alpha 1 antitrypsin
+T8	Disease 610 619	emphysema
+T9	Disease 624 638	Mucoviscidosis
+T10	Diagnostics 640 674	Determination of chlorine in sweat
+T11	Claim 679 713	Autoimmune hepatitis. Liver biopsy
+T12	Diagnostics 701 713	Liver biopsy
+T13	Disease 679 699	Autoimmune hepatitis
+T14	Claim 718 780	Glycogenosis type VI (phosphorylase deficiency). Muscle biopsy
+T15	Disease 718 764	Glycogenosis type VI (phosphorylase deficiency
+T16	Diagnostics 767 780	Muscle biopsy
+T17	Claim 785 856	Wilson's disease. Determine ceruloplasmin and copper in blood and urine
+T18	Disease 785 801	Wilson's disease
+T19	Diagnostics 803 856	Determine ceruloplasmin and copper in blood and urine
+T20	Claim 876 1172	In fact, I would not test this patient at this time, and I would check if the transaminase level has normalized at a later time, since the most frequent cause, at least in children, is a transient elevation in the context of viral diseases (most frequently cytomegalovirus and Epstein-Barr virus)
+T21	Claim 1174 1286	The minimal elevation of liver enzymes and the fact that it has a normal protein profile goes against chronicity
+T23	Diagnostics 1426 1505	determination of alpha-1-antitrypsin (without CT) and markers of celiac disease
+T24	Marker 1507 1514	because
+T25	Disease 1515 1529	celiac disease
+T22	Claim 1290 1372	If I had to choose I would choose answer 5, which seems to me the least aggressive
+R1	Support Ent1:T22 Ent2:T17	
+T26	Claim 1378 1581	if I had to do analytical tests I would add the determination of alpha-1-antitrypsin (without CT) and markers of celiac disease, because celiac disease can also be associated with some hypertransaminemia
+R2	Support Ent1:T3 Ent2:T26	
+R3	Attack Ent1:T21 Ent2:T11	
+R4	Attack Ent1:T3 Ent2:T11	

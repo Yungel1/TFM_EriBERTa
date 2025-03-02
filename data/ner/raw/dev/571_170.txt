@@ -1,0 +1,10 @@
+QUESTION TYPE: NEPHROLOGY
+CLINICAL CASE: 
+A 75-year-old woman on sertraline treatment who comes to the emergency department with confusional symptoms. There is no evidence of edema and blood pressure is 130/70. The blood test shows Na 126 mEq/l and K 4 mEq/l, natriuria is 45 mEq/l and diuretic intake has been ruled out. Which of the following is the most correct approach?
+1- It is Addison's disease and corticosteroids should be administered immediately.
+2- Administer hypertonic saline to restore natremia as soon as possible.
+3- Indicate water restriction and if natremia does not rise, switch to slow infusion of saline.
+4- Request brain MRI, since it is probably diabetes insipidus.
+5- nan
+CORRECT ANSWER: 3
+We are presented with a patient with moderate euvolemic hyponatremia, suggesting a syndrome of inadequate antidiuresis (SIAD) secondary to sertraline, although it would be necessary to have urinary osmolality to confirm this. Primary adrenal insufficiency produces hypovolemic hyponatremia (incorrect option 1). Diabetes insipidus is the opposite of this pathology, usually presenting with hypernatremia (option 4 incorrect). The question remains whether to treat aggressively with hypertonic saline, or to be more conservative by indicating hydric restriction. With natremia above 125 mmol/l it is not indicated to treat with HSS unless the patient has severe neurological symptoms, which does not seem to be the case (they describe a confusional picture that would be a moderate hyponatremic encephalopathy), and it is not indicated to restore natremia as soon as possible (due to the risk of osmotic demyelination syndrome). Therefore, the correct answer would be 3. What I do not like about this answer is that the second part ("if natraemia does not rise, switch to slow infusion of saline") is incorrect, since in this case the use of furosemide, tolvaptan or urea should be considered, not saline (and it does not indicate tonicity either, since isotonic is not the same as hypertonic). In any case, I do not see it as very likely to be overridden.

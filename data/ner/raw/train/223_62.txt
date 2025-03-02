@@ -1,0 +1,10 @@
+QUESTION TYPE: CARDIOLOGY
+CLINICAL CASE: 
+In a 60-year-old diabetic patient with stable angina secondary to ischemic heart disease due to subtotal obstruction in the middle third of the anterior descending coronary artery, what treatment would you propose?
+1- Medical with vasodilators and beta-blockers to avoid angina.
+2- Expectorant with rigorous rest, since decreasing myocardial oxygen demand should decrease angina.
+3- Surgical revascularization of the ischemic myocardium by means of a left mammary artery bypass distal to the lesion in the diseased coronary artery.
+4- Dilatation of the coronary artery lesion by therapeutic catheterization.
+5- Therapeutic catheterization to dilate the lesion of the diseased artery and implantation of a stent in the dilated area.
+CORRECT ANSWER: 5
+Stable angina in diabetics: this question is a nod to the BARI-2D study (NEJM 2009), which showed that medical management was not inferior to revascularization (in fact, the new guidelines reflect the trend that not all coronary stenosis should be systematically opened). Answer 1 is along these lines, although I miss statins, ACE inhibitors and antiplatelet agents, and I have too many vasodilators (nitrates are class IIb, if my memory serves me correctly). 2 is absurd: sitting down to avoid angina? That's like cutting down the forest to prevent fires. 3 to 5 are about revascularization: since it is a single vessel and not a proximal LAD, revascularization would have to be percutaneous, so we discard 3. Between 4 and 5, the fifth is more complete: not only would it be necessary to dilate, but also to implant a stent. So the doubt would be between 1 and 5. Applying the general rules of response in the MIR, if two options are similar except in one detail, the correct one is one of these, so we would mark 5 (and this is what would be done in any hospital nowadays: a suboccluded artery is dilated directly). On the other hand, and although 1 is incomplete, I suppose the author wanted to be clever and show that he has read the latest articles. Conclusion: I would mark 5... but I would not be surprised if it was 1.

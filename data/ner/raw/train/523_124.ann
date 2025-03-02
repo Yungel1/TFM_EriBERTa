@@ -1,0 +1,41 @@
+T1	Premise 51 219	A 45-year-old patient was diagnosed with HIV infection three months ago, presenting at that time with CD4 45 lymphocytes/µl and an HIV-1 viral load of 500,000 copies/ml
+T2	Premise 221 264	At that time he had a negative Mantoux test
+T3	Premise 266 421	He started treatment with an integrase inhibitor and two reverse transcriptase inhibitors, and at one month he had 25,000 copies and CD4 had risen to 80/µL
+T4	Premise 423 525	She consulted for presenting a picture of cervical lymphadenopathy and fever of two weeks of evolution
+T5	Premise 527 626	The puncture of one of the lymph nodes showed isolated acid-fast bacilli and epithelioid granulomas
+T6	Claim 631 708	It is a lymph node tuberculosis related to an incomplete immunologic recovery
+T7	Claim 713 767	Treatment failure and it is an opportunistic infection
+T8	Claim 772 857	This is an opportunistic infection unmasked within a picture of immune reconstitution
+T9	Claim 862 908	A negative Mantoux test rules out tuberculosis
+T10	Premise 935 1232	We are dealing with a patient with HIV infection in a situation of severe immunosuppression (<50 CD4+) and a very high viral load, who has followed the expected evolution from the immunovirological point of view after the start of treatment (after 12 weeks, the viral load has ostensibly decreased
+R1	Support Ent1:T1 Ent2:T10	
+T11	Claim 1235 1264	answer 2 would not be correct
+R2	Attack Ent1:T11 Ent2:T7	
+T12	Claim 1360 1466	although in patients with higher CV like ours, it could take longer - and the CD4+ count has begun to rise
+R3	Support Ent1:T12 Ent2:T11	
+T13	Claim 1469 1523	A negative Mantoux test does not rule out tuberculosis
+T14	Claim 1266 1358	remember that it is desirable that it becomes negative 24 weeks after the start of treatment
+R4	Attack Ent1:T12 Ent2:T14	
+T15	Marker 1360 1368	although
+T16	Claim 1546 1621	since in patients with severe immunosuppression it can give false negatives
+T17	Claim 1525 1543	incorrect answer 4
+R5	Support Ent1:T13 Ent2:T17	
+T18	Marker 1502 1510	rule out
+R6	Attack Ent1:T17 Ent2:T9	
+T19	Marker 886 895	rules out
+R7	Attack Ent1:T13 Ent2:T9	
+T20	Marker 1546 1551	since
+R8	Support Ent1:T16 Ent2:T13	
+T21	Claim 1623 1789	The diagnosis of lymph node tuberculosis is immediate when detecting "isolated acid-fast bacilli and epithelioid granulomas" in the puncture of one of the lymph nodes
+T22	Claim 1791 2001	however: considering the patient profile, this process will have been clinically unmasked during the immunological reconstitution and the infection is not the consequence of an incomplete immunological recovery
+T23	Marker 1791 1798	however
+T24	Claim 2003 2026	correct answer number 3
+R9	Attack Ent1:T22 Ent2:T21	
+R10	Support Ent1:T22 Ent2:T8	
+R11	Attack Ent1:T22 Ent2:T6	
+R12	Support Ent1:T22 Ent2:T24	
+R13	Support Ent1:T24 Ent2:T8	
+T25	Disease 639 708	lymph node tuberculosis related to an incomplete immunologic recovery
+T26	Disease 713 767	Treatment failure and it is an opportunistic infection
+T27	Disease 783 857	opportunistic infection unmasked within a picture of immune reconstitution
+T28	Disease 896 908	tuberculosis

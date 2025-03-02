@@ -1,0 +1,28 @@
+T1	Premise 45 162	A 74-year-old patient with bowel resection following mesenteric thrombosis comes to consult for fatigue and bone pain
+T2	Premise 164 220	He had suffered a Colles' fracture three months earlier.
+T3	Disease 98 119	mesenteric thrombosis
+T4	Premise 221 387	Laboratory tests showed anemia of 9.5 g/dl, microcytic, albumin 3.5 g/di, calcium 7.5 mg/dl, phosphate 2.0 mg/dl and alkaline phosphatase 224 IU (normal up to 120 IU)
+T5	Diagnostics 221 237	Laboratory tests
+T6	Disease 245 251	anemia
+T7	Premise 389 501	Radiographs of the femur show radiolucent bands perpendicular to the cortex on the inner side of the upper femur
+T8	Diagnostics 389 400	Radiographs
+T9	Claim 541 553	Osteoporosis
+T10	Claim 558 573	Paget's disease
+T11	Claim 578 594	Osteitis fibrosa
+T12	Claim 599 625	Prostate cancer metastasis
+T13	Claim 630 642	Osteomalacia
+T14	Disease 541 553	Osteoporosis
+T15	Disease 558 573	Paget's disease
+T16	Disease 578 594	Osteitis fibrosa
+T17	Disease 599 625	Prostate cancer metastasis
+T18	Disease 630 642	Osteomalacia
+T19	Claim 790 1015	In this case there are important data such as the history of intestinal resection, hypocalcemia and hypophosphoremoia; this should lead us to think in a vitamin D deficit due to malabsorption and therefore, in an osteomalacia
+T20	Marker 921 928	lead us
+T21	Marker 986 995	therefore
+T22	Disease 1003 1015	osteomalacia
+R1	Support Ent1:T19 Ent2:T13	
+T23	Claim 1017 1098	The rest of the data: previous fracture, pain and the X-ray support the diagnosis
+R2	Support Ent1:T23 Ent2:T13	
+R3	Support Ent1:T2 Ent2:T23	
+R4	Support Ent1:T1 Ent2:T23	
+R5	Support Ent1:T7 Ent2:T23	

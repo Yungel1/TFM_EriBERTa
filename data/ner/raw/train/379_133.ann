@@ -1,0 +1,36 @@
+T1	Premise 41 259	A 20-year-old girl comes to the emergency department because she has noticed after getting up, when looking in the mirror, weakness in the right half of the face (including the forehead, closing the eyelid and smiling)
+T2	Premise 261 388	She is accompanied by dysgeusia, with a sensation of metallic taste of food as well as hyperacusis and ipsilateral mastoid pain
+T3	Premise 390 517	On examination there is no evidence of strength deficits or sensory deficits in the extremities or speech or language disorders
+T4	Claim 582 742	The most probable diagnosis is a demyelinating plaque in the contralateral hemiprotuberance, the most necessary complementary exploration would be a cranial MRI
+T5	Claim 747 811	Oral corticosteroids are the treatment of choice for the patient
+T6	Claim 816 899	Intravenous fibrinolysis should be considered if the evolution time is less than 3h
+T7	Claim 904 943	Most likely the picture is irreversible
+T8	Premise 970 1076	We describe a picture of typical peripheral facial paralysis, with dysgeusia, hyperacusis and mastoid pain
+T9	Claim 1078 1117	In this case the treatment is corticoid
+R1	Support Ent1:T8 Ent2:T9	
+R2	Support Ent1:T9 Ent2:T5	
+T10	Claim 1119 1153	The first one would not be correct
+T11	Marker 1154 1161	because
+T12	Marker 1162 1170	although
+T13	Claim 1162 1417	although within the age range of multiple sclerosis debut, the presentation is usually gradual over days and the nuclear involvement of the VII cranial nerve (which could simulate a peripheral facial) would not cause dysgeusia, hyperacusis or mastoid pain
+R3	Attack Ent1:T8 Ent2:T13	
+R4	Support Ent1:T13 Ent2:T10	
+R5	Attack Ent1:T10 Ent2:T4	
+T14	Claim 1419 1484	In the third answer they propose us that it is a vascular picture
+T15	Claim 1489 1535	therefore that the facial paralysis is central
+T16	Claim 1540 1555	it is discarded
+T17	Marker 1489 1498	therefore
+T18	Marker 1537 1539	so
+R6	Support Ent1:T14 Ent2:T16	
+R7	Support Ent1:T15 Ent2:T16	
+R8	Attack Ent1:T8 Ent2:T15	
+R9	Attack Ent1:T16 Ent2:T6	
+T19	Claim 1560 1587	the last one is not correct
+T20	Marker 1588 1595	because
+T21	Claim 1596 1683	most of the idiopathic peripheral facial paralysis (Bell's palsy) heal without sequelae
+R10	Support Ent1:T21 Ent2:T19	
+R11	Attack Ent1:T19 Ent2:T7	
+T22	Disease 615 673	demyelinating plaque in the contralateral hemiprotuberance
+T23	Diagnostics 731 742	cranial MRI
+T24	Treatment 747 767	Oral corticosteroids
+T25	Treatment 816 899	Intravenous fibrinolysis should be considered if the evolution time is less than 3h

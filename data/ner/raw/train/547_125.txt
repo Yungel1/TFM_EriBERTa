@@ -1,0 +1,10 @@
+QUESTION TYPE: CARDIOLOGY
+CLINICAL CASE: 
+A 23-year-old male diagnosed with Wolff-Parkinson-White syndrome who comes to the emergency department for palpitations. The ECG shows an irregular wide QRS tachycardia, with a heart rate of 205 bpm, compatible with pre-excited atrial fibrillation. Which of the following drugs do you consider appropriate to stop the tachycardia:
+1- Verapamil.
+2- Digoxin.
+3- Adenosine.
+4- Procainamide.
+5- nan
+CORRECT ANSWER: 4
+Procainamide. The treatment of choice for Wolff-Parkinson-White syndrome is cardioversion with direct current. Heart rate slowing drugs, commonly used in atrial fibrillation, are ineffective, and digoxin and non-dihydropyridine calcium channel blockers (e.g., verapamil, diltiazem) are contraindicated because they may increase the ventricular rate and cause ventricular fibrillation. If cardioversion is not possible, drugs that prolong the refractory period of accessory connection should be used. IV procainamide or amiodarone is preferred, but any class Ia, Ic or III antiarrhythmic drug can be used.

@@ -1,0 +1,21 @@
+T1	Premise 45 101	A 54-year-old man who goes for a check-up at his company
+T2	Premise 103 186	A body mass index of 32.8 kg/m2 and fasting blood glucose of 138 mg/l were detected
+T3	Premise 188 222	One month later, glycemia 13 mg/dl
+T4	Claim 282 302	Administer metformin
+T5	Claim 307 331	Prescribe a sulfonylurea
+T6	Claim 336 382	Behavioral changes. Diet and physical exercise
+T7	Claim 387 411	Insulin before each meal
+T8	Claim 416 459	Take acarbose at night, before going to bed
+T9	Claim 479 525	Behavioral changes: diet and physical exercise
+T10	Claim 527 592	This is the first thing we do when diagnosed with type 2 diabetes
+T11	Claim 594 685	This is a good question to remember that before any drug, we must insist on changing habits
+T12	Claim 687 720	Then we would prescribe Metformin
+R1	Support Ent1:T10 Ent2:T9	
+R2	Support Ent1:T11 Ent2:T9	
+R3	Support Ent1:T9 Ent2:T6	
+T13	Treatment 293 302	metformin
+T14	Treatment 319 331	sulfonylurea
+T15	Treatment 336 354	Behavioral changes
+T16	Treatment 356 382	Diet and physical exercise
+T17	Treatment 387 411	Insulin before each meal
+T18	Treatment 421 459	acarbose at night, before going to bed

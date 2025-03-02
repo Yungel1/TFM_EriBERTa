@@ -1,0 +1,34 @@
+T1	Claim 1007 1074	the answer that will give us the diagnosis is 4 (intestinal biopsy)
+T2	Premise 878 936	The rest of the symptoms fall perfectly within the picture
+T3	Claim 543 560	Capsule endoscopy
+T4	Claim 565 576	Colonoscopy
+T5	Claim 581 617	Serology for hepatitis b and c virus
+T6	Claim 622 639	Intestinal biopsy
+T7	Claim 644 664	Abdominal ultrasound
+T8	Premise 684 831	In this question, they give an important piece of information when it comes to suspecting a diagnosis, which is the antitransglutaminase antibodies
+R1	Support Ent1:T2 Ent2:T8	
+T9	Premise 294 359	The patient reported only occasional diffuse abdominal discomfort
+T10	Premise 361 407	She reports no signs of hemorrhage or jaundice
+T11	Premise 409 443	The physical examination is normal
+T12	Premise 207 292	a blood test showing Hb 11.5 gr/dl Fe 38 AST 52 ALT 64 Ac antitrasglutaminase IgA 177
+T13	Premise 41 149	A 27-year-old woman under study in the dermatology department for recurrent episodes of oral aphthous ulcers
+R3	Support Ent1:T13 Ent2:T2	
+R4	Support Ent1:T12 Ent2:T2	
+R5	Support Ent1:T9 Ent2:T2	
+R6	Support Ent1:T10 Ent2:T2	
+R7	Support Ent1:T11 Ent2:T2	
+T14	Marker 842 846	lead
+T15	Diagnostics 543 560	Capsule endoscopy
+T16	Diagnostics 565 576	Colonoscopy
+T17	Diagnostics 581 617	Serology for hepatitis b and c virus
+T18	Diagnostics 622 639	Intestinal biopsy
+T19	Diagnostics 644 664	Abdominal ultrasound
+T20	Claim 832 876	that must lead you to suspect celiac disease
+R2	Support Ent1:T8 Ent2:T20	
+R8	Support Ent1:T20 Ent2:T1	
+R9	Support Ent1:T1 Ent2:T6	
+T21	Claim 941 1005	although probably several of the tests that it says will be done
+T22	Marker 941 949	although
+R10	Attack Ent1:T21 Ent2:T1	
+T23	Disease 862 876	celiac disease
+T24	Diagnostics 1056 1073	intestinal biopsy

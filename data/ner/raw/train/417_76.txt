@@ -1,0 +1,10 @@
+QUESTION TYPE: GENERAL SURGERY
+CLINICAL CASE: 
+78-year-old woman with dementia and institutionalized is brought by her caregivers for significant abdominal pain with deterioration of general condition and abdominal distension. CBC shows leukocytosis, elevated hematocrit, renal failure and metabolic acidosis. ECG shows atrial fibrillation. Abdominal tomography shows edematous small bowel loops, with intestinal and portal accumulation. The most probable diagnosis is:
+1- Perforation of gastric or duodenal ulcus.
+2- Biliary leak.
+3- Obstructive neoplasia of the sigma with perforation.
+4- Mesenteric ischemia.
+5- nan
+CORRECT ANSWER: 4
+Typical case of acute mesenteric ischemia, which should be suspected in elderly patients with abdominal pain and distension of sudden onset, diarrhea or vomiting and who present cardiovascular risk factors, especially emboligenic heart disease. In this case we are given characteristic biochemical data (leukocytosis, metabolic acidosis due to lactic acid, hemoconcentration due to loss of fluid to the third space...) and imaging tests (dilated loops, pneumatosis, gas at portal level...) suggestive of mesenteric ischemia.

@@ -1,0 +1,10 @@
+QUESTION TYPE: NEPHROLOGY
+CLINICAL CASE: 
+A 22-year-old male presents to the emergency department with "almost black" urine for the past 12 hours. He has no past history of interest and is not taking any medications. He refers an upper respiratory catarrhal symptoms since 4-5 days ago for which he has taken paracetamol. Examination: temperature 37.3 ºC, BP 150/95, HR 85 bpm, slight pharyngeal erythema, the rest normal. Laboratory tests showed: Hb 12.8 g/dl, Hcto 39%, leukocytes 10,500/mm3 with normal formula, platelets 250,000/mm3, normal coagulation, urea 25 mg/dl, creatinine 0.8 mg/dl, ions, hepatic, lipid, albumin and total proteins normal. Normal autoimmunity study and negative viral serology. Urine 24 h with proteinuria of 0.75 g/24 h, sediment with 10 erythrocytes per field (90% dysmorphic), no leukocyturia. Renal ultrasound was normal. Which diagnosis do you think is more likely?
+1- Nephropathy with minimal changes.
+2- Postinfectious glomerulonephritis.
+3- IgA nephropathy.
+4- Acute interstitial nephritis.
+5- nan
+CORRECT ANSWER: 3
+A picture of macroscopic hematuria and mild proteinuria with normal creatinine levels, accompanied by an upper tract catarrhal picture, is very suggestive of IgA nephropathy (option 3 correct).

@@ -1,0 +1,21 @@
+T1	Premise 41 78	A 25-year-old man consults for tremor
+T2	Premise 80 123	Examination reveals dysarthria and dystonia
+T3	Premise 125 194	He has a family history of psychiatric illness and movement disorders
+T4	Claim 252 260	DATS CAN
+T5	Claim 265 287	Nerve conduction study
+T6	Claim 292 312	Electroencephalogram
+T7	Claim 317 338	Copper in urine of 24
+T8	Claim 670 696	So the correct answer is 4
+T9	Premise 365 553	If they are talking about a young man 20-30 years old, with tremor and dystonia, whether or not he has a family history, and especially if one of the options tells me about copper in urine
+T10	Claim 555 603	they are telling me to think of Wilson's disease
+R1	Support Ent1:T9 Ent2:T10	
+T11	Disease 587 603	Wilson's disease
+R2	Support Ent1:T8 Ent2:T7	
+R3	Support Ent1:T10 Ent2:T7	
+T12	Claim 605 668	I do not think of juvenile Parkinson's, nor an epileptic clinic
+R4	Attack Ent1:T10 Ent2:T12	
+R5	Support Ent1:T10 Ent2:T8	
+T13	Diagnostics 252 260	DATS CAN
+T14	Diagnostics 265 287	Nerve conduction study
+T15	Diagnostics 292 312	Electroencephalogram
+T16	Diagnostics 317 338	Copper in urine of 24

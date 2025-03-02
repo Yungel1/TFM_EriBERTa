@@ -1,0 +1,19 @@
+T1	Premise 43 176	If a patient reports having for months now enlargement of the tongue, with no other alterations of the tongue causing constant biting
+T2	Claim 229 250	Hypoglossal paralysis
+T3	Claim 255 270	Hyperthyroidism
+T4	Claim 275 287	Mastocytosis
+T5	Claim 292 303	Amyloidosis
+T6	Claim 308 324	Facial granuloma
+T7	Disease 229 250	Hypoglossal paralysis
+T8	Disease 255 270	Hyperthyroidism
+T9	Disease 275 287	Mastocytosis
+T10	Disease 292 303	Amyloidosis
+T11	Disease 308 324	Facial granuloma
+T12	Claim 542 620	Sometimes amyloid deposits appear on the tongue which can produce macroglossia
+R1	Support Ent1:T12 Ent2:T5	
+R2	Support Ent1:T1 Ent2:T12	
+T13	Claim 370 441	Amyloidosis is a localized or systemic deposition of fibrillar proteins
+T14	Claim 443 473	It can be primary or secondary
+T15	Claim 475 540	The most frequently affected organs are the kidneys and the heart
+R3	Support Ent1:T13 Ent2:T5	
+T16	Disease 370 381	Amyloidosis

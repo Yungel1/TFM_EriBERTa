@@ -1,0 +1,29 @@
+T1	Claim 725 759	Arteriography of lower extremities
+T2	Claim 764 784	Ankle-brachial index
+T3	Claim 789 868	Computerized axial tomography with vascular reconstruction of lower extremities
+T4	Claim 873 889	Tape stress test
+T5	Claim 894 920	Magnetic resonance imaging
+T6	Premise 63 204	A 64-year-old man consults for right calf pain when climbing hills and stairs and when walking on level ground for a prolonged period of time
+T7	Premise 206 350	He reports that the pain becomes so intense with exertion that he is forced to stand up, which causes the pain to improve in a matter of minutes
+T8	Premise 352 459	As personal history, the patient is a smoker of 20 cigarettes a day, diabetic on metformin and hypertensive
+T9	Premise 477 574	there is good peripheral perfusion of the right foot, but the patient has a decreased pedal pulse
+T10	Diagnostics 725 759	Arteriography of lower extremities
+T11	Claim 1214 1233	answer 2 is correct
+T12	Marker 1203 1212	Therefore
+T13	Claim 1155 1201	The most important is the ankle-brachial index
+T14	Premise 940 1061	Although the diagnosis of peripheral arteriopathy is fundamentally clinical (in this patient the picture is very typical)
+T15	Marker 940 948	Although
+T16	Claim 1063 1153	we can objectively assess the severity of the disease with the use of bloodless techniques
+R1	Support Ent1:T16 Ent2:T13	
+R2	Support Ent1:T13 Ent2:T11	
+R3	Support Ent1:T11 Ent2:T2	
+R4	Attack Ent1:T14 Ent2:T16	
+R5	Support Ent1:T13 Ent2:T2	
+T17	Diagnostics 764 784	Ankle-brachial index
+T18	Diagnostics 789 868	Computerized axial tomography with vascular reconstruction of lower extremities
+T19	Diagnostics 873 889	Tape stress test
+T20	Diagnostics 894 920	Magnetic resonance imaging
+T21	Claim 1235 1356	Imaging techniques (arteriography, angioCT or angioMRI) are used when surgical repair of arterial occlusion is considered
+R6	Attack Ent1:T21 Ent2:T1	
+R7	Attack Ent1:T21 Ent2:T3	
+R8	Attack Ent1:T21 Ent2:T5	

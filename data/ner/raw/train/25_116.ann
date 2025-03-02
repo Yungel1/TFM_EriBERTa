@@ -1,0 +1,11 @@
+T1	Premise 42 145	A 40-year-old woman is admitted to the Emergency Department with a fever of 38ºC and right lumbar pain.
+T2	Premise 205 258	an abdominal ultrasound shows a coralliform lithiasis
+T3	Premise 146 200	The CBC shows 25000 leukocytes/mm3 with left deviation
+T4	Claim 304 320	Escherichia coli
+T5	Claim 325 346	Enterococcus faecalis
+T6	Claim 351 367	Salmonella typhi
+T7	Claim 372 388	Candida albicans
+T8	Claim 393 410	Proteus mirabilis
+T9	Claim 469 604	Coraliform lithiasis are associated with urea-folding germs: Proteus in the first place, Pseudomonas, Klebsiella and some staphylococci
+R1	Support Ent1:T9 Ent2:T8	
+R2	Support Ent1:T2 Ent2:T8	

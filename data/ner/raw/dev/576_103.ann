@@ -1,0 +1,21 @@
+T1	Premise 41 153	A 30-year-old male who consults for unilateral periocular headaches that rapidly progress to become very intense
+T2	Premise 155 290	The pain attacks last 30-60 minutes, occur 2-3 times a day, and are accompanied by tearing in the painful eye and unilateral rhinorrhea
+T3	Claim 346 391	Oral prednisone with withdrawal in 2-3 months
+T4	Claim 396 509	Oral prednisone with withdrawal in one month, associated with oral verapamil at a dose of 80-180 mg every 8 hours
+T5	Claim 514 559	Carbamazepine at doses of 600-1200 mg per day
+T6	Claim 564 623	Indomethacin at a dose of 50 mg every 8 hours for one month
+T7	Claim 650 705	They describe a characteristic case of cluster headache
+T8	Claim 707 735	It is more frequent in males
+R1	Support Ent1:T1 Ent2:T8	
+T9	Claim 737 948	the pain is characteristically unilateral periocular of great intensity, of variable duration, usually minutes, and it associates trigeminoautonomic signs such as rhinorrhea and unilateral conjunctival injection
+R2	Support Ent1:T2 Ent2:T9	
+R3	Support Ent1:T1 Ent2:T9	
+T10	Claim 950 1080	The preventive treatment par excellence is verapamil associated with a descending corticosteroid regimen, as described in answer 2
+T11	Treatment 993 1053	verapamil associated with a descending corticosteroid regime
+R4	Support Ent1:T10 Ent2:T4	
+R5	Support Ent1:T8 Ent2:T7	
+R6	Support Ent1:T9 Ent2:T7	
+T12	Treatment 346 391	Oral prednisone with withdrawal in 2-3 months
+T13	Treatment 396 509	Oral prednisone with withdrawal in one month, associated with oral verapamil at a dose of 80-180 mg every 8 hours
+T14	Treatment 514 559	Carbamazepine at doses of 600-1200 mg per day
+T15	Treatment 564 623	Indomethacin at a dose of 50 mg every 8 hours for one month

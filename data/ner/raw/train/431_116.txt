@@ -1,0 +1,10 @@
+QUESTION TYPE: INFECTIOUS DISEASES AND MICROBIOLOGY
+CLINICAL CASE: 
+A 38-year-old man comes to the emergency department with fever above 39ºC and deterioration of consciousness after a trip to Equatorial Guinea without antimalarial prophylaxis. Laboratory tests showed creatinine 3.4 mg/dL, AST 764 UlL, ALT 678 UlL. The laboratory reports the visualization of Plasmodium falciparum in the blood with a parasitemia level of 6%. What treatment would you initiate at this time?
+1- Mefloquine orally.
+2- Intravenous artesunate.
+3- Doxycycline orally.
+4- Oral quinine sulfate.
+5- nan
+CORRECT ANSWER: 2
+In severe cases of Plasmodium infection, the greatest risk of mortality occurs in the first 24 hours of clinical presentation, so treatment should be started immediately. Treatment with parenteral or intramuscular artesunate is more indicated in severe Plasmodium infection, both in adults and children and in pregnant women.

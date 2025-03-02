@@ -1,0 +1,10 @@
+QUESTION TYPE: OTORHINOLARYNGOLOGY AND MAXILLOFACIAL SURGERY
+CLINICAL CASE: 
+60-year-old woman, diagnosed with breast cancer treated with surgery and radiotherapy 10 years ago. Currently with metastases in the dorsal spine and sacroiliac joint, for which she has received monthly treatment with i.v. zoledronic acid for the last two years. The patient presented spontaneous bone exposure at the level of the mandibular bone of approximately 2 cm. There are no signs of acute infection and the gum around the bone exposure is strictly normal. The mandibular CT scan shows an area of bone sclerosis. What would be the diagnosis?
+1- Odontogenic abscess.
+2- Osteonecrosis due to bisphosphonates.
+3- Osteoradionecrosis.
+4- Dental root included.
+5- Metastasis of breast carcinoma.
+CORRECT ANSWER: 2
+This one has been difficult for me, we are going to rule it out. 1 cannot be, because there would be infectious signs. Answer 2 is possible because bisphosphonates create mandibular necrosis. 3 seems unlikely to me because the radiotherapy that the patient received would be oriented on the breast and not on the mandible. I rule out number 4, as it is not a case of dental root involvement. 5 is possible; after all, the patient already has bone metastases. So, I hesitate between 2 and 5, which one to choose? I am certainly not sure what a bone sclerosis means on a CT scan, but a bone metastasis would be more destructive than sclerotizing. On the other hand, using reverse psychology, what did the questioner want me to know? That bisphosphonates can create mandibular necrosis? Or that a woman with several bone metastases can have a metastasis also in the mandible? The latter seems too simple, and would make me lean more towards 2, but it's not clear to me. Be that as it may, between two possible answers you have to always answer, and between 2 and 5, you have to check 2, which is more likely.

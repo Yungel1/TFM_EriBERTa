@@ -1,0 +1,10 @@
+QUESTION TYPE: PULMONOLOGY AND THORACIC SURGERY
+CLINICAL CASE: 
+A former smoker patient, previously diagnosed with COPD comes in for a checkup. The physical examination reveals digital hypokratism of recent onset. What is the most acceptable explanation for this finding in the clinical context described?
+1- Pulmonary carcinoma.
+2- Bronchiectasis.
+3- Pulmonary fibrosis.
+4- Cyanotic heart disease.
+5- nan
+CORRECT ANSWER: 1
+In a digital hypokratitis of recent onset in a smoking patient, the first option to rule out is bronchopulmonary carcinoma. Other pathologies can also occur but not so suddenly.

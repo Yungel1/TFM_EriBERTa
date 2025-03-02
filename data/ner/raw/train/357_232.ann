@@ -1,0 +1,28 @@
+T1	Premise 57 125	A 24-year-old woman consults after noticing inguinal lymphadenopathy
+T2	Premise 127 234	The interrogation does not reveal any local discomfort or data suggestive of sexually transmitted infection
+T3	Premise 236 346	The examination revealed two lymphadenopathies, one in each groin, 1 cm in diameter, soft, mobile, non-painful
+T4	Premise 348 409	No skin lesions are seen on the lower limbs, anus or perineum
+T5	Claim 452 522	A lues serology since it is most likely a Treponema pallidum infection
+T6	Claim 527 581	A gynecological examination to rule out ovarian cancer
+T7	Claim 586 701	By the clinical characteristics it seems to be normal lymph nodes and complementary explorations should not be done
+T8	Claim 706 781	A Paul-Bunell test should be performed to rule out infectious mononucleosis
+T9	Claim 808 893	The presence of inguinal nodes up to 1-1.5cm may be normal in the absence of symptoms
+R1	Support Ent1:T9 Ent2:T7	
+T10	Premise 895 997	In this case, they are very nonspecific nodes, without signs of malignancy (mobile, soft, not painful)
+T11	Claim 998 1052	that do not lead us to suspect neoplastic infiltration
+R2	Attack Ent1:T10 Ent2:T11	
+T12	Marker 468 473	since
+T13	Marker 558 566	rule out
+T14	Marker 748 756	rule out
+T15	Claim 1057 1135	the lack of other clinical signs also leads us to rule out the presence of STD
+R3	Attack Ent1:T15 Ent2:T5	
+R4	Attack Ent1:T11 Ent2:T6	
+T16	Disease 757 781	infectious mononucleosis
+T17	Disease 1029 1052	neoplastic infiltration
+T18	Disease 1132 1135	STD
+T19	Disease 494 522	Treponema pallidum infection
+T20	Disease 567 581	ovarian cancer
+T21	Diagnostics 454 467	lues serology
+T22	Diagnostics 529 554	gynecological examination
+T23	Diagnostics 708 724	Paul-Bunell test
+R5	Support Ent1:T3 Ent2:T9	

@@ -1,0 +1,10 @@
+QUESTION TYPE: NEPHROLOGY
+CLINICAL CASE: 
+A 60-year-old woman diagnosed with chronic bronchopathy, diabetes mellitus, hypertension and treated for 4 months with Omeprazole, Metformin, Salbutamol, Ipratropium Bromide and Enalapril 20 mg + Hydrochlorothiazide 25 mg comes to your office for fatigue, decreased appetite, with slight dyspnea and occasional cough, variable stools, sometimes soft and without urinary symptoms. Blood tests show leukocytes 10,000/mm³, Ht 35%, MCV 80, Glucose 150 mg/dl, Urea 80 mg/dl, Creatinine 1.6 mg/dl, Sodium 133 mEq/l and Potassium 2.9 mEq/l. What is the most likely cause of hypokalemia?
+1- Renal insufficiency.
+2- Hyponatremia.
+3- Potassium deficiency.
+4- Antihypertensive.
+5- Metformin.
+CORRECT ANSWER: 4
+The correct answer is: 4. Antihypertensive. In particular, hydrochlorothiazide, as a thiazide, is primarily responsible for this patient's hypokalemia.

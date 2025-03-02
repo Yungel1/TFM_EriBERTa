@@ -1,0 +1,17 @@
+T1	Claim 335 349	Proceed to IOT
+T2	Claim 354 375	Perform a skull X-ray
+T3	Claim 380 401	Administer flumazenil
+T4	Claim 406 425	Administer naloxone
+T5	Claim 430 452	Wait until he wakes up
+T6	Premise 84 233	A 30-year-old woman with a drug addiction PD in a current detoxification period is brought to the ED with profound somnolence, with no other symptoms
+T7	Premise 235 305	We find out that her treatment includes olanzapine and benzodiazepines
+T8	Claim 472 525	Overuse of the drugs he is taking should be suspected
+T9	Claim 527 553	Olanzapine has no antidote
+T10	Marker 555 557	so
+T11	Claim 559 623	in principle, we should antagonize the effect of benzodiazepines
+R1	Support Ent1:T11 Ent2:T3	
+T12	Claim 625 746	If the patient continues to be drowsy and does not respond to stimuli, we should proceed to intubate to secure the airway
+T13	Diagnostics 364 375	skull X-ray
+T14	Treatment 346 349	IOT
+T15	Treatment 391 401	flumazenil
+T16	Treatment 417 425	naloxone

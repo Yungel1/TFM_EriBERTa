@@ -1,0 +1,10 @@
+QUESTION TYPE: GYNECOLOGY AND OBSTETRICS
+CLINICAL CASE: 
+A 45-year-old woman, mother of 3 children, attends an early diagnosis consultation. Cervicovaginal cytology is compatible with a high-grade squamous intraepithelial lesion. Which of the following options would you choose?
+1- Repeat cytology in 1 month.
+2- Colposcopy with possible biopsy.
+3- Hysterectomy with bilateral salpinguectomy and ovarian conservation.
+4- Fractionated uterine curettage.
+5- nan
+CORRECT ANSWER: 2
+Colposcopy with possible biopsy. H-SIL (High-grade squamous intraepithelial lesion)*: includes changes suggestive of CIN2 and CIN3/CIS. The cytologic diagnosis must be confirmed by biopsy, for which it is necessary to perform a directed biopsy by colposcopy.

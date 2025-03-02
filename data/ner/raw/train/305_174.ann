@@ -1,0 +1,22 @@
+T1	Premise 42 108	An 87-year-old man with a history of hypertension and gonarthrosis
+T2	Premise 110 230	Baseline situation with full functional and cognitive autonomy that allows him to continue living alone in the community
+T3	Premise 232 427	He is receiving regular treatment with perindopril and thiazide diuretic for blood pressure control and routinely takes ibuprofen 1800 mg/day to control the symptoms derived from his gonarthrosis
+T4	Premise 429 515	After routine control, a persistent blood pressure of 190 and TAD 80 mmHg was observed
+T5	Claim 614 651	I would add a calcium channel blocker
+T6	Claim 656 717	I would increase the dose of hydrochlorothiazide to 25 mg/day
+T7	Claim 722 838	I would change ibuprofen to paracetamol to avoid the possible influence of paracetamol on the effect of hypotensives
+T8	Claim 843 945	I would add an alpha-blocker because of the high prevalence of prostatic syndrome in males of this age
+T9	Claim 972 1234	One of the mechanisms that produce the hypotensive effect of ACE inhibitors such as perindopril is the increased action of vasodilator prostaglan-dins on the kidney, which decreases hydrosaline retention and therefore increases diuresis and lowers blood pressure
+T10	Claim 1399 1592	Therefore, the preferable thing to do in this patient, before increasing the medication, is to change the ibuprofen for paracetamol, which does not have this effect, and to re-evaluate it later
+T12	Treatment 1505 1514	ibuprofen
+T13	Treatment 1519 1530	paracetamol
+R1	Support Ent1:T10 Ent2:T7	
+T11	Marker 1399 1408	Therefore
+T14	Claim 1236 1397	NSAIDs inhibit prostaglandin synthesis and decrease renal perfusion, thus antagonizing the hypotensive effect of many antihypertensives, including ACE inhibitors
+T15	Marker 1305 1309	thus
+T16	Treatment 1236 1242	NSAIDs
+T17	Treatment 622 651	add a calcium channel blocker
+T18	Treatment 664 717	increase the dose of hydrochlorothiazide to 25 mg/day
+T19	Treatment 730 761	change ibuprofen to paracetamol
+T20	Treatment 851 871	add an alpha-blocker
+T21	Marker 872 882	because of

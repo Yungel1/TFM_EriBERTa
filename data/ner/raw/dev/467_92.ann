@@ -1,0 +1,52 @@
+T1	Premise 67 135	A woman presenting with difficulty walking after gynecologic surgery
+T2	Premise 137 187	She has mild thigh pain and leg failure on support
+T3	Premise 189 308	On examination she has weakness in hip flexion and knee extension, and dysesthesias in the anterior aspect of the thigh
+T4	Claim 363 387	Femoral nerve neuropathy
+T5	Claim 392 444	Meralgia paresthetica of the femoral cutaneous nerve
+T6	Claim 449 475	Obturator nerve neuropathy
+T7	Claim 480 511	Neuropathy of the sciatic nerve
+T8	Claim 538 651	The femoral nerve (although rare) may be damaged in a cesarean section, hysterectomy or lower abdominal operation
+R1	Support Ent1:T1 Ent2:T8	
+T9	Claim 653 728	This nerve injury produces hypoesthesia and weakness along its distribution
+T10	Disease 680 692	hypoesthesia
+R2	Support Ent1:T3 Ent2:T9	
+R3	Support Ent1:T8 Ent2:T4	
+R4	Support Ent1:T9 Ent2:T4	
+T11	Claim 730 895	Femoroneuropathy is manifested by paralysis (25% of cases) of the quadriceps muscles, abolition of patellar reflexes and hypoesthesia of the anterior and inner thigh
+R5	Support Ent1:T3 Ent2:T11	
+T12	Disease 730 746	Femoroneuropathy
+R6	Support Ent1:T11 Ent2:T4	
+T13	Claim 897 927	Therefore, answer 1 is correct
+T14	Marker 897 906	Therefore
+R7	Support Ent1:T8 Ent2:T13	
+R8	Support Ent1:T9 Ent2:T13	
+R9	Support Ent1:T11 Ent2:T13	
+R10	Support Ent1:T13 Ent2:T4	
+T15	Claim 929 1125	The femoral cutaneous or lateral femoral cutaneous nerve (L2,L3) is only sensitive and is responsible for the sensitivity of the skin of the lateral and anterior aspect of the thigh up to the knee
+T16	Claim 1130 1176	it would not explain the motor problem of gait
+R11	Support Ent1:T2 Ent2:T16	
+R12	Support Ent1:T16 Ent2:T15	
+T17	Marker 1127 1129	so
+T18	Claim 1181 1191	2 is false
+R13	Support Ent1:T16 Ent2:T18	
+R14	Support Ent1:T15 Ent2:T18	
+R15	Attack Ent1:T18 Ent2:T5	
+R16	Attack Ent1:T3 Ent2:T15	
+T19	Claim 1193 1237	The obturator nerve (L2-L4) is a mixed nerve
+T20	Claim 1239 1367	At the motor level, it invests the obturator externus, pectineus, short approximator, the approximators (adductors) and gracilis
+T21	Claim 1369 1469	At the sensory level the capsule of the coxofemoral joint, medial aspect of the thigh above the knee
+R17	Support Ent1:T20 Ent2:T19	
+R18	Support Ent1:T21 Ent2:T19	
+T22	Claim 1471 1597	Therefore neither affects the sensitivity of the anterior aspect of the thigh nor the extension of the knee so that 3 is false
+T23	Marker 1579 1586	so that
+R19	Attack Ent1:T22 Ent2:T6	
+T24	Marker 1471 1480	Therefore
+R20	Support Ent1:T20 Ent2:T22	
+R21	Support Ent1:T21 Ent2:T22	
+T25	Claim 1599 1893	A lesion of the sciatic nerve at motor level affects to the flexion of the knee not to its extension and at distal level to this one (they do not count anything of distal clinic) and at sensitive level also it is distal in the external face of the leg and in the foot reason why 4 also is false
+R22	Attack Ent1:T25 Ent2:T7	
+R23	Support Ent1:T3 Ent2:T25	
+T26	Disease 363 387	Femoral nerve neuropathy
+T27	Disease 392 444	Meralgia paresthetica of the femoral cutaneous nerve
+T28	Disease 449 475	Obturator nerve neuropathy
+T29	Disease 480 511	Neuropathy of the sciatic nerve

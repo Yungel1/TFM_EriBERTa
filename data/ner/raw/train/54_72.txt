@@ -1,0 +1,10 @@
+QUESTION TYPE: ENDOCRINOLOGY
+CLINICAL CASE: 
+A 22-year-old female student with no history of pathology or use of medications except anovulatory drugs comes to the emergency department for deterioration of general condition and need to take deep breaths. She reports weight loss in the last 2-3 days, polydipsia, polyuria and nausea. No cough or febrile sensation. Examination: appearance of gravity, blood pressure 100/60 mmHg, deep and rapid breathing (28rpm), level of consciousness preserved, dry mucous membranes. No fever. CBC: blood glucose 420 mg/dL, Na+ 131 mEq/L, K+ normal, pH 7.08, bicarbonate 8 mEq/L and ketonuria (+++) Which answer do you think is more correct?
+1- Debut of type 2 diabetes mellitus, with dyspnea probably due to pneumonia or thromboembolism, since she is taking anovulatory drugs.
+2- It is a diabetic ketoacidosis. It must be treated with intravenous insulin, serum therapy, general measures and search for precipitating cause.
+3- Debut of type 1 diabetes with ketoacidosis. Treat with bicarbonate and after correction of acidosis, add intravenous insulin.
+4- It looks like diabetic ketoacidosis, but it could be alcoholic. BAC should be determined before starting insulin therapy.
+5- Treat with rapid subcutaneous insulin, serum therapy and ask him to drink plenty of fluids.
+CORRECT ANSWER: 2
+Debut of DM with ketoacidosis. Priority is iv insulin administration and serum therapy. Bicarbonate if pH < 7. Insulin administration should never be delayed.

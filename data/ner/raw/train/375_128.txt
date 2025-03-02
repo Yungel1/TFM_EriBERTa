@@ -1,0 +1,10 @@
+QUESTION TYPE: NEUROLOGY
+CLINICAL CASE: 
+A 45-year-old patient under study for possible meningitis, with fever, headache and vomiting of 2 days of evolution. A brain MRI and lumbar puncture were performed. Twenty hours later, on getting up to go to the bathroom, he complains of severe headache, very marked when he sits up but disappears when he lies down. She no longer has fever or vomiting. What is most likely the origin of this headache?
+1- Meningitis remains the fundamental cause of her headache, as it is the same type of headache as at the onset of symptoms.
+2- It is a post lumbar puncture headache.
+3- It is necessary to look for a different cause to this headache, because it is not typical of post-lumbar puncture syndrome or meningitis.
+4- Most likely it was not a viral meningitis, but a subarachnoid hemorrhage. For this reason, the initial headache disappears almost completely when lying down.
+5- nan
+CORRECT ANSWER: 2
+The picture they describe of intense headache with orthostatism that disappears when lying down, although it is true that the most typical presentation is between the first 24-48 hours and in this case it is somewhat earlier. Even so, the rest of the answers are improbable: the first cannot be because we have not been told what the initial headache was like; the third, although it could be due to the time of onset (as I said a little earlier than expected), the reality is that the headache with orthostasis is so typical that it would be the most probable cause; the last one could not be either because SAH does not follow this pattern in relation to orthostasis.

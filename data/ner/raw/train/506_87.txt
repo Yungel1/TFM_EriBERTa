@@ -1,0 +1,10 @@
+QUESTION TYPE: PSYCHIATRY
+CLINICAL CASE: 
+Faced with sudden-onset obsessive-compulsive disorder (OCD) in a 9-year-old boy who also presents with tics and chorea as neurological manifestations, infection by:
+1- Streptococcus viridans.
+2- Alpha-hemolytic streptococcus.
+3- Beta-hemolytic streptococcus, group A.
+4- Enterococcus.
+5- nan
+CORRECT ANSWER: 3
+There is a large literature on this subject. It never ceases to amaze us the strange ways of biology and that the axiom "the longest is the right one" is fulfilled in this case.

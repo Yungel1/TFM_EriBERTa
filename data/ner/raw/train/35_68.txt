@@ -1,0 +1,10 @@
+QUESTION TYPE: NEUROLOGY AND NEUROSURGERY
+CLINICAL CASE: 
+A 56-year-old patient with no personal or family history of interest is studied because he has been having difficulty walking with his right leg for six months. He reports no other symptoms. The examination shows a 4/5 weakness for dorsal flexion and eversion of the foot and 4/5 for flexion and inversion of the foot, with increased muscle reflexes and Babinski present, the rest being normal. The syndromic diagnosis would be:
+1- Mononeuropathy of the right common peroneal nerve.
+2- Focal involvement of the first motor neuron and probably of the second.
+3- Right hemimedullary involvement (Brown-Sequard).
+4- Multiple mononeuropathy with involvement of the common peroneal and right posterior tibial nerve.
+5- Right lumbar plexopathy.
+CORRECT ANSWER: 2
+Answer 1 incorrect: It does not explain pyramidalism. Answer 2 correct: A nonspecific answer, but probably the correct answer. Answer 3 incorrect: We would lack data to think of a Brown Sequard hemimedullary syndrome. It would explain the pyramidalism, but we would be missing data suggestive of this picture such as a contralateral hypoesthesia. Incorrect answer 4: It could explain the difficulty in dorsiflexion and plantar flexion of the foot, but not the pyramidalism. Incorrect answer 5: In a similar way to the previous one, it could explain part of the clinical picture, but not the pyramidalism.
