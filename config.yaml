@@ -5,5 +5,7 @@ paths:
       dev: "data/ner/raw/dev/" # Carpeta que contiene los archivos de texto y anotaciones de dev
     processed:
       train: "data/ner/processed/train/train.hf" # HF Dataset con los datos de train
-      dev: "data/ner/processed/dev/dev.hf" #  HF Dataset con los datos de dev
+      dev: "data/ner/processed/dev/dev.hf" # HF Dataset con los datos de dev
+    label_maps:
+      label2id: "data/ner/label_maps/label2id.json"
     model_dir: "models/ner/"
