@@ -4,6 +4,7 @@ import time
 from datasets import load_from_disk
 
 from src.data_preprocessing.ner_preprocess import NERPreprocessor
+from src.fine_tuning.ner_finetuning import define_model
 from src.utils.config_loader import load_ner_config
 from src.utils.data_loader import create_hf_dataset_from_brats
 from src.utils.ner_utils import extract_label_maps, load_label_maps
@@ -11,6 +12,7 @@ from src.utils.ner_utils import extract_label_maps, load_label_maps
 from transformers import (
     AutoModelForTokenClassification,
     AutoTokenizer,
+    DataCollatorForTokenClassification
 )
 
 
@@ -32,9 +34,9 @@ def run_ner_pipeline():
     DEV_PROCESSED = config["paths"]["ner"]["processed"]["dev"]
     LABEL2ID_PATH = config["paths"]["ner"]["label_map"]
 
-    # Model to be trained
-    medical_model = "HiTZ/EriBERTa-base"
-    tokenizer = AutoTokenizer.from_pretrained(medical_model)
+    # Model name and tokenizer
+    model_name = "HiTZ/EriBERTa-base"
+    tokenizer = AutoTokenizer.from_pretrained(model_name)
 
     # Arguments
     args = __get_args()
@@ -79,23 +81,17 @@ def run_ner_pipeline():
         # Load label maps
         label2id, id2label = load_label_maps(LABEL2ID_PATH)
         print(f"✅ Data loaded in {time.time() - start_time:.2f} seconds.\n")
-        # TODO Prueba (borrar cuando se compruebe)
-        print(train_tokenized[0])
-        print(label2id)
 
+    # Data Collator
+    data_collator = DataCollatorForTokenClassification(tokenizer, pad_to_multiple_of=8)
 
-    # # Fine-tuning del modelo
-    # print("\n Iniciando fine-tuning de EriBERTa...")
-    # start_time = time.time()
-    # fine_tune_model(train_data, dev_data, MODEL_DIR, batch_size=BATCH_SIZE, learning_rate=LEARNING_RATE, epochs=EPOCHS)
-    # print(f"✅ Fine-tuning completado en {time.time() - start_time:.2f} segundos.")
-    #
-    # # Evaluación del modelo
-    # print("\n Evaluando el modelo...")
-    # metrics = evaluate_model(MODEL_DIR, test_data)
-    # print("Resultados de evaluación:", metrics)
-    #
-    # print("\n ¡Pipeline completado con éxito!")
+    print("\n⏳ Starting fine-tuning process...")
+    start_time = time.time()
+    # Define model
+    model = define_model(model_name, label2id, id2label)
+    # TODO Borrar el print y hacer el fine-tuning
+    print(model)
+    print(f"✅ Model fine-tuned in {time.time() - start_time:.2f} seconds.\n")
 
 
 if __name__ == "__main__":
