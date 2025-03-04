@@ -49,7 +49,8 @@ class NERPreprocessor:
                             if token_start == entity["start"]
                             else self.label2id[f'I-{entity["label"]}']
                         )
-                        # Don't break, so the label is overwritten if there is a nested entity
+                        # If there is a nested entity and want to overwrite, comment the break
+                        break
             labels.append(label_seq)
 
         tokenized_inputs["labels"] = labels
