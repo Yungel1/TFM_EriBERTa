@@ -4,7 +4,7 @@ import time
 from datasets import load_from_disk
 
 from src.data_preprocessing.ner_preprocess import NERPreprocessor
-from src.fine_tuning.ner_finetuning import define_model
+from src.fine_tuning.ner_finetuning import define_model, MetricsComputer, define_trainer
 from src.utils.config_loader import load_ner_config
 from src.utils.data_loader import create_hf_dataset_from_brats
 from src.utils.ner_utils import extract_label_maps, load_label_maps
@@ -33,6 +33,7 @@ def run_ner_pipeline():
     TRAIN_PROCESSED = config["paths"]["ner"]["processed"]["train"]
     DEV_PROCESSED = config["paths"]["ner"]["processed"]["dev"]
     LABEL2ID_PATH = config["paths"]["ner"]["label_map"]
+    RESULTS_PATH = config["paths"]["ner"]["results"]
 
     # Model name and tokenizer
     model_name = "HiTZ/EriBERTa-base"
@@ -89,9 +90,19 @@ def run_ner_pipeline():
     start_time = time.time()
     # Define model
     model = define_model(model_name, label2id, id2label)
-    # TODO Borrar el print y hacer el fine-tuning
-    print(model)
+    # Metrics computer
+    metrics_computer = MetricsComputer(id2label)
+    # Define trainer
+    trainer = define_trainer(model, tokenizer, data_collator, train_tokenized, dev_tokenized,
+                             metrics_computer.compute_metrics, RESULTS_PATH)
+    # Fine-tuning
+    trainer.train()
     print(f"✅ Model fine-tuned in {time.time() - start_time:.2f} seconds.\n")
+
+    print("\n⏳ Evaluating fine-tuned model...")
+    metrics = trainer.evaluate()
+    print(metrics)
+    print(f"✅ Model evaluated in {time.time() - start_time:.2f} seconds.\n")
 
 
 if __name__ == "__main__":

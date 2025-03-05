@@ -19,19 +19,22 @@ def define_model(model_name, label2id, id2label):
 
     return model
 
-def define_trainer(model, tokenizer, data_collator, train_dataset, eval_dataset, compute_metrics, output_dir="./results"):
+
+def define_trainer(model, tokenizer, data_collator, train_dataset, eval_dataset,
+                   compute_metrics, output_dir):
 
     # Training arguments
     training_args = TrainingArguments(
         output_dir=output_dir,
-        evaluation_strategy="epoch",
-        save_strategy="epoch",
         logging_dir=f"{output_dir}/logs",
+        learning_rate=2e-5,
         per_device_train_batch_size=16,
         per_device_eval_batch_size=16,
         num_train_epochs=3,
         weight_decay=0.01,
         save_total_limit=5,
+        eval_strategy="epoch",
+        save_strategy="epoch",
         load_best_model_at_end=True,
         #metric_for_best_model="f1",
         #greater_is_better=True
@@ -43,12 +46,13 @@ def define_trainer(model, tokenizer, data_collator, train_dataset, eval_dataset,
         args=training_args,
         train_dataset=train_dataset,
         eval_dataset=eval_dataset,
-        tokenizer=tokenizer,
+        processing_class=tokenizer,
         data_collator=data_collator,
-        compute_metrics=compute_metrics
+        compute_metrics=compute_metrics,
     )
 
     return trainer
+
 
 class MetricsComputer:
     def __init__(self, id2label):

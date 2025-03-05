@@ -7,4 +7,5 @@ paths:
       train: "data/ner/processed/train/train.hf" # HF Dataset con los datos de train
       dev: "data/ner/processed/dev/dev.hf" # HF Dataset con los datos de dev
     label_map: "data/ner/label_map/label2id.json"
+    results: "results/ner"
     model_dir: "models/ner/"
