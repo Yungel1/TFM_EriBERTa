@@ -3,7 +3,7 @@ import time
 
 from datasets import load_from_disk
 
-from src.data_preprocessing.ner_preprocess import NERPreprocessor
+from src.data_preprocessing.ner_preprocess import NERPreprocessor, flatten_dataset
 from src.fine_tuning.ner_finetuning import define_model, MetricsComputer, define_trainer
 from src.utils.config_loader import load_ner_config
 from src.utils.data_loader import create_hf_dataset_from_brats
@@ -65,8 +65,8 @@ def run_ner_pipeline():
         # Tokenize
         print("\n⏳ Tokenizing data...")
         start_time = time.time()
-        train_tokenized = preprocessor.process_dataset(train_dataset)
-        dev_tokenized = preprocessor.process_dataset(dev_dataset)
+        train_tokenized = preprocessor.tokenize_dataset(train_dataset)
+        dev_tokenized = preprocessor.tokenize_dataset(dev_dataset)
         # Save tokenized data to disk
         train_tokenized.save_to_disk(TRAIN_PROCESSED)
         dev_tokenized.save_to_disk(DEV_PROCESSED)
@@ -83,6 +83,11 @@ def run_ner_pipeline():
         label2id, id2label = load_label_maps(LABEL2ID_PATH)
         print(f"✅ Data loaded in {time.time() - start_time:.2f} seconds.\n")
 
+    print("\n⏳ Starting dataset flatten process...")
+    train_flattened = flatten_dataset(train_tokenized)
+    dev_flattened = flatten_dataset(dev_tokenized)
+    print(f"✅ Dataset flattened in {time.time() - start_time:.2f} seconds.\n")
+
     # Data Collator
     data_collator = DataCollatorForTokenClassification(tokenizer, pad_to_multiple_of=8)
 
@@ -93,7 +98,7 @@ def run_ner_pipeline():
     # Metrics computer
     metrics_computer = MetricsComputer(id2label)
     # Define trainer
-    trainer = define_trainer(model, tokenizer, data_collator, train_tokenized, dev_tokenized,
+    trainer = define_trainer(model, tokenizer, data_collator, train_flattened, dev_flattened,
                              metrics_computer.compute_metrics, RESULTS_PATH)
     # Fine-tuning
     trainer.train()
