@@ -1,4 +1,6 @@
 import os
+from collections import defaultdict
+
 import pandas as pd
 
 from datasets import Dataset
@@ -16,7 +18,7 @@ class NERPreprocessor:
         # Tokenize without truncation to handle overflows and obtain the offsets
         tokenized_inputs = self.tokenizer(
             example["text"],
-            truncation=False,
+            truncation=True,
             return_overflowing_tokens=True,
             stride=self.stride,
             max_length=self.max_length,
@@ -71,48 +73,23 @@ class NERPreprocessor:
         return tokenized_dataset
 
 
-def flatten_example(examples, indices):
-    dataset_flatenned = {
-        'input_ids': [],
-        'attention_mask': [],
-        'labels': [],
-        'offset_mapping': [],
-        'overflow_to_sample_mapping': []
-    }
+def flatten_examples(examples, indices):
+    flattened_examples = defaultdict(list)
 
-    for i, idx in enumerate(indices):
-        for j in range(len(examples['input_ids'][i])):
-            dataset_flatenned['input_ids'].append(examples['input_ids'][i][j])
-            dataset_flatenned['attention_mask'].append(examples['attention_mask'][i][j])
-            dataset_flatenned['labels'].append(examples['labels'][i][j])
-            dataset_flatenned['offset_mapping'].append(examples['offset_mapping'][i][j])
-            dataset_flatenned['overflow_to_sample_mapping'].append(idx)
+    for idx, input_ids, attn_mask, labels, offset_map in zip(
+            indices, examples['input_ids'], examples['attention_mask'], examples['labels'], examples['offset_mapping']
+    ):
+        flattened_examples['input_ids'].extend(input_ids)
+        flattened_examples['attention_mask'].extend(attn_mask)
+        flattened_examples['labels'].extend(labels)
+        flattened_examples['offset_mapping'].extend(offset_map)
+        flattened_examples['overflow_to_sample_mapping'].extend([idx] * len(input_ids))
 
-    return dataset_flatenned
+    return flattened_examples
 
 
 def flatten_dataset(nested_dataset):
-
-    # with_indices needed to identify original example
-    flattened_dataset = nested_dataset.map(flatten_example, with_indices=True, batched=True)
-
+    flattened_dataset = nested_dataset.map(
+        flatten_examples, with_indices=True, batched=True, remove_columns=nested_dataset.column_names
+    )
     return flattened_dataset
-
-
-# TODO Borrar, es una versión lenta
-def flatten_dataset1(nested_dataset):
-    flat_data = []
-    for i in range(len(nested_dataset['input_ids'])):
-        for j in range(len(nested_dataset['input_ids'][i])):
-            flat_data.append({
-                'input_ids': nested_dataset['input_ids'][i][j],
-                'attention_mask': nested_dataset['attention_mask'][i][j],
-                'labels': nested_dataset['labels'][i][j],
-                'offset_mapping': nested_dataset['offset_mapping'][i][j],
-                'overflow_to_sample_mapping': i  # Original example index
-            })
-    dataset = Dataset.from_list(flat_data)
-    return dataset
-
-
-

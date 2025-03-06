@@ -1,4 +1,5 @@
 import argparse
+import os
 import time
 
 from datasets import load_from_disk
@@ -20,6 +21,7 @@ def __get_args():
     # Manage arguments
     parser = argparse.ArgumentParser(description="Tokenization and data preparation for fine-tuning EriBERTa")
     parser.add_argument("--force_tokenize", action="store_true", help="Force to tokenize raw data")
+    parser.add_argument("--force_fine_tuning", action="store_true", help="Force to fine-tune the model")
     return parser.parse_args()
 
 
@@ -42,7 +44,7 @@ def run_ner_pipeline():
     # Arguments
     args = __get_args()
 
-    if args.force_tokenize:
+    if args.force_tokenize or not os.path.exists(TRAIN_PROCESSED) or not os.path.exists(DEV_PROCESSED):
 
         # Load text+ann (BRAT) data into HF Dataset
         print("\n⏳ Loading raw data...")
@@ -73,7 +75,6 @@ def run_ner_pipeline():
         print(f"✅ Data tokenized in {time.time() - start_time:.2f} seconds.\n")
 
     else:
-
         print("\n⏳ Loading processed data...")
         start_time = time.time()
         # Load processed data
@@ -84,6 +85,7 @@ def run_ner_pipeline():
         print(f"✅ Data loaded in {time.time() - start_time:.2f} seconds.\n")
 
     print("\n⏳ Starting dataset flatten process...")
+    start_time = time.time()
     train_flattened = flatten_dataset(train_tokenized)
     dev_flattened = flatten_dataset(dev_tokenized)
     print(f"✅ Dataset flattened in {time.time() - start_time:.2f} seconds.\n")
@@ -91,20 +93,39 @@ def run_ner_pipeline():
     # Data Collator
     data_collator = DataCollatorForTokenClassification(tokenizer, pad_to_multiple_of=8)
 
-    print("\n⏳ Starting fine-tuning process...")
-    start_time = time.time()
-    # Define model
-    model = define_model(model_name, label2id, id2label)
     # Metrics computer
     metrics_computer = MetricsComputer(id2label)
-    # Define trainer
-    trainer = define_trainer(model, tokenizer, data_collator, train_flattened, dev_flattened,
-                             metrics_computer.compute_metrics, RESULTS_PATH)
-    # Fine-tuning
-    trainer.train()
-    print(f"✅ Model fine-tuned in {time.time() - start_time:.2f} seconds.\n")
+
+    if args.force_fine_tuning or not os.listdir(RESULTS_PATH):
+
+        print("\n⏳ Starting fine-tuning process...")
+        start_time = time.time()
+        # Define model
+        model = define_model(model_name, label2id, id2label)
+
+        # Define trainer
+        trainer = define_trainer(model, tokenizer, data_collator, train_flattened, dev_flattened,
+                                 metrics_computer.compute_metrics, RESULTS_PATH)
+
+        # Fine-tuning and saving best model
+        trainer.train()
+        if trainer.state.best_model_checkpoint:
+            trainer.save_model(f"{RESULTS_PATH}/best_model")
+        print(f"✅ Model fine-tuned in {time.time() - start_time:.2f} seconds.\n")
+
+    else:
+        print("\n⏳ Loading best fine-tuned model...")
+        start_time = time.time()
+        # Define model TODO Cambiar "checkpoint-75" por "best_model"
+        model = AutoModelForTokenClassification.from_pretrained(f"{RESULTS_PATH}/checkpoint-75")
+
+        # Define trainer
+        trainer = define_trainer(model, tokenizer, data_collator, train_flattened, dev_flattened,
+                                 metrics_computer.compute_metrics, RESULTS_PATH)
+        print(f"✅ Model loaded in {time.time() - start_time:.2f} seconds.\n")
 
     print("\n⏳ Evaluating fine-tuned model...")
+    start_time = time.time()
     metrics = trainer.evaluate()
     print(metrics)
     print(f"✅ Model evaluated in {time.time() - start_time:.2f} seconds.\n")

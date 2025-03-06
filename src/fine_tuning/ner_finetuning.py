@@ -12,7 +12,6 @@ def define_model(model_name, label2id, id2label):
         label2id=label2id,
         id2label=id2label,
     )
-    config.max_position_embeddings = 512
 
     # Model definition
     model = AutoModelForTokenClassification.from_pretrained(model_name, config=config, ignore_mismatched_sizes=True)
@@ -32,7 +31,6 @@ def define_trainer(model, tokenizer, data_collator, train_dataset, eval_dataset,
         per_device_eval_batch_size=16,
         num_train_epochs=3,
         weight_decay=0.01,
-        save_total_limit=5,
         eval_strategy="epoch",
         save_strategy="epoch",
         load_best_model_at_end=True,
