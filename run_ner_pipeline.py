@@ -2,6 +2,7 @@ import argparse
 import os
 import time
 
+import torch
 from datasets import load_from_disk
 
 from src.data_preprocessing.ner_preprocess import NERPreprocessor, flatten_dataset
@@ -52,10 +53,7 @@ def run_ner_pipeline():
         train_dataset = create_hf_dataset_from_brats(TRAIN_RAW)
         dev_dataset = create_hf_dataset_from_brats(DEV_RAW)
         print(f"✅ Data loaded in {time.time() - start_time:.2f} seconds.\n")
-        # TODO Prueba (borrar cuando se compruebe)
-        print(train_dataset[0])
 
-        # Label maps
         print("\n⏳ Extracting label maps...")
         start_time = time.time()
         label2id, id2label = extract_label_maps(train_dataset, LABEL2ID_PATH)
@@ -64,7 +62,6 @@ def run_ner_pipeline():
         # NERPreprocessor class
         preprocessor = NERPreprocessor(tokenizer, label2id, id2label)
 
-        # Tokenize
         print("\n⏳ Tokenizing data...")
         start_time = time.time()
         train_tokenized = preprocessor.tokenize_dataset(train_dataset)
@@ -73,6 +70,16 @@ def run_ner_pipeline():
         train_tokenized.save_to_disk(TRAIN_PROCESSED)
         dev_tokenized.save_to_disk(DEV_PROCESSED)
         print(f"✅ Data tokenized in {time.time() - start_time:.2f} seconds.\n")
+
+        # TODO Borrar cuando se confirme que no hace falta
+        # print("\n⏳ Flattening tokenized dataset...")
+        # start_time = time.time()
+        # train_flattened = flatten_dataset(train_tokenized)
+        # dev_flattened = flatten_dataset(dev_tokenized)
+        # # Save flattened data to disk
+        # train_flattened.save_to_disk(TRAIN_PROCESSED)
+        # dev_flattened.save_to_disk(DEV_PROCESSED)
+        # print(f"✅ Dataset flattened in {time.time() - start_time:.2f} seconds.\n")
 
     else:
         print("\n⏳ Loading processed data...")
@@ -84,50 +91,56 @@ def run_ner_pipeline():
         label2id, id2label = load_label_maps(LABEL2ID_PATH)
         print(f"✅ Data loaded in {time.time() - start_time:.2f} seconds.\n")
 
-    print("\n⏳ Starting dataset flatten process...")
-    start_time = time.time()
-    train_flattened = flatten_dataset(train_tokenized)
-    dev_flattened = flatten_dataset(dev_tokenized)
-    print(f"✅ Dataset flattened in {time.time() - start_time:.2f} seconds.\n")
-
     # Data Collator
     data_collator = DataCollatorForTokenClassification(tokenizer, pad_to_multiple_of=8)
 
     # Metrics computer
-    metrics_computer = MetricsComputer(id2label)
+    metrics_computer = MetricsComputer(id2label, True)
 
-    if args.force_fine_tuning or not os.listdir(RESULTS_PATH):
+    BEST_MODEL_PATH = f"{RESULTS_PATH}/best_model"
+
+    # GPU or CPU (GPU when available)
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    print(f"\nℹ️ Model is using: {device}\n")
+
+    if args.force_fine_tuning or not os.path.exists(BEST_MODEL_PATH):
 
         print("\n⏳ Starting fine-tuning process...")
         start_time = time.time()
         # Define model
         model = define_model(model_name, label2id, id2label)
+        model.to(device)
 
         # Define trainer
-        trainer = define_trainer(model, tokenizer, data_collator, train_flattened, dev_flattened,
+        trainer = define_trainer(model, tokenizer, data_collator, train_tokenized, dev_tokenized,
                                  metrics_computer.compute_metrics, RESULTS_PATH)
 
         # Fine-tuning and saving best model
-        trainer.train()
+        metrics_train = trainer.train()
+        trainer.log_metrics("train", metrics_train)
+        trainer.save_metrics("train", metrics_train)
         if trainer.state.best_model_checkpoint:
-            trainer.save_model(f"{RESULTS_PATH}/best_model")
+            trainer.save_model(BEST_MODEL_PATH)
         print(f"✅ Model fine-tuned in {time.time() - start_time:.2f} seconds.\n")
 
     else:
         print("\n⏳ Loading best fine-tuned model...")
         start_time = time.time()
-        # Define model TODO Cambiar "checkpoint-75" por "best_model"
-        model = AutoModelForTokenClassification.from_pretrained(f"{RESULTS_PATH}/checkpoint-75")
-
+        # Define model
+        model = AutoModelForTokenClassification.from_pretrained(BEST_MODEL_PATH)
+        model.to(device)
+        # model.push_to_hub("Yungel1/EriBERTa_NER")
+        # model = AutoModelForTokenClassification.from_pretrained("Yungel1/EriBERTa_NER")
         # Define trainer
-        trainer = define_trainer(model, tokenizer, data_collator, train_flattened, dev_flattened,
+        trainer = define_trainer(model, tokenizer, data_collator, train_tokenized, dev_tokenized,
                                  metrics_computer.compute_metrics, RESULTS_PATH)
         print(f"✅ Model loaded in {time.time() - start_time:.2f} seconds.\n")
 
     print("\n⏳ Evaluating fine-tuned model...")
     start_time = time.time()
-    metrics = trainer.evaluate()
-    print(metrics)
+    metrics_eval = trainer.evaluate()
+    # trainer.log_metrics("eval", metrics_eval)
+    trainer.save_metrics("eval", metrics_eval)
     print(f"✅ Model evaluated in {time.time() - start_time:.2f} seconds.\n")
 
 

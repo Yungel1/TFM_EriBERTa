@@ -4,51 +4,36 @@
   "features": {
     "input_ids": {
       "feature": {
-        "feature": {
-          "dtype": "int32",
-          "_type": "Value"
-        },
-        "_type": "Sequence"
+        "dtype": "int32",
+        "_type": "Value"
       },
       "_type": "Sequence"
     },
     "attention_mask": {
       "feature": {
-        "feature": {
-          "dtype": "int8",
-          "_type": "Value"
-        },
-        "_type": "Sequence"
+        "dtype": "int8",
+        "_type": "Value"
       },
       "_type": "Sequence"
     },
     "offset_mapping": {
       "feature": {
         "feature": {
-          "feature": {
-            "dtype": "int64",
-            "_type": "Value"
-          },
-          "_type": "Sequence"
+          "dtype": "int64",
+          "_type": "Value"
         },
         "_type": "Sequence"
       },
       "_type": "Sequence"
     },
     "overflow_to_sample_mapping": {
-      "feature": {
-        "dtype": "int64",
-        "_type": "Value"
-      },
-      "_type": "Sequence"
+      "dtype": "int64",
+      "_type": "Value"
     },
     "labels": {
       "feature": {
-        "feature": {
-          "dtype": "int64",
-          "_type": "Value"
-        },
-        "_type": "Sequence"
+        "dtype": "int64",
+        "_type": "Value"
       },
       "_type": "Sequence"
     }

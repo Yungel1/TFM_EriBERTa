@@ -17,7 +17,7 @@ class NERPreprocessor:
     def tokenize_and_align_labels(self, example):
         # Tokenize without truncation to handle overflows and obtain the offsets
         tokenized_inputs = self.tokenizer(
-            example["text"],
+            example["text"][0],
             truncation=True,
             return_overflowing_tokens=True,
             stride=self.stride,
@@ -28,7 +28,7 @@ class NERPreprocessor:
 
         # TODO Hay que mirar si hay que ordenar, o no
         # Retrieve the entities (assumed to be sorted by their starting position)
-        sorted_entities = sorted(example["entities"], key=lambda ent: (ent["start"], -ent["end"]))
+        sorted_entities = sorted(example["entities"][0], key=lambda ent: (ent["start"], -ent["end"]))
 
         labels = []
         for offsets in tokenized_inputs["offset_mapping"]:
@@ -64,7 +64,8 @@ class NERPreprocessor:
 
         tokenized_dataset = dataset.map(
             self.tokenize_and_align_labels,
-            batched=False,
+            batched=True,
+            batch_size=1,
             remove_columns=dataset.column_names,
             desc="Tokenizing and aligning labels"
         )
@@ -72,7 +73,7 @@ class NERPreprocessor:
         tokenized_dataset = tokenized_dataset.filter(lambda x: x["input_ids"] is not None)
         return tokenized_dataset
 
-
+# TODO Borrar cuando se confirme que no hace falta
 def flatten_examples(examples, indices):
     flattened_examples = defaultdict(list)
 
@@ -87,7 +88,7 @@ def flatten_examples(examples, indices):
 
     return flattened_examples
 
-
+# TODO Borrar cuando se confirme que no hace falta
 def flatten_dataset(nested_dataset):
     flattened_dataset = nested_dataset.map(
         flatten_examples, with_indices=True, batched=True, remove_columns=nested_dataset.column_names
