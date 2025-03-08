@@ -58,19 +58,22 @@ class MetricsComputer:
         self.return_entity_level_metrics = return_entity_level_metrics
         self.metric = evaluate.load("seqeval")
 
-    def compute_metrics(self, p):
-        predictions, labels = p
-        predictions = np.argmax(predictions, axis=2)
+    def compute_metrics(self, p, are_predictions_processed=False):
+        if not are_predictions_processed:
+            predictions, labels = p
+            predictions = np.argmax(predictions, axis=2)
 
-        # Remove ignored index (special tokens)
-        true_predictions = [
-            [self.id2label[p] for (p, l) in zip(prediction, label) if l != -100]
-            for prediction, label in zip(predictions, labels)
-        ]
-        true_labels = [
-            [self.id2label[l] for (p, l) in zip(prediction, label) if l != -100]
-            for prediction, label in zip(predictions, labels)
-        ]
+            # Remove ignored index (special tokens)
+            true_predictions = [
+                [self.id2label[p] for (p, l) in zip(prediction, label) if l != -100]
+                for prediction, label in zip(predictions, labels)
+            ]
+            true_labels = [
+                [self.id2label[l] for (p, l) in zip(prediction, label) if l != -100]
+                for prediction, label in zip(predictions, labels)
+            ]
+        else:
+            true_predictions, true_labels = p
 
         results = self.metric.compute(predictions=true_predictions, references=true_labels)
         if self.return_entity_level_metrics:
@@ -79,9 +82,9 @@ class MetricsComputer:
             for key, value in results.items():
                 if isinstance(value, dict):
                     for n, v in value.items():
-                        final_results[f"{key}_{n}"] = v
+                        final_results[f"{key}_{n}"] = int(v) if isinstance(v, (np.int64, np.int32)) else v
                 else:
-                    final_results[key] = value
+                    final_results[key] = int(value) if isinstance(value, (np.int64, np.int32)) else value
             return final_results
         else:
             return {

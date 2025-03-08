@@ -27,8 +27,11 @@
       "_type": "Sequence"
     },
     "overflow_to_sample_mapping": {
-      "dtype": "int64",
-      "_type": "Value"
+      "feature": {
+        "dtype": "int64",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
     },
     "labels": {
       "feature": {

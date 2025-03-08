@@ -14,7 +14,7 @@ class NERPreprocessor:
         self.label2id = label2id
         self.id2label = id2label
 
-    def tokenize_and_align_labels(self, example):
+    def tokenize_and_align_labels(self, example, indices):
         # Tokenize without truncation to handle overflows and obtain the offsets
         tokenized_inputs = self.tokenizer(
             example["text"][0],
@@ -56,6 +56,8 @@ class NERPreprocessor:
             labels.append(label_seq)
 
         tokenized_inputs["labels"] = labels
+        # Map each window to original sample
+        tokenized_inputs["overflow_to_sample_mapping"] = [indices] * len(tokenized_inputs["overflow_to_sample_mapping"])
         return tokenized_inputs
 
     def tokenize_dataset(self, dataset):
@@ -66,6 +68,7 @@ class NERPreprocessor:
             self.tokenize_and_align_labels,
             batched=True,
             batch_size=1,
+            with_indices=True,
             remove_columns=dataset.column_names,
             desc="Tokenizing and aligning labels"
         )

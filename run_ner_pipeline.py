@@ -6,6 +6,7 @@ import torch
 from datasets import load_from_disk
 
 from src.data_preprocessing.ner_preprocess import NERPreprocessor, flatten_dataset
+from src.evaluation.ner_prediction import predict_and_save
 from src.fine_tuning.ner_finetuning import define_model, MetricsComputer, define_trainer
 from src.utils.config_loader import load_ner_config
 from src.utils.data_loader import create_hf_dataset_from_brats
@@ -116,8 +117,9 @@ def run_ner_pipeline():
                                  metrics_computer.compute_metrics, RESULTS_PATH)
 
         # Fine-tuning and saving best model
-        metrics_train = trainer.train()
-        trainer.log_metrics("train", metrics_train)
+        train_result = trainer.train()
+        metrics_train = train_result.metrics
+        # trainer.log_metrics("train", metrics_train)
         trainer.save_metrics("train", metrics_train)
         if trainer.state.best_model_checkpoint:
             trainer.save_model(BEST_MODEL_PATH)
@@ -142,6 +144,11 @@ def run_ner_pipeline():
     # trainer.log_metrics("eval", metrics_eval)
     trainer.save_metrics("eval", metrics_eval)
     print(f"✅ Model evaluated in {time.time() - start_time:.2f} seconds.\n")
+
+    print("\n⏳ Starting inference and final evaluation...")
+    start_time = time.time()
+    predict_and_save(trainer, dev_tokenized, id2label, metrics_computer.compute_metrics, RESULTS_PATH)
+    print(f"✅ Inference and save finished in {time.time() - start_time:.2f} seconds.\n")
 
 
 if __name__ == "__main__":
