@@ -147,7 +147,7 @@ def run_ner_pipeline():
 
     print("\n⏳ Starting inference and final evaluation...")
     start_time = time.time()
-    predict_and_save(trainer, dev_tokenized, id2label, metrics_computer.compute_metrics, RESULTS_PATH)
+    predict_and_save(trainer, dev_tokenized, id2label, metrics_computer.compute_metrics, tokenizer, RESULTS_PATH)
     print(f"✅ Inference and save finished in {time.time() - start_time:.2f} seconds.\n")
 
 
