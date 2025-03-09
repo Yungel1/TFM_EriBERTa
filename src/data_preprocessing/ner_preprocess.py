@@ -58,6 +58,9 @@ class NERPreprocessor:
         tokenized_inputs["labels"] = labels
         # Map each window to original sample
         tokenized_inputs["overflow_to_sample_mapping"] = [indices] * len(tokenized_inputs["overflow_to_sample_mapping"])
+        tokenized_inputs["article_id"] = (
+                [example["article_id"][0]] * len(tokenized_inputs["overflow_to_sample_mapping"])
+        )
         return tokenized_inputs
 
     def tokenize_dataset(self, dataset):
@@ -75,25 +78,3 @@ class NERPreprocessor:
 
         tokenized_dataset = tokenized_dataset.filter(lambda x: x["input_ids"] is not None)
         return tokenized_dataset
-
-# TODO Borrar cuando se confirme que no hace falta
-def flatten_examples(examples, indices):
-    flattened_examples = defaultdict(list)
-
-    for idx, input_ids, attn_mask, labels, offset_map in zip(
-            indices, examples['input_ids'], examples['attention_mask'], examples['labels'], examples['offset_mapping']
-    ):
-        flattened_examples['input_ids'].extend(input_ids)
-        flattened_examples['attention_mask'].extend(attn_mask)
-        flattened_examples['labels'].extend(labels)
-        flattened_examples['offset_mapping'].extend(offset_map)
-        flattened_examples['overflow_to_sample_mapping'].extend([idx] * len(input_ids))
-
-    return flattened_examples
-
-# TODO Borrar cuando se confirme que no hace falta
-def flatten_dataset(nested_dataset):
-    flattened_dataset = nested_dataset.map(
-        flatten_examples, with_indices=True, batched=True, remove_columns=nested_dataset.column_names
-    )
-    return flattened_dataset

@@ -5,7 +5,7 @@ import time
 import torch
 from datasets import load_from_disk
 
-from src.data_preprocessing.ner_preprocess import NERPreprocessor, flatten_dataset
+from src.data_preprocessing.ner_preprocess import NERPreprocessor
 from src.evaluation.ner_prediction import predict_and_save
 from src.fine_tuning.ner_finetuning import define_model, MetricsComputer, define_trainer
 from src.utils.config_loader import load_ner_config
@@ -71,16 +71,6 @@ def run_ner_pipeline():
         train_tokenized.save_to_disk(TRAIN_PROCESSED)
         dev_tokenized.save_to_disk(DEV_PROCESSED)
         print(f"✅ Data tokenized in {time.time() - start_time:.2f} seconds.\n")
-
-        # TODO Borrar cuando se confirme que no hace falta
-        # print("\n⏳ Flattening tokenized dataset...")
-        # start_time = time.time()
-        # train_flattened = flatten_dataset(train_tokenized)
-        # dev_flattened = flatten_dataset(dev_tokenized)
-        # # Save flattened data to disk
-        # train_flattened.save_to_disk(TRAIN_PROCESSED)
-        # dev_flattened.save_to_disk(DEV_PROCESSED)
-        # print(f"✅ Dataset flattened in {time.time() - start_time:.2f} seconds.\n")
 
     else:
         print("\n⏳ Loading processed data...")

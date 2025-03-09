@@ -50,7 +50,7 @@ def create_hf_dataset_from_brats(text_ann_folder):
                             except Exception as e:
                                 print(f"Error parsing annotation in {ann_file}: {e}")
 
-            data.append({"text": text, "entities": entities})
+            data.append({"article_id": article_id, "text": text, "entities": entities})
 
     # Convert the list of data to a Hugging Face Dataset
     dataset = Dataset.from_list(data)

@@ -2,6 +2,10 @@
   "citation": "",
   "description": "",
   "features": {
+    "article_id": {
+      "dtype": "string",
+      "_type": "Value"
+    },
     "input_ids": {
       "feature": {
         "dtype": "int32",
