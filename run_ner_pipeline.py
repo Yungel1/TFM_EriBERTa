@@ -7,7 +7,7 @@ from datasets import load_from_disk
 
 from src.data_preprocessing.ner_preprocess import NERPreprocessor
 from src.evaluation.ner_prediction import predict_and_save
-from src.fine_tuning.ner_finetuning import define_model, MetricsComputer, define_trainer
+from src.fine_tuning.ner_finetuning import define_config, MetricsComputer, define_trainer
 from src.utils.config_loader import load_ner_config
 from src.utils.data_loader import create_hf_dataset_from_brats
 from src.utils.ner_utils import extract_label_maps, load_label_maps
@@ -99,7 +99,8 @@ def run_ner_pipeline():
         print("\n⏳ Starting fine-tuning process...")
         start_time = time.time()
         # Define model
-        model = define_model(model_name, label2id, id2label)
+        config = define_config(model_name, label2id, id2label)
+        model = AutoModelForTokenClassification.from_pretrained(model_name, config=config, ignore_mismatched_sizes=True)
         model.to(device)
 
         # Define trainer

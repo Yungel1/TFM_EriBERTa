@@ -3,7 +3,7 @@ import numpy as np
 import evaluate
 
 
-def define_model(model_name, label2id, id2label):
+def define_config(model_name, label2id, id2label):
 
     # Model config
     config = AutoConfig.from_pretrained(
@@ -12,12 +12,7 @@ def define_model(model_name, label2id, id2label):
         label2id=label2id,
         id2label=id2label,
     )
-
-    # Model definition
-    model = AutoModelForTokenClassification.from_pretrained(model_name, config=config, ignore_mismatched_sizes=True)
-
-    return model
-
+    return config
 
 def define_trainer(model, tokenizer, data_collator, train_dataset, eval_dataset,
                    compute_metrics, output_dir):
