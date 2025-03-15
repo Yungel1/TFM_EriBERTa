@@ -3,6 +3,7 @@ import os
 import time
 
 import torch
+import wandb
 from datasets import load_from_disk
 
 from src.data_preprocessing.ner_preprocess import NERPreprocessor
@@ -18,12 +19,15 @@ from transformers import (
     DataCollatorForTokenClassification
 )
 
+from src.fine_tuning.wandb_tuning import configure_sweep, train_model_wandb
+
 
 def __get_args():
     # Manage arguments
     parser = argparse.ArgumentParser(description="Tokenization and data preparation for fine-tuning EriBERTa")
     parser.add_argument("--force_tokenize", action="store_true", help="Force to tokenize raw data")
     parser.add_argument("--force_fine_tuning", action="store_true", help="Force to fine-tune the model")
+    parser.add_argument("--opt_hyperparameters", action="store_true", help="Execute hyperparameter optimization process")
     return parser.parse_args()
 
 
@@ -93,6 +97,24 @@ def run_ner_pipeline():
     # GPU or CPU (GPU when available)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"\nℹ️ Model is using: {device}\n")
+
+    # Hyperparameter optimization
+    if args.opt_hyperparameters:
+        print("\n⏳ Starting hyperparameter optimization process...")
+        start_time = time.time()
+        # Define model config
+        config = define_config(model_name, label2id, id2label)
+        # Wandb
+        sweep_id = configure_sweep()
+        wandb.agent(
+            sweep_id,
+            function=lambda: train_model_wandb(model_name, config, device, tokenizer, data_collator,
+                                               train_tokenized, dev_tokenized, metrics_computer.compute_metrics,
+                                               RESULTS_PATH),
+            count=10
+        )
+        print(f"✅ Hyperparameter optimization process done in {time.time() - start_time:.2f} seconds.\n")
+        return
 
     if args.force_fine_tuning or not os.path.exists(BEST_MODEL_PATH):
 

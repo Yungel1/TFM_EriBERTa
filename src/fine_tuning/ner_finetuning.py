@@ -14,6 +14,7 @@ def define_config(model_name, label2id, id2label):
     )
     return config
 
+
 def define_trainer(model, tokenizer, data_collator, train_dataset, eval_dataset,
                    compute_metrics, output_dir):
 
@@ -29,8 +30,9 @@ def define_trainer(model, tokenizer, data_collator, train_dataset, eval_dataset,
         eval_strategy="epoch",
         save_strategy="epoch",
         load_best_model_at_end=True,
-        #metric_for_best_model="f1",
-        #greater_is_better=True
+        save_total_limit=3,
+        metric_for_best_model="overall_f1",
+        greater_is_better=True
     )
 
     # Trainer
