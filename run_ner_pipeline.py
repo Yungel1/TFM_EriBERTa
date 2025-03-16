@@ -9,7 +9,7 @@ from datasets import load_from_disk
 from src.data_preprocessing.ner_preprocess import NERPreprocessor
 from src.evaluation.ner_prediction import predict_and_save
 from src.fine_tuning.ner_finetuning import define_config, MetricsComputer, define_trainer
-from src.utils.config_loader import load_ner_config
+from src.utils.config_loader import load_config
 from src.utils.data_loader import create_hf_dataset_from_brats
 from src.utils.ner_utils import extract_label_maps, load_label_maps
 
@@ -33,15 +33,15 @@ def __get_args():
 
 def run_ner_pipeline():
     # Load NER general configs
-    config = load_ner_config("config.yaml")
+    config = load_config("config/config_ner.yaml")
 
     # Paths from configuration file
-    TRAIN_RAW = config["paths"]["ner"]["raw"]["train"]
-    DEV_RAW = config["paths"]["ner"]["raw"]["dev"]
-    TRAIN_PROCESSED = config["paths"]["ner"]["processed"]["train"]
-    DEV_PROCESSED = config["paths"]["ner"]["processed"]["dev"]
-    LABEL2ID_PATH = config["paths"]["ner"]["label_map"]
-    RESULTS_PATH = config["paths"]["ner"]["results"]
+    TRAIN_RAW = config["paths"]["raw"]["train"]
+    DEV_RAW = config["paths"]["raw"]["dev"]
+    TRAIN_PROCESSED = config["paths"]["processed"]["train"]
+    DEV_PROCESSED = config["paths"]["processed"]["dev"]
+    LABEL2ID_PATH = config["paths"]["label_map"]
+    RESULTS_PATH = config["paths"]["results"]
 
     # Model name and tokenizer
     model_name = "HiTZ/EriBERTa-base"
@@ -116,6 +116,13 @@ def run_ner_pipeline():
         print(f"✅ Hyperparameter optimization process done in {time.time() - start_time:.2f} seconds.\n")
         return
 
+    # Hyperparameters from config
+    hyperparameters = {
+        "batch_size": config["hyperparameters"]["batch_size"],
+        "learning_rate": config["hyperparameters"]["learning_rate"],
+        "weight_decay": config["hyperparameters"]["weight_decay"],
+    }
+
     if args.force_fine_tuning or not os.path.exists(BEST_MODEL_PATH):
 
         print("\n⏳ Starting fine-tuning process...")
@@ -126,7 +133,7 @@ def run_ner_pipeline():
         model.to(device)
 
         # Define trainer
-        trainer = define_trainer(model, tokenizer, data_collator, train_tokenized, dev_tokenized,
+        trainer = define_trainer(model, hyperparameters, tokenizer, data_collator, train_tokenized, dev_tokenized,
                                  metrics_computer.compute_metrics, RESULTS_PATH)
 
         # Fine-tuning and saving best model
@@ -147,7 +154,7 @@ def run_ner_pipeline():
         # model.push_to_hub("Yungel1/EriBERTa_NER")
         # model = AutoModelForTokenClassification.from_pretrained("Yungel1/EriBERTa_NER")
         # Define trainer
-        trainer = define_trainer(model, tokenizer, data_collator, train_tokenized, dev_tokenized,
+        trainer = define_trainer(model, hyperparameters, tokenizer, data_collator, train_tokenized, dev_tokenized,
                                  metrics_computer.compute_metrics, RESULTS_PATH)
         print(f"✅ Model loaded in {time.time() - start_time:.2f} seconds.\n")
 

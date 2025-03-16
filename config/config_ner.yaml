@@ -1,0 +1,15 @@
+paths:
+  raw:
+    train: "data/ner/raw/train/" # Carpeta que contiene los archivos de texto y anotaciones de train
+    dev: "data/ner/raw/dev/" # Carpeta que contiene los archivos de texto y anotaciones de dev
+  processed:
+    train: "data/ner/processed/train/train.hf" # HF Dataset con los datos de train
+    dev: "data/ner/processed/dev/dev.hf" # HF Dataset con los datos de dev
+  label_map: "data/ner/label_map/label2id.json"
+  results: "results/ner"
+  model_dir: "models/ner/"
+
+hyperparameters:
+  batch_size: 8
+  learning_rate: 2.0e-5
+  weight_decay: 0.01
