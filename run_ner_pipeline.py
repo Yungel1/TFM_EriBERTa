@@ -28,27 +28,30 @@ def __get_args():
     parser.add_argument("--force_tokenize", action="store_true", help="Force to tokenize raw data")
     parser.add_argument("--force_fine_tuning", action="store_true", help="Force to fine-tune the model")
     parser.add_argument("--opt_hyperparameters", action="store_true", help="Execute hyperparameter optimization process")
+    parser.add_argument("--config_path", type=str, default="config/config_casimedicos_ner.yaml", help="Config path")
     return parser.parse_args()
 
 
 def run_ner_pipeline():
+    # Arguments
+    args = __get_args()
+
     # Load NER general configs
-    config = load_config("config/config_ner.yaml")
+    config = load_config(args.config_path)
 
     # Paths from configuration file
     TRAIN_RAW = config["paths"]["raw"]["train"]
     DEV_RAW = config["paths"]["raw"]["dev"]
+    TEST_RAW = config["paths"]["raw"].get("test") or DEV_RAW
     TRAIN_PROCESSED = config["paths"]["processed"]["train"]
     DEV_PROCESSED = config["paths"]["processed"]["dev"]
+    TEST_PROCESSED = config["paths"]["processed"].get("test") or DEV_PROCESSED
     LABEL2ID_PATH = config["paths"]["label_map"]
     RESULTS_PATH = config["paths"]["results"]
 
     # Model name and tokenizer
     model_name = "HiTZ/EriBERTa-base"
     tokenizer = AutoTokenizer.from_pretrained(model_name)
-
-    # Arguments
-    args = __get_args()
 
     if args.force_tokenize or not os.path.exists(TRAIN_PROCESSED) or not os.path.exists(DEV_PROCESSED):
 
@@ -57,6 +60,7 @@ def run_ner_pipeline():
         start_time = time.time()
         train_dataset = create_hf_dataset_from_brats(TRAIN_RAW)
         dev_dataset = create_hf_dataset_from_brats(DEV_RAW)
+        test_dataset = create_hf_dataset_from_brats(TEST_RAW)
         print(f"✅ Data loaded in {time.time() - start_time:.2f} seconds.\n")
 
         print("\n⏳ Extracting label maps...")
@@ -71,9 +75,11 @@ def run_ner_pipeline():
         start_time = time.time()
         train_tokenized = preprocessor.tokenize_dataset(train_dataset)
         dev_tokenized = preprocessor.tokenize_dataset(dev_dataset)
+        test_tokenized = preprocessor.tokenize_dataset(test_dataset)
         # Save tokenized data to disk
         train_tokenized.save_to_disk(TRAIN_PROCESSED)
         dev_tokenized.save_to_disk(DEV_PROCESSED)
+        test_tokenized.save_to_disk(TEST_PROCESSED)
         print(f"✅ Data tokenized in {time.time() - start_time:.2f} seconds.\n")
 
     else:
@@ -82,6 +88,7 @@ def run_ner_pipeline():
         # Load processed data
         train_tokenized = load_from_disk(TRAIN_PROCESSED)
         dev_tokenized = load_from_disk(DEV_PROCESSED)
+        test_tokenized = load_from_disk(TEST_PROCESSED)
         # Load label maps
         label2id, id2label = load_label_maps(LABEL2ID_PATH)
         print(f"✅ Data loaded in {time.time() - start_time:.2f} seconds.\n")
@@ -167,7 +174,7 @@ def run_ner_pipeline():
 
     print("\n⏳ Starting inference and final evaluation...")
     start_time = time.time()
-    predict_and_save(trainer, dev_tokenized, id2label, metrics_computer.compute_metrics, tokenizer, RESULTS_PATH)
+    predict_and_save(trainer, test_tokenized, id2label, metrics_computer.compute_metrics, tokenizer, RESULTS_PATH)
     print(f"✅ Inference and save finished in {time.time() - start_time:.2f} seconds.\n")
 
 

@@ -8,13 +8,13 @@ def configure_sweep():
         "method": "bayes",
         "metric": {"name": "eval/overall_f1", "goal": "maximize"},
         "parameters": {
-            "batch_size": {"values": [8, 16]},
-            "learning_rate": {"values": [5e-5, 3e-5, 2e-5, 1e-5]},
+            "batch_size": {"values": [8, 16, 32]},
+            "learning_rate": {"values": [7.5e-5, 5e-5, 3e-5, 2e-5, 1e-5]},
             "weight_decay": {"values": [0.0, 0.01, 0.1, 0.2, 0.3]}
         }
     }
 
-    sweep_id = wandb.sweep(sweep_config, project="eriberta-ner")
+    sweep_id = wandb.sweep(sweep_config, project="eriberta-casimedicos_ner")
     return sweep_id
 
 
@@ -35,7 +35,7 @@ def train_model_wandb(model_name, model_config, device, tokenizer, data_collator
             per_device_train_batch_size=config.batch_size,
             per_device_eval_batch_size=config.batch_size,
             weight_decay=config.weight_decay,
-            num_train_epochs=3,
+            num_train_epochs=10,
             eval_strategy="epoch",
             save_strategy="epoch",
             load_best_model_at_end=True,

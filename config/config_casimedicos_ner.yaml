@@ -1,0 +1,17 @@
+paths:
+  raw:
+    train: "data/casimedicos_ner/raw/train/" # Carpeta que contiene los archivos de texto y anotaciones de train
+    dev: "data/casimedicos_ner/raw/dev/" # Carpeta que contiene los archivos de texto y anotaciones de dev
+    #test: "data/casimedicos_ner/raw/test/"
+  processed:
+    train: "data/casimedicos_ner/processed/train/train.hf" # HF Dataset con los datos de train
+    dev: "data/casimedicos_ner/processed/dev/dev.hf" # HF Dataset con los datos de dev
+    #test: "data/casimedicos_ner/processed/test/test.hf"
+  label_map: "data/casimedicos_ner/label_map/label2id.json"
+  results: "results/casimedicos_ner"
+  model_dir: "models/casimedicos_ner/"
+
+hyperparameters:
+  batch_size: 8
+  learning_rate: 2.0e-5
+  weight_decay: 0.01
