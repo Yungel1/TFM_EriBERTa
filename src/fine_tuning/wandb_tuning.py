@@ -2,7 +2,6 @@ import wandb
 from transformers import Trainer, TrainingArguments, AutoModelForTokenClassification
 
 
-# TODO cambiar batch size (mi pc no da para más de 16, pendiente de cambiar)
 def configure_sweep():
     sweep_config = {
         "method": "bayes",

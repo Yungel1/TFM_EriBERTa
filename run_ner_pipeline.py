@@ -1,4 +1,5 @@
 import argparse
+import logging
 import os
 import time
 
@@ -36,6 +37,9 @@ def run_ner_pipeline():
     # Arguments
     args = __get_args()
 
+    # Logs configuration
+    logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
+
     # Load NER general configs
     config = load_config(args.config_path)
 
@@ -56,22 +60,22 @@ def run_ner_pipeline():
     if args.force_tokenize or not os.path.exists(TRAIN_PROCESSED) or not os.path.exists(DEV_PROCESSED):
 
         # Load text+ann (BRAT) data into HF Dataset
-        print("\n⏳ Loading raw data...")
+        logging.info(f"\n⏳ Loading raw data (train path: {TRAIN_PROCESSED}) ...")
         start_time = time.time()
         train_dataset = create_hf_dataset_from_brats(TRAIN_RAW)
         dev_dataset = create_hf_dataset_from_brats(DEV_RAW)
         test_dataset = create_hf_dataset_from_brats(TEST_RAW)
-        print(f"✅ Data loaded in {time.time() - start_time:.2f} seconds.\n")
+        logging.info(f"✅ Data loaded in {time.time() - start_time:.2f} seconds.\n")
 
-        print("\n⏳ Extracting label maps...")
+        logging.info("\n⏳ Extracting label maps...")
         start_time = time.time()
         label2id, id2label = extract_label_maps(train_dataset, LABEL2ID_PATH)
-        print(f"✅ Label maps extracted in {time.time() - start_time:.2f} seconds.\n")
+        logging.info(f"✅ Label maps extracted in {time.time() - start_time:.2f} seconds.\n")
 
         # NERPreprocessor class
         preprocessor = NERPreprocessor(tokenizer, label2id, id2label)
 
-        print("\n⏳ Tokenizing data...")
+        logging.info("\n⏳ Tokenizing data...")
         start_time = time.time()
         train_tokenized = preprocessor.tokenize_dataset(train_dataset)
         dev_tokenized = preprocessor.tokenize_dataset(dev_dataset)
@@ -80,10 +84,10 @@ def run_ner_pipeline():
         train_tokenized.save_to_disk(TRAIN_PROCESSED)
         dev_tokenized.save_to_disk(DEV_PROCESSED)
         test_tokenized.save_to_disk(TEST_PROCESSED)
-        print(f"✅ Data tokenized in {time.time() - start_time:.2f} seconds.\n")
+        logging.info(f"✅ Data tokenized in {time.time() - start_time:.2f} seconds.\n")
 
     else:
-        print("\n⏳ Loading processed data...")
+        logging.info(f"\n⏳ Loading processed data (train path: {TRAIN_PROCESSED}) ...")
         start_time = time.time()
         # Load processed data
         train_tokenized = load_from_disk(TRAIN_PROCESSED)
@@ -91,7 +95,7 @@ def run_ner_pipeline():
         test_tokenized = load_from_disk(TEST_PROCESSED)
         # Load label maps
         label2id, id2label = load_label_maps(LABEL2ID_PATH)
-        print(f"✅ Data loaded in {time.time() - start_time:.2f} seconds.\n")
+        logging.info(f"✅ Data loaded in {time.time() - start_time:.2f} seconds.\n")
 
     # Data Collator
     data_collator = DataCollatorForTokenClassification(tokenizer, pad_to_multiple_of=8)
@@ -103,11 +107,11 @@ def run_ner_pipeline():
 
     # GPU or CPU (GPU when available)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    print(f"\nℹ️ Model is using: {device}\n")
+    logging.info(f"\nℹ️ Model is using: {device}\n")
 
     # Hyperparameter optimization
     if args.opt_hyperparameters:
-        print("\n⏳ Starting hyperparameter optimization process...")
+        logging.info("\n⏳ Starting hyperparameter optimization process...")
         start_time = time.time()
         # Define model config
         config = define_config(model_name, label2id, id2label)
@@ -120,7 +124,7 @@ def run_ner_pipeline():
                                                RESULTS_PATH),
             count=10
         )
-        print(f"✅ Hyperparameter optimization process done in {time.time() - start_time:.2f} seconds.\n")
+        logging.info(f"✅ Hyperparameter optimization process done in {time.time() - start_time:.2f} seconds.\n")
         return
 
     # Hyperparameters from config
@@ -132,7 +136,7 @@ def run_ner_pipeline():
 
     if args.force_fine_tuning or not os.path.exists(BEST_MODEL_PATH):
 
-        print("\n⏳ Starting fine-tuning process...")
+        logging.info("\n⏳ Starting fine-tuning process...")
         start_time = time.time()
         # Define model
         config = define_config(model_name, label2id, id2label)
@@ -150,10 +154,10 @@ def run_ner_pipeline():
         trainer.save_metrics("train", metrics_train)
         if trainer.state.best_model_checkpoint:
             trainer.save_model(BEST_MODEL_PATH)
-        print(f"✅ Model fine-tuned in {time.time() - start_time:.2f} seconds.\n")
+        logging.info(f"✅ Model fine-tuned in {time.time() - start_time:.2f} seconds.\n")
 
     else:
-        print("\n⏳ Loading best fine-tuned model...")
+        logging.info("\n⏳ Loading best fine-tuned model...")
         start_time = time.time()
         # Define model
         model = AutoModelForTokenClassification.from_pretrained(BEST_MODEL_PATH)
@@ -163,19 +167,19 @@ def run_ner_pipeline():
         # Define trainer
         trainer = define_trainer(model, hyperparameters, tokenizer, data_collator, train_tokenized, dev_tokenized,
                                  metrics_computer.compute_metrics, RESULTS_PATH)
-        print(f"✅ Model loaded in {time.time() - start_time:.2f} seconds.\n")
+        logging.info(f"✅ Model loaded in {time.time() - start_time:.2f} seconds.\n")
 
-    print("\n⏳ Evaluating fine-tuned model...")
+    logging.info("\n⏳ Evaluating fine-tuned model...")
     start_time = time.time()
     metrics_eval = trainer.evaluate()
     # trainer.log_metrics("eval", metrics_eval)
     trainer.save_metrics("eval", metrics_eval)
-    print(f"✅ Model evaluated in {time.time() - start_time:.2f} seconds.\n")
+    logging.info(f"✅ Model evaluated in {time.time() - start_time:.2f} seconds.\n")
 
-    print("\n⏳ Starting inference and final evaluation...")
+    logging.info("\n⏳ Starting inference and final evaluation...")
     start_time = time.time()
     predict_and_save(trainer, test_tokenized, id2label, metrics_computer.compute_metrics, tokenizer, RESULTS_PATH)
-    print(f"✅ Inference and save finished in {time.time() - start_time:.2f} seconds.\n")
+    logging.info(f"✅ Inference and save finished in {time.time() - start_time:.2f} seconds.\n")
 
 
 if __name__ == "__main__":
