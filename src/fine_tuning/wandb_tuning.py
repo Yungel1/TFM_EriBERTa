@@ -2,7 +2,7 @@ import wandb
 from transformers import Trainer, TrainingArguments, AutoModelForTokenClassification
 
 
-def configure_sweep():
+def configure_sweep(project):
     sweep_config = {
         "method": "bayes",
         "metric": {"name": "eval/overall_f1", "goal": "maximize"},
@@ -13,7 +13,7 @@ def configure_sweep():
         }
     }
 
-    sweep_id = wandb.sweep(sweep_config, project="eriberta-casimedicos_ner")
+    sweep_id = wandb.sweep(sweep_config, project=project)
     return sweep_id
 
 

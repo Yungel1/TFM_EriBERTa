@@ -11,6 +11,8 @@ paths:
   results: "results/casimedicos_ner"
   model_dir: "models/casimedicos_ner/"
 
+wandb_project: "eriberta-casimedicos_ner"
+
 hyperparameters:
   batch_size: 8
   learning_rate: 2.0e-5

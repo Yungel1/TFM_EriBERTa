@@ -52,6 +52,7 @@ def run_ner_pipeline():
     TEST_PROCESSED = config["paths"]["processed"].get("test") or DEV_PROCESSED
     LABEL2ID_PATH = config["paths"]["label_map"]
     RESULTS_PATH = config["paths"]["results"]
+    WANDB_PROJECT = config["wandb_project"]
 
     # Model name and tokenizer
     model_name = "HiTZ/EriBERTa-base"
@@ -60,7 +61,7 @@ def run_ner_pipeline():
     if args.force_tokenize or not os.path.exists(TRAIN_PROCESSED) or not os.path.exists(DEV_PROCESSED):
 
         # Load text+ann (BRAT) data into HF Dataset
-        logging.info(f"\n⏳ Loading raw data (train path: {TRAIN_PROCESSED}) ...")
+        logging.info(f"\n⏳ Loading raw data (train path: {TRAIN_RAW}) ...")
         start_time = time.time()
         train_dataset = create_hf_dataset_from_brats(TRAIN_RAW)
         dev_dataset = create_hf_dataset_from_brats(DEV_RAW)
@@ -116,7 +117,7 @@ def run_ner_pipeline():
         # Define model config
         config = define_config(model_name, label2id, id2label)
         # Wandb
-        sweep_id = configure_sweep()
+        sweep_id = configure_sweep(WANDB_PROJECT)
         wandb.agent(
             sweep_id,
             function=lambda: train_model_wandb(model_name, config, device, tokenizer, data_collator,
