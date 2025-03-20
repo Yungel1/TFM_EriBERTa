@@ -1,0 +1,19 @@
+paths:
+  raw:
+    train: "dataset/NER/CANTEMIST/train/brat" # Carpeta que contiene los archivos de texto y anotaciones de train
+    dev: "dataset/NER/CANTEMIST/dev/brat" # Carpeta que contiene los archivos de texto y anotaciones de dev
+    test: "dataset/NER/CANTEMIST/test/brat" # Carpeta que contiene los archivos de texto y anotaciones de test
+  processed:
+    train: "dataset/NER/CANTEMIST/processed/train/train.hf" # HF Dataset con los datos de train
+    dev: "dataset/NER/CANTEMIST/processed/dev/dev.hf" # HF Dataset con los datos de dev
+    test: "dataset/NER/CANTEMIST/processed/test/test.hf" # HF Dataset con los datos de test
+  label_map: "dataset/NER/CANTEMIST/label_map/label2id.json"
+  results: "results/NER/CANTEMIST/"
+  model_dir: "models/NER/CANTEMIST/"
+
+wandb_project: "eriberta-ner-CANTEMIST"
+
+hyperparameters:
+  batch_size: 8
+  learning_rate: 2.0e-5
+  weight_decay: 0.01

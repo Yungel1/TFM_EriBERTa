@@ -121,10 +121,10 @@ def run_ner_pipeline():
         sweep_id = configure_sweep(WANDB_PROJECT)
         wandb.agent(
             sweep_id,
-            function=lambda: train_model_wandb(model_name, config, device, tokenizer, data_collator,
+            function=lambda: train_model_wandb(model_name, config, tokenizer, data_collator,
                                                train_tokenized, dev_tokenized, metrics_computer.compute_metrics,
                                                RESULTS_PATH),
-            count=10
+            count=15
         )
         logger.info(f"✅ Hyperparameter optimization process done in {time.time() - start_time:.2f} seconds.\n")
         return

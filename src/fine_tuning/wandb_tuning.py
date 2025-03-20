@@ -17,14 +17,11 @@ def configure_sweep(project):
     return sweep_id
 
 
-def train_model_wandb(model_name, model_config, device, tokenizer, data_collator, train_dataset,
+def train_model_wandb(model_name, model_config, tokenizer, data_collator, train_dataset,
                       eval_dataset, compute_metrics, output_dir):
-
     with wandb.init(config=None):
-
         model = AutoModelForTokenClassification.from_pretrained(model_name, config=model_config,
-                                                                ignore_mismatched_sizes=True)
-        model.to(device)
+                                                                ignore_mismatched_sizes=True, device_map='auto')
 
         config = wandb.config
 

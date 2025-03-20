@@ -171,3 +171,5 @@ cython_debug/
 .pypirc
 
 HF_token.txt
+
+slurms
