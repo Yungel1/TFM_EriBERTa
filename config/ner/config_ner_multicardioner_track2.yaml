@@ -1,15 +1,15 @@
-paths: # TODO Hay datasets para diferentes idiomas
+paths:
   raw:
-    train: "dataset/NER/MultiCardioNER/track2/drugtemist_train/brat" # Carpeta que contiene los archivos de texto y anotaciones de train
-    dev: "dataset/NER/MultiCardioNER/track2/cardiocc_dev/brat" # Carpeta que contiene los archivos de texto y anotaciones de dev
-    test: "dataset/NER/MultiCardioNER/track2/cardiocc_test/brat" # Carpeta que contiene los archivos de texto y anotaciones de test
+    train: "datasets/NER/MultiCardioNER/track2/es/train/brat" # Carpeta que contiene los archivos de texto y anotaciones de train
+    dev: "datasets/NER/MultiCardioNER/track2/es/dev/brat" # Carpeta que contiene los archivos de texto y anotaciones de dev
+    test: "datasets/NER/MultiCardioNER/track2/es/test/brat" # Carpeta que contiene los archivos de texto y anotaciones de test
   processed:
-    train: "dataset/NER/MultiCardioNER/track2/processed/train/train.hf" # HF Dataset con los datos de train
-    dev: "dataset/NER/MultiCardioNER/track2/processed/dev/dev.hf" # HF Dataset con los datos de dev
-    test: "dataset/NER/MultiCardioNER/track2/processed/test/test.hf" # HF Dataset con los datos de test
-  label_map: "dataset/NER/MultiCardioNER/track2/label_map/label2id.json"
-  results: "results/NER/MultiCardioNER/track2/"
-  model_dir: "models/NER/MultiCardioNER/track2/"
+    train: "datasets/NER/MultiCardioNER/track2/es/processed/train/train.hf" # HF Dataset con los datos de train
+    dev: "datasets/NER/MultiCardioNER/track2/es/processed/dev/dev.hf" # HF Dataset con los datos de dev
+    test: "datasets/NER/MultiCardioNER/track2/es/processed/test/test.hf" # HF Dataset con los datos de test
+  label_map: "datasets/NER/MultiCardioNER/track2/es/label_map/label2id.json"
+  results: "results/NER/MultiCardioNER/track2/es/"
+  model_dir: "models/NER/MultiCardioNER/track2/es/"
 
 wandb_project: "eriberta-ner-MultiCardioNER-track2"
 

@@ -1,13 +1,13 @@
 paths: # TODO No hay dev
   raw:
-    train: "dataset/NER/DisTEMIST/train/brat" # Carpeta que contiene los archivos de texto y anotaciones de train
-    dev: "dataset/NER/DisTEMIST/dev/brat" # Carpeta que contiene los archivos de texto y anotaciones de dev
-    test: "dataset/NER/DisTEMIST/test/brat" # Carpeta que contiene los archivos de texto y anotaciones de test
+    train: "datasets/NER/DisTEMIST/train/brat" # Carpeta que contiene los archivos de texto y anotaciones de train
+    dev: "datasets/NER/DisTEMIST/dev/brat" # Carpeta que contiene los archivos de texto y anotaciones de dev
+    test: "datasets/NER/DisTEMIST/test/brat" # Carpeta que contiene los archivos de texto y anotaciones de test
   processed:
-    train: "dataset/NER/DisTEMIST/processed/train/train.hf" # HF Dataset con los datos de train
-    dev: "dataset/NER/DisTEMIST/processed/dev/dev.hf" # HF Dataset con los datos de dev
-    test: "dataset/NER/DisTEMIST/processed/test/test.hf" # HF Dataset con los datos de test
-  label_map: "dataset/NER/DisTEMIST/label_map/label2id.json"
+    train: "datasets/NER/DisTEMIST/processed/train/train.hf" # HF Dataset con los datos de train
+    dev: "datasets/NER/DisTEMIST/processed/dev/dev.hf" # HF Dataset con los datos de dev
+    test: "datasets/NER/DisTEMIST/processed/test/test.hf" # HF Dataset con los datos de test
+  label_map: "datasets/NER/DisTEMIST/label_map/label2id.json"
   results: "results/NER/DisTEMIST/"
   model_dir: "models/NER/DisTEMIST/"
 
