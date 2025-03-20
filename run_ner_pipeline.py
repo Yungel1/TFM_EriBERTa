@@ -17,7 +17,8 @@ from src.utils.ner_utils import extract_label_maps, load_label_maps
 from transformers import (
     AutoModelForTokenClassification,
     AutoTokenizer,
-    DataCollatorForTokenClassification
+    DataCollatorForTokenClassification,
+    set_seed,
 )
 
 from src.fine_tuning.wandb_tuning import configure_sweep, train_model_wandb
@@ -25,6 +26,9 @@ from src.fine_tuning.wandb_tuning import configure_sweep, train_model_wandb
 # Logs configuration
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 logger = logging.getLogger(__name__)
+
+# Set seed
+set_seed(42)
 
 
 def __get_args():
@@ -124,7 +128,7 @@ def run_ner_pipeline():
             function=lambda: train_model_wandb(model_name, config, tokenizer, data_collator,
                                                train_tokenized, dev_tokenized, metrics_computer.compute_metrics,
                                                RESULTS_PATH),
-            count=15
+            count=20
         )
         logger.info(f"✅ Hyperparameter optimization process done in {time.time() - start_time:.2f} seconds.\n")
         return

@@ -4,7 +4,7 @@ from transformers import Trainer, TrainingArguments, AutoModelForTokenClassifica
 
 def configure_sweep(project):
     sweep_config = {
-        "method": "bayes",
+        "method": "random",
         "metric": {"name": "eval/overall_f1", "goal": "maximize"},
         "parameters": {
             "batch_size": {"values": [8, 16, 32]},
