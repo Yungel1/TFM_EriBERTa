@@ -12,11 +12,13 @@ from src.utils.config_loader import load_config
 from src.utils.data_loader import create_hf_dataset_from_brats
 from src.utils.ner_utils import extract_label_maps
 
+
 def __get_args():
     # Manage arguments
     parser = argparse.ArgumentParser(description="Gemma 3 inference and evaluation")
     parser.add_argument("--config_path", type=str, default="config/config_casimedicos_ner.yaml", help="Config path")
     return parser.parse_args()
+
 
 def extract_entities(text, label2id):
     # Simulated function to extract entities from generated text
@@ -61,6 +63,7 @@ def infer_and_evaluate(dataset, model, tokenizer, label2id, id2label):
     results = metric.compute(predictions=predictions, references=references)
 
     return results
+
 
 def run_ner_gemma_pipeline():
     # Arguments
