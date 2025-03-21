@@ -1,8 +1,8 @@
 paths:
   raw:
-    train: "datasets/NER/PharmacoNER/Sentences/brat/train/" # Carpeta que contiene los archivos de texto y anotaciones de train
-    dev: "datasets/NER/PharmacoNER/Sentences/brat/dev/" # Carpeta que contiene los archivos de texto y anotaciones de dev
-    test: "datasets/NER/PharmacoNER/Sentences/brat/test/" # Carpeta que contiene los archivos de texto y anotaciones de test
+    train: "datasets/NER/PharmacoNER/Sentences/train/brat" # Carpeta que contiene los archivos de texto y anotaciones de train
+    dev: "datasets/NER/PharmacoNER/Sentences/dev/brat" # Carpeta que contiene los archivos de texto y anotaciones de dev
+    test: "datasets/NER/PharmacoNER/Sentences/test/brat" # Carpeta que contiene los archivos de texto y anotaciones de test
   processed:
     train: "datasets/NER/PharmacoNER/Sentences/processed/train/train.hf" # HF Dataset con los datos de train
     dev: "datasets/NER/PharmacoNER/Sentences/processed/dev/dev.hf" # HF Dataset con los datos de dev
