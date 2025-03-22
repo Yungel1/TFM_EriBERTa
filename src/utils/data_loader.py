@@ -1,3 +1,4 @@
+import json
 import os
 
 from datasets import Dataset
@@ -55,4 +56,30 @@ def create_hf_dataset_from_brats(text_ann_folder):
     # Convert the list of data to a Hugging Face Dataset
     dataset = Dataset.from_list(data)
 
+    return dataset
+
+
+def create_hf_dataset_from_json(json_file):
+    with open(json_file, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    formatted_data = []
+    for entry in data:
+        article_id = entry.get("id", "unknown")
+        text = entry.get("text", "")
+        entities = []
+
+        for ent in entry.get("entities", []):
+            try:
+                entities.append({
+                    "label": ent["ent_type"],
+                    "start": int(ent["start"]),
+                    "end": int(ent["end"])
+                })
+            except Exception as e:
+                print(f"Error parsing entity in {article_id}: {e}")
+
+        formatted_data.append({"article_id": article_id, "text": text, "entities": entities})
+
+    dataset = Dataset.from_list(formatted_data)
     return dataset
