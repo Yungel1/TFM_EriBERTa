@@ -1,4 +1,4 @@
-paths: # TODO No hay dev
+paths:
   raw:
     train: "datasets/NER/MedProcNER/train/brat" # Carpeta que contiene los archivos de texto y anotaciones de train
     dev: "datasets/NER/MedProcNER/dev/brat" # Carpeta que contiene los archivos de texto y anotaciones de dev
