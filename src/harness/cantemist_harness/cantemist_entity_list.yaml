@@ -4,7 +4,7 @@ task_alias: 'CANTEMIST: Entity List'
 tag: cantemist
 task: cantemist-entity_list
 
-dataset_path: "PlanTL-GOB-ES/pharmaconer" # TODO
+dataset_path: "PlanTL-GOB-ES/pharmaconer" # TODO Cambiar. Path al Dataset de Hugging Face?
 dataset_name: null
 
 training_split: train
