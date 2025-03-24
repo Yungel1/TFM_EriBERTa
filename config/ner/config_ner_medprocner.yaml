@@ -11,9 +11,11 @@ paths:
   results: "results/NER/MedProcNER/"
   model_dir: "models/NER/MedProcNER/"
 
+model_name: "HiTZ/EriBERTa-base"
+
 wandb_project: "eriberta-ner-MedProcNER"
 
 hyperparameters:
-  batch_size: 8
-  learning_rate: 2.0e-5
-  weight_decay: 0.01
+  batch_size: 16
+  learning_rate: 5.0e-5
+  weight_decay: 0.2

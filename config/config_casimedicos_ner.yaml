@@ -11,6 +11,8 @@ paths:
   results: "results/casimedicos_ner"
   model_dir: "models/casimedicos_ner/"
 
+model_name: "HiTZ/EriBERTa-base"
+
 wandb_project: "eriberta-casimedicos_ner"
 
 hyperparameters:

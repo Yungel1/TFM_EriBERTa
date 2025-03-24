@@ -11,9 +11,11 @@ paths:
   results: "results/NER/MultiCardioNER/track1/"
   model_dir: "models/NER/MultiCardioNER/track1/"
 
+model_name: "HiTZ/EriBERTa-base"
+
 wandb_project: "eriberta-ner-MultiCardioNER-track1"
 
 hyperparameters:
   batch_size: 8
-  learning_rate: 2.0e-5
-  weight_decay: 0.01
+  learning_rate: 7.5e-5
+  weight_decay: 0.1

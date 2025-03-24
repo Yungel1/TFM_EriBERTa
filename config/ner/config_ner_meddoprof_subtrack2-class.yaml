@@ -11,9 +11,11 @@ paths:
   results: "results/NER/MEDDOPROF/subtrack2-class/"
   model_dir: "models/NER/MEDDOPROF/subtrack2-class/"
 
+model_name: "HiTZ/EriBERTa-base"
+
 wandb_project: "eriberta-ner-MEDDOPROF-subtrack2-class"
 
 hyperparameters:
-  batch_size: 8
-  learning_rate: 2.0e-5
-  weight_decay: 0.01
+  batch_size: 32
+  learning_rate: 7.5e-5
+  weight_decay: 0.0

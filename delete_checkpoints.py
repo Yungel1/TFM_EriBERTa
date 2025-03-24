@@ -1,0 +1,57 @@
+import argparse
+import logging
+import os
+import re
+
+from src.utils.config_loader import load_config
+
+# Logs configuration
+logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
+logger = logging.getLogger(__name__)
+
+
+def __get_args():
+    # Manage arguments
+    parser = argparse.ArgumentParser(description="Tokenization and data preparation for fine-tuning EriBERTa")
+    parser.add_argument("--config_path", type=str, default="config/config_casimedicos_ner.yaml", help="Config path")
+    return parser.parse_args()
+
+
+def delete_huggingface_checkpoints():
+    # Arguments
+    args = __get_args()
+
+    # Load NER general configs
+    config = load_config(args.config_path)
+
+    # RESULTS_PATH from configuration file
+    RESULTS_PATH = config["paths"]["results"]
+
+    # Get all run directories (e.g., run_0, run_1, etc.)
+    run_folders = [os.path.join(RESULTS_PATH, f) for f in os.listdir(RESULTS_PATH) if re.match(r'run_\d+', f)]
+    checkpoint_folders = []
+
+    # Search for checkpoint folders inside each run directory
+    for run_folder in run_folders:
+        if os.path.isdir(run_folder):
+            checkpoint_folders.extend(
+                [os.path.join(run_folder, f) for f in os.listdir(run_folder) if re.match(r'checkpoint-\d+', f)])
+
+    # If no checkpoint folders are found, exit
+    if not checkpoint_folders:
+        logger.info("No checkpoints found to delete.")
+        return
+
+    for folder in checkpoint_folders:
+        # Delete all files and subdirectories inside the checkpoint folder
+        for root, dirs, files in os.walk(folder, topdown=False):
+            for file in files:
+                os.remove(os.path.join(root, file))
+            for dir in dirs:
+                os.rmdir(os.path.join(root, dir))
+        os.rmdir(folder)  # Finally, remove the checkpoint folder itself
+    logger.info(f"Checkpoints from {RESULTS_PATH} successfully deleted.")
+
+
+if __name__ == "__main__":
+    delete_huggingface_checkpoints()

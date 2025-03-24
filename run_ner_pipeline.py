@@ -38,6 +38,7 @@ def __get_args():
     parser.add_argument("--force_fine_tuning", action="store_true", help="Force to fine-tune the model")
     parser.add_argument("--opt_hyperparameters", action="store_true", help="Execute hyperparameter optimization process")
     parser.add_argument("--config_path", type=str, default="config/config_casimedicos_ner.yaml", help="Config path")
+    parser.add_argument("--runs", type=int, default=1, help="Number of times to execute the fine-tuning process")
     return parser.parse_args()
 
 
@@ -58,10 +59,10 @@ def run_ner_pipeline():
     LABEL2ID_PATH = config["paths"]["label_map"]
     RESULTS_PATH = config["paths"]["results"]
     WANDB_PROJECT = config["wandb_project"]
+    MODEL_NAME = config["model_name"]
 
-    # Model name and tokenizer
-    model_name = "HiTZ/EriBERTa-base"
-    tokenizer = AutoTokenizer.from_pretrained(model_name)
+    # Tokenizer
+    tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
 
     if args.force_tokenize or not os.path.exists(TRAIN_PROCESSED) or not os.path.exists(DEV_PROCESSED):
 
@@ -109,23 +110,22 @@ def run_ner_pipeline():
     # Metrics computer
     metrics_computer = MetricsComputer(id2label, True)
 
-    BEST_MODEL_PATH = f"{RESULTS_PATH}/best_model"
-
     # GPU or CPU (GPU when available)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     logger.info(f"\nℹ️ Model is using: {device}\n")
 
     # Hyperparameter optimization
     if args.opt_hyperparameters:
+
         logger.info("\n⏳ Starting hyperparameter optimization process...")
         start_time = time.time()
         # Define model config
-        config = define_config(model_name, label2id, id2label)
+        config = define_config(MODEL_NAME, label2id, id2label)
         # Wandb
         sweep_id = configure_sweep(WANDB_PROJECT)
         wandb.agent(
             sweep_id,
-            function=lambda: train_model_wandb(model_name, config, tokenizer, data_collator,
+            function=lambda: train_model_wandb(MODEL_NAME, config, tokenizer, data_collator,
                                                train_tokenized, dev_tokenized, metrics_computer.compute_metrics,
                                                RESULTS_PATH),
             count=20
@@ -140,50 +140,70 @@ def run_ner_pipeline():
         "weight_decay": config["hyperparameters"]["weight_decay"],
     }
 
-    if args.force_fine_tuning or not os.path.exists(BEST_MODEL_PATH):
+    num_runs = args.runs - 1
+    for run in range(0, args.runs):
 
-        logger.info("\n⏳ Starting fine-tuning process...")
+        logger.info(f"\n⏳ Starting fine-tuning process {run}/{num_runs}...")
         start_time = time.time()
-        # Define model
-        config = define_config(model_name, label2id, id2label)
-        model = AutoModelForTokenClassification.from_pretrained(model_name, config=config, ignore_mismatched_sizes=True, device_map='auto')
 
-        # Define trainer
-        trainer = define_trainer(model, hyperparameters, tokenizer, data_collator, train_tokenized, dev_tokenized,
-                                 metrics_computer.compute_metrics, RESULTS_PATH)
+        RUN_RESULTS_PATH = f"{RESULTS_PATH}/run_{run}"
+        BEST_MODEL_PATH = f"{RUN_RESULTS_PATH}/best_model"
 
-        # Fine-tuning and saving best model
-        train_result = trainer.train()
-        metrics_train = train_result.metrics
-        # trainer.log_metrics("train", metrics_train)
-        trainer.save_metrics("train", metrics_train)
-        if trainer.state.best_model_checkpoint:
-            trainer.save_model(BEST_MODEL_PATH)
-        logger.info(f"✅ Model fine-tuned in {time.time() - start_time:.2f} seconds.\n")
+        # Seed
+        new_seed = 42 + run * 100
+        set_seed(new_seed)
+        logger.info(f"️ℹ️ Seed set to {new_seed}")
 
-    else:
-        logger.info("\n⏳ Loading best fine-tuned model...")
+        if args.force_fine_tuning or not os.path.exists(BEST_MODEL_PATH):
+
+            # Define model
+            config = define_config(MODEL_NAME, label2id, id2label)
+            model = AutoModelForTokenClassification.from_pretrained(MODEL_NAME, config=config, ignore_mismatched_sizes=True, device_map="auto")
+            # model.to(device)
+
+            # Define trainer
+            trainer = define_trainer(model, hyperparameters, tokenizer, data_collator, train_tokenized, dev_tokenized,
+                                     metrics_computer.compute_metrics, RUN_RESULTS_PATH)
+
+            # Fine-tuning and saving best model
+            train_result = trainer.train()
+            metrics_train = train_result.metrics
+            # trainer.log_metrics("train", metrics_train)
+            trainer.save_metrics("train", metrics_train)
+            if trainer.state.best_model_checkpoint:
+                trainer.save_model(BEST_MODEL_PATH)
+            logger.info(f"✅ Model fine-tuned in {time.time() - start_time:.2f} seconds. Saved to {BEST_MODEL_PATH}\n")
+
+        else:
+            logger.info("\n⏳ Loading best fine-tuned model...")
+            start_time = time.time()
+            # Define model
+            model = AutoModelForTokenClassification.from_pretrained(BEST_MODEL_PATH, device_map='auto')
+            # model.push_to_hub("Yungel1/EriBERTa_NER")
+            # model = AutoModelForTokenClassification.from_pretrained("Yungel1/EriBERTa_NER")
+            # Define trainer
+            trainer = define_trainer(model, hyperparameters, tokenizer, data_collator, train_tokenized, dev_tokenized,
+                                     metrics_computer.compute_metrics, RESULTS_PATH)
+            logger.info(f"✅ Model loaded in {time.time() - start_time:.2f} seconds.\n")
+
+        logger.info("\n⏳ Evaluating fine-tuned model...")
         start_time = time.time()
-        # Define model
-        model = AutoModelForTokenClassification.from_pretrained(BEST_MODEL_PATH, device_map='auto')
-        # model.push_to_hub("Yungel1/EriBERTa_NER")
-        # model = AutoModelForTokenClassification.from_pretrained("Yungel1/EriBERTa_NER")
-        # Define trainer
-        trainer = define_trainer(model, hyperparameters, tokenizer, data_collator, train_tokenized, dev_tokenized,
-                                 metrics_computer.compute_metrics, RESULTS_PATH)
-        logger.info(f"✅ Model loaded in {time.time() - start_time:.2f} seconds.\n")
+        metrics_eval = trainer.evaluate()
+        # trainer.log_metrics("eval", metrics_eval)
+        trainer.save_metrics("eval", metrics_eval)
+        logger.info(f"✅ Model evaluated in {time.time() - start_time:.2f} seconds.\n")
 
-    logger.info("\n⏳ Evaluating fine-tuned model...")
-    start_time = time.time()
-    metrics_eval = trainer.evaluate()
-    # trainer.log_metrics("eval", metrics_eval)
-    trainer.save_metrics("eval", metrics_eval)
-    logger.info(f"✅ Model evaluated in {time.time() - start_time:.2f} seconds.\n")
+        logger.info("\n⏳ Starting inference and final evaluation...")
+        start_time = time.time()
+        predict_and_save(trainer, test_tokenized, id2label, metrics_computer.compute_metrics, tokenizer, RESULTS_PATH)
+        logger.info(f"✅ Inference and save finished in {time.time() - start_time:.2f} seconds.\n")
 
-    logger.info("\n⏳ Starting inference and final evaluation...")
-    start_time = time.time()
-    predict_and_save(trainer, test_tokenized, id2label, metrics_computer.compute_metrics, tokenizer, RESULTS_PATH)
-    logger.info(f"✅ Inference and save finished in {time.time() - start_time:.2f} seconds.\n")
+        with open(f"{RUN_RESULTS_PATH}/seed.txt", "w") as archivo:
+            archivo.write(str(new_seed))
+        logger.info(f"️ℹ️ Seed saved in {RUN_RESULTS_PATH}/seed.txt")
+
+        del model, trainer
+        torch.cuda.empty_cache()
 
 
 if __name__ == "__main__":

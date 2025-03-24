@@ -11,9 +11,11 @@ paths:
   results: "results/NER/PharmacoNER/Full_Cases"
   model_dir: "models/NER/PharmacoNER/Full_Cases"
 
+model_name: "HiTZ/EriBERTa-base"
+
 wandb_project: "eriberta-ner-PharmacoNER-Full_Cases"
 
 hyperparameters:
   batch_size: 8
-  learning_rate: 2.0e-5
-  weight_decay: 0.01
+  learning_rate: 3.0e-5
+  weight_decay: 0.3
