@@ -13,6 +13,7 @@ logger = logging.getLogger(__name__)
 def __get_args():
     # Manage arguments
     parser = argparse.ArgumentParser(description="Tokenization and data preparation for fine-tuning EriBERTa")
+    parser.add_argument("--model", type=str, default="eriberta", choices=["eriberta"], help="Model to use")
     parser.add_argument("--config_path", type=str, default="config/config_casimedicos_ner.yaml", help="Config path")
     return parser.parse_args()
 
@@ -21,11 +22,14 @@ def delete_huggingface_checkpoints():
     # Arguments
     args = __get_args()
 
+    # Selected arg model
+    arg_model = args.model
+
     # Load NER general configs
     config = load_config(args.config_path)
 
     # RESULTS_PATH from configuration file
-    RESULTS_PATH = config["paths"]["results"]
+    RESULTS_PATH = config["models"][arg_model]["results"]
 
     # Get all run directories (e.g., run_0, run_1, etc.)
     run_folders = [os.path.join(RESULTS_PATH, f) for f in os.listdir(RESULTS_PATH) if re.match(r'run_\d+', f)]

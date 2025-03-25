@@ -12,18 +12,17 @@ paths:
     dev: "datasets/NER/CANTEMIST/processed/dev/dev.hf" # HF Dataset con los datos de dev
     test: "datasets/NER/CANTEMIST/processed/test/test.hf" # HF Dataset con los datos de test
   gemma_processed:
-    train: "datasets/NER/CANTEMIST/gemma_processed/train/train.hf" # HF Dataset con los datos de train tokenizados para gemma 3
-    dev: "datasets/NER/CANTEMIST/gemma_processed/dev/dev.hf" # HF Dataset con los datos de dev tokenizados para gemma 3
-    test: "datasets/NER/CANTEMIST/gemma_processed/test/test.hf" # HF Dataset con los datos de test tokenizados para gemma 3
+    train: "datasets/NER/CANTEMIST/gemma_processed/train/train.hf" # HF Dataset con los datos de train para gemma 3
+    dev: "datasets/NER/CANTEMIST/gemma_processed/dev/dev.hf" # HF Dataset con los datos de dev para gemma 3
+    test: "datasets/NER/CANTEMIST/gemma_processed/test/test.hf" # HF Dataset con los datos de test para gemma 3
   label_map: "datasets/NER/CANTEMIST/label_map/label2id.json"
-  results: "results/NER/CANTEMIST/"
-  model_dir: "models/NER/CANTEMIST/"
 
-model_name: "HiTZ/EriBERTa-base"
-
-wandb_project: "eriberta-ner-CANTEMIST"
-
-hyperparameters:
-  batch_size: 8
-  learning_rate: 1.0e-5
-  weight_decay: 0.0
+models:
+  eriberta:
+    results: "results/eriberta/NER/CANTEMIST/"
+    model_name: "HiTZ/EriBERTa-base"
+    wandb_project: "eriberta-ner-CANTEMIST"
+    hyperparameters:
+      batch_size: 8
+      learning_rate: 1.0e-5
+      weight_decay: 0.0

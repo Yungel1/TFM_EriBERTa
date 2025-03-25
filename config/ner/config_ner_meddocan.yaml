@@ -8,14 +8,13 @@ paths:
     dev: "datasets/NER/MEDDOCAN/processed/dev/dev.hf" # HF Dataset con los datos de dev
     test: "datasets/NER/MEDDOCAN/processed/test/test.hf" # HF Dataset con los datos de test
   label_map: "datasets/NER/MEDDOCAN/label_map/label2id.json"
-  results: "results/NER/MEDDOCAN/"
-  model_dir: "models/NER/MEDDOCAN/"
 
-model_name: "HiTZ/EriBERTa-base"
-
-wandb_project: "eriberta-ner-MEDDOCAN"
-
-hyperparameters:
-  batch_size: 8
-  learning_rate: 5.0e-5
-  weight_decay: 0.01
+models:
+  eriberta:
+    results: "results/eriberta/NER/MEDDOCAN/"
+    model_name: "HiTZ/EriBERTa-base"
+    wandb_project: "eriberta-ner-MEDDOCAN"
+    hyperparameters:
+      batch_size: 8
+      learning_rate: 5.0e-5
+      weight_decay: 0.01

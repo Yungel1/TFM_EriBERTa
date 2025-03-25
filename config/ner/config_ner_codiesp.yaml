@@ -8,14 +8,13 @@ paths:
     dev: "datasets/NER/CodiEsp/processed/dev/dev.hf" # HF Dataset con los datos de dev
     test: "datasets/NER/CodiEsp/processed/test/test.hf" # HF Dataset con los datos de test
   label_map: "datasets/NER/CodiEsp/label_map/label2id.json"
-  results: "results/NER/CodiEsp/"
-  model_dir: "models/NER/CodiEsp/"
 
-model_name: "HiTZ/EriBERTa-base"
-
-wandb_project: "eriberta-ner-CodiEsp"
-
-hyperparameters:
-  batch_size: 16
-  learning_rate: 7.5e-5
-  weight_decay: 0.1
+models:
+  eriberta:
+    results: "results/eriberta/NER/CodiEsp/"
+    model_name: "HiTZ/EriBERTa-base"
+    wandb_project: "eriberta-ner-CodiEsp"
+    hyperparameters:
+      batch_size: 16
+      learning_rate: 7.5e-5
+      weight_decay: 0.1

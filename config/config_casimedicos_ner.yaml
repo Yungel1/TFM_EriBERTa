@@ -8,14 +8,13 @@ paths:
     dev: "data/casimedicos_ner/processed/dev/dev.hf" # HF Dataset con los datos de dev
     #test: "data/casimedicos_ner/processed/test/test.hf"
   label_map: "data/casimedicos_ner/label_map/label2id.json"
-  results: "results/casimedicos_ner"
-  model_dir: "models/casimedicos_ner/"
 
-model_name: "HiTZ/EriBERTa-base"
-
-wandb_project: "eriberta-casimedicos_ner"
-
-hyperparameters:
-  batch_size: 8
-  learning_rate: 2.0e-5
-  weight_decay: 0.01
+models:
+  eriberta:
+    results: "results/eriberta/casimedicos_ner"
+    model_name: "HiTZ/EriBERTa-base"
+    wandb_project: "eriberta-casimedicos_ner"
+    hyperparameters:
+      batch_size: 8
+      learning_rate: 2.0e-5
+      weight_decay: 0.01

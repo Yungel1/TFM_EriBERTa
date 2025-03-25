@@ -25,7 +25,7 @@ def define_trainer(model, hyperparameters, tokenizer, data_collator, train_datas
         learning_rate=hyperparameters["learning_rate"],
         per_device_train_batch_size=hyperparameters["batch_size"],
         per_device_eval_batch_size=hyperparameters["batch_size"],
-        num_train_epochs=10,
+        num_train_epochs=3,
         weight_decay=hyperparameters["weight_decay"],
         eval_strategy="epoch",
         save_strategy="epoch",

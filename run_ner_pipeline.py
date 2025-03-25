@@ -34,6 +34,7 @@ set_seed(42)
 def __get_args():
     # Manage arguments
     parser = argparse.ArgumentParser(description="Tokenization and data preparation for fine-tuning EriBERTa")
+    parser.add_argument("--model", type=str, default="eriberta", choices=["eriberta"], help="Model to use")
     parser.add_argument("--force_tokenize", action="store_true", help="Force to tokenize raw data")
     parser.add_argument("--force_fine_tuning", action="store_true", help="Force to fine-tune the model")
     parser.add_argument("--opt_hyperparameters", action="store_true", help="Execute hyperparameter optimization process")
@@ -49,6 +50,9 @@ def run_ner_pipeline():
     # Load NER general configs
     config = load_config(args.config_path)
 
+    # Selected arg model
+    arg_model = args.model
+
     # Paths from configuration file
     TRAIN_RAW = config["paths"]["raw"]["train"]
     DEV_RAW = config["paths"]["raw"]["dev"]
@@ -57,9 +61,9 @@ def run_ner_pipeline():
     DEV_PROCESSED = config["paths"]["processed"]["dev"]
     TEST_PROCESSED = config["paths"]["processed"].get("test") or DEV_PROCESSED
     LABEL2ID_PATH = config["paths"]["label_map"]
-    RESULTS_PATH = config["paths"]["results"]
-    WANDB_PROJECT = config["wandb_project"]
-    MODEL_NAME = config["model_name"]
+    RESULTS_PATH = config["models"][arg_model]["results"]
+    WANDB_PROJECT = config["models"][arg_model]["wandb_project"]
+    MODEL_NAME = config["models"][arg_model]["model_name"]
 
     # Tokenizer
     tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
@@ -135,9 +139,9 @@ def run_ner_pipeline():
 
     # Hyperparameters from config
     hyperparameters = {
-        "batch_size": config["hyperparameters"]["batch_size"],
-        "learning_rate": config["hyperparameters"]["learning_rate"],
-        "weight_decay": config["hyperparameters"]["weight_decay"],
+        "batch_size": config["models"][arg_model]["hyperparameters"]["batch_size"],
+        "learning_rate": config["models"][arg_model]["hyperparameters"]["learning_rate"],
+        "weight_decay": config["models"][arg_model]["hyperparameters"]["weight_decay"],
     }
 
     num_runs = args.runs - 1

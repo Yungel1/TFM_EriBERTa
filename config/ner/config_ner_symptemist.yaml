@@ -8,14 +8,13 @@ paths:
     dev: "datasets/NER/SympTEMIST/processed/dev/dev.hf" # HF Dataset con los datos de dev
     test: "datasets/NER/SympTEMIST/processed/test/test.hf" # HF Dataset con los datos de test
   label_map: "datasets/NER/SympTEMIST/label_map/label2id.json"
-  results: "results/NER/SympTEMIST/"
-  model_dir: "models/NER/SympTEMIST/"
 
-model_name: "HiTZ/EriBERTa-base"
-
-wandb_project: "eriberta-ner-SympTEMIST"
-
-hyperparameters:
-  batch_size: 8
-  learning_rate: 7.5e-5
-  weight_decay: 0.0
+models:
+  eriberta:
+    results: "results/eriberta/NER/SympTEMIST/"
+    model_name: "HiTZ/EriBERTa-base"
+    wandb_project: "eriberta-ner-SympTEMIST"
+    hyperparameters:
+      batch_size: 8
+      learning_rate: 7.5e-5
+      weight_decay: 0.0

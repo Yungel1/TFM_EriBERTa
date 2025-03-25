@@ -8,14 +8,13 @@ paths:
     dev: "datasets/NER/MultiCardioNER/track2/es/processed/dev/dev.hf" # HF Dataset con los datos de dev
     test: "datasets/NER/MultiCardioNER/track2/es/processed/test/test.hf" # HF Dataset con los datos de test
   label_map: "datasets/NER/MultiCardioNER/track2/es/label_map/label2id.json"
-  results: "results/NER/MultiCardioNER/track2/es/"
-  model_dir: "models/NER/MultiCardioNER/track2/es/"
 
-model_name: "HiTZ/EriBERTa-base"
-
-wandb_project: "eriberta-ner-MultiCardioNER-track2"
-
-hyperparameters:
-  batch_size: 8
-  learning_rate: 3.0e-5
-  weight_decay: 0.01
+models:
+  eriberta:
+    results: "results/eriberta/NER/MultiCardioNER/track2/es/"
+    model_name: "HiTZ/EriBERTa-base"
+    wandb_project: "eriberta-ner-MultiCardioNER-track2"
+    hyperparameters:
+      batch_size: 8
+      learning_rate: 3.0e-5
+      weight_decay: 0.01
