@@ -1,21 +1,68 @@
+from datasets import Dataset
+
 
 NO_ENT_STRING = "&&NOENT&&"
 NER_ENTITY_SEPARATOR = ","
 NER_TYPE_SEPARATOR = "$"
-NER_ENTITY_LIST = ['O', 'NO_NORMALIZABLES', 'NORMALIZABLES', 'PROTEINAS', 'UNCLEAR']
+NER_ENTITY_LIST = ['O', 'MORFOLOGIA_NEOPLASIA']
 NER_MAPPING = {t: i for i, t in enumerate(NER_ENTITY_LIST)}
-
 GEN_PREFIX = 'Entidades: '
 
 
-def _ner_process_raw_output(llm_result: str) -> list[tuple]:
-    """Parse raw model output into structured entity tuples.
+# PROCESS INPUT FUNCTIONS
+
+def _process_example(example: dict) -> dict:
+    """
+    Processes an individual example for entity extraction.
 
     Args:
-        llm_result: Raw string from model (e.g., "text$TYPE,text2$TYPE2")
+        example: A dictionary with keys "text", "entities", and "id".
 
     Returns:
-        List of (entity_text, entity_type) tuples
+        A dictionary with keys "id", "text" and "target".
+    """
+    text = example["text"]
+    sorted_entities = sorted(example["entities"], key=lambda x: (x["start"], x["end"]))
+
+    target_entries = [
+        f"{text[int(ent['start']): int(ent['end'])].strip()}{NER_TYPE_SEPARATOR}{ent['ent_type']}"
+        for ent in sorted_entities
+    ]
+
+    return {
+        "id": example["id"],
+        "text": text,
+        "target": NER_ENTITY_SEPARATOR.join(target_entries) if target_entries else NO_ENT_STRING,
+    }
+
+
+def process_dataset(dataset: Dataset) -> Dataset:
+    """
+    Processes a dataset by applying the process_example function to each entry.
+
+    Args:
+        dataset: A Dataset object from the 'datasets' library.
+
+    Returns:
+        The processed Dataset.
+    """
+    return dataset.map(
+        _process_example, remove_columns=dataset.column_names
+    )
+
+
+# EVALUATION FUNCTIONS
+
+
+def _ner_process_raw_output(llm_result: str) -> list:
+    """
+    Parses raw model output into a list of (entity_text, entity_type) tuples.
+
+    Args:
+        llm_result: Raw model output string (e.g., "text$TYPE,text2$TYPE2").
+
+    Returns:
+        A list of (entity_text, entity_type) tuples.
     """
     if NO_ENT_STRING in llm_result:
         return []
@@ -31,20 +78,20 @@ def _ner_process_raw_output(llm_result: str) -> list[tuple]:
 
         if entity_text and entity_type in NER_ENTITY_LIST:
             entities.append((entity_text, entity_type))
-
     return entities
 
 
-def ner_align_entities(pred_entities: list, gold_entities: list) -> tuple[list, list]:
-    """Align predicted and gold entities for evaluation.
+def _ner_align_entities(pred_entities: list, gold_entities: list) -> tuple:
+    """
+    Aligns predicted and gold entities for evaluation.
 
     Matching priority:
-    1. Perfect matches (text + type)
-    2. Text matches with type mismatch
-    3. Remaining entities mapped to 'O' class
+      1. Perfect matches (text and type)
+      2. Text matches with type mismatch
+      3. Remaining entities are mapped to the 'O' class
 
     Returns:
-        Tuple of (aligned_pred_labels, aligned_gold_labels)
+        A tuple of (aligned_pred_labels, aligned_gold_labels).
     """
     pred_copy = pred_entities.copy()
     gold_copy = gold_entities.copy()
@@ -84,15 +131,22 @@ def ner_align_entities(pred_entities: list, gold_entities: list) -> tuple[list, 
     return aligned_pred, aligned_gold
 
 
-def ner_process_results(doc, results):
+def ner_process_results(doc: dict, results) -> dict:
     """
-    Process the results of the Named Entity Recognition task.
+    Processes the results of the Named Entity Recognition task.
+
+    Args:
+        doc: A dictionary containing at least the "target" key with the true entities string.
+        results: The model output (string or list) containing the predicted entities.
+
+    Returns:
+        A dictionary with the key "f1" containing a tuple of (predicted_labels, gold_labels).
     """
     # Extract model output string (handle list inputs)
     if isinstance(results, list):
-        results = results[0]  # Assume first element contains the prediction string
+        results = results[0]  # Assume the first element contains the prediction string
 
-    # Remove "Entities: " prefix if present
+    # Remove "Entidades: " prefix if present
     if results.startswith(GEN_PREFIX):
         results = results[len(GEN_PREFIX):]
 
@@ -106,9 +160,9 @@ def ner_process_results(doc, results):
 
     # Align entity lists for metric calculation
     if len(gold) <= len(pred):
-        gold_labels, pred_labels = ner_align_entities(gold, pred)
+        gold_labels, pred_labels = _ner_align_entities(gold, pred)
     else:
-        pred_labels, gold_labels = ner_align_entities(pred, gold)
+        pred_labels, gold_labels = _ner_align_entities(pred, gold)
 
     # Safety check - alignment must match list lengths
     assert len(gold_labels) == len(pred_labels)

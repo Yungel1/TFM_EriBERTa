@@ -8,7 +8,7 @@ from transformers import (
     set_seed
 )
 
-from src.harness.scripts.gemma_ner_preprocess import process_dataset
+from harness.scripts.gemma_ner_preprocess import process_dataset
 from src.utils.config_loader import load_config
 from src.utils.data_loader import create_hf_dataset_from_json
 from src.utils.ner_utils import extract_label_maps, load_label_maps

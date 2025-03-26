@@ -1,17 +1,18 @@
 include: _ner_template.yaml
 
 task_alias: 'CANTEMIST: Entity List'
-tag: cantemist
+tag: cantemist-ner
 task: cantemist-entity_list
 
-dataset_path: "PlanTL-GOB-ES/pharmaconer" # TODO Cambiar. Path al Dataset de Hugging Face?
+dataset_path: json
 dataset_name: null
+dataset_kwargs:
+  data_files:
+    test: "datasets/NER/CANTEMIST/test/test.json"
 
-training_split: train
-validation_split: validation
 test_split: test
 
-process_docs: !function ner_cantemist_utils.ner_process_docs
+process_docs: !function ner_cantemist_process.process_dataset
 
 doc_to_text: "Extrae todas las entidades de morfología de neoplasias del siguiente texto y clasifícalas en la categoría:  
 - MORFOLOGIA_NEOPLASIA: Términos que describen tipos, características o patrones de crecimiento de neoplasias.
@@ -21,4 +22,4 @@ Texto: '{{text}}'"
 gen_prefix: "Entidades: "
 
 doc_to_target: target
-process_results: !function ner_cantemist_utils.ner_process_results
+process_results: !function ner_cantemist_process.ner_process_results
