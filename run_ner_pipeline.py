@@ -187,7 +187,7 @@ def run_ner_pipeline():
             # model = AutoModelForTokenClassification.from_pretrained("Yungel1/EriBERTa_NER")
             # Define trainer
             trainer = define_trainer(model, hyperparameters, tokenizer, data_collator, train_tokenized, dev_tokenized,
-                                     metrics_computer.compute_metrics, RESULTS_PATH)
+                                     metrics_computer.compute_metrics, RUN_RESULTS_PATH)
             logger.info(f"✅ Model loaded in {time.time() - start_time:.2f} seconds.\n")
 
         logger.info("\n⏳ Evaluating fine-tuned model...")
@@ -199,7 +199,8 @@ def run_ner_pipeline():
 
         logger.info("\n⏳ Starting inference and final evaluation...")
         start_time = time.time()
-        predict_and_save(trainer, test_tokenized, id2label, metrics_computer.compute_metrics, tokenizer, RESULTS_PATH)
+        predict_and_save(trainer, test_tokenized, id2label, metrics_computer.compute_metrics,
+                         tokenizer, RUN_RESULTS_PATH)
         logger.info(f"✅ Inference and save finished in {time.time() - start_time:.2f} seconds.\n")
 
         with open(f"{RUN_RESULTS_PATH}/seed.txt", "w") as archivo:
