@@ -7,9 +7,9 @@ from datasets import Dataset
 
 
 class NERPreprocessor:
-    def __init__(self, tokenizer, label2id, id2label, max_length=512, stride=128):
+    def __init__(self, tokenizer, label2id, id2label, stride=128):
         self.tokenizer = tokenizer
-        self.max_length = max_length
+        self.max_length = tokenizer.model_max_length
         self.stride = stride
         self.label2id = label2id
         self.id2label = id2label
