@@ -1,0 +1,28 @@
+include: _ner_template.yaml
+
+task_alias: 'PharmacoNER Full_Cases: Entity List'
+tag: pharmaconer_fullcases-ner
+task: pharmaconer_fullcases-entity_list
+
+dataset_path: json
+dataset_name: null
+dataset_kwargs:
+  data_files:
+    test: "datasets/NER/PharmacoNER/Full_Cases/test/test.json"
+
+test_split: test
+
+process_docs: !function ner_pharmaconer_fullcases_process.process_dataset
+
+doc_to_text: "Extrae todas las entidades químicas del siguiente texto y clasifícalas en las siguientes categorías (tipos):  
+- NORMALIZABLES: Sustancias químicas que pueden ser normalizadas manualmente a un identificador único.  
+- NO_NORMALIZABLES: Sustancias químicas que no pueden ser normalizadas manualmente a un identificador único.  
+- PROTEINAS: Proteínas y genes, incluyendo péptidos, hormonas peptídicas y anticuerpos.  
+- UNCLEAR: Sustancias generales de relevancia clínica y biomédica, como ciertos fármacos, tratamientos, vacunas y una lista predefinida de sustancias generales (e.g., Estragón, Silimarina, Bromelaína, Melanina, Vaselina, Lanolina, Alcohol, Tabaco, Marihuana, Cannabis, Opio y Gluten).  
+Devuelve cada entidad en el formato: **Entidad$Tipo**, separando cada par con ','. Si no hay entidades para extraer, responde con '&&NOENT&&'.  
+Texto: '{{text}}'"
+
+gen_prefix: "Entidades: "
+
+doc_to_target: target
+process_results: !function ner_pharmaconer_fullcases_process.ner_process_results

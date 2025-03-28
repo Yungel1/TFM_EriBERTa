@@ -1,0 +1,12 @@
+group: pharmaconer_sentences
+group_alias: 'PharmacoNER Sentences'
+
+task:
+  - pharmaconer_sentences-entity_list
+
+aggregate_metric_list:
+  - metric: f1
+    weight_by_size: True
+
+metadata:
+  version: 1.0

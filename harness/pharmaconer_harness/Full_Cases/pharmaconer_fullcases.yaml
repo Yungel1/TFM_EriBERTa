@@ -1,0 +1,12 @@
+group: pharmaconer_fullcases
+group_alias: 'PharmacoNER Full_Cases'
+
+task:
+  - pharmaconer_fullcases-entity_list
+
+aggregate_metric_list:
+  - metric: f1
+    weight_by_size: True
+
+metadata:
+  version: 1.0
