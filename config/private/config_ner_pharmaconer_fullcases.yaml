@@ -1,0 +1,20 @@
+paths:
+  raw:
+    train: "datasets/NER/PharmacoNER/Full_Cases/train/brat" # Carpeta que contiene los archivos de texto y anotaciones de train
+    dev: "datasets/NER/PharmacoNER/Full_Cases/dev/brat" # Carpeta que contiene los archivos de texto y anotaciones de dev
+    test: "datasets/NER/PharmacoNER/Full_Cases/test/brat" # Carpeta que contiene los archivos de texto y anotaciones de test
+  processed:
+    train: "datasets/NER/PharmacoNER/Full_Cases/processed/train/train.hf" # HF Dataset con los datos de train
+    dev: "datasets/NER/PharmacoNER/Full_Cases/processed/dev/dev.hf" # HF Dataset con los datos de dev
+    test: "datasets/NER/PharmacoNER/Full_Cases/processed/test/test.hf" # HF Dataset con los datos de test
+  label_map: "datasets/NER/PharmacoNER/Full_Cases/label_map/label2id.json"
+
+models:
+  eriberta:
+    results: "results/eriberta/NER/PharmacoNER/Full_Cases"
+    model_name: "HiTZ/EriBERTa-base"
+    wandb_project: "eriberta-ner-PharmacoNER-Full_Cases"
+    hyperparameters:
+      batch_size: 8
+      learning_rate: 3.0e-5
+      weight_decay: 0.3

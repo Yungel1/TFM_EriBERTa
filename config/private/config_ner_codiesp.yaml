@@ -1,0 +1,20 @@
+paths:
+  raw:
+    train: "datasets/NER/CodiEsp/train/brat" # Carpeta que contiene los archivos de texto y anotaciones de train
+    dev: "datasets/NER/CodiEsp/dev/brat" # Carpeta que contiene los archivos de texto y anotaciones de dev
+    test: "datasets/NER/CodiEsp/test/brat" # Carpeta que contiene los archivos de texto y anotaciones de test
+  processed:
+    train: "datasets/NER/CodiEsp/processed/train/train.hf" # HF Dataset con los datos de train
+    dev: "datasets/NER/CodiEsp/processed/dev/dev.hf" # HF Dataset con los datos de dev
+    test: "datasets/NER/CodiEsp/processed/test/test.hf" # HF Dataset con los datos de test
+  label_map: "datasets/NER/CodiEsp/label_map/label2id.json"
+
+models:
+  eriberta:
+    results: "results/eriberta/NER/CodiEsp/"
+    model_name: "HiTZ/EriBERTa-base"
+    wandb_project: "eriberta-ner-CodiEsp"
+    hyperparameters:
+      batch_size: 16
+      learning_rate: 7.5e-5
+      weight_decay: 0.1

@@ -1,0 +1,20 @@
+paths:
+  raw:
+    train: "datasets/NER/MultiCardioNER/track1/train/brat" # Carpeta que contiene los archivos de texto y anotaciones de train
+    dev: "datasets/NER/MultiCardioNER/track1/dev/brat" # Carpeta que contiene los archivos de texto y anotaciones de dev
+    test: "datasets/NER/MultiCardioNER/track1/test/brat" # Carpeta que contiene los archivos de texto y anotaciones de test
+  processed:
+    train: "datasets/NER/MultiCardioNER/track1/processed/train/train.hf" # HF Dataset con los datos de train
+    dev: "datasets/NER/MultiCardioNER/track1/processed/dev/dev.hf" # HF Dataset con los datos de dev
+    test: "datasets/NER/MultiCardioNER/track1/processed/test/test.hf" # HF Dataset con los datos de test
+  label_map: "datasets/NER/MultiCardioNER/track1/label_map/label2id.json"
+
+models:
+  eriberta:
+    results: "results/eriberta/NER/MultiCardioNER/track1/"
+    model_name: "HiTZ/EriBERTa-base"
+    wandb_project: "eriberta-ner-MultiCardioNER-track1"
+    hyperparameters:
+      batch_size: 8
+      learning_rate: 7.5e-5
+      weight_decay: 0.1

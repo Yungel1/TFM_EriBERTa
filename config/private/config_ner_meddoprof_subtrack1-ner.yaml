@@ -1,0 +1,20 @@
+paths:
+  raw:
+    train: "datasets/NER/MEDDOPROF/subtrack1-ner/train/brat" # Carpeta que contiene los archivos de texto y anotaciones de train
+    dev: "datasets/NER/MEDDOPROF/subtrack1-ner/dev/brat" # Carpeta que contiene los archivos de texto y anotaciones de dev
+    test: "datasets/NER/MEDDOPROF/subtrack1-ner/test/brat" # Carpeta que contiene los archivos de texto y anotaciones de test
+  processed:
+    train: "datasets/NER/MEDDOPROF/subtrack1-ner/processed/train/train.hf" # HF Dataset con los datos de train
+    dev: "datasets/NER/MEDDOPROF/subtrack1-ner/processed/dev/dev.hf" # HF Dataset con los datos de dev
+    test: "datasets/NER/MEDDOPROF/subtrack1-ner/processed/test/test.hf" # HF Dataset con los datos de test
+  label_map: "datasets/NER/MEDDOPROF/subtrack1-ner/label_map/label2id.json"
+
+models:
+  eriberta:
+    results: "results/eriberta/NER/MEDDOPROF/subtrack1-ner/"
+    model_name: "HiTZ/EriBERTa-base"
+    wandb_project: "eriberta-ner-MEDDOPROF-subtrack1-ner"
+    hyperparameters:
+      batch_size: 8
+      learning_rate: 3.0e-5
+      weight_decay: 0.3
