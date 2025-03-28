@@ -18,3 +18,12 @@ models:
       batch_size: 16
       learning_rate: 7.5e-5
       weight_decay: 0.1
+
+  eriberta_private:
+    results: "results/eriberta/private/CodiEsp/"
+    model_name: "eriberta_models/private/eriberta"
+    wandb_project: "eriberta-private-CodiEsp"
+    hyperparameters:
+      batch_size: 16
+      learning_rate: 7.5e-5
+      weight_decay: 0.1

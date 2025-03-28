@@ -18,3 +18,12 @@ models:
       batch_size: 16
       learning_rate: 5.0e-5
       weight_decay: 0.2
+
+  eriberta_private:
+    results: "results/eriberta/private/MedProcNER/"
+    model_name: "eriberta_models/private/eriberta"
+    wandb_project: "eriberta-private-MedProcNER"
+    hyperparameters:
+      batch_size: 16
+      learning_rate: 5.0e-5
+      weight_decay: 0.2
