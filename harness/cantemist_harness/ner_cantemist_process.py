@@ -47,123 +47,93 @@ def process_dataset(dataset: Dataset) -> Dataset:
         The processed Dataset.
     """
     return dataset.map(
-        _process_example, remove_columns=dataset.column_names
+        _process_example#, remove_columns=dataset.column_names
     )
 
 
 # EVALUATION FUNCTIONS
 
 
-def _ner_process_raw_output(llm_result: str) -> list:
+def _ner_gold_to_target(x: list) -> list:
     """
-    Parses raw model output into a list of (entity_text, entity_type) tuples.
-
-    Args:
-        llm_result: Raw model output string (e.g., "text$TYPE,text2$TYPE2").
-
-    Returns:
-        A list of (entity_text, entity_type) tuples.
+    Convert the gold entities to the target format according to the NER_MAPPING
     """
+    res = [NER_MAPPING[e["ent_type"]] for e in x]
+    return res
+
+
+def _ner_process_raw_output(llm_result: str) -> list[tuple]:
     if NO_ENT_STRING in llm_result:
         return []
-    if llm_result.strip() == "":
-        return [("WRONG", "O")]  # Special error case
+    if llm_result == "":
+        return ["WRONG"]
+    tmp_results = llm_result.split(NER_ENTITY_SEPARATOR)
+    results = []
+    for res in tmp_results:
+        r = res.strip()
+        # split on type separator
+        r_text = ""
+        r_type = ""
+        r_splitted = r.split(NER_TYPE_SEPARATOR)
+        if len(r_splitted) < 2:
+            r_text = r_splitted[0]
+            r_type = ""
+        else:
+            r_text = r_splitted[0]
+            r_type = r_splitted[1]
+        if r_text != "":
+            results.append((r_text, r_type.upper()))
+    return results
 
-    entities = []
-    for entity_str in llm_result.split(NER_ENTITY_SEPARATOR):
-        parts = [s.strip() for s in entity_str.split(NER_TYPE_SEPARATOR) if s]
-        # Handle malformed entries
-        entity_text = parts[0].lower() if len(parts) >= 1 else ""
-        entity_type = parts[1].upper() if len(parts) >= 2 else ""
 
-        if entity_text and entity_type in NER_ENTITY_LIST:
-            entities.append((entity_text, entity_type))
-    return entities
-
-
-def _ner_align_entities(pred_entities: list, gold_entities: list) -> tuple:
+def ner_process_results(doc, results):
     """
-    Aligns predicted and gold entities for evaluation.
-
-    Matching priority:
-      1. Perfect matches (text and type)
-      2. Text matches with type mismatch
-      3. Remaining entities are mapped to the 'O' class
-
-    Returns:
-        A tuple of (aligned_pred_labels, aligned_gold_labels).
+    Process the results of the Named Entity Recognition task
     """
-    pred_copy = pred_entities.copy()
-    gold_copy = gold_entities.copy()
-    aligned_pred = []
-    aligned_gold = []
+    # each document has a list of entities with the following format:
+    # [{"entity_text": "string", "type": "string"}]
+    gold = doc["entities"]
+    raw_results = results[0]
+    results = _ner_process_raw_output(raw_results)
 
-    # Stage 1: Perfect matches
-    for pred in pred_entities:
-        for i, gold in enumerate(gold_copy):
-            if pred == gold:
-                aligned_pred.append(NER_MAPPING[pred[1]])
-                aligned_gold.append(NER_MAPPING[gold[1]])
-                gold_copy.pop(i)
-                pred_copy.remove(pred)
-                break
+    gold_labels = _ner_gold_to_target(gold)
+    res_labels = [0] * len(gold_labels)
+    matched_gold_idx = []
 
-    # Stage 2: Text matches with type mismatch
-    remaining_pred = pred_copy.copy()
-    for pred in remaining_pred:
-        for i, gold in enumerate(gold_copy):
-            if pred[0] == gold[0]:
-                aligned_pred.append(NER_MAPPING[pred[1]])
-                aligned_gold.append(NER_MAPPING[gold[1]])
-                gold_copy.pop(i)
-                pred_copy.remove(pred)
-                break
+    if len(results) > len(gold):
+        for r in results:
+            r_text = r[0]
+            r_type = r[1]
+            for i in range(len(gold)):
+                if r_text == gold[i]["text"] and r_type == gold[i]["ent_type"]:
+                    res_labels[i] = NER_MAPPING[r_type]
+                    matched_gold_idx.append(i)
+        # Since we have more results than gold, we artificially set to false positive the remaining labels
+        # extend gold label list
+        for i in range(len(results) - len(gold)):
+            gold_labels.append(3)
+            res_labels.append(2)
+    elif len(results) == 0 and len(gold) == 0:
+        res_labels = [3]
+        gold_labels = res_labels
+    else:  # len(results) <= len(gold)
+        for r in results:
+            r_text = r[0]
+            r_type = r[1]
+            for i in range(len(gold)):
+                if r_text == gold[i]["text"] and r_type == gold[i]["ent_type"]:
+                    res_labels[i] = NER_MAPPING[r_type]
+                    matched_gold_idx.append(i)
+        # we map all wrong predictions to the "O" class
+        for i in range(len(gold_labels)):
+            if i in matched_gold_idx:
+                continue
+            if gold_labels[i] == 1:
+                res_labels[i] = 3
+            elif gold_labels[i] == 0:
+                res_labels[i] = 3
+            else:
+                res_labels[i] = 3
 
-    # Stage 3: Map remaining entities to 'O' class
-    for pred in pred_copy:
-        aligned_pred.append(NER_MAPPING[pred[1]])
-        aligned_gold.append(NER_MAPPING['O'])
-
-    for gold in gold_copy:
-        aligned_pred.append(NER_MAPPING['O'])
-        aligned_gold.append(NER_MAPPING[gold[1]])
-
-    return aligned_pred, aligned_gold
-
-
-def ner_process_results(doc: dict, results) -> dict:
-    """
-    Processes the results of the Named Entity Recognition task.
-
-    Args:
-        doc: A dictionary containing at least the "target" key with the true entities string.
-        results: The model output (string or list) containing the predicted entities.
-
-    Returns:
-        A dictionary with the key "f1" containing a tuple of (predicted_labels, gold_labels).
-    """
-    # Extract model output string (handle list inputs)
-    if isinstance(results, list):
-        results = results[0]  # Assume the first element contains the prediction string
-
-    # Remove "Entidades: " prefix if present
-    if results.startswith(GEN_PREFIX):
-        results = results[len(GEN_PREFIX):]
-
-    # Process both gold (ground truth) and predicted entities
-    gold = _ner_process_raw_output(doc["target"])
-    pred = _ner_process_raw_output(results)
-
-    # Special case: both empty predictions
-    if not pred and not gold:
-        return {"f1": ([NER_MAPPING['O']], [NER_MAPPING['O']])}
-
-    # Align entity lists for metric calculation
-    if len(gold) <= len(pred):
-        gold_labels, pred_labels = _ner_align_entities(gold, pred)
-    else:
-        pred_labels, gold_labels = _ner_align_entities(pred, gold)
-
-    # Safety check - alignment must match list lengths
-    assert len(gold_labels) == len(pred_labels)
-    return {"f1": (pred_labels, gold_labels)}
+    assert len(gold_labels) == len(res_labels)
+    return {"f1": (res_labels, gold_labels)}
