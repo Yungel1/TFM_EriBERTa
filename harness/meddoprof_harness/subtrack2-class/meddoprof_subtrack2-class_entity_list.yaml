@@ -1,0 +1,27 @@
+include: _ner_template.yaml
+
+task_alias: 'MEDDOPROF Subtrack2-Class: Entity List'
+tag: meddoprof_subtrack2-class-ner
+task: meddoprof_subtrack2-class-entity_list
+
+dataset_path: json
+dataset_name: null
+dataset_kwargs:
+  data_files:
+    test: "datasets/NER/MEDDOPROF/subtrack2-class/test/test.json"
+
+test_split: test
+
+process_docs: !function ner_meddoprof_subtrack2-class_process.process_dataset
+
+doc_to_text: "Extrae todas las entidades de morfología de neoplasias del siguiente texto y clasifícalas en la siguiente categoría (tipo):
+- MORFOLOGIA_NEOPLASIA: Términos que definen la morfología, características histológicas, variantes estructurales, grados de diferenciación, estadificación, comportamiento biológico o manifestaciones metastásicas de neoplasias.
+Devuelve cada entidad en el formato: **Entidad$MORFOLOGIA_NEOPLASIA**, separando cada una mediante ',' sin espacios entre ellas. Si no hay entidades para extraer, responde con '&&NOENT&&'.
+Texto: '{{text}}'
+
+Recuerda añadir '$MORFOLOGIA_NEOPLASIA' después de cada entidad extraída."
+
+gen_prefix: "Entidades: "
+
+doc_to_target: target
+process_results: !function ner_meddoprof_subtrack2-class_process.ner_process_results

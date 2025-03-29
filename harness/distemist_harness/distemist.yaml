@@ -1,0 +1,12 @@
+group: distemist
+group_alias: 'DisTEMIST'
+
+task:
+  - distemist-entity_list
+
+aggregate_metric_list:
+  - metric: f1
+    weight_by_size: True
+
+metadata:
+  version: 1.0

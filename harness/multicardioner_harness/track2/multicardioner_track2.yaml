@@ -1,0 +1,12 @@
+group: multicardioner_track2
+group_alias: 'MultiCardioNER Track2'
+
+task:
+  - multicardioner_track2-entity_list
+
+aggregate_metric_list:
+  - metric: f1
+    weight_by_size: True
+
+metadata:
+  version: 1.0

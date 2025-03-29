@@ -35,3 +35,21 @@ models:
       batch_size: 8
       learning_rate: 1.0e-5
       weight_decay: 0.0
+
+  longformer:
+    results: "results/eriberta_longformer/public/CANTEMIST/"
+    model_name: "eriberta_models/public/EriBERTa_Free_longformer_1024_attn_2048_max_size"
+    wandb_project: "eriberta_longformer-public-CANTEMIST"
+    hyperparameters: # TODO
+      batch_size: 8
+      learning_rate: 1.0e-5
+      weight_decay: 0.0
+
+  bsc:
+    results: "results/bsc/public/CANTEMIST/"
+    model_name: "PlanTL-GOB-ES/bsc-bio-ehr-es"
+    wandb_project: "bsc-public-CANTEMIST"
+    hyperparameters: # TODO
+      batch_size: 8
+      learning_rate: 1.0e-5
+      weight_decay: 0.0

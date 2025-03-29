@@ -1,0 +1,12 @@
+group: meddoprof_subtrack1-ner
+group_alias: 'MEDDOPROF Subtrack1-NER'
+
+task:
+  - meddoprof_subtrack1-ner-entity_list
+
+aggregate_metric_list:
+  - metric: f1
+    weight_by_size: True
+
+metadata:
+  version: 1.0

@@ -1,0 +1,12 @@
+group: meddoprof_subtrack2-class
+group_alias: 'MEDDOPROF Subtrack2-Class'
+
+task:
+  - meddoprof_subtrack2-class-entity_list
+
+aggregate_metric_list:
+  - metric: f1
+    weight_by_size: True
+
+metadata:
+  version: 1.0
