@@ -7,19 +7,30 @@ inference_decorator = (
 
 
 def _aggreg_ner(predictions):
-    pred, ref = zip(*predictions)
-    # concat all the predictions and references
+    """
+    Computes micro-averaged F1 for NER, dynamically inferring entity classes.
+    Handles false positives on 'O' tokens and missing entity classes.
+    """
     all_pred = []
-    for p in pred:
-        all_pred.extend(p)
     all_ref = []
-    for r in ref:
-        all_ref.extend(r)
-    # compute the F1 score
-    f1 = f1_score(all_ref, all_pred, average=None)
-    if len(f1) > 1:
-        f1_sum = sum(f1[:-1]) / (len(f1) - 1)
-    else:
-        f1_sum = f1[0]
 
-    return f1_sum
+    for pred_labels, gold_labels in predictions:
+        all_pred.extend(pred_labels)
+        all_ref.extend(gold_labels)
+
+    # Dynamically infer entity classes (exclude 'O' class 0)
+    entity_classes = list(set(all_pred + all_ref) - {0})
+
+    if not entity_classes:
+        return 0.0  # No entities to evaluate
+
+    # Compute F1 considering ALL tokens, but focusing on entity classes
+    f1 = f1_score(
+        all_ref,
+        all_pred,
+        average='micro',
+        labels=entity_classes,
+        zero_division=0
+    )
+
+    return f1
