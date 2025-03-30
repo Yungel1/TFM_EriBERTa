@@ -49,7 +49,7 @@ models:
     results: "results/bsc/public/CANTEMIST/"
     model_name: "PlanTL-GOB-ES/bsc-bio-ehr-es"
     wandb_project: "bsc-public-CANTEMIST"
-    hyperparameters: # TODO
+    hyperparameters:
       batch_size: 8
-      learning_rate: 1.0e-5
-      weight_decay: 0.0
+      learning_rate: 7.5e-5
+      weight_decay: 0.2

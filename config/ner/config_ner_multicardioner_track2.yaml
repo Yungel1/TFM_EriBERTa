@@ -41,7 +41,7 @@ models:
     results: "results/bsc/public/MultiCardioNER/track2/"
     model_name: "PlanTL-GOB-ES/bsc-bio-ehr-es"
     wandb_project: "bsc-public-MultiCardioNER-track2"
-    hyperparameters: # TODO
+    hyperparameters:
       batch_size: 8
-      learning_rate: 1.0e-5
-      weight_decay: 0.0
+      learning_rate: 3.0e-5
+      weight_decay: 0.01
