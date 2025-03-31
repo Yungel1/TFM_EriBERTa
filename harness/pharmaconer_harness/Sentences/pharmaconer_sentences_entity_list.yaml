@@ -20,7 +20,9 @@ doc_to_text: "Extrae todas las entidades químicas del siguiente texto y clasif�
 - PROTEINAS: Proteínas y genes, incluyendo péptidos, hormonas peptídicas y anticuerpos.  
 - UNCLEAR: Sustancias generales de relevancia clínica y biomédica, como ciertos fármacos, tratamientos, vacunas y una lista predefinida de sustancias generales (e.g., Estragón, Silimarina, Bromelaína, Melanina, Vaselina, Lanolina, Alcohol, Tabaco, Marihuana, Cannabis, Opio y Gluten).  
 Devuelve cada entidad en el formato: **Entidad$Tipo**, separando cada par con ','. Si no hay entidades para extraer, responde con '&&NOENT&&'.  
-Texto: '{{text}}'"
+Texto: '{{text}}'
+
+Recuerda añadir '$Tipo' después de cada entidad extraída según corresponda."
 
 gen_prefix: "Entidades: "
 

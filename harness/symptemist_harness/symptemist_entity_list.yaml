@@ -14,12 +14,12 @@ test_split: test
 
 process_docs: !function ner_symptemist_process.process_dataset
 
-doc_to_text: "Extrae todas las entidades de morfología de neoplasias del siguiente texto y clasifícalas en la siguiente categoría (tipo):
-- MORFOLOGIA_NEOPLASIA: Términos que definen la morfología, características histológicas, variantes estructurales, grados de diferenciación, estadificación, comportamiento biológico o manifestaciones metastásicas de neoplasias.
-Devuelve cada entidad en el formato: **Entidad$MORFOLOGIA_NEOPLASIA**, separando cada una mediante ',' sin espacios entre ellas. Si no hay entidades para extraer, responde con '&&NOENT&&'.
+doc_to_text: "Extrae todas las entidades relacionadas con síntomas en el siguiente texto. Clasifícalas bajo la categoría única:
+SINTOMA: Cualquier manifestación clínica o hallazgo patológico presente en el paciente (ej. 'tumoración en polo superior de teste', 'masa nodular', 'formación nodular').
+Devuelve cada entidad en el formato: Entidad$SINTOMA, separando cada par con ','. Si no hay entidades para extraer, responde con '&&NOENT&&'.
 Texto: '{{text}}'
 
-Recuerda añadir '$MORFOLOGIA_NEOPLASIA' después de cada entidad extraída."
+Recuerda añadir '$SINTOMA' después de cada entidad extraída."
 
 gen_prefix: "Entidades: "
 

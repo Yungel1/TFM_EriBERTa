@@ -14,12 +14,32 @@ test_split: test
 
 process_docs: !function ner_meddocan_process.process_dataset
 
-doc_to_text: "Extrae todas las entidades de morfología de neoplasias del siguiente texto y clasifícalas en la siguiente categoría (tipo):
-- MORFOLOGIA_NEOPLASIA: Términos que definen la morfología, características histológicas, variantes estructurales, grados de diferenciación, estadificación, comportamiento biológico o manifestaciones metastásicas de neoplasias.
-Devuelve cada entidad en el formato: **Entidad$MORFOLOGIA_NEOPLASIA**, separando cada una mediante ',' sin espacios entre ellas. Si no hay entidades para extraer, responde con '&&NOENT&&'.
+doc_to_text: "Extrae todas las entidades de información personal y asistencial del siguiente texto y clasifícalas en las siguientes categorías (tipos):
+- CALLE: Direcciones de calles mencionadas en el texto.
+- CENTRO_SALUD: Nombres de centros de salud o clínicas.
+- CORREO_ELECTRONICO: Direcciones de correo electrónico.
+- EDAD_SUJETO_ASISTENCIA: Edad del paciente.
+- FAMILIARES_SUJETO_ASISTENCIA: Menciones a familiares del paciente.
+- FECHAS: Fechas relevantes en la historia clínica.
+- HOSPITAL: Nombres de hospitales mencionados.
+- ID_ASEGURAMIENTO: Identificadores de aseguramiento médico.
+- ID_CONTACTO_ASISTENCIAL: Identificadores de contacto asistencial.
+- ID_SUJETO_ASISTENCIA: Identificadores del paciente.
+- ID_TITULACION_PERSONAL_SANITARIO: Números de colegiación de personal sanitario.
+- INSTITUCION: Instituciones médicas o gubernamentales mencionadas.
+- NOMBRE_PERSONAL_SANITARIO: Nombres de médicos o personal sanitario.
+- NOMBRE_SUJETO_ASISTENCIA: Nombre del paciente.
+- NUMERO_FAX: Números de fax.
+- NUMERO_TELEFONO: Números de teléfono.
+- OTROS_SUJETO_ASISTENCIA: Otros identificadores relacionados con el paciente.
+- PAIS: Países mencionados en el texto.
+- PROFESION: Profesiones mencionadas.
+- SEXO_SUJETO_ASISTENCIA: Género del paciente.
+- TERRITORIO: Regiones, provincias o códigos postales.
+Devuelve cada entidad en el formato: Entidad$Tipo, separando cada par con ','. Si no hay entidades para extraer, responde con '&&NOENT&&'.
 Texto: '{{text}}'
 
-Recuerda añadir '$MORFOLOGIA_NEOPLASIA' después de cada entidad extraída."
+Recuerda añadir '$Tipo' después de cada entidad extraída según corresponda."
 
 gen_prefix: "Entidades: "
 

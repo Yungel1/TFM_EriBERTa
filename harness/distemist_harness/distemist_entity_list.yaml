@@ -14,12 +14,12 @@ test_split: test
 
 process_docs: !function ner_distemist_process.process_dataset
 
-doc_to_text: "Extrae todas las entidades de morfología de neoplasias del siguiente texto y clasifícalas en la siguiente categoría (tipo):
-- MORFOLOGIA_NEOPLASIA: Términos que definen la morfología, características histológicas, variantes estructurales, grados de diferenciación, estadificación, comportamiento biológico o manifestaciones metastásicas de neoplasias.
-Devuelve cada entidad en el formato: **Entidad$MORFOLOGIA_NEOPLASIA**, separando cada una mediante ',' sin espacios entre ellas. Si no hay entidades para extraer, responde con '&&NOENT&&'.
+doc_to_text: "Extrae todas las entidades de enfermedades del siguiente texto y clasifícalas en la siguiente categoría (tipo):
+- ENFERMEDAD: Patologías, hallazgos clínicos, alteraciones estructurales o cualquier condición médica relevante mencionada en el texto.
+Devuelve cada entidad en el formato: Entidad$ENFERMEDAD, separando cada par con ','. Si no hay entidades para extraer, responde con '&&NOENT&&'.
 Texto: '{{text}}'
 
-Recuerda añadir '$MORFOLOGIA_NEOPLASIA' después de cada entidad extraída."
+Recuerda añadir '$ENFERMEDAD' después de cada entidad extraída."
 
 gen_prefix: "Entidades: "
 
