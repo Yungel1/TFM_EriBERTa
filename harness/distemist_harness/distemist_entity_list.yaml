@@ -19,7 +19,7 @@ doc_to_text: "Extrae todas las entidades de enfermedades del siguiente texto y c
 Devuelve cada entidad en el formato: Entidad$ENFERMEDAD, separando cada par con ','. Si no hay entidades para extraer, responde con '&&NOENT&&'.
 Texto: '{{text}}'
 
-Recuerda añadir '$ENFERMEDAD' después de cada entidad extraída."
+Recuerda añadir '$ENFERMEDAD' después de cada entidad extraída y responder exactamente '&&NOENT&&' si no hay entidades."
 
 gen_prefix: "Entidades: "
 

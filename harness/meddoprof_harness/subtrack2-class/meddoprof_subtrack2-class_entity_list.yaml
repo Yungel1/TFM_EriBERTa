@@ -24,7 +24,7 @@ Devuelve cada entidad en el formato: Entidad$Tipo, separando cada par con ','. S
 
 Texto: '{{text}}'
 
-Recuerda añadir '$Tipo' después de cada entidad extraída según corresponda."
+Recuerda añadir '$Tipo' después de cada entidad extraída según corresponda y responder exactamente '&&NOENT&&' si no hay entidades."
 
 gen_prefix: "Entidades: "
 
