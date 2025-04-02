@@ -8,7 +8,7 @@ dataset_path: json
 dataset_name: null
 dataset_kwargs:
   data_files:
-    test: "datasets/NER/MultiCardioNER/track1/test/test.json"
+    test: "datasets/NER/MultiCardioNER/track2/es/test/test.json"
 
 test_split: test
 
