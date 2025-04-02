@@ -6,7 +6,7 @@ NER_ENTITY_SEPARATOR = ","
 NER_TYPE_SEPARATOR = "$"
 NER_ENTITY_LIST = ['O', 'MORFOLOGIA_NEOPLASIA']
 NER_MAPPING = {t: i for i, t in enumerate(NER_ENTITY_LIST)}
-GEN_PREFIX = 'Entidades: '
+GEN_PREFIX = 'Entidades extraídas: '
 
 
 # PROCESS INPUT FUNCTIONS
@@ -64,7 +64,9 @@ def _ner_process_raw_output(llm_result: str) -> list:
     Returns:
         A list of (entity_text, entity_type) tuples.
     """
-    if NO_ENT_STRING in llm_result:
+
+    clean_llm_result = llm_result.strip()
+    if clean_llm_result == "&&NOENT&&":
         return []
     if llm_result.strip() == "":
         return [("WRONG", "O")]  # Special error case
@@ -146,7 +148,7 @@ def ner_process_results(doc: dict, results) -> dict:
     if isinstance(results, list):
         results = results[0]  # Assume the first element contains the prediction string
 
-    # Remove "Entidades: " prefix if present
+    # Remove "Entidades extraídas: " prefix if present
     if results.startswith(GEN_PREFIX):
         results = results[len(GEN_PREFIX):]
 

@@ -22,7 +22,7 @@ Texto: '{{text}}'
 
 Recuerda añadir '$DIAGNOSTICO' o '$PROCEDIMIENTO' según corresponda después de cada entidad extraída y responder exactamente '&&NOENT&&' si no hay entidades."
 
-gen_prefix: "Entidades: "
+gen_prefix: "Entidades extraídas: "
 
 doc_to_target: target
 process_results: !function ner_codiesp_process.ner_process_results

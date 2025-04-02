@@ -1,9 +1,9 @@
 output_type: generate_until
 generation_kwargs:
   until:
-    - "</s>"
-    - "\n"
-    - "<｜end▁of▁sentence｜>"
+    - "<eos>"
+    - "&&NOENT&&"
+  max_gen_toks: 512
 
 metric_list:
   - metric: f1

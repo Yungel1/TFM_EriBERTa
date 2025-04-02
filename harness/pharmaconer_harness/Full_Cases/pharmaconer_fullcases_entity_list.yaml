@@ -24,7 +24,7 @@ Texto: '{{text}}'
 
 Recuerda añadir '$Tipo' después de cada entidad extraída según corresponda y responder exactamente '&&NOENT&&' si no hay entidades."
 
-gen_prefix: "Entidades: "
+gen_prefix: "Entidades extraídas: "
 
 doc_to_target: target
 process_results: !function ner_pharmaconer_fullcases_process.ner_process_results
