@@ -34,7 +34,8 @@ set_seed(42)
 def __get_args():
     # Manage arguments
     parser = argparse.ArgumentParser(description="Tokenization and data preparation for fine-tuning EriBERTa")
-    parser.add_argument("--model", type=str, default="eriberta", choices=["eriberta", "eriberta_private", "longformer", "bsc"], help="Model to use")
+    parser.add_argument("--model", type=str, default="eriberta", choices=["eriberta", "eriberta_private", "longformer", "bsc",
+                                                                          "clin_x_es", "mdeberta"], help="Model to use")
     parser.add_argument("--force_tokenize", action="store_true", help="Force to tokenize raw data")
     parser.add_argument("--force_fine_tuning", action="store_true", help="Force to fine-tune the model")
     parser.add_argument("--opt_hyperparameters", action="store_true", help="Execute hyperparameter optimization process")

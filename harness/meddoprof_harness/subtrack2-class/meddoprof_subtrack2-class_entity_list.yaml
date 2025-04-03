@@ -15,11 +15,10 @@ test_split: test
 process_docs: !function ner_meddoprof_subtrack2-class_process.process_dataset
 
 doc_to_text: "Extrae todas las entidades relacionadas con personas en el siguiente texto y clasifícalas en las siguientes categorías:
-
-- SANITARIO: Profesionales de la salud (ej. 'médico de cabecera').
-- PACIENTE: Referencias a la persona que recibe atención médica (ej. 'impartió varias conferencias sobre gestión').
-- OTROS: Personas con funciones no sanitarias ni de paciente (ej. 'responsables de recursos de varios ministerios').
-- FAMILIAR: Referencias a parientes del paciente (ej. 'maestra de escuela', 'desarrollador web', 'trabajaban desde el hogar').
+- SANITARIO: Profesionales de la salud o personal que brinda atención médica directa (ej. 'médico de cabecera', 'personal de enfermería', 'equipo de psiquiatría').
+- PACIENTE: Referencias a la persona que recibe atención médica o tratamiento (ej. 'paciente', 'oficinista' si el contexto indica que es el paciente).
+- FAMILIAR: Referencias a parientes del paciente, independientemente de su profesión o actividad (ej. 'esposa', 'maestra de escuela' si es la pareja o familiar del paciente).
+- OTROS: Personas con funciones no sanitarias ni de paciente, que no sean familiares (ej. 'responsables de recursos de varios ministerios').
 Devuelve cada entidad en el formato: Entidad$Tipo, separando cada par con ','. Si no hay entidades para extraer, responde con '&&NOENT&&'.
 
 Texto: '{{text}}'
