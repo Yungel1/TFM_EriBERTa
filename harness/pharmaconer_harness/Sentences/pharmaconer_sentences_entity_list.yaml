@@ -22,9 +22,9 @@ doc_to_text: "Extrae todas las entidades químicas del siguiente texto y clasif�
 Devuelve cada entidad en el formato: **Entidad$Tipo**, separando cada par con ','. Si no hay entidades para extraer, responde con '&&NOENT&&'.  
 Texto: '{{text}}'
 
-Recuerda añadir '$Tipo' después de cada entidad extraída según corresponda."
+Recuerda añadir '$Tipo' después de cada entidad extraída según corresponda y responder exactamente '&&NOENT&&' si no hay entidades."
 
-gen_prefix: "Entidades: "
+gen_prefix: "Entidades extraídas: "
 
 doc_to_target: target
 process_results: !function ner_pharmaconer_sentences_process.ner_process_results

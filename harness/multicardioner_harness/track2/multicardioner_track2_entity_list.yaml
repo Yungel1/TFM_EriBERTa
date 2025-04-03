@@ -8,7 +8,7 @@ dataset_path: json
 dataset_name: null
 dataset_kwargs:
   data_files:
-    test: "datasets/NER/MultiCardioNER/track1/test/test.json"
+    test: "datasets/NER/MultiCardioNER/track2/es/test/test.json"
 
 test_split: test
 
@@ -19,9 +19,9 @@ doc_to_text: "Extrae todas las entidades relacionadas con fármacos en el siguie
 Devuelve cada entidad en el formato: Entidad$FARMACO, separando cada par con ','. Si no hay entidades para extraer, responde con '&&NOENT&&'.
 Texto: '{{text}}'
 
-Recuerda añadir '$FARMACO' después de cada entidad extraída."
+Recuerda añadir '$FARMACO' después de cada entidad extraída y responder exactamente '&&NOENT&&' si no hay entidades."
 
-gen_prefix: "Entidades: "
+gen_prefix: "Entidades extraídas: "
 
 doc_to_target: target
 process_results: !function ner_multicardioner_track2_process.ner_process_results

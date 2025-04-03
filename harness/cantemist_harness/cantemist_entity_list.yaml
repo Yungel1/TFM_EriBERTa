@@ -19,9 +19,9 @@ doc_to_text: "Extrae todas las entidades de morfología de neoplasias del siguie
 Devuelve cada entidad en el formato: **Entidad$MORFOLOGIA_NEOPLASIA**, separando cada una mediante ',' sin espacios entre ellas. Si no hay entidades para extraer, responde con '&&NOENT&&'.
 Texto: '{{text}}'
 
-Recuerda añadir '$MORFOLOGIA_NEOPLASIA' después de cada entidad extraída."
+Recuerda añadir '$MORFOLOGIA_NEOPLASIA' después de cada entidad extraída y responder exactamente '&&NOENT&&' si no hay entidades."
 
-gen_prefix: "Entidades: "
+gen_prefix: "Entidades extraídas: "
 
 doc_to_target: target
 process_results: !function ner_cantemist_process.ner_process_results

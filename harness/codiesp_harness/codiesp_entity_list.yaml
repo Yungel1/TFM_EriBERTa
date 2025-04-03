@@ -20,9 +20,9 @@ doc_to_text: "Extrae todas las entidades médicas del siguiente texto y clasifí
 Devuelve cada entidad en el formato: Entidad$Tipo, separando cada par con ','. Si no hay entidades para extraer, responde con '&&NOENT&&'.
 Texto: '{{text}}'
 
-Recuerda añadir '$DIAGNOSTICO' o '$PROCEDIMIENTO' según corresponda después de cada entidad extraída."
+Recuerda añadir '$DIAGNOSTICO' o '$PROCEDIMIENTO' según corresponda después de cada entidad extraída y responder exactamente '&&NOENT&&' si no hay entidades."
 
-gen_prefix: "Entidades: "
+gen_prefix: "Entidades extraídas: "
 
 doc_to_target: target
 process_results: !function ner_codiesp_process.ner_process_results
