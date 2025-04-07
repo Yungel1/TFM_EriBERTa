@@ -24,7 +24,7 @@ models:
     wandb_project: "eriberta-ner-CANTEMIST"
     hyperparameters:
       batch_size: 8
-      learning_rate: 1.0e-5
+      learning_rate: 5.0e-5
       weight_decay: 0.0
 
   eriberta_private:
@@ -33,7 +33,7 @@ models:
     wandb_project: "eriberta-private-CANTEMIST"
     hyperparameters:
       batch_size: 8
-      learning_rate: 1.0e-5
+      learning_rate: 5.0e-5
       weight_decay: 0.0
 
   longformer:
