@@ -58,16 +58,16 @@ models:
     results: "results/clin_x_es/public/CANTEMIST/"
     model_name: "llange/xlm-roberta-large-spanish-clinical"
     wandb_project: "clin_x_es-public-CANTEMIST"
-    hyperparameters: # TODO
+    hyperparameters:
       batch_size: 8
-      learning_rate: 1.0e-5
-      weight_decay: 0.0
+      learning_rate: 3.0e-5
+      weight_decay: 0.1
 
   mdeberta:
     results: "results/mdeberta/public/CANTEMIST/"
     model_name: "microsoft/mdeberta-v3-base"
     wandb_project: "mdeberta-public-CANTEMIST"
-    hyperparameters: # TODO
+    hyperparameters:
       batch_size: 8
-      learning_rate: 1.0e-5
-      weight_decay: 0.0
+      learning_rate: 7.5e-5
+      weight_decay: 0.01

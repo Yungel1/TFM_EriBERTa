@@ -59,7 +59,7 @@ models:
     results: "results/mdeberta/public/MedProcNER/"
     model_name: "microsoft/mdeberta-v3-base"
     wandb_project: "mdeberta-public-MedProcNER"
-    hyperparameters: # TODO
+    hyperparameters:
       batch_size: 8
-      learning_rate: 1.0e-5
-      weight_decay: 0.0
+      learning_rate: 7.5e-5
+      weight_decay: 0.3
