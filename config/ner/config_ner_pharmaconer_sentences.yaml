@@ -50,10 +50,10 @@ models:
     results: "results/clin_x_es/public/PharmacoNER/Sentences/"
     model_name: "llange/xlm-roberta-large-spanish-clinical"
     wandb_project: "clin_x_es-public-PharmacoNER-Sentences"
-    hyperparameters: # TODO
-      batch_size: 8
-      learning_rate: 1.0e-5
-      weight_decay: 0.0
+    hyperparameters:
+      batch_size: 16
+      learning_rate: 3.0e-5
+      weight_decay: 0.2
 
   mdeberta:
     results: "results/mdeberta/public/PharmacoNER/Sentences/"

@@ -50,10 +50,10 @@ models:
     results: "results/clin_x_es/public/PharmacoNER/Full_Cases/"
     model_name: "llange/xlm-roberta-large-spanish-clinical"
     wandb_project: "clin_x_es-public-PharmacoNER-Full_Cases"
-    hyperparameters: # TODO
+    hyperparameters:
       batch_size: 8
-      learning_rate: 1.0e-5
-      weight_decay: 0.0
+      learning_rate: 7.5e-5
+      weight_decay: 0.1
 
   mdeberta:
     results: "results/mdeberta/public/PharmacoNER/Full_Cases/"
