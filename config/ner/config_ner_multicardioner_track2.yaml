@@ -30,7 +30,7 @@ models:
 
   longformer:
     results: "results/eriberta_longformer/public/MultiCardioNER/track2/"
-    model_name: "eriberta_models/public/EriBERTa_Free_longformer_1024_attn_2048_max_size"
+    model_name: "eriberta_models/public/EriBERTa_Free_longformer_512_attn_4096_max_size-1_epoch"
     wandb_project: "eriberta_longformer-public-MultiCardioNER-track2"
     hyperparameters: # TODO
       batch_size: 8

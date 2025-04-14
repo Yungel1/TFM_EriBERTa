@@ -21,7 +21,7 @@ def define_trainer(model, hyperparameters, tokenizer, data_collator, train_datas
     # Training arguments
     training_args = TrainingArguments(
         output_dir=output_dir,
-        logging_dir=f"{output_dir}/logs",
+        # logging_dir=f"{output_dir}/logs",
         learning_rate=hyperparameters["learning_rate"],
         per_device_train_batch_size=hyperparameters["batch_size"],
         per_device_eval_batch_size=hyperparameters["batch_size"],

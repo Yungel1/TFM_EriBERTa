@@ -30,6 +30,8 @@ logger = logging.getLogger(__name__)
 # Set seed
 set_seed(42)
 
+VERY_LARGE_INTEGER = int(1e30)
+
 
 def __get_args():
     # Manage arguments
@@ -68,6 +70,8 @@ def run_ner_pipeline():
 
     # Tokenizer
     tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
+    if tokenizer.model_max_length == VERY_LARGE_INTEGER:
+        tokenizer.model_max_length = 512
 
     if args.force_tokenize or not os.path.exists(TRAIN_PROCESSED) or not os.path.exists(DEV_PROCESSED):
 
@@ -163,7 +167,7 @@ def run_ner_pipeline():
 
             # Define model
             config = define_config(MODEL_NAME, label2id, id2label)
-            model = AutoModelForTokenClassification.from_pretrained(MODEL_NAME, config=config, ignore_mismatched_sizes=True, device_map="auto")
+            model = AutoModelForTokenClassification.from_pretrained(MODEL_NAME, config=config, ignore_mismatched_sizes=True, device_map=device)
             # model.to(device)
 
             # Define trainer
@@ -183,7 +187,7 @@ def run_ner_pipeline():
             logger.info("\n⏳ Loading best fine-tuned model...")
             start_time = time.time()
             # Define model
-            model = AutoModelForTokenClassification.from_pretrained(BEST_MODEL_PATH, device_map='auto')
+            model = AutoModelForTokenClassification.from_pretrained(BEST_MODEL_PATH, device_map=device)
             # model.push_to_hub("Yungel1/EriBERTa_NER")
             # model = AutoModelForTokenClassification.from_pretrained("Yungel1/EriBERTa_NER")
             # Define trainer

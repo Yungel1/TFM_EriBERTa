@@ -5,6 +5,6 @@ numpy==2.2.2
 wandb==0.19.8
 transformers==4.50.0.dev0
 evaluate==0.4.3
-pandas==2.2.3
 torch==2.6.0+cu118
 scikit-learn==1.6.1
+pandas==2.2.3
