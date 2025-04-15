@@ -43,6 +43,11 @@ def __get_args():
     parser.add_argument("--opt_hyperparameters", action="store_true", help="Execute hyperparameter optimization process")
     parser.add_argument("--config_path", type=str, default="config/config_casimedicos_ner.yaml", help="Config path")
     parser.add_argument("--runs", type=int, default=1, help="Number of times to execute the fine-tuning process")
+    parser.add_argument("--max_batch_size", type=int, default=None,
+                        help="Maximum batch size that fits in memory per device. Used to auto-adjust gradient accumulation.")
+    parser.add_argument("--use_global_attention", action="store_true", default=False,
+                        help="If True, apply global_attention_mask"
+    )
     return parser.parse_args()
 
 
@@ -89,7 +94,8 @@ def run_ner_pipeline():
         logger.info(f"✅ Label maps extracted in {time.time() - start_time:.2f} seconds.\n")
 
         # NERPreprocessor class
-        preprocessor = NERPreprocessor(tokenizer, label2id, id2label)
+        preprocessor = NERPreprocessor(tokenizer, label2id, id2label,
+                                       use_global_attention=args.use_global_attention)
 
         logger.info("\n⏳ Tokenizing data...")
         start_time = time.time()
@@ -136,7 +142,7 @@ def run_ner_pipeline():
             sweep_id,
             function=lambda: train_model_wandb(MODEL_NAME, config, tokenizer, data_collator,
                                                train_tokenized, dev_tokenized, metrics_computer.compute_metrics,
-                                               RESULTS_PATH),
+                                               RESULTS_PATH, args.max_batch_size),
             count=20
         )
         logger.info(f"✅ Hyperparameter optimization process done in {time.time() - start_time:.2f} seconds.\n")
@@ -172,7 +178,7 @@ def run_ner_pipeline():
 
             # Define trainer
             trainer = define_trainer(model, hyperparameters, tokenizer, data_collator, train_tokenized, dev_tokenized,
-                                     metrics_computer.compute_metrics, RUN_RESULTS_PATH)
+                                     metrics_computer.compute_metrics, RUN_RESULTS_PATH, args.max_batch_size)
 
             # Fine-tuning and saving best model
             train_result = trainer.train()
@@ -192,7 +198,7 @@ def run_ner_pipeline():
             # model = AutoModelForTokenClassification.from_pretrained("Yungel1/EriBERTa_NER")
             # Define trainer
             trainer = define_trainer(model, hyperparameters, tokenizer, data_collator, train_tokenized, dev_tokenized,
-                                     metrics_computer.compute_metrics, RUN_RESULTS_PATH)
+                                     metrics_computer.compute_metrics, RUN_RESULTS_PATH, args.max_batch_size)
             logger.info(f"✅ Model loaded in {time.time() - start_time:.2f} seconds.\n")
 
         logger.info("\n⏳ Evaluating fine-tuned model...")

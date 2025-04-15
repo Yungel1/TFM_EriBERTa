@@ -18,18 +18,32 @@ def configure_sweep(project):
 
 
 def train_model_wandb(model_name, model_config, tokenizer, data_collator, train_dataset,
-                      eval_dataset, compute_metrics, output_dir):
+                      eval_dataset, compute_metrics, output_dir, max_batch_size=None):
     with wandb.init(config=None):
         model = AutoModelForTokenClassification.from_pretrained(model_name, config=model_config,
                                                                 ignore_mismatched_sizes=True, device_map='auto')
 
         config = wandb.config
 
+        desired_total_batch_size = config.batch_size
+
+        if max_batch_size is not None:
+            # Limit the per-device batch size to avoid OOM, and accumulate gradients
+            per_device_bs = min(desired_total_batch_size, max_batch_size)
+            gradient_accumulation_steps = max(desired_total_batch_size // per_device_bs, 1)
+            print(f"⚙️ Memory-aware config: per_device_bs={per_device_bs}, "
+                  f"accumulation_steps={gradient_accumulation_steps}")
+        else:
+            # No GPU constraint, use full batch size per device
+            per_device_bs = desired_total_batch_size
+            gradient_accumulation_steps = 1
+
         training_args = TrainingArguments(
             output_dir=f"{output_dir}/wandb",
             learning_rate=config.learning_rate,
-            per_device_train_batch_size=config.batch_size,
-            per_device_eval_batch_size=config.batch_size,
+            per_device_train_batch_size=per_device_bs,
+            per_device_eval_batch_size=per_device_bs,
+            gradient_accumulation_steps=gradient_accumulation_steps,
             weight_decay=config.weight_decay,
             num_train_epochs=10,
             eval_strategy="epoch",

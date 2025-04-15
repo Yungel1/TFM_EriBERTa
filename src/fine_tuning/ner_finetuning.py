@@ -16,15 +16,29 @@ def define_config(model_name, label2id, id2label):
 
 
 def define_trainer(model, hyperparameters, tokenizer, data_collator, train_dataset, eval_dataset,
-                   compute_metrics, output_dir):
+                   compute_metrics, output_dir, max_batch_size=None):
+
+    desired_total_batch_size = hyperparameters["batch_size"]
+
+    if max_batch_size is not None:
+        # Limit the per-device batch size to avoid OOM, and accumulate gradients
+        per_device_bs = min(desired_total_batch_size, max_batch_size)
+        gradient_accumulation_steps = max(desired_total_batch_size // per_device_bs, 1)
+        print(f"⚙️ Memory-aware config: per_device_bs={per_device_bs}, "
+              f"accumulation_steps={gradient_accumulation_steps}")
+    else:
+        # No GPU constraint, use full batch size per device
+        per_device_bs = desired_total_batch_size
+        gradient_accumulation_steps = 1
 
     # Training arguments
     training_args = TrainingArguments(
         output_dir=output_dir,
         # logging_dir=f"{output_dir}/logs",
         learning_rate=hyperparameters["learning_rate"],
-        per_device_train_batch_size=hyperparameters["batch_size"],
-        per_device_eval_batch_size=hyperparameters["batch_size"],
+        per_device_train_batch_size=per_device_bs,
+        per_device_eval_batch_size=per_device_bs,
+        gradient_accumulation_steps=gradient_accumulation_steps,
         num_train_epochs=10,
         weight_decay=hyperparameters["weight_decay"],
         eval_strategy="epoch",
