@@ -1,4 +1,6 @@
 from datasets import Dataset
+from transformers import DataCollatorForTokenClassification
+import torch
 
 
 class NERPreprocessor:
@@ -79,3 +81,18 @@ class NERPreprocessor:
 
         tokenized_dataset = tokenized_dataset.filter(lambda x: x["input_ids"] is not None)
         return tokenized_dataset
+
+
+class DataCollatorForTokenClassificationWithGlobalAttention(DataCollatorForTokenClassification):
+    def __call__(self, features):
+        batch = super().__call__(features)
+
+        if 'global_attention_mask' in features[0]:
+            max_len = batch['input_ids'].shape[1]
+            global_attention_masks = [
+                f['global_attention_mask'] + [0] * (max_len - len(f['global_attention_mask']))
+                for f in features
+            ]
+            batch['global_attention_mask'] = torch.tensor(global_attention_masks, dtype=torch.long)
+
+        return batch

@@ -1,9 +1,0 @@
-T1	Premise 59 315	Woman with hypotension and tissue hypoperfusion in whom the following parameters are objectified after insertion of a Swan-Ganz catheter: cardiac index 1.4 L/min/m2, pulmonary capillary wedge pressure 25 mmHg and systemic vascular resistances 2000 dynes/m2
-T2	Claim 367 378	Cardiogenic
-T3	Claim 383 389	Septic
-T4	Claim 394 405	Hypovolemic
-T5	Claim 410 422	Anaphylactic
-T6	Premise 449 705	We are not given any further data on the patient except that she is in shock (tissue hypoperfusion) and on introducing a Swan-Ganz catheter we find a low cardiac index (<2), elevated PCP (25mmHg) and elevated systemic resistances (normal: 600-1200 dyne/m2)
-T7	Claim 707 765	These data are compatible with cardiogenic origin of shock
-R1	Support Ent1:T6 Ent2:T7	
-R2	Support Ent1:T7 Ent2:T2	

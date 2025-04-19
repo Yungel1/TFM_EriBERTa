@@ -7,7 +7,7 @@ import torch
 import wandb
 from datasets import load_from_disk
 
-from src.data_preprocessing.ner_preprocess import NERPreprocessor
+from src.data_preprocessing.ner_preprocess import NERPreprocessor, DataCollatorForTokenClassificationWithGlobalAttention
 from src.evaluation.ner_prediction import predict_and_save
 from src.fine_tuning.ner_finetuning import define_config, MetricsComputer, define_trainer
 from src.utils.config_loader import load_config
@@ -120,7 +120,12 @@ def run_ner_pipeline():
         logger.info(f"✅ Data loaded in {time.time() - start_time:.2f} seconds.\n")
 
     # Data Collator
-    data_collator = DataCollatorForTokenClassification(tokenizer, pad_to_multiple_of=8)
+    if args.use_global_attention:
+        data_collator = DataCollatorForTokenClassificationWithGlobalAttention(
+            tokenizer, pad_to_multiple_of=8
+        )
+    else:
+        data_collator = DataCollatorForTokenClassification(tokenizer, pad_to_multiple_of=8)
 
     # Metrics computer
     metrics_computer = MetricsComputer(id2label, True)
