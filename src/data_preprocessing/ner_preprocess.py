@@ -4,13 +4,12 @@ import torch
 
 
 class NERPreprocessor:
-    def __init__(self, tokenizer, label2id, id2label, stride=128, use_global_attention=False):
+    def __init__(self, tokenizer, label2id, id2label, stride=128):
         self.tokenizer = tokenizer
         self.max_length = tokenizer.model_max_length
         self.stride = stride
         self.label2id = label2id
         self.id2label = id2label
-        self.use_global_attention = use_global_attention
 
     def tokenize_and_align_labels(self, example, indices):
         # Tokenize without truncation to handle overflows and obtain the offsets
@@ -59,10 +58,6 @@ class NERPreprocessor:
         tokenized_inputs["article_id"] = (
                 [example["article_id"][0]] * len(tokenized_inputs["overflow_to_sample_mapping"])
         )
-        if self.use_global_attention:
-            tokenized_inputs["global_attention_mask"] = [
-                [1] + [0] * (len(input_ids) - 1) for input_ids in tokenized_inputs["input_ids"]
-            ]
 
         return tokenized_inputs
 
@@ -87,12 +82,9 @@ class DataCollatorForTokenClassificationWithGlobalAttention(DataCollatorForToken
     def __call__(self, features):
         batch = super().__call__(features)
 
-        if 'global_attention_mask' in features[0]:
-            max_len = batch['input_ids'].shape[1]
-            global_attention_masks = [
-                f['global_attention_mask'] + [0] * (max_len - len(f['global_attention_mask']))
-                for f in features
-            ]
-            batch['global_attention_mask'] = torch.tensor(global_attention_masks, dtype=torch.long)
+        # Genera la máscara desde cero, ya paddeado
+        if "input_ids" in batch:
+            batch["global_attention_mask"] = torch.zeros_like(batch["input_ids"])
+            batch["global_attention_mask"][:, 0] = 1  # CLS token
 
         return batch

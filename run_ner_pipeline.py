@@ -94,8 +94,7 @@ def run_ner_pipeline():
         logger.info(f"✅ Label maps extracted in {time.time() - start_time:.2f} seconds.\n")
 
         # NERPreprocessor class
-        preprocessor = NERPreprocessor(tokenizer, label2id, id2label,
-                                       use_global_attention=args.use_global_attention)
+        preprocessor = NERPreprocessor(tokenizer, label2id, id2label)
 
         logger.info("\n⏳ Tokenizing data...")
         start_time = time.time()
