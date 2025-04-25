@@ -29,13 +29,13 @@ models:
       weight_decay: 0.3
 
   longformer:
-    results: "results/eriberta_longformer/public/PharmacoNER/Full_Cases/"
+    results: "results/eriberta_longformer_512_attn_4096_max_size_global_attn/public/PharmacoNER/Full_Cases/"
     model_name: "eriberta_models/public/EriBERTa_Free_longformer_512_attn_4096_max_size-1_epoch"
     wandb_project: "eriberta_longformer-public-PharmacoNER-Full_Cases"
-    hyperparameters: # TODO
+    hyperparameters:
       batch_size: 8
-      learning_rate: 1.0e-5
-      weight_decay: 0.0
+      learning_rate: 3.0e-5
+      weight_decay: 0.3
 
   bsc:
     results: "results/bsc/public/PharmacoNER/Full_Cases/"

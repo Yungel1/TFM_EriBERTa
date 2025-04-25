@@ -29,12 +29,12 @@ models:
       weight_decay: 0.0
 
   longformer:
-    results: "results/eriberta_longformer/public/MEDDOPROF/subtrack2-class/"
+    results: "results/eriberta_longformer_512_attn_4096_max_size_global_attn/public/MEDDOPROF/subtrack2-class/"
     model_name: "eriberta_models/public/EriBERTa_Free_longformer_512_attn_4096_max_size-1_epoch"
     wandb_project: "eriberta_longformer-public-MEDDOPROF-subtrack2-class"
-    hyperparameters: # TODO
-      batch_size: 8
-      learning_rate: 1.0e-5
+    hyperparameters:
+      batch_size: 32
+      learning_rate: 7.5e-5
       weight_decay: 0.0
 
   bsc:

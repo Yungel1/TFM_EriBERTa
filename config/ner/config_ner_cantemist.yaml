@@ -37,12 +37,12 @@ models:
       weight_decay: 0.0
 
   longformer:
-    results: "results/eriberta_longformer/public/CANTEMIST/"
+    results: "results/eriberta_longformer_512_attn_4096_max_size_global_attn/public/CANTEMIST/"
     model_name: "eriberta_models/public/EriBERTa_Free_longformer_512_attn_4096_max_size-1_epoch"
     wandb_project: "eriberta_longformer-public-CANTEMIST"
-    hyperparameters: # TODO
+    hyperparameters:
       batch_size: 8
-      learning_rate: 1.0e-5
+      learning_rate: 5.0e-5
       weight_decay: 0.0
 
   bsc:
