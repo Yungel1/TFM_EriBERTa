@@ -1,0 +1,18 @@
+{
+    "ACTIVIDAD_f1": 0.5333333333333333,
+    "ACTIVIDAD_number": 28,
+    "ACTIVIDAD_precision": 0.5,
+    "ACTIVIDAD_recall": 0.5714285714285714,
+    "PROFESION_f1": 0.8480113636363635,
+    "PROFESION_number": 695,
+    "PROFESION_precision": 0.8373071528751753,
+    "PROFESION_recall": 0.8589928057553957,
+    "SITUACION_LABORAL_f1": 0.64,
+    "SITUACION_LABORAL_number": 356,
+    "SITUACION_LABORAL_precision": 0.6511627906976745,
+    "SITUACION_LABORAL_recall": 0.6292134831460674,
+    "overall_accuracy": 0.9964007339679751,
+    "overall_f1": 0.772140221402214,
+    "overall_precision": 0.768595041322314,
+    "overall_recall": 0.7757182576459685
+}

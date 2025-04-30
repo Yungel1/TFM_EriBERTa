@@ -1,0 +1,23 @@
+{
+    "epoch": 9.923694779116467,
+    "eval_ACTIVIDAD_f1": 0.0606060606060606,
+    "eval_ACTIVIDAD_number": 18,
+    "eval_ACTIVIDAD_precision": 0.06666666666666667,
+    "eval_ACTIVIDAD_recall": 0.05555555555555555,
+    "eval_PROFESION_f1": 0.8344895936570862,
+    "eval_PROFESION_number": 492,
+    "eval_PROFESION_precision": 0.8143133462282398,
+    "eval_PROFESION_recall": 0.8556910569105691,
+    "eval_SITUACION_LABORAL_f1": 0.6497175141242938,
+    "eval_SITUACION_LABORAL_number": 175,
+    "eval_SITUACION_LABORAL_precision": 0.6424581005586593,
+    "eval_SITUACION_LABORAL_recall": 0.6571428571428571,
+    "eval_loss": 0.013364307582378387,
+    "eval_overall_accuracy": 0.9972010320121232,
+    "eval_overall_f1": 0.7693409742120344,
+    "eval_overall_precision": 0.7552742616033755,
+    "eval_overall_recall": 0.7839416058394161,
+    "eval_runtime": 10.5927,
+    "eval_samples_per_second": 23.601,
+    "eval_steps_per_second": 5.947
+}

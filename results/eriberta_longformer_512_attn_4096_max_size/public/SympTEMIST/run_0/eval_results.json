@@ -1,0 +1,15 @@
+{
+    "epoch": 9.87248322147651,
+    "eval_SINTOMA_f1": 0.6618444846292947,
+    "eval_SINTOMA_number": 1827,
+    "eval_SINTOMA_precision": 0.6267123287671232,
+    "eval_SINTOMA_recall": 0.7011494252873564,
+    "eval_loss": 0.32703086733818054,
+    "eval_overall_accuracy": 0.9451969778737183,
+    "eval_overall_f1": 0.6618444846292947,
+    "eval_overall_precision": 0.6267123287671232,
+    "eval_overall_recall": 0.7011494252873564,
+    "eval_runtime": 3.6555,
+    "eval_samples_per_second": 40.761,
+    "eval_steps_per_second": 10.395
+}

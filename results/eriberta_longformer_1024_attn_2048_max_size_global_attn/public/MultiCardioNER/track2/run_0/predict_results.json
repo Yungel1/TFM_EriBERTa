@@ -1,0 +1,10 @@
+{
+    "FARMACO_f1": 0.9084668192219679,
+    "FARMACO_number": 1717,
+    "FARMACO_precision": 0.8926363125351321,
+    "FARMACO_recall": 0.9248689574839837,
+    "overall_accuracy": 0.998330775827794,
+    "overall_f1": 0.9084668192219679,
+    "overall_precision": 0.8926363125351321,
+    "overall_recall": 0.9248689574839837
+}

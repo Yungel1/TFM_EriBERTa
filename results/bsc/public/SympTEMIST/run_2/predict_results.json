@@ -1,0 +1,10 @@
+{
+    "SINTOMA_f1": 0.6796543597800471,
+    "SINTOMA_number": 3098,
+    "SINTOMA_precision": 0.6620752984389348,
+    "SINTOMA_recall": 0.6981923821820529,
+    "overall_accuracy": 0.9414259163925415,
+    "overall_f1": 0.6796543597800471,
+    "overall_precision": 0.6620752984389348,
+    "overall_recall": 0.6981923821820529
+}

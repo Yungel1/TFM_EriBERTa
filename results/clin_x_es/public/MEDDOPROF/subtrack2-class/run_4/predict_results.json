@@ -1,0 +1,22 @@
+{
+    "FAMILIAR_f1": 0.6728971962616823,
+    "FAMILIAR_number": 51,
+    "FAMILIAR_precision": 0.6428571428571429,
+    "FAMILIAR_recall": 0.7058823529411765,
+    "OTROS_f1": 0.7148014440433214,
+    "OTROS_number": 148,
+    "OTROS_precision": 0.7674418604651163,
+    "OTROS_recall": 0.668918918918919,
+    "PACIENTE_f1": 0.6971235194585448,
+    "PACIENTE_number": 590,
+    "PACIENTE_precision": 0.6959459459459459,
+    "PACIENTE_recall": 0.6983050847457627,
+    "SANITARIO_f1": 0.8957654723127036,
+    "SANITARIO_number": 302,
+    "SANITARIO_precision": 0.8814102564102564,
+    "SANITARIO_recall": 0.9105960264900662,
+    "overall_accuracy": 0.9964323566338926,
+    "overall_f1": 0.7541284403669725,
+    "overall_precision": 0.7548209366391184,
+    "overall_recall": 0.7534372135655362
+}

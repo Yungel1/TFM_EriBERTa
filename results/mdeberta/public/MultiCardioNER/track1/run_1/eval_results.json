@@ -1,0 +1,15 @@
+{
+    "epoch": 10.0,
+    "eval_ENFERMEDAD_f1": 0.6728166351606806,
+    "eval_ENFERMEDAD_number": 12663,
+    "eval_ENFERMEDAD_precision": 0.6453905853340103,
+    "eval_ENFERMEDAD_recall": 0.7026770907367922,
+    "eval_loss": 0.2236238718032837,
+    "eval_overall_accuracy": 0.9564360374160262,
+    "eval_overall_f1": 0.6728166351606806,
+    "eval_overall_precision": 0.6453905853340103,
+    "eval_overall_recall": 0.7026770907367922,
+    "eval_runtime": 18.9092,
+    "eval_samples_per_second": 74.778,
+    "eval_steps_per_second": 9.361
+}

@@ -1,0 +1,15 @@
+{
+    "epoch": 9.746666666666666,
+    "eval_PROCEDIMIENTO_f1": 0.7591610970269647,
+    "eval_PROCEDIMIENTO_number": 2084,
+    "eval_PROCEDIMIENTO_precision": 0.7303769401330377,
+    "eval_PROCEDIMIENTO_recall": 0.7903071017274472,
+    "eval_loss": 0.1513730138540268,
+    "eval_overall_accuracy": 0.9674870108134069,
+    "eval_overall_f1": 0.7591610970269647,
+    "eval_overall_precision": 0.7303769401330377,
+    "eval_overall_recall": 0.7903071017274472,
+    "eval_runtime": 6.4419,
+    "eval_samples_per_second": 23.285,
+    "eval_steps_per_second": 5.899
+}

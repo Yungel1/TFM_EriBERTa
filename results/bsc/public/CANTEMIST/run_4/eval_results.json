@@ -1,0 +1,15 @@
+{
+    "epoch": 10.0,
+    "eval_MORFOLOGIA_NEOPLASIA_f1": 0.8317119978823374,
+    "eval_MORFOLOGIA_NEOPLASIA_number": 7359,
+    "eval_MORFOLOGIA_NEOPLASIA_precision": 0.8106295149638802,
+    "eval_MORFOLOGIA_NEOPLASIA_recall": 0.8539203696154368,
+    "eval_loss": 0.0576101690530777,
+    "eval_overall_accuracy": 0.9904405732172313,
+    "eval_overall_f1": 0.8317119978823374,
+    "eval_overall_precision": 0.8106295149638802,
+    "eval_overall_recall": 0.8539203696154368,
+    "eval_runtime": 18.1836,
+    "eval_samples_per_second": 73.308,
+    "eval_steps_per_second": 9.184
+}

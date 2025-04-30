@@ -1,0 +1,10 @@
+{
+    "ENFERMEDAD_f1": 0.7134161490683231,
+    "ENFERMEDAD_number": 7784,
+    "ENFERMEDAD_precision": 0.6905964405964405,
+    "ENFERMEDAD_recall": 0.7377954779033916,
+    "overall_accuracy": 0.9650120098707665,
+    "overall_f1": 0.7134161490683231,
+    "overall_precision": 0.6905964405964405,
+    "overall_recall": 0.7377954779033916
+}

@@ -1,0 +1,10 @@
+{
+    "MORFOLOGIA_NEOPLASIA_f1": 0.8202187249933315,
+    "MORFOLOGIA_NEOPLASIA_number": 3562,
+    "MORFOLOGIA_NEOPLASIA_precision": 0.78125,
+    "MORFOLOGIA_NEOPLASIA_recall": 0.8632790567097136,
+    "overall_accuracy": 0.9908780991735537,
+    "overall_f1": 0.8202187249933315,
+    "overall_precision": 0.78125,
+    "overall_recall": 0.8632790567097136
+}

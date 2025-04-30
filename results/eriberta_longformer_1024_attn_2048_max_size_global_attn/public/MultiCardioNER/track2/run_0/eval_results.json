@@ -1,0 +1,15 @@
+{
+    "epoch": 10.0,
+    "eval_FARMACO_f1": 0.8932745736731175,
+    "eval_FARMACO_number": 2566,
+    "eval_FARMACO_precision": 0.8786279683377308,
+    "eval_FARMACO_recall": 0.9084177708495713,
+    "eval_loss": 0.010615493170917034,
+    "eval_overall_accuracy": 0.9981333236676954,
+    "eval_overall_f1": 0.8932745736731175,
+    "eval_overall_precision": 0.8786279683377308,
+    "eval_overall_recall": 0.9084177708495713,
+    "eval_runtime": 24.4106,
+    "eval_samples_per_second": 12.167,
+    "eval_steps_per_second": 3.072
+}

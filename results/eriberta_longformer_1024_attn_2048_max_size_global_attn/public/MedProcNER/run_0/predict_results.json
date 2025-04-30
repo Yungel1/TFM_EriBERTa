@@ -1,0 +1,10 @@
+{
+    "PROCEDIMIENTO_f1": 0.7636856368563686,
+    "PROCEDIMIENTO_number": 3542,
+    "PROCEDIMIENTO_precision": 0.7342365815528922,
+    "PROCEDIMIENTO_recall": 0.7955957086391869,
+    "overall_accuracy": 0.9650589038757043,
+    "overall_f1": 0.7636856368563686,
+    "overall_precision": 0.7342365815528922,
+    "overall_recall": 0.7955957086391869
+}

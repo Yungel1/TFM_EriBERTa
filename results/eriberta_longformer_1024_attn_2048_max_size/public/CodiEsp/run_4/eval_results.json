@@ -1,0 +1,19 @@
+{
+    "epoch": 9.704,
+    "eval_DIAGNOSTICO_f1": 0.6703012912482067,
+    "eval_DIAGNOSTICO_number": 3342,
+    "eval_DIAGNOSTICO_precision": 0.6438809261300992,
+    "eval_DIAGNOSTICO_recall": 0.698982645122681,
+    "eval_PROCEDIMIENTO_f1": 0.5996007984031937,
+    "eval_PROCEDIMIENTO_number": 1205,
+    "eval_PROCEDIMIENTO_precision": 0.5776923076923077,
+    "eval_PROCEDIMIENTO_recall": 0.6232365145228216,
+    "eval_loss": 0.22576482594013214,
+    "eval_overall_accuracy": 0.9537409630336925,
+    "eval_overall_f1": 0.6516094986807388,
+    "eval_overall_precision": 0.6264204545454546,
+    "eval_overall_recall": 0.6789091708819002,
+    "eval_runtime": 9.1584,
+    "eval_samples_per_second": 27.297,
+    "eval_steps_per_second": 6.879
+}

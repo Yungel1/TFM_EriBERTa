@@ -1,0 +1,18 @@
+{
+    "ACTIVIDAD_f1": 0.0,
+    "ACTIVIDAD_number": 30,
+    "ACTIVIDAD_precision": 0.0,
+    "ACTIVIDAD_recall": 0.0,
+    "PROFESION_f1": 0.0,
+    "PROFESION_number": 706,
+    "PROFESION_precision": 0.0,
+    "PROFESION_recall": 0.0,
+    "SITUACION_LABORAL_f1": 0.0,
+    "SITUACION_LABORAL_number": 356,
+    "SITUACION_LABORAL_precision": 0.0,
+    "SITUACION_LABORAL_recall": 0.0,
+    "overall_accuracy": 0.9868642893247892,
+    "overall_f1": 0.0,
+    "overall_precision": 0.0,
+    "overall_recall": 0.0
+}

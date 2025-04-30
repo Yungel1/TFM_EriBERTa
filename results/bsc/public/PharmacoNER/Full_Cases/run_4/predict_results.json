@@ -1,0 +1,22 @@
+{
+    "NORMALIZABLES_f1": 0.9102889001520528,
+    "NORMALIZABLES_number": 973,
+    "NORMALIZABLES_precision": 0.898,
+    "NORMALIZABLES_recall": 0.9229188078108942,
+    "NO_NORMALIZABLES_f1": 0.0,
+    "NO_NORMALIZABLES_number": 10,
+    "NO_NORMALIZABLES_precision": 0.0,
+    "NO_NORMALIZABLES_recall": 0.0,
+    "PROTEINAS_f1": 0.8587507034327517,
+    "PROTEINAS_number": 862,
+    "PROTEINAS_precision": 0.833879781420765,
+    "PROTEINAS_recall": 0.8851508120649652,
+    "UNCLEAR_f1": 0.5494505494505495,
+    "UNCLEAR_number": 34,
+    "UNCLEAR_precision": 0.43859649122807015,
+    "UNCLEAR_recall": 0.7352941176470589,
+    "overall_accuracy": 0.9947733981594027,
+    "overall_f1": 0.8740279937791602,
+    "overall_precision": 0.8519454269833249,
+    "overall_recall": 0.8972857903139968
+}
