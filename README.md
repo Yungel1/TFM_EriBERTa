@@ -21,16 +21,17 @@ Este repositorio contiene el código correspondiente al TFM **"Benchmarking de M
 
 ## Argumentos del Script `run_ner_pipeline.py`
 
-| Argumento | Tipo | Obligatorio | Valor por defecto | Descripción                                                                                                |
-|----------|------|-------------|-------------------|------------------------------------------------------------------------------------------------------------|
-| `--model` | `str` | No | `"eriberta"` | Modelo a utilizar. Opciones: `eriberta`, `eriberta_private`, `longformer`, `bsc`, `clin_x_es`, `mdeberta`. |
-| `--force_tokenize` | `flag` | No | `False` | Fuerza la tokenización, incluso si ya existe una versión tokenizada.                                       |
-| `--force_fine_tuning` | `flag` | No | `False` | Fuerza el *fine-tuning*, aunque ya exista un modelo entrenado.                                             |
-| `--opt_hyperparameters` | `flag` | No | `False` | Ejecuta la optimización de hiperparámetros con Weights & Biases (`wandb`).                                 |
-| `--config_path` | `str` | Sí | - | Ruta al archivo `.yaml` de configuración.                                                                  |
-| `--runs` | `int` | No | `1` | Número de ejecuciones del fine-tuning. Útil para evaluar estabilidad de resultados.                        |
-| `--max_batch_size` | `int` | No | `None` | Tamaño máximo de batch. Si se define, ajusta la acumulación de gradientes automáticamente.                 |
-| `--use_global_attention` | `flag` | No | `False` | Activa `global_attention_mask`, útil para modelos como Longformer.                                         |
+| Argumento                | Tipo   | Obligatorio | Valor por defecto | Descripción                                                                                                |
+|--------------------------|--------|-------------|-------------------|------------------------------------------------------------------------------------------------------------|
+| `--model`                | `str`  | No | `"eriberta"`      | Modelo a utilizar. Opciones: `eriberta`, `eriberta_private`, `longformer`, `bsc`, `clin_x_es`, `mdeberta`. |
+| `--force_tokenize`       | `flag` | No | `False`           | Fuerza la tokenización, incluso si ya existe una versión tokenizada.                                       |
+| `--force_fine_tuning`    | `flag` | No | `False`           | Fuerza el *fine-tuning*, aunque ya exista un modelo entrenado.                                             |
+| `--opt_hyperparameters`  | `flag` | No | `False`           | Ejecuta la optimización de hiperparámetros con Weights & Biases (`wandb`).                                 |
+| `--config_path`          | `str`  | Sí | -                 | Ruta al archivo `.yaml` de configuración.                                                                  |
+| `--runs`                 | `int`  | No | `1`               | Número de ejecuciones del fine-tuning. Útil para evaluar estabilidad de resultados.                        |
+| `--max_batch_size`       | `int`  | No | `None`            | Tamaño máximo de batch. Si se define, ajusta la acumulación de gradientes automáticamente.                 |
+| `--use_global_attention` | `flag` | No | `False`           | Activa `global_attention_mask`, útil para modelos como Longformer.                                         |
+| `--seed`                 | `int`  | No | `None`            | Permite realizar el fine-tuning con una semilla fija.                                                      |
 
 ---
 
