@@ -36,7 +36,7 @@ def delete_huggingface_checkpoints():
     # Get all run directories (e.g., run_0, run_1, etc.) or wandb folder
     folder_type = args.folder_type
     if folder_type == "run":
-        run_folders = [os.path.join(RESULTS_PATH, f) for f in os.listdir(RESULTS_PATH) if re.match(r'run_\d+', f)]
+        run_folders = [os.path.join(RESULTS_PATH, f) for f in os.listdir(RESULTS_PATH) if re.match(r'run_(\d+|fixed_seed)', f)]
     else:
         run_folders = [os.path.join(RESULTS_PATH, f) for f in os.listdir(RESULTS_PATH) if re.match('wandb', f)]
     checkpoint_folders = []

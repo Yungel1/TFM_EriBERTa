@@ -48,6 +48,7 @@ def __get_args():
     parser.add_argument("--use_global_attention", action="store_true", default=False,
                         help="If True, apply global_attention_mask"
     )
+    parser.add_argument("--seed", type=int, default=None, help="Random seed")
     return parser.parse_args()
 
 
@@ -159,35 +160,41 @@ def run_ner_pipeline():
         "weight_decay": config["models"][arg_model]["hyperparameters"]["weight_decay"],
     }
 
-    num_runs = args.runs - 1
-    for run in range(0, args.runs):
+    if args.seed is not None:
+        seeds = [args.seed]
+        run_labels = ["fixed_seed"]
+    else:
+        seeds = [42 + run * 100 for run in range(args.runs)]
+        run_labels = [f"{run}" for run in range(args.runs)]
 
-        logger.info(f"\n⏳ Starting fine-tuning process {run}/{num_runs}...")
+    num_runs = len(seeds) - 1
+
+    for i, seed in enumerate(seeds):
+        run_label = run_labels[i]
+        logger.info(f"\n⏳ Starting fine-tuning process {run_label}/{num_runs}...")
         start_time = time.time()
 
-        RUN_RESULTS_PATH = f"{RESULTS_PATH}/run_{run}"
+        RUN_RESULTS_PATH = f"{RESULTS_PATH}/run_{run_label}"
         BEST_MODEL_PATH = f"{RUN_RESULTS_PATH}/best_model"
 
-        # Seed
-        new_seed = 42 + run * 100
-        set_seed(new_seed)
-        logger.info(f"️ℹ️ Seed set to {new_seed}")
+        # Set seed
+        set_seed(seed)
+        logger.info(f"️ℹ️ Seed set to {seed}")
 
         if args.force_fine_tuning or not os.path.exists(BEST_MODEL_PATH):
-
             # Define model
             config = define_config(MODEL_NAME, label2id, id2label)
-            model = AutoModelForTokenClassification.from_pretrained(MODEL_NAME, config=config, ignore_mismatched_sizes=True, device_map=device)
-            # model.to(device)
+            model = AutoModelForTokenClassification.from_pretrained(
+                MODEL_NAME, config=config, ignore_mismatched_sizes=True, device_map=device)
 
             # Define trainer
-            trainer = define_trainer(model, hyperparameters, tokenizer, data_collator, train_tokenized, dev_tokenized,
-                                     metrics_computer.compute_metrics, RUN_RESULTS_PATH, args.max_batch_size)
+            trainer = define_trainer(model, hyperparameters, tokenizer, data_collator,
+                                     train_tokenized, dev_tokenized, metrics_computer.compute_metrics,
+                                     RUN_RESULTS_PATH, args.max_batch_size)
 
             # Fine-tuning and saving best model
             train_result = trainer.train()
             metrics_train = train_result.metrics
-            # trainer.log_metrics("train", metrics_train)
             trainer.save_metrics("train", metrics_train)
             if trainer.state.best_model_checkpoint:
                 trainer.save_model(BEST_MODEL_PATH)
@@ -196,32 +203,36 @@ def run_ner_pipeline():
         else:
             logger.info("\n⏳ Loading best fine-tuned model...")
             start_time = time.time()
-            # Define model
+
+            # Load existing model
             model = AutoModelForTokenClassification.from_pretrained(BEST_MODEL_PATH, device_map=device)
-            # model.push_to_hub("Yungel1/EriBERTa_NER")
-            # model = AutoModelForTokenClassification.from_pretrained("Yungel1/EriBERTa_NER")
+
             # Define trainer
-            trainer = define_trainer(model, hyperparameters, tokenizer, data_collator, train_tokenized, dev_tokenized,
-                                     metrics_computer.compute_metrics, RUN_RESULTS_PATH, args.max_batch_size)
+            trainer = define_trainer(model, hyperparameters, tokenizer, data_collator,
+                                     train_tokenized, dev_tokenized, metrics_computer.compute_metrics,
+                                     RUN_RESULTS_PATH, args.max_batch_size)
             logger.info(f"✅ Model loaded in {time.time() - start_time:.2f} seconds.\n")
 
+        # Evaluation
         logger.info("\n⏳ Evaluating fine-tuned model...")
         start_time = time.time()
         metrics_eval = trainer.evaluate()
-        # trainer.log_metrics("eval", metrics_eval)
         trainer.save_metrics("eval", metrics_eval)
         logger.info(f"✅ Model evaluated in {time.time() - start_time:.2f} seconds.\n")
 
+        # Inference
         logger.info("\n⏳ Starting inference and final evaluation...")
         start_time = time.time()
         predict_and_save(trainer, test_tokenized, id2label, metrics_computer.compute_metrics,
                          tokenizer, RUN_RESULTS_PATH)
         logger.info(f"✅ Inference and save finished in {time.time() - start_time:.2f} seconds.\n")
 
+        # Save seed
         with open(f"{RUN_RESULTS_PATH}/seed.txt", "w") as archivo:
-            archivo.write(str(new_seed))
+            archivo.write(str(seed))
         logger.info(f"️ℹ️ Seed saved in {RUN_RESULTS_PATH}/seed.txt")
 
+        # Cleanup
         del model, trainer
         torch.cuda.empty_cache()
 
