@@ -16,8 +16,8 @@ models:
     wandb_project: "eriberta-ner-HABITOS_TOXICOS"
     hyperparameters:
       batch_size: 16
-      learning_rate: 3.0e-5
-      weight_decay: 0.2
+      learning_rate: 5.0e-5
+      weight_decay: 0.3
 
   eriberta_private:
     results: "results/eriberta/private/HABITOS_TOXICOS/"

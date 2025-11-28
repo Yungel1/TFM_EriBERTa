@@ -15,9 +15,9 @@ models:
     model_name: "HiTZ/EriBERTa-base"
     wandb_project: "eriberta-ner-DIAGNOSTICO_CLINICO_PRINCIPAL"
     hyperparameters:
-      batch_size: 16
-      learning_rate: 3.0e-5
-      weight_decay: 0.2
+      batch_size: 8
+      learning_rate: 7.5e-5
+      weight_decay: 0.01
 
   eriberta_private:
     results: "results/eriberta/private/DIAGNOSTICO_CLINICO_PRINCIPAL/"
