@@ -172,7 +172,5 @@ cython_debug/
 
 HF_token.txt
 
-slurms
-
 # Predicciones de gemma3
 *.jsonl
