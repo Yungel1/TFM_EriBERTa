@@ -1,0 +1,65 @@
+paths:
+  raw:
+    train: "datasets/NER/PRUEBAS_COMPLEMENTARIAS/train" # Carpeta que contiene los archivos de texto y anotaciones de train
+    dev: "datasets/NER/PRUEBAS_COMPLEMENTARIAS/dev" # Carpeta que contiene los archivos de texto y anotaciones de dev
+    test: "datasets/NER/PRUEBAS_COMPLEMENTARIAS/test" # Carpeta que contiene los archivos de texto y anotaciones de test
+  processed:
+    train: "datasets/NER/PRUEBAS_COMPLEMENTARIAS/train/train.hf" # HF Dataset con los datos de train
+    dev: "datasets/NER/PRUEBAS_COMPLEMENTARIAS/dev/dev.hf" # HF Dataset con los datos de dev
+    test: "datasets/NER/PRUEBAS_COMPLEMENTARIAS/test/test.hf" # HF Dataset con los datos de test
+  label_map: "datasets/NER/PRUEBAS_COMPLEMENTARIAS/label_map/label2id.json"
+
+models:
+  eriberta:
+    results: "results/eriberta/NER/PRUEBAS_COMPLEMENTARIAS/"
+    model_name: "HiTZ/EriBERTa-base"
+    wandb_project: "eriberta-ner-PRUEBAS_COMPLEMENTARIAS"
+    hyperparameters:
+      batch_size: 16
+      learning_rate: 3.0e-5
+      weight_decay: 0.2
+
+  eriberta_private:
+    results: "results/eriberta/private/PRUEBAS_COMPLEMENTARIAS/"
+    model_name: "eriberta_models/private/eriberta"
+    wandb_project: "eriberta-private-PRUEBAS_COMPLEMENTARIAS"
+    hyperparameters:
+      batch_size: 8
+      learning_rate: 5.0e-5
+      weight_decay: 0.01
+      
+  longformer:
+    results: "results/eriberta_longformer_512_attn_4096_max_size_global_attn/public/PRUEBAS_COMPLEMENTARIAS/"
+    model_name: "eriberta_models/public/EriBERTa_Free_longformer_512_attn_4096_max_size-1_epoch"
+    wandb_project: "eriberta_longformer-public-PRUEBAS_COMPLEMENTARIAS"
+    hyperparameters:
+      batch_size: 8
+      learning_rate: 5.0e-5
+      weight_decay: 0.01
+
+  bsc:
+    results: "results/bsc/public/PRUEBAS_COMPLEMENTARIAS/"
+    model_name: "PlanTL-GOB-ES/bsc-bio-ehr-es"
+    wandb_project: "bsc-public-PRUEBAS_COMPLEMENTARIAS"
+    hyperparameters:
+      batch_size: 8
+      learning_rate: 5.0e-5
+      weight_decay: 0.2
+
+  clin_x_es:
+    results: "results/clin_x_es/public/PRUEBAS_COMPLEMENTARIAS/"
+    model_name: "llange/xlm-roberta-large-spanish-clinical"
+    wandb_project: "clin_x_es-public-PRUEBAS_COMPLEMENTARIAS"
+    hyperparameters:
+      batch_size: 32
+      learning_rate: 5.0e-5
+      weight_decay: 0.1
+
+  mdeberta:
+    results: "results/mdeberta/public/PRUEBAS_COMPLEMENTARIAS/"
+    model_name: "microsoft/mdeberta-v3-base"
+    wandb_project: "mdeberta-public-PRUEBAS_COMPLEMENTARIAS"
+    hyperparameters:
+      batch_size: 8
+      learning_rate: 5.0e-5
+      weight_decay: 0.0
