@@ -16,7 +16,7 @@ models:
     wandb_project: "eriberta-ner-OCUPACIONES_EXPOSICIONES"
     hyperparameters:
       batch_size: 8
-      learning_rate: 7.5e-5
+      learning_rate: 5.0e-5
       weight_decay: 0.2
 
   eriberta_private:

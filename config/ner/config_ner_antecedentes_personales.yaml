@@ -16,8 +16,8 @@ models:
     wandb_project: "eriberta-ner-ANTECEDENTES_PERSONALES"
     hyperparameters:
       batch_size: 8
-      learning_rate: 7.5e-5
-      weight_decay: 0.2
+      learning_rate: 5.0e-5
+      weight_decay: 0.0
 
   eriberta_private:
     results: "results/eriberta/private/ANTECEDENTES_PERSONALES/"

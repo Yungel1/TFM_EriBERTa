@@ -17,7 +17,7 @@ models:
     hyperparameters:
       batch_size: 8
       learning_rate: 7.5e-5
-      weight_decay: 0.01
+      weight_decay: 0.1
 
   eriberta_private:
     results: "results/eriberta/private/DIAGNOSTICO_CLINICO_PRINCIPAL/"
